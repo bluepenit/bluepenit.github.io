@@ -1,0 +1,1053 @@
+
+
+
+	<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.purrweb.com/portfolio/pony-express/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Nov 2023 15:09:26 GMT -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Parcel Management System Development | Purrweb</title>
+<meta name="description" content="PonyExpress is an app that helps post office managers effectively track and manage parcels. If you need full-cycle MVP development services, get in touch!">
+<meta name="google-site-verification" content="YgG-iu_ngX9WM8Ulia3B7gYVqrEBLf9-GQ22HbQ7Jiw">
+<meta name="yandex-verification" content="4057b113a73e6486">
+<meta name="facebook-domain-verification" content="0cpowng2vyna7cecrsh180pvpcll09">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Parcel Management System Development | Purrweb">
+<meta property="og:description" content="PonyExpress is an app that helps post office managers effectively track and manage parcels. If you need full-cycle MVP development services, get in touch!">
+<meta property="og:image" content="../../images/og-image.png">
+<meta property="og:site_name" content="Purrweb">
+<meta property="og:url" content="index.html">
+<meta name="twitter:title" content="Parcel Management System Development | Purrweb">
+<meta name="twitter:description" content="PonyExpress is an app that helps post office managers effectively track and manage parcels. If you need full-cycle MVP development services, get in touch!">
+<meta name="twitter:image:src" content="../../images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@purrweb">
+<meta name="twitter:creator" content="@purrweb">
+<link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5c3bfe">
+<link rel="canonical" href="index.html">
+<meta name="msapplication-TileColor" content="#5c3bfe">
+<meta name="theme-color" content="#ffffff">
+<link rel="alternate" hreflang="ru" href="../../ru/portfolio/pony-express">
+<link rel="alternate" hreflang="en" href="index.html">
+
+
+
+
+<meta name="google-site-verification" content="iAswyHNCt6kecOwxsuLaxgVNXaFS1GEwMiCJajfQ4dI">
+
+<link href="../../common.4d9224ab871b2d75ac93.css" rel="stylesheet"><link href="../../pony-express.4d9224ab871b2d75ac93.css" rel="stylesheet"></head>
+<body class="js-disable-transition">
+<aside class="cookie hide-cookie" id="pjAcceptCookieBar">
+<div class="container pjAcceptCookieBarShell">
+<form action="#" method="post" class="cookie__inner">
+<p class="cookie__text">
+We use cookies to boost your experience on our website and ensure it functions properly. It also
+helps us with analytics — is that OK, isn’t it? :)
+</p>
+<div class="pjAcceptCookieBarActions">
+<button type="button" class="pjAcceptCookieBarBtn cookie__btn">
+Sure! I’m fine with it
+</button>
+</div>
+</form>
+</div>
+</aside>
+<header class="header js-header">
+<div class="container">
+<nav class="header__inner">
+<a class="header__logo" href="../..">
+<svg xmlns="http://www.w3.org/2000/svg" width="164" height="30" fill="none" viewbox="0 0 164 30">
+<path fill="#fff" d="M43.688 3.025H34.79v23.728h5.373v-7.458h3.526c4.634 0 8.227-3.626 8.227-8.135 0-4.508-3.593-8.135-8.227-8.135zm0 11.186h-3.526V8.11h3.526c1.646 0 2.854 1.322 2.854 3.05 0 1.73-1.208 3.051-2.854 3.051zM65.612 9.805v9.253c0 2.407-1.277 3.491-3.124 3.491-1.611 0-2.921-.982-2.921-3.084v-9.66H54.53V20.21c0 4.576 2.888 7.016 6.28 7.016 2.216 0 3.895-.813 4.802-2.068v1.594h5.037V9.805h-5.037zM79.716 12.821V9.805h-5.037v16.947h5.037v-7.66c0-3.356 2.955-4.203 5.037-3.864V9.466c-2.115 0-4.365 1.084-5.037 3.355zM92.48 12.821V9.805h-5.036v16.947h5.037v-7.66c0-3.356 2.955-4.203 5.037-3.864V9.466c-2.116 0-4.366 1.084-5.037 3.355zM118.678 9.805l-2.418 9.084-2.619-9.084h-4.701l-2.62 9.084-2.418-9.084h-5.373l5.373 16.947h4.702l2.686-9.05 2.687 9.05h4.701l5.373-16.947h-5.373zM130.23 20.312h11.921a9.894 9.894 0 0 0 .202-2.033c0-5.119-3.627-8.949-8.53-8.949-5.306 0-8.932 3.898-8.932 8.949 0 5.05 3.559 8.948 9.302 8.948 3.19 0 5.675-1.186 7.32-3.491l-4.029-2.339c-.672.746-1.847 1.288-3.224 1.288-1.847 0-3.392-.61-4.03-2.373zm-.101-3.796c.471-1.729 1.747-2.678 3.661-2.678 1.511 0 3.022.712 3.559 2.678h-7.22zM155.587 9.33c-2.25 0-3.896.78-5.004 2.068V3.025h-5.037v23.728h5.037v-1.594c1.108 1.289 2.754 2.068 5.004 2.068 4.399 0 8.026-3.898 8.026-8.948 0-5.05-3.627-8.949-8.026-8.949zm-1.008 13.084c-2.317 0-3.996-1.593-3.996-4.135 0-2.543 1.679-4.136 3.996-4.136s3.996 1.593 3.996 4.136c0 2.542-1.679 4.135-3.996 4.135zM16.049 30L29.497 0h-4.955L11.094 30h4.955zM4.887 30L18.15 0h-4.887L0 30h4.887z" />
+</svg>
+<span class="visually-hidden">Purrweb logo</span>
+</a>
+
+<ul class="header__list js-menu">
+<li class="header__item header__item-portfolio">
+<a class="header__item-link" href=".." onclick="ym(52342033, 'reachGoal', 'CLK_PROJECTS'); return true;">
+Projects
+</a>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Technologies
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__dropmenu-inner">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--technologies">
+
+<a href="../../services/react-native" class="header__dropmenu-ref">
+React Native
+</a>
+<a href="../../services/react-js" class="header__dropmenu-ref">
+React.js
+</a>
+<a href="../../services/electron" class="header__dropmenu-ref">
+Electron.js
+</a>
+<a href="../../services/webrtc" class="header__dropmenu-ref">
+WebRTC
+</a>
+<a href="../../services/progressive-web-app" class="header__dropmenu-ref">
+PWA
+</a>
+<a href="../../services/react-native-game-development" class="header__dropmenu-ref">
+Mobile Games
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="header__divider"></div>
+<a href="../../technologies" class="header__dropmenu-main-ref">
+Tech Stack
+</a>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Services
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu header__dropmenu--services" id="dropdown2">
+<div class="header__dropmenu-inner">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Development
+</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--dev">
+<a href="../../services/mobile-development" class="header__dropmenu-ref">
+Mobile App Development
+</a>
+<a href="../../services/web-development-services" class="header__dropmenu-ref">
+Web Development
+</a>
+<a href="../../services/ux-audit" class="header__dropmenu-ref">
+UX Audit
+</a>
+
+
+
+
+
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--dev2">
+
+
+
+<a href="../../services/software-development-for-startups" class="header__dropmenu-ref">
+Software Development for Startups
+</a>
+<a href="../../services/crossplatform" class="header__dropmenu-ref">
+Cross-Platform Development
+</a>
+<a href="../../services/mvp" class="header__dropmenu-ref">
+MVP
+</a>
+
+
+
+</div>
+</div>
+</div>
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Design</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--design">
+<a href="../../services/ui-ux" class="header__dropmenu-ref">
+UI/UX
+</a>
+
+
+
+
+</div>
+</div>
+</div>
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Management
+</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--management">
+
+<a href="../../services/project-management-consulting-company" class="header__dropmenu-ref">
+Project Management
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="header__divider"></div>
+<a href="../../services" class="header__dropmenu-main-ref">
+Software Development Services
+</a>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Industries
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries">
+<a href="../../services/travel" class="header__dropmenu-ref">
+Travel
+</a>
+<a href="../../services/health" class="header__dropmenu-ref">
+Healthcare
+</a>
+<a href="../../services/tv-app-development" class="header__dropmenu-ref">
+Smart TV
+</a>
+<a href="../../services/logistics" class="header__dropmenu-ref">
+Logistics
+</a>
+<a href="../../services/wellness" class="header__dropmenu-ref">
+Wellness
+</a>
+<a href="../../services/terminal" class="header__dropmenu-ref">
+POS
+</a>
+<a href="../../services/custom-ecommerce" class="header__dropmenu-ref">
+Custom Ecom Apps
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries2">
+<a href="../../services/events" class="header__dropmenu-ref">
+Events
+</a>
+<a href="../../services/marketplace" class="header__dropmenu-ref">
+Marketplace
+</a>
+<a href="../../services/estate" class="header__dropmenu-ref">
+Real Estate
+</a>
+<a href="../../services/media" class="header__dropmenu-ref">
+Social Media
+</a>
+<a href="../../services/finance" class="header__dropmenu-ref">
+Fintech
+</a>
+<a href="../../services/iot" class="header__dropmenu-ref">
+IoT
+</a>
+<a href="../../services/ecommerce" class="header__dropmenu-ref">
+eCommerce Development
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Development Team
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries">
+<a href="../../services/outsourcing" class="header__dropmenu-main-ref header__dropmenu-main-ref--margin-bottom">
+Outsourcing
+</a>
+<a href="../../services/dev-outsourcing" class="header__dropmenu-ref">
+Development
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries2">
+<a href="../../services/outstaffing" class="header__dropmenu-main-ref header__dropmenu-main-ref--margin-bottom">
+Outstaffing
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item header__item--blog">
+<button class="header__item-inner click-dropdown" onclick="ym(52342033, 'reachGoal', 'CLK_BLOG'); return true;">
+<div class="header__item-drop">
+Blog
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu header__dropmenu--blog">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--blog">
+<a href="../../blog/how-much-does-it-cost-to-develop-an-app" class="header__dropmenu-ref">
+How much does it cost to develop an app
+</a>
+<a href="../../blog/how-to-create-a-social-media-app-a-z-guide" class="header__dropmenu-ref">
+How to make a social media app
+</a>
+<a href="../../blog/website-redesign-cost" class="header__dropmenu-ref">
+How much does it cost to redesign a website
+</a>
+<a href="../../blog/restaurant-app-development-purrwebs-detailed-guide" class="header__dropmenu-ref">
+Restaurant mobile app development
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--blog2">
+<a href="../../blog/how-much-does-it-cost-to-develop-an-app" class="header__dropmenu-ref">
+How much does it cost to maintain an app
+</a>
+<a href="../../blog/dating-app-development" class="header__dropmenu-ref">
+Dating mobile app development
+</a>
+<a href="../../blog/how-to-hire-a-developer-for-a-startup-and-not-to-regret-about-it" class="header__dropmenu-ref">
+Hiring a developer for a startup
+</a>
+<a href="../../blog" class="header__dropmenu-ref">
+All posts
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+About
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--about">
+<a href="../../about" class="header__dropmenu-ref">
+Company
+</a>
+<a href="../../contacts" class="header__dropmenu-ref">
+Contacts
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item header__item--lang visually-hidden">
+<a class="header__item-link js-en-link" href="../../ru/portfolio/pony-express">Ru</a>
+</li>
+<li class="header__item header__item--request">
+<a class="rising-btn rising-btn--theme2 js-scroll-to" href="#footer" onclick="ym(52342033, 'reachGoal', 'CLK_RAQ'); return true;">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span class="rising-btn__text">
+Request a quote
+</span>
+</span>
+</span>
+</a>
+<div class="lang-popup js-lang-popup hide-lang" id="LangCookieBar">
+<p class="lang-popup__text">
+Холмс, кажется, вы в России...
+</p>
+<button class="lang-popup__close-btn js-close-popup">
+<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.50002 4.49844L9.00627 0.992188L10.0079 1.99377L6.5016 5.50002L10.0079 9.00627L9.00627 10.0079L5.50002 6.5016L1.99377 10.0079L0.992188 9.00627L4.49844 5.50002L0.992188 1.99377L1.99377 0.992188L5.50002 4.49844Z" fill="#808080" />
+</svg>
+</button>
+<div class="lang-popup__btn-wrap">
+<a href="#" class="lang-popup__btn lang-popup__btn--ru js-ru-btn">
+Переключить язык
+</a>
+<a href="#" class="lang-popup__btn lang-popup__btn--eng js-eng-btn">
+не, и так норм
+</a>
+</div>
+</div>
+</li>
+</ul>
+<button class="header__humb js-humb">
+<span class="visually-hidden">Open/close menu</span>
+</button>
+</nav>
+</div>
+</header>
+<div class="main js-main">
+<section class="intro">
+<div class="intro__inner">
+<svg class="intro__logo-words" xmlns="http://www.w3.org/2000/svg" width="1825" height="834" fill="none" viewBox="0 0 1825 834">
+<path fill="#008752" fill-rule="evenodd" d="M574.591 15H217.068L0 821h193.658l63.844-242.438h146.84c195.786 0 380.932-95.699 429.879-282.844C878.912 129.839 783.146 15 574.591 15zm-59.587 161.625c95.765 0 144.712 42.533 123.431 121.219-19.154 70.18-89.381 123.346-185.146 123.346v2.127H300.064l65.972-246.692h148.968zM1457.75 0c-270.17 0-516.942 187.224-578.634 417-61.693 231.903 82.965 417 353.134 417 270.17 0 516.94-187.224 578.63-417 61.7-231.903-82.96-417-353.13-417zm-46.8 163.821c155.29 0 234 114.888 197.84 253.179-36.17 140.418-174.44 253.179-329.74 253.179-155.29 0-234-114.888-197.84-253.179 36.17-140.418 174.44-253.179 329.74-253.179z" clip-rule="evenodd" />
+</svg>
+<svg class="intro__logo" xmlns="http://www.w3.org/2000/svg" width="254" height="141" fill="none" viewbox="0 0 254 141">
+<path fill="#fff" fill-rule="evenodd" d="M30.026.523h-12.46L10.003 28.61h6.749l2.225-8.449h5.117c6.823 0 13.275-3.335 14.98-9.856C40.632 4.525 37.295.523 30.027.523zm2.225 9.857c-.667 2.445-3.115 4.298-6.452 4.298v.074h-5.34l2.299-8.597h5.192c3.337 0 5.043 1.482 4.3 4.225zM60.803 0c-9.415 0-18.015 6.525-20.165 14.532-2.15 8.082 2.892 14.532 12.307 14.532 9.415 0 18.015-6.524 20.165-14.532C75.26 6.45 70.219 0 60.803 0zm-1.63 5.709c5.411 0 8.154 4.004 6.894 8.823-1.26 4.894-6.08 8.823-11.491 8.823-5.412 0-8.155-4.004-6.895-8.823 1.26-4.893 6.08-8.823 11.491-8.823zM111.169.523l7.199 16.974-2.969 11.045h6.755l2.969-11.193L141.453.523h-7.646L123.342 11.79 119.036.523h-7.867zm-24.038 0h-6.236l-7.573 28.019h6.682l4.751-17.79 10.023 17.79h5.716l7.573-28.02h-6.607l-4.678 17.272L87.132.523z" clip-rule="evenodd" />
+<path fill="#fff" d="M7.558 37.95h22.97l-1.482 5.485H12.745l-1.556 5.707h14.374l-1.482 5.484H9.707L8.15 60.555h16.597l-1.482 5.484H0l7.558-28.088zM40.118 51.736L33.59 37.95h7.863l3.932 9.116 8.901-9.116h7.64l-13.87 13.71L54.88 66.04h-7.863l-4.303-9.634-9.495 9.634h-7.64l14.54-14.303z" />
+<path fill="#fff" fill-rule="evenodd" d="M78.64 37.95H66.18l-7.564 28.09h6.75l2.224-8.45h5.117c6.823 0 13.275-3.335 14.981-9.856 1.558-5.781-1.78-9.783-9.048-9.783zm2.225 9.858c-.667 2.446-3.115 4.298-6.452 4.298v.074h-5.34l2.3-8.597h5.19c3.338 0 5.044 1.483 4.302 4.225zM107.94 37.95H93.99l-7.494 28.09h6.752l2.375-8.968h5.194l4.155 8.893h7.866l-4.749-10.005c4.229-1.26 7.717-4.15 8.904-8.671.742-2.742.371-4.966-.891-6.522-1.558-1.779-4.303-2.816-8.162-2.816zm2.152 9.561c-.668 2.446-2.968 4.076-6.233 4.076h-6.826l2.151-8.078h6.679c3.264 0 4.971 1.334 4.229 4.002z" clip-rule="evenodd" />
+<path fill="#fff" d="M124.267 37.95h23.041l-1.482 5.485h-16.373l-1.556 5.707h14.447l-1.482 5.484h-14.447l-1.556 5.929h16.596l-1.482 5.484H116.71l7.557-28.088zM143.648 61.968l5.119-4.376c2.225 2.077 4.747 3.412 8.233 3.412 2.745 0 4.674-1.038 5.119-2.744.445-1.558-.445-2.373-5.193-3.56-5.786-1.41-9.346-3.041-7.788-8.678 1.335-5.117 6.75-8.455 12.981-8.455 4.45 0 7.937 1.261 10.385 3.56l-4.748 4.673c-2.225-1.706-4.599-2.744-7.195-2.744s-4.228 1.112-4.599 2.521c-.519 1.855.668 2.448 5.637 3.709 5.786 1.483 8.753 3.56 7.418 8.529-1.483 5.562-6.972 8.677-13.574 8.677-4.599 0-8.902-1.557-11.795-4.524zM169.925 61.968l5.118-4.376c2.225 2.077 4.747 3.412 8.234 3.412 2.744 0 4.673-1.038 5.118-2.744.445-1.558-.445-2.373-5.192-3.56-5.786-1.41-9.347-3.04-7.789-8.678 1.335-5.117 6.75-8.454 12.981-8.454 4.451 0 7.937 1.26 10.385 3.56l-4.747 4.672c-2.226-1.706-4.599-2.744-7.196-2.744-2.596 0-4.228 1.112-4.599 2.522-.519 1.854.668 2.447 5.638 3.708 5.786 1.483 8.753 3.56 7.418 8.529-1.484 5.562-6.973 8.677-13.575 8.677-4.673 0-8.901-1.557-11.794-4.524z" />
+<path fill="#7AC143" d="M127.504 84.753l-5.044 18.774h85.824l-24.256 24.265L197.306 141l56.152-56.247H127.504z" />
+</svg>
+<h1 class="intro__title">Parcel Management System</h1>
+<p class="intro__text">PonyExpress Mobile Post Office</p>
+<ul class="intro__list">
+<li class="intro__item intro__item--sketch">
+<picture class="intro__item-img"><source type="image/webp" srcset="/images/pony-intro-icon-1.png, /images/pony-intro-icon-1@2x.png 2x"><img data-src="/images/pony-intro-icon-1.png" src="../../images/pony-intro-icon-1.png" alt="Sketch logo" srcset="/images/pony-intro-icon-1.png, /images/pony-intro-icon-1@2x.png 2x"></picture>
+</li>
+<li class="intro__item">
+<picture class="intro__item-img"><source type="image/webp" srcset="/images/pony-intro-icon-2.png, /images/pony-intro-icon-2@2x.png 2x"><img data-src="/images/pony-intro-icon-2.png" src="../../images/pony-intro-icon-2.png" alt="Android logo" srcset="/images/pony-intro-icon-2.png, /images/pony-intro-icon-2@2x.png 2x"></picture>
+</li>
+<li class="intro__item intro__item--react">
+<picture class="intro__item-img"><source type="image/webp" srcset="/images/pony-intro-icon-3.png, /images/pony-intro-icon-3@2x.png 2x"><img data-src="/images/pony-intro-icon-3.png" src="../../images/pony-intro-icon-3.png" alt="React logo" srcset="/images/pony-intro-icon-3.png, /images/pony-intro-icon-3@2x.png 2x"></picture>
+</li>
+<li class="intro__item intro__item--figma">
+<picture class="intro__item-img"><source type="image/webp" srcset="/images/pony-intro-icon-4.png, /images/pony-intro-icon-4@2x.png 2x"><img data-src="/images/pony-intro-icon-4.png" src="../../images/pony-intro-icon-4.png" alt="Figma logo" srcset="/images/pony-intro-icon-4.png, /images/pony-intro-icon-4@2x.png 2x"></picture>
+</li>
+</ul>
+<picture class="intro__img"><source type="image/webp" srcset="/images/pony-intro-1-eng.png, /images/pony-intro-1-eng@2x.png 2x"><img data-src="/images/pony-intro-1-eng.png" src="../../images/pony-intro-1-eng.png" alt="Phone image" srcset="/images/pony-intro-1-eng.png, /images/pony-intro-1-eng@2x.png 2x"></picture>
+</div>
+</section>
+<section class="business-tasks">
+<div class="container">
+<div class="business-tasks__inner points points--business arrow">
+<svg class="business-tasks__logo-words" xmlns="http://www.w3.org/2000/svg" width="1777" height="806" fill="none" viewBox="0 0 1777 806">
+<path fill="#E5F3EE" d="M1151.2 395.557L963.886 0h225.624l112.82 261.578L1557.76 0H1777l-398.04 393.43L1574.79 806h-225.63L1225.7 529.536 953.243 806H734l417.2-410.443zM216.874 0H876l-42.524 157.372H365.709l-44.651 163.752h412.486l-42.525 157.372H278.534l-44.651 170.132h476.272L667.631 806H0L216.874 0z" />
+</svg>
+<picture class="business-tasks__img"><source type="image/webp" srcset="/images/pony-business-1-eng.png, /images/pony-business-1-eng@2x.png 2x"><img data-src="/images/pony-business-1-eng.png" src="../../images/pony-business-1-eng.png" alt="App screen" srcset="/images/pony-business-1-eng.png, /images/pony-business-1-eng@2x.png 2x"></picture>
+<picture class="business-tasks__icon"><source type="image/webp" srcset="/images/pony-business-icon-1.png, /images/pony-business-icon-1@2x.png 2x"><img data-src="/images/pony-business-icon-1.png" src="../../images/pony-business-icon-1.png" alt="Pvz" srcset="/images/pony-business-icon-1.png, /images/pony-business-icon-1@2x.png 2x"></picture>
+<h2 class="business-tasks__title title">Business tasks</h2>
+<p class="business-tasks__text text">PonyExpress goal was to create a large network of parcel hand-in and hand-out points. To do this, we needed to develop a simple interface for their Android application. The main challenge was: dispatchers who will operate the system on average are at pre-retirement age + the system will be integrated into Evotor terminals.</p>
+</div>
+</div>
+</section>
+<section class="scenarios">
+<div class="scenarios__bg">
+<div class="container">
+<div class="scenarios__inner points points--scenarios">
+<svg class="scenarios__logo-words" xmlns="http://www.w3.org/2000/svg" width="869" height="804" fill="none" viewBox="0 0 869 804">
+<path fill="#008752" d="M206.6 487.079L0 0h225.77l123.534 323.302L649.62 0H869L400.422 482.825 315.225 804H121.404L206.6 487.079z" />
+</svg>
+<picture class="scenarios__img"><source type="image/webp" srcset="/images/pony-scenarios-1-eng.png, /images/pony-scenarios-1-eng@2x.png 2x"><img data-src="/images/pony-scenarios-1-eng.png" src="../../images/pony-scenarios-1-eng.png" alt="App screens" srcset="/images/pony-scenarios-1-eng.png, /images/pony-scenarios-1-eng@2x.png 2x"></picture>
+<picture class="scenarios__img2"><source type="image/webp" srcset="/images/pony-scenarios-mobile-eng-1.png, /images/pony-scenarios-mobile-eng-1@2x.png 2x"><img data-src="/images/pony-scenarios-mobile-eng-1.png" src="../../images/pony-scenarios-mobile-eng-1.png" alt="App screens" srcset="/images/pony-scenarios-mobile-eng-1.png, /images/pony-scenarios-mobile-eng-1@2x.png 2x"></picture>
+<picture class="scenarios__img3"><source type="image/webp" srcset="/images/pony-scenarios-mobile-eng-2.png, /images/pony-scenarios-mobile-eng-2@2x.png 2x"><img data-src="/images/pony-scenarios-mobile-eng-2.png" src="../../images/pony-scenarios-mobile-eng-2.png" alt="App screens" srcset="/images/pony-scenarios-mobile-eng-2.png, /images/pony-scenarios-mobile-eng-2@2x.png 2x"></picture>
+<h2 class="scenarios__title title">
+Scripts and
+<br>
+Prototypes
+</h2>
+<p class="scenarios__text text text--scenarios">
+In the global business scenario, there are 3
+<br class="deskot-br">
+roles assumed: courier, client and dispatcher. However, this particular system is intended for use only by the dispatcher.
+</p>
+<p class="scenarios__text text">Global use case:</p>
+<ol class="scenarios__list">
+<li class="scenarios__item">courier brings parcels to the order hand-out point;</li>
+<li class="scenarios__item">dispatcher confirms receipt of the parcels by scanning the barcode;</li>
+<li class="scenarios__item">
+global status of the parcel changes
+<br class="mobile-br">
+to: “Delivered to the orders hand-out point”;
+</li>
+<li class="scenarios__item">client receives a notification that his order is delivered;</li>
+<li class="scenarios__item">client arrives at the pick-up point and shows the dispatcher a bar code or the order number;</li>
+<li class="scenarios__item">
+<span class="scenarios__item-shape"></span>
+dispatcher confirms the delivery of the order by scanning the bar code or entering the order number manually.
+</li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section class="iconography">
+<div class="iconography__bg">
+<div class="container">
+<div class="iconography__inner points points--iconography">
+<svg class="iconography__logo-words" xmlns="http://www.w3.org/2000/svg" width="2468" height="830" fill="none" viewBox="0 0 2468 830">
+<path fill="#008752" fill-opacity=".1" fill-rule="evenodd" d="M615.341 11H215.05L0 817h193.758l68.135-257.325h149.044l119.236 255.198h225.696L619.6 527.776c121.365-36.153 221.437-119.093 255.505-248.818 21.292-78.686 10.646-142.486-25.551-187.145C804.841 40.773 726.06 11 615.341 11zm61.747 274.339c-19.163 70.179-85.168 116.965-178.853 116.965H302.348L364.095 170.5h191.628c93.686 0 142.657 38.279 121.365 114.839z" clip-rule="evenodd" />
+<path fill="#008752" fill-opacity=".1" d="M1083.84 11H1745l-42.52 157.372h-469.82l-44.65 163.752h414.55l-42.51 157.372h-414.56l-44.64 170.132h476.2L1534.54 817H867l216.84-806zM1640 700.18l146.87-125.565c63.85 59.59 136.23 97.898 236.27 97.898 78.75 0 134.09-29.795 146.87-78.744 12.77-44.692-12.78-68.102-149-102.154-166.03-40.436-268.2-87.256-223.5-249C1835.83 95.769 1991.21 0 2170.01 0c127.71 0 227.75 36.18 297.99 102.154l-136.23 134.077c-63.85-48.949-131.97-78.744-206.46-78.744-74.5 0-121.33 31.923-131.97 72.359-14.9 53.205 19.15 70.231 161.77 106.41C2321.13 378.821 2406.27 438.41 2367.96 581c-42.57 159.615-200.08 249-389.52 249-131.97 0-255.43-44.692-338.44-129.82" />
+</svg>
+<div class="iconography__arrow"></div>
+<h2 class="iconography__title title">Iconography</h2>
+<p class="iconography__text text text--iconography">We put emphasis on the visual components to improve the intuitive perception of how the functions work. We’ve designed a custom set of icons and conducted a research within the target audience to understand their associations and check whether their perception of the icons’ purpose is correct.</p>
+<ul class="iconography__list">
+<li class="iconography__item">
+<img class="iconography__item-img" data-src="/images/pony-iconography-icon-1.svg" src="../../images/pony-iconography-icon-1.svg" alt="mail icon">
+</li>
+<li class="iconography__item">
+<img class="iconography__item-img" data-src="/images/pony-iconography-icon-2.svg" src="../../images/pony-iconography-icon-2.svg" alt="icon">
+</li>
+<li class="iconography__item">
+<img class="iconography__item-img" data-src="/images/pony-iconography-icon-3.svg" src="../../images/pony-iconography-icon-3.svg" alt="icon">
+</li>
+<li class="iconography__item">
+<img class="iconography__item-img" data-src="/images/pony-iconography-icon-4.svg" src="../../images/pony-iconography-icon-4.svg" alt="icon">
+</li>
+<li class="iconography__item">
+<img class="iconography__item-img" data-src="/images/pony-iconography-icon-5.svg" src="../../images/pony-iconography-icon-5.svg" alt="icon">
+</li>
+<li class="iconography__item">
+<img class="iconography__item-img" data-src="/images/pony-iconography-icon-6.svg" src="../../images/pony-iconography-icon-6.svg" alt="icon">
+</li>
+<li class="iconography__item">
+<img class="iconography__item-img" data-src="/images/pony-iconography-icon-7.svg" src="../../images/pony-iconography-icon-7.svg" alt="icon">
+</li>
+<li class="iconography__item">
+<img class="iconography__item-img" data-src="/images/pony-iconography-icon-8.svg" src="../../images/pony-iconography-icon-8.svg" alt="icon">
+</li>
+</ul>
+<picture class="iconography__img"><source type="image/webp" srcset="/images/pony-iconography-1.png, /images/pony-iconography-1@2x.png 2x"><img data-src="/images/pony-iconography-1.png" src="../../images/pony-iconography-1.png" alt="Pen and notebook with plant" srcset="/images/pony-iconography-1.png, /images/pony-iconography-1@2x.png 2x"></picture>
+</div>
+</div>
+</div>
+</section>
+<section class="interface-design">
+<div class="interface-design__bg">
+<div class="container">
+<div class="interface-design__inner points points--design">
+<svg class="interface-design__logo-words" xmlns="http://www.w3.org/2000/svg" width="1955" height="804" fill="none" viewBox="0 0 1955 804">
+<path fill="#008752" fill-rule="evenodd" d="M396.244 0H217.295L0 804h191.731l136.342-510.476L615.669 804h164.036L997 0H807.4L673.188 495.587 396.244 0zM1086 0l206.6 487.079L1207.4 804h193.83l85.19-321.175L1955 0h-219.38L1435.3 323.302 1311.77 0H1086z" clip-rule="evenodd" />
+</svg>
+<h2 class="interface-design__title title">Interface design</h2>
+<p class="interface-design__text text text--design">
+During the UI design, we’ve put emphasis on the most frequently used functions, such as: hand-out, receiving, returning and accounting. Obviously, we’ve made big buttons (do not forget about the target audience age) and made sure that all the alerts are clear and eye-catching so that the user won’t miss them, for example:
+<br class="desktop-br">
+the dispatcher receives a bright red
+<br class="desktop-br">
+alert in case of unsuccessful scanning.
+</p>
+<picture class="interface-design__img"><source type="image/webp" srcset="/images/pony-interface-1-eng.png, /images/pony-interface-1-eng@2x.png 2x"><img data-src="/images/pony-interface-1-eng.png" src="../../images/pony-interface-1-eng.png" alt="App screens" srcset="/images/pony-interface-1-eng.png, /images/pony-interface-1-eng@2x.png 2x"></picture>
+</div>
+</div>
+</div>
+</section>
+<section class="realization">
+<div class="container">
+<div class="realization__inner points points--realization arrow arrow--realization">
+<svg class="realization__logo-words" xmlns="http://www.w3.org/2000/svg" width="1777" height="806" fill="none" viewBox="0 0 1777 806">
+<path fill="#E5F3EE" d="M216.874 0H876l-42.524 157.372H365.709l-44.651 163.752h412.486l-42.525 157.372H278.534l-44.651 170.132h476.272L667.631 806H0L216.874 0zM1151.2 395.557L963.886 0h225.624l112.82 261.578L1557.76 0H1777l-398.04 393.43L1574.79 806h-225.63L1225.7 529.536 953.243 806H734l417.2-410.443z" />
+</svg>
+<div class="realization__arrow"></div>
+<picture class="realization__img"><source type="image/webp" srcset="/images/pony-business-1-eng.png, /images/pony-business-1-eng@2x.png 2x"><img data-src="/images/pony-business-1-eng.png" src="../../images/pony-business-1-eng.png" alt="App screen" srcset="/images/pony-business-1-eng.png, /images/pony-business-1-eng@2x.png 2x"></picture>
+<h2 class="realization__title realization__title--en title">Project implementation</h2>
+<p class="realization__text text text--realization">The team who worked on the project consisted of 4 specialists: a manager, a designer and 2 developers. It was developed with React Native. As a result, we came up with a small but very useful product which helps you optimize the process of tracking the status of the order. Plus, it enables PonyExpress to easily expand the number of order pick-up points and strengthen its position in the logistics market.</p>
+</div>
+</div>
+</section>
+<footer id="footer" class="footer js-flexible-height js-flexible-height--theme2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer__container">
+<div class="footer__inner">
+<div class="footer__top-wrapper">
+<div class="footer__left-wrap">
+<svg class="footer__logo" width="164" height="30" viewBox="0 0 164 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M43.7921 3.02539H34.8721V26.7525H40.2578V19.2954H43.7921C48.4373 19.2954 52.039 15.6686 52.039 11.1604C52.039 6.65225 48.4373 3.02539 43.7921 3.02539ZM43.7921 14.211H40.2578V8.10978H43.7921C45.4415 8.10978 46.6533 9.43172 46.6533 11.1604C46.6533 12.8891 45.4415 14.211 43.7921 14.211Z" fill="white" />
+<path d="M65.7673 9.80457V19.0582C65.7673 21.4648 64.4882 22.5494 62.6369 22.5494C61.0212 22.5494 59.7084 21.5665 59.7084 19.4649V9.80457H54.6593V20.2106C54.6593 24.7866 57.5541 27.2271 60.9538 27.2271C63.1754 27.2271 64.8585 26.4136 65.7673 25.1594V26.7525H70.8164V9.80457H65.7673Z" fill="white" />
+<path d="M79.9051 12.8213V9.80457H74.856V26.7525H79.9051V19.0921C79.9051 15.7364 82.8672 14.889 84.9542 15.2279V9.46561C82.8335 9.46561 80.5783 10.5503 79.9051 12.8213Z" fill="white" />
+<path d="M92.7001 12.8213V9.80457H87.651V26.7525H92.7001V19.0921C92.7001 15.7364 95.6622 14.889 97.7492 15.2279V9.46561C95.6285 9.46561 93.3733 10.5503 92.7001 12.8213Z" fill="white" />
+<path d="M118.959 9.80457L116.536 18.8887L113.91 9.80457H109.198L106.572 18.8887L104.149 9.80457H98.7629L104.149 26.7525H108.861L111.554 17.7023L114.247 26.7525H118.959L124.345 9.80457H118.959Z" fill="white" />
+<path d="M130.539 20.3123H142.488C142.623 19.6683 142.69 18.9904 142.69 18.2786C142.69 13.1603 139.055 9.33003 134.14 9.33003C128.822 9.33003 125.187 13.2281 125.187 18.2786C125.187 23.329 128.755 27.2271 134.511 27.2271C137.708 27.2271 140.199 26.0407 141.849 23.7358L137.809 21.397C137.136 22.1427 135.958 22.685 134.578 22.685C132.727 22.685 131.178 22.0749 130.539 20.3123ZM130.438 16.516C130.909 14.7873 132.188 13.8382 134.107 13.8382C135.621 13.8382 137.136 14.55 137.675 16.516H130.438Z" fill="white" />
+<path d="M155.955 9.33003C153.7 9.33003 152.05 10.1096 150.94 11.3977V3.02539H145.891V26.7525H150.94V25.1594C152.05 26.4475 153.7 27.2271 155.955 27.2271C160.365 27.2271 164 23.329 164 18.2786C164 13.2281 160.365 9.33003 155.955 9.33003ZM154.945 22.4139C152.623 22.4139 150.94 20.8207 150.94 18.2786C150.94 15.7364 152.623 14.1432 154.945 14.1432C157.268 14.1432 158.951 15.7364 158.951 18.2786C158.951 20.8207 157.268 22.4139 154.945 22.4139Z" fill="white" />
+<path d="M16.0866 30L29.567 0H24.6005L11.1201 30H16.0866Z" fill="white" />
+<path d="M4.89843 30L18.1941 0H13.2957L0 30H4.89843Z" fill="white" />
+</svg>
+<div class="footer__sublogo">
+Software development company.
+</div>
+<div class="footer__divider"></div>
+<ul class="footer__contacts">
+<li class="footer__phone">
+<a id="gtm-footer-tel" class="contacts__item-link contacts__item-link--tel" href="tel:+14844608069" rel="noreferrer noopener" target="_blank" onclick="ym(52342033,'reachGoal','CLK_PHONE_CALL'); return true;">
++1 484 460-80-69
+</a>
+</li>
+<li class="footer__mail">
+<a class="contacts__item-link" href="../../cdn-cgi/l/email-protection.html#50383910202522222735327e333f3d" rel="noreferrer noopener" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_EMAIL'); return true;">
+<span class="__cf_email__" data-cfemail="5e36371e2e2b2c2c293b3c703d3133">[email&#160;protected]</span>
+</a>
+</li>
+<li class="footer__messengers">
+<a class="contacts__telegram contacts__link-item" href="https://t.me/purrweb_agency" rel="noreferrer noopener" data-no-router="true" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_TELEGRAM'); return true;">
+<div class="contacts__item-img">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" fill="none" viewbox="0 0 24 21">
+<path fill="#fff" d="M.424 10.02l5.53 2.064 2.14 6.883a.651.651 0 0 0 1.034.312l3.083-2.513a.92.92 0 0 1 1.121-.032l5.56 4.037a.652.652 0 0 0 1.021-.394L23.986.786a.652.652 0 0 0-.873-.741L.417 8.8a.652.652 0 0 0 .007 1.22zm7.326.965l10.807-6.657c.195-.119.394.144.228.298l-8.92 8.292a1.849 1.849 0 0 0-.573 1.106l-.304 2.252c-.04.3-.462.33-.545.04l-1.169-4.107a1.088 1.088 0 0 1 .476-1.224z" />
+</svg>
+</div>
+Telegram
+</a>
+<a class="contacts__whatsap contacts__link-item js-whatsapp-link footer__whatsap" rel="noreferrer noopener" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_WHATSAPP'); return true;">
+<div class="contacts__item-img">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewbox="0 0 24 24">
+<path fill="#fff" d="M12.003 0h-.006C5.38 0 0 5.382 0 12c0 2.625.846 5.058 2.284 7.034L.79 23.49l4.613-1.474A11.896 11.896 0 0 0 12.003 24C18.619 24 24 18.616 24 12c0-6.617-5.38-12-11.997-12zm6.982 16.945c-.289.818-1.438 1.496-2.354 1.694-.628.134-1.447.24-4.204-.903-3.526-1.461-5.797-5.045-5.974-5.277-.17-.232-1.425-1.897-1.425-3.62 0-1.722.875-2.56 1.227-2.92.29-.295.768-.43 1.227-.43.148 0 .282.007.402.013.352.015.53.036.762.593.29.697.994 2.419 1.079 2.596.085.177.17.417.05.65-.112.24-.211.346-.388.55-.177.204-.345.36-.522.579-.162.19-.345.394-.141.747.204.345.909 1.495 1.947 2.42 1.34 1.192 2.426 1.573 2.814 1.735.29.12.635.091.846-.133.269-.29.6-.77.938-1.243.24-.338.543-.38.86-.26.324.112 2.039.96 2.391 1.135.353.177.585.261.671.41.084.148.084.845-.206 1.664z" />
+</svg>
+</div>
+WhatsApp
+</a>
+</li>
+</ul>
+</div>
+<div class="footer__right-wrap">
+<div class="footer__title">
+Fill in and get a quote
+</div>
+<iframe id="hidden_iframe" name="hidden_iframe" style="display:none;"></iframe>
+<form class="footer__form js-footer-form" name="contact-form" target="hidden_iframe" onsubmit="ym(52342033, 'reachGoal', 'FORM_OUT'); return true">
+<div class="footer__form-wrapper">
+<input class="footer__form-field footer__form-name js-field-name" type="text" name="entry.1228031061" aria-label="Name input field" placeholder="Name" required autocomplete="on">
+<input class="footer__form-field js-phone-input" type="tel" name="entry.1413156463" aria-label="Phone input field" placeholder="Phone number" required autocomplete="on" minlength="4" maxlength="20">
+</div>
+<input class="footer__form-field footer__form-email" type="email" name="entry.1893682035" aria-label="Email input field" placeholder="test@purrweb.com" required autocomplete="on">
+<textarea class="footer__form-field footer__form-field--area" name="entry.772928921" aria-label="Descriptions input field" placeholder="Project details"></textarea>
+<input class="footer__form-hidden" type="hidden" name="entry.481086178" value="Purrweb123!">
+<input type="hidden" class="js-client-id" name="entry.1458439335">
+<input type="hidden" id="counter-id" name="entry.273292564" value="52342033">
+<input type="hidden" class="js-entry-page" name="entry.1965512787" value>
+<input type="hidden" id="footer__form-token" name="token">
+<input class="footer__form-type footer__page-link" type="hidden" name="entry.281637821" value="footer-form-main-en ">
+<div class="footer__form-wrapper">
+<p class="footer__form-captcha-wrapper">
+This site is protected by reCAPTCHA and the Google
+<a class="footer__form-captcha-link" rel="nofollow noreferrer noopener" href="../../privacy-policy" target="_blank">Privacy Policy</a> and
+<a class="footer__form-captcha-link" rel="nofollow noreferrer noopener" href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
+</p>
+<button id="order-form-btn" class="footer__form-btn rising-btn rising-btn--theme2" onclick="ym(52342033, 'reachGoal', 'CLK_SUCCESS'); return true;">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span id="gtm-footer-submit" class="rising-btn__text footer__btn-width--eng">
+Send
+</span>
+</span>
+</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<div class="footer__bottom-wrapper">
+<div class="footer__services js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+SERVICES
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../services/mvp" class="footer__link">MVP development services</a>
+</li>
+<li class="footer__item">
+<a href="../../services/ui-ux" class="footer__link">UI/UX Design</a>
+</li>
+<li class="footer__item">
+<a href="../../services/mobile-development" class="footer__link">Mobile Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/web-development-services" class="footer__link">Web Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/project-management-consulting-company" class="footer__link">Project Management</a>
+</li>
+<li class="footer__item">
+<a href="../../services/software-development-for-startups" class="footer__link">Software Development for
+Startups</a>
+</li>
+<li class="footer__item">
+<a href="../../services/progressive-web-app" class="footer__link">PWA</a>
+</li>
+</ul>
+</div>
+<div class="footer__otrasli js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+INDUSTRIES
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../services/terminal" class="footer__link">POS Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/marketplace" class="footer__link">Marketplace</a>
+</li>
+<li class="footer__item">
+<a href="../../services/finance" class="footer__link">Financial</a>
+</li>
+<li class="footer__item">
+<a href="../../services/travel" class="footer__link">Travel</a>
+</li>
+<li class="footer__item">
+<a href="../../services/tv-app-development" class="footer__link">SMART TV</a>
+</li>
+<li class="footer__item">
+<a href="../../services/health" class="footer__link">Healthcare</a>
+</li>
+<li class="footer__item">
+<a href="../../services/media" class="footer__link">Media</a>
+</li>
+<li class="footer__item">
+<a href="../../services/wellness" class="footer__link">Wellness</a>
+</li>
+</ul>
+</div>
+<div class="footer__outsourcing footer__outsourcing--eng js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+INSIGHTS
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a class="footer__link" href="../../blog/stock-trading-app-development">How To Build Stock Trading App</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/how-much-does-ecommerce-app-development-cost">eCommerce App
+Development Cost</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/healthcare-mobile-app-development">Healthcare Mobile App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/telehealth-app-development-features-benefits-costs">Telemedicine
+App Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/how-to-develop-an-iot-app-features-benefits-costs">IOT App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/grocery-delivery-app-development">Grocery Delivery App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/doctor-appointment-app-development-features-benefits-costs">Doctor
+Appointment Booking App Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/mobile-app-development-for-banking">Banking App Development</a>
+</li>
+</ul>
+</div>
+<div class="footer__stack js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+TECH STACK
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../technologies" class="footer__link">Tech stack</a>
+</li>
+<li class="footer__item">
+<a href="../../services/react-native" class="footer__link">React Native Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/react-native-game-development" class="footer__link">React Native Game
+Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/electron" class="footer__link">Electron JS</a>
+</li>
+<li class="footer__item">
+<a href="../../services/react-js" class="footer__link">React.js</a>
+</li>
+<li class="footer__item">
+<a href="../../services/webrtc" class="footer__link">WebRTC Development</a>
+</li>
+</ul>
+<div class="footer__ofice footer__ofice--pc">
+<h3 class="footer__ofice-caption">
+OFFICES
+</h3>
+<div class="footer__item footer__item--ofice">
+US 340 S LEMON AVE #9923 WALNUT,<br> CA 91789
+</div>
+</div>
+</div>
+<div class="footer__company js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+COMPANY
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../about" class="footer__link">About us</a>
+</li>
+<li class="footer__item">
+<a href="../../contacts" class="footer__link">Contacts</a>
+</li>
+<li class="footer__item">
+<a href="../../reviews" class="footer__link">Reviews</a>
+</li>
+<li class="footer__item">
+<a href=".." class="footer__link">Portfolio</a>
+</li>
+<li class="footer__item">
+<a href="../../blog" class="footer__link">Blog</a>
+</li>
+</ul>
+<div class="footer__address footer__address--eng footer__address--pc">
+<address>
+Compass Building, <br> Al Shohada Road, <br> AL Hamra Industrial Zone-FZ, Ras Al Khaimah, UAE
+</address>
+</div>
+</div>
+<div class="footer__ofice footer__ofice--mobile">
+<h3 class="footer__ofice-caption">
+OFFICES
+</h3>
+<address class="footer__item footer__item--ofice">
+US 340 S LEMON AVE 9923 WALNUT, CA 91789
+</address>
+<address class="footer__address footer__address--mobile">
+Compass Building, Al Shohada Road, <br> AL Hamra Industrial Zone-FZ, Ras Al Khaimah, UAE
+</address>
+</div>
+</div>
+<div class="footer__divider"></div>
+<div class="footer__bottom">
+<div class="footer__terms">
+<a href="../../privacy-policy" class="footer__terms--policy">Privacy Policy</a>
+<a href="https://policies.google.com/terms" target="_blank" class="footer__terms--term">Terms Of Services</a>
+</div>
+<div class="footer__rights">
+© 2023 Purrweb. All rights reserved
+</div>
+</div>
+</div>
+</div>
+</footer>
+<button class="btn-up js-btn-up" title="Go to the top of the page">
+<svg width="22" height="42" viewbox="0 0 22 42" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 29L11 41M11 41L1 29M11 41V0" />
+</svg>
+</button>
+<div class="popup-form js-form-popup">
+<div class="popup-form__inner">
+<p class="popup-form__text">Thanks for your inquiry. It usually take up to 24 hours to get back with reply.</p>
+<p class="popup-form__text">Wanna schedule an online meeting?</p>
+<button class="popup-form__close js-form-popup-btn">X</button>
+<button class="popup-form__btn js-form-popup-btn">
+<link href="../../../assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../../../assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<a href onclick="Calendly.initPopupWidget({url: 'https://calendly.com/purrweb_agency/initial_discussion?primary_color=5c3bfe'});return false;">Book
+the time slot!</a>
+</button>
+</div>
+</div>
+
+</div>
+
+<div class="idea-modal js-idea-modal" style="display: none;">
+<div class="idea-modal__content">
+<span class="idea-modal__title">
+Curious about the project cost?
+</span>
+<a href="#footer" class="idea-modal__button rising-btn rising-btn--theme3 js-scroll-to">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span id="gtm-idea-popup" class="rising-btn__text idea-modal__button-text">
+Fill in the form!
+</span>
+</span>
+</span></a>
+</div>
+<button class="idea-modal__close js-idea-modal__close" id="CLS-BTN-POPUP">
+X
+</button>
+</div>
+
+<script>
+    if (window.innerWidth >= 1024) {
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+          '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-W4BS3VM');
+
+    } else if (window.innerWidth < 1024) {
+      var firedTG = false;
+      window.addEventListener('scroll', () => {
+        if (firedTG === false) {
+          firedTG = true;
+          setTimeout(() => {
+            (function (w, d, s, l, i) {
+              w[l] = w[l] || [];
+              w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+              });
+              var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+              j.async = true;
+              j.src =
+                '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+              f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-W4BS3VM');
+          }, 0)
+        }
+      });
+    }
+  </script>
+
+
+
+<script type="text/javascript">
+    var firedRec = false;
+    window.addEventListener('scroll', () => {
+      if (firedRec === false) {
+        firedRec = true;
+        (function (d, w) {
+          var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "../../../www.google.com/recaptcha/api6c91.js?render=6LdBWnwaAAAAADC4FEa3p5JPq12UcmBuQPHl-0Iz";
+          if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+          } else { f(); }
+        })(document, window);
+      }
+    });
+  </script>
+
+
+
+<script async type="text/javascript">
+    (function () {
+      var PM_YM_COUNTER = 52342033;
+      var ee = setInterval(function () {
+        if (typeof window.ym != 'undefined') {
+          let clientInputs = document.querySelectorAll('.js-client-id');
+          for (let clientInput of clientInputs) {
+            ym(PM_YM_COUNTER, 'getClientID', function (clientID) {
+              clientInput.value = clientID;
+            })
+          }
+
+          clearInterval(ee);
+        } else {
+          console.log('Метрика не инициализирована');
+        }
+      }, 1000); // 0,5 секунды ждать, изменить на свое значение, 1 сек = 1000
+    })();
+  </script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZM1DZX38E"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-5ZM1DZX38E');
+  </script>
+<script src="../../common.4d9224ab871b2d75ac93.js"></script><script src="../../pony-express.4d9224ab871b2d75ac93.js"></script></body>
+
+<!-- Mirrored from www.purrweb.com/portfolio/pony-express/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Nov 2023 15:09:37 GMT -->
+</html>

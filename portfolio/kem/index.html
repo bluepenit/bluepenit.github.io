@@ -1,0 +1,1676 @@
+ 
+
+	<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.purrweb.com/portfolio/kem/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Nov 2023 15:19:15 GMT -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Mobile banking app development for a Kuwaiti startup</title>
+<meta name="description" content="How we developed a banking app for a Kuwaiti startup in 60 hours">
+<meta name="google-site-verification" content="YgG-iu_ngX9WM8Ulia3B7gYVqrEBLf9-GQ22HbQ7Jiw">
+<meta name="yandex-verification" content="4057b113a73e6486">
+<meta name="facebook-domain-verification" content="0cpowng2vyna7cecrsh180pvpcll09">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mobile banking app development for a Kuwaiti startup">
+<meta property="og:description" content="How we developed a banking app for a Kuwaiti startup in 60 hours">
+<meta property="og:image" content="../../images/og-image.png">
+<meta property="og:site_name" content="Purrweb">
+<meta property="og:url" content="index.html">
+<meta name="twitter:title" content="Mobile banking app development for a Kuwaiti startup">
+<meta name="twitter:description" content="How we developed a banking app for a Kuwaiti startup in 60 hours">
+<meta name="twitter:image:src" content="../../images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@purrweb">
+<meta name="twitter:creator" content="@purrweb">
+<link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5c3bfe">
+<link rel="canonical" href="index.html">
+<meta name="msapplication-TileColor" content="#5c3bfe">
+<meta name="theme-color" content="#ffffff">
+<link rel="alternate" hreflang="ru" href="../../ru/portfolio/kem/index.html">
+<link rel="alternate" hreflang="en" href="index.html">
+
+
+
+
+<meta name="google-site-verification" content="iAswyHNCt6kecOwxsuLaxgVNXaFS1GEwMiCJajfQ4dI">
+
+<link href="../../common.4d9224ab871b2d75ac93.css" rel="stylesheet"><link href="../../kem.4d9224ab871b2d75ac93.css" rel="stylesheet"></head>
+<body class="js-disable-transition">
+<aside class="cookie hide-cookie" id="pjAcceptCookieBar">
+<div class="container pjAcceptCookieBarShell">
+<form action="#" method="post" class="cookie__inner">
+<p class="cookie__text">
+We use cookies to boost your experience on our website and ensure it functions properly. It also
+helps us with analytics — is that OK, isn’t it? :)
+</p>
+<div class="pjAcceptCookieBarActions">
+<button type="button" class="pjAcceptCookieBarBtn cookie__btn">
+Sure! I’m fine with it
+</button>
+</div>
+</form>
+</div>
+</aside>
+<header class="header js-header">
+<div class="container">
+<nav class="header__inner">
+<a class="header__logo" href="../../index.html">
+<svg xmlns="http://www.w3.org/2000/svg" width="164" height="30" fill="none" viewbox="0 0 164 30">
+<path fill="#fff" d="M43.688 3.025H34.79v23.728h5.373v-7.458h3.526c4.634 0 8.227-3.626 8.227-8.135 0-4.508-3.593-8.135-8.227-8.135zm0 11.186h-3.526V8.11h3.526c1.646 0 2.854 1.322 2.854 3.05 0 1.73-1.208 3.051-2.854 3.051zM65.612 9.805v9.253c0 2.407-1.277 3.491-3.124 3.491-1.611 0-2.921-.982-2.921-3.084v-9.66H54.53V20.21c0 4.576 2.888 7.016 6.28 7.016 2.216 0 3.895-.813 4.802-2.068v1.594h5.037V9.805h-5.037zM79.716 12.821V9.805h-5.037v16.947h5.037v-7.66c0-3.356 2.955-4.203 5.037-3.864V9.466c-2.115 0-4.365 1.084-5.037 3.355zM92.48 12.821V9.805h-5.036v16.947h5.037v-7.66c0-3.356 2.955-4.203 5.037-3.864V9.466c-2.116 0-4.366 1.084-5.037 3.355zM118.678 9.805l-2.418 9.084-2.619-9.084h-4.701l-2.62 9.084-2.418-9.084h-5.373l5.373 16.947h4.702l2.686-9.05 2.687 9.05h4.701l5.373-16.947h-5.373zM130.23 20.312h11.921a9.894 9.894 0 0 0 .202-2.033c0-5.119-3.627-8.949-8.53-8.949-5.306 0-8.932 3.898-8.932 8.949 0 5.05 3.559 8.948 9.302 8.948 3.19 0 5.675-1.186 7.32-3.491l-4.029-2.339c-.672.746-1.847 1.288-3.224 1.288-1.847 0-3.392-.61-4.03-2.373zm-.101-3.796c.471-1.729 1.747-2.678 3.661-2.678 1.511 0 3.022.712 3.559 2.678h-7.22zM155.587 9.33c-2.25 0-3.896.78-5.004 2.068V3.025h-5.037v23.728h5.037v-1.594c1.108 1.289 2.754 2.068 5.004 2.068 4.399 0 8.026-3.898 8.026-8.948 0-5.05-3.627-8.949-8.026-8.949zm-1.008 13.084c-2.317 0-3.996-1.593-3.996-4.135 0-2.543 1.679-4.136 3.996-4.136s3.996 1.593 3.996 4.136c0 2.542-1.679 4.135-3.996 4.135zM16.049 30L29.497 0h-4.955L11.094 30h4.955zM4.887 30L18.15 0h-4.887L0 30h4.887z" />
+</svg>
+<span class="visually-hidden">Purrweb logo</span>
+</a>
+
+<ul class="header__list js-menu">
+<li class="header__item header__item-portfolio">
+<a class="header__item-link" href="/" onclick="ym(52342033, 'reachGoal', 'CLK_PROJECTS'); return true;">
+Projects
+</a>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Technologies
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__dropmenu-inner">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--technologies">
+
+<a href="../../services/react-native/index.html" class="header__dropmenu-ref">
+React Native
+</a>
+<a href="../../services/react-js/index.html" class="header__dropmenu-ref">
+React.js
+</a>
+<a href="../../services/electron/index.html" class="header__dropmenu-ref">
+Electron.js
+</a>
+<a href="../../services/webrtc/index.html" class="header__dropmenu-ref">
+WebRTC
+</a>
+<a href="../../services/progressive-web-app/index.html" class="header__dropmenu-ref">
+PWA
+</a>
+<a href="../../services/react-native-game-development/index.html" class="header__dropmenu-ref">
+Mobile Games
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="header__divider"></div>
+<a href="../../technologies/index.html" class="header__dropmenu-main-ref">
+Tech Stack
+</a>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Services
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu header__dropmenu--services" id="dropdown2">
+<div class="header__dropmenu-inner">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Development
+</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--dev">
+<a href="../../services/mobile-development/index.html" class="header__dropmenu-ref">
+Mobile App Development
+</a>
+<a href="../../services/web-development-services/index.html" class="header__dropmenu-ref">
+Web Development
+</a>
+<a href="../../services/ux-audit/index.html" class="header__dropmenu-ref">
+UX Audit
+</a>
+
+
+
+
+
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--dev2">
+
+
+
+<a href="../../services/software-development-for-startups/index.html" class="header__dropmenu-ref">
+Software Development for Startups
+</a>
+<a href="../../services/crossplatform/index.html" class="header__dropmenu-ref">
+Cross-Platform Development
+</a>
+<a href="../../services/mvp/index.html" class="header__dropmenu-ref">
+MVP
+</a>
+
+
+
+</div>
+</div>
+</div>
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Design</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--design">
+<a href="../../services/ui-ux/index.html" class="header__dropmenu-ref">
+UI/UX
+</a>
+
+
+
+
+</div>
+</div>
+</div>
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Management
+</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--management">
+
+<a href="../../services/project-management-consulting-company/index.html" class="header__dropmenu-ref">
+Project Management
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="header__divider"></div>
+<a href="../../services/index.html" class="header__dropmenu-main-ref">
+Software Development Services
+</a>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Industries
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries">
+<a href="../../services/travel/index.html" class="header__dropmenu-ref">
+Travel
+</a>
+<a href="../../services/health/index.html" class="header__dropmenu-ref">
+Healthcare
+</a>
+<a href="../../services/tv-app-development/index.html" class="header__dropmenu-ref">
+Smart TV
+</a>
+<a href="../../services/logistics/index.html" class="header__dropmenu-ref">
+Logistics
+</a>
+<a href="../../services/wellness/index.html" class="header__dropmenu-ref">
+Wellness
+</a>
+<a href="../../services/terminal/index.html" class="header__dropmenu-ref">
+POS
+</a>
+<a href="../../services/custom-ecommerce/index.html" class="header__dropmenu-ref">
+Custom Ecom Apps
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries2">
+<a href="../../services/events/index.html" class="header__dropmenu-ref">
+Events
+</a>
+<a href="../../services/marketplace/index.html" class="header__dropmenu-ref">
+Marketplace
+</a>
+<a href="../../services/estate/index.html" class="header__dropmenu-ref">
+Real Estate
+</a>
+<a href="../../services/media/index.html" class="header__dropmenu-ref">
+Social Media
+</a>
+<a href="../../services/finance/index.html" class="header__dropmenu-ref">
+Fintech
+</a>
+<a href="../../services/iot/index.html" class="header__dropmenu-ref">
+IoT
+</a>
+<a href="../../services/ecommerce/index.html" class="header__dropmenu-ref">
+eCommerce Development
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Development Team
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries">
+<a href="../../services/outsourcing/index.html" class="header__dropmenu-main-ref header__dropmenu-main-ref--margin-bottom">
+Outsourcing
+</a>
+<a href="../../services/dev-outsourcing/index.html" class="header__dropmenu-ref">
+Development
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries2">
+<a href="../../services/outstaffing/index.html" class="header__dropmenu-main-ref header__dropmenu-main-ref--margin-bottom">
+Outstaffing
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item header__item--blog">
+<button class="header__item-inner click-dropdown" onclick="ym(52342033, 'reachGoal', 'CLK_BLOG'); return true;">
+<div class="header__item-drop">
+Blog
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu header__dropmenu--blog">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--blog">
+<a href="../../blog/how-much-does-it-cost-to-develop-an-app/index.html" class="header__dropmenu-ref">
+How much does it cost to develop an app
+</a>
+<a href="../../blog/how-to-create-a-social-media-app-a-z-guide/index.html" class="header__dropmenu-ref">
+How to make a social media app
+</a>
+<a href="../../blog/website-redesign-cost/index.html" class="header__dropmenu-ref">
+How much does it cost to redesign a website
+</a>
+<a href="../../blog/restaurant-app-development-purrwebs-detailed-guide/index.html" class="header__dropmenu-ref">
+Restaurant mobile app development
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--blog2">
+<a href="../../blog/how-much-does-it-cost-to-develop-an-app/index.html" class="header__dropmenu-ref">
+How much does it cost to maintain an app
+</a>
+<a href="../../blog/dating-app-development/index.html" class="header__dropmenu-ref">
+Dating mobile app development
+</a>
+<a href="../../blog/how-to-hire-a-developer-for-a-startup-and-not-to-regret-about-it/index.html" class="header__dropmenu-ref">
+Hiring a developer for a startup
+</a>
+<a href="../../blog/index.html" class="header__dropmenu-ref">
+All posts
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+About
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--about">
+<a href="../../about/index.html" class="header__dropmenu-ref">
+Company
+</a>
+<a href="../../contacts/index.html" class="header__dropmenu-ref">
+Contacts
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item header__item--lang visually-hidden">
+<a class="header__item-link js-en-link" href="../../ru/portfolio/kem/index.html">Ru</a>
+</li>
+<li class="header__item header__item--request">
+<a class="rising-btn rising-btn--theme2 js-scroll-to" href="#footer" onclick="ym(52342033, 'reachGoal', 'CLK_RAQ'); return true;">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span class="rising-btn__text">
+Request a quote
+</span>
+</span>
+</span>
+</a>
+<div class="lang-popup js-lang-popup hide-lang" id="LangCookieBar">
+<p class="lang-popup__text">
+Холмс, кажется, вы в России...
+</p>
+<button class="lang-popup__close-btn js-close-popup">
+<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.50002 4.49844L9.00627 0.992188L10.0079 1.99377L6.5016 5.50002L10.0079 9.00627L9.00627 10.0079L5.50002 6.5016L1.99377 10.0079L0.992188 9.00627L4.49844 5.50002L0.992188 1.99377L1.99377 0.992188L5.50002 4.49844Z" fill="#808080" />
+</svg>
+</button>
+<div class="lang-popup__btn-wrap">
+<a href="#" class="lang-popup__btn lang-popup__btn--ru js-ru-btn">
+Переключить язык
+</a>
+<a href="#" class="lang-popup__btn lang-popup__btn--eng js-eng-btn">
+не, и так норм
+</a>
+</div>
+</div>
+</li>
+</ul>
+<button class="header__humb js-humb">
+<span class="visually-hidden">Open/close menu</span>
+</button>
+</nav>
+</div>
+</header>
+<div class="main js-main">
+<style>
+  .case-preloader {
+    transition: opacity 0.5s;
+    opacity: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    pointer-events: none;
+    background-color: #000000;
+  }
+  .case-preloader.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .prealoder-figure {
+    width: 300px;
+    height: 300px;
+  }
+</style>
+<section class="case-preloader active">
+<div class="js-lottie-preloader prealoder-figure"></div>
+</section>
+<div class="layout">
+<section class="greetings">
+<div class="greetings__container">
+<div class="greetings__header">
+<ul class="greetings__header-list">
+<li><p class="greetings__header-item">UX/UI</p></li>
+<li><p class="greetings__header-item">2023</p></li>
+<li><p class="greetings__header-item">Case</p></li>
+<li><p class="greetings__header-item">Purrweb</p></li>
+</ul>
+</div>
+<div class="greetings__body">
+<div class="greetings__left-column">
+<h1 class="greetings__title">Kem</h1>
+<p class="greetings__subtitle">
+Mobile payment platform in Kuwait
+</p>
+</div>
+<div class="greetings__picture">
+<picture class="greetings__phone-first"><source type="image/webp" srcset="/images/kem-greetings-phone1.png, /images/kem-greetings-phone1@2x.png 2x"><img data-src="/images/kem-greetings-phone1.png" src="../../images/kem-greetings-phone1.png" alt="kem main picture" srcset="/images/kem-greetings-phone1.png, /images/kem-greetings-phone1@2x.png 2x"></picture>
+<picture class="greetings__phone-second"><source type="image/webp" srcset="/images/kem-greetings-phone2.png, /images/kem-greetings-phone2@2x.png 2x"><img data-src="/images/kem-greetings-phone2.png" src="../../images/kem-greetings-phone2.png" alt="kem main picture" srcset="/images/kem-greetings-phone2.png, /images/kem-greetings-phone2@2x.png 2x"></picture>
+<div class="greetings__lottie-anim" data-name="kem-greetings-lottie"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="about">
+<div class="about__container">
+<div class="about__cards-container">
+<div class="about__info-card">
+<div class="about__info-title"><h3>about the project</h3></div>
+<div class="about__info">
+<p class="about__info-item about__info-item-first">
+KEM is an application for exchanging money. The user can send money or request it from a friend
+</p>
+<p class="about__info-item about__info-item-second">
+Clients needed an MVP that they could use to present to banks and attract investments.
+</p>
+</div>
+</div>
+<div class="about__demo-card">
+<div class="lottie-anim about__lottie-anim" data-name="kem-scene_01"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="func">
+<div class="func__container">
+<div class="func__chapter-container chapter-container">
+<h3 class="func__chapter chapter">Core functionality</h3>
+<h2 class="func__title page-title">How it works</h2>
+</div>
+<div class="func__body">
+<div class="func__cards">
+<div class="func__info-card">
+<div class="func__card-number-container">
+<p class="func__card-number func__card-number-first">1</p>
+<p class="func__card-number func__card-number-second">2</p>
+<p class="func__card-number func__card-number-third">3</p>
+<p class="func__card-number func__card-number-fourth">4</p>
+</div>
+<div class="func__info-slider">
+<p class="func__info">
+The user signs up with a phone number
+</p>
+<p class="func__info">
+Enters their credit card info. Users can have one or more cards linked to the app
+</p>
+<p class="func__info">
+Transfers money from a linked card to a person on their contact list.
+</p>
+<p class="func__info">
+Or requests the needed amount from someone in the contact list
+</p>
+</div>
+<div class="func__info-progress-container">
+<div class="func__info-progress-item func__info-progress-item-first"></div>
+<div class="func__info-progress-item func__info-progress-item-second"></div>
+<div class="func__info-progress-item func__info-progress-item-third"></div>
+<div class="func__info-progress-item func__info-progress-item-fourth"></div>
+</div>
+</div>
+<div class="func__demo-card">
+<div class="func__demo-container">
+<picture class="func__picture"><source type="image/webp" srcset="/images/kem-iphone-container.png, /images/kem-iphone-container@2x.png 2x"><img data-src="/images/kem-iphone-container.png" src="../../images/kem-iphone-container.png" alt="phone picture" srcset="/images/kem-iphone-container.png, /images/kem-iphone-container@2x.png 2x"></picture>
+<div class="func__picture-inside-container">
+<div class="lottie-anim func__picture func__picture-inside func__picture-first" data-name="kem-scene_02.1"></div>
+<picture class="func__picture func__picture-inside func__picture-second"><source type="image/webp" srcset="/images/kem-add-card.png, /images/kem-add-card@2x.png 2x"><img data-src="/images/kem-add-card.png" src="../../images/kem-add-card.png" alt="phone picture" srcset="/images/kem-add-card.png, /images/kem-add-card@2x.png 2x"></picture>
+<div class="lottie-anim func__picture func__picture-inside func__picture-third" data-name="kem-scene_02.2"></div>
+<div class="lottie-anim func__picture func__picture-inside func__picture-fourth" data-name="kem-scene_02.3"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="features">
+<div class="features__container">
+<div class="chapter-container">
+<h3 class="chapter">Features</h3>
+<h2 class="features__title page-title">Kem resembles a social network</h2>
+</div>
+<div class="features__body">
+<div class="features__phone-container">
+<svg class="features__bg" width="855" height="854" viewBox="0 0 855 854" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="427.5" cy="427" r="270.013" stroke="#33CC33" />
+<circle cx="427.023" cy="426.523" r="346.825" stroke="#33CC33" stroke-dasharray="2 2" />
+<circle id="path23" cx="427.5" cy="427" r="426.5" stroke="#33CC33" stroke-dasharray="2 16" />
+</svg>
+<picture class="features__picture-container-phone"><source type="image/webp" srcset="/images/kem-iphone-container.png, /images/kem-iphone-container@2x.png 2x"><img data-src="/images/kem-iphone-container.png" src="../../images/kem-iphone-container.png" alt="phone picture" srcset="/images/kem-iphone-container.png, /images/kem-iphone-container@2x.png 2x"></picture>
+<div class="features__picture-container">
+<picture class="features__picture features__picture-first"><source type="image/webp" srcset="/images/kem-features-first.png, /images/kem-features-first@2x.png 2x"><img data-src="/images/kem-features-first.png" src="../../images/kem-features-first.png" alt="phone picture" srcset="/images/kem-features-first.png, /images/kem-features-first@2x.png 2x"></picture>
+<picture class="features__picture features__picture-second"><source type="image/webp" srcset="/images/kem-features-second.png, /images/kem-features-second@2x.png 2x"><img data-src="/images/kem-features-second.png" src="../../images/kem-features-second.png" alt="phone picture" srcset="/images/kem-features-second.png, /images/kem-features-second@2x.png 2x"></picture>
+<picture class="features__picture features__picture-third"><source type="image/webp" srcset="/images/kem-features-third.png, /images/kem-features-third@2x.png 2x"><img data-src="/images/kem-features-third.png" src="../../images/kem-features-third.png" alt="phone picture" srcset="/images/kem-features-third.png, /images/kem-features-third@2x.png 2x"></picture>
+<picture class="features__picture features__picture-fourth"><source type="image/webp" srcset="/images/kem-features-fourth.png, /images/kem-features-fourth@2x.png 2x"><img data-src="/images/kem-features-fourth.png" src="../../images/kem-features-fourth.png" alt="phone picture" srcset="/images/kem-features-fourth.png, /images/kem-features-fourth@2x.png 2x"></picture>
+<picture class="features__picture features__picture-five"><source type="image/webp" srcset="/images/kem-features-five.png, /images/kem-features-five@2x.png 2x"><img data-src="/images/kem-features-five.png" src="../../images/kem-features-five.png" alt="phone picture" srcset="/images/kem-features-five.png, /images/kem-features-five@2x.png 2x"></picture>
+</div>
+<div class="features__line"></div>
+<div class="features__button"></div>
+<div class="features__button-second"></div>
+<div class="features__user-container-second">
+<picture class="features__user-second"><source type="image/webp" srcset="/images/kem-features-user-second.png, /images/kem-features-user-second@2x.png 2x"><img data-src="/images/kem-features-user-second.png" src="../../images/kem-features-user-second.png" alt="phone picture" srcset="/images/kem-features-user-second.png, /images/kem-features-user-second@2x.png 2x"></picture>
+<picture class="features__user-third"><source type="image/webp" srcset="/images/kem-features-user-third.png, /images/kem-features-user-third@2x.png 2x"><img data-src="/images/kem-features-user-third.png" src="../../images/kem-features-user-third.png" alt="phone picture" srcset="/images/kem-features-user-third.png, /images/kem-features-user-third@2x.png 2x"></picture>
+<picture class="features__user-fourth"><source type="image/webp" srcset="/images/kem-features-user-fourth.png, /images/kem-features-user-fourth@2x.png 2x"><img data-src="/images/kem-features-user-fourth.png" src="../../images/kem-features-user-fourth.png" alt="phone picture" srcset="/images/kem-features-user-fourth.png, /images/kem-features-user-fourth@2x.png 2x"></picture>
+</div>
+<div class="features__circle-container-first">
+<div class="features__circle-first"></div>
+<div class="features__circle-second"></div>
+</div>
+<div class="features__user-container">
+<picture class="features__user"><source type="image/webp" srcset="/images/kem-features-user-first.png, /images/kem-features-user-first@2x.png 2x"><img data-src="/images/kem-features-user-first.png" src="../../images/kem-features-user-first.png" alt="phone picture" srcset="/images/kem-features-user-first.png, /images/kem-features-user-first@2x.png 2x"></picture>
+<div class="features__button-third"></div>
+</div>
+<div class="features__info-card features__info-card-first">
+<div class="features__info">
+Every user has their own QR-code, that you can use to add somebody to the contact list
+</div>
+</div>
+<div class="features__info-card features__info-card-second">
+<div class="features__info">
+You can arrange your contact list in groups — like "Friends", "Family", "Colleagues"
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="phones">
+<div class="phones__container">
+<div class="chapter-container">
+<h2 class="phones__title page-title">Clear and friendly interface</h2>
+</div>
+<div class="phones__body-container">
+<div class="phones__body">
+<div class="phones__list-container phones__phone-list--prod phones__phone-list--prod-green">
+<div class="phones__phone-list before-background">
+</div>
+</div>
+<div class="phones__list-container phones__phone-list--prod">
+<div class="phones__phone-list before">
+<picture class="phones__phone"><source type="image/webp" srcset="/images/kem-phones-green-first.png, /images/kem-phones-green-first@2x.png 2x"><img data-src="/images/kem-phones-green-first.png" src="../../images/kem-phones-green-first.png" alt="phone picture" srcset="/images/kem-phones-green-first.png, /images/kem-phones-green-first@2x.png 2x"></picture>
+<picture class="phones__phone"><source type="image/webp" srcset="/images/kem-phones-green-second.png, /images/kem-phones-green-second@2x.png 2x"><img data-src="/images/kem-phones-green-second.png" src="../../images/kem-phones-green-second.png" alt="phone picture" srcset="/images/kem-phones-green-second.png, /images/kem-phones-green-second@2x.png 2x"></picture>
+<picture class="phones__phone"><source type="image/webp" srcset="/images/kem-phones-green-third.png, /images/kem-phones-green-third@2x.png 2x"><img data-src="/images/kem-phones-green-third.png" src="../../images/kem-phones-green-third.png" alt="phone picture" srcset="/images/kem-phones-green-third.png, /images/kem-phones-green-third@2x.png 2x"></picture>
+<picture class="phones__phone"><source type="image/webp" srcset="/images/kem-phones-green-fourth.png, /images/kem-phones-green-fourth@2x.png 2x"><img data-src="/images/kem-phones-green-fourth.png" src="../../images/kem-phones-green-fourth.png" alt="phone picture" srcset="/images/kem-phones-green-fourth.png, /images/kem-phones-green-fourth@2x.png 2x"></picture>
+</div>
+</div>
+<div class="phones__list-container">
+<div class="phones__phone-list">
+<picture class="phones__phone"><source type="image/webp" srcset="/images/kem-phones-first.png, /images/kem-phones-first@2x.png 2x"><img data-src="/images/kem-phones-first.png" src="../../images/kem-phones-first.png" alt="phone picture" srcset="/images/kem-phones-first.png, /images/kem-phones-first@2x.png 2x"></picture>
+<picture class="phones__phone"><source type="image/webp" srcset="/images/kem-phones-second.png, /images/kem-phones-second@2x.png 2x"><img data-src="/images/kem-phones-second.png" src="../../images/kem-phones-second.png" alt="phone picture" srcset="/images/kem-phones-second.png, /images/kem-phones-second@2x.png 2x"></picture>
+<picture class="phones__phone"><source type="image/webp" srcset="/images/kem-phones-third.png, /images/kem-phones-third@2x.png 2x"><img data-src="/images/kem-phones-third.png" src="../../images/kem-phones-third.png" alt="phone picture" srcset="/images/kem-phones-third.png, /images/kem-phones-third@2x.png 2x"></picture>
+<picture class="phones__phone"><source type="image/webp" srcset="/images/kem-phones-fourth.png, /images/kem-phones-fourth@2x.png 2x"><img data-src="/images/kem-phones-fourth.png" src="../../images/kem-phones-fourth.png" alt="phone picture" srcset="/images/kem-phones-fourth.png, /images/kem-phones-fourth@2x.png 2x"></picture>
+</div>
+</div>
+<div class="phones__svg">
+<svg width="18" height="661" viewBox="0 0 18 661" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.88477 7L8.88479 649.5" stroke="#33CC33" stroke-width="2" />
+<g filter="url(#filter0_d_229_20020)">
+<circle cx="9" cy="8" r="6" fill="#131313" />
+<circle cx="9" cy="8" r="5" stroke="#33CC33" stroke-width="2" />
+</g>
+<g filter="url(#filter1_d_229_20020)">
+<circle cx="9" cy="650.369" r="6" fill="#131313" />
+<circle cx="9" cy="650.369" r="5" stroke="#33CC33" stroke-width="2" />
+</g>
+<defs>
+<filter id="filter0_d_229_20020" x="0" y="0" width="18" height="18" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="1" />
+<feGaussianBlur stdDeviation="1.5" />
+<feComposite in2="hardAlpha" operator="out" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_229_20020" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_229_20020" result="shape" />
+</filter>
+<filter id="filter1_d_229_20020" x="0" y="642.369" width="18" height="18" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="1" />
+<feGaussianBlur stdDeviation="1.5" />
+<feComposite in2="hardAlpha" operator="out" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_229_20020" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_229_20020" result="shape" />
+</filter>
+</defs>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="interface">
+<div class="interface__container">
+<div class="interface__body">
+<div class="interface__left-column">
+<div class="interface__title-container">
+<h3 class="interface__title">
+Interface
+</h3>
+</div>
+<div class="interface__big-text">We added
+<p class="interface__green-text interface__green-text-first">PIN login</p>
+<p class="interface__green-text interface__green-text-second">a profile</p>
+<p class="interface__green-text interface__green-text-third"> a transaction history</p>
+<p class="interface__green-text interface__green-text-fourth">a request list</p>
+</div>
+<div class="interface__lower-text-container">
+<p class="interface__lower-text interface__lower-text-first">So that the registered users don't have to enter a phone number every time they sign in.</p>
+<p class="interface__lower-text interface__lower-text-second">Now users can fill out the information about themselves, see their contact list, customize notifications, and contact support</p>
+<p class="interface__lower-text interface__lower-text-third">Allowing users to view the entire history of their transactions</p>
+<p class="interface__lower-text interface__lower-text-fourth">This will let users keep track of their requests and send reminders to their friends</p>
+</div>
+<div class="interface__progress-container">
+<div class="interface__progress-item interface__progress-item-first"></div>
+<div class="interface__progress-item interface__progress-item-second"></div>
+<div class="interface__progress-item interface__progress-item-third"></div>
+<div class="interface__progress-item interface__progress-item-fourth"></div>
+</div>
+</div>
+<div class="interface__phone-container">
+<div class="interface__blur"></div>
+<picture class="interface__phone interface__phone-first"><source type="image/webp" srcset="/images/kem-interface-phone1.png, /images/kem-interface-phone1@2x.png 2x"><img data-src="/images/kem-interface-phone1.png" src="../../images/kem-interface-phone1.png" alt="phone picture" srcset="/images/kem-interface-phone1.png, /images/kem-interface-phone1@2x.png 2x"></picture>
+<picture class="interface__phone interface__phone-second"><source type="image/webp" srcset="/images/kem-interface-phone2.png, /images/kem-interface-phone2@2x.png 2x"><img data-src="/images/kem-interface-phone2.png" src="../../images/kem-interface-phone2.png" alt="phone picture" srcset="/images/kem-interface-phone2.png, /images/kem-interface-phone2@2x.png 2x"></picture>
+<picture class="interface__phone interface__phone-third"><source type="image/webp" srcset="/images/kem-interface-phone3.png, /images/kem-interface-phone3@2x.png 2x"><img data-src="/images/kem-interface-phone3.png" src="../../images/kem-interface-phone3.png" alt="phone picture" srcset="/images/kem-interface-phone3.png, /images/kem-interface-phone3@2x.png 2x"></picture>
+<picture class="interface__phone interface__phone-fourth"><source type="image/webp" srcset="/images/kem-interface-phone4.png, /images/kem-interface-phone4@2x.png 2x"><img data-src="/images/kem-interface-phone4.png" src="../../images/kem-interface-phone4.png" alt="phone picture" srcset="/images/kem-interface-phone4.png, /images/kem-interface-phone4@2x.png 2x"></picture>
+</div>
+</div>
+</div>
+</section>
+<section class="color">
+<div class="color__container">
+<div class="color__top-container">
+<div class="color__chapter-container chapter-container">
+<h3 class="color__chapter chapter">Color</h3>
+</div>
+<div class="color__top-right-column">
+<h2 class="color__title">
+Palette of Kem
+</h2>
+<p class="color__subtitle">At the heart of the KEM color palette is a bright combination of green and purple.</p>
+</div>
+</div>
+<div class="color__body">
+<div class="color__row">
+<div class="color__row-item color__row-item-151715"><p class="color__item-text">#151715</p></div>
+<div class="color__row-item color__row-item-8C8C8C"><p class="color__item-text">#8C8C8C</p></div>
+<div class="color__row-item color__row-item-C1C7C1"><p class="color__item-text">#C1C7C1</p></div>
+<div class="color__row-item color__row-item-DADDDA"><p class="color__item-text">#DADDDA</p></div>
+<div class="color__row-item color__row-item-EEF0EE"><p class="color__item-text">#EEF0EE</p></div>
+</div>
+<div class="color__row">
+<div class="color__row-item color__row-item-E0F7E0"><p class="color__item-text">#E0F7E0</p></div>
+<div class="color__row-item color__row-item-29A329"><p class="color__item-text">#29A329</p></div>
+<div class="color__row-item color__row-item-33CC33"><p class="color__item-text">#33CC33</p></div>
+</div>
+<div class="color__row">
+<div class="color__row-item color__row-item-5A1D6A"><p class="color__item-text">#5A1D6A</p></div>
+<div class="color__row-item color__row-item-AF42CC"><p class="color__item-text">#AF42CC</p></div>
+<div class="color__row-item color__row-item-DBAAE8"><p class="color__item-text">#DBAAE8</p></div>
+<div class="color__row-item color__row-item-E7C6F0"><p class="color__item-text">#E7C6F0</p></div>
+</div>
+<div class="color__row">
+<div class="color__row-item color__row-item-EF4444"><p class="color__item-text">#EF4444</p></div>
+<div class="color__row-item color__row-item-5D5FEF"><p class="color__item-text">#5D5FEF</p></div>
+<div class="color__row-item color__row-item-FFE297"><p class="color__item-text">#FFE297</p></div>
+</div>
+</div>
+</div>
+</section>
+<section class="icons">
+<div class="icons__container">
+<div class="icons__chapter-container chapter-container">
+<h3 class="icons__chapter chapter">Icons</h3>
+</div>
+<div class="icons__body">
+<div class="icons__item">
+<div class="lottie-anim-icon icons__item-svg" data-name="kem-icon_01"></div>
+</div>
+<div class="icons__item">
+<div class="lottie-anim-icon icons__item-svg" data-name="kem-icon_02"></div>
+</div>
+<div class="icons__item">
+<div class="lottie-anim-icon icons__item-svg" data-name="kem-icon_03"></div>
+</div>
+<div class="icons__item">
+<div class="lottie-anim-icon icons__item-svg" data-name="kem-icon_04"></div>
+</div>
+<div class="icons__item">
+<div class="lottie-anim-icon icons__item-svg" data-name="kem-icon_05"></div>
+</div>
+<div class="icons__item">
+<div class="lottie-anim-icon icons__item-svg" data-name="kem-icon_06"></div>
+</div>
+<div class="icons__item">
+<div class="lottie-anim-icon icons__item-svg" data-name="kem-icon_07"></div>
+</div>
+<div class="icons__item">
+<div class="lottie-anim-icon icons__item-svg" data-name="kem-icon_08"></div>
+</div>
+<div class="icons__item">
+<div class="lottie-anim-icon icons__item-svg" data-name="kem-icon_09"></div>
+</div>
+<div class="icons__item">
+<div class="lottie-anim-icon icons__item-svg" data-name="kem-icon_10"></div>
+</div>
+<div class="icons__item">
+<div class="lottie-anim-icon icons__item-svg" data-name="kem-icon_11"></div>
+</div>
+<div class="icons__item">
+<div class="lottie-anim-icon icons__item-svg" data-name="kem-icon_12"></div>
+</div>
+<div class="icons__item">
+<div class="lottie-anim-icon icons__item-svg" data-name="kem-icon_13"></div>
+</div>
+<div class="icons__item">
+<div class="lottie-anim-icon icons__item-svg" data-name="kem-icon_14"></div>
+</div>
+<div class="icons__item">
+<div class="lottie-anim-icon icons__item-svg" data-name="kem-icon_15"></div>
+</div>
+<div class="icons__item">
+<div class="lottie-anim-icon icons__item-svg" data-name="kem-icon_16"></div>
+</div>
+<div class="icons__item">
+<div class="lottie-anim-icon icons__item-svg" data-name="kem-icon_17"></div>
+</div>
+<div class="icons__item">
+<div class="lottie-anim-icon icons__item-svg" data-name="kem-icon_18"></div>
+</div>
+<div class="icons__item">
+<div class="lottie-anim-icon icons__item-svg" data-name="kem-icon_19"></div>
+</div>
+<div class="icons__item">
+<div class="lottie-anim-icon icons__item-svg" data-name="kem-icon_20"></div>
+</div>
+<div class="icons__item">
+<div class="lottie-anim-icon icons__item-svg" data-name="kem-icon_21"></div>
+</div>
+<div class="icons__item">
+<div class="lottie-anim-icon icons__item-svg" data-name="kem-icon_22"></div>
+</div>
+<div class="icons__item">
+<div class="lottie-anim-icon icons__item-svg" data-name="kem-icon_23"></div>
+</div>
+<div class="icons__item">
+<div class="lottie-anim-icon icons__item-svg" data-name="kem-icon_24"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="problems">
+<div class="problems__container">
+<h2 class="problems__title page-title">
+Things that can go wrong when you're working with banks
+</h2>
+<div class="problems__body">
+<div class="problems__row first-row">
+<div class="problems__card problems__card--purple">
+<p class="problems__card-title">To make money transactions, the app must have access to the banking systems via API</p>
+</div>
+<div class="problems__card"><picture class="problems__picture"><source type="image/webp" srcset="/images/kem-problems-first-graph.png, /images/kem-problems-first-graph@2x.png 2x"><img data-src="/images/kem-problems-first-graph.png" src="../../images/kem-problems-first-graph.png" alt="info icon" srcset="/images/kem-problems-first-graph.png, /images/kem-problems-first-graph@2x.png 2x"></picture></div>
+<div class="problems__card"><picture class="problems__picture"><source type="image/webp" srcset="/images/kem-problems-first-graph2.png, /images/kem-problems-first-graph2@2x.png 2x"><img data-src="/images/kem-problems-first-graph2.png" src="../../images/kem-problems-first-graph2.png" alt="info icon" srcset="/images/kem-problems-first-graph2.png, /images/kem-problems-first-graph2@2x.png 2x"></picture></div>
+</div>
+<div class="problems__row second-row">
+<div class="problems__card"><picture class="problems__picture"><source type="image/webp" srcset="/images/kem-problems-second-graph1.png, /images/kem-problems-second-graph1@2x.png 2x"><img data-src="/images/kem-problems-second-graph1.png" src="../../images/kem-problems-second-graph1.png" alt="info icon" srcset="/images/kem-problems-second-graph1.png, /images/kem-problems-second-graph1@2x.png 2x"></picture></div>
+<div class="problems__card"><picture class="problems__picture"><source type="image/webp" srcset="/images/kem-problems-second-graph.png, /images/kem-problems-second-graph@2x.png 2x"><img data-src="/images/kem-problems-second-graph.png" src="../../images/kem-problems-second-graph.png" alt="info icon" srcset="/images/kem-problems-second-graph.png, /images/kem-problems-second-graph@2x.png 2x"></picture></div>
+<div class="problems__card problems__card--green">
+<p class="problems__card-title">You need to have a permission to use it</p>
+<p class="problems__card-subtitle">Banks have a closed API, because you can access the financial data of customers through it</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="develop">
+<div class="develop__container">
+<div class="develop__card">
+<div class="develop__chapter-container chapter-container">
+<h3 class="develop__chapter chapter">Development</h3>
+</div>
+<p class="develop__card-title">Backend that works without real data</p>
+<p class="develop__card-subtitle">We developed the MVP with imaginary data. It was enough to present how the app would work to the banks, and get access to the APIs</p>
+<div class="develop__card-bottom">
+<div class="lottie-anim-bell develop__picture develop__bell" data-name="kem-icon_21"></div>
+<svg class="develop__picture develop__loading" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M27.4388 14.5499C27.3612 17.5027 26.3043 20.3493 24.4297 22.6376C22.4811 25.0161 19.7697 26.6441 16.7574 27.2443C13.7452 27.8445 10.6184 27.3799 7.90971 25.9295C5.20104 24.479 3.07804 22.1325 1.90259 19.2896C0.727146 16.4467 0.572038 13.2834 1.46372 10.3388C2.3554 7.39414 4.23865 4.85047 6.79243 3.14107C9.34619 1.43168 12.4125 0.662281 15.469 0.963872C18.4095 1.25402 21.166 2.51821 23.3048 4.55113L21.6579 6.20098C19.9007 4.54969 17.6458 3.52275 15.2414 3.28538C12.7206 3.03653 10.1918 3.67098 8.08571 5.08055C5.97967 6.4901 4.42678 8.5875 3.69147 11.0153C2.95617 13.443 3.08391 16.0511 4.05294 18.3951C5.02197 20.7391 6.77239 22.6742 9.0061 23.8705C11.2398 25.0667 13.8186 25.4501 16.3029 24.9552C18.7872 24.4604 21.0233 23.1179 22.6301 21.1567C24.163 19.2859 25.0328 16.9624 25.1099 14.5499H27.4388Z" fill="#33CC33" stroke="#1F1F1F" stroke-width="0.7" />
+</svg>
+<p class="develop__card-bottom-text">
+You can imagine how the application will work with real data
+</p>
+</div>
+</div>
+<div class="develop__right-column">
+<div class="develop__input">
+<div class="develop__input-text"></div>
+</div>
+<div class="develop__code-container">
+<div class="develop__code-item develop__code-item-first">
+<div class="develop__code-text develop__code-text-first">1</div>
+</div>
+<div class="develop__code-item develop__code-item-second">
+<div class="develop__code-text develop__code-text-second">2</div>
+</div>
+<div class="develop__code-item develop__code-item-third">
+<div class="develop__code-text develop__code-text-third">3</div>
+</div>
+<div class="develop__code-item develop__code-item-fourth">
+<div class="develop__code-text develop__code-text-fourth">4</div>
+</div>
+</div>
+<div class="develop__button-container">
+<div class="develop__button-item develop__button-item-first"><p class="develop__button-text develop__button-text-first">Send</p></div>
+<div class="develop__button-item develop__button-item-second"><p class="develop__button-text develop__button-text-second">Request</p></div>
+<div class="develop__button-active"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="conclusion">
+<svg class="conclusion__bg" width="855" height="854" viewBox="0 0 855 854" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="427.5" cy="427" r="270.013" stroke="#33CC33" />
+<circle cx="427.023" cy="426.523" r="346.825" stroke="#33CC33" stroke-dasharray="2 2" />
+<circle id="path23" cx="427.5" cy="427" r="426.5" stroke="#33CC33" stroke-dasharray="2 16" />
+</svg>
+<div class="conclusion__container">
+<div class="conclusion__header-container">
+<h2 class="conclusion__title page-title">Kem will be back</h2>
+<p class="conclusion__subtitle">We met the deadline, customers showed MVP to banks. Now we are waiting for access to the API in order to finalize the application and teach it how to transfer real money
+</p>
+</div>
+<div class="conclusion__row">
+<picture class="conclusion__picture"><source type="image/webp" srcset="/images/kem-conclusion1.png, /images/kem-conclusion1@2x.png 2x"><img data-src="/images/kem-conclusion1.png" src="../../images/kem-conclusion1.png" alt="info icon" srcset="/images/kem-conclusion1.png, /images/kem-conclusion1@2x.png 2x"></picture>
+<picture class="conclusion__picture"><source type="image/webp" srcset="/images/kem-conclusion-second.png, /images/kem-conclusion-second@2x.png 2x"><img data-src="/images/kem-conclusion-second.png" src="../../images/kem-conclusion-second.png" alt="info icon" srcset="/images/kem-conclusion-second.png, /images/kem-conclusion-second@2x.png 2x"></picture>
+<picture class="conclusion__picture"><source type="image/webp" srcset="/images/kem-conclusion3.png, /images/kem-conclusion3@2x.png 2x"><img data-src="/images/kem-conclusion3.png" src="../../images/kem-conclusion3.png" alt="info icon" srcset="/images/kem-conclusion3.png, /images/kem-conclusion3@2x.png 2x"></picture>
+<picture class="conclusion__picture"><source type="image/webp" srcset="/images/kem-conclusion4.png, /images/kem-conclusion4@2x.png 2x"><img data-src="/images/kem-conclusion4.png" src="../../images/kem-conclusion4.png" alt="info icon" srcset="/images/kem-conclusion4.png, /images/kem-conclusion4@2x.png 2x"></picture>
+<picture class="conclusion__picture"><source type="image/webp" srcset="/images/kem-conclusion5.png, /images/kem-conclusion5@2x.png 2x"><img data-src="/images/kem-conclusion5.png" src="../../images/kem-conclusion5.png" alt="info icon" srcset="/images/kem-conclusion5.png, /images/kem-conclusion5@2x.png 2x"></picture>
+<picture class="conclusion__picture"><source type="image/webp" srcset="/images/kem-conclusion6.png, /images/kem-conclusion6@2x.png 2x"><img data-src="/images/kem-conclusion6.png" src="../../images/kem-conclusion6.png" alt="info icon" srcset="/images/kem-conclusion6.png, /images/kem-conclusion6@2x.png 2x"></picture>
+<picture class="conclusion__picture"><source type="image/webp" srcset="/images/kem-conclusion7.png, /images/kem-conclusion7@2x.png 2x"><img data-src="/images/kem-conclusion7.png" src="../../images/kem-conclusion7.png" alt="info icon" srcset="/images/kem-conclusion7.png, /images/kem-conclusion7@2x.png 2x"></picture>
+<picture class="conclusion__picture"><source type="image/webp" srcset="/images/kem-conclusion1.png, /images/kem-conclusion1@2x.png 2x"><img data-src="/images/kem-conclusion1.png" src="../../images/kem-conclusion1.png" alt="info icon" srcset="/images/kem-conclusion1.png, /images/kem-conclusion1@2x.png 2x"></picture>
+<picture class="conclusion__picture"><source type="image/webp" srcset="/images/kem-conclusion-second.png, /images/kem-conclusion-second@2x.png 2x"><img data-src="/images/kem-conclusion-second.png" src="../../images/kem-conclusion-second.png" alt="info icon" srcset="/images/kem-conclusion-second.png, /images/kem-conclusion-second@2x.png 2x"></picture>
+<picture class="conclusion__picture"><source type="image/webp" srcset="/images/kem-conclusion3.png, /images/kem-conclusion3@2x.png 2x"><img data-src="/images/kem-conclusion3.png" src="../../images/kem-conclusion3.png" alt="info icon" srcset="/images/kem-conclusion3.png, /images/kem-conclusion3@2x.png 2x"></picture>
+<picture class="conclusion__picture"><source type="image/webp" srcset="/images/kem-conclusion4.png, /images/kem-conclusion4@2x.png 2x"><img data-src="/images/kem-conclusion4.png" src="../../images/kem-conclusion4.png" alt="info icon" srcset="/images/kem-conclusion4.png, /images/kem-conclusion4@2x.png 2x"></picture>
+<picture class="conclusion__picture"><source type="image/webp" srcset="/images/kem-conclusion5.png, /images/kem-conclusion5@2x.png 2x"><img data-src="/images/kem-conclusion5.png" src="../../images/kem-conclusion5.png" alt="info icon" srcset="/images/kem-conclusion5.png, /images/kem-conclusion5@2x.png 2x"></picture>
+<picture class="conclusion__picture"><source type="image/webp" srcset="/images/kem-conclusion6.png, /images/kem-conclusion6@2x.png 2x"><img data-src="/images/kem-conclusion6.png" src="../../images/kem-conclusion6.png" alt="info icon" srcset="/images/kem-conclusion6.png, /images/kem-conclusion6@2x.png 2x"></picture>
+<picture class="conclusion__picture"><source type="image/webp" srcset="/images/kem-conclusion7.png, /images/kem-conclusion7@2x.png 2x"><img data-src="/images/kem-conclusion7.png" src="../../images/kem-conclusion7.png" alt="info icon" srcset="/images/kem-conclusion7.png, /images/kem-conclusion7@2x.png 2x"></picture>
+</div>
+</div>
+</section>
+</div>
+<footer id="footer" class="footer js-flexible-height js-flexible-height--theme2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer__container">
+<div class="footer__inner">
+<div class="footer__top-wrapper">
+<div class="footer__left-wrap">
+<svg class="footer__logo" width="164" height="30" viewBox="0 0 164 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M43.7921 3.02539H34.8721V26.7525H40.2578V19.2954H43.7921C48.4373 19.2954 52.039 15.6686 52.039 11.1604C52.039 6.65225 48.4373 3.02539 43.7921 3.02539ZM43.7921 14.211H40.2578V8.10978H43.7921C45.4415 8.10978 46.6533 9.43172 46.6533 11.1604C46.6533 12.8891 45.4415 14.211 43.7921 14.211Z" fill="white" />
+<path d="M65.7673 9.80457V19.0582C65.7673 21.4648 64.4882 22.5494 62.6369 22.5494C61.0212 22.5494 59.7084 21.5665 59.7084 19.4649V9.80457H54.6593V20.2106C54.6593 24.7866 57.5541 27.2271 60.9538 27.2271C63.1754 27.2271 64.8585 26.4136 65.7673 25.1594V26.7525H70.8164V9.80457H65.7673Z" fill="white" />
+<path d="M79.9051 12.8213V9.80457H74.856V26.7525H79.9051V19.0921C79.9051 15.7364 82.8672 14.889 84.9542 15.2279V9.46561C82.8335 9.46561 80.5783 10.5503 79.9051 12.8213Z" fill="white" />
+<path d="M92.7001 12.8213V9.80457H87.651V26.7525H92.7001V19.0921C92.7001 15.7364 95.6622 14.889 97.7492 15.2279V9.46561C95.6285 9.46561 93.3733 10.5503 92.7001 12.8213Z" fill="white" />
+<path d="M118.959 9.80457L116.536 18.8887L113.91 9.80457H109.198L106.572 18.8887L104.149 9.80457H98.7629L104.149 26.7525H108.861L111.554 17.7023L114.247 26.7525H118.959L124.345 9.80457H118.959Z" fill="white" />
+<path d="M130.539 20.3123H142.488C142.623 19.6683 142.69 18.9904 142.69 18.2786C142.69 13.1603 139.055 9.33003 134.14 9.33003C128.822 9.33003 125.187 13.2281 125.187 18.2786C125.187 23.329 128.755 27.2271 134.511 27.2271C137.708 27.2271 140.199 26.0407 141.849 23.7358L137.809 21.397C137.136 22.1427 135.958 22.685 134.578 22.685C132.727 22.685 131.178 22.0749 130.539 20.3123ZM130.438 16.516C130.909 14.7873 132.188 13.8382 134.107 13.8382C135.621 13.8382 137.136 14.55 137.675 16.516H130.438Z" fill="white" />
+<path d="M155.955 9.33003C153.7 9.33003 152.05 10.1096 150.94 11.3977V3.02539H145.891V26.7525H150.94V25.1594C152.05 26.4475 153.7 27.2271 155.955 27.2271C160.365 27.2271 164 23.329 164 18.2786C164 13.2281 160.365 9.33003 155.955 9.33003ZM154.945 22.4139C152.623 22.4139 150.94 20.8207 150.94 18.2786C150.94 15.7364 152.623 14.1432 154.945 14.1432C157.268 14.1432 158.951 15.7364 158.951 18.2786C158.951 20.8207 157.268 22.4139 154.945 22.4139Z" fill="white" />
+<path d="M16.0866 30L29.567 0H24.6005L11.1201 30H16.0866Z" fill="white" />
+<path d="M4.89843 30L18.1941 0H13.2957L0 30H4.89843Z" fill="white" />
+</svg>
+<div class="footer__sublogo">
+Software development company.
+</div>
+<div class="footer__divider"></div>
+<ul class="footer__contacts">
+<li class="footer__phone">
+<a id="gtm-footer-tel" class="contacts__item-link contacts__item-link--tel" href="tel:+14844608069" rel="noreferrer noopener" target="_blank" onclick="ym(52342033,'reachGoal','CLK_PHONE_CALL'); return true;">
++1 484 460-80-69
+</a>
+</li>
+<li class="footer__mail">
+<a class="contacts__item-link" href="../../cdn-cgi/l/email-protection.html#8de5e4cdfdf8fffffae8efa3eee2e0" rel="noreferrer noopener" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_EMAIL'); return true;">
+<span class="__cf_email__" data-cfemail="1a72735a6a6f68686d7f7834797577">[email&#160;protected]</span>
+</a>
+</li>
+<li class="footer__messengers">
+<a class="contacts__telegram contacts__link-item" href="https://t.me/purrweb_agency" rel="noreferrer noopener" data-no-router="true" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_TELEGRAM'); return true;">
+<div class="contacts__item-img">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" fill="none" viewbox="0 0 24 21">
+<path fill="#fff" d="M.424 10.02l5.53 2.064 2.14 6.883a.651.651 0 0 0 1.034.312l3.083-2.513a.92.92 0 0 1 1.121-.032l5.56 4.037a.652.652 0 0 0 1.021-.394L23.986.786a.652.652 0 0 0-.873-.741L.417 8.8a.652.652 0 0 0 .007 1.22zm7.326.965l10.807-6.657c.195-.119.394.144.228.298l-8.92 8.292a1.849 1.849 0 0 0-.573 1.106l-.304 2.252c-.04.3-.462.33-.545.04l-1.169-4.107a1.088 1.088 0 0 1 .476-1.224z" />
+</svg>
+</div>
+Telegram
+</a>
+<a class="contacts__whatsap contacts__link-item js-whatsapp-link footer__whatsap" rel="noreferrer noopener" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_WHATSAPP'); return true;">
+<div class="contacts__item-img">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewbox="0 0 24 24">
+<path fill="#fff" d="M12.003 0h-.006C5.38 0 0 5.382 0 12c0 2.625.846 5.058 2.284 7.034L.79 23.49l4.613-1.474A11.896 11.896 0 0 0 12.003 24C18.619 24 24 18.616 24 12c0-6.617-5.38-12-11.997-12zm6.982 16.945c-.289.818-1.438 1.496-2.354 1.694-.628.134-1.447.24-4.204-.903-3.526-1.461-5.797-5.045-5.974-5.277-.17-.232-1.425-1.897-1.425-3.62 0-1.722.875-2.56 1.227-2.92.29-.295.768-.43 1.227-.43.148 0 .282.007.402.013.352.015.53.036.762.593.29.697.994 2.419 1.079 2.596.085.177.17.417.05.65-.112.24-.211.346-.388.55-.177.204-.345.36-.522.579-.162.19-.345.394-.141.747.204.345.909 1.495 1.947 2.42 1.34 1.192 2.426 1.573 2.814 1.735.29.12.635.091.846-.133.269-.29.6-.77.938-1.243.24-.338.543-.38.86-.26.324.112 2.039.96 2.391 1.135.353.177.585.261.671.41.084.148.084.845-.206 1.664z" />
+</svg>
+</div>
+WhatsApp
+</a>
+</li>
+</ul>
+</div>
+<div class="footer__right-wrap">
+<div class="footer__title">
+Fill in and get a quote
+</div>
+<iframe id="hidden_iframe" name="hidden_iframe" style="display:none;"></iframe>
+<form class="footer__form js-footer-form" name="contact-form" target="hidden_iframe" onsubmit="ym(52342033, 'reachGoal', 'FORM_OUT'); return true">
+<div class="footer__form-wrapper">
+<input class="footer__form-field footer__form-name js-field-name" type="text" name="entry.1228031061" aria-label="Name input field" placeholder="Name" required autocomplete="on">
+<input class="footer__form-field js-phone-input" type="tel" name="entry.1413156463" aria-label="Phone input field" placeholder="Phone number" required autocomplete="on" minlength="4" maxlength="20">
+</div>
+<input class="footer__form-field footer__form-email" type="email" name="entry.1893682035" aria-label="Email input field" placeholder="test@purrweb.com" required autocomplete="on">
+<textarea class="footer__form-field footer__form-field--area" name="entry.772928921" aria-label="Descriptions input field" placeholder="Project details"></textarea>
+<input class="footer__form-hidden" type="hidden" name="entry.481086178" value="Purrweb123!">
+<input type="hidden" class="js-client-id" name="entry.1458439335">
+<input type="hidden" id="counter-id" name="entry.273292564" value="52342033">
+<input type="hidden" class="js-entry-page" name="entry.1965512787" value>
+<input type="hidden" id="footer__form-token" name="token">
+<input class="footer__form-type footer__page-link" type="hidden" name="entry.281637821" value="footer-form-main-en ">
+<div class="footer__form-wrapper">
+<p class="footer__form-captcha-wrapper">
+This site is protected by reCAPTCHA and the Google
+<a class="footer__form-captcha-link" rel="nofollow noreferrer noopener" href="../../privacy-policy/index.html" target="_blank">Privacy Policy</a> and
+<a class="footer__form-captcha-link" rel="nofollow noreferrer noopener" href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
+</p>
+<button id="order-form-btn" class="footer__form-btn rising-btn rising-btn--theme2" onclick="ym(52342033, 'reachGoal', 'CLK_SUCCESS'); return true;">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span id="gtm-footer-submit" class="rising-btn__text footer__btn-width--eng">
+Send
+</span>
+</span>
+</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<div class="footer__bottom-wrapper">
+<div class="footer__services js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+SERVICES
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../services/mvp/index.html" class="footer__link">MVP development services</a>
+</li>
+<li class="footer__item">
+<a href="../../services/ui-ux/index.html" class="footer__link">UI/UX Design</a>
+</li>
+<li class="footer__item">
+<a href="../../services/mobile-development/index.html" class="footer__link">Mobile Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/web-development-services/index.html" class="footer__link">Web Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/project-management-consulting-company/index.html" class="footer__link">Project Management</a>
+</li>
+<li class="footer__item">
+<a href="../../services/software-development-for-startups/index.html" class="footer__link">Software Development for
+Startups</a>
+</li>
+<li class="footer__item">
+<a href="../../services/progressive-web-app/index.html" class="footer__link">PWA</a>
+</li>
+</ul>
+</div>
+<div class="footer__otrasli js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+INDUSTRIES
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../services/terminal/index.html" class="footer__link">POS Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/marketplace/index.html" class="footer__link">Marketplace</a>
+</li>
+<li class="footer__item">
+<a href="../../services/finance/index.html" class="footer__link">Financial</a>
+</li>
+<li class="footer__item">
+<a href="../../services/travel/index.html" class="footer__link">Travel</a>
+</li>
+<li class="footer__item">
+<a href="../../services/tv-app-development/index.html" class="footer__link">SMART TV</a>
+</li>
+<li class="footer__item">
+<a href="../../services/health/index.html" class="footer__link">Healthcare</a>
+</li>
+<li class="footer__item">
+<a href="../../services/media/index.html" class="footer__link">Media</a>
+</li>
+<li class="footer__item">
+<a href="../../services/wellness/index.html" class="footer__link">Wellness</a>
+</li>
+</ul>
+</div>
+<div class="footer__outsourcing footer__outsourcing--eng js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+INSIGHTS
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a class="footer__link" href="../../blog/stock-trading-app-development/index.html">How To Build Stock Trading App</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/how-much-does-ecommerce-app-development-cost/index.html">eCommerce App
+Development Cost</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/healthcare-mobile-app-development/index.html">Healthcare Mobile App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/telehealth-app-development-features-benefits-costs/index.html">Telemedicine
+App Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/how-to-develop-an-iot-app-features-benefits-costs/index.html">IOT App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/grocery-delivery-app-development/index.html">Grocery Delivery App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/doctor-appointment-app-development-features-benefits-costs/index.html">Doctor
+Appointment Booking App Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/mobile-app-development-for-banking/index.html">Banking App Development</a>
+</li>
+</ul>
+</div>
+<div class="footer__stack js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+TECH STACK
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../technologies/index.html" class="footer__link">Tech stack</a>
+</li>
+<li class="footer__item">
+<a href="../../services/react-native/index.html" class="footer__link">React Native Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/react-native-game-development/index.html" class="footer__link">React Native Game
+Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/electron/index.html" class="footer__link">Electron JS</a>
+</li>
+<li class="footer__item">
+<a href="../../services/react-js/index.html" class="footer__link">React.js</a>
+</li>
+<li class="footer__item">
+<a href="../../services/webrtc/index.html" class="footer__link">WebRTC Development</a>
+</li>
+</ul>
+<div class="footer__ofice footer__ofice--pc">
+<h3 class="footer__ofice-caption">
+OFFICES
+</h3>
+<div class="footer__item footer__item--ofice">
+US 340 S LEMON AVE #9923 WALNUT,<br> CA 91789
+</div>
+</div>
+</div>
+<div class="footer__company js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+COMPANY
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../about/index.html" class="footer__link">About us</a>
+</li>
+<li class="footer__item">
+<a href="../../contacts/index.html" class="footer__link">Contacts</a>
+</li>
+<li class="footer__item">
+<a href="../../reviews/index.html" class="footer__link">Reviews</a>
+</li>
+<li class="footer__item">
+<a href="/" class="footer__link">Portfolio</a>
+</li>
+<li class="footer__item">
+<a href="../../blog/index.html" class="footer__link">Blog</a>
+</li>
+</ul>
+<div class="footer__address footer__address--eng footer__address--pc">
+<address>
+Compass Building, <br> Al Shohada Road, <br> AL Hamra Industrial Zone-FZ, Ras Al Khaimah, UAE
+</address>
+</div>
+</div>
+<div class="footer__ofice footer__ofice--mobile">
+<h3 class="footer__ofice-caption">
+OFFICES
+</h3>
+<address class="footer__item footer__item--ofice">
+US 340 S LEMON AVE 9923 WALNUT, CA 91789
+</address>
+<address class="footer__address footer__address--mobile">
+Compass Building, Al Shohada Road, <br> AL Hamra Industrial Zone-FZ, Ras Al Khaimah, UAE
+</address>
+</div>
+</div>
+<div class="footer__divider"></div>
+<div class="footer__bottom">
+<div class="footer__terms">
+<a href="../../privacy-policy/index.html" class="footer__terms--policy">Privacy Policy</a>
+<a href="https://policies.google.com/terms" target="_blank" class="footer__terms--term">Terms Of Services</a>
+</div>
+<div class="footer__rights">
+© 2023 Purrweb. All rights reserved
+</div>
+</div>
+</div>
+</div>
+</footer>
+<button class="btn-up js-btn-up" title="Go to the top of the page">
+<svg width="22" height="42" viewbox="0 0 22 42" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 29L11 41M11 41L1 29M11 41V0" />
+</svg>
+</button>
+<div class="popup-form js-form-popup">
+<div class="popup-form__inner">
+<p class="popup-form__text">Thanks for your inquiry. It usually take up to 24 hours to get back with reply.</p>
+<p class="popup-form__text">Wanna schedule an online meeting?</p>
+<button class="popup-form__close js-form-popup-btn">X</button>
+<button class="popup-form__btn js-form-popup-btn">
+<link href="../../../assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../../../assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<a href onclick="Calendly.initPopupWidget({url: 'https://calendly.com/purrweb_agency/initial_discussion?primary_color=5c3bfe'});return false;">Book
+the time slot!</a>
+</button>
+</div>
+</div>
+
+</div>
+
+<div class="idea-modal js-idea-modal" style="display: none;">
+<div class="idea-modal__content">
+<span class="idea-modal__title">
+Curious about the project cost?
+</span>
+<a href="#footer" class="idea-modal__button rising-btn rising-btn--theme3 js-scroll-to">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span id="gtm-idea-popup" class="rising-btn__text idea-modal__button-text">
+Fill in the form!
+</span>
+</span>
+</span></a>
+</div>
+<button class="idea-modal__close js-idea-modal__close" id="CLS-BTN-POPUP">
+X
+</button>
+</div>
+
+<script>
+    if (window.innerWidth >= 1024) {
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+          '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-W4BS3VM');
+
+    } else if (window.innerWidth < 1024) {
+      var firedTG = false;
+      window.addEventListener('scroll', () => {
+        if (firedTG === false) {
+          firedTG = true;
+          setTimeout(() => {
+            (function (w, d, s, l, i) {
+              w[l] = w[l] || [];
+              w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+              });
+              var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+              j.async = true;
+              j.src =
+                '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+              f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-W4BS3VM');
+          }, 0)
+        }
+      });
+    }
+  </script>
+
+
+
+<script type="text/javascript">
+    var firedRec = false;
+    window.addEventListener('scroll', () => {
+      if (firedRec === false) {
+        firedRec = true;
+        (function (d, w) {
+          var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "../../../www.google.com/recaptcha/api6c91.js?render=6LdBWnwaAAAAADC4FEa3p5JPq12UcmBuQPHl-0Iz";
+          if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+          } else { f(); }
+        })(document, window);
+      }
+    });
+  </script>
+
+
+
+<script async type="text/javascript">
+    (function () {
+      var PM_YM_COUNTER = 52342033;
+      var ee = setInterval(function () {
+        if (typeof window.ym != 'undefined') {
+          let clientInputs = document.querySelectorAll('.js-client-id');
+          for (let clientInput of clientInputs) {
+            ym(PM_YM_COUNTER, 'getClientID', function (clientID) {
+              clientInput.value = clientID;
+            })
+          }
+
+          clearInterval(ee);
+        } else {
+          console.log('Метрика не инициализирована');
+        }
+      }, 1000); // 0,5 секунды ждать, изменить на свое значение, 1 сек = 1000
+    })();
+  </script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZM1DZX38E"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-5ZM1DZX38E');
+  </script>
+<script src="../../common.4d9224ab871b2d75ac93.js"></script><script src="../../kem.4d9224ab871b2d75ac93.js"></script></body>
+
+<!-- Mirrored from www.purrweb.com/portfolio/kem/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Nov 2023 15:19:44 GMT -->
+</html>
+<svg display="none" style="width: 0; height: 0;">
+<symbol id="spiral" viewBox="0 0 380 381" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g style="mix-blend-mode:multiply">
+<path d="M18 345.549C23.7057 330.296 31.4422 316.204 39.6063 302.899C50.6407 284.916 62.5032 266.144 77.6474 253.379C100.977 233.715 132.483 224.755 153.376 254.539C172.226 281.411 179.157 327.35 163.152 358.933C161.278 362.631 153.999 368.16 150.542 366.785C147.411 365.54 144.801 360.417 143.387 357.059C139.841 348.636 137.367 338.785 135.807 329.489C130.674 298.904 139.386 269.402 150.684 242.671C165.533 207.537 187.455 175.977 215.219 156.39C235.991 141.735 261.104 142.151 277.063 166.472C282.71 175.079 296.548 198.425 285.776 208.944C273.919 220.523 268.448 195.403 267.145 185.388C264.968 168.654 267.601 150.312 271.891 134.44C276.868 116.028 283.396 96.5627 293.498 81.6183C303.775 66.414 316.678 53.3622 329.414 41.5557C339.342 32.3517 350.248 23.0751 362 18" stroke="#7A60E9" stroke-width="27" stroke-linecap="square" />
+</g>
+</symbol>
+<symbol id="document" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_260_21017)">
+<path d="M34.3749 38.501H9.62354C9.25886 38.501 8.90913 38.3561 8.65126 38.0983C8.3934 37.8404 8.24854 37.4907 8.24854 37.126V6.87598C8.24854 6.5113 8.3934 6.16157 8.65126 5.90371C8.90913 5.64584 9.25886 5.50098 9.62354 5.50098H26.1249L35.7499 15.126V37.126C35.7499 37.3065 35.7143 37.4853 35.6452 37.6522C35.5761 37.819 35.4748 37.9706 35.3472 38.0983C35.2195 38.2259 35.0679 38.3272 34.9011 38.3963C34.7342 38.4654 34.5554 38.501 34.3749 38.501Z" stroke="#131313" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M26.1255 5.50098V15.126H35.7519" stroke="#131313" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M16.5005 23.376H27.5005" stroke="#131313" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M16.5005 28.875H27.5005" stroke="#131313" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<defs>
+<clipPath id="clip0_260_21017">
+<rect width="44" height="44" fill="white" />
+</clipPath>
+</defs>
+</symbol>
+<symbol id="account" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_260_21086)">
+<path d="M21.0242 26.2799C26.8299 26.2799 31.5363 21.5735 31.5363 15.7679C31.5363 9.96226 26.8299 5.25586 21.0242 5.25586C15.2186 5.25586 10.5122 9.96226 10.5122 15.7679C10.5122 21.5735 15.2186 26.2799 21.0242 26.2799Z" stroke="white" stroke-width="2.5" stroke-miterlimit="10" />
+<path d="M5.08984 35.4768C6.70535 32.6805 9.02826 30.3586 11.8252 28.7443C14.6222 27.13 17.7948 26.2802 21.0241 26.2803C24.2535 26.2803 27.4261 27.1302 30.223 28.7445C33.0199 30.3588 35.3428 32.6808 36.9583 35.4771" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<defs>
+<clipPath id="clip0_260_21086">
+<rect width="42.0481" height="42.0481" fill="white" />
+</clipPath>
+</defs>
+</symbol>
+<symbol id="arrow-right" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_260_21061)">
+<path d="M6.87451 21.999H37.1245" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M24.7495 9.625L37.1245 22L24.7495 34.375" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<defs>
+<clipPath id="clip0_260_21061">
+<rect width="44" height="44" fill="white" />
+</clipPath>
+</defs>
+</symbol>
+<symbol id="arrow-right2" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_260_21116)">
+<path d="M16.5005 8.25L30.2505 22L16.5005 35.75" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<defs>
+<clipPath id="clip0_260_21116">
+<rect width="44" height="44" fill="white" />
+</clipPath>
+</defs>
+</symbol>
+<symbol id="back" viewBox="0 0 44 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_260_21077)">
+<g clip-path="url(#clip1_260_21077)">
+<path d="M26.7969 34.836L13.3984 21.4375L26.7969 8.03906" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+</g>
+<defs>
+<clipPath id="clip0_260_21077">
+<rect width="43.9998" height="42.875" />
+</clipPath>
+<clipPath id="clip1_260_21077">
+<rect width="42.875" height="42.875" />
+</clipPath>
+</defs>
+</symbol>
+<symbol id="bank" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_260_21171)">
+<path d="M5.5 16.5H38.5L22 5.5L5.5 16.5Z" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M9.625 16.5V30.25" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M17.875 16.5V30.25" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M26.125 16.5V30.25" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M34.375 16.5V30.25" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M5.5 30.25H38.5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M2.75 35.75H41.25" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<defs>
+<clipPath id="clip0_260_21171">
+<rect width="44" height="44" transform="matrix(-1 0 0 1 44 0)" />
+</clipPath>
+</defs>
+</symbol>
+<symbol id="bell-small" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_260_21145)">
+<path d="M9.62521 17.8789C9.62521 16.2459 9.94842 14.6291 10.5762 13.1215C11.204 11.614 12.1239 10.2457 13.283 9.09535C14.4421 7.94503 15.8174 7.03549 17.3296 6.41915C18.8418 5.80282 20.4611 5.49188 22.094 5.50426C28.9174 5.55485 34.3752 11.2107 34.3752 18.0343V20.6289C34.3752 26.7847 35.6667 30.3569 36.8042 32.3092C36.9265 32.5181 36.9915 32.7555 36.9927 32.9976C36.9938 33.2396 36.9311 33.4777 36.8107 33.6877C36.6904 33.8977 36.5167 34.0722 36.3073 34.1936C36.0979 34.3149 35.8601 34.3789 35.6181 34.3789H8.38094C8.13886 34.3789 7.90109 34.3149 7.69167 34.1935C7.48224 34.0721 7.30858 33.8976 7.18825 33.6875C7.06791 33.4775 7.00517 33.2394 7.00636 32.9973C7.00756 32.7552 7.07265 32.5178 7.19505 32.3089C8.33313 30.3565 9.62521 26.7844 9.62521 20.6289V17.8789Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M16.4873 39.8779H27.4873" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<defs>
+<clipPath id="clip0_260_21145">
+<rect width="44" height="44" fill="white" />
+</clipPath>
+</defs>
+</symbol>
+<symbol id="bell-small2" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_260_21140)">
+<path d="M9.62521 17.8789C9.62521 16.2459 9.94842 14.6291 10.5762 13.1215C11.204 11.614 12.1239 10.2457 13.283 9.09535C14.4421 7.94503 15.8174 7.03549 17.3296 6.41915C18.8418 5.80282 20.4611 5.49188 22.094 5.50426C28.9174 5.55485 34.3752 11.2107 34.3752 18.0343V20.6289C34.3752 26.7847 35.6667 30.3569 36.8042 32.3092C36.9265 32.5181 36.9915 32.7555 36.9927 32.9976C36.9938 33.2396 36.9311 33.4777 36.8107 33.6877C36.6904 33.8977 36.5167 34.0722 36.3073 34.1936C36.0979 34.3149 35.8601 34.3789 35.6181 34.3789H8.38094C8.13886 34.3789 7.90109 34.3149 7.69167 34.1935C7.48224 34.0721 7.30858 33.8976 7.18825 33.6875C7.06791 33.4775 7.00517 33.2394 7.00636 32.9973C7.00756 32.7552 7.07265 32.5178 7.19505 32.3089C8.33313 30.3565 9.62521 26.7844 9.62521 20.6289V17.8789Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M16.4873 39.8779H27.4873" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<defs>
+<clipPath id="clip0_260_21140">
+<rect width="44" height="44" fill="white" />
+</clipPath>
+</defs>
+</symbol>
+<symbol id="close-big" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_260_21008)">
+<path d="M34.375 9.625L9.625 34.375" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M34.375 34.375L9.625 9.625" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<defs>
+<clipPath id="clip0_260_21008">
+<rect width="44" height="44" fill="white" />
+</clipPath>
+</defs>
+</symbol>
+<symbol id="edit" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_260_21120)">
+<path d="M16.4995 37.1248H8.24951C7.88484 37.1248 7.5351 36.9799 7.27724 36.7221C7.01938 36.4642 6.87451 36.1145 6.87451 35.7498V28.0693C6.87451 27.8888 6.91008 27.71 6.97918 27.5431C7.04828 27.3763 7.14956 27.2247 7.27724 27.0971L27.9022 6.47206C28.1601 6.2142 28.5098 6.06934 28.8745 6.06934C29.2392 6.06934 29.5889 6.2142 29.8468 6.47206L37.5272 14.1525C37.7851 14.4104 37.93 14.7601 37.93 15.1248C37.93 15.4895 37.7851 15.8392 37.5272 16.0971L16.4995 37.1248Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M23.375 11L33 20.625" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M37.1254 37.1244H16.5004L6.96289 27.5869" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<defs>
+<clipPath id="clip0_260_21120">
+<rect width="44" height="44" fill="white" />
+</clipPath>
+</defs>
+</symbol>
+<symbol id="flashlight" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_260_21134)">
+<path d="M12.3755 4.12402H31.6255C31.9902 4.12402 32.3399 4.26889 32.5978 4.52675C32.8556 4.78461 33.0005 5.13435 33.0005 5.49902V13.2907C33.0005 13.5882 32.904 13.8777 32.7255 14.1157L29.1505 18.8824C28.972 19.1204 28.8755 19.4098 28.8755 19.7074V38.499C28.8755 38.8637 28.7306 39.2134 28.4728 39.4713C28.2149 39.7292 27.8652 39.874 27.5005 39.874H16.5005C16.1358 39.874 15.7861 39.7292 15.5282 39.4713C15.2704 39.2134 15.1255 38.8637 15.1255 38.499V19.7074C15.1255 19.4098 15.029 19.1204 14.8505 18.8824L11.2755 14.1157C11.097 13.8777 11.0005 13.5882 11.0005 13.2907V5.49902C11.0005 5.13435 11.1454 4.78461 11.4032 4.52675C11.6611 4.26889 12.0108 4.12402 12.3755 4.12402V4.12402Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M22 20.625V26.125" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M11.0005 11H33.0005" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<defs>
+<clipPath id="clip0_260_21134">
+<rect width="44" height="44" fill="white" />
+</clipPath>
+</defs>
+</symbol>
+<symbol id="info" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_260_21024)">
+<path d="M22 38.501C31.1127 38.501 38.5 31.1137 38.5 22.001C38.5 12.8883 31.1127 5.50098 22 5.50098C12.8873 5.50098 5.5 12.8883 5.5 22.001C5.5 31.1137 12.8873 38.501 22 38.501Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M21.9995 16.499C23.1386 16.499 24.062 15.5756 24.062 14.4365C24.062 13.2974 23.1386 12.374 21.9995 12.374C20.8604 12.374 19.937 13.2974 19.937 14.4365C19.937 15.5756 20.8604 16.499 21.9995 16.499Z" fill="white" />
+<path d="M20.6245 20.625H21.9995V30.25H23.3745" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<defs>
+<clipPath id="clip0_260_21024">
+<rect width="44" height="44" fill="white" />
+</clipPath>
+</defs>
+</symbol>
+<symbol id="lock" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_260_21097)">
+<path d="M21.999 28.1885C23.1381 28.1885 24.0615 27.2651 24.0615 26.126C24.0615 24.9869 23.1381 24.0635 21.999 24.0635C20.8599 24.0635 19.9365 24.9869 19.9365 26.126C19.9365 27.2651 20.8599 28.1885 21.999 28.1885Z" fill="white" />
+<path d="M35.7495 15.126H8.24951C7.49012 15.126 6.87451 15.7416 6.87451 16.501V35.751C6.87451 36.5104 7.49012 37.126 8.24951 37.126H35.7495C36.5089 37.126 37.1245 36.5104 37.1245 35.751V16.501C37.1245 15.7416 36.5089 15.126 35.7495 15.126Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M15.812 15.124V8.93652C15.812 7.2955 16.4639 5.72168 17.6243 4.5613C18.7847 3.40092 20.3585 2.74902 21.9995 2.74902C23.6405 2.74902 25.2144 3.40092 26.3747 4.5613C27.5351 5.72168 28.187 7.2955 28.187 8.93652V15.124" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<defs>
+<clipPath id="clip0_260_21097">
+<rect width="44" height="44" fill="white" />
+</clipPath>
+</defs>
+</symbol>
+<symbol id="log-out" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_260_21030)">
+<path d="M29.9111 14.7822L37.1299 22.001L29.9111 29.2197" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M17.875 21.999H37.125" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M20.6245 37.125H8.24951C7.88484 37.125 7.5351 36.9801 7.27724 36.7223C7.01938 36.4644 6.87451 36.1147 6.87451 35.75V8.25C6.87451 7.88533 7.01938 7.53559 7.27724 7.27773C7.5351 7.01987 7.88484 6.875 8.24951 6.875H20.6245" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<defs>
+<clipPath id="clip0_260_21030">
+<rect width="44" height="44" fill="white" />
+</clipPath>
+</defs>
+</symbol>
+<symbol id="mark-big" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_260_21103)">
+<path d="M37.125 12.376L17.875 31.6251L8.25 22.001" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<defs>
+<clipPath id="clip0_260_21103">
+<rect width="44" height="44" fill="white" />
+</clipPath>
+</defs>
+</symbol>
+<symbol id="phone" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_260_21107)">
+<path d="M15.8939 21.4518C17.3202 24.3677 19.6838 26.7206 22.6062 28.1335C22.82 28.2349 23.0565 28.2788 23.2924 28.2609C23.5284 28.2431 23.7556 28.1641 23.9517 28.0317L28.2547 25.1624C28.445 25.0355 28.664 24.9581 28.8918 24.9372C29.1196 24.9162 29.349 24.9525 29.5592 25.0426L37.6093 28.4926C37.8828 28.6088 38.1111 28.8107 38.2598 29.0679C38.4086 29.3251 38.4697 29.6236 38.434 29.9186C38.1796 31.9096 37.2081 33.7396 35.7016 35.066C34.1951 36.3923 32.2567 37.124 30.2495 37.1241C24.0501 37.1241 18.1046 34.6614 13.7209 30.2777C9.33723 25.8941 6.87451 19.9486 6.87451 13.7491C6.87462 11.7419 7.60634 9.80359 8.93268 8.29704C10.259 6.7905 12.089 5.81906 14.08 5.56462C14.375 5.52892 14.6736 5.59005 14.9308 5.7388C15.188 5.88754 15.3899 6.11585 15.506 6.38931L18.9591 14.4464C19.0484 14.6548 19.0848 14.8821 19.065 15.108C19.0452 15.3339 18.9699 15.5513 18.8458 15.7411L15.9864 20.1101C15.8562 20.3066 15.7793 20.5335 15.7631 20.7687C15.7469 21.0039 15.7919 21.2392 15.8939 21.4518V21.4518Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<defs>
+<clipPath id="clip0_260_21107">
+<rect width="44" height="44" fill="white" />
+</clipPath>
+</defs>
+</symbol>
+<symbol id="scan" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_260_21046)">
+<path d="M29.2441 8.35547H36.207V15.3183" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M15.3183 36.207H8.35547V29.2441" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M36.207 29.2441V36.207H29.2441" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M8.35547 15.3183V8.35547H15.3183" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<defs>
+<clipPath id="clip0_260_21046">
+<rect width="44" height="44" fill="white" />
+</clipPath>
+</defs>
+</symbol>
+<symbol id="search" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_260_21066)">
+<path d="M19.4278 33.4962C27.1976 33.4962 33.4962 27.1976 33.4962 19.4278C33.4962 11.658 27.1976 5.35938 19.4278 5.35938C11.658 5.35938 5.35938 11.658 5.35938 19.4278C5.35938 27.1976 11.658 33.4962 19.4278 33.4962Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M29.3755 29.376L37.5152 37.5157" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<defs>
+<clipPath id="clip0_260_21066">
+<rect width="42.8752" height="42.8752" fill="white" />
+</clipPath>
+</defs>
+</symbol>
+<symbol id="settings" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_260_21111)">
+<path d="M22.0005 31.624C27.3162 31.624 31.6255 27.3148 31.6255 21.999C31.6255 16.6833 27.3162 12.374 22.0005 12.374C16.6847 12.374 12.3755 16.6833 12.3755 21.999C12.3755 27.3148 16.6847 31.624 22.0005 31.624Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M9.58874 30.7526L9.38302 33.9434C9.36825 34.1479 9.39875 34.3531 9.47234 34.5445C9.54593 34.7358 9.6608 34.9086 9.80878 35.0505C11.7864 36.9263 14.1796 38.308 16.7929 39.0828C16.9898 39.14 17.1969 39.1531 17.3994 39.1211C17.6019 39.0892 17.7949 39.013 17.9646 38.898L20.625 37.1245H23.375L26.0355 38.8981C26.2052 39.0131 26.3981 39.0893 26.6006 39.1212C26.8032 39.1532 27.0102 39.1401 27.2071 39.0829C29.8204 38.3081 32.2136 36.9264 34.1912 35.0506C34.3392 34.9087 34.4541 34.7359 34.5277 34.5446C34.6013 34.3532 34.6318 34.148 34.617 33.9435L34.4113 30.7528L35.7863 28.3712L38.6525 26.9539C38.837 26.8645 38.9995 26.7355 39.1284 26.5761C39.2573 26.4166 39.3495 26.2308 39.3984 26.0317C40.0341 23.3811 40.0341 20.6177 39.3983 17.9671C39.3495 17.768 39.2573 17.5821 39.1284 17.4227C38.9995 17.2633 38.837 17.1343 38.6525 17.0448L35.7864 15.6276L34.4114 13.246L34.6171 10.0552C34.6319 9.85069 34.6014 9.64547 34.5278 9.45412C34.4542 9.26277 34.3393 9.09 34.1914 8.94811C32.2137 7.07227 29.8206 5.6906 27.2072 4.91586C27.0104 4.85864 26.8033 4.84554 26.6008 4.87747C26.3983 4.90941 26.2053 4.98561 26.0356 5.10063L23.3752 6.87414H20.6252L17.9647 5.10056C17.795 4.98553 17.602 4.90933 17.3995 4.87738C17.197 4.84544 16.9899 4.85854 16.7931 4.91574C14.1797 5.69051 11.7866 7.07221 9.80895 8.94807C9.66096 9.08995 9.54608 9.26272 9.47249 9.45407C9.39889 9.64542 9.36839 9.85064 9.38316 10.0551L9.58884 13.2459L8.21384 15.6274L5.34764 17.0447C5.16317 17.1341 5.00069 17.2632 4.87177 17.4226C4.74285 17.582 4.65066 17.7678 4.60177 17.9669C3.96606 20.6176 3.96608 23.3809 4.60181 26.0315C4.65069 26.2306 4.74287 26.4165 4.87178 26.5759C5.0007 26.7353 5.16317 26.8643 5.34764 26.9538L8.21374 28.371L9.58874 30.7526Z" stroke="white" stroke-width="2.5" stroke-miterlimit="10" />
+</g>
+<defs>
+<clipPath id="clip0_260_21111">
+<rect width="44" height="44" fill="white" />
+</clipPath>
+</defs>
+</symbol>
+<symbol id="share" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_260_21126)">
+<path d="M11 27.5C14.0376 27.5 16.5 25.0376 16.5 22C16.5 18.9624 14.0376 16.5 11 16.5C7.96243 16.5 5.5 18.9624 5.5 22C5.5 25.0376 7.96243 27.5 11 27.5Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M30.2495 39.875C33.2871 39.875 35.7495 37.4126 35.7495 34.375C35.7495 31.3374 33.2871 28.875 30.2495 28.875C27.2119 28.875 24.7495 31.3374 24.7495 34.375C24.7495 37.4126 27.2119 39.875 30.2495 39.875Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M30.2495 15.124C33.2871 15.124 35.7495 12.6616 35.7495 9.62402C35.7495 6.58646 33.2871 4.12402 30.2495 4.12402C27.2119 4.12402 24.7495 6.58646 24.7495 9.62402C24.7495 12.6616 27.2119 15.124 30.2495 15.124Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M25.6237 12.5996L15.6255 19.027" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M15.6255 24.9736L25.6236 31.401" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<defs>
+<clipPath id="clip0_260_21126">
+<rect width="44" height="44" fill="white" />
+</clipPath>
+</defs>
+</symbol>
+<symbol id="shield" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_260_21042)">
+<path d="M6.87451 18.3333V8.25C6.87451 7.88533 7.01938 7.53559 7.27724 7.27773C7.5351 7.01987 7.88484 6.875 8.24951 6.875H35.7495C36.1142 6.875 36.4639 7.01987 36.7218 7.27773C36.9796 7.53559 37.1245 7.88533 37.1245 8.25V18.3333C37.1245 32.7735 24.8688 37.5576 22.4217 38.3689C22.1481 38.4631 21.8509 38.4631 21.5774 38.3689C19.1302 37.5576 6.87451 32.7735 6.87451 18.3333Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<defs>
+<clipPath id="clip0_260_21042">
+<rect width="44" height="44" fill="white" />
+</clipPath>
+</defs>
+</symbol>
+<symbol id="users" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_260_21150)">
+<path d="M15.1245 27.5C20.0606 27.5 24.062 23.4985 24.062 18.5625C24.062 13.6265 20.0606 9.625 15.1245 9.625C10.1885 9.625 6.18701 13.6265 6.18701 18.5625C6.18701 23.4985 10.1885 27.5 15.1245 27.5Z" stroke="white" stroke-width="2.5" stroke-miterlimit="10" />
+<path d="M26.7114 9.95801C27.9407 9.61166 29.2299 9.53276 30.4923 9.72663C31.7546 9.92049 32.9608 10.3826 34.0295 11.0819C35.0982 11.7811 36.0046 12.7013 36.6878 13.7804C37.3709 14.8595 37.8149 16.0724 37.9898 17.3375C38.1647 18.6026 38.0664 19.8905 37.7017 21.1145C37.3369 22.3384 36.7141 23.47 35.8752 24.433C35.0363 25.396 34.0008 26.168 32.8383 26.697C31.6759 27.2261 30.4137 27.4999 29.1365 27.5001" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M2.74951 33.9276C4.14537 31.9421 5.99845 30.3215 8.15232 29.2028C10.3062 28.0841 12.6976 27.5001 15.1247 27.5C17.5517 27.4999 19.9432 28.0838 22.0971 29.2023C24.2511 30.3209 26.1043 31.9412 27.5003 33.9266" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M29.1367 27.5C31.564 27.4982 33.956 28.0814 36.1101 29.2001C38.2642 30.3188 40.1171 31.94 41.5118 33.9266" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<defs>
+<clipPath id="clip0_260_21150">
+<rect width="44" height="44" fill="white" />
+</clipPath>
+</defs>
+</symbol>
+<symbol id="warning" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_260_21036)">
+<path d="M22 16.5V24.75" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M21.9995 33C23.1386 33 24.062 32.0766 24.062 30.9375C24.062 29.7984 23.1386 28.875 21.9995 28.875C20.8604 28.875 19.937 29.7984 19.937 30.9375C19.937 32.0766 20.8604 33 21.9995 33Z" fill="white" />
+<path d="M19.6203 6.87335L4.49934 32.997C4.25739 33.415 4.12979 33.8894 4.1294 34.3724C4.129 34.8554 4.25581 35.3299 4.49707 35.7483C4.73833 36.1668 5.08553 36.5142 5.50374 36.7558C5.92195 36.9975 6.39642 37.1247 6.8794 37.1247H37.1212C37.6042 37.1247 38.0787 36.9975 38.4969 36.7559C38.9151 36.5142 39.2623 36.1668 39.5036 35.7483C39.7448 35.3299 39.8716 34.8554 39.8712 34.3724C39.8708 33.8894 39.7432 33.415 39.5013 32.997L24.3804 6.87335C24.1388 6.45601 23.7917 6.10952 23.374 5.86865C22.9563 5.62777 22.4825 5.50098 22.0003 5.50098C21.5181 5.50098 21.0444 5.62777 20.6266 5.86865C20.2089 6.10952 19.8618 6.45601 19.6203 6.87335V6.87335Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+<defs>
+<clipPath id="clip0_260_21036">
+<rect width="44" height="44" fill="white" />
+</clipPath>
+</defs>
+</symbol>
+</svg>

@@ -1,0 +1,1518 @@
+
+
+
+
+	<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.purrweb.com/portfolio/biogeek/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Nov 2023 15:26:06 GMT -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>BioGeek — healthcare app development case | Purrweb</title>
+<meta name="description" content="We created an app for lab test results analysis that allows users to track their health indicators">
+<meta name="google-site-verification" content="YgG-iu_ngX9WM8Ulia3B7gYVqrEBLf9-GQ22HbQ7Jiw">
+<meta name="yandex-verification" content="4057b113a73e6486">
+<meta name="facebook-domain-verification" content="0cpowng2vyna7cecrsh180pvpcll09">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="BioGeek — healthcare app development case | Purrweb">
+<meta property="og:description" content="We created an app for lab test results analysis that allows users to track their health indicators">
+<meta property="og:image" content="../../images/og-image.png">
+<meta property="og:site_name" content="Purrweb">
+<meta property="og:url" content="index.html">
+<meta name="twitter:title" content="BioGeek — healthcare app development case | Purrweb">
+<meta name="twitter:description" content="We created an app for lab test results analysis that allows users to track their health indicators">
+<meta name="twitter:image:src" content="../../images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@purrweb">
+<meta name="twitter:creator" content="@purrweb">
+<link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5c3bfe">
+<link rel="canonical" href="index.html">
+<meta name="msapplication-TileColor" content="#5c3bfe">
+<meta name="theme-color" content="#ffffff">
+<link rel="alternate" hreflang="ru" href="../../ru/portfolio/biogeek/index.html">
+<link rel="alternate" hreflang="en" href="index.html">
+
+
+
+
+<meta name="google-site-verification" content="iAswyHNCt6kecOwxsuLaxgVNXaFS1GEwMiCJajfQ4dI">
+
+<link href="../../common.4d9224ab871b2d75ac93.css" rel="stylesheet"><link href="../../biogeek.4d9224ab871b2d75ac93.css" rel="stylesheet"></head>
+<body class="js-disable-transition">
+<aside class="cookie hide-cookie" id="pjAcceptCookieBar">
+<div class="container pjAcceptCookieBarShell">
+<form action="#" method="post" class="cookie__inner">
+<p class="cookie__text">
+We use cookies to boost your experience on our website and ensure it functions properly. It also
+helps us with analytics — is that OK, isn’t it? :)
+</p>
+<div class="pjAcceptCookieBarActions">
+<button type="button" class="pjAcceptCookieBarBtn cookie__btn">
+Sure! I’m fine with it
+</button>
+</div>
+</form>
+</div>
+</aside>
+<header class="header js-header header--fixed">
+<div class="container">
+<nav class="header__inner">
+<a class="header__logo" href="../../index.html">
+<svg xmlns="http://www.w3.org/2000/svg" width="164" height="30" fill="none" viewbox="0 0 164 30">
+<path fill="#fff" d="M43.688 3.025H34.79v23.728h5.373v-7.458h3.526c4.634 0 8.227-3.626 8.227-8.135 0-4.508-3.593-8.135-8.227-8.135zm0 11.186h-3.526V8.11h3.526c1.646 0 2.854 1.322 2.854 3.05 0 1.73-1.208 3.051-2.854 3.051zM65.612 9.805v9.253c0 2.407-1.277 3.491-3.124 3.491-1.611 0-2.921-.982-2.921-3.084v-9.66H54.53V20.21c0 4.576 2.888 7.016 6.28 7.016 2.216 0 3.895-.813 4.802-2.068v1.594h5.037V9.805h-5.037zM79.716 12.821V9.805h-5.037v16.947h5.037v-7.66c0-3.356 2.955-4.203 5.037-3.864V9.466c-2.115 0-4.365 1.084-5.037 3.355zM92.48 12.821V9.805h-5.036v16.947h5.037v-7.66c0-3.356 2.955-4.203 5.037-3.864V9.466c-2.116 0-4.366 1.084-5.037 3.355zM118.678 9.805l-2.418 9.084-2.619-9.084h-4.701l-2.62 9.084-2.418-9.084h-5.373l5.373 16.947h4.702l2.686-9.05 2.687 9.05h4.701l5.373-16.947h-5.373zM130.23 20.312h11.921a9.894 9.894 0 0 0 .202-2.033c0-5.119-3.627-8.949-8.53-8.949-5.306 0-8.932 3.898-8.932 8.949 0 5.05 3.559 8.948 9.302 8.948 3.19 0 5.675-1.186 7.32-3.491l-4.029-2.339c-.672.746-1.847 1.288-3.224 1.288-1.847 0-3.392-.61-4.03-2.373zm-.101-3.796c.471-1.729 1.747-2.678 3.661-2.678 1.511 0 3.022.712 3.559 2.678h-7.22zM155.587 9.33c-2.25 0-3.896.78-5.004 2.068V3.025h-5.037v23.728h5.037v-1.594c1.108 1.289 2.754 2.068 5.004 2.068 4.399 0 8.026-3.898 8.026-8.948 0-5.05-3.627-8.949-8.026-8.949zm-1.008 13.084c-2.317 0-3.996-1.593-3.996-4.135 0-2.543 1.679-4.136 3.996-4.136s3.996 1.593 3.996 4.136c0 2.542-1.679 4.135-3.996 4.135zM16.049 30L29.497 0h-4.955L11.094 30h4.955zM4.887 30L18.15 0h-4.887L0 30h4.887z" />
+</svg>
+<span class="visually-hidden">Purrweb logo</span>
+</a>
+
+<ul class="header__list js-menu">
+<li class="header__item header__item-portfolio">
+<a class="header__item-link" href="/" onclick="ym(52342033, 'reachGoal', 'CLK_PROJECTS'); return true;">
+Projects
+</a>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Technologies
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__dropmenu-inner">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--technologies">
+
+<a href="../../services/react-native/index.html" class="header__dropmenu-ref">
+React Native
+</a>
+<a href="../../services/react-js/index.html" class="header__dropmenu-ref">
+React.js
+</a>
+<a href="../../services/electron/index.html" class="header__dropmenu-ref">
+Electron.js
+</a>
+<a href="../../services/webrtc/index.html" class="header__dropmenu-ref">
+WebRTC
+</a>
+<a href="../../services/progressive-web-app/index.html" class="header__dropmenu-ref">
+PWA
+</a>
+<a href="../../services/react-native-game-development/index.html" class="header__dropmenu-ref">
+Mobile Games
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="header__divider"></div>
+<a href="../../technologies/index.html" class="header__dropmenu-main-ref">
+Tech Stack
+</a>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Services
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu header__dropmenu--services" id="dropdown2">
+<div class="header__dropmenu-inner">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Development
+</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--dev">
+<a href="../../services/mobile-development/index.html" class="header__dropmenu-ref">
+Mobile App Development
+</a>
+<a href="../../services/web-development-services/index.html" class="header__dropmenu-ref">
+Web Development
+</a>
+<a href="../../services/ux-audit/index.html" class="header__dropmenu-ref">
+UX Audit
+</a>
+
+
+
+
+
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--dev2">
+
+
+
+<a href="../../services/software-development-for-startups/index.html" class="header__dropmenu-ref">
+Software Development for Startups
+</a>
+<a href="../../services/crossplatform/index.html" class="header__dropmenu-ref">
+Cross-Platform Development
+</a>
+<a href="../../services/mvp/index.html" class="header__dropmenu-ref">
+MVP
+</a>
+
+
+
+</div>
+</div>
+</div>
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Design</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--design">
+<a href="../../services/ui-ux/index.html" class="header__dropmenu-ref">
+UI/UX
+</a>
+
+
+
+
+</div>
+</div>
+</div>
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Management
+</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--management">
+
+<a href="../../services/project-management-consulting-company/index.html" class="header__dropmenu-ref">
+Project Management
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="header__divider"></div>
+<a href="../../services/index.html" class="header__dropmenu-main-ref">
+Software Development Services
+</a>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Industries
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries">
+<a href="../../services/travel/index.html" class="header__dropmenu-ref">
+Travel
+</a>
+<a href="../../services/health/index.html" class="header__dropmenu-ref">
+Healthcare
+</a>
+<a href="../../services/tv-app-development/index.html" class="header__dropmenu-ref">
+Smart TV
+</a>
+<a href="../../services/logistics/index.html" class="header__dropmenu-ref">
+Logistics
+</a>
+<a href="../../services/wellness/index.html" class="header__dropmenu-ref">
+Wellness
+</a>
+<a href="../../services/terminal/index.html" class="header__dropmenu-ref">
+POS
+</a>
+<a href="../../services/custom-ecommerce/index.html" class="header__dropmenu-ref">
+Custom Ecom Apps
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries2">
+<a href="../../services/events/index.html" class="header__dropmenu-ref">
+Events
+</a>
+<a href="../../services/marketplace/index.html" class="header__dropmenu-ref">
+Marketplace
+</a>
+<a href="../../services/estate/index.html" class="header__dropmenu-ref">
+Real Estate
+</a>
+<a href="../../services/media/index.html" class="header__dropmenu-ref">
+Social Media
+</a>
+<a href="../../services/finance/index.html" class="header__dropmenu-ref">
+Fintech
+</a>
+<a href="../../services/iot/index.html" class="header__dropmenu-ref">
+IoT
+</a>
+<a href="../../services/ecommerce/index.html" class="header__dropmenu-ref">
+eCommerce Development
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Development Team
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries">
+<a href="../../services/outsourcing/index.html" class="header__dropmenu-main-ref header__dropmenu-main-ref--margin-bottom">
+Outsourcing
+</a>
+<a href="../../services/dev-outsourcing/index.html" class="header__dropmenu-ref">
+Development
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries2">
+<a href="../../services/outstaffing/index.html" class="header__dropmenu-main-ref header__dropmenu-main-ref--margin-bottom">
+Outstaffing
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item header__item--blog">
+<button class="header__item-inner click-dropdown" onclick="ym(52342033, 'reachGoal', 'CLK_BLOG'); return true;">
+<div class="header__item-drop">
+Blog
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu header__dropmenu--blog">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--blog">
+<a href="../../blog/how-much-does-it-cost-to-develop-an-app/index.html" class="header__dropmenu-ref">
+How much does it cost to develop an app
+</a>
+<a href="../../blog/how-to-create-a-social-media-app-a-z-guide/index.html" class="header__dropmenu-ref">
+How to make a social media app
+</a>
+<a href="../../blog/website-redesign-cost/index.html" class="header__dropmenu-ref">
+How much does it cost to redesign a website
+</a>
+<a href="../../blog/restaurant-app-development-purrwebs-detailed-guide/index.html" class="header__dropmenu-ref">
+Restaurant mobile app development
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--blog2">
+<a href="../../blog/how-much-does-it-cost-to-develop-an-app/index.html" class="header__dropmenu-ref">
+How much does it cost to maintain an app
+</a>
+<a href="../../blog/dating-app-development/index.html" class="header__dropmenu-ref">
+Dating mobile app development
+</a>
+<a href="../../blog/how-to-hire-a-developer-for-a-startup-and-not-to-regret-about-it/index.html" class="header__dropmenu-ref">
+Hiring a developer for a startup
+</a>
+<a href="../../blog/index.html" class="header__dropmenu-ref">
+All posts
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+About
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--about">
+<a href="../../about/index.html" class="header__dropmenu-ref">
+Company
+</a>
+<a href="../../contacts/index.html" class="header__dropmenu-ref">
+Contacts
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item header__item--lang visually-hidden">
+<a class="header__item-link js-en-link" href="../../ru/portfolio/biogeek/index.html">Ru</a>
+</li>
+<li class="header__item header__item--request">
+<a class="rising-btn rising-btn--theme2 js-scroll-to" href="#footer" onclick="ym(52342033, 'reachGoal', 'CLK_RAQ'); return true;">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span class="rising-btn__text">
+Request a quote
+</span>
+</span>
+</span>
+</a>
+<div class="lang-popup js-lang-popup hide-lang" id="LangCookieBar">
+<p class="lang-popup__text">
+Холмс, кажется, вы в России...
+</p>
+<button class="lang-popup__close-btn js-close-popup">
+<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.50002 4.49844L9.00627 0.992188L10.0079 1.99377L6.5016 5.50002L10.0079 9.00627L9.00627 10.0079L5.50002 6.5016L1.99377 10.0079L0.992188 9.00627L4.49844 5.50002L0.992188 1.99377L1.99377 0.992188L5.50002 4.49844Z" fill="#808080" />
+</svg>
+</button>
+<div class="lang-popup__btn-wrap">
+<a href="#" class="lang-popup__btn lang-popup__btn--ru js-ru-btn">
+Переключить язык
+</a>
+<a href="#" class="lang-popup__btn lang-popup__btn--eng js-eng-btn">
+не, и так норм
+</a>
+</div>
+</div>
+</li>
+</ul>
+<button class="header__humb js-humb">
+<span class="visually-hidden">Open/close menu</span>
+</button>
+</nav>
+</div>
+</header>
+<div class="main js-main main--fixed-header">
+<style>
+  .case-preloader {
+    transition: opacity 0.5s;
+    opacity: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    pointer-events: none;
+    background-color: #010328;
+  }
+  .case-preloader.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .prealoder-figure {
+    width: 300px;
+    height: 300px;
+  }
+</style>
+<section class="case-preloader active">
+<div class="js-lottie-preloader prealoder-figure"></div>
+</section>
+
+<section class="hero">
+<div class="hero__bg"></div>
+<div class="hero__stars">
+<picture class="hero__stars-img"><source type="image/webp" srcset="/images/biogeek-hero-stars.png, /images/biogeek-hero-stars@2x.png 2x"><img data-src="/images/biogeek-hero-stars.png" src="../../images/biogeek-hero-stars.png" alt="background stars" srcset="/images/biogeek-hero-stars.png, /images/biogeek-hero-stars@2x.png 2x"></picture>
+</div>
+<div class="hero__rays">
+<div class="hero__rays_item"></div>
+<div class="hero__rays_item"></div>
+<div class="hero__rays_item"></div>
+<div class="hero__rays_item"></div>
+<div class="hero__rays_item"></div>
+<div class="hero__rays_item"></div>
+<div class="hero__rays_item"></div>
+</div>
+<div class="hero__header">
+<div class="hero__purrweb-mobile">
+<img class="hero__purrweb-logo hero__purrweb-logo-mobile" data-src="/images/purrweb-logo.svg" src="../../images/purrweb-logo.svg" alt="Purrweb logo">
+<div class="hero__purrweb-year hero__purrweb-year-mobile">2022</div>
+</div>
+<img class="hero__header-logo" data-src="/images/biogeek-logo.svg" src="../../images/biogeek-logo.svg" alt="Biogeek logo">
+<div class="hero__purrweb">
+<img class="hero__purrweb-logo" data-src="/images/purrweb-logo.svg" src="../../images/purrweb-logo.svg" alt="Purrweb logo">
+<div class="hero__purrweb-dot"></div>
+<div class="hero__purrweb-year">2022</div>
+</div>
+</div>
+<div class="hero__screen-container">
+<picture class="hero__screen-img"><source type="image/webp" srcset="/images/biogeek-hello-display-eng.png, /images/biogeek-hello-display-eng@2x.png 2x"><img data-src="/images/biogeek-hello-display-eng.png" src="../../images/biogeek-hello-display-eng.png" alt="Biogeek hello screen" srcset="/images/biogeek-hello-display-eng.png, /images/biogeek-hello-display-eng@2x.png 2x"></picture>
+<picture class="hero__screen-circle1 hero__circle-anim"><source type="image/webp" srcset="/images/biogeek-hello-circle1.png, /images/biogeek-hello-circle1@2x.png 2x"><img data-src="/images/biogeek-hello-circle1.png" src="../../images/biogeek-hello-circle1.png" alt="Biogeek circle" srcset="/images/biogeek-hello-circle1.png, /images/biogeek-hello-circle1@2x.png 2x"></picture>
+<picture class="hero__screen-circle2 hero__circle-anim"><source type="image/webp" srcset="/images/biogeek-hello-circle2.png, /images/biogeek-hello-circle2@2x.png 2x"><img data-src="/images/biogeek-hello-circle2.png" src="../../images/biogeek-hello-circle2.png" alt="Biogeek circle" srcset="/images/biogeek-hello-circle2.png, /images/biogeek-hello-circle2@2x.png 2x"></picture>
+<div class="hero__screen-tag hero__screen-tag1">Nutritionist</div>
+<div class="hero__screen-tag hero__screen-tag2">Mobility</div>
+<div class="hero__screen-tag hero__screen-tag3">Analyzes</div>
+<div class="hero__screen-shadow1 hero__shadow-anim"></div>
+<div class="hero__screen-shadow2 hero__shadow-anim"></div>
+</div>
+</section>
+
+<section class="about">
+<div class="about__head">
+<div class="subtitle subtitle-green">Idea</div>
+<div class="about__title">
+<h2 class="title-2-500 about__title-content">About the project</h2>
+<img class="about__plus" data-src="/images/biogeek-plus.svg" src="../../images/biogeek-plus.svg" alt="Biogeek plus">
+</div>
+<p class="text-400 about__text">
+Biogeek is a web app that helps users<br>keep all their laboratory tests in one place<br>and monitor their health.<br>It’s a web app with mobile adaptation
+</p>
+<p class="text-400 about__text-mobile">
+Biogeek is a web app that helps users keep<br>all their laboratory tests in one place<br>and monitor their health. It’s a web app<br>with mobile adaptation.
+</p>
+</div>
+<div class="about__curtains">
+
+<div class="about__curtain">
+<picture class="about__curtain-img"><source type="image/webp" srcset="/images/biogeek-about-curtain1-eng.png, /images/biogeek-about-curtain1-eng@2x.png 2x"><img data-src="/images/biogeek-about-curtain1-eng.png" src="../../images/biogeek-about-curtain1-eng.png" alt="By who" srcset="/images/biogeek-about-curtain1-eng.png, /images/biogeek-about-curtain1-eng@2x.png 2x"></picture>
+<div class="about__curtain_popup-container">
+<div class="about__curtain_height-container about__curtain-anim1">
+<picture class="about__curtain_popup"><source type="image/webp" srcset="/images/biogeek-about-popup1.png, /images/biogeek-about-popup1@2x.png 2x"><img data-src="/images/biogeek-about-popup1.png" src="../../images/biogeek-about-popup1.png" alt="By who popup" srcset="/images/biogeek-about-popup1.png, /images/biogeek-about-popup1@2x.png 2x"></picture>
+<div class="about__curtain-content">
+<h3 class="title-3-600 about__curtain-content_title">Who is it for</h3>
+<div class="about__curtain__text-container">
+<p class="text-500 about__curtain-content_text">
+The project’s name describes<br>the target audience — geeks, health fans.
+</p>
+<p class="text-500 about__curtain-content_text-mobile">
+The project’s name<br>describes the target audience — geeks,<br>health fans.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="about__arrow-button">
+<img class="about__arrow-img" data-src="/images/biogeek-arrow.svg" src="../../images/biogeek-arrow.svg" alt="About button">
+</div>
+<div class="about__analys-tag">Add Analysis</div>
+</div>
+
+<div class="about__curtain">
+<div class="about__circles-container">
+<img class="about__circle" data-src="/images/biogeek-about-circle.svg" src="../../images/biogeek-about-circle.svg" alt="About circle">
+<img class="about__circle-inner" data-src="/images/biogeek-about-circle.svg" src="../../images/biogeek-about-circle.svg" alt="About circle">
+</div>
+<picture class="about__curtain-img"><source type="image/webp" srcset="/images/biogeek-about-curtain2-eng.png, /images/biogeek-about-curtain2-eng@2x.png 2x"><img data-src="/images/biogeek-about-curtain2-eng.png" src="../../images/biogeek-about-curtain2-eng.png" alt="Client" srcset="/images/biogeek-about-curtain2-eng.png, /images/biogeek-about-curtain2-eng@2x.png 2x"></picture>
+<div class="about__curtain_popup-container">
+<div class="about__curtain_height-container">
+<picture class="about__curtain_popup"><source type="image/webp" srcset="/images/biogeek-about-popup2.png, /images/biogeek-about-popup2@2x.png 2x"><img data-src="/images/biogeek-about-popup2.png" src="../../images/biogeek-about-popup2.png" alt="Client popup" srcset="/images/biogeek-about-popup2.png, /images/biogeek-about-popup2@2x.png 2x"></picture>
+<div class="about__curtain-content">
+<h3 class="title-3-600 about__curtain-content_title">The clients</h3>
+<div class="about__curtain__text-container">
+<p class="text-500 about__curtain-content_text about__curtain_anim-text1">
+Two clients — a businessman and a doctor. It’s<br>a perfect combo for a startup: management skills<br>and knowledge in the field.
+</p>
+<p class="text-500 about__curtain-content_text about__curtain_anim-text2">
+The clients live in the USA but they want to start<br>the project in the Russian market. And then break<br>into the USA and Europe markets.
+</p>
+<p class="text-500 about__curtain-content_text-mobile about__curtain_anim-text3">
+Two clients — a businessman and<br>a doctor. It’s a perfect combo<br>for a startup: management skills<br>and knowledge in the field.
+</p>
+<p class="text-500 about__curtain-content_text-mobile about__curtain_anim-text4">
+The clients live in the USA but<br>they want to start the project<br>in the Russian market. And then break<br>into the USA and Europe markets.
+</p>
+</div>
+<div class="about__curtain-content_pagination">
+<div class="about__pagination-anim1"></div>
+<div class="about__pagination-anim2"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="analysis">
+<div class="analysis__head">
+<div class="subtitle subtitle-violet">Analysis</div>
+<div class="analysis__title">
+
+<h3 class="title-3-500 analysis__title-content">Two projects are better than one</h3>
+<p class="text-400 analysis__text">
+At presale we estimated one humongous project —<br><span class="text-500" style="color: #35B185">Biogeek.Health</span>. This project should’ve included the laboratoryа<br>tests analysis and the help of nutritionists — specialists<br>who help in planning the diet and changing eating habits<br>based on test results.
+</p>
+<p class="text-400 analysis__text analysis__text-2">
+But when the clients saw the budget they<br>decided <span class="text-500" style="color: #F3B63E">to cut the nutritionist part</span> and leave<br>only test analysis.
+</p>
+<p class="text-400 analysis__text analysis__text-3">
+Later the clients decided to implement<br>the nutritionist role in a new separate<br><span class="text-500" style="color: #5560FF">project</span>.
+</p>
+<p class="text-400 analysis__text analysis__text-4">
+Now there is Biogeek.Health<br>where users can get the explanation of<br>the analysis indicators on their own and <span class="text-500" style="color: #5560FF">Biogeek.Expert</span><br>where users can connect with nutritionists.
+</p>
+
+<p class="text-400 analysis__text-mobile">
+At presale we estimated one<br>humongous project — <span class="text-500" style="color: #35B185">Biogeek.Health</span>.<br>This project should’ve included<br>the laboratory tests analysis and<br>the help of nutritionists —<br>specialists who help in planning<br>the diet and changing eating<br>habits based on test results.
+</p>
+<p class="text-400 analysis__text-mobile analysis__text-2">
+But when the clients saw<br>the budget they decided <span class="text-500" style="color: #F3B63E">to<br>cut the nutritionist part</span><br>and leave only test analysis.
+</p>
+<p class="text-400 analysis__text-mobile analysis__text-3">
+Later the clients decided to<br>implement the nutritionist role<br>in a new separate<span class="text-500" style="color: #5560FF">project</span>.
+</p>
+<p class="text-400 analysis__text-mobile analysis__text-4">
+Now there is Biogeek.Health<br>where users can get the<br>explanation of the analysis indicators<br>on their own and <span class="text-500" style="color: #5560FF">Biogeek.Expert</span> where<br>users can connect with nutritionists.
+</p>
+</div>
+</div>
+<div class="analysis__blocks">
+<picture class="analysis__block"><source type="image/webp" srcset="/images/biogeek-analysis-block1.png, /images/biogeek-analysis-block1@2x.png 2x"><img data-src="/images/biogeek-analysis-block1.png" src="../../images/biogeek-analysis-block1.png" alt="Biogeek Health block 1" srcset="/images/biogeek-analysis-block1.png, /images/biogeek-analysis-block1@2x.png 2x"></picture>
+<picture class="analysis__block"><source type="image/webp" srcset="/images/biogeek-analysis-block2.png, /images/biogeek-analysis-block2@2x.png 2x"><img data-src="/images/biogeek-analysis-block2.png" src="../../images/biogeek-analysis-block2.png" alt="Biogeek Health block 2" srcset="/images/biogeek-analysis-block2.png, /images/biogeek-analysis-block2@2x.png 2x"></picture>
+<picture class="analysis__block"><source type="image/webp" srcset="/images/biogeek-analysis-block3.png, /images/biogeek-analysis-block3@2x.png 2x"><img data-src="/images/biogeek-analysis-block3.png" src="../../images/biogeek-analysis-block3.png" alt="Biogeek Health block 3" srcset="/images/biogeek-analysis-block3.png, /images/biogeek-analysis-block3@2x.png 2x"></picture>
+</div>
+<div class="analysis__progress-container">
+<img class="analysis__progress-indicator" data-src="/images/biogeek-analysis-indicator-green.svg" src="../../images/biogeek-analysis-indicator-green.svg" alt="Indicator">
+<img class="analysis__progress-indicator" data-src="/images/biogeek-analysis-indicator-yellow.svg" src="../../images/biogeek-analysis-indicator-yellow.svg" alt="Indicator">
+<img class="analysis__progress-indicator" data-src="/images/biogeek-analysis-indicator-violet.svg" src="../../images/biogeek-analysis-indicator-violet.svg" alt="Indicator">
+<picture class="analysis__progress-bar"><source type="image/webp" srcset="/images/biogeek-analysis-progress.png, /images/biogeek-analysis-progress@2x.png 2x"><img data-src="/images/biogeek-analysis-progress.png" src="../../images/biogeek-analysis-progress.png" alt="Progress bar" srcset="/images/biogeek-analysis-progress.png, /images/biogeek-analysis-progress@2x.png 2x"></picture>
+<picture class="analysis__biogeek-expert"><source type="image/webp" srcset="/images/biogeek-analysis-biogeek-expert.png, /images/biogeek-analysis-biogeek-expert@2x.png 2x"><img data-src="/images/biogeek-analysis-biogeek-expert.png" src="../../images/biogeek-analysis-biogeek-expert.png" alt="Biogeek Expert" srcset="/images/biogeek-analysis-biogeek-expert.png, /images/biogeek-analysis-biogeek-expert@2x.png 2x"></picture>
+</div>
+<div class="analysis__progress-container-mobile">
+<div class="analysis__progress-indicator-mobile"></div>
+<picture class="analysis__progress-bar-mobile"><source type="image/webp" srcset="/images/biogeek-analysis-progress-mobile.png, /images/biogeek-analysis-progress-mobile@2x.png 2x"><img data-src="/images/biogeek-analysis-progress-mobile.png" src="../../images/biogeek-analysis-progress-mobile.png" alt="Progress bar" srcset="/images/biogeek-analysis-progress-mobile.png, /images/biogeek-analysis-progress-mobile@2x.png 2x"></picture>
+</div>
+</section>
+
+<section class="products">
+<picture class="products__bg products__bg-desktop"><source type="image/webp" srcset="/images/biogeek-products-bg.png, /images/biogeek-products-bg@2x.png 2x"><img data-src="/images/biogeek-products-bg.png" src="../../images/biogeek-products-bg.png" alt="Biogeek products" srcset="/images/biogeek-products-bg.png, /images/biogeek-products-bg@2x.png 2x"></picture>
+<picture class="products__bg products__bg-mobile"><source type="image/webp" srcset="/images/biogeek-products-bg-mobile.png, /images/biogeek-products-bg-mobile@2x.png 2x"><img data-src="/images/biogeek-products-bg-mobile.png" src="../../images/biogeek-products-bg-mobile.png" alt="Biogeek products" srcset="/images/biogeek-products-bg-mobile.png, /images/biogeek-products-bg-mobile@2x.png 2x"></picture>
+<div class="products__head">
+<div class="subtitle subtitle-red">Products</div>
+<h2 class="products__title">The difference between the apps</h2>
+</div>
+<div class="products__blocks">
+<div class="products__block">
+<img class="products__block_img" data-src="/images/biogeek-products-health.svg" src="../../images/biogeek-products-health.svg" alt="Biogeek Health">
+<h3 class="title-3-500 products__block_title-health">Biogeek.Health</h3>
+<p class="text-500 products__block_text-desktop">
+Allows users themselves<br>to track test results and gives<br>them recommendations if certain indicators<br>deviate from the norm
+</p>
+<p class="text-500 products__block_text-mobile">
+Allows users themselves to<br>track test results and gives<br>them recommendations if certain<br>indicators deviate from the norm
+</p>
+</div>
+<div class="products__block">
+<img class="products__block_img" data-src="/images/biogeek-products-expert.svg" src="../../images/biogeek-products-expert.svg" alt="Biogeek Expert">
+<h3 class="title-3-500 products__block_title-expert">Biogeek.Expert</h3>
+<p class="text-500 products__block_text-desktop">
+Besides test analysis, allows<br>the user to communicate<br>with their nutritionist.
+</p>
+<p class="text-500 products__block_text-mobile">
+Besides test analysis, allows<br>the user to communicate<br>with their nutritionist.
+</p>
+</div>
+</div>
+</section>
+
+<section class="development">
+<div class="development__content">
+<div class="development__content_container">
+<div class="development__head">
+<div class="subtitle subtitle-orange">Development</div>
+<h2 class="title-2-400">How apps work</h2>
+</div>
+<div class="development__blocks">
+<div class="development__block">
+<h3 class="title-3-500" style="color: #59CDA4">In Biogeek.Health<br>users can</h3>
+<div class="development__block_text-container">
+<p class="text-400">At onboarding, enter their data:<br>name, gender, birth date, height and weight</p>
+<p class="text-400">Add the test results</p>
+<p class="text-400">See the recommendation on the test<br>results that are abnormal</p>
+<p class="text-400">View the history of their lab tests</p>
+</div>
+</div>
+<div class="development__block">
+<h3 class="title-3-500" style="color: #FB7B7B">Biogeek.Expert<br>adds new functions</h3>
+<div class="development__block_text-container">
+<p class="text-400">A chat with nutritionist</p>
+<p class="text-400">Making a diet plan<br>based on test results</p>
+<p class="text-400">Filling out the medical history</p>
+<p class="text-400">A patient diary where users<br>record their daily activity,<br>nutrition, training, sleep,<br>and stress levels</p>
+</div>
+</div>
+<div class="development__block">
+<h3 class="title-3-500" style="color: #A1A7FF">In Biogeek.Expert<br>a nutritionist can</h3>
+<div class="development__block_text-container">
+<p class="text-400">View the patient diary</p>
+<p class="text-400">See the calendar with appointments</p>
+</div>
+</div>
+</div>
+<div class="development__pagination">
+<div class="development__pagination_item"></div>
+<div class="development__pagination_item"></div>
+<div class="development__pagination_item"></div>
+<div class="development__pagination_item"></div>
+</div>
+</div>
+<div class="development__circles">
+<div class="development__circles-container">
+<picture class="development__circle"><source type="image/webp" srcset="/images/biogeek-development-circle1.png, /images/biogeek-development-circle1@2x.png 2x"><img data-src="/images/biogeek-development-circle1.png" src="../../images/biogeek-development-circle1.png" alt="Biogeek development image" srcset="/images/biogeek-development-circle1.png, /images/biogeek-development-circle1@2x.png 2x"></picture>
+<div class="development__circle development__coin development__coin-1" style="background: #59CDA4">01</div>
+<picture class="development__circle"><source type="image/webp" srcset="/images/biogeek-development-circle3.png, /images/biogeek-development-circle3@2x.png 2x"><img data-src="/images/biogeek-development-circle3.png" src="../../images/biogeek-development-circle3.png" alt="Biogeek development image" srcset="/images/biogeek-development-circle3.png, /images/biogeek-development-circle3@2x.png 2x"></picture>
+<div class="development__circle development__coin development__coin-2" style="background: #FB7B7B">02</div>
+<picture class="development__circle"><source type="image/webp" srcset="/images/biogeek-development-circle4.png, /images/biogeek-development-circle4@2x.png 2x"><img data-src="/images/biogeek-development-circle4.png" src="../../images/biogeek-development-circle4.png" alt="Biogeek development image" srcset="/images/biogeek-development-circle4.png, /images/biogeek-development-circle4@2x.png 2x"></picture>
+<picture class="development__circle"><source type="image/webp" srcset="/images/biogeek-development-circle5.png, /images/biogeek-development-circle5@2x.png 2x"><img data-src="/images/biogeek-development-circle5.png" src="../../images/biogeek-development-circle5.png" alt="Biogeek development image" srcset="/images/biogeek-development-circle5.png, /images/biogeek-development-circle5@2x.png 2x"></picture>
+<div class="development__circle development__coin development__coin-3" style="background: #646EFA">03</div>
+<picture class="development__circle"><source type="image/webp" srcset="/images/biogeek-development-circle6.png, /images/biogeek-development-circle6@2x.png 2x"><img data-src="/images/biogeek-development-circle6.png" src="../../images/biogeek-development-circle6.png" alt="Biogeek development image" srcset="/images/biogeek-development-circle6.png, /images/biogeek-development-circle6@2x.png 2x"></picture>
+</div>
+</div>
+</div>
+<div class="development__slider">
+<div class="development__slider-containers">
+<div class="development__slider-container development__slider-container1">
+<picture class="development__slider1-img"><source type="image/webp" srcset="/images/biogeek-development-screen1-1-eng.png, /images/biogeek-development-screen1-1-eng@2x.png 2x"><img data-src="/images/biogeek-development-screen1-1-eng.png" src="../../images/biogeek-development-screen1-1-eng.png" alt="Enter your weight" srcset="/images/biogeek-development-screen1-1-eng.png, /images/biogeek-development-screen1-1-eng@2x.png 2x"></picture>
+<picture class="development__slider1-img"><source type="image/webp" srcset="/images/biogeek-development-screen1-2-eng.png, /images/biogeek-development-screen1-2-eng@2x.png 2x"><img data-src="/images/biogeek-development-screen1-2-eng.png" src="../../images/biogeek-development-screen1-2-eng.png" alt="User information" srcset="/images/biogeek-development-screen1-2-eng.png, /images/biogeek-development-screen1-2-eng@2x.png 2x"></picture>
+<picture class="development__slider1-img"><source type="image/webp" srcset="/images/biogeek-development-screen1-3-eng.png, /images/biogeek-development-screen1-3-eng@2x.png 2x"><img data-src="/images/biogeek-development-screen1-3-eng.png" src="../../images/biogeek-development-screen1-3-eng.png" alt="Analysis results" srcset="/images/biogeek-development-screen1-3-eng.png, /images/biogeek-development-screen1-3-eng@2x.png 2x"></picture>
+<picture class="development__slider1-img"><source type="image/webp" srcset="/images/biogeek-development-screen1-4-eng.png, /images/biogeek-development-screen1-4-eng@2x.png 2x"><img data-src="/images/biogeek-development-screen1-4-eng.png" src="../../images/biogeek-development-screen1-4-eng.png" alt="Analysis history" srcset="/images/biogeek-development-screen1-4-eng.png, /images/biogeek-development-screen1-4-eng@2x.png 2x"></picture>
+</div>
+<div class="development__slider-container development__slider-container2">
+<picture class="development__slider2-img"><source type="image/webp" srcset="/images/biogeek-development-screen2-1-eng.png, /images/biogeek-development-screen2-1-eng@2x.png 2x"><img data-src="/images/biogeek-development-screen2-1-eng.png" src="../../images/biogeek-development-screen2-1-eng.png" alt="Messages" srcset="/images/biogeek-development-screen2-1-eng.png, /images/biogeek-development-screen2-1-eng@2x.png 2x"></picture>
+<picture class="development__slider2-img"><source type="image/webp" srcset="/images/biogeek-development-screen2-2-eng.png, /images/biogeek-development-screen2-2-eng@2x.png 2x"><img data-src="/images/biogeek-development-screen2-2-eng.png" src="../../images/biogeek-development-screen2-2-eng.png" alt="Meal plan" srcset="/images/biogeek-development-screen2-2-eng.png, /images/biogeek-development-screen2-2-eng@2x.png 2x"></picture>
+<picture class="development__slider2-img"><source type="image/webp" srcset="/images/biogeek-development-screen2-3-eng.png, /images/biogeek-development-screen2-3-eng@2x.png 2x"><img data-src="/images/biogeek-development-screen2-3-eng.png" src="../../images/biogeek-development-screen2-3-eng.png" alt="Analysis" srcset="/images/biogeek-development-screen2-3-eng.png, /images/biogeek-development-screen2-3-eng@2x.png 2x"></picture>
+<picture class="development__slider2-img"><source type="image/webp" srcset="/images/biogeek-development-screen2-4-eng.png, /images/biogeek-development-screen2-4-eng@2x.png 2x"><img data-src="/images/biogeek-development-screen2-4-eng.png" src="../../images/biogeek-development-screen2-4-eng.png" alt="Patient information" srcset="/images/biogeek-development-screen2-4-eng.png, /images/biogeek-development-screen2-4-eng@2x.png 2x"></picture>
+</div>
+<div class="development__slider-container development__slider-container3">
+<picture class="development__slider3-img"><source type="image/webp" srcset="/images/biogeek-development-screen3-1-eng.png, /images/biogeek-development-screen3-1-eng@2x.png 2x"><img data-src="/images/biogeek-development-screen3-1-eng.png" src="../../images/biogeek-development-screen3-1-eng.png" alt="Patients list" srcset="/images/biogeek-development-screen3-1-eng.png, /images/biogeek-development-screen3-1-eng@2x.png 2x"></picture>
+<picture class="development__slider3-img"><source type="image/webp" srcset="/images/biogeek-development-screen3-2-eng.png, /images/biogeek-development-screen3-2-eng@2x.png 2x"><img data-src="/images/biogeek-development-screen3-2-eng.png" src="../../images/biogeek-development-screen3-2-eng.png" alt="Calendar" srcset="/images/biogeek-development-screen3-2-eng.png, /images/biogeek-development-screen3-2-eng@2x.png 2x"></picture>
+</div>
+<div class="development__slider-blur"></div>
+</div>
+</div>
+<div class="development__pagination-mobile">
+<div class="development__pagination-mobile_item"></div>
+<div class="development__pagination-mobile_item"></div>
+<div class="development__pagination-mobile_item"></div>
+<div class="development__pagination-mobile_item"></div>
+</div>
+<div class="development__coins">
+<div class="development__circle development__coin development__coin-1" style="background: #59CDA4">01</div>
+<div class="development__circle development__coin development__coin-2" style="background: #FB7B7B">02</div>
+<div class="development__circle development__coin development__coin-3" style="background: #646EFA">03</div>
+</div>
+</section>
+<picture class="oval-transition"><source type="image/webp" srcset="/images/biogeek-oval-transition.png, /images/biogeek-oval-transition@2x.png 2x"><img data-src="/images/biogeek-oval-transition.png" src="../../images/biogeek-oval-transition.png" alt="Blur transition" srcset="/images/biogeek-oval-transition.png, /images/biogeek-oval-transition@2x.png 2x"></picture>
+<picture class="oval-transition-blur"><source type="image/webp" srcset="/images/biogeek-transition-blur.png, /images/biogeek-transition-blur@2x.png 2x"><img data-src="/images/biogeek-transition-blur.png" src="../../images/biogeek-transition-blur.png" alt="Blur transition" srcset="/images/biogeek-transition-blur.png, /images/biogeek-transition-blur@2x.png 2x"></picture>
+
+<section class="solution">
+<picture class="solution__stars-img"><source type="image/webp" srcset="/images/biogeek-hero-stars.png, /images/biogeek-hero-stars@2x.png 2x"><img data-src="/images/biogeek-hero-stars.png" src="../../images/biogeek-hero-stars.png" alt="background stars" srcset="/images/biogeek-hero-stars.png, /images/biogeek-hero-stars@2x.png 2x"></picture>
+<picture class="solution__stars-img-mobile"><source type="image/webp" srcset="/images/biogeek-stars-mobile.png, /images/biogeek-stars-mobile@2x.png 2x"><img data-src="/images/biogeek-stars-mobile.png" src="../../images/biogeek-stars-mobile.png" alt="background stars" srcset="/images/biogeek-stars-mobile.png, /images/biogeek-stars-mobile@2x.png 2x"></picture>
+<div class="solution__head">
+<h3 class="title-3-500 solution__title">Solution</h3>
+<p class="text-500 solution__text">
+Finding similar services wasn’t easy<br>since some of them are locked behind a<br>subscription and others have outdated<br>usability and interface.
+</p>
+<p class="text-500 solution__text solution__text-mobile">
+Finding similar services<br>wasn’t easy since some of them are<br>locked behind a subscription and<br>others have outdated usability<br>and interface.
+</p>
+<div class="solution__head-orange-blur"></div>
+</div>
+<div class="solution__display">
+<div class="solution__display_red-blur"></div>
+<div class="solution__display-container">
+<div class="solution__display-container_red-frame"></div>
+<div class="solution__display-container_yellow-frame"></div>
+<div class="solution__display-container_top-blur"></div>
+<div class="solution__display-container_bottom-blur"></div>
+<div class="solution__display-black-border">
+<picture class="solution__display-img"><source type="image/webp" srcset="/images/biogeek-solution-display-eng.png, /images/biogeek-solution-display-eng@2x.png 2x"><img data-src="/images/biogeek-solution-display-eng.png" src="../../images/biogeek-solution-display-eng.png" alt="Biogeek solution" srcset="/images/biogeek-solution-display-eng.png, /images/biogeek-solution-display-eng@2x.png 2x"></picture>
+</div>
+</div>
+</div>
+<div class="solution__bottom">
+<p class="text-500 solution__bottom-text">
+We had to rely on our own<br>expertise and indirect competitor<br>analysis: for example accounting<br>services and other services<br>with statistics.
+</p>
+<p class="text-500 solution__bottom-text solution__bottom-text-mobile">
+We had to rely on<br>our own expertise and<br>indirect competitor analysis:<br>for example accounting<br>services and other<br>services with<br>statistics.
+</p>
+</div>
+<div class="solution__arrow">
+<img class="solution__arrow-img" data-src="/images/biogeek-solution-arrow.svg" src="../../images/biogeek-solution-arrow.svg" alt="Biogeek arrow bottom">
+</div>
+</section>
+
+<section class="design">
+<div class="design__head">
+<img class="design__head-loader" data-src="/images/biogeek-design-loader.svg" src="../../images/biogeek-design-loader.svg" alt="Biogeek design">
+<div class="design__tag">UI/UX</div>
+<h3 class="title-3-600 design__title">Design</h3>
+<div class="text-500 design__text">
+Users need to upload their data to the system<br>and get an explanation. And then they decide whether<br>they need the help of a specialist or not. That’s why<br>we made the navigation very simple.
+</div>
+<div class="text-500 design__text design__text-mobile">
+Users need to upload their data to<br>the system and get an explanation.<br>And then they decide whether they<br>need the help of a specialist<br>or not. That’s why we made<br>the navigation very simple.
+</div>
+</div>
+<div class="design__ellipse-container">
+<div class="design__ellipse">
+<picture class="design__ellipse-border"><source type="image/webp" srcset="/images/biogeek-design-ellipse.png, /images/biogeek-design-ellipse@2x.png 2x"><img data-src="/images/biogeek-design-ellipse.png" src="../../images/biogeek-design-ellipse.png" alt="Biogeek add analysis" srcset="/images/biogeek-design-ellipse.png, /images/biogeek-design-ellipse@2x.png 2x"></picture>
+<div class="design__ellipse-inner">
+<div class="design__ellipse-inner_green-circle"></div>
+<div class="design__ellipse-inner_red-circle"></div>
+</div>
+<div class="design__add-button">Add a test</div>
+<div class="design__delete-button">Delete</div>
+<picture class="design__biomarker"><source type="image/webp" srcset="/images/biogeek-design-biomarker-eng.png, /images/biogeek-design-biomarker-eng@2x.png 2x"><img data-src="/images/biogeek-design-biomarker-eng.png" src="../../images/biogeek-design-biomarker-eng.png" alt="Biogeek delete analysis" srcset="/images/biogeek-design-biomarker-eng.png, /images/biogeek-design-biomarker-eng@2x.png 2x"></picture>
+</div>
+</div>
+<div class="design__bottom">
+<img class="design__arrow" data-src="/images/biogeek-design-arrow.svg" src="../../images/biogeek-design-arrow.svg" alt="Biogeek arrow">
+<div class="text-500 design__text">
+The crucial information is displayed on the<br>dashboard. We separated only the profile page<br>and settings. Everything is intuitive, the accent<br>color highlights all important elements,<br>for example the analysis cards.
+</div>
+<div class="text-500 design__text design__text-mobile">
+The crucial information<br>is displayed on the dashboard.<br>We separated only the profile<br>page and settings. Everything is<br>intuitive, the accent color<br>highlights all important elements,<br>for example the analysis cards.
+</div>
+</div>
+</section>
+
+<section class="dashboard">
+<div class="dashboard__gradient-top"></div>
+<div class="dashboard__gradient-bottom"></div>
+<div class="dashboard__screen">
+<picture class="dashboard__screen-scheme"><source type="image/webp" srcset="/images/biogeek-dashboard-scheme-eng.png, /images/biogeek-dashboard-scheme-eng@2x.png 2x"><img data-src="/images/biogeek-dashboard-scheme-eng.png" src="../../images/biogeek-dashboard-scheme-eng.png" alt="Biogeek dashoard scheme" srcset="/images/biogeek-dashboard-scheme-eng.png, /images/biogeek-dashboard-scheme-eng@2x.png 2x"></picture>
+<picture class="dashboard__screen-dashboard"><source type="image/webp" srcset="/images/biogeek-dashboard-dashboard-eng.png, /images/biogeek-dashboard-dashboard-eng@2x.png 2x"><img data-src="/images/biogeek-dashboard-dashboard-eng.png" src="../../images/biogeek-dashboard-dashboard-eng.png" alt="Biogeek dashoard" srcset="/images/biogeek-dashboard-dashboard-eng.png, /images/biogeek-dashboard-dashboard-eng@2x.png 2x"></picture>
+
+</div>
+<div class="dashboard__profile-button">Profile</div>
+<img class="dashboard__plus-1" data-src="/images/biogeek-dashboard-plus.svg" src="../../images/biogeek-dashboard-plus.svg" alt="Biogeek plus image">
+<img class="dashboard__plus-2" data-src="/images/biogeek-dashboard-plus.svg" src="../../images/biogeek-dashboard-plus.svg" alt="Biogeek plus image">
+<img class="dashboard__plus-3" data-src="/images/biogeek-dashboard-plus.svg" src="../../images/biogeek-dashboard-plus.svg" alt="Biogeek plus image">
+</section>
+
+<section class="coloring">
+<div class="coloring__head">
+<div class="subtitle coloring__subtitle">Color palette</div>
+<h3 class="title-3-500 coloring__title">Colors</h3>
+<p class="text-400 coloring__text">
+We used green and violet<br>as the primary colors to stand out<br>from the competitors
+</p>
+</div>
+<div class="coloring__blocks">
+<picture class="coloring__blocks_block coloring__blocks_block1"><source type="image/webp" srcset="/images/biogeek-coloring-block1-eng.png, /images/biogeek-coloring-block1-eng@2x.png 2x"><img data-src="/images/biogeek-coloring-block1-eng.png" src="../../images/biogeek-coloring-block1-eng.png" alt="Color 35B185" srcset="/images/biogeek-coloring-block1-eng.png, /images/biogeek-coloring-block1-eng@2x.png 2x"></picture>
+<picture class="coloring__blocks_block coloring__blocks_block2"><source type="image/webp" srcset="/images/biogeek-coloring-block2-eng.png, /images/biogeek-coloring-block2-eng@2x.png 2x"><img data-src="/images/biogeek-coloring-block2-eng.png" src="../../images/biogeek-coloring-block2-eng.png" alt="Color 646EFA" srcset="/images/biogeek-coloring-block2-eng.png, /images/biogeek-coloring-block2-eng@2x.png 2x"></picture>
+<picture class="coloring__blocks_block coloring__blocks_block3"><source type="image/webp" srcset="/images/biogeek-coloring-block3-eng.png, /images/biogeek-coloring-block3-eng@2x.png 2x"><img data-src="/images/biogeek-coloring-block3-eng.png" src="../../images/biogeek-coloring-block3-eng.png" alt="Color FB7B7B" srcset="/images/biogeek-coloring-block3-eng.png, /images/biogeek-coloring-block3-eng@2x.png 2x"></picture>
+<picture class="coloring__blocks_block coloring__blocks_block4"><source type="image/webp" srcset="/images/biogeek-coloring-block4-eng.png, /images/biogeek-coloring-block4-eng@2x.png 2x"><img data-src="/images/biogeek-coloring-block4-eng.png" src="../../images/biogeek-coloring-block4-eng.png" alt="Color F3B63E" srcset="/images/biogeek-coloring-block4-eng.png, /images/biogeek-coloring-block4-eng@2x.png 2x"></picture>
+</div>
+</section>
+
+<section class="typography">
+<div class="typography__head">
+<div class="subtitle typography__subtitle">Font</div>
+<h3 class="title-3-500 typography__title">Typography</h3>
+<p class="text-500 typography__text">
+For this project we decided to<br>use the <span style="color: #646EFA">Inter</span> font. It’s<br>a universal grotesque font<br>with a lot of variations.
+</p>
+<p class="text-500 typography__text typography__text-mobile">
+For this project we decided<br>to use the <span style="color: #646EFA">Inter</span> font. It’s<br>a universal grotesque font<br>with a lot of variations
+</p>
+</div>
+<div class="typography__inter-container">
+<div class="typography__inter-container-blur"></div>
+<picture class="typography__inter"><source type="image/webp" srcset="/images/biogeek-typography-inter.png, /images/biogeek-typography-inter@2x.png 2x"><img data-src="/images/biogeek-typography-inter.png" src="../../images/biogeek-typography-inter.png" alt="Font Inter" srcset="/images/biogeek-typography-inter.png, /images/biogeek-typography-inter@2x.png 2x"></picture>
+<div class="typography__font">
+<ul class="typography__font_weights">
+<li>Regular</li>
+<li>Medium</li>
+<li>Bold</li>
+</ul>
+<ul class="typography__font_sizes">
+<li>42px</li>
+<li>32px</li>
+<li>28px</li>
+<li>24px</li>
+<li>20px</li>
+</ul>
+</div>
+</div>
+<div class="typography__chars">
+<p class="typography__chars_line1">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
+<div class="typography__chars_line2-container">
+<p class="typography__chars_line2">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
+</div>
+</div>
+</section>
+
+<section class="screens">
+<section class="data">
+<div class="data__top-gradient-mobile"></div>
+<div class="data__left-side">
+<div class="data__head">
+<div class="subtitle data__subtitle">Data</div>
+<h2 class="title-2-500 data__title">Parsing</h2>
+<p class="text-400 data__text">
+We had to extract health indicators<br>from PDF files, as well as their values<br>and units, and then display it<br>on the analysis screen.
+</p>
+<div class="data__mark_container data__hemoglobin">
+<div class="data__mark_name">Hemoglobin (HGB)</div>
+<div class="data__mark_value">140</div>
+</div>
+<div class="data__mark_container data__hematocrit">
+<div class="data__mark_name">Hematocrit (HCT)</div>
+<div class="data__mark_value">60</div>
+<div class="data__mark_substring">Outside the norm</div>
+</div>
+</div>
+</div>
+<div class="data__right-side">
+<div class="data__screen">
+<section class="displays">
+<div class="displays__container">
+<div class="displays__column displays__column-c1">
+<picture class="displays__screen"><source type="image/webp" srcset="/images/biogeek-displays-d1-eng.png, /images/biogeek-displays-d1-eng@2x.png 2x"><img data-src="/images/biogeek-displays-d1-eng.png" src="../../images/biogeek-displays-d1-eng.png" alt="Dashboard" srcset="/images/biogeek-displays-d1-eng.png, /images/biogeek-displays-d1-eng@2x.png 2x"></picture>
+<picture class="displays__screen"><source type="image/webp" srcset="/images/biogeek-displays-d2-eng.png, /images/biogeek-displays-d2-eng@2x.png 2x"><img data-src="/images/biogeek-displays-d2-eng.png" src="../../images/biogeek-displays-d2-eng.png" alt="Data" srcset="/images/biogeek-displays-d2-eng.png, /images/biogeek-displays-d2-eng@2x.png 2x"></picture>
+<picture class="displays__screen"><source type="image/webp" srcset="/images/biogeek-displays-d14-eng.png, /images/biogeek-displays-d14-eng@2x.png 2x"><img data-src="/images/biogeek-displays-d14-eng.png" src="../../images/biogeek-displays-d14-eng.png" alt="Diploma downloading" srcset="/images/biogeek-displays-d14-eng.png, /images/biogeek-displays-d14-eng@2x.png 2x"></picture>
+<picture class="displays__screen"><source type="image/webp" srcset="/images/biogeek-displays-d4-eng.png, /images/biogeek-displays-d4-eng@2x.png 2x"><img data-src="/images/biogeek-displays-d4-eng.png" src="../../images/biogeek-displays-d4-eng.png" alt="Patient" srcset="/images/biogeek-displays-d4-eng.png, /images/biogeek-displays-d4-eng@2x.png 2x"></picture>
+</div>
+<div class="displays__column displays__column-c2">
+<picture class="displays__screen"><source type="image/webp" srcset="/images/biogeek-displays-d5-eng.png, /images/biogeek-displays-d5-eng@2x.png 2x"><img data-src="/images/biogeek-displays-d5-eng.png" src="../../images/biogeek-displays-d5-eng.png" alt="Verification" srcset="/images/biogeek-displays-d5-eng.png, /images/biogeek-displays-d5-eng@2x.png 2x"></picture>
+<picture class="displays__screen"><source type="image/webp" srcset="/images/biogeek-displays-d6-eng.png, /images/biogeek-displays-d6-eng@2x.png 2x"><img data-src="/images/biogeek-displays-d6-eng.png" src="../../images/biogeek-displays-d6-eng.png" alt="Payment diary" srcset="/images/biogeek-displays-d6-eng.png, /images/biogeek-displays-d6-eng@2x.png 2x"></picture>
+<div class="displays__screen displays__screen-empty"></div>
+<picture class="displays__screen"><source type="image/webp" srcset="/images/biogeek-displays-d8-eng.png, /images/biogeek-displays-d8-eng@2x.png 2x"><img data-src="/images/biogeek-displays-d8-eng.png" src="../../images/biogeek-displays-d8-eng.png" alt="Empty state" srcset="/images/biogeek-displays-d8-eng.png, /images/biogeek-displays-d8-eng@2x.png 2x"></picture>
+</div>
+<div class="displays__column displays__column-c3">
+<picture class="displays__screen"><source type="image/webp" srcset="/images/biogeek-displays-d9-eng.png, /images/biogeek-displays-d9-eng@2x.png 2x"><img data-src="/images/biogeek-displays-d9-eng.png" src="../../images/biogeek-displays-d9-eng.png" alt="Diploma downloading" srcset="/images/biogeek-displays-d9-eng.png, /images/biogeek-displays-d9-eng@2x.png 2x"></picture>
+<picture class="displays__screen"><source type="image/webp" srcset="/images/biogeek-displays-d10-eng.png, /images/biogeek-displays-d10-eng@2x.png 2x"><img data-src="/images/biogeek-displays-d10-eng.png" src="../../images/biogeek-displays-d10-eng.png" alt="Weight" srcset="/images/biogeek-displays-d10-eng.png, /images/biogeek-displays-d10-eng@2x.png 2x"></picture>
+<picture class="displays__screen"><source type="image/webp" srcset="/images/biogeek-displays-d11-eng.png, /images/biogeek-displays-d11-eng@2x.png 2x"><img data-src="/images/biogeek-displays-d11-eng.png" src="../../images/biogeek-displays-d11-eng.png" alt="No chosen dialogs" srcset="/images/biogeek-displays-d11-eng.png, /images/biogeek-displays-d11-eng@2x.png 2x"></picture>
+<picture class="displays__screen"><source type="image/webp" srcset="/images/biogeek-displays-d7-eng.png, /images/biogeek-displays-d7-eng@2x.png 2x"><img data-src="/images/biogeek-displays-d7-eng.png" src="../../images/biogeek-displays-d7-eng.png" alt="Maps" srcset="/images/biogeek-displays-d7-eng.png, /images/biogeek-displays-d7-eng@2x.png 2x"></picture>
+</div>
+<div class="displays__column displays__column-c4">
+<picture class="displays__screen"><source type="image/webp" srcset="/images/biogeek-displays-d13-eng.png, /images/biogeek-displays-d13-eng@2x.png 2x"><img data-src="/images/biogeek-displays-d13-eng.png" src="../../images/biogeek-displays-d13-eng.png" alt="Subscriptions" srcset="/images/biogeek-displays-d13-eng.png, /images/biogeek-displays-d13-eng@2x.png 2x"></picture>
+<picture class="displays__screen"><source type="image/webp" srcset="/images/biogeek-displays-d14-eng.png, /images/biogeek-displays-d14-eng@2x.png 2x"><img data-src="/images/biogeek-displays-d14-eng.png" src="../../images/biogeek-displays-d14-eng.png" alt="Diploma downloading" srcset="/images/biogeek-displays-d14-eng.png, /images/biogeek-displays-d14-eng@2x.png 2x"></picture>
+<picture class="displays__screen"><source type="image/webp" srcset="/images/biogeek-displays-d15-eng.png, /images/biogeek-displays-d15-eng@2x.png 2x"><img data-src="/images/biogeek-displays-d15-eng.png" src="../../images/biogeek-displays-d15-eng.png" alt="My analysis" srcset="/images/biogeek-displays-d15-eng.png, /images/biogeek-displays-d15-eng@2x.png 2x"></picture>
+<picture class="displays__screen"><source type="image/webp" srcset="/images/biogeek-displays-d16-eng.png, /images/biogeek-displays-d16-eng@2x.png 2x"><img data-src="/images/biogeek-displays-d16-eng.png" src="../../images/biogeek-displays-d16-eng.png" alt="Growth" srcset="/images/biogeek-displays-d16-eng.png, /images/biogeek-displays-d16-eng@2x.png 2x"></picture>
+</div>
+</div>
+<div class="displays__bottom-gradient"></div>
+</section>
+<picture class="data__screen-img data__screen-img-animated"><source type="image/webp" srcset="/images/biogeek-displays-d12-eng.png, /images/biogeek-displays-d12-eng@2x.png 2x"><img data-src="/images/biogeek-displays-d12-eng.png" src="../../images/biogeek-displays-d12-eng.png" alt="Analysis results" srcset="/images/biogeek-displays-d12-eng.png, /images/biogeek-displays-d12-eng@2x.png 2x"></picture>
+<div class="data__screen-img data__screen-img-non-animated">
+<picture class="data__screen-img-2"><source type="image/webp" srcset="/images/biogeek-data-results-eng.png, /images/biogeek-data-results-eng@2x.png 2x"><img data-src="/images/biogeek-data-results-eng.png" src="../../images/biogeek-data-results-eng.png" alt="Analysis results" srcset="/images/biogeek-data-results-eng.png, /images/biogeek-data-results-eng@2x.png 2x"></picture>
+</div>
+</div>
+<div class="data__selector">
+<div class="data__selector_pdf">
+<span class="data__selector-checkmark">PDF</span>
+<img class="data__selector-checkmark" data-src="/images/biogeek-data-checkmark.svg" src="../../images/biogeek-data-checkmark.svg" alt="Checkmark">
+</div>
+</div>
+<div class="data__mark_container data__red-blood-cells">
+<div class="data__mark_name">Erythrocytes (RBC)</div>
+<div class="data__mark_value">5.2</div>
+</div>
+</div>
+<picture class="data__bg"><source type="image/webp" srcset="/images/biogeek-data-bg.png, /images/biogeek-data-bg@2x.png 2x"><img data-src="/images/biogeek-data-bg.png" src="../../images/biogeek-data-bg.png" alt="Data screen bg" srcset="/images/biogeek-data-bg.png, /images/biogeek-data-bg@2x.png 2x"></picture>
+<picture class="data__bg-mobile"><source type="image/webp" srcset="/images/biogeek-data-bg-mobile.png, /images/biogeek-data-bg-mobile@2x.png 2x"><img data-src="/images/biogeek-data-bg-mobile.png" src="../../images/biogeek-data-bg-mobile.png" alt="Data screen bg" srcset="/images/biogeek-data-bg-mobile.png, /images/biogeek-data-bg-mobile@2x.png 2x"></picture>
+</section>
+</section>
+
+<section class="calendar">
+<img class="calendar__plus" data-src="/images/biogeek-calendar-plus.svg" src="../../images/biogeek-calendar-plus.svg" alt="Plus image">
+<div class="calendar__blur"></div>
+<div class="calendar__left-side">
+<div class="calendar__circle-container">
+<picture class="calendar__circle"><source type="image/webp" srcset="/images/biogeek-calendar-circle.png, /images/biogeek-calendar-circle@2x.png 2x"><img data-src="/images/biogeek-calendar-circle.png" src="../../images/biogeek-calendar-circle.png" alt="Circle" srcset="/images/biogeek-calendar-circle.png, /images/biogeek-calendar-circle@2x.png 2x"></picture>
+<picture class="calendar__circle calendar__circle-inner"><source type="image/webp" srcset="/images/biogeek-calendar-circle.png, /images/biogeek-calendar-circle@2x.png 2x"><img data-src="/images/biogeek-calendar-circle.png" src="../../images/biogeek-calendar-circle.png" alt="Circle inner" srcset="/images/biogeek-calendar-circle.png, /images/biogeek-calendar-circle@2x.png 2x"></picture>
+<picture class="calendar__calendar-img"><source type="image/webp" srcset="/images/biogeek-calendar-calendar-eng.png, /images/biogeek-calendar-calendar-eng@2x.png 2x"><img data-src="/images/biogeek-calendar-calendar-eng.png" src="../../images/biogeek-calendar-calendar-eng.png" alt="Calendar" srcset="/images/biogeek-calendar-calendar-eng.png, /images/biogeek-calendar-calendar-eng@2x.png 2x"></picture>
+<picture class="calendar__analysis-img"><source type="image/webp" srcset="/images/biogeek-calendar-analysis-eng.png, /images/biogeek-calendar-analysis-eng@2x.png 2x"><img data-src="/images/biogeek-calendar-analysis-eng.png" src="../../images/biogeek-calendar-analysis-eng.png" alt="Analysis" srcset="/images/biogeek-calendar-analysis-eng.png, /images/biogeek-calendar-analysis-eng@2x.png 2x"></picture>
+<picture class="calendar__growth-img"><source type="image/webp" srcset="/images/biogeek-calendar-growth-eng.png, /images/biogeek-calendar-growth-eng@2x.png 2x"><img data-src="/images/biogeek-calendar-growth-eng.png" src="../../images/biogeek-calendar-growth-eng.png" alt="Growth" srcset="/images/biogeek-calendar-growth-eng.png, /images/biogeek-calendar-growth-eng@2x.png 2x"></picture>
+<picture class="calendar__date-img"><source type="image/webp" srcset="/images/biogeek-calendar-date-eng.png, /images/biogeek-calendar-date-eng@2x.png 2x"><img data-src="/images/biogeek-calendar-date-eng.png" src="../../images/biogeek-calendar-date-eng.png" alt="Date" srcset="/images/biogeek-calendar-date-eng.png, /images/biogeek-calendar-date-eng@2x.png 2x"></picture>
+</div>
+<div class="calendar__text-container">
+<p class="text-400 calendar__text-mobile calendar__pagination-text1">
+After 3 weeks of searches<br>we found <span style="color: rgb(100, 110, 250); font-weight: 500">ABBYY</span>. It works<br>well with both Russian and<br>English languages.
+</p>
+<p class="text-400 calendar__text-mobile calendar__pagination-text2">
+We’ve tried a lot of services — we<br>tested Microsoft Azure, AWS Textract,<br>Cloud Vision API, but they didn’t<br>work with Russian language or<br>were unreasonably expensive. Tesseract<br>performed bad with English.
+</p>
+<div class="calendar__pagination">
+<div class="calendar__pagination_item"></div>
+<div class="calendar__pagination_item"></div>
+</div>
+</div>
+<picture class="calendar__abbyy-img-mobile"><source type="image/webp" srcset="/images/biogeek-calendar-abbyy.png, /images/biogeek-calendar-abbyy@2x.png 2x"><img data-src="/images/biogeek-calendar-abbyy.png" src="../../images/biogeek-calendar-abbyy.png" alt="ABBYY" srcset="/images/biogeek-calendar-abbyy.png, /images/biogeek-calendar-abbyy@2x.png 2x"></picture>
+<img class="calendar__arrow-mobile" data-src="/images/biogeek-calendar-arrow.svg" src="../../images/biogeek-calendar-arrow.svg" alt="arrow">
+</div>
+<div class="calendar__right-side">
+<picture class="calendar__abbyy-img"><source type="image/webp" srcset="/images/biogeek-calendar-abbyy.png, /images/biogeek-calendar-abbyy@2x.png 2x"><img data-src="/images/biogeek-calendar-abbyy.png" src="../../images/biogeek-calendar-abbyy.png" alt="ABBYY" srcset="/images/biogeek-calendar-abbyy.png, /images/biogeek-calendar-abbyy@2x.png 2x"></picture>
+<div class="calendar__right-side_text__container">
+<p class="text-400 calendar__text">
+After 3 weeks of searches<br>we found <span style="color: rgb(100, 110, 250); font-weight: 500">ABBYY</span>. It works well<br>with both Russian and<br>English languages.
+</p>
+<img class="calendar__arrow" data-src="/images/biogeek-calendar-arrow.svg" src="../../images/biogeek-calendar-arrow.svg" alt="arrow">
+</div>
+</div>
+</section>
+
+<section class="blocks">
+<div class="blocks__container">
+<div class="blocks__img">
+<picture class="blocks__img-1"><source type="image/webp" srcset="/images/biogeek-blocks-1.png, /images/biogeek-blocks-1@2x.png 2x"><img data-src="/images/biogeek-blocks-1.png" src="../../images/biogeek-blocks-1.png" alt="Doctor image" srcset="/images/biogeek-blocks-1.png, /images/biogeek-blocks-1@2x.png 2x"></picture>
+<picture class="blocks__blender"><source type="image/webp" srcset="/images/biogeek-blocks-blender.png, /images/biogeek-blocks-blender@2x.png 2x"><img data-src="/images/biogeek-blocks-blender.png" src="../../images/biogeek-blocks-blender.png" alt="blender" srcset="/images/biogeek-blocks-blender.png, /images/biogeek-blocks-blender@2x.png 2x"></picture>
+<div class="blocks__circles-container">
+<img class="blocks__circle-1" data-src="/images/biogeek-blocks-circle.svg" src="../../images/biogeek-blocks-circle.svg" alt="Green circle">
+<img class="blocks__circle-2" data-src="/images/biogeek-blocks-circle.svg" src="../../images/biogeek-blocks-circle.svg" alt="Green circle inner">
+</div>
+</div>
+<div class="blocks__img">
+<picture class="blocks__img-2"><source type="image/webp" srcset="/images/biogeek-blocks-2-eng.png, /images/biogeek-blocks-2-eng@2x.png 2x"><img data-src="/images/biogeek-blocks-2-eng.png" src="../../images/biogeek-blocks-2-eng.png" alt="App image" srcset="/images/biogeek-blocks-2-eng.png, /images/biogeek-blocks-2-eng@2x.png 2x"></picture>
+<picture class="blocks__blender"><source type="image/webp" srcset="/images/biogeek-blocks-blender.png, /images/biogeek-blocks-blender@2x.png 2x"><img data-src="/images/biogeek-blocks-blender.png" src="../../images/biogeek-blocks-blender.png" alt="blender" srcset="/images/biogeek-blocks-blender.png, /images/biogeek-blocks-blender@2x.png 2x"></picture>
+<img class="blocks__loader" data-src="/images/biogeek-blocks-loader.svg" src="../../images/biogeek-blocks-loader.svg" alt="Loader">
+</div>
+</div>
+</section>
+
+<section class="total">
+<div class="subtitle total__subtitle total__anim">Result</div>
+<h2 class="title-2-400 total__title total__anim">How’s the project now?</h2>
+<ul class="total__blocks">
+<li class="total__item total__anim">
+<img class="total__blocks_img" data-src="/images/biogeek-total-img1.svg" src="../../images/biogeek-total-img1.svg" alt="Release">
+<p class="text-400 total__blocks_text total__blocks_text-desktop">
+The project released<br>
+on <span class="text-500" style="color: #35B185">April 26, 2022</span>
+</p>
+<p class="text-400 total__blocks_text total__blocks_text-mobile">
+The project released on<br>
+<span class="text-500" style="color: #35B185">April 26, 2022</span>
+</p>
+</li>
+<li class="total__item total__anim">
+<img class="total__blocks_img" data-src="/images/biogeek-total-img2.svg" src="../../images/biogeek-total-img2.svg" alt="Support">
+<p class="text-400 total__blocks_text">
+The clients <span class="text-500" style="color: #F3B63E">are happy</span>
+<br>and will stay with us for support
+</p>
+</li>
+<li class="total__item total__anim">
+<img class="total__blocks_img" data-src="/images/biogeek-total-img3.svg" src="../../images/biogeek-total-img3.svg" alt="Internationalization">
+<p class="text-400 total__blocks_text">
+In the future we want to<br>
+<span class="text-500" style="color: #646EFA">internationalize</span> the app<br>
+and promote it not only in Russia<br>
+but also in Europe and the USA
+</p>
+</li>
+</ul>
+<div class="total__bottom total__anim">
+<img class="total__bottom_img" data-src="/images/biogeek-total-bottom.svg" src="../../images/biogeek-total-bottom.svg" alt="Purrweb Biogeek">
+</div>
+</section>
+<footer id="footer" class="footer js-flexible-height js-flexible-height--theme2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer__container">
+<div class="footer__inner">
+<div class="footer__top-wrapper">
+<div class="footer__left-wrap">
+<svg class="footer__logo" width="164" height="30" viewBox="0 0 164 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M43.7921 3.02539H34.8721V26.7525H40.2578V19.2954H43.7921C48.4373 19.2954 52.039 15.6686 52.039 11.1604C52.039 6.65225 48.4373 3.02539 43.7921 3.02539ZM43.7921 14.211H40.2578V8.10978H43.7921C45.4415 8.10978 46.6533 9.43172 46.6533 11.1604C46.6533 12.8891 45.4415 14.211 43.7921 14.211Z" fill="white" />
+<path d="M65.7673 9.80457V19.0582C65.7673 21.4648 64.4882 22.5494 62.6369 22.5494C61.0212 22.5494 59.7084 21.5665 59.7084 19.4649V9.80457H54.6593V20.2106C54.6593 24.7866 57.5541 27.2271 60.9538 27.2271C63.1754 27.2271 64.8585 26.4136 65.7673 25.1594V26.7525H70.8164V9.80457H65.7673Z" fill="white" />
+<path d="M79.9051 12.8213V9.80457H74.856V26.7525H79.9051V19.0921C79.9051 15.7364 82.8672 14.889 84.9542 15.2279V9.46561C82.8335 9.46561 80.5783 10.5503 79.9051 12.8213Z" fill="white" />
+<path d="M92.7001 12.8213V9.80457H87.651V26.7525H92.7001V19.0921C92.7001 15.7364 95.6622 14.889 97.7492 15.2279V9.46561C95.6285 9.46561 93.3733 10.5503 92.7001 12.8213Z" fill="white" />
+<path d="M118.959 9.80457L116.536 18.8887L113.91 9.80457H109.198L106.572 18.8887L104.149 9.80457H98.7629L104.149 26.7525H108.861L111.554 17.7023L114.247 26.7525H118.959L124.345 9.80457H118.959Z" fill="white" />
+<path d="M130.539 20.3123H142.488C142.623 19.6683 142.69 18.9904 142.69 18.2786C142.69 13.1603 139.055 9.33003 134.14 9.33003C128.822 9.33003 125.187 13.2281 125.187 18.2786C125.187 23.329 128.755 27.2271 134.511 27.2271C137.708 27.2271 140.199 26.0407 141.849 23.7358L137.809 21.397C137.136 22.1427 135.958 22.685 134.578 22.685C132.727 22.685 131.178 22.0749 130.539 20.3123ZM130.438 16.516C130.909 14.7873 132.188 13.8382 134.107 13.8382C135.621 13.8382 137.136 14.55 137.675 16.516H130.438Z" fill="white" />
+<path d="M155.955 9.33003C153.7 9.33003 152.05 10.1096 150.94 11.3977V3.02539H145.891V26.7525H150.94V25.1594C152.05 26.4475 153.7 27.2271 155.955 27.2271C160.365 27.2271 164 23.329 164 18.2786C164 13.2281 160.365 9.33003 155.955 9.33003ZM154.945 22.4139C152.623 22.4139 150.94 20.8207 150.94 18.2786C150.94 15.7364 152.623 14.1432 154.945 14.1432C157.268 14.1432 158.951 15.7364 158.951 18.2786C158.951 20.8207 157.268 22.4139 154.945 22.4139Z" fill="white" />
+<path d="M16.0866 30L29.567 0H24.6005L11.1201 30H16.0866Z" fill="white" />
+<path d="M4.89843 30L18.1941 0H13.2957L0 30H4.89843Z" fill="white" />
+</svg>
+<div class="footer__sublogo">
+Software development company.
+</div>
+<div class="footer__divider"></div>
+<ul class="footer__contacts">
+<li class="footer__phone">
+<a id="gtm-footer-tel" class="contacts__item-link contacts__item-link--tel" href="tel:+14844608069" rel="noreferrer noopener" target="_blank" onclick="ym(52342033,'reachGoal','CLK_PHONE_CALL'); return true;">
++1 484 460-80-69
+</a>
+</li>
+<li class="footer__mail">
+<a class="contacts__item-link" href="../../cdn-cgi/l/email-protection.html#721a1b32020700000517105c111d1f" rel="noreferrer noopener" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_EMAIL'); return true;">
+<span class="__cf_email__" data-cfemail="a1c9c8e1d1d4d3d3d6c4c38fc2cecc">[email&#160;protected]</span>
+</a>
+</li>
+<li class="footer__messengers">
+<a class="contacts__telegram contacts__link-item" href="https://t.me/purrweb_agency" rel="noreferrer noopener" data-no-router="true" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_TELEGRAM'); return true;">
+<div class="contacts__item-img">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" fill="none" viewbox="0 0 24 21">
+<path fill="#fff" d="M.424 10.02l5.53 2.064 2.14 6.883a.651.651 0 0 0 1.034.312l3.083-2.513a.92.92 0 0 1 1.121-.032l5.56 4.037a.652.652 0 0 0 1.021-.394L23.986.786a.652.652 0 0 0-.873-.741L.417 8.8a.652.652 0 0 0 .007 1.22zm7.326.965l10.807-6.657c.195-.119.394.144.228.298l-8.92 8.292a1.849 1.849 0 0 0-.573 1.106l-.304 2.252c-.04.3-.462.33-.545.04l-1.169-4.107a1.088 1.088 0 0 1 .476-1.224z" />
+</svg>
+</div>
+Telegram
+</a>
+<a class="contacts__whatsap contacts__link-item js-whatsapp-link footer__whatsap" rel="noreferrer noopener" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_WHATSAPP'); return true;">
+<div class="contacts__item-img">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewbox="0 0 24 24">
+<path fill="#fff" d="M12.003 0h-.006C5.38 0 0 5.382 0 12c0 2.625.846 5.058 2.284 7.034L.79 23.49l4.613-1.474A11.896 11.896 0 0 0 12.003 24C18.619 24 24 18.616 24 12c0-6.617-5.38-12-11.997-12zm6.982 16.945c-.289.818-1.438 1.496-2.354 1.694-.628.134-1.447.24-4.204-.903-3.526-1.461-5.797-5.045-5.974-5.277-.17-.232-1.425-1.897-1.425-3.62 0-1.722.875-2.56 1.227-2.92.29-.295.768-.43 1.227-.43.148 0 .282.007.402.013.352.015.53.036.762.593.29.697.994 2.419 1.079 2.596.085.177.17.417.05.65-.112.24-.211.346-.388.55-.177.204-.345.36-.522.579-.162.19-.345.394-.141.747.204.345.909 1.495 1.947 2.42 1.34 1.192 2.426 1.573 2.814 1.735.29.12.635.091.846-.133.269-.29.6-.77.938-1.243.24-.338.543-.38.86-.26.324.112 2.039.96 2.391 1.135.353.177.585.261.671.41.084.148.084.845-.206 1.664z" />
+</svg>
+</div>
+WhatsApp
+</a>
+</li>
+</ul>
+</div>
+<div class="footer__right-wrap">
+<div class="footer__title">
+Fill in and get a quote
+</div>
+<iframe id="hidden_iframe" name="hidden_iframe" style="display:none;"></iframe>
+<form class="footer__form js-footer-form" name="contact-form" target="hidden_iframe" onsubmit="ym(52342033, 'reachGoal', 'FORM_OUT'); return true">
+<div class="footer__form-wrapper">
+<input class="footer__form-field footer__form-name js-field-name" type="text" name="entry.1228031061" aria-label="Name input field" placeholder="Name" required autocomplete="on">
+<input class="footer__form-field js-phone-input" type="tel" name="entry.1413156463" aria-label="Phone input field" placeholder="Phone number" required autocomplete="on" minlength="4" maxlength="20">
+</div>
+<input class="footer__form-field footer__form-email" type="email" name="entry.1893682035" aria-label="Email input field" placeholder="test@purrweb.com" required autocomplete="on">
+<textarea class="footer__form-field footer__form-field--area" name="entry.772928921" aria-label="Descriptions input field" placeholder="Project details"></textarea>
+<input class="footer__form-hidden" type="hidden" name="entry.481086178" value="Purrweb123!">
+<input type="hidden" class="js-client-id" name="entry.1458439335">
+<input type="hidden" id="counter-id" name="entry.273292564" value="52342033">
+<input type="hidden" class="js-entry-page" name="entry.1965512787" value>
+<input type="hidden" id="footer__form-token" name="token">
+<input class="footer__form-type footer__page-link" type="hidden" name="entry.281637821" value="footer-form-main-en ">
+<div class="footer__form-wrapper">
+<p class="footer__form-captcha-wrapper">
+This site is protected by reCAPTCHA and the Google
+<a class="footer__form-captcha-link" rel="nofollow noreferrer noopener" href="../../privacy-policy/index.html" target="_blank">Privacy Policy</a> and
+<a class="footer__form-captcha-link" rel="nofollow noreferrer noopener" href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
+</p>
+<button id="order-form-btn" class="footer__form-btn rising-btn rising-btn--theme2" onclick="ym(52342033, 'reachGoal', 'CLK_SUCCESS'); return true;">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span id="gtm-footer-submit" class="rising-btn__text footer__btn-width--eng">
+Send
+</span>
+</span>
+</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<div class="footer__bottom-wrapper">
+<div class="footer__services js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+SERVICES
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../services/mvp/index.html" class="footer__link">MVP development services</a>
+</li>
+<li class="footer__item">
+<a href="../../services/ui-ux/index.html" class="footer__link">UI/UX Design</a>
+</li>
+<li class="footer__item">
+<a href="../../services/mobile-development/index.html" class="footer__link">Mobile Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/web-development-services/index.html" class="footer__link">Web Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/project-management-consulting-company/index.html" class="footer__link">Project Management</a>
+</li>
+<li class="footer__item">
+<a href="../../services/software-development-for-startups/index.html" class="footer__link">Software Development for
+Startups</a>
+</li>
+<li class="footer__item">
+<a href="../../services/progressive-web-app/index.html" class="footer__link">PWA</a>
+</li>
+</ul>
+</div>
+<div class="footer__otrasli js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+INDUSTRIES
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../services/terminal/index.html" class="footer__link">POS Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/marketplace/index.html" class="footer__link">Marketplace</a>
+</li>
+<li class="footer__item">
+<a href="../../services/finance/index.html" class="footer__link">Financial</a>
+</li>
+<li class="footer__item">
+<a href="../../services/travel/index.html" class="footer__link">Travel</a>
+</li>
+<li class="footer__item">
+<a href="../../services/tv-app-development/index.html" class="footer__link">SMART TV</a>
+</li>
+<li class="footer__item">
+<a href="../../services/health/index.html" class="footer__link">Healthcare</a>
+</li>
+<li class="footer__item">
+<a href="../../services/media/index.html" class="footer__link">Media</a>
+</li>
+<li class="footer__item">
+<a href="../../services/wellness/index.html" class="footer__link">Wellness</a>
+</li>
+</ul>
+</div>
+<div class="footer__outsourcing footer__outsourcing--eng js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+INSIGHTS
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a class="footer__link" href="../../blog/stock-trading-app-development/index.html">How To Build Stock Trading App</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/how-much-does-ecommerce-app-development-cost/index.html">eCommerce App
+Development Cost</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/healthcare-mobile-app-development/index.html">Healthcare Mobile App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/telehealth-app-development-features-benefits-costs/index.html">Telemedicine
+App Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/how-to-develop-an-iot-app-features-benefits-costs/index.html">IOT App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/grocery-delivery-app-development/index.html">Grocery Delivery App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/doctor-appointment-app-development-features-benefits-costs/index.html">Doctor
+Appointment Booking App Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/mobile-app-development-for-banking/index.html">Banking App Development</a>
+</li>
+</ul>
+</div>
+<div class="footer__stack js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+TECH STACK
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../technologies/index.html" class="footer__link">Tech stack</a>
+</li>
+<li class="footer__item">
+<a href="../../services/react-native/index.html" class="footer__link">React Native Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/react-native-game-development/index.html" class="footer__link">React Native Game
+Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/electron/index.html" class="footer__link">Electron JS</a>
+</li>
+<li class="footer__item">
+<a href="../../services/react-js/index.html" class="footer__link">React.js</a>
+</li>
+<li class="footer__item">
+<a href="../../services/webrtc/index.html" class="footer__link">WebRTC Development</a>
+</li>
+</ul>
+<div class="footer__ofice footer__ofice--pc">
+<h3 class="footer__ofice-caption">
+OFFICES
+</h3>
+<div class="footer__item footer__item--ofice">
+US 340 S LEMON AVE #9923 WALNUT,<br> CA 91789
+</div>
+</div>
+</div>
+<div class="footer__company js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+COMPANY
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../about/index.html" class="footer__link">About us</a>
+</li>
+<li class="footer__item">
+<a href="../../contacts/index.html" class="footer__link">Contacts</a>
+</li>
+<li class="footer__item">
+<a href="../../reviews/index.html" class="footer__link">Reviews</a>
+</li>
+<li class="footer__item">
+<a href="/" class="footer__link">Portfolio</a>
+</li>
+<li class="footer__item">
+<a href="../../blog/index.html" class="footer__link">Blog</a>
+</li>
+</ul>
+<div class="footer__address footer__address--eng footer__address--pc">
+<address>
+Compass Building, <br> Al Shohada Road, <br> AL Hamra Industrial Zone-FZ, Ras Al Khaimah, UAE
+</address>
+</div>
+</div>
+<div class="footer__ofice footer__ofice--mobile">
+<h3 class="footer__ofice-caption">
+OFFICES
+</h3>
+<address class="footer__item footer__item--ofice">
+US 340 S LEMON AVE 9923 WALNUT, CA 91789
+</address>
+<address class="footer__address footer__address--mobile">
+Compass Building, Al Shohada Road, <br> AL Hamra Industrial Zone-FZ, Ras Al Khaimah, UAE
+</address>
+</div>
+</div>
+<div class="footer__divider"></div>
+<div class="footer__bottom">
+<div class="footer__terms">
+<a href="../../privacy-policy/index.html" class="footer__terms--policy">Privacy Policy</a>
+<a href="https://policies.google.com/terms" target="_blank" class="footer__terms--term">Terms Of Services</a>
+</div>
+<div class="footer__rights">
+© 2023 Purrweb. All rights reserved
+</div>
+</div>
+</div>
+</div>
+</footer>
+<button class="btn-up js-btn-up" title="Go to the top of the page">
+<svg width="22" height="42" viewbox="0 0 22 42" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 29L11 41M11 41L1 29M11 41V0" />
+</svg>
+</button>
+<div class="popup-form js-form-popup">
+<div class="popup-form__inner">
+<p class="popup-form__text">Thanks for your inquiry. It usually take up to 24 hours to get back with reply.</p>
+<p class="popup-form__text">Wanna schedule an online meeting?</p>
+<button class="popup-form__close js-form-popup-btn">X</button>
+<button class="popup-form__btn js-form-popup-btn">
+<link href="../../../assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../../../assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<a href onclick="Calendly.initPopupWidget({url: 'https://calendly.com/purrweb_agency/initial_discussion?primary_color=5c3bfe'});return false;">Book
+the time slot!</a>
+</button>
+</div>
+</div>
+
+</div>
+
+<div class="idea-modal js-idea-modal" style="display: none;">
+<div class="idea-modal__content">
+<span class="idea-modal__title">
+Curious about the project cost?
+</span>
+<a href="#footer" class="idea-modal__button rising-btn rising-btn--theme3 js-scroll-to">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span id="gtm-idea-popup" class="rising-btn__text idea-modal__button-text">
+Fill in the form!
+</span>
+</span>
+</span></a>
+</div>
+<button class="idea-modal__close js-idea-modal__close" id="CLS-BTN-POPUP">
+X
+</button>
+</div>
+
+<script>
+    if (window.innerWidth >= 1024) {
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+          '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-W4BS3VM');
+
+    } else if (window.innerWidth < 1024) {
+      var firedTG = false;
+      window.addEventListener('scroll', () => {
+        if (firedTG === false) {
+          firedTG = true;
+          setTimeout(() => {
+            (function (w, d, s, l, i) {
+              w[l] = w[l] || [];
+              w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+              });
+              var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+              j.async = true;
+              j.src =
+                '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+              f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-W4BS3VM');
+          }, 0)
+        }
+      });
+    }
+  </script>
+
+
+
+<script type="text/javascript">
+    var firedRec = false;
+    window.addEventListener('scroll', () => {
+      if (firedRec === false) {
+        firedRec = true;
+        (function (d, w) {
+          var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "../../../www.google.com/recaptcha/api6c91.js?render=6LdBWnwaAAAAADC4FEa3p5JPq12UcmBuQPHl-0Iz";
+          if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+          } else { f(); }
+        })(document, window);
+      }
+    });
+  </script>
+
+
+
+<script async type="text/javascript">
+    (function () {
+      var PM_YM_COUNTER = 52342033;
+      var ee = setInterval(function () {
+        if (typeof window.ym != 'undefined') {
+          let clientInputs = document.querySelectorAll('.js-client-id');
+          for (let clientInput of clientInputs) {
+            ym(PM_YM_COUNTER, 'getClientID', function (clientID) {
+              clientInput.value = clientID;
+            })
+          }
+
+          clearInterval(ee);
+        } else {
+          console.log('Метрика не инициализирована');
+        }
+      }, 1000); // 0,5 секунды ждать, изменить на свое значение, 1 сек = 1000
+    })();
+  </script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZM1DZX38E"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-5ZM1DZX38E');
+  </script>
+<script src="../../common.4d9224ab871b2d75ac93.js"></script><script src="../../biogeek.4d9224ab871b2d75ac93.js"></script></body>
+
+<!-- Mirrored from www.purrweb.com/portfolio/biogeek/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Nov 2023 15:27:19 GMT -->
+</html>

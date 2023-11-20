@@ -1,0 +1,1226 @@
+
+
+
+	<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.purrweb.com/portfolio/tripchron/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Nov 2023 15:33:26 GMT -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Travel Map Builder Development | Purrweb</title>
+<meta name="description" content="Tripchron is a platform where travel enthusiasts can share their routes and follow like-minded people. If you need MVP development services, get in touch!">
+<meta name="google-site-verification" content="YgG-iu_ngX9WM8Ulia3B7gYVqrEBLf9-GQ22HbQ7Jiw">
+<meta name="yandex-verification" content="4057b113a73e6486">
+<meta name="facebook-domain-verification" content="0cpowng2vyna7cecrsh180pvpcll09">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Travel Map Builder Development | Purrweb">
+<meta property="og:description" content="Tripchron is a platform where travel enthusiasts can share their routes and follow like-minded people. If you need MVP development services, get in touch!">
+<meta property="og:image" content="../../images/og-image.png">
+<meta property="og:site_name" content="Purrweb">
+<meta property="og:url" content="index.html">
+<meta name="twitter:title" content="Travel Map Builder Development | Purrweb">
+<meta name="twitter:description" content="Tripchron is a platform where travel enthusiasts can share their routes and follow like-minded people. If you need MVP development services, get in touch!">
+<meta name="twitter:image:src" content="../../images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@purrweb">
+<meta name="twitter:creator" content="@purrweb">
+<link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5c3bfe">
+<link rel="canonical" href="index.html">
+<meta name="msapplication-TileColor" content="#5c3bfe">
+<meta name="theme-color" content="#ffffff">
+<link rel="alternate" hreflang="ru" href="../../ru/portfolio/tripchron">
+<link rel="alternate" hreflang="en" href="index.html">
+
+
+
+
+<meta name="google-site-verification" content="iAswyHNCt6kecOwxsuLaxgVNXaFS1GEwMiCJajfQ4dI">
+
+<link href="../../common.4d9224ab871b2d75ac93.css" rel="stylesheet"><link href="../../tripchron.4d9224ab871b2d75ac93.css" rel="stylesheet"></head>
+<body class="js-disable-transition">
+<aside class="cookie hide-cookie" id="pjAcceptCookieBar">
+<div class="container pjAcceptCookieBarShell">
+<form action="#" method="post" class="cookie__inner">
+<p class="cookie__text">
+We use cookies to boost your experience on our website and ensure it functions properly. It also
+helps us with analytics — is that OK, isn’t it? :)
+</p>
+<div class="pjAcceptCookieBarActions">
+<button type="button" class="pjAcceptCookieBarBtn cookie__btn">
+Sure! I’m fine with it
+</button>
+</div>
+</form>
+</div>
+</aside>
+<header class="header js-header">
+<div class="container">
+<nav class="header__inner">
+<a class="header__logo" href="../..">
+<svg xmlns="http://www.w3.org/2000/svg" width="164" height="30" fill="none" viewbox="0 0 164 30">
+<path fill="#fff" d="M43.688 3.025H34.79v23.728h5.373v-7.458h3.526c4.634 0 8.227-3.626 8.227-8.135 0-4.508-3.593-8.135-8.227-8.135zm0 11.186h-3.526V8.11h3.526c1.646 0 2.854 1.322 2.854 3.05 0 1.73-1.208 3.051-2.854 3.051zM65.612 9.805v9.253c0 2.407-1.277 3.491-3.124 3.491-1.611 0-2.921-.982-2.921-3.084v-9.66H54.53V20.21c0 4.576 2.888 7.016 6.28 7.016 2.216 0 3.895-.813 4.802-2.068v1.594h5.037V9.805h-5.037zM79.716 12.821V9.805h-5.037v16.947h5.037v-7.66c0-3.356 2.955-4.203 5.037-3.864V9.466c-2.115 0-4.365 1.084-5.037 3.355zM92.48 12.821V9.805h-5.036v16.947h5.037v-7.66c0-3.356 2.955-4.203 5.037-3.864V9.466c-2.116 0-4.366 1.084-5.037 3.355zM118.678 9.805l-2.418 9.084-2.619-9.084h-4.701l-2.62 9.084-2.418-9.084h-5.373l5.373 16.947h4.702l2.686-9.05 2.687 9.05h4.701l5.373-16.947h-5.373zM130.23 20.312h11.921a9.894 9.894 0 0 0 .202-2.033c0-5.119-3.627-8.949-8.53-8.949-5.306 0-8.932 3.898-8.932 8.949 0 5.05 3.559 8.948 9.302 8.948 3.19 0 5.675-1.186 7.32-3.491l-4.029-2.339c-.672.746-1.847 1.288-3.224 1.288-1.847 0-3.392-.61-4.03-2.373zm-.101-3.796c.471-1.729 1.747-2.678 3.661-2.678 1.511 0 3.022.712 3.559 2.678h-7.22zM155.587 9.33c-2.25 0-3.896.78-5.004 2.068V3.025h-5.037v23.728h5.037v-1.594c1.108 1.289 2.754 2.068 5.004 2.068 4.399 0 8.026-3.898 8.026-8.948 0-5.05-3.627-8.949-8.026-8.949zm-1.008 13.084c-2.317 0-3.996-1.593-3.996-4.135 0-2.543 1.679-4.136 3.996-4.136s3.996 1.593 3.996 4.136c0 2.542-1.679 4.135-3.996 4.135zM16.049 30L29.497 0h-4.955L11.094 30h4.955zM4.887 30L18.15 0h-4.887L0 30h4.887z" />
+</svg>
+<span class="visually-hidden">Purrweb logo</span>
+</a>
+
+<ul class="header__list js-menu">
+<li class="header__item header__item-portfolio">
+<a class="header__item-link" href=".." onclick="ym(52342033, 'reachGoal', 'CLK_PROJECTS'); return true;">
+Projects
+</a>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Technologies
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__dropmenu-inner">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--technologies">
+
+<a href="../../services/react-native" class="header__dropmenu-ref">
+React Native
+</a>
+<a href="../../services/react-js" class="header__dropmenu-ref">
+React.js
+</a>
+<a href="../../services/electron" class="header__dropmenu-ref">
+Electron.js
+</a>
+<a href="../../services/webrtc" class="header__dropmenu-ref">
+WebRTC
+</a>
+<a href="../../services/progressive-web-app" class="header__dropmenu-ref">
+PWA
+</a>
+<a href="../../services/react-native-game-development" class="header__dropmenu-ref">
+Mobile Games
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="header__divider"></div>
+<a href="../../technologies" class="header__dropmenu-main-ref">
+Tech Stack
+</a>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Services
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu header__dropmenu--services" id="dropdown2">
+<div class="header__dropmenu-inner">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Development
+</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--dev">
+<a href="../../services/mobile-development" class="header__dropmenu-ref">
+Mobile App Development
+</a>
+<a href="../../services/web-development-services" class="header__dropmenu-ref">
+Web Development
+</a>
+<a href="../../services/ux-audit" class="header__dropmenu-ref">
+UX Audit
+</a>
+
+
+
+
+
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--dev2">
+
+
+
+<a href="../../services/software-development-for-startups" class="header__dropmenu-ref">
+Software Development for Startups
+</a>
+<a href="../../services/crossplatform" class="header__dropmenu-ref">
+Cross-Platform Development
+</a>
+<a href="../../services/mvp" class="header__dropmenu-ref">
+MVP
+</a>
+
+
+
+</div>
+</div>
+</div>
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Design</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--design">
+<a href="../../services/ui-ux" class="header__dropmenu-ref">
+UI/UX
+</a>
+
+
+
+
+</div>
+</div>
+</div>
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Management
+</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--management">
+
+<a href="../../services/project-management-consulting-company" class="header__dropmenu-ref">
+Project Management
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="header__divider"></div>
+<a href="../../services" class="header__dropmenu-main-ref">
+Software Development Services
+</a>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Industries
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries">
+<a href="../../services/travel" class="header__dropmenu-ref">
+Travel
+</a>
+<a href="../../services/health" class="header__dropmenu-ref">
+Healthcare
+</a>
+<a href="../../services/tv-app-development" class="header__dropmenu-ref">
+Smart TV
+</a>
+<a href="../../services/logistics" class="header__dropmenu-ref">
+Logistics
+</a>
+<a href="../../services/wellness" class="header__dropmenu-ref">
+Wellness
+</a>
+<a href="../../services/terminal" class="header__dropmenu-ref">
+POS
+</a>
+<a href="../../services/custom-ecommerce" class="header__dropmenu-ref">
+Custom Ecom Apps
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries2">
+<a href="../../services/events" class="header__dropmenu-ref">
+Events
+</a>
+<a href="../../services/marketplace" class="header__dropmenu-ref">
+Marketplace
+</a>
+<a href="../../services/estate" class="header__dropmenu-ref">
+Real Estate
+</a>
+<a href="../../services/media" class="header__dropmenu-ref">
+Social Media
+</a>
+<a href="../../services/finance" class="header__dropmenu-ref">
+Fintech
+</a>
+<a href="../../services/iot" class="header__dropmenu-ref">
+IoT
+</a>
+<a href="../../services/ecommerce" class="header__dropmenu-ref">
+eCommerce Development
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Development Team
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries">
+<a href="../../services/outsourcing" class="header__dropmenu-main-ref header__dropmenu-main-ref--margin-bottom">
+Outsourcing
+</a>
+<a href="../../services/dev-outsourcing" class="header__dropmenu-ref">
+Development
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries2">
+<a href="../../services/outstaffing" class="header__dropmenu-main-ref header__dropmenu-main-ref--margin-bottom">
+Outstaffing
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item header__item--blog">
+<button class="header__item-inner click-dropdown" onclick="ym(52342033, 'reachGoal', 'CLK_BLOG'); return true;">
+<div class="header__item-drop">
+Blog
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu header__dropmenu--blog">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--blog">
+<a href="../../blog/how-much-does-it-cost-to-develop-an-app" class="header__dropmenu-ref">
+How much does it cost to develop an app
+</a>
+<a href="../../blog/how-to-create-a-social-media-app-a-z-guide" class="header__dropmenu-ref">
+How to make a social media app
+</a>
+<a href="../../blog/website-redesign-cost" class="header__dropmenu-ref">
+How much does it cost to redesign a website
+</a>
+<a href="../../blog/restaurant-app-development-purrwebs-detailed-guide" class="header__dropmenu-ref">
+Restaurant mobile app development
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--blog2">
+<a href="../../blog/how-much-does-it-cost-to-develop-an-app" class="header__dropmenu-ref">
+How much does it cost to maintain an app
+</a>
+<a href="../../blog/dating-app-development" class="header__dropmenu-ref">
+Dating mobile app development
+</a>
+<a href="../../blog/how-to-hire-a-developer-for-a-startup-and-not-to-regret-about-it" class="header__dropmenu-ref">
+Hiring a developer for a startup
+</a>
+<a href="../../blog" class="header__dropmenu-ref">
+All posts
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+About
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--about">
+<a href="../../about" class="header__dropmenu-ref">
+Company
+</a>
+<a href="../../contacts" class="header__dropmenu-ref">
+Contacts
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item header__item--lang visually-hidden">
+<a class="header__item-link js-en-link" href="../../ru/portfolio/tripchron">Ru</a>
+</li>
+<li class="header__item header__item--request">
+<a class="rising-btn rising-btn--theme2 js-scroll-to" href="#footer" onclick="ym(52342033, 'reachGoal', 'CLK_RAQ'); return true;">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span class="rising-btn__text">
+Request a quote
+</span>
+</span>
+</span>
+</a>
+<div class="lang-popup js-lang-popup hide-lang" id="LangCookieBar">
+<p class="lang-popup__text">
+Холмс, кажется, вы в России...
+</p>
+<button class="lang-popup__close-btn js-close-popup">
+<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.50002 4.49844L9.00627 0.992188L10.0079 1.99377L6.5016 5.50002L10.0079 9.00627L9.00627 10.0079L5.50002 6.5016L1.99377 10.0079L0.992188 9.00627L4.49844 5.50002L0.992188 1.99377L1.99377 0.992188L5.50002 4.49844Z" fill="#808080" />
+</svg>
+</button>
+<div class="lang-popup__btn-wrap">
+<a href="#" class="lang-popup__btn lang-popup__btn--ru js-ru-btn">
+Переключить язык
+</a>
+<a href="#" class="lang-popup__btn lang-popup__btn--eng js-eng-btn">
+не, и так норм
+</a>
+</div>
+</div>
+</li>
+</ul>
+<button class="header__humb js-humb">
+<span class="visually-hidden">Open/close menu</span>
+</button>
+</nav>
+</div>
+</header>
+<div class="main js-main">
+<section class="intro">
+<div class="container">
+<div class="intro__inner">
+<picture class="intro__bg"><source type="image/webp" media="(max-width: 767px)" srcset="/images/tripchron-intro-1-mobile.png, /images/tripchron-intro-1-mobile@2x.png 2x"><source type="image/webp" srcset="/images/tripchron-intro-1.png, /images/tripchron-intro-1@2x.png 2x"><source media="(max-width: 767px)" srcset="/images/tripchron-intro-1-mobile.png, /images/tripchron-intro-1-mobile@2x.png 2x"><img data-src="/images/tripchron-intro-1.png" src="../../images/tripchron-intro-1.png" alt="Map" srcset="/images/tripchron-intro-1.png, /images/tripchron-intro-1@2x.png 2x"></picture>
+<svg class="intro__logo" xmlns="http://www.w3.org/2000/svg" width="111" height="117" viewBox="0 0 111 117">
+<path fill="#FFF" fill-rule="evenodd" d="M55.747 93.414c6.49 0 11.752 5.262 11.752 11.752 0 6.49-5.261 11.752-11.752 11.752-6.49 0-11.752-5.261-11.752-11.752 0-6.49 5.262-11.752 11.752-11.752zm-18.13-66.636c9.982-9.99 26.162-9.99 36.142 0 8.992 9.007 10.003 25.969 2.376 36.158L56.187 91.784a.603.603 0 0 1-.991 0L35.248 62.936c-7.634-10.189-6.623-27.151 2.37-36.158zM94.652 16.24C84.18 5.767 70.256 0 55.446 0 40.636 0 26.712 5.767 16.24 16.24 5.767 26.712 0 40.636 0 55.446c0 14.81 5.767 28.734 16.24 39.206 10.472 10.473 24.396 16.24 39.206 16.24 14.81 0 28.734-5.767 39.206-16.24 10.473-10.472 16.24-24.396 16.24-39.206 0-14.81-5.767-28.734-16.24-39.206z" />
+</svg>
+<h1 class="intro__title">TripChron</h1>
+<p class="intro__text">TRAVEL MAP BUILDER</p>
+<ul class="intro__list">
+<li class="intro__item">
+<svg class="intro__item-img" xmlns="http://www.w3.org/2000/svg" width="55" height="49" fill="none" viewBox="0 0 55 49">
+<path fill-rule="evenodd" d="M53.314 21.769A3.038 3.038 0 0 1 55 24.5c0 1.164-.646 2.21-1.686 2.731l-4.095 2.05 4.095 2.05A3.036 3.036 0 0 1 55 34.061a3.038 3.038 0 0 1-1.686 2.733L30.195 48.367A6.03 6.03 0 0 1 27.5 49c-.926 0-1.852-.21-2.695-.633L1.685 36.794A3.039 3.039 0 0 1 0 34.061c0-1.164.647-2.21 1.686-2.73l4.095-2.05-4.095-2.05A3.038 3.038 0 0 1 0 24.5c0-1.164.646-2.21 1.685-2.731l4.096-2.05-4.095-2.05A3.039 3.039 0 0 1 0 14.937c0-1.163.646-2.21 1.686-2.73L24.804.632a6.054 6.054 0 0 1 5.391 0l23.12 11.573A3.039 3.039 0 0 1 55 14.937c0 1.164-.646 2.21-1.686 2.732l-4.095 2.05 4.095 2.05zM2 14.5c0 .121.037.344.289.47l23.144 11.66a3.5 3.5 0 0 0 3.134 0l23.144-11.66A.507.507 0 0 0 52 14.5a.507.507 0 0 0-.289-.47L28.567 2.37A3.486 3.486 0 0 0 27 2c-.538 0-1.076.123-1.567.37L2.289 14.03A.507.507 0 0 0 2 14.5zm49.712 19.44a.51.51 0 0 1 .288.474.51.51 0 0 1-.288.474L28.567 46.627a3.478 3.478 0 0 1-3.134 0L2.29 34.888A.511.511 0 0 1 2 34.415a.51.51 0 0 1 .289-.473L8.086 31l16.216 8.224a5.97 5.97 0 0 0 2.698.642c.927 0 1.854-.214 2.699-.642L45.913 31l5.799 2.94zm-23.145 2.687l23.145-11.739a.51.51 0 0 0 .288-.474.51.51 0 0 0-.289-.474L45.914 21l-16.215 8.224a5.971 5.971 0 0 1-2.7.642 5.97 5.97 0 0 1-2.697-.642L8.086 21 2.29 23.94a.51.51 0 0 0-.289.475.51.51 0 0 0 .289.474l23.144 11.738c.981.497 2.153.497 3.134 0z" clip-rule="evenodd" />
+</svg>
+<h3 class="intro__item-title">
+100+
+<span class="intro__item-title-text">COMPONENTS</span>
+</h3>
+<p class="intro__item-text">Over 100 different components and design elements created</p>
+</li>
+<li class="intro__item intro__item--sketch">
+<svg class="intro__item-img" xmlns="http://www.w3.org/2000/svg" width="48" height="58" fill="none" viewBox="0 0 48 58">
+<path fill-rule="evenodd" d="M24 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm14.5 4.134a1 1 0 1 0-1 1.733 1 1 0 0 0 1-1.733zM23 31a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM9.866 4.5A1 1 0 1 0 8.134 5.5 1 1 0 0 0 9.866 4.5zM23 6a1 1 0 0 1 2 0v4a1 1 0 0 1-2 0V6zm-7.168 5.353l-2.5-3.804c-.345-.525-1.109-.705-1.707-.402-.598.303-.803.975-.457 1.5l2.5 3.804c.231.352.651.549 1.083.549.212 0 .427-.047.624-.147.598-.303.802-.975.457-1.5zM34.667 7.55c.346-.525 1.11-.705 1.708-.402.598.303.803.975.457 1.5l-2.5 3.804c-.231.352-.651.549-1.083.549a1.38 1.38 0 0 1-.624-.147c-.598-.303-.802-.975-.457-1.5l2.5-3.804zM48 31.2l-.001-.035v-.007l-.004-.043v-.012l-.001-.016-.002-.014-.004-.024-.003-.022-.004-.021-.002-.013a.409.409 0 0 0-.003-.02l-.008-.03-.004-.016a1.472 1.472 0 0 0-.008-.029l-.003-.013-.007-.022-.008-.024a1.164 1.164 0 0 0-.017-.046l-.005-.012-.003-.009a.585.585 0 0 0-.007-.016l-.005-.01-.004-.008a1.297 1.297 0 0 0-.023-.048l-.018-.036-.004-.006-6.848-12.07-.011-.017a1.11 1.11 0 0 0-.062-.094l-.007-.01-.004-.005-.007-.01a1.146 1.146 0 0 0-.091-.105l-.002-.001a1.148 1.148 0 0 0-.216-.168l-.01-.006a1.132 1.132 0 0 0-.141-.072l-.001-.001a1.153 1.153 0 0 0-.13-.045l-.036-.009a1.19 1.19 0 0 0-.102-.02l-.011-.002-.026-.004A1.131 1.131 0 0 0 40.01 18H8.001c-.048 0-.095.003-.142.01-.012 0-.022.003-.033.004-.035.006-.07.013-.104.021l-.008.002-.03.008c-.037.01-.074.023-.111.038l-.005.002-.004.001-.003.001-.007.003-.003.001a1.103 1.103 0 0 0-.136.07l-.01.007a1.121 1.121 0 0 0-.208.16l-.006.006-.005.005a1.112 1.112 0 0 0-.099.115l-.008.012c-.023.03-.044.062-.063.095l-.005.008a.116.116 0 0 0-.006.009L.162 30.622v.001l-.014.024-.001.003-.002.003a.79.79 0 0 0-.016.03l-.004.009a1.09 1.09 0 0 0-.024.049l-.007.015-.011.028-.004.01a1.095 1.095 0 0 0-.018.048l-.003.008a.347.347 0 0 0-.004.013l-.007.023-.004.015-.012.045-.003.011-.003.016a.42.42 0 0 0-.004.022l-.002.013-.008.045-.001.012a.48.48 0 0 0-.005.039v.013a.991.991 0 0 0-.003.046v.01L0 31.2v.019l.001.01a1.198 1.198 0 0 0 .004.082l.003.03v.002l.007.043v.006a.822.822 0 0 0 .012.062l.01.038v.003l.009.03.01.036a.838.838 0 0 0 .012.033l.002.006.012.03.002.006.012.029.014.03.003.005.016.031.003.006a.875.875 0 0 0 .074.122l.004.006a.967.967 0 0 0 .06.077l.006.007.006.008.008.009 23 25.654a1.106 1.106 0 0 0 .097.095l.003.002.004.003c.033.029.068.055.103.08l.018.011.018.012c.033.02.067.04.102.057l.013.006.016.009c.045.02.09.038.137.052l.009.003.013.003.012.003c.037.01.075.02.114.026l.042.007c.05.007.1.011.151.011h.004a1.139 1.139 0 0 0 .19-.018h.004c.039-.008.077-.016.115-.027.01-.003.022-.005.034-.01.046-.014.092-.032.136-.052l.009-.004.014-.008.006-.003c.035-.018.07-.037.103-.058l.018-.012.017-.012c.036-.024.07-.05.103-.079l.004-.003.003-.003.004-.003.004-.003c.031-.029.061-.058.09-.09l22.714-25.653.012-.015.009-.01.013-.016a1.101 1.101 0 0 0 .09-.128l.01-.018.007-.012.016-.03.01-.02.007-.015.004-.007.013-.028.003-.008.006-.016.004-.008.012-.033.004-.009.006-.019.004-.01.01-.034.004-.014.003-.013.002-.006.005-.022.003-.01.002-.01a.97.97 0 0 0 .006-.031l.003-.017.004-.02.006-.043a.657.657 0 0 0 .003-.028l.002-.041.002-.044V31.21 31.2zm-13.414-2.113l3.705-8.81H26.577l8.009 8.81zm-13.145-8.81l-7.936 8.822-3.775-8.822H21.44zm-10.006 9.792l-3.58-8.365-4.752 8.365h8.332zm-7.739 2.278h8.714l7.957 18.593-16.67-18.593zm11.199 0l9.239 21.59 9.08-21.59h-4.642a1.14 1.14 0 0 1-1.143-1.139 1.14 1.14 0 0 1 1.143-1.139h3.823l-8.39-9.23-8.303 9.23h3.727c.63 0 1.143.51 1.143 1.14a1.14 1.14 0 0 1-1.143 1.138h-4.534zm12.987 18.57l7.811-18.57h8.632l-16.443 18.57zm12.28-29.196l-3.511 8.348h8.247l-4.736-8.348z" clip-rule="evenodd" />
+</svg>
+<h3 class="intro__item-title">
+Sketch App
+<span class="intro__item-title-text">& PLUGINS</span>
+</h3>
+<p class="intro__item-text">Sketch was used as a core designing tool to create UI Kit</p>
+</li>
+<li class="intro__item intro__item--hours">
+<svg class="intro__item-img" xmlns="http://www.w3.org/2000/svg" width="54" height="53" fill="none" viewBox="0 0 54 53">
+<path fill-rule="evenodd" d="M47.672 4.219H45.14V0h-4.22v4.219H13.079V0H8.86v4.219H6.33A6.335 6.335 0 0 0 0 10.547v36.106a6.335 6.335 0 0 0 6.328 6.328h41.344A6.335 6.335 0 0 0 54 46.653V10.547a6.335 6.335 0 0 0-6.328-6.328zm2.253 42.606c0 1.147-.953 2.08-2.123 2.08H6.198c-1.17 0-2.123-.933-2.123-2.08V19.358h45.85v27.467zM4.075 15.283h45.85v-5.034c0-1.157-.953-2.098-2.123-2.098h-2.547v4.195h-4.246V8.151H12.991v4.195H8.745V8.151H6.198c-1.17 0-2.123.941-2.123 2.098v5.034zm4.076 9.17h4.075v4.075H8.151v-4.075zm12.226 0h-4.075v4.075h4.075v-4.075zm4.076 0h4.075v4.075h-4.075v-4.075zm13.245 0h-4.075v4.075h4.075v-4.075zm4.076 0h4.075v4.075h-4.075v-4.075zm-29.548 8.15H8.151v4.076h4.075v-4.075zm4.076 0h4.075v4.076h-4.075v-4.075zm12.226 0h-4.075v4.076h4.075v-4.075zm5.095 0h4.075v4.076h-4.075v-4.075zm-21.397 8.152H8.151v4.075h4.075v-4.075zm4.076 0h4.075v4.075h-4.075v-4.075zm12.226 0h-4.075v4.075h4.075v-4.075zm5.095 0h4.075v4.075h-4.075v-4.075zm12.226-8.151h-4.075v4.075h4.075v-4.075z" clip-rule="evenodd" />
+</svg>
+<h3 class="intro__item-title">
+48
+<span class="intro__item-title-text">WORK HOURS</span>
+</h3>
+<p class="intro__item-text">Less than 50 hours spent to come up with a diligent design and to make client happy</p>
+</li>
+<li class="intro__item intro__item--pixel">
+<svg class="intro__item-img" xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="none" viewBox="0 0 55 55">
+<path fill-rule="evenodd" d="M49.157 5.835c-7.78-7.78-20.437-7.78-28.216 0a19.826 19.826 0 0 0-5.844 14.11c0 4.856 1.723 9.446 4.879 13.075L17.6 35.396l-2.422-2.422a1.415 1.415 0 0 0-2.001 0L1.832 44.321A6.214 6.214 0 0 0 0 48.744c0 1.671.65 3.242 1.832 4.424A6.213 6.213 0 0 0 6.254 55c1.67 0 3.242-.65 4.423-1.832L22.022 41.82a1.415 1.415 0 0 0 0-2.001l-2.421-2.422 2.376-2.377a19.893 19.893 0 0 0 13.072 4.87c5.109 0 10.218-1.945 14.108-5.835A19.827 19.827 0 0 0 55 19.946c0-5.33-2.075-10.342-5.843-14.11zM8.675 51.166a3.402 3.402 0 0 1-2.422 1.004 3.402 3.402 0 0 1-2.421-1.004 3.403 3.403 0 0 1-1.003-2.421c0-.915.356-1.776 1.003-2.422l6.33-6.332 4.844 4.843-6.331 6.332zm3.49-13.177l4.842 4.844 2.012-2.013-4.842-4.844-2.013 2.013zm34.99-5.935c-6.676 6.677-17.538 6.677-24.214 0a17.014 17.014 0 0 1-5.015-12.109c0-4.574 1.781-8.874 5.015-12.108A17.067 17.067 0 0 1 35.05 2.829c4.384 0 8.769 1.67 12.106 5.008a17.013 17.013 0 0 1 5.015 12.108c0 4.575-1.78 8.875-5.015 12.11zm-22.06-21.958c5.461-5.461 14.347-5.461 19.808 0s5.461 14.347 0 19.808A13.964 13.964 0 0 1 35 34a13.963 13.963 0 0 1-9.904-4.096c-5.461-5.461-5.461-14.347 0-19.808zm17.78 17.78c-4.343 4.343-11.41 4.343-15.752 0-4.343-4.343-4.343-11.409 0-15.752A11.102 11.102 0 0 1 35 8.867c2.852 0 5.705 1.086 7.876 3.257 4.343 4.343 4.343 11.41 0 15.752zM29.4 15.371c2.812-3.161 7.386-3.161 10.198 0 .535.602.535 1.577 0 2.178-.267.3-.618.451-.968.451s-.701-.15-.968-.451c-1.744-1.96-4.582-1.96-6.325 0-.535.601-1.402.601-1.937 0-.535-.602-.535-1.576 0-2.178z" clip-rule="evenodd" />
+</svg>
+<h3 class="intro__item-title">
+Pixel Perfect
+<span class="intro__item-title-text">& GRID ARCHITECTURE</span>
+</h3>
+<p class="intro__item-text">All components and elements are strictly lined up</p>
+</li>
+<li class="intro__item intro__item--naming">
+<svg class="intro__item-img" xmlns="http://www.w3.org/2000/svg" width="66" height="54" fill="none" viewBox="0 0 66 54">
+<path fill-rule="evenodd" d="M64.936 15.607a1.113 1.113 0 0 0-.996-.608H57.89V11.4c0-.604-.498-1.094-1.111-1.094H26.833V1.093C26.833.49 26.336 0 25.723 0h-6.887c-.614 0-1.111.49-1.111 1.093v9.214h-6.713V2.75c0-.604-.497-1.093-1.11-1.093H5.506a5.516 5.516 0 0 0-3.895 1.587A5.344 5.344 0 0 0 0 7.075V43.553a5.34 5.34 0 0 0 1.612 3.833 5.516 5.516 0 0 0 3.895 1.586h24.038v3.935c0 .604.497 1.093 1.111 1.093h24.438c.449 0 .854-.266 1.026-.675a1.08 1.08 0 0 0-.24-1.191l-3.214-3.162h4.112c.613 0 1.11-.49 1.11-1.093V25.23h6.052c.423 0 .809-.237.996-.61a10.077 10.077 0 0 0 0-9.012zM35.972 38.339l10.69 10.689A1.155 1.155 0 0 1 45.845 51h-10.69A1.155 1.155 0 0 1 34 49.845v-10.69a1.155 1.155 0 0 1 1.972-.816zm.339 3.605v6.745h6.744l-6.744-6.745zm-14.81-9.15h-1.555v2.405h4.665V2.186h-4.665v2.405h1.555c.614 0 1.111.49 1.111 1.093 0 .604-.497 1.093-1.11 1.093h-1.556v3.018h1.555c.614 0 1.111.49 1.111 1.093 0 .604-.497 1.093-1.11 1.093h-1.556v3.017h1.555c.614 0 1.111.49 1.111 1.093 0 .604-.497 1.093-1.11 1.093h-1.556v3.017h1.555c.614 0 1.111.49 1.111 1.093 0 .604-.497 1.093-1.11 1.093h-1.556v3.017h1.555c.614 0 1.111.49 1.111 1.093 0 .604-.497 1.094-1.11 1.094h-1.556v3.017h1.555c.614 0 1.111.489 1.111 1.093 0 .603-.497 1.093-1.11 1.093zM3.184 4.788a3.29 3.29 0 0 1 2.323-.946H8.79v34.292H5.506c-1.23 0-2.367.399-3.285 1.072V7.075c0-.863.342-1.676.962-2.287zm28.583 26.71v20.316h20.645L31.767 31.497zm23.9 15.288h-5.222l-19.003-18.7a1.124 1.124 0 0 0-1.211-.237c-.415.169-.686.567-.686 1.01v17.927H5.507a3.29 3.29 0 0 1-2.323-.946 3.187 3.187 0 0 1-.962-2.287v-.043c.023-1.762 1.488-3.19 3.285-3.19H9.9c.614 0 1.111-.489 1.111-1.093V12.494h6.713v23.798c0 .603.497 1.093 1.11 1.093h6.887c.614 0 1.111-.49 1.111-1.093V12.494h28.834v2.505H42.77c-.22 0-.436.064-.619.185l-6.095 4.021a1.089 1.089 0 0 0-.492.908c0 .365.184.705.492.908l6.095 4.022c.183.12.399.185.619.185h12.897v21.558zM42.193 17.788l-.844.557c.22.56.333 1.158.333 1.768a4.84 4.84 0 0 1-.333 1.769l.844.557c.41-1.521.41-3.13 0-4.651zm-2.732 2.325c0 .166-.017.33-.047.492l-.745-.492.745-.491c.03.161.047.325.047.491zm4.867 2.929h14.188c.237-.593.399-1.21.486-1.835H44.668a11.088 11.088 0 0 1-.34 1.835zm.34-4.022a11.06 11.06 0 0 0-.34-1.835h14.188c.237.593.399 1.21.486 1.835H44.668zm16.197 4.022h2.354a7.923 7.923 0 0 0 0-5.857h-2.354a10.105 10.105 0 0 1 0 5.857z" clip-rule="evenodd" />
+</svg>
+<h3 class="intro__item-title">
+Distinct Naming
+<span class="intro__item-title-text">FOR ALL GROUPS AND LAYERS</span>
+</h3>
+<p class="intro__item-text">Sketch file is organised carefully, so it’s easy to support in future</p>
+</li>
+<li class="intro__item intro__item--vector">
+<svg class="intro__item-img" width="50" height="56" viewBox="0 0 50 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M47.689 35.7254C48.7573 36.3389 49.5215 37.3295 49.8407 38.5145C50.1599 39.6997 49.9961 40.9375 49.379 42.0002C48.7623 43.0627 47.7663 43.8228 46.5749 44.1404C46.1771 44.2465 45.7732 44.2988 45.3722 44.2988C44.572 44.2988 43.7822 44.0899 43.0706 43.6813C42.6865 43.4608 42.3427 43.1909 42.0438 42.8813L29.4332 50.1236C29.5526 50.5311 29.6179 50.9613 29.6179 51.4067C29.6179 53.9395 27.5463 56 24.9999 56C22.4534 56 20.3818 53.9395 20.3818 51.4067C20.3818 50.9613 20.4471 50.5311 20.5666 50.1236L7.95564 42.8817C7.65686 43.191 7.31301 43.4608 6.92912 43.6813C6.21754 44.09 5.42778 44.2988 4.62757 44.2988C4.22642 44.2988 3.82285 44.2465 3.42489 44.1404C2.23343 43.823 1.23759 43.0628 0.620802 42.0002C0.0039022 40.9377 -0.159945 39.7 0.159392 38.5148C0.478508 37.3297 1.24276 36.3391 2.31106 35.7256C2.69836 35.5031 3.105 35.3444 3.51902 35.2435V20.7577C3.10083 20.6549 2.69451 20.4948 2.31106 20.2746C0.105729 19.0083 -0.652584 16.1935 0.620692 14C1.23748 12.9374 2.23332 12.1774 3.42478 11.8599C4.61624 11.5423 5.86082 11.7053 6.92912 12.3188C7.31301 12.5392 7.65675 12.809 7.95564 13.1184L20.5667 5.87639C20.4472 5.46886 20.3819 5.03869 20.3819 4.59331C20.3819 2.06052 22.4535 0 25 0C27.5464 0 29.618 2.06052 29.6182 4.59331C29.6182 5.03869 29.5528 5.46886 29.4334 5.87639L42.0444 13.1184C42.3433 12.8091 42.6871 12.5393 43.071 12.3188C44.1393 11.7052 45.3837 11.5423 46.5753 11.8599C47.7668 12.1774 48.7626 12.9374 49.3794 14C50.6527 16.1935 49.8942 19.0083 47.689 20.2746C47.3051 20.495 46.8983 20.6553 46.4795 20.758V35.2429C46.8941 35.3438 47.3013 35.5027 47.689 35.7254ZM45.3761 13.8895C44.9569 13.8895 44.5433 13.9989 44.1705 14.213C43.0154 14.8763 42.6181 16.3507 43.2848 17.4996V17.4997C43.608 18.0562 44.1296 18.4543 44.7537 18.6207C45.3779 18.787 46.0298 18.7017 46.5894 18.3802C47.7446 17.7169 48.1417 16.2425 47.4748 15.0935C47.1517 14.537 46.6302 14.1389 46.006 13.9725C45.7977 13.917 45.5863 13.8895 45.3761 13.8895ZM25 2.18728C26.3339 2.18728 27.419 3.26659 27.419 4.59331C27.419 5.92003 26.3339 6.99945 25 6.99945C23.6661 6.99945 22.581 5.92014 22.581 4.59342C22.581 3.2667 23.6661 2.18728 25 2.18728ZM23.902 9.0545C23.0365 8.84363 22.2664 8.38961 21.6685 7.76934L9.05297 15.0138L9.06267 15.0459L9.06268 15.046C9.06892 15.0664 9.07516 15.0869 9.08079 15.1077C9.30281 15.9322 9.29049 16.7821 9.05517 17.5807L21.6677 24.824C21.9629 24.5175 22.3048 24.2461 22.6925 24.0235C23.7608 23.4099 25.0052 23.2468 26.1968 23.5645C27.0255 23.7853 27.7591 24.2207 28.3369 24.8227L40.9447 17.5807C40.7094 16.7821 40.6971 15.9322 40.9192 15.1077C40.9218 15.0982 40.9245 15.0888 40.9273 15.0794L40.9359 15.0507L40.936 15.0506C40.9397 15.0384 40.9434 15.0261 40.947 15.0138L28.3315 7.76934C27.7344 8.38884 26.9654 8.84253 26.1011 9.05373V16.2967C26.1011 16.9006 25.6089 17.3903 25.0015 17.3903C24.3943 17.3903 23.902 16.9007 23.902 16.2967V9.0545ZM26.2109 30.085C25.056 30.7484 23.5735 30.3533 22.9066 29.2044C22.2397 28.0555 22.6369 26.5811 23.792 25.9177C24.1648 25.7036 24.5784 25.5943 24.9976 25.5943C25.2077 25.5943 25.4192 25.6217 25.6276 25.6773C26.2516 25.8437 26.7733 26.2418 27.0963 26.7983C27.7633 27.9473 27.3661 29.4218 26.2109 30.085ZM2.52516 15.0938C1.85823 16.2427 2.25542 17.717 3.41049 18.3804C3.96998 18.7017 4.62185 18.787 5.24612 18.6209C5.87017 18.4545 6.39173 18.0566 6.71491 17.4999C7.0381 16.9432 7.12387 16.2948 6.95661 15.6741C6.78936 15.0533 6.3892 14.5345 5.82959 14.2132C5.45681 13.9991 5.04312 13.8897 4.62394 13.8897C4.4138 13.8897 4.20245 13.9172 3.99396 13.9728C3.3698 14.1391 2.84824 14.5371 2.52516 15.0938ZM6.95661 40.326C6.78936 40.9469 6.38909 41.4656 5.82959 41.7869C5.26987 42.1083 4.61789 42.1937 3.99396 42.0273C3.3698 41.861 2.84824 41.4629 2.52516 40.9062C2.20209 40.3496 2.11621 39.7013 2.28346 39.0806C2.45072 38.4596 2.85099 37.9409 3.41048 37.6195C4.56555 36.9562 6.04798 37.3513 6.7148 38.5002C7.03799 39.0568 7.12387 39.7054 6.95661 40.326ZM9.05297 40.9861L21.6686 48.2307C22.2665 47.6106 23.0366 47.1565 23.9021 46.9456V32.4586C22.722 32.1704 21.6563 31.425 21.0022 30.2981C20.3479 29.171 20.2313 27.8803 20.5705 26.7195L7.95575 19.4751C7.37811 20.0771 6.6442 20.5126 5.8154 20.7336C5.79676 20.7385 5.77804 20.7426 5.75933 20.7467L5.7593 20.7467L5.75921 20.7467C5.74552 20.7498 5.73184 20.7528 5.71819 20.7561V35.2452C6.55711 35.4499 7.33764 35.8857 7.95421 36.5258L16.4078 31.6724C16.9337 31.3708 17.6062 31.5497 17.9098 32.0729C18.2133 32.596 18.0331 33.2648 17.5071 33.5669L9.05528 38.4193C9.2906 39.2179 9.30292 40.0678 9.08079 40.8921C9.07556 40.9115 9.06975 40.9305 9.06395 40.9495C9.06024 40.9617 9.05653 40.9739 9.05297 40.9861ZM25 53.8127C23.6661 53.8127 22.581 52.7334 22.581 51.4067C22.581 50.08 23.6661 49.0007 25 49.0007C26.3339 49.0007 27.419 50.08 27.419 51.4067C27.419 52.7334 26.3339 53.8127 25 53.8127ZM31.1777 31.548C31.4813 31.025 32.1537 30.8458 32.6797 31.1477L42.0459 36.526C42.662 35.8864 43.4421 35.4505 44.2805 35.2458V20.7559C44.2736 20.7542 44.2667 20.7526 44.2598 20.751C44.2533 20.7496 44.2468 20.7481 44.2403 20.7467C44.2218 20.7426 44.2032 20.7386 44.1848 20.7337C43.356 20.5127 42.6222 20.0773 42.0444 19.4752L29.4352 26.7177C30.0156 28.7014 29.188 30.9012 27.3107 31.9793C26.9229 32.202 26.5157 32.3602 26.1012 32.4611V46.9463C26.9655 47.1575 27.7344 47.6112 28.3316 48.2307L40.9469 40.9857C40.9378 40.9545 40.9278 40.9238 40.9193 40.8923C40.6972 40.0678 40.7095 39.2179 40.9448 38.4193L31.5801 33.042C31.0542 32.74 30.8739 32.0712 31.1777 31.548ZM47.4748 40.9064C47.1517 41.463 46.6301 41.861 46.006 42.0275C45.3818 42.1938 44.73 42.1084 44.1704 41.787C43.6108 41.4657 43.2106 40.9468 43.0434 40.3261C42.8761 39.7052 42.962 39.0569 43.2851 38.5003C43.7327 37.7293 44.5473 37.2979 45.3841 37.2979C45.7941 37.2979 46.2096 37.4015 46.5894 37.6196C47.149 37.941 47.5491 38.4599 47.7164 39.0807C47.8838 39.7014 47.7979 40.3498 47.4748 40.9064ZM24 19C24.2629 19 24.521 19.107 24.707 19.293C24.893 19.4789 25 19.737 25 20C25 20.2629 24.893 20.521 24.707 20.707C24.5211 20.893 24.263 21 24 21C23.737 21 23.479 20.893 23.293 20.707C23.107 20.5211 23 20.263 23 20C23 19.7371 23.107 19.479 23.293 19.293C23.4789 19.107 23.737 19 24 19Z" />
+</svg>
+<h3 class="intro__item-title">
+Vector Shapes
+<span class="intro__item-title-text">LOGOTYPE, ICONS & MINOR ELEMENTS</span>
+</h3>
+<p class="intro__item-text intro__item-text--desktop">
+Every utilized design element is implemented in 100% vector for easy resizing without
+<br class="desktop-br">
+loss in quality
+</p>
+<p class="intro__item-text intro__item-text--mobile">
+Every used design elements are in a 100% vector. All artboards are resizable
+</p>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<ul class="features">
+<li class="features__item features__item--core">
+<div class="container">
+<div class="features__inner">
+<div class="features__number">1</div>
+<h2 class="features__title title">CORE OF THE PROJECT</h2>
+<p class="features__text text">
+Tripchron is a social travel platform that allows to share your travel routes with fellows and follow other travel enthusiasts. People can inspire and be inspired by keen travelers who are willingly share and comment
+<br class="desktop-br">
+travel itineraries.
+</p>
+<picture class="features__img"><source type="image/webp" media="(max-width: 767px)" srcset="/images/tripchron-core-1-mobile.png, /images/tripchron-core-1-mobile@2x.png 2x"><source type="image/webp" srcset="/images/tripchron-core-1.png, /images/tripchron-core-1@2x.png 2x"><source media="(max-width: 767px)" srcset="/images/tripchron-core-1-mobile.png, /images/tripchron-core-1-mobile@2x.png 2x"><img data-src="/images/tripchron-core-1.png" src="../../images/tripchron-core-1.png" alt="App screens" srcset="/images/tripchron-core-1.png, /images/tripchron-core-1@2x.png 2x"></picture>
+</div>
+</div>
+</li>
+<li class="features__item features__item--components">
+<div class="container">
+<div class="features__inner">
+<div class="features__number">2</div>
+<h2 class="features__title title">COMPONENTS</h2>
+<p class="features__text text">
+During the component development process a test group
+<br class="desktop-br">
+was created. The goal was to make sure that every single component is self explanatory, so that there are no ambiguities for a user on the daily product usage.
+</p>
+<picture class="features__img"><source type="image/webp" media="(max-width: 767px)" srcset="/images/tripchron-components-1-mobile.png, /images/tripchron-components-1-mobile@2x.png 2x"><source type="image/webp" srcset="/images/tripchron-components-1.png, /images/tripchron-components-1@2x.png 2x"><source media="(max-width: 767px)" srcset="/images/tripchron-components-1-mobile.png, /images/tripchron-components-1-mobile@2x.png 2x"><img data-src="/images/tripchron-components-1.png" src="../../images/tripchron-components-1.png" alt="App screens" srcset="/images/tripchron-components-1.png, /images/tripchron-components-1@2x.png 2x"></picture>
+<picture class="features__img"><source type="image/webp" media="(max-width: 767px)" srcset="/images/tripchron-components-2-mobile.png, /images/tripchron-components-2-mobile@2x.png 2x"><source type="image/webp" srcset="/images/tripchron-components-2.png, /images/tripchron-components-2@2x.png 2x"><source media="(max-width: 767px)" srcset="/images/tripchron-components-2-mobile.png, /images/tripchron-components-2-mobile@2x.png 2x"><img data-src="/images/tripchron-components-2.png" src="../../images/tripchron-components-2.png" alt="App screens" srcset="/images/tripchron-components-2.png, /images/tripchron-components-2@2x.png 2x"></picture>
+</div>
+</div>
+</li>
+<li class="features__item features__item--colors">
+<div class="container">
+<div class="features__inner">
+<div class="features__number features__number--colors">3</div>
+<h2 class="features__title title">Color palette</h2>
+<p class="features__text text">Color choice was one the biggest challenge and success. Bright and lifeful colors were chosen to highlight the travel experience of the active fellows. </p>
+<ul class="colors">
+<li class="colors__group-item colors__group-item--primary">
+<h3 class="colors__group-title">PRIMARY COLORS</h3>
+<ul class="colors__list">
+<li class="colors__item">
+#FFC276
+<span class="colors__item-arrow">↘</span>
+#FF7573</li>
+<li class="colors__item">#FF7573</li>
+<li class="colors__item">#39CB5B</li>
+<li class="colors__item">#FFC276</li>
+</ul>
+</li>
+<li class="colors__group-item colors__group-item--text">
+<h3 class="colors__group-title">TEXT COLORS</h3>
+<ul class="colors__list">
+<li class="colors__item">#A3ABBA</li>
+<li class="colors__item">#282D36</li>
+<li class="colors__item">#FFEC00</li>
+<li class="colors__item">#4A90E2</li>
+</ul>
+</li>
+<li class="colors__group-item colors__group-item--other">
+<h3 class="colors__group-title">OTHER COLORS</h3>
+<ul class="colors__list">
+<li class="colors__item">#E4E4E4</li>
+<li class="colors__item">#0E7DBF</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="features__item features__item--typography">
+<div class="container">
+<div class="features__inner">
+<div class="features__number features__number--typography">4</div>
+<h2 class="features__title title">FONTS AND TYPOGRAPHY</h2>
+<p class="features__text text">The selection of fonts was strictly according to all the canons of using modern fonts in web design.</p>
+<section class="typography">
+<h2 class="visually-hidden">Typography</h2>
+<ul class="font-style">
+<li class="font-style__item font-style__item--heading1">
+<h3 class="font-style__title">HEADING 1</h3>
+<dl class="font-style__list">
+<dt class="font-style__key">Font family:</dt>
+<dd class="font-style__value">Nunito Bold</dd>
+<dt class="font-style__key">Font size:</dt>
+<dd class="font-style__value">72 px</dd>
+</dl>
+<p class="font-style__text">The quick brown fox jumpsover the lazy…</p>
+</li>
+<li class="font-style__item font-style__item--heading2">
+<h3 class="font-style__title">HEADING 2</h3>
+<dl class="font-style__list">
+<dt class="font-style__key">Font family:</dt>
+<dd class="font-style__value">Nunito Bold</dd>
+<dt class="font-style__key">Font size:</dt>
+<dd class="font-style__value">24 px</dd>
+</dl>
+<p class="font-style__text">The quick brown fox jumpsover the lazy…</p>
+</li>
+<li class="font-style__item font-style__item--heading3">
+<h3 class="font-style__title">HEADING 3</h3>
+<dl class="font-style__list">
+<dt class="font-style__key">Font family:</dt>
+<dd class="font-style__value">Nunito Regular</dd>
+<dt class="font-style__key">Font size:</dt>
+<dd class="font-style__value">16 px</dd>
+</dl>
+<p class="font-style__text">The quick brown fox jumpsover the lazy…</p>
+</li>
+<li class="font-style__item font-style__item--subtitle">
+<h3 class="font-style__title">SUBTITLE</h3>
+<dl class="font-style__list">
+<dt class="font-style__key">Font family:</dt>
+<dd class="font-style__value">Nunito Regular</dd>
+<dt class="font-style__key">Font size:</dt>
+<dd class="font-style__value">16 px</dd>
+</dl>
+<p class="font-style__text">The quick brown fox jumpsover the lazy dog.</p>
+</li>
+<li class="font-style__item font-style__item--body">
+<h3 class="font-style__title">BODY</h3>
+<dl class="font-style__list">
+<dt class="font-style__key">Font family:</dt>
+<dd class="font-style__value">Nunito Regular</dd>
+<dt class="font-style__key">Font size:</dt>
+<dd class="font-style__value">12-16 px</dd>
+</dl>
+<p class="font-style__text">
+Successful businesses know the importance of building and maintaining good working relationships,
+<br class="desktop-br">
+whether it is with partners, employees, business or trade organizations, the government, media representatives, vendors, consumers, or the community at large. A business must carefully balance the benefits of these interpersonal relationships and should never allow these relationships to blind their judgment especially
+<br class="desktop-br">
+when it relates to what is in the best interest of the business’s continued success and growth.
+</p>
+</li>
+</ul>
+</section>
+</div>
+</div>
+</li>
+<li class="features__item features__item--icons">
+<div class="container">
+<div class="features__inner">
+<div class="features__number features__number--icons">5</div>
+<h2 class="features__title title">ICON SET</h2>
+<p class="features__text text">Custom icons were built for this specific service, they correlate with the overall mood direction.</p>
+<ul class="icons">
+<li class="icons__item icons__item--bicycle">
+<svg class="icons__item-img" xmlns="http://www.w3.org/2000/svg" width="90" height="70" fill="none" viewBox="0 0 90 70">
+<path fill="#282D36" fill-rule="evenodd" d="M63.038 30.446c6.066 0 10.983 4.836 10.983 10.803 0 5.968-4.917 10.804-10.983 10.804-6.066 0-10.982-4.836-10.982-10.803 0-3.832 2.043-7.16 5.108-9.108l5.044 9.547c.192.314.51.503.83.503a1.2 1.2 0 0 0 .447-.126c.447-.251.639-.817.383-1.256l-5.044-9.547c1.34-.503 2.745-.817 4.214-.817zm-19.666 9.861h-3.704c-.319-4.334-2.873-8.04-6.513-10.112l1.724-3.58h18.07l-9.577 13.692zm-10.983-8.353c3.001 1.696 5.108 4.773 5.427 8.353h-9.45l4.023-8.353zM26.9 52.053c-6.067 0-10.983-4.836-10.983-10.803 0-5.968 4.916-10.804 10.982-10.804 1.341 0 2.618.251 3.768.691l-4.662 9.736v.063c-.064.125-.064.188-.064.313v.063c0 .126 0 .189.064.314v.063c0 .063 0 .063.064.126 0 .063.064.063.128.125v.063c.064.063.191.126.255.189h.064a.584.584 0 0 0 .32.063h10.918c-.447 5.464-5.108 9.798-10.855 9.798zM50.203 41.25c0 6.971 5.747 12.687 12.898 12.687S76 48.284 76 41.25c0-7.034-5.747-12.687-12.898-12.687-1.788 0-3.512.377-5.108 1.005l-2.171-4.146v-6.595a.946.946 0 0 0-.639-.88l-5.108-1.883c-.51-.189-1.021.062-1.213.565-.191.502.064 1.005.575 1.193l4.533 1.633v5.34H35.263v-1.822h2.298c.511 0 .958-.44.958-.943 0-.502-.447-.942-.958-.942h-5.938c-.51 0-.958.44-.958.942 0 .503.447.943.958.943h1.724v2.575l-1.852 3.957a12.462 12.462 0 0 0-4.597-.88C19.811 28.625 14 34.279 14 41.313 14 48.347 19.747 54 26.898 54c6.768 0 12.323-5.213 12.834-11.745h4.15c.32 0 .575-.126.767-.377L54.673 27.62l1.597 2.952c-3.64 2.135-6.066 6.155-6.066 10.677z" clip-rule="evenodd" />
+</svg>
+</li>
+<li class="icons__item icons__item--ship">
+<svg class="icons__item-img" xmlns="http://www.w3.org/2000/svg" width="90" height="70" fill="none" viewBox="0 0 90 70">
+<path fill="#282D36" fill-rule="evenodd" d="M65.019 46.504l-.875-.64c-1.459-1.066-3.063-2.346-6.272-2.346s-4.813 1.28-6.272 2.346c-1.313.996-2.48 1.92-4.959 1.92-2.407 0-3.573-.853-4.96-1.92-1.458-1.066-3.062-2.346-6.27-2.346-3.137 0-4.814 1.28-6.273 2.346-1.24.925-2.334 1.778-4.448 1.849-1.896-.071-3.428-.782-4.668-1.991-2.48-2.489-3.063-6.684-3.209-8.604h57.322l-9.116 9.386zm-41.86-14.079h34.786l2.334 2.56H21.553l1.604-2.56zm3.646-5.972H52.62l3.428 3.84H24.398l2.407-3.84zm5.907-5.333h5.25l1.75 3.27h-7v-3.27zm3.646-2.916l.438.782h-4.157v-.782h3.719zM76.76 34.985H63.123l-9.19-10.31c-.218-.213-.51-.356-.801-.356h-10.94c0-.07 0-.142-.073-.213l-4.084-7.537c-.218-.356-.583-.569-.948-.569h-5.47c-.583 0-1.093.498-1.093 1.067v7.181h-4.376c-.365 0-.73.213-.948.498l-6.199 10.168h-3.209c-.583 0-1.094.427-1.094 1.067 0 .213-.073 4.337 1.678 8.035-.875-.356-1.97-.57-3.282-.57-.583 0-1.094.498-1.094 1.067 0 .57.51 1.067 1.094 1.067 2.407 0 3.573.853 4.959 1.92 1.459 1.066 3.063 2.346 6.272 2.346h1.021c.146 0 .292-.071.437-.142 2.261-.285 3.574-1.351 4.814-2.204 1.312-.996 2.48-1.92 4.959-1.92 2.406 0 3.573.853 4.959 1.92 1.459 1.066 3.063 2.346 6.272 2.346s4.813-1.28 6.272-2.346c1.312-.996 2.48-1.92 4.959-1.92 2.406 0 3.573.853 4.959 1.92 1.458 1.066 3.063 2.346 6.272 2.346.583 0 1.094-.498 1.094-1.066 0-.57-.511-1.067-1.094-1.067-.803 0-1.459-.071-2.042-.284l10.501-10.666c.292-.285.365-.782.22-1.138-.293-.355-.73-.64-1.168-.64zM24.283 56c3.125 0 4.796-1.23 6.25-2.256 1.308-.958 2.471-1.847 4.942-1.847 2.399 0 3.561.82 4.942 1.847C41.871 54.769 43.47 56 46.667 56c3.198 0 4.797-1.23 6.251-2.256 1.308-.958 2.471-1.847 4.942-1.847 2.399 0 3.561.82 4.942 1.847C64.256 54.769 65.855 56 69.052 56c.582 0 1.09-.479 1.09-1.026s-.508-1.025-1.09-1.025c-2.398 0-3.56-.82-4.942-1.846-1.453-1.026-3.052-2.257-6.25-2.257s-4.797 1.23-6.25 2.257c-1.308.957-2.471 1.846-4.942 1.846-2.399 0-3.562-.82-4.943-1.846-1.453-1.026-3.052-2.257-6.25-2.257-3.125 0-4.797 1.23-6.25 2.257-1.308.957-2.471 1.846-4.942 1.846-2.399 0-3.562-.82-4.943-1.846-1.453-1.026-3.052-2.257-6.25-2.257-.581 0-1.09.479-1.09 1.026s.509 1.025 1.09 1.025c2.399 0 3.561.82 4.942 1.847C19.486 54.838 21.157 56 24.282 56z" clip-rule="evenodd" />
+</svg>
+</li>
+<li class="icons__item icons__item--bus">
+<svg class="icons__item-img" xmlns="http://www.w3.org/2000/svg" width="90" height="70" fill="none" viewBox="0 0 90 70">
+<path fill="#282D36" fill-rule="evenodd" d="M36.453 46.864h2.177v-1.817h-2.177v1.817zm-4.1.067h2.178v-1.817h-2.177v1.817zm7.238-3.836h-8.198c-.512 0-.96.471-.96 1.01v3.835c0 .538.448 1.01.96 1.01h8.198c.512 0 .96-.472.96-1.01v-3.836c0-.605-.448-1.009-.96-1.009zm17.1 3.769h2.178v-1.817H56.69v1.817zm-4.099.067h2.178v-1.817h-2.178v1.817zm7.237-3.836h-8.197c-.513 0-.961.471-.961 1.01v3.835c0 .538.448 1.01.96 1.01h8.198c.513 0 .961-.472.961-1.01v-3.836c0-.605-.448-1.009-.96-1.009zM42.016 14.101h7.309c.527 0 .987-.454.987-.974 0-.519-.46-.973-.987-.973h-7.309c-.526 0-.987.454-.987.973 0 .52.46.974.987.974zM32.93 9.947h25.81c2.503 0 4.544 2.012 4.544 4.479v2.466H28.387v-2.466c0-2.467 2.04-4.479 4.543-4.479zm34.765 10.125v7.204c0 .65-.526 1.234-1.25 1.234h-1.252v-9.671h1.251c.725 0 1.251.584 1.251 1.233zm-5.135 39.98h-7.901a.726.726 0 0 1-.725-.713v-2.531h4.741c1.778 0 3.358-.714 4.543-1.818v4.349c.066.39-.263.714-.658.714zm-24.89-.713c0 .39-.328.714-.723.714h-7.902a.726.726 0 0 1-.724-.714V54.99c1.185 1.104 2.766 1.818 4.543 1.818h4.741v2.53h.066zm25.614-19.796c-.066 0-.198-.065-.264-.065h-1.975l-14.551-9.346c-.461-.26-1.054-.195-1.383.26-.263.454-.197 1.038.263 1.363l11.984 7.659H45.967l-14.486-9.282c-.46-.26-1.053-.195-1.382.26-.264.454-.198 1.038.263 1.363l11.984 7.659h-13.96V18.838h34.898v20.704zm0 10.904c0 2.466-2.041 4.478-4.543 4.478H32.93c-2.502 0-4.543-2.011-4.543-4.478v-9.086H63.02c.132 0 .198 0 .264-.065v9.151zM25.16 28.51c-.658 0-1.25-.52-1.25-1.234v-7.204c0-.649.526-1.233 1.25-1.233h1.251v9.67h-1.25zM22 20.072v7.204c0 1.753 1.449 3.18 3.226 3.18h1.251V59.34c0 1.428 1.186 2.661 2.7 2.661h7.901c1.449 0 2.7-1.168 2.7-2.661v-2.531h12.444v2.53c0 1.429 1.185 2.662 2.7 2.662h7.901c1.449 0 2.7-1.168 2.7-2.661V30.457h1.25c1.778 0 3.227-1.428 3.227-3.18v-7.205c0-1.752-1.449-3.18-3.226-3.18h-1.251v-2.466c0-3.57-2.897-6.426-6.519-6.426H32.93c-3.621 0-6.518 2.856-6.518 6.425v2.467H25.16c-1.711 0-3.16 1.428-3.16 3.18z" clip-rule="evenodd" />
+</svg>
+</li>
+<li class="icons__item icons__item--car">
+<svg class="icons__item-img" xmlns="http://www.w3.org/2000/svg" width="90" height="70" fill="none" viewBox="0 0 90 70">
+<path fill="#282D36" fill-rule="evenodd" d="M24.466 54.35c2.095 0 3.8-1.705 3.8-3.8 0-2.095-1.705-3.8-3.8-3.8a3.805 3.805 0 0 0-3.8 3.8c0 2.096 1.705 3.8 3.8 3.8zm.001-10.133a6.34 6.34 0 0 1 6.333 6.334 6.34 6.34 0 0 1-6.333 6.333 6.34 6.34 0 0 1-6.333-6.334 6.34 6.34 0 0 1 6.333-6.333zM67.533 54.35c2.095 0 3.8-1.705 3.8-3.8 0-2.095-1.705-3.8-3.8-3.8a3.805 3.805 0 0 0-3.8 3.8c0 2.096 1.705 3.8 3.8 3.8zm0-10.133a6.34 6.34 0 0 1 6.334 6.334 6.34 6.34 0 0 1-6.333 6.333A6.34 6.34 0 0 1 61.2 50.55a6.34 6.34 0 0 1 6.334-6.333zm-57 5.067h2.603c.632-5.693 5.472-10.133 11.33-10.133s10.698 4.44 11.33 10.133h20.406c.632-5.693 5.472-10.133 11.33-10.133 5.859 0 10.699 4.44 11.33 10.133h2.604V46.75c-.7 0-1.267-.568-1.267-1.267v-3.8h-1.266a1.267 1.267 0 0 1 0-2.533h.656c-1.714-1.861-6.957-3.8-14.59-3.8H18.34l-6.54 2.18v1.62h1.267a1.267 1.267 0 0 1 0 2.533h-1.267v3.8c0 .699-.567 1.267-1.266 1.267v2.533zM43.465 24.74v8.077h18.718c-4.695-4.843-10.886-7.52-18.718-8.077zm-11.203.462c-1.525.269-2.865.65-4.07 1.124l.061 6.491h12.68v-8.185c-2.71-.037-5.592.145-8.67.57zM20.41 32.817h5.31l-.049-5.249c-2.2 1.35-3.839 3.13-5.261 5.25zm-11.142 11.4v-7.6c0-.546.348-1.03.866-1.202l7.148-2.383c2.692-4.558 6.392-8.897 14.568-10.33l.045-.007c15.099-2.087 26.436 1.319 33.714 10.127 8.414.122 17.125 2.775 17.125 7.595v3.8c.7 0 1.267.568 1.267 1.267v5.066c0 .7-.567 1.267-1.267 1.267h-5.066c-.7 0-1.267-.567-1.267-1.267 0-4.889-3.977-8.866-8.867-8.866-4.889 0-8.866 3.977-8.866 8.867 0 .699-.568 1.266-1.267 1.266H34.6c-.7 0-1.267-.567-1.267-1.267 0-4.889-3.977-8.866-8.866-8.866-4.89 0-8.867 3.977-8.867 8.867 0 .699-.567 1.266-1.267 1.266H9.267c-.7 0-1.267-.567-1.267-1.267v-5.066c0-.7.567-1.267 1.267-1.267z" clip-rule="evenodd" />
+</svg>
+</li>
+<li class="icons__item icons__item--boot">
+<svg class="icons__item-img" xmlns="http://www.w3.org/2000/svg" width="90" height="70" fill="none" viewBox="0 0 90 70">
+<path fill="#282D36" fill-rule="evenodd" d="M75.866 50.837c-.697.436-1.41.844-2.133 1.232v-.673H71.6v1.728c-.702.322-1.415.616-2.134.893v-.552h-2.133v1.3c-.705.224-1.415.428-2.133.61V54.5h-2.134v1.358c-.707.137-1.416.265-2.133.362v-.685H58.8v.908c-.708.056-1.42.08-2.134.097v-1.005h-2.133v1.035H52.4v-1.035h-2.134v1.035h-2.133v-1.035H46v1.035h-1.474l-.773-1.497a1.062 1.062 0 0 0-.714-.546l-6.934-1.552a1.087 1.087 0 0 0-1.107.408L32.65 56.57h-.517V54.5H30v2.07h-2.134V54.5h-2.133v2.07H23.6V54.5h-2.134v2.07h-2.133V54.5H17.2v1.263c-.65-.57-1.067-1.384-1.067-2.298v-5.808l4.996 1.616c.24.078.5.07.734-.02l5.014-1.946 8.199 1.989c.14.034.29.04.433.016l6.196-1.002 18.999 4.097a1.129 1.129 0 0 0 .566-.03l14.596-4.72v3.18zM16.133 18.278c0-.57.478-1.035 1.067-1.035.588 0 1.066.465 1.066 1.035v1.726l-2.133.862v-2.588zm11.947 0h2.987v5.781l-6.548 6.353a20.57 20.57 0 0 0-7.199-1.726 50.387 50.387 0 0 0-1.003-5.651l11.763-4.757zM17.517 30.766c8.894.656 16.003 7.552 16.679 16.183l-7.138-1.732a1.104 1.104 0 0 0-.654.044l-4.97 1.929-4.904-1.587a50.925 50.925 0 0 0 .987-14.837zM33.2 24.488v-6.21h.496l6.083 8.854c.086.126.2.232.333.31l2.155 1.272-3.423 3.321 1.509 1.464 3.79-3.677 1.881 1.111.025.076.068-.02 1.455.858-3.394 3.293 1.508 1.463 3.761-3.649 3.43 2.026-3.366 3.265 1.508 1.463 3.733-3.62 3.429 2.024-3.337 3.238 1.509 1.463 3.703-3.593 3.43 2.025-3.308 3.21 1.508 1.463 3.89-3.774 6.587.912 2.794 2.712-14.082 4.554-18.91-4.077a1.117 1.117 0 0 0-.407-.01l-5.221.844c-.422-6.657-4.26-12.417-9.843-15.657l6.394-6.204c.2-.192.312-.456.312-.73zm2.134-8.4c0-1.339.879-2.523 2.188-2.946l2.455-.794.678 2.083-2.458.795c-.437.142-.73.536-.73.982v3.827l-2.133-3.105v-.843zm5.963.318l3.752 11.528-3.626-2.141-1.823-2.654v-6.185l1.697-.548zM73.42 41.35a1.084 1.084 0 0 0-.603-.293l-7.25-1.005-17.75-10.483-6.135-18.847a1.038 1.038 0 0 0-.532-.61 1.099 1.099 0 0 0-.823-.06l-3.481 1.127c-2.181.705-3.647 2.678-3.647 4.908v.122h-5.333c-.141 0-.28.026-.411.08L20.4 19.14v-.862c0-1.711-1.436-3.104-3.2-3.104-1.764 0-3.2 1.393-3.2 3.104v4.14h.015c0 .084-.005.167.017.252a48.89 48.89 0 0 1 0 24.335.991.991 0 0 0-.032.25v6.21c0 2.854 2.392 5.175 5.333 5.175H33.2c.344 0 .668-.161.867-.434l2.253-3.06 5.75 1.288.842 1.634c.181.35.55.572.955.572h11.93c7.758 0 15.272-2.208 21.728-6.383.297-.193.475-.516.475-.861V46.22c0-.274-.112-.538-.313-.732l-4.266-4.14z" clip-rule="evenodd" />
+</svg>
+</li>
+<li class="icons__item icons__item--motocycle">
+<svg class="icons__item-img" xmlns="http://www.w3.org/2000/svg" width="90" height="70" fill="none" viewBox="0 0 90 70">
+<path fill="#282D36" fill-rule="evenodd" d="M40.096 26.252a3.579 3.579 0 0 0 4.029-.173l1.475-1.11-13.668-3.827 8.164 5.11zm17.617-1.708l-.772-.968a6.2 6.2 0 0 0-5.477-2.305l-8.336.813 12.645 3.541a22.283 22.283 0 0 1 1.94-1.081zm-20.919 14.01l-11.79 6.332 11.694.684a39.129 39.129 0 0 1 2.132-3.916 1.072 1.072 0 0 1 1.073-.49 9.188 9.188 0 0 0 2.32.058l-5.429-2.669zm-16.087 6.24l4.441-2.385a5.19 5.19 0 0 0-3.932-1.794c-2.848 0-5.166 2.291-5.166 5.106s2.318 5.106 5.166 5.106c2.368 0 4.383-1.584 4.983-3.758l-5.046-.295a1.064 1.064 0 0 1-.979-.823 1.05 1.05 0 0 1 .532-1.157zm.509-8.047c-5.007 0-9.08 4.026-9.08 8.974s4.073 8.974 9.08 8.974c4.444 0 8.18-3.173 8.937-7.395l-1.79-.105c-.691 3.292-3.648 5.74-7.147 5.74-4.026 0-7.3-3.236-7.3-7.214s3.274-7.215 7.3-7.215a7.327 7.327 0 0 1 5.836 2.88l1.577-.847a9.11 9.11 0 0 0-7.413-3.792zM73.17 25.305c.725.369 1.417.772 2.074 1.205-2.92-4.078-7.385-8.418-13.769-10.043l2.233 6.57c3.053-.087 6.365.692 9.462 2.268zM71.058 46.69a1.075 1.075 0 0 1-1.4-.555l-1.988-4.59a5.085 5.085 0 0 0-2.198 4.175c0 2.815 2.318 5.106 5.166 5.106 2.85 0 5.167-2.29 5.167-5.106 0-2.815-2.318-5.106-5.167-5.106a5.22 5.22 0 0 0-1.007.099l1.989 4.592a1.05 1.05 0 0 1-.562 1.385zm-9.5-.97c0 4.948 4.073 8.974 9.08 8.974 5.008 0 9.081-4.026 9.081-8.974s-4.073-8.974-9.08-8.974c-.892 0-1.752.13-2.566.367l.706 1.63a7.374 7.374 0 0 1 1.86-.238c4.025 0 7.3 3.237 7.3 7.215 0 3.978-3.275 7.215-7.3 7.215-4.026 0-7.302-3.237-7.302-7.215 0-2.595 1.394-4.874 3.48-6.145l-.705-1.63c-2.72 1.552-4.555 4.455-4.555 7.775zM23.614 22.45c.348.055.646.277.796.592l.925 1.942a1.05 1.05 0 0 1-.511 1.403 1.072 1.072 0 0 1-1.42-.505l-.685-1.438-11.822-1.88A1.059 1.059 0 0 1 10 21.523v-3.375a1.06 1.06 0 0 1 1.067-1.055h14.086c.099 0 .196.014.291.04l12.068 3.38 13.742-1.34a8.337 8.337 0 0 1 7.363 3.097l1.14 1.43a12.306 12.306 0 0 1 1.776-.444l-2.674-7.866a1.044 1.044 0 0 1 .2-1.02c.243-.281.617-.416.987-.356 6.405 1.055 12.142 4.784 16.59 10.783 3.434 4.63 4.981 9.083 5.148 9.58l.012.033.002.007a.978.978 0 0 1 .028.597 1.076 1.076 0 0 1-1.323.756l-6.807-1.853a12.704 12.704 0 0 0-6.976.07l.51 1.176a11.314 11.314 0 0 1 4.003-.51c5.752.298 10.383 4.93 10.612 10.617.262 6.496-5.168 11.831-11.752 11.521-5.761-.27-10.415-4.896-10.66-10.59-.188-4.39 2.223-8.251 5.835-10.206l-.532-1.23c-.667.329-1.31.717-1.922 1.166-3.08 2.258-4.902 5.707-4.998 9.47a12.572 12.572 0 0 0 1.52 6.318c.141.26.188.567.098.849-.145.45-.562.74-1.02.74h-2.883c-.59 0-1.067-.472-1.067-1.054 0-.583.478-1.055 1.067-1.055h1.208a14.686 14.686 0 0 1-1.056-5.859c.112-4.408 2.248-8.455 5.86-11.103a14.816 14.816 0 0 1 12.72-2.353l4.609 1.255c-1.382-2.349-3.723-4.456-6.677-5.959-3.676-1.87-7.813-2.5-11.065-1.683-3.7.93-7.52 4.274-8.712 5.385.06.466.09.94.09 1.413 0 6.111-5.03 11.083-11.214 11.083-.333 0-.666-.014-.996-.043-1.983 3.33-3.016 6.271-3.486 7.864h13.739c.589 0 1.067.472 1.067 1.055 0 .582-.478 1.054-1.068 1.054H35.465c-.198 0-.395-.043-.565-.142a1.052 1.052 0 0 1-.51-1.114c.023-.118.375-1.847 1.408-4.421l-3.5-.205c-.86 5.513-5.821 9.643-11.636 9.365-5.723-.274-10.358-4.845-10.646-10.5-.325-6.368 4.825-11.652 11.2-11.652 3.754 0 7.226 1.849 9.299 4.887l3.946-2.12-6.937-3.41a1.06 1.06 0 0 1-.49-.495l-1.798-3.774a1.05 1.05 0 0 1 .511-1.403 1.072 1.072 0 0 1 1.42.505l1.64 3.443 16.46 8.09c3.021-1.459 5.107-4.526 5.107-8.067 0-.54-.048-1.08-.145-1.603a1.047 1.047 0 0 1 .29-.928 31.469 31.469 0 0 1 2.998-2.579l-5.351-1.498-2.748 2.07a5.71 5.71 0 0 1-3.436 1.14 5.705 5.705 0 0 1-3.028-.863l-14.11-8.831h-12.71v1.421l11.481 1.826zm27.59 27.497h-2.622c-.557 0-1.008-.465-1.008-1.039 0-.574.451-1.039 1.008-1.039h1.986l1.254-2.7h-3.038c-.557 0-1.009-.466-1.009-1.04 0-.574.452-1.039 1.009-1.039h4.638c.347 0 .669.183.853.485.185.302.206.68.057 1.002l-2.218 4.78c-.168.36-.522.59-.91.59z" clip-rule="evenodd" />
+</svg>
+</li>
+<li class="icons__item icons__item--train">
+<svg class="icons__item-img" xmlns="http://www.w3.org/2000/svg" width="90" height="70" fill="none" viewBox="0 0 90 70">
+<path fill="#282D36" fill-rule="evenodd" d="M55.208 45.022c-2.375-.127-4.045-2.402-4.109-2.465l-3.916-5.12c3.403.064 10.657.76 14.381 4.425.385.379.835.821 1.284 1.2.578.57 1.284 1.201 1.926 1.897-2.568.126-7.511.19-9.566.063zM17.907 56.398h42.887c6.1 0 9.373-1.075 10.272-3.287 1.349-3.286-3.017-7.52-6.934-11.25l-1.22-1.2c-5.65-5.562-17.27-4.993-17.72-4.993H17.266c-.514 0-.963.443-.963.948 0 .506.45.948.963.948h27.478l4.816 6.194c.064.126 2.247 3.033 5.52 3.223.964.063 2.569.063 4.302.063 3.275 0 6.87-.063 7.063-.063h.064c1.862 2.085 3.338 4.171 2.76 5.435-.32.759-1.861 2.086-8.474 2.086H17.907c-.514 0-.963.442-.963.948 0 .505.45.948.963.948zM12.963 60h64.074c.514 0 .963-.442.963-.948s-.45-.948-.963-.948H12.963c-.514 0-.963.442-.963.948s.45.948.963.948zm5.963-18.598h4.278l4.023 4.87h-8.301v-4.87zm24.139 4.87h-5.428l-4.024-4.87h5.365l4.087 4.87zm-11.942-4.87l4.023 4.87h-5.428l-4.023-4.87h5.428zm-13.155 6.843h27.14c.511 0 .958-.46.958-.987 0-.329-.128-.592-.32-.79l-5.619-6.71c-.191-.198-.447-.33-.702-.33H17.968c-.511 0-.958.461-.958.988v6.842c0 .526.447.987.958.987zm-2.992-22.53h8.69c.518 0 .972-.443.972-.949 0-2.717 2.27-4.992 5.122-4.992 2.788 0 5.123 2.211 5.123 4.992 0 .506.453.948.972.948h9.726c.52 0 .973-.442.973-.948 0-.505-.454-.948-.973-.948h-8.818c-.26-1.833-1.297-3.413-2.723-4.487.065-.126.13-.316.13-.442 0-2.718 2.269-4.993 5.122-4.993 2.788 0 5.122 2.212 5.122 4.993 0 .505.454.948.973.948h9.726c.519 0 .973-.443.973-.948 0-.506-.454-.948-.973-.948H46.23C45.776 14.59 42.793 12 39.292 12c-3.696 0-6.744 2.844-7.003 6.383-.778-.316-1.621-.442-2.529-.442-3.566 0-6.484 2.59-6.938 5.94h-7.845c-.52 0-.973.443-.973.948 0 .443.454.885.973.885zm.001 4.897H38.08c.52 0 .974-.457.974-.98 0-.522-.455-.979-.974-.979H14.977c-.519 0-.973.457-.973.98 0 .522.454.98.973.98z" clip-rule="evenodd" />
+</svg>
+</li>
+<li class="icons__item">
+<svg class="icons__item-img" xmlns="http://www.w3.org/2000/svg" width="90" height="70" fill="none" viewBox="0 0 90 70">
+<path fill="#282D36" fill-rule="evenodd" d="M69.7 16.181c-.63 1.883-1.888 3.892-3.273 5.273l-3.778 3.577c-.189.189-.315.502-.315.816 0 .188 2.644 22.345 2.896 27.429.126 2.887-1.007 4.958-1.889 6.088l-8.814-24.918c-.126-.314-.378-.502-.693-.628-.315-.062-.63 0-.881.251l-6.548 6.089c-1.448 1.255-4.47 4.205-4.848 4.581l-6.674 5.085c-2.77 1.318-3.337.816-3.337.816-.315-.314 0-1.946.692-3.327l5.037-6.779c.378-.376 3.274-3.39 4.534-4.77l6.17-6.528c.189-.25.315-.564.252-.878-.063-.314-.315-.565-.63-.69L22.605 18.88c1.134-.878 3.211-2.008 6.107-1.883 5.037.189 27.263 2.825 27.515 2.887.315.063.566-.062.818-.313l3.526-3.766c3.022-3.013 7.555-4.833 8.878-3.515h.063v.063c.755.627.755 2.07.189 3.828zM40.865 56.98l-1.322 1.318-1.07-8.724 3.085-2.386.188 1.883c.315 2.385.378 6.654-.88 7.909zm-8.311-13.306L23.99 42.48l1.385-1.38c1.197-1.193 5.352-1.068 7.745-.691l1.889.188-2.33 3.138c-.063 0-.063-.063-.126-.063zM70.96 10.971s-.063 0 0 0c-2.582-2.574-8.5.44-11.585 3.515L56.1 17.939c-3.715-.502-22.855-2.636-27.2-2.825-5.54-.188-8.563 3.39-8.689 3.515-.188.251-.251.565-.188.816.063.314.314.502.566.628l25.122 8.787-5.163 5.46c-1.07 1.193-3.4 3.578-4.218 4.457l-3.023-.314c-.692-.126-6.988-1.067-9.318 1.255l-2.707 2.7c-.252.25-.315.627-.252.94.126.315.378.566.756.628l9.633 1.444-.567.753c-.063.063-.063.063-.063.126-.315.627-1.889 4.017-.378 5.586.504.502 1.07.69 1.763.69 1.26 0 2.645-.565 3.778-1.13.063 0 .126-.062.189-.125l.63-.44 1.196 9.604c.063.376.314.627.63.753.314.125.692 0 .944-.251l2.707-2.7c2.267-2.259 1.511-8.786 1.385-9.477l-.315-3.075c.882-.816 3.274-3.201 4.47-4.268l5.478-5.147 8.815 25.043c.126.314.315.502.63.565.063 0 .188.063.251.063.19 0 .441-.063.567-.188.126-.126 3.778-3.139 3.526-8.662-.189-4.142-2.33-23.286-2.833-27.114l3.463-3.264c1.637-1.632 3.022-3.892 3.714-6.026.945-2.51.756-4.582-.44-5.774 0 .063 0 .063 0 0z" clip-rule="evenodd" />
+</svg>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="features__item features__item--views">
+<div class="container">
+<div class="features__inner">
+<div class="features__number features__number--views">6</div>
+<h2 class="features__title title">FULL VIEW</h2>
+<p class="features__text text">UI Kit was developed. So the design can be easily supported and evolved in the future.</p>
+<picture class="features__img"><source type="image/webp" media="(max-width: 767px)" srcset="/images/tripchron-views-1-mobile.png, /images/tripchron-views-1-mobile@2x.png 2x"><source type="image/webp" srcset="/images/tripchron-views-1.png, /images/tripchron-views-1@2x.png 2x"><source media="(max-width: 767px)" srcset="/images/tripchron-views-1-mobile.png, /images/tripchron-views-1-mobile@2x.png 2x"><img data-src="/images/tripchron-views-1.png" src="../../images/tripchron-views-1.png" alt="Man looks at the sea" srcset="/images/tripchron-views-1.png, /images/tripchron-views-1@2x.png 2x"></picture>
+</div>
+</div>
+</li>
+</ul>
+<ul class="app-screens">
+<li class="app-screens__item app-screens__item--dashboard">
+<div class="container">
+<div class="app-screens__inner">
+<h2 class="app-screens__title title">MY DASHBOARD</h2>
+<p class="app-screens__text text">Default page of the traveler where he can see his travel history and create future trip plan.</p>
+<picture class="app-screens__img"><source type="image/webp" media="(max-width: 767px)" srcset="/images/tripchron-dashboard-1-mobile.png, /images/tripchron-dashboard-1-mobile@2x.png 2x"><source type="image/webp" srcset="/images/tripchron-dashboard-1.png, /images/tripchron-dashboard-1@2x.png 2x"><source media="(max-width: 767px)" srcset="/images/tripchron-dashboard-1-mobile.png, /images/tripchron-dashboard-1-mobile@2x.png 2x"><img data-src="/images/tripchron-dashboard-1.png" src="../../images/tripchron-dashboard-1.png" alt="App screen" srcset="/images/tripchron-dashboard-1.png, /images/tripchron-dashboard-1@2x.png 2x"></picture>
+</div>
+</div>
+</li>
+<li class="app-screens__item app-screens__item--trip-info">
+<div class="container">
+<div class="app-screens__inner">
+<h2 class="app-screens__title title">DETAILED TRIP INFO</h2>
+<p class="app-screens__text text">
+View of expanded trip information. Provides a very comprehensive set of data about the trip along with
+<br class="desktop-br">
+all travel means used
+<br class="desktop-br">
+in chronological order.
+</p>
+<picture class="app-screens__img"><source type="image/webp" media="(max-width: 767px)" srcset="/images/tripchron-trip-info-1-mobile.png, /images/tripchron-trip-info-1-mobile@2x.png 2x"><source type="image/webp" srcset="/images/tripchron-trip-info-1.png, /images/tripchron-trip-info-1@2x.png 2x"><source media="(max-width: 767px)" srcset="/images/tripchron-trip-info-1-mobile.png, /images/tripchron-trip-info-1-mobile@2x.png 2x"><img data-src="/images/tripchron-trip-info-1.png" src="../../images/tripchron-trip-info-1.png" alt="App screen" srcset="/images/tripchron-trip-info-1.png, /images/tripchron-trip-info-1@2x.png 2x"></picture>
+</div>
+</div>
+</li>
+<li class="app-screens__item app-screens__item--profile">
+<div class="container">
+<div class="app-screens__inner">
+<h2 class="app-screens__title title">USER PROFILE</h2>
+<p class="app-screens__text text">
+The page for creating/editing a campaign. Screen with all the necessary information about
+<br class="desktop-br">
+a specific traveler. It showcases the general info about
+<br class="desktop-br">
+the person + givesa detailed idea on his travel activity.
+</p>
+<picture class="app-screens__img"><source type="image/webp" media="(max-width: 767px)" srcset="/images/tripchron-profile-1-mobile.png, /images/tripchron-profile-1-mobile@2x.png 2x"><source type="image/webp" srcset="/images/tripchron-profile-1.png, /images/tripchron-profile-1@2x.png 2x"><source media="(max-width: 767px)" srcset="/images/tripchron-profile-1-mobile.png, /images/tripchron-profile-1-mobile@2x.png 2x"><img data-src="/images/tripchron-profile-1.png" src="../../images/tripchron-profile-1.png" alt="App screen" srcset="/images/tripchron-profile-1.png, /images/tripchron-profile-1@2x.png 2x"></picture>
+</div>
+</div>
+</li>
+<li class="app-screens__item app-screens__item--new-trip">
+<div class="container">
+<div class="app-screens__inner">
+<h2 class="app-screens__title title">ADD NEW TRIP</h2>
+<p class="app-screens__text text">Interactive form page that makes the process of adding or editing the travel route smooth and painless.</p>
+<picture class="app-screens__img"><source type="image/webp" media="(max-width: 767px)" srcset="/images/tripchron-new-trip-1-mobile.png, /images/tripchron-new-trip-1-mobile@2x.png 2x"><source type="image/webp" srcset="/images/tripchron-new-trip-1.png, /images/tripchron-new-trip-1@2x.png 2x"><source media="(max-width: 767px)" srcset="/images/tripchron-new-trip-1-mobile.png, /images/tripchron-new-trip-1-mobile@2x.png 2x"><img data-src="/images/tripchron-new-trip-1.png" src="../../images/tripchron-new-trip-1.png" alt="App screen" srcset="/images/tripchron-new-trip-1.png, /images/tripchron-new-trip-1@2x.png 2x"></picture>
+</div>
+</div>
+</li>
+</ul>
+<footer id="footer" class="footer js-flexible-height js-flexible-height--theme2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer__container">
+<div class="footer__inner">
+<div class="footer__top-wrapper">
+<div class="footer__left-wrap">
+<svg class="footer__logo" width="164" height="30" viewBox="0 0 164 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M43.7921 3.02539H34.8721V26.7525H40.2578V19.2954H43.7921C48.4373 19.2954 52.039 15.6686 52.039 11.1604C52.039 6.65225 48.4373 3.02539 43.7921 3.02539ZM43.7921 14.211H40.2578V8.10978H43.7921C45.4415 8.10978 46.6533 9.43172 46.6533 11.1604C46.6533 12.8891 45.4415 14.211 43.7921 14.211Z" fill="white" />
+<path d="M65.7673 9.80457V19.0582C65.7673 21.4648 64.4882 22.5494 62.6369 22.5494C61.0212 22.5494 59.7084 21.5665 59.7084 19.4649V9.80457H54.6593V20.2106C54.6593 24.7866 57.5541 27.2271 60.9538 27.2271C63.1754 27.2271 64.8585 26.4136 65.7673 25.1594V26.7525H70.8164V9.80457H65.7673Z" fill="white" />
+<path d="M79.9051 12.8213V9.80457H74.856V26.7525H79.9051V19.0921C79.9051 15.7364 82.8672 14.889 84.9542 15.2279V9.46561C82.8335 9.46561 80.5783 10.5503 79.9051 12.8213Z" fill="white" />
+<path d="M92.7001 12.8213V9.80457H87.651V26.7525H92.7001V19.0921C92.7001 15.7364 95.6622 14.889 97.7492 15.2279V9.46561C95.6285 9.46561 93.3733 10.5503 92.7001 12.8213Z" fill="white" />
+<path d="M118.959 9.80457L116.536 18.8887L113.91 9.80457H109.198L106.572 18.8887L104.149 9.80457H98.7629L104.149 26.7525H108.861L111.554 17.7023L114.247 26.7525H118.959L124.345 9.80457H118.959Z" fill="white" />
+<path d="M130.539 20.3123H142.488C142.623 19.6683 142.69 18.9904 142.69 18.2786C142.69 13.1603 139.055 9.33003 134.14 9.33003C128.822 9.33003 125.187 13.2281 125.187 18.2786C125.187 23.329 128.755 27.2271 134.511 27.2271C137.708 27.2271 140.199 26.0407 141.849 23.7358L137.809 21.397C137.136 22.1427 135.958 22.685 134.578 22.685C132.727 22.685 131.178 22.0749 130.539 20.3123ZM130.438 16.516C130.909 14.7873 132.188 13.8382 134.107 13.8382C135.621 13.8382 137.136 14.55 137.675 16.516H130.438Z" fill="white" />
+<path d="M155.955 9.33003C153.7 9.33003 152.05 10.1096 150.94 11.3977V3.02539H145.891V26.7525H150.94V25.1594C152.05 26.4475 153.7 27.2271 155.955 27.2271C160.365 27.2271 164 23.329 164 18.2786C164 13.2281 160.365 9.33003 155.955 9.33003ZM154.945 22.4139C152.623 22.4139 150.94 20.8207 150.94 18.2786C150.94 15.7364 152.623 14.1432 154.945 14.1432C157.268 14.1432 158.951 15.7364 158.951 18.2786C158.951 20.8207 157.268 22.4139 154.945 22.4139Z" fill="white" />
+<path d="M16.0866 30L29.567 0H24.6005L11.1201 30H16.0866Z" fill="white" />
+<path d="M4.89843 30L18.1941 0H13.2957L0 30H4.89843Z" fill="white" />
+</svg>
+<div class="footer__sublogo">
+Software development company.
+</div>
+<div class="footer__divider"></div>
+<ul class="footer__contacts">
+<li class="footer__phone">
+<a id="gtm-footer-tel" class="contacts__item-link contacts__item-link--tel" href="tel:+14844608069" rel="noreferrer noopener" target="_blank" onclick="ym(52342033,'reachGoal','CLK_PHONE_CALL'); return true;">
++1 484 460-80-69
+</a>
+</li>
+<li class="footer__mail">
+<a class="contacts__item-link" href="../../cdn-cgi/l/email-protection.html#48202108383d3a3a3f2d2a662b2725" rel="noreferrer noopener" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_EMAIL'); return true;">
+<span class="__cf_email__" data-cfemail="d4bcbd94a4a1a6a6a3b1b6fab7bbb9">[email&#160;protected]</span>
+</a>
+</li>
+<li class="footer__messengers">
+<a class="contacts__telegram contacts__link-item" href="https://t.me/purrweb_agency" rel="noreferrer noopener" data-no-router="true" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_TELEGRAM'); return true;">
+<div class="contacts__item-img">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" fill="none" viewbox="0 0 24 21">
+<path fill="#fff" d="M.424 10.02l5.53 2.064 2.14 6.883a.651.651 0 0 0 1.034.312l3.083-2.513a.92.92 0 0 1 1.121-.032l5.56 4.037a.652.652 0 0 0 1.021-.394L23.986.786a.652.652 0 0 0-.873-.741L.417 8.8a.652.652 0 0 0 .007 1.22zm7.326.965l10.807-6.657c.195-.119.394.144.228.298l-8.92 8.292a1.849 1.849 0 0 0-.573 1.106l-.304 2.252c-.04.3-.462.33-.545.04l-1.169-4.107a1.088 1.088 0 0 1 .476-1.224z" />
+</svg>
+</div>
+Telegram
+</a>
+<a class="contacts__whatsap contacts__link-item js-whatsapp-link footer__whatsap" rel="noreferrer noopener" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_WHATSAPP'); return true;">
+<div class="contacts__item-img">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewbox="0 0 24 24">
+<path fill="#fff" d="M12.003 0h-.006C5.38 0 0 5.382 0 12c0 2.625.846 5.058 2.284 7.034L.79 23.49l4.613-1.474A11.896 11.896 0 0 0 12.003 24C18.619 24 24 18.616 24 12c0-6.617-5.38-12-11.997-12zm6.982 16.945c-.289.818-1.438 1.496-2.354 1.694-.628.134-1.447.24-4.204-.903-3.526-1.461-5.797-5.045-5.974-5.277-.17-.232-1.425-1.897-1.425-3.62 0-1.722.875-2.56 1.227-2.92.29-.295.768-.43 1.227-.43.148 0 .282.007.402.013.352.015.53.036.762.593.29.697.994 2.419 1.079 2.596.085.177.17.417.05.65-.112.24-.211.346-.388.55-.177.204-.345.36-.522.579-.162.19-.345.394-.141.747.204.345.909 1.495 1.947 2.42 1.34 1.192 2.426 1.573 2.814 1.735.29.12.635.091.846-.133.269-.29.6-.77.938-1.243.24-.338.543-.38.86-.26.324.112 2.039.96 2.391 1.135.353.177.585.261.671.41.084.148.084.845-.206 1.664z" />
+</svg>
+</div>
+WhatsApp
+</a>
+</li>
+</ul>
+</div>
+<div class="footer__right-wrap">
+<div class="footer__title">
+Fill in and get a quote
+</div>
+<iframe id="hidden_iframe" name="hidden_iframe" style="display:none;"></iframe>
+<form class="footer__form js-footer-form" name="contact-form" target="hidden_iframe" onsubmit="ym(52342033, 'reachGoal', 'FORM_OUT'); return true">
+<div class="footer__form-wrapper">
+<input class="footer__form-field footer__form-name js-field-name" type="text" name="entry.1228031061" aria-label="Name input field" placeholder="Name" required autocomplete="on">
+<input class="footer__form-field js-phone-input" type="tel" name="entry.1413156463" aria-label="Phone input field" placeholder="Phone number" required autocomplete="on" minlength="4" maxlength="20">
+</div>
+<input class="footer__form-field footer__form-email" type="email" name="entry.1893682035" aria-label="Email input field" placeholder="test@purrweb.com" required autocomplete="on">
+<textarea class="footer__form-field footer__form-field--area" name="entry.772928921" aria-label="Descriptions input field" placeholder="Project details"></textarea>
+<input class="footer__form-hidden" type="hidden" name="entry.481086178" value="Purrweb123!">
+<input type="hidden" class="js-client-id" name="entry.1458439335">
+<input type="hidden" id="counter-id" name="entry.273292564" value="52342033">
+<input type="hidden" class="js-entry-page" name="entry.1965512787" value>
+<input type="hidden" id="footer__form-token" name="token">
+<input class="footer__form-type footer__page-link" type="hidden" name="entry.281637821" value="footer-form-main-en ">
+<div class="footer__form-wrapper">
+<p class="footer__form-captcha-wrapper">
+This site is protected by reCAPTCHA and the Google
+<a class="footer__form-captcha-link" rel="nofollow noreferrer noopener" href="../../privacy-policy" target="_blank">Privacy Policy</a> and
+<a class="footer__form-captcha-link" rel="nofollow noreferrer noopener" href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
+</p>
+<button id="order-form-btn" class="footer__form-btn rising-btn rising-btn--theme2" onclick="ym(52342033, 'reachGoal', 'CLK_SUCCESS'); return true;">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span id="gtm-footer-submit" class="rising-btn__text footer__btn-width--eng">
+Send
+</span>
+</span>
+</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<div class="footer__bottom-wrapper">
+<div class="footer__services js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+SERVICES
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../services/mvp" class="footer__link">MVP development services</a>
+</li>
+<li class="footer__item">
+<a href="../../services/ui-ux" class="footer__link">UI/UX Design</a>
+</li>
+<li class="footer__item">
+<a href="../../services/mobile-development" class="footer__link">Mobile Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/web-development-services" class="footer__link">Web Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/project-management-consulting-company" class="footer__link">Project Management</a>
+</li>
+<li class="footer__item">
+<a href="../../services/software-development-for-startups" class="footer__link">Software Development for
+Startups</a>
+</li>
+<li class="footer__item">
+<a href="../../services/progressive-web-app" class="footer__link">PWA</a>
+</li>
+</ul>
+</div>
+<div class="footer__otrasli js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+INDUSTRIES
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../services/terminal" class="footer__link">POS Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/marketplace" class="footer__link">Marketplace</a>
+</li>
+<li class="footer__item">
+<a href="../../services/finance" class="footer__link">Financial</a>
+</li>
+<li class="footer__item">
+<a href="../../services/travel" class="footer__link">Travel</a>
+</li>
+<li class="footer__item">
+<a href="../../services/tv-app-development" class="footer__link">SMART TV</a>
+</li>
+<li class="footer__item">
+<a href="../../services/health" class="footer__link">Healthcare</a>
+</li>
+<li class="footer__item">
+<a href="../../services/media" class="footer__link">Media</a>
+</li>
+<li class="footer__item">
+<a href="../../services/wellness" class="footer__link">Wellness</a>
+</li>
+</ul>
+</div>
+<div class="footer__outsourcing footer__outsourcing--eng js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+INSIGHTS
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a class="footer__link" href="../../blog/stock-trading-app-development">How To Build Stock Trading App</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/how-much-does-ecommerce-app-development-cost">eCommerce App
+Development Cost</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/healthcare-mobile-app-development">Healthcare Mobile App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/telehealth-app-development-features-benefits-costs">Telemedicine
+App Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/how-to-develop-an-iot-app-features-benefits-costs">IOT App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/grocery-delivery-app-development">Grocery Delivery App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/doctor-appointment-app-development-features-benefits-costs">Doctor
+Appointment Booking App Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/mobile-app-development-for-banking">Banking App Development</a>
+</li>
+</ul>
+</div>
+<div class="footer__stack js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+TECH STACK
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../technologies" class="footer__link">Tech stack</a>
+</li>
+<li class="footer__item">
+<a href="../../services/react-native" class="footer__link">React Native Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/react-native-game-development" class="footer__link">React Native Game
+Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/electron" class="footer__link">Electron JS</a>
+</li>
+<li class="footer__item">
+<a href="../../services/react-js" class="footer__link">React.js</a>
+</li>
+<li class="footer__item">
+<a href="../../services/webrtc" class="footer__link">WebRTC Development</a>
+</li>
+</ul>
+<div class="footer__ofice footer__ofice--pc">
+<h3 class="footer__ofice-caption">
+OFFICES
+</h3>
+<div class="footer__item footer__item--ofice">
+US 340 S LEMON AVE #9923 WALNUT,<br> CA 91789
+</div>
+</div>
+</div>
+<div class="footer__company js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+COMPANY
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../about" class="footer__link">About us</a>
+</li>
+<li class="footer__item">
+<a href="../../contacts" class="footer__link">Contacts</a>
+</li>
+<li class="footer__item">
+<a href="../../reviews" class="footer__link">Reviews</a>
+</li>
+<li class="footer__item">
+<a href=".." class="footer__link">Portfolio</a>
+</li>
+<li class="footer__item">
+<a href="../../blog" class="footer__link">Blog</a>
+</li>
+</ul>
+<div class="footer__address footer__address--eng footer__address--pc">
+<address>
+Compass Building, <br> Al Shohada Road, <br> AL Hamra Industrial Zone-FZ, Ras Al Khaimah, UAE
+</address>
+</div>
+</div>
+<div class="footer__ofice footer__ofice--mobile">
+<h3 class="footer__ofice-caption">
+OFFICES
+</h3>
+<address class="footer__item footer__item--ofice">
+US 340 S LEMON AVE 9923 WALNUT, CA 91789
+</address>
+<address class="footer__address footer__address--mobile">
+Compass Building, Al Shohada Road, <br> AL Hamra Industrial Zone-FZ, Ras Al Khaimah, UAE
+</address>
+</div>
+</div>
+<div class="footer__divider"></div>
+<div class="footer__bottom">
+<div class="footer__terms">
+<a href="../../privacy-policy" class="footer__terms--policy">Privacy Policy</a>
+<a href="https://policies.google.com/terms" target="_blank" class="footer__terms--term">Terms Of Services</a>
+</div>
+<div class="footer__rights">
+© 2023 Purrweb. All rights reserved
+</div>
+</div>
+</div>
+</div>
+</footer>
+<button class="btn-up js-btn-up" title="Go to the top of the page">
+<svg width="22" height="42" viewbox="0 0 22 42" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 29L11 41M11 41L1 29M11 41V0" />
+</svg>
+</button>
+<div class="popup-form js-form-popup">
+<div class="popup-form__inner">
+<p class="popup-form__text">Thanks for your inquiry. It usually take up to 24 hours to get back with reply.</p>
+<p class="popup-form__text">Wanna schedule an online meeting?</p>
+<button class="popup-form__close js-form-popup-btn">X</button>
+<button class="popup-form__btn js-form-popup-btn">
+<link href="../../../assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../../../assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<a href onclick="Calendly.initPopupWidget({url: 'https://calendly.com/purrweb_agency/initial_discussion?primary_color=5c3bfe'});return false;">Book
+the time slot!</a>
+</button>
+</div>
+</div>
+
+</div>
+
+<div class="idea-modal js-idea-modal" style="display: none;">
+<div class="idea-modal__content">
+<span class="idea-modal__title">
+Curious about the project cost?
+</span>
+<a href="#footer" class="idea-modal__button rising-btn rising-btn--theme3 js-scroll-to">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span id="gtm-idea-popup" class="rising-btn__text idea-modal__button-text">
+Fill in the form!
+</span>
+</span>
+</span></a>
+</div>
+<button class="idea-modal__close js-idea-modal__close" id="CLS-BTN-POPUP">
+X
+</button>
+</div>
+
+<script>
+    if (window.innerWidth >= 1024) {
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+          '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-W4BS3VM');
+
+    } else if (window.innerWidth < 1024) {
+      var firedTG = false;
+      window.addEventListener('scroll', () => {
+        if (firedTG === false) {
+          firedTG = true;
+          setTimeout(() => {
+            (function (w, d, s, l, i) {
+              w[l] = w[l] || [];
+              w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+              });
+              var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+              j.async = true;
+              j.src =
+                '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+              f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-W4BS3VM');
+          }, 0)
+        }
+      });
+    }
+  </script>
+
+
+
+<script type="text/javascript">
+    var firedRec = false;
+    window.addEventListener('scroll', () => {
+      if (firedRec === false) {
+        firedRec = true;
+        (function (d, w) {
+          var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "../../../www.google.com/recaptcha/api6c91.js?render=6LdBWnwaAAAAADC4FEa3p5JPq12UcmBuQPHl-0Iz";
+          if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+          } else { f(); }
+        })(document, window);
+      }
+    });
+  </script>
+
+
+
+<script async type="text/javascript">
+    (function () {
+      var PM_YM_COUNTER = 52342033;
+      var ee = setInterval(function () {
+        if (typeof window.ym != 'undefined') {
+          let clientInputs = document.querySelectorAll('.js-client-id');
+          for (let clientInput of clientInputs) {
+            ym(PM_YM_COUNTER, 'getClientID', function (clientID) {
+              clientInput.value = clientID;
+            })
+          }
+
+          clearInterval(ee);
+        } else {
+          console.log('Метрика не инициализирована');
+        }
+      }, 1000); // 0,5 секунды ждать, изменить на свое значение, 1 сек = 1000
+    })();
+  </script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZM1DZX38E"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-5ZM1DZX38E');
+  </script>
+<script src="../../common.4d9224ab871b2d75ac93.js"></script><script src="../../tripchron.4d9224ab871b2d75ac93.js"></script></body>
+
+<!-- Mirrored from www.purrweb.com/portfolio/tripchron/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Nov 2023 15:33:32 GMT -->
+</html>

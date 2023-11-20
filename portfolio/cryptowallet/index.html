@@ -1,0 +1,1414 @@
+
+
+
+<style>
+  .case-preloader {
+    transition: opacity 0.5s;
+    opacity: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    pointer-events: none;
+    background-color: #282828;
+  }
+  .case-preloader.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .prealoder-figure {
+    width: 300px;
+    height: 300px;
+  }
+</style>
+<section class="case-preloader active">
+<div class="js-lottie-preloader prealoder-figure"></div>
+</section>
+<div id="smooth-scroll-wrapper">
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.purrweb.com/portfolio/cryptowallet/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Nov 2023 15:22:29 GMT -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Mobile Multicurrency Crypto Wallet Development CryptoWallet</title>
+<meta name="description" content="Intuitive cross-platform cryptocurrency app CryptoWallet for beginners">
+<meta name="google-site-verification" content="YgG-iu_ngX9WM8Ulia3B7gYVqrEBLf9-GQ22HbQ7Jiw">
+<meta name="yandex-verification" content="4057b113a73e6486">
+<meta name="facebook-domain-verification" content="0cpowng2vyna7cecrsh180pvpcll09">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mobile Multicurrency Crypto Wallet Development CryptoWallet">
+<meta property="og:description" content="Intuitive cross-platform cryptocurrency app CryptoWallet for beginners">
+<meta property="og:image" content="https://www.purrweb.com/images/og-image.png">
+<meta property="og:site_name" content="Purrweb">
+<meta property="og:url" content="https://www.purrweb.com/portfolio/cryptowallet/">
+<meta name="twitter:title" content="Mobile Multicurrency Crypto Wallet Development CryptoWallet">
+<meta name="twitter:description" content="Intuitive cross-platform cryptocurrency app CryptoWallet for beginners">
+<meta name="twitter:image:src" content="https://www.purrweb.com/images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@purrweb">
+<meta name="twitter:creator" content="@purrweb">
+<link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5c3bfe">
+<link rel="canonical" href="index.html">
+<meta name="msapplication-TileColor" content="#5c3bfe">
+<meta name="theme-color" content="#ffffff">
+<link rel="alternate" hreflang="ru" href="../../ru/portfolio/cryptowallet/index.html">
+<link rel="alternate" hreflang="en" href="index.html">
+
+
+
+
+<meta name="google-site-verification" content="iAswyHNCt6kecOwxsuLaxgVNXaFS1GEwMiCJajfQ4dI">
+
+<link href="../../common.4d9224ab871b2d75ac93.css" rel="stylesheet"><link href="../../cryptowallet.4d9224ab871b2d75ac93.css" rel="stylesheet"></head>
+<body class="js-disable-transition">
+<aside class="cookie hide-cookie" id="pjAcceptCookieBar">
+<div class="container pjAcceptCookieBarShell">
+<form action="#" method="post" class="cookie__inner">
+<p class="cookie__text">
+We use cookies to boost your experience on our website and ensure it functions properly. It also
+helps us with analytics — is that OK, isn’t it? :)
+</p>
+<div class="pjAcceptCookieBarActions">
+<button type="button" class="pjAcceptCookieBarBtn cookie__btn">
+Sure! I’m fine with it
+</button>
+</div>
+</form>
+</div>
+</aside>
+<header class="header js-header header--fixed">
+<div class="container">
+<nav class="header__inner">
+<a class="header__logo" href="../../index.html">
+<svg xmlns="http://www.w3.org/2000/svg" width="164" height="30" fill="none" viewbox="0 0 164 30">
+<path fill="#fff" d="M43.688 3.025H34.79v23.728h5.373v-7.458h3.526c4.634 0 8.227-3.626 8.227-8.135 0-4.508-3.593-8.135-8.227-8.135zm0 11.186h-3.526V8.11h3.526c1.646 0 2.854 1.322 2.854 3.05 0 1.73-1.208 3.051-2.854 3.051zM65.612 9.805v9.253c0 2.407-1.277 3.491-3.124 3.491-1.611 0-2.921-.982-2.921-3.084v-9.66H54.53V20.21c0 4.576 2.888 7.016 6.28 7.016 2.216 0 3.895-.813 4.802-2.068v1.594h5.037V9.805h-5.037zM79.716 12.821V9.805h-5.037v16.947h5.037v-7.66c0-3.356 2.955-4.203 5.037-3.864V9.466c-2.115 0-4.365 1.084-5.037 3.355zM92.48 12.821V9.805h-5.036v16.947h5.037v-7.66c0-3.356 2.955-4.203 5.037-3.864V9.466c-2.116 0-4.366 1.084-5.037 3.355zM118.678 9.805l-2.418 9.084-2.619-9.084h-4.701l-2.62 9.084-2.418-9.084h-5.373l5.373 16.947h4.702l2.686-9.05 2.687 9.05h4.701l5.373-16.947h-5.373zM130.23 20.312h11.921a9.894 9.894 0 0 0 .202-2.033c0-5.119-3.627-8.949-8.53-8.949-5.306 0-8.932 3.898-8.932 8.949 0 5.05 3.559 8.948 9.302 8.948 3.19 0 5.675-1.186 7.32-3.491l-4.029-2.339c-.672.746-1.847 1.288-3.224 1.288-1.847 0-3.392-.61-4.03-2.373zm-.101-3.796c.471-1.729 1.747-2.678 3.661-2.678 1.511 0 3.022.712 3.559 2.678h-7.22zM155.587 9.33c-2.25 0-3.896.78-5.004 2.068V3.025h-5.037v23.728h5.037v-1.594c1.108 1.289 2.754 2.068 5.004 2.068 4.399 0 8.026-3.898 8.026-8.948 0-5.05-3.627-8.949-8.026-8.949zm-1.008 13.084c-2.317 0-3.996-1.593-3.996-4.135 0-2.543 1.679-4.136 3.996-4.136s3.996 1.593 3.996 4.136c0 2.542-1.679 4.135-3.996 4.135zM16.049 30L29.497 0h-4.955L11.094 30h4.955zM4.887 30L18.15 0h-4.887L0 30h4.887z" />
+</svg>
+<span class="visually-hidden">Purrweb logo</span>
+</a>
+
+<ul class="header__list js-menu">
+<li class="header__item header__item-portfolio">
+<a class="header__item-link" href="/" onclick="ym(52342033, 'reachGoal', 'CLK_PROJECTS'); return true;">
+Projects
+</a>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Technologies
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__dropmenu-inner">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--technologies">
+
+<a href="../../services/react-native/index.html" class="header__dropmenu-ref">
+React Native
+</a>
+<a href="../../services/react-js/index.html" class="header__dropmenu-ref">
+React.js
+</a>
+<a href="../../services/electron/index.html" class="header__dropmenu-ref">
+Electron.js
+</a>
+<a href="../../services/webrtc/index.html" class="header__dropmenu-ref">
+WebRTC
+</a>
+<a href="../../services/progressive-web-app/index.html" class="header__dropmenu-ref">
+PWA
+</a>
+<a href="../../services/react-native-game-development/index.html" class="header__dropmenu-ref">
+Mobile Games
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="header__divider"></div>
+<a href="../../technologies/index.html" class="header__dropmenu-main-ref">
+Tech Stack
+</a>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Services
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu header__dropmenu--services" id="dropdown2">
+<div class="header__dropmenu-inner">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Development
+</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--dev">
+<a href="../../services/mobile-development/index.html" class="header__dropmenu-ref">
+Mobile App Development
+</a>
+<a href="../../services/web-development-services/index.html" class="header__dropmenu-ref">
+Web Development
+</a>
+<a href="../../services/ux-audit/index.html" class="header__dropmenu-ref">
+UX Audit
+</a>
+
+
+
+
+
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--dev2">
+
+
+
+<a href="../../services/software-development-for-startups/index.html" class="header__dropmenu-ref">
+Software Development for Startups
+</a>
+<a href="../../services/crossplatform/index.html" class="header__dropmenu-ref">
+Cross-Platform Development
+</a>
+<a href="../../services/mvp/index.html" class="header__dropmenu-ref">
+MVP
+</a>
+
+
+
+</div>
+</div>
+</div>
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Design</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--design">
+<a href="../../services/ui-ux/index.html" class="header__dropmenu-ref">
+UI/UX
+</a>
+
+
+
+
+</div>
+</div>
+</div>
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Management
+</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--management">
+
+<a href="../../services/project-management-consulting-company/index.html" class="header__dropmenu-ref">
+Project Management
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="header__divider"></div>
+<a href="../../services/index.html" class="header__dropmenu-main-ref">
+Software Development Services
+</a>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Industries
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries">
+<a href="../../services/travel/index.html" class="header__dropmenu-ref">
+Travel
+</a>
+<a href="../../services/health/index.html" class="header__dropmenu-ref">
+Healthcare
+</a>
+<a href="../../services/tv-app-development/index.html" class="header__dropmenu-ref">
+Smart TV
+</a>
+<a href="../../services/logistics/index.html" class="header__dropmenu-ref">
+Logistics
+</a>
+<a href="../../services/wellness/index.html" class="header__dropmenu-ref">
+Wellness
+</a>
+<a href="../../services/terminal/index.html" class="header__dropmenu-ref">
+POS
+</a>
+<a href="../../services/custom-ecommerce/index.html" class="header__dropmenu-ref">
+Custom Ecom Apps
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries2">
+<a href="../../services/events/index.html" class="header__dropmenu-ref">
+Events
+</a>
+<a href="../../services/marketplace/index.html" class="header__dropmenu-ref">
+Marketplace
+</a>
+<a href="../../services/estate/index.html" class="header__dropmenu-ref">
+Real Estate
+</a>
+<a href="../../services/media/index.html" class="header__dropmenu-ref">
+Social Media
+</a>
+<a href="../../services/finance/index.html" class="header__dropmenu-ref">
+Fintech
+</a>
+<a href="../../services/iot/index.html" class="header__dropmenu-ref">
+IoT
+</a>
+<a href="../../services/ecommerce/index.html" class="header__dropmenu-ref">
+eCommerce Development
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Development Team
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries">
+<a href="../../services/outsourcing/index.html" class="header__dropmenu-main-ref header__dropmenu-main-ref--margin-bottom">
+Outsourcing
+</a>
+<a href="../../services/dev-outsourcing/index.html" class="header__dropmenu-ref">
+Development
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries2">
+<a href="../../services/outstaffing/index.html" class="header__dropmenu-main-ref header__dropmenu-main-ref--margin-bottom">
+Outstaffing
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item header__item--blog">
+<button class="header__item-inner click-dropdown" onclick="ym(52342033, 'reachGoal', 'CLK_BLOG'); return true;">
+<div class="header__item-drop">
+Blog
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu header__dropmenu--blog">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--blog">
+<a href="../../blog/how-much-does-it-cost-to-develop-an-app/index.html" class="header__dropmenu-ref">
+How much does it cost to develop an app
+</a>
+<a href="../../blog/how-to-create-a-social-media-app-a-z-guide/index.html" class="header__dropmenu-ref">
+How to make a social media app
+</a>
+<a href="../../blog/website-redesign-cost/index.html" class="header__dropmenu-ref">
+How much does it cost to redesign a website
+</a>
+<a href="../../blog/restaurant-app-development-purrwebs-detailed-guide/index.html" class="header__dropmenu-ref">
+Restaurant mobile app development
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--blog2">
+<a href="../../blog/how-much-does-it-cost-to-develop-an-app/index.html" class="header__dropmenu-ref">
+How much does it cost to maintain an app
+</a>
+<a href="../../blog/dating-app-development/index.html" class="header__dropmenu-ref">
+Dating mobile app development
+</a>
+<a href="../../blog/how-to-hire-a-developer-for-a-startup-and-not-to-regret-about-it/index.html" class="header__dropmenu-ref">
+Hiring a developer for a startup
+</a>
+<a href="../../blog/index.html" class="header__dropmenu-ref">
+All posts
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+About
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--about">
+<a href="../../about/index.html" class="header__dropmenu-ref">
+Company
+</a>
+<a href="../../contacts/index.html" class="header__dropmenu-ref">
+Contacts
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item header__item--lang visually-hidden">
+<a class="header__item-link js-en-link" href="../../ru/portfolio/cryptowallet/index.html">Ru</a>
+</li>
+<li class="header__item header__item--request">
+<a class="rising-btn rising-btn--theme2 js-scroll-to" href="#footer" onclick="ym(52342033, 'reachGoal', 'CLK_RAQ'); return true;">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span class="rising-btn__text">
+Request a quote
+</span>
+</span>
+</span>
+</a>
+<div class="lang-popup js-lang-popup hide-lang" id="LangCookieBar">
+<p class="lang-popup__text">
+Холмс, кажется, вы в России...
+</p>
+<button class="lang-popup__close-btn js-close-popup">
+<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.50002 4.49844L9.00627 0.992188L10.0079 1.99377L6.5016 5.50002L10.0079 9.00627L9.00627 10.0079L5.50002 6.5016L1.99377 10.0079L0.992188 9.00627L4.49844 5.50002L0.992188 1.99377L1.99377 0.992188L5.50002 4.49844Z" fill="#808080" />
+</svg>
+</button>
+<div class="lang-popup__btn-wrap">
+<a href="#" class="lang-popup__btn lang-popup__btn--ru js-ru-btn">
+Переключить язык
+</a>
+<a href="#" class="lang-popup__btn lang-popup__btn--eng js-eng-btn">
+не, и так норм
+</a>
+</div>
+</div>
+</li>
+</ul>
+<button class="header__humb js-humb">
+<span class="visually-hidden">Open/close menu</span>
+</button>
+</nav>
+</div>
+</header>
+<div class="main js-main main--fixed-header">
+<section class="hero">
+<video class="hero__animation" preload="none" muted loop playsinline autoplay>
+<source src="../../videos/abel-hero-video.mp4" type="video/mp4">
+</video>
+<div class="hero__container container">
+<header class="hero__header">
+<span class="hero__label">
+2021
+</span>
+<span class="hero__label">
+UX/UI design
+</span>
+<span class="hero__label">
+Purrweb
+</span>
+</header>
+<div class="hero__title-wrapper">
+<h1 class="hero__title-outfit">Crypto<br>Wallet</h1>
+</div>
+<div class="hero__body">
+<div class="hero__slider">
+<div id="hero-slide-1" class="hero__slide hero__slide-eng">
+<h2 class="hero__title title">Idea</h2>
+<p class="hero__text text">The crypto wallet enables users to send <br>& get tokens and view
+imported NFT collections.</p>
+</div>
+<div id="hero-slide-2" class="hero__slide">
+<h2 class="hero__title title">Clients</h2>
+<p class="hero__text text">Michal and Yao from Japan.<br>
+They liked our website and cases. Their request was to design and develop a crypto wallet that
+should become a Metamask alternative.
+</p>
+</div>
+</div>
+<div class="hero__image-wrapper">
+<picture class="hero__phone"><source type="image/webp" srcset="/images/abel-hero-phone.png, /images/abel-hero-phone@2x.png 2x"><img data-src="/images/abel-hero-phone.png" src="../../images/abel-hero-phone.png" alt="phone" srcset="/images/abel-hero-phone.png, /images/abel-hero-phone@2x.png 2x"></picture>
+<img class="hero__star lazyload" data-src="/images/abel-hero-star.svg" src="../../images/abel-hero-star.svg" alt="star">
+</div>
+</div>
+</div>
+</section>
+<div class="white-section">
+<div class="about-work-wrapper">
+<section class="about-app">
+<div class="about-app__container container">
+<div class="about-app__top about-app__top-eng">
+<h2 class="about-app__title title">
+The app’s purpose
+</h2>
+<p class="about-app__text-top text">The 2009 crypto investors used only bitcoins. The modern crypto
+market offers over 1500 various altcoins. Some coins help preserve savings, the others are
+unpredictable. That’s why it's vital to invest in several different coins to decrease financial
+risks.</p>
+</div>
+<div class="about-app__bottom">
+<div class="about-app__bottom-text-wrapper">
+<p class="about-app__text-bottom text">Traditional banks keep away from bitcoins, so users need
+an alternative to manage tokens.</p>
+<p class="about-app__semibold-text semibold-text">Both newbies and experienced users will
+appreciate this crypto wallet.</p>
+</div>
+<div class="about-app__image-wrapper">
+<picture class="about-app__wallet"><source type="image/webp" data-srcset="/images/abel-about-app-wallet.png 1x, /images/abel-about-app-wallet@2x.png 2x"><img data-src="/images/abel-about-app-wallet.png" src="../../images/abel-about-app-wallet.png" alt="wallet" data-srcset="/images/abel-about-app-wallet.png 1x, /images/abel-about-app-wallet@2x.png 2x" class="lazyload"></picture>
+</div>
+</div>
+</div>
+<canvas class="about-app__canvas"></canvas>
+</section>
+<section class="work">
+<div class="work__container container">
+<div class="work__text-wrapper">
+<div class="work__title title">
+How the app functions
+<img class="work__lock-eng lazyload" data-src="/images/abel-work-lock.svg" src="../../images/abel-work-lock.svg" alt="lock">
+</div>
+<p class="work__text text">The main page displays a user’s total balance in fiat and a list of their
+tokens.</p>
+<p class="work__text text">As users enter such apps, they see their balance and can quickly send and
+get tokens.</p>
+</div>
+<div class="work__screen-wrapper">
+<picture class="work__screen"><source type="image/webp" srcset="/images/abel-work-screen.png, /images/abel-work-screen@2x.png 2x"><img data-src="/images/abel-work-screen.png" src="../../images/abel-work-screen.png" alt="screen" srcset="/images/abel-work-screen.png, /images/abel-work-screen@2x.png 2x"></picture>
+<picture class="work__screen-second"><source type="image/webp" data-srcset="/images/abel-work-screen-second.png 1x, /images/abel-work-screen-second@2x.png 2x"><img data-src="/images/abel-work-screen-second.png" src="../../images/abel-work-screen-second.png" alt="screen" data-srcset="/images/abel-work-screen-second.png 1x, /images/abel-work-screen-second@2x.png 2x" class="lazyload"></picture>
+<picture class="work__wallet"><source type="image/webp" data-srcset="/images/abel-about-app-wallet.png 1x, /images/abel-about-app-wallet@2x.png 2x"><img data-src="/images/abel-about-app-wallet.png" src="../../images/abel-about-app-wallet.png" alt="wallet" data-srcset="/images/abel-about-app-wallet.png 1x, /images/abel-about-app-wallet@2x.png 2x" class="lazyload"></picture>
+</div>
+</div>
+</section>
+</div>
+<section class="registration registration-eng">
+<div class="registration__container container">
+<div class="registration__screen-wrapper">
+<video class="registration__video abel-video" preload="none" muted playsinline>
+<source src="../../videos/abel-registration-first.mp4" type="video/mp4">
+</video>
+<video class="registration__video-second abel-video" preload="none" muted playsinline>
+<source src="../../videos/abel-registration-second.mp4" type="video/mp4">
+</video>
+</div>
+<div class="registration__text-wrapper">
+<h3 class="registration__title">Two ways to start using the app:</h3>
+<div id="reg-slide-1" class="registration__slide">
+<div class="registration__way">
+<img class="registration__way-number lazyload" data-src="/images/abel-register-number-1.svg" src="../../images/abel-register-number-1.svg" alt="number 1">
+<span class="registration__way-text semibold-text">To create a wallet and get a seed
+phrase</span>
+</div>
+<div class="registration__text text">A seed phrase is a long password key. This key helps a user restore
+their wallet in any other app.</div>
+</div>
+<div id="reg-slide-2" class="registration__slide">
+<div class="registration__way">
+<img class="registration__way-number lazyload" data-src="/images/abel-register-number-2.svg" src="../../images/abel-register-number-2.svg" alt="number 2">
+<span class="registration__way-text semibold-text">To import an existing wallet</span>
+</div>
+<div class="registration__text text">A user can see the general balance and NFT tokens in the imported wallet.</div>
+</div>
+</div>
+</div>
+</section>
+<section class="pros">
+<div class="pros__container container">
+<div class="pros__text-wrapper">
+<img class="pros__galery" data-src="/images/abel-pros-galery.svg" src="../../images/abel-pros-galery.svg" alt="galery">
+<p class="pros__text text">Besides, a user can see their imported NFT tokens, but can’t buy new or
+sell old ones.</p>
+<p class="pros__text text">A user can have only one wallet at a time, but they can delete it and
+create a new one. The deleted wallet can be easily restored from Ethereum.</p>
+</div>
+<div class="pros__composition">
+<picture class="pros__token-page"><source type="image/webp" data-srcset="/images/abel-pros-token-page.png 1x, /images/abel-pros-token-page@2x.png 2x"><img data-src="/images/abel-pros-token-page.png" src="../../images/abel-pros-token-page.png" alt="token page" data-srcset="/images/abel-pros-token-page.png 1x, /images/abel-pros-token-page@2x.png 2x" class="lazyload"></picture>
+<div class="pros__badge-wrapper">
+<div class="pros__badge">
+<img class="pros__revenants" data-src="/images/abel-pros-revenants.svg" src="../../images/abel-pros-revenants.svg" alt="revenants">
+<span class="pros__badge-name">Revenants</span>
+<span class="pros__items-count"> 5 Items</span>
+</div>
+</div>
+<div class="pros__kitty-wrapper">
+<div class="pros__kitty">
+<picture class="pros__kitty-image"><source type="image/webp" srcset="/images/abel-pros-kitty.png, /images/abel-pros-kitty@2x.png 2x"><img data-src="/images/abel-pros-kitty.png" src="../../images/abel-pros-kitty.png" alt="kitty" srcset="/images/abel-pros-kitty.png, /images/abel-pros-kitty@2x.png 2x"></picture>
+<h5 class="pros__kitty-name">Kitty</h5>
+<span class="pros__kitty-number">#1094</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<section class="mindmap">
+<div class="mindmap__container container">
+<div class="mindmap__screens">
+<div class="mindmap__screen-wrapper-1">
+<picture class="mindmap__screen-1"><source type="image/webp" srcset="/images/abel-mindmap-screen-1.png, /images/abel-mindmap-screen-1@2x.png 2x"><img data-src="/images/abel-mindmap-screen-1.png" src="../../images/abel-mindmap-screen-1.png" alt="screen" srcset="/images/abel-mindmap-screen-1.png, /images/abel-mindmap-screen-1@2x.png 2x"></picture>
+<picture class="mindmap__transformed-1"><source type="image/webp" data-srcset="/images/abel-mindmap-transformed-1.png 1x, /images/abel-mindmap-transformed-1@2x.png 2x"><img data-src="/images/abel-mindmap-transformed-1.png" src="../../images/abel-mindmap-transformed-1.png" alt="screen" data-srcset="/images/abel-mindmap-transformed-1.png 1x, /images/abel-mindmap-transformed-1@2x.png 2x" class="lazyload"></picture>
+</div>
+<div class="mindmap__screen-wrapper-2">
+<picture class="mindmap__screen-2"><source type="image/webp" srcset="/images/abel-mindmap-screen-2.png, /images/abel-mindmap-screen-2@2x.png 2x"><img data-src="/images/abel-mindmap-screen-2.png" src="../../images/abel-mindmap-screen-2.png" alt="screen" srcset="/images/abel-mindmap-screen-2.png, /images/abel-mindmap-screen-2@2x.png 2x"></picture>
+<picture class="mindmap__transformed-2"><source type="image/webp" data-srcset="/images/abel-mindmap-transformed-2.png 1x, /images/abel-mindmap-transformed-2@2x.png 2x"><img data-src="/images/abel-mindmap-transformed-2.png" src="../../images/abel-mindmap-transformed-2.png" alt="screen" data-srcset="/images/abel-mindmap-transformed-2.png 1x, /images/abel-mindmap-transformed-2@2x.png 2x" class="lazyload"></picture>
+</div>
+<div class="mindmap__screen-wrapper-3">
+<picture class="mindmap__screen-3"><source type="image/webp" srcset="/images/abel-mindmap-screen-3.png, /images/abel-mindmap-screen-3@2x.png 2x"><img data-src="/images/abel-mindmap-screen-3.png" src="../../images/abel-mindmap-screen-3.png" alt="screen" srcset="/images/abel-mindmap-screen-3.png, /images/abel-mindmap-screen-3@2x.png 2x"></picture>
+<picture class="mindmap__transformed-3"><source type="image/webp" data-srcset="/images/abel-mindmap-transformed-3.png 1x, /images/abel-mindmap-transformed-3@2x.png 2x"><img data-src="/images/abel-mindmap-transformed-3.png" src="../../images/abel-mindmap-transformed-3.png" alt="screen" data-srcset="/images/abel-mindmap-transformed-3.png 1x, /images/abel-mindmap-transformed-3@2x.png 2x" class="lazyload"></picture>
+</div>
+</div>
+<div class="mindmap__text-wrapper">
+<h2 class="mindmap__title title">Mind map <br> and wireframes</h2>
+<p class="mindmap__text text">ImToken and Metamask were our references for the app’s functionality, and we
+created the mind map based on them. The clients provided us with references for wireframes too.</p>
+<p class="mindmap__text text">This stage took us
+<span class="mindmap__text-white">7 hours.</span>
+</p>
+</div>
+</div>
+</section>
+<section class="analysis">
+<div class="analysis__container container">
+<div class="analysis__screen-wrapper">
+<picture class="analysis__screen"><source type="image/webp" data-srcset="/images/abel-analysis-screen.png 1x, /images/abel-analysis-screen@2x.png 2x"><img data-src="/images/abel-analysis-screen.png" src="../../images/abel-analysis-screen.png" alt="screen" data-srcset="/images/abel-analysis-screen.png 1x, /images/abel-analysis-screen@2x.png 2x" class="lazyload"></picture>
+</div>
+<div class="analysis__text-wrapper">
+<h5 class="analysis__title">Analytics</h5>
+<p class="analysis__text text">We analyzed the project in detail. As a result, we preserved the reference’s
+advantages like the main screen functionality and got rid of the disadvantages like the complicated
+navigation and unrequired scroll. </p>
+<p class="analysis__text-white text">
+Read more on this below.
+</p>
+</div>
+<svg class="analysis__loop-arrow">
+<use href="#loop-arrow"></use>
+</svg>
+</div>
+</section>
+<div class="white-section">
+<section class="ui-ux">
+<div class="ui-ux__container container">
+<div class="ui-ux__text-wrapper">
+<h2 class="ui-ux__title title">
+UI/UX
+<img class="ui-ux__eye lazyload" data-src="/images/abel-ui-ux-eye.svg" src="../../images/abel-ui-ux-eye.svg" alt="screen">
+</h2>
+<p class="ui-ux__text text">We developed a pure and minimalist design with white as the key color. The
+clients’ designer reviewed our work.</p>
+</div>
+<div class="ui-ux__screens-wrapper">
+<picture class="ui-ux__screen-1 ui-ux__screen-1-desctop"><source type="image/webp" data-srcset="/images/abel-ui-ux-screen-1.png 1x, /images/abel-ui-ux-screen-1@2x.png 2x"><img data-src="/images/abel-ui-ux-screen-1.png" src="../../images/abel-ui-ux-screen-1.png" alt="screen" data-srcset="/images/abel-ui-ux-screen-1.png 1x, /images/abel-ui-ux-screen-1@2x.png 2x" class="lazyload"></picture>
+<picture class="ui-ux__screen-2"><source type="image/webp" data-srcset="/images/abel-ui-ux-screen-2.png 1x, /images/abel-ui-ux-screen-2@2x.png 2x"><img data-src="/images/abel-ui-ux-screen-2.png" src="../../images/abel-ui-ux-screen-2.png" alt="screen" data-srcset="/images/abel-ui-ux-screen-2.png 1x, /images/abel-ui-ux-screen-2@2x.png 2x" class="lazyload"></picture>
+<picture class="ui-ux__screen-1 ui-ux__screen-1-tablet"><source type="image/webp" data-srcset="/images/abel-ui-ux-screen-2.png 1x, /images/abel-ui-ux-screen-2@2x.png 2x"><img data-src="/images/abel-ui-ux-screen-2.png" src="../../images/abel-ui-ux-screen-2.png" alt="screen" data-srcset="/images/abel-ui-ux-screen-2.png 1x, /images/abel-ui-ux-screen-2@2x.png 2x" class="lazyload"></picture>
+<span id="com-1" class="ui-ux__comment-b ui-ux__comment">1</span>
+<span id="com-2" class="ui-ux__comment-w ui-ux__comment">2</span>
+<span id="com-3" class="ui-ux__comment-b ui-ux__comment">3</span>
+<span id="com-4" class="ui-ux__comment-w ui-ux__comment">4</span>
+<span id="com-5" class="ui-ux__comment-b ui-ux__comment">5</span>
+<span id="com-6" class="ui-ux__comment-w ui-ux__comment">6</span>
+<span id="com-7" class="ui-ux__comment-b ui-ux__comment">7</span>
+<span id="com-8" class="ui-ux__comment-w ui-ux__comment">8</span>
+<span id="com-9" class="ui-ux__comment-b ui-ux__comment">9</span>
+<span id="com-10" class="ui-ux__comment-w ui-ux__comment">10</span>
+<span id="com-11" class="ui-ux__comment-b ui-ux__comment">11</span>
+<span id="com-12" class="ui-ux__comment-w ui-ux__comment">12</span>
+<span id="com-13" class="ui-ux__comment-b ui-ux__comment">13</span>
+<span id="com-14" class="ui-ux__comment-w ui-ux__comment">14</span>
+<span id="com-15" class="ui-ux__comment-b ui-ux__comment">15</span>
+<span id="com-16" class="ui-ux__comment-w ui-ux__comment">16</span>
+<span id="com-17" class="ui-ux__comment-b ui-ux__comment">17</span>
+<span id="com-18" class="ui-ux__comment-w ui-ux__comment">18</span>
+<span id="com-19" class="ui-ux__comment-w ui-ux__comment">19</span>
+<span id="com-20" class="ui-ux__comment-b ui-ux__comment">20</span>
+<span id="com-21" class="ui-ux__comment-b ui-ux__comment">21</span>
+<span id="com-22" class="ui-ux__comment-w ui-ux__comment">22</span>
+<span id="com-23" class="ui-ux__comment-b ui-ux__comment">23</span>
+<span id="com-24" class="ui-ux__comment-w ui-ux__comment">24</span>
+<span id="com-25" class="ui-ux__comment-b ui-ux__comment">25</span>
+<span id="com-26" class="ui-ux__comment-w ui-ux__comment">26</span>
+<span id="com-27" class="ui-ux__comment-b ui-ux__comment">27</span>
+<span id="com-28" class="ui-ux__comment-w ui-ux__comment">28</span>
+<span id="com-29" class="ui-ux__comment-w ui-ux__comment">29</span>
+<span id="com-30" class="ui-ux__comment-b ui-ux__comment">30</span>
+<div class="ui-ux__manager-wrapper">
+<img class="ui-ux__manager lazyload" data-src="/images/abel-manager-cursor.svg" src="../../images/abel-manager-cursor.svg" alt="cursor">
+</div>
+<div class="ui-ux__designer-wrapper">
+<img class="ui-ux__designer lazyload" data-src="/images/abel-designer-cursor.svg" src="../../images/abel-designer-cursor.svg" alt="cursor">
+</div>
+</div>
+</div>
+</section>
+<div class="interface-wrapper">
+<section class="design">
+<div class="design__container container">
+<div class="design__screen-wrapper">
+<picture class="design__screen"><source type="image/webp" srcset="/images/abel-design-screen.png, /images/abel-design-screen@2x.png 2x"><img data-src="/images/abel-design-screen.png" src="../../images/abel-design-screen.png" alt="screen" srcset="/images/abel-design-screen.png, /images/abel-design-screen@2x.png 2x"></picture>
+<p class="design__screen-description">This is the main reference - Metamask</p>
+<p class="design__screen-description">And here's our design</p>
+</div>
+<div class="design__text-wrapper">
+<p class="design__text-black">The UX was inspired by Metamask.</p>
+<p class="design__text">There was no need to reinvent a bike and cause any inconvenience to users.
+</p>
+</div>
+</div>
+</section>
+<section class="interface">
+<div class="interface__container container">
+<div class="interface__phones-wrapper">
+<picture class="interface__screens"><source type="image/webp" data-srcset="/images/abel-interface-screens.png 1x, /images/abel-interface-screens@2x.png 2x"><img data-src="/images/abel-interface-screens.png" src="../../images/abel-interface-screens.png" alt="screens" data-srcset="/images/abel-interface-screens.png 1x, /images/abel-interface-screens@2x.png 2x" class="lazyload"></picture>
+</div>
+<div class="interface__body">
+<div class="interface__screen-wrapper">
+<picture class="interface__screen-main"><source type="image/webp" srcset="/images/abel-interface-screen-main.png, /images/abel-interface-screen-main@2x.png 2x"><img data-src="/images/abel-interface-screen-main.png" src="../../images/abel-interface-screen-main.png" alt="screen" srcset="/images/abel-interface-screen-main.png, /images/abel-interface-screen-main@2x.png 2x"></picture>
+<picture class="interface__menu-bottom"><source type="image/webp" srcset="/images/abel-interface-menu-bottom.png, /images/abel-interface-menu-bottom@2x.png 2x"><img data-src="/images/abel-interface-menu-bottom.png" src="../../images/abel-interface-menu-bottom.png" alt="menu-bottom" srcset="/images/abel-interface-menu-bottom.png, /images/abel-interface-menu-bottom@2x.png 2x"></picture>
+<picture class="interface__tokens"><source type="image/webp" srcset="/images/abel-interface-tokens.png, /images/abel-interface-tokens@2x.png 2x"><img data-src="/images/abel-interface-tokens.png" src="../../images/abel-interface-tokens.png" alt="tokens" srcset="/images/abel-interface-tokens.png, /images/abel-interface-tokens@2x.png 2x"></picture>
+<picture class="interface__func"><source type="image/webp" srcset="/images/abel-interface-func.png, /images/abel-interface-func@2x.png 2x"><img data-src="/images/abel-interface-func.png" src="../../images/abel-interface-func.png" alt="functionality" srcset="/images/abel-interface-func.png, /images/abel-interface-func@2x.png 2x"></picture>
+</div>
+<div class="interface__text-wrapper">
+<p id="interface-text-1" class="interface__text text">
+We made some changes to the reference UX. In Metamask, they use an outdated burger menu in
+the left upper corner.
+<span class="interface__sub-text text">
+Having considered the usability, we implemented a tab bar instead. The tab bar is more
+convenient because a user doesn't have to stretch their fingers reaching the upper
+corner or use the other hand.
+</span>
+</p>
+<p id="interface-text-2" class="interface__text text">
+The reference app has the Token Import button placed under the token list. Having many
+tokens, one has to scroll down to find the button. We placed the button on top of the token
+list so that users can access it quickly.
+</p>
+<p id="interface-text-3" class="interface__text text">
+We preserved the main screen functionality: the balance display, a list of tokens, and the
+option to get them quickly. These are the most popular crypto wallet functions. Besides,
+users can still restore a wallet with a seed phrase. </p>
+</div>
+<img class="interface__shield lazyload" data-src="/images/abel-interface-shield.svg" src="../../images/abel-interface-shield.svg" alt="shield">
+</div>
+</div>
+</section>
+</div>
+<section class="typography">
+<div class="typography__container container">
+<div class="typography__top">
+<div class="typography__top-text-wrapper">
+<h2 class="typography__title title">
+Typography and colors
+<img class="typography__cloud-eng lazyload" data-src="/images/abel-typography-cloud.svg" src="../../images/abel-typography-cloud.svg" alt="cloud">
+</h2>
+<p class="typography__top-text text">
+We used the Outfit typeface, as it’s <span class="typography__text-white">pretty readable</span>
+and looks fresh to users.
+</p>
+<p class="typography__top-text text">
+The figures have the perfect width to display long numbers. It’s crucial as tokens may have
+multiple signs after a comma. </p>
+</div>
+<div class="typography__display">
+<h2 class="typography__title-outfit">Outfit</h2>
+<div class="typography__weights">
+<span class="typography__weight-item">Aa</span>
+<span class="typography__weight-item">Bb</span>
+<span class="typography__weight-item">Cc</span>
+</div>
+<div class="typography__colors">
+<div class="typography__color-item">#5388F0</div>
+<div class="typography__color-item">#D6E3FF</div>
+<div class="typography__color-item">#4BCE88</div>
+<div class="typography__color-item">#EA6654</div>
+</div>
+</div>
+</div>
+<div class="typography__bottom">
+<div class="typography__screens">
+<div class="typography__screen-wrapper">
+<picture class="typography__screen"><source type="image/webp" data-srcset="/images/abel-typography-screen.png 1x, /images/abel-typography-screen@2x.png 2x"><img data-src="/images/abel-typography-screen.png" src="../../images/abel-typography-screen.png" alt="screen" data-srcset="/images/abel-typography-screen.png 1x, /images/abel-typography-screen@2x.png 2x" class="lazyload"></picture>
+</div>
+<div class="typography__send-wrapper">
+<img class="typography__send lazyload" data-src="/images/abel-typography-send.svg" src="../../images/abel-typography-send.svg" alt="send">
+</div>
+<div class="typography__input-wrapper">
+<picture class="typography__input"><source type="image/webp" data-srcset="/images/abel-typography-input.png 1x, /images/abel-typography-input@2x.png 2x"><img data-src="/images/abel-typography-input.png" src="../../images/abel-typography-input.png" alt="input" data-srcset="/images/abel-typography-input.png 1x, /images/abel-typography-input@2x.png 2x" class="lazyload"></picture>
+</div>
+</div>
+<div class="typography__bottom-text-wrapper">
+<p class="typography__bottom-text">
+The clients wanted the app to look clear, so we used a <span class="typography__text-white">light blue shade.</span> It gives a sense of purity and
+lightness. Besides, it makes a good contrast with white.
+</p>
+</div>
+<img class="typography__shape lazyload" data-src="/images/abel-typography-shape.svg" src="../../images/abel-typography-shape.svg" alt="shape">
+</div>
+</div>
+</section>
+<section class="development">
+<div class="development__container container">
+<div class="development__head">
+<h2 class="development__title-eng title">
+Development
+</h2>
+<div class="development__text-wrapper">
+<p class="development__head-text text">We picked a standard React Native stack for mobile apps.</p>
+<div class="development__icons">
+<img class="development__react lazyload" data-src="/images/abel-react-icon.svg" src="../../images/abel-react-icon.svg" alt="react">
+<img class="development__redux lazyload" data-src="/images/abel-redux-icon.svg" src="../../images/abel-redux-icon.svg" alt="redux">
+<img class="development__native lazyload" data-src="/images/abel-development-native.svg" src="../../images/abel-development-native.svg" alt="native">
+</div>
+<p class="development__text text" id="text-tablet">
+As a rule, apps work like this: the backend processes data, and the frontend displays them
+and creates new requests.
+</p>
+</div>
+</div>
+<svg class="development__spet">
+<use href="#spet"></use>
+</svg>
+<div class="development__body">
+<div class="development__badges">
+<div class="development__transition-wrapper">
+<picture class="development__transition"><source type="image/webp" data-srcset="/images/abel-development-transition.png 1x, /images/abel-development-transition@2x.png 2x"><img data-src="/images/abel-development-transition.png" src="../../images/abel-development-transition.png" alt="transition" data-srcset="/images/abel-development-transition.png 1x, /images/abel-development-transition@2x.png 2x" class="lazyload"></picture>
+</div>
+<div class="development__token-coin-wrapper">
+<picture class="development__token-coin"><source type="image/webp" data-srcset="/images/abel-development-token-coin.png 1x, /images/abel-development-token-coin@2x.png 2x"><img data-src="/images/abel-development-token-coin.png" src="../../images/abel-development-token-coin.png" alt="token-coin" data-srcset="/images/abel-development-token-coin.png 1x, /images/abel-development-token-coin@2x.png 2x" class="lazyload"></picture>
+</div>
+<div class="development__wallet-card-wrapper">
+<picture class="development__wallet-card"><source type="image/webp" data-srcset="/images/abel-development-wallet-card.png 1x, /images/abel-development-wallet-card@2x.png 2x"><img data-src="/images/abel-development-wallet-card.png" src="../../images/abel-development-wallet-card.png" alt="wallet-card" data-srcset="/images/abel-development-wallet-card.png 1x, /images/abel-development-wallet-card@2x.png 2x" class="lazyload"></picture>
+</div>
+</div>
+<div class="development__text-wrapper">
+<p class="development__text text" id="text-desktop">
+As a rule, apps work like this: the backend processes data, and the frontend displays them
+and creates new requests.</p>
+<p class="development__semibold-text semibold-text">
+App without backend
+</p>
+<p class="development__text text">
+The crypto wallet has no backend. Instead, its frontend turns to Ethereum that deals with
+tokens.
+</p>
+<p class="development__text text">
+The app requests some data directly from Ethereum. Independent APIs make the process easier.
+They conduct transactions and display. </p>
+</div>
+</div>
+</div>
+</section>
+<section class="services">
+<div class="services__container container">
+<div class="services__text-wrapper">
+<p class="services__text text">We used only free services,<br> but clients may have to buy some API’s
+<br> full versions as the project evolves. The clients don’t mind this as it won’t be an expensive
+deal. </p>
+</div>
+<div class="services__slider">
+<div class="services__images-wrapper">
+<img class="services__etherscan services__image" data-src="/images/abel-services-etherscan.svg" src="../../images/abel-services-etherscan.svg" alt="etherscan">
+<img class="services__cryptocompare services__image" data-src="/images/abel-services-cryptocompare.svg" src="../../images/abel-services-cryptocompare.svg" alt="cryptocompare">
+<img class="services__opensea services__image" data-src="/images/abel-services-opensea.svg" src="../../images/abel-services-opensea.svg" alt="opensea">
+<img class="services__ether services__image" data-src="/images/abel-services-ether.svg" src="../../images/abel-services-ether.svg" alt="ether">
+</div>
+<p class="services__sub-title">We used the following APIs</p>
+<div class="services__slides">
+<div id="services-slide-1" class="services__slide">
+<h4 class="services__slide-title">Etherscan</h4>
+<p class="services__slide-text text">provides tokens and transaction information.</p>
+</div>
+<div id="services-slide-2" class="services__slide">
+<h4 class="services__slide-title">Cryptocompare</h4>
+<p class="services__slide-text text">provides information about token costs in different
+currencies.</p>
+</div>
+<div id="services-slide-3" class="services__slide">
+<h4 class="services__slide-title">Opensea</h4>
+<p class="services__slide-text text"> provides information about NFT tokens.</p>
+</div>
+<div id="services-slide-4" class="services__slide">
+<h4 class="services__slide-title">Etherjs</h4>
+<p class="services__slide-text text">is the main development library that enables users to
+create dApps.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<section class="what-now">
+<video class="what-now__bg-anim" preload="none" muted loop playsinline autoplay>
+<source src="../../videos/abel-hero-video.mp4" type="video/mp4">
+</video>
+<div class="what-now__container container">
+<h3 class="what-now__title title">The project’s present.</h3>
+<div class="what-now__slider">
+<div id="what-now-slide-1" class="what-now__slide what-now__slide-eng-1">
+<img class="what-now__arrow lazyload" data-src="/images/abel-what-now-arrow.svg" src="../../images/abel-what-now-arrow.svg" alt="arrow">
+<p class="what-now__text text">We discussed App Store and Google Play deployment. Nevertheless, the
+clients want to get iOS test flight and Android APK versions. That’s why we don’t publish the
+app and users can’t download it.
+</p>
+<p class="what-now__text text">Still, the app is ready to be demonstrated to investors. </p>
+</div>
+<div id="what-now-slide-2" class="what-now__slide what-now__slide-eng-2">
+<img class="what-now__arrow lazyload" data-src="/images/abel-what-now-star.svg" src="../../images/abel-what-now-star.svg" alt="star">
+<p class="what-now__text text">Perhaps, our team will create a logo.</p>
+</div>
+<div id="what-now-slide-3" class="what-now__slide what-now__slide-eng-3">
+<img class="what-now__arrow lazyload" data-src="/images/abel-what-now-send.svg" src="../../images/abel-what-now-send.svg" alt="send">
+<p class="what-now__text text">The Test Flight version is ready, and the clients can show it to
+investors.</p>
+</div>
+</div>
+</div>
+<img class="what-now__purrweb lazyload" data-src="/images/abel-what-now-purrweb-icon.svg" src="../../images/abel-what-now-purrweb-icon.svg" alt="purrweb">
+</section>
+<footer id="footer" class="footer js-flexible-height js-flexible-height--theme2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer__container">
+<div class="footer__inner">
+<div class="footer__top-wrapper">
+<div class="footer__left-wrap">
+<svg class="footer__logo" width="164" height="30" viewBox="0 0 164 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M43.7921 3.02539H34.8721V26.7525H40.2578V19.2954H43.7921C48.4373 19.2954 52.039 15.6686 52.039 11.1604C52.039 6.65225 48.4373 3.02539 43.7921 3.02539ZM43.7921 14.211H40.2578V8.10978H43.7921C45.4415 8.10978 46.6533 9.43172 46.6533 11.1604C46.6533 12.8891 45.4415 14.211 43.7921 14.211Z" fill="white" />
+<path d="M65.7673 9.80457V19.0582C65.7673 21.4648 64.4882 22.5494 62.6369 22.5494C61.0212 22.5494 59.7084 21.5665 59.7084 19.4649V9.80457H54.6593V20.2106C54.6593 24.7866 57.5541 27.2271 60.9538 27.2271C63.1754 27.2271 64.8585 26.4136 65.7673 25.1594V26.7525H70.8164V9.80457H65.7673Z" fill="white" />
+<path d="M79.9051 12.8213V9.80457H74.856V26.7525H79.9051V19.0921C79.9051 15.7364 82.8672 14.889 84.9542 15.2279V9.46561C82.8335 9.46561 80.5783 10.5503 79.9051 12.8213Z" fill="white" />
+<path d="M92.7001 12.8213V9.80457H87.651V26.7525H92.7001V19.0921C92.7001 15.7364 95.6622 14.889 97.7492 15.2279V9.46561C95.6285 9.46561 93.3733 10.5503 92.7001 12.8213Z" fill="white" />
+<path d="M118.959 9.80457L116.536 18.8887L113.91 9.80457H109.198L106.572 18.8887L104.149 9.80457H98.7629L104.149 26.7525H108.861L111.554 17.7023L114.247 26.7525H118.959L124.345 9.80457H118.959Z" fill="white" />
+<path d="M130.539 20.3123H142.488C142.623 19.6683 142.69 18.9904 142.69 18.2786C142.69 13.1603 139.055 9.33003 134.14 9.33003C128.822 9.33003 125.187 13.2281 125.187 18.2786C125.187 23.329 128.755 27.2271 134.511 27.2271C137.708 27.2271 140.199 26.0407 141.849 23.7358L137.809 21.397C137.136 22.1427 135.958 22.685 134.578 22.685C132.727 22.685 131.178 22.0749 130.539 20.3123ZM130.438 16.516C130.909 14.7873 132.188 13.8382 134.107 13.8382C135.621 13.8382 137.136 14.55 137.675 16.516H130.438Z" fill="white" />
+<path d="M155.955 9.33003C153.7 9.33003 152.05 10.1096 150.94 11.3977V3.02539H145.891V26.7525H150.94V25.1594C152.05 26.4475 153.7 27.2271 155.955 27.2271C160.365 27.2271 164 23.329 164 18.2786C164 13.2281 160.365 9.33003 155.955 9.33003ZM154.945 22.4139C152.623 22.4139 150.94 20.8207 150.94 18.2786C150.94 15.7364 152.623 14.1432 154.945 14.1432C157.268 14.1432 158.951 15.7364 158.951 18.2786C158.951 20.8207 157.268 22.4139 154.945 22.4139Z" fill="white" />
+<path d="M16.0866 30L29.567 0H24.6005L11.1201 30H16.0866Z" fill="white" />
+<path d="M4.89843 30L18.1941 0H13.2957L0 30H4.89843Z" fill="white" />
+</svg>
+<div class="footer__sublogo">
+Software development company.
+</div>
+<div class="footer__divider"></div>
+<ul class="footer__contacts">
+<li class="footer__phone">
+<a id="gtm-footer-tel" class="contacts__item-link contacts__item-link--tel" href="tel:+14844608069" rel="noreferrer noopener" target="_blank" onclick="ym(52342033,'reachGoal','CLK_PHONE_CALL'); return true;">
++1 484 460-80-69
+</a>
+</li>
+<li class="footer__mail">
+<a class="contacts__item-link" href="../../cdn-cgi/l/email-protection.html#c8a0a188b8bdbababfadaae6aba7a5" rel="noreferrer noopener" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_EMAIL'); return true;">
+<span class="__cf_email__" data-cfemail="8ae2e3cafafff8f8fdefe8a4e9e5e7">[email&#160;protected]</span>
+</a>
+</li>
+<li class="footer__messengers">
+<a class="contacts__telegram contacts__link-item" href="https://t.me/purrweb_agency" rel="noreferrer noopener" data-no-router="true" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_TELEGRAM'); return true;">
+<div class="contacts__item-img">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" fill="none" viewbox="0 0 24 21">
+<path fill="#fff" d="M.424 10.02l5.53 2.064 2.14 6.883a.651.651 0 0 0 1.034.312l3.083-2.513a.92.92 0 0 1 1.121-.032l5.56 4.037a.652.652 0 0 0 1.021-.394L23.986.786a.652.652 0 0 0-.873-.741L.417 8.8a.652.652 0 0 0 .007 1.22zm7.326.965l10.807-6.657c.195-.119.394.144.228.298l-8.92 8.292a1.849 1.849 0 0 0-.573 1.106l-.304 2.252c-.04.3-.462.33-.545.04l-1.169-4.107a1.088 1.088 0 0 1 .476-1.224z" />
+</svg>
+</div>
+Telegram
+</a>
+<a class="contacts__whatsap contacts__link-item js-whatsapp-link footer__whatsap" rel="noreferrer noopener" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_WHATSAPP'); return true;">
+<div class="contacts__item-img">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewbox="0 0 24 24">
+<path fill="#fff" d="M12.003 0h-.006C5.38 0 0 5.382 0 12c0 2.625.846 5.058 2.284 7.034L.79 23.49l4.613-1.474A11.896 11.896 0 0 0 12.003 24C18.619 24 24 18.616 24 12c0-6.617-5.38-12-11.997-12zm6.982 16.945c-.289.818-1.438 1.496-2.354 1.694-.628.134-1.447.24-4.204-.903-3.526-1.461-5.797-5.045-5.974-5.277-.17-.232-1.425-1.897-1.425-3.62 0-1.722.875-2.56 1.227-2.92.29-.295.768-.43 1.227-.43.148 0 .282.007.402.013.352.015.53.036.762.593.29.697.994 2.419 1.079 2.596.085.177.17.417.05.65-.112.24-.211.346-.388.55-.177.204-.345.36-.522.579-.162.19-.345.394-.141.747.204.345.909 1.495 1.947 2.42 1.34 1.192 2.426 1.573 2.814 1.735.29.12.635.091.846-.133.269-.29.6-.77.938-1.243.24-.338.543-.38.86-.26.324.112 2.039.96 2.391 1.135.353.177.585.261.671.41.084.148.084.845-.206 1.664z" />
+</svg>
+</div>
+WhatsApp
+</a>
+</li>
+</ul>
+</div>
+<div class="footer__right-wrap">
+<div class="footer__title">
+Fill in and get a quote
+</div>
+<iframe id="hidden_iframe" name="hidden_iframe" style="display:none;"></iframe>
+<form class="footer__form js-footer-form" name="contact-form" target="hidden_iframe" onsubmit="ym(52342033, 'reachGoal', 'FORM_OUT'); return true">
+<div class="footer__form-wrapper">
+<input class="footer__form-field footer__form-name js-field-name" type="text" name="entry.1228031061" aria-label="Name input field" placeholder="Name" required autocomplete="on">
+<input class="footer__form-field js-phone-input" type="tel" name="entry.1413156463" aria-label="Phone input field" placeholder="Phone number" required autocomplete="on" minlength="4" maxlength="20">
+</div>
+<input class="footer__form-field footer__form-email" type="email" name="entry.1893682035" aria-label="Email input field" placeholder="test@purrweb.com" required autocomplete="on">
+<textarea class="footer__form-field footer__form-field--area" name="entry.772928921" aria-label="Descriptions input field" placeholder="Project details"></textarea>
+<input class="footer__form-hidden" type="hidden" name="entry.481086178" value="Purrweb123!">
+<input type="hidden" class="js-client-id" name="entry.1458439335">
+<input type="hidden" id="counter-id" name="entry.273292564" value="52342033">
+<input type="hidden" class="js-entry-page" name="entry.1965512787" value>
+<input type="hidden" id="footer__form-token" name="token">
+<input class="footer__form-type footer__page-link" type="hidden" name="entry.281637821" value="footer-form-main-en ">
+<div class="footer__form-wrapper">
+<p class="footer__form-captcha-wrapper">
+This site is protected by reCAPTCHA and the Google
+<a class="footer__form-captcha-link" rel="nofollow noreferrer noopener" href="../../privacy-policy/index.html" target="_blank">Privacy Policy</a> and
+<a class="footer__form-captcha-link" rel="nofollow noreferrer noopener" href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
+</p>
+<button id="order-form-btn" class="footer__form-btn rising-btn rising-btn--theme2" onclick="ym(52342033, 'reachGoal', 'CLK_SUCCESS'); return true;">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span id="gtm-footer-submit" class="rising-btn__text footer__btn-width--eng">
+Send
+</span>
+</span>
+</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<div class="footer__bottom-wrapper">
+<div class="footer__services js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+SERVICES
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../services/mvp/index.html" class="footer__link">MVP development services</a>
+</li>
+<li class="footer__item">
+<a href="../../services/ui-ux/index.html" class="footer__link">UI/UX Design</a>
+</li>
+<li class="footer__item">
+<a href="../../services/mobile-development/index.html" class="footer__link">Mobile Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/web-development-services/index.html" class="footer__link">Web Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/project-management-consulting-company/index.html" class="footer__link">Project Management</a>
+</li>
+<li class="footer__item">
+<a href="../../services/software-development-for-startups/index.html" class="footer__link">Software Development for
+Startups</a>
+</li>
+<li class="footer__item">
+<a href="../../services/progressive-web-app/index.html" class="footer__link">PWA</a>
+</li>
+</ul>
+</div>
+<div class="footer__otrasli js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+INDUSTRIES
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../services/terminal/index.html" class="footer__link">POS Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/marketplace/index.html" class="footer__link">Marketplace</a>
+</li>
+<li class="footer__item">
+<a href="../../services/finance/index.html" class="footer__link">Financial</a>
+</li>
+<li class="footer__item">
+<a href="../../services/travel/index.html" class="footer__link">Travel</a>
+</li>
+<li class="footer__item">
+<a href="../../services/tv-app-development/index.html" class="footer__link">SMART TV</a>
+</li>
+<li class="footer__item">
+<a href="../../services/health/index.html" class="footer__link">Healthcare</a>
+</li>
+<li class="footer__item">
+<a href="../../services/media/index.html" class="footer__link">Media</a>
+</li>
+<li class="footer__item">
+<a href="../../services/wellness/index.html" class="footer__link">Wellness</a>
+</li>
+</ul>
+</div>
+<div class="footer__outsourcing footer__outsourcing--eng js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+INSIGHTS
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a class="footer__link" href="../../blog/stock-trading-app-development/index.html">How To Build Stock Trading App</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/how-much-does-ecommerce-app-development-cost/index.html">eCommerce App
+Development Cost</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/healthcare-mobile-app-development/index.html">Healthcare Mobile App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/telehealth-app-development-features-benefits-costs/index.html">Telemedicine
+App Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/how-to-develop-an-iot-app-features-benefits-costs/index.html">IOT App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/grocery-delivery-app-development/index.html">Grocery Delivery App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/doctor-appointment-app-development-features-benefits-costs/index.html">Doctor
+Appointment Booking App Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/mobile-app-development-for-banking/index.html">Banking App Development</a>
+</li>
+</ul>
+</div>
+<div class="footer__stack js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+TECH STACK
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../technologies/index.html" class="footer__link">Tech stack</a>
+</li>
+<li class="footer__item">
+<a href="../../services/react-native/index.html" class="footer__link">React Native Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/react-native-game-development/index.html" class="footer__link">React Native Game
+Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/electron/index.html" class="footer__link">Electron JS</a>
+</li>
+<li class="footer__item">
+<a href="../../services/react-js/index.html" class="footer__link">React.js</a>
+</li>
+<li class="footer__item">
+<a href="../../services/webrtc/index.html" class="footer__link">WebRTC Development</a>
+</li>
+</ul>
+<div class="footer__ofice footer__ofice--pc">
+<h3 class="footer__ofice-caption">
+OFFICES
+</h3>
+<div class="footer__item footer__item--ofice">
+US 340 S LEMON AVE #9923 WALNUT,<br> CA 91789
+</div>
+</div>
+</div>
+<div class="footer__company js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+COMPANY
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../about/index.html" class="footer__link">About us</a>
+</li>
+<li class="footer__item">
+<a href="../../contacts/index.html" class="footer__link">Contacts</a>
+</li>
+<li class="footer__item">
+<a href="../../reviews/index.html" class="footer__link">Reviews</a>
+</li>
+<li class="footer__item">
+<a href="/" class="footer__link">Portfolio</a>
+</li>
+<li class="footer__item">
+<a href="../../blog/index.html" class="footer__link">Blog</a>
+</li>
+</ul>
+<div class="footer__address footer__address--eng footer__address--pc">
+<address>
+Compass Building, <br> Al Shohada Road, <br> AL Hamra Industrial Zone-FZ, Ras Al Khaimah, UAE
+</address>
+</div>
+</div>
+<div class="footer__ofice footer__ofice--mobile">
+<h3 class="footer__ofice-caption">
+OFFICES
+</h3>
+<address class="footer__item footer__item--ofice">
+US 340 S LEMON AVE 9923 WALNUT, CA 91789
+</address>
+<address class="footer__address footer__address--mobile">
+Compass Building, Al Shohada Road, <br> AL Hamra Industrial Zone-FZ, Ras Al Khaimah, UAE
+</address>
+</div>
+</div>
+<div class="footer__divider"></div>
+<div class="footer__bottom">
+<div class="footer__terms">
+<a href="../../privacy-policy/index.html" class="footer__terms--policy">Privacy Policy</a>
+<a href="https://policies.google.com/terms" target="_blank" class="footer__terms--term">Terms Of Services</a>
+</div>
+<div class="footer__rights">
+© 2023 Purrweb. All rights reserved
+</div>
+</div>
+</div>
+</div>
+</footer>
+<button class="btn-up js-btn-up" title="Go to the top of the page">
+<svg width="22" height="42" viewbox="0 0 22 42" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 29L11 41M11 41L1 29M11 41V0" />
+</svg>
+</button>
+<div class="popup-form js-form-popup">
+<div class="popup-form__inner">
+<p class="popup-form__text">Thanks for your inquiry. It usually take up to 24 hours to get back with reply.</p>
+<p class="popup-form__text">Wanna schedule an online meeting?</p>
+<button class="popup-form__close js-form-popup-btn">X</button>
+<button class="popup-form__btn js-form-popup-btn">
+<link href="../../../assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../../../assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<a href onclick="Calendly.initPopupWidget({url: 'https://calendly.com/purrweb_agency/initial_discussion?primary_color=5c3bfe'});return false;">Book
+the time slot!</a>
+</button>
+</div>
+</div>
+
+</div>
+
+<div class="idea-modal js-idea-modal" style="display: none;">
+<div class="idea-modal__content">
+<span class="idea-modal__title">
+Curious about the project cost?
+</span>
+<a href="#footer" class="idea-modal__button rising-btn rising-btn--theme3 js-scroll-to">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span id="gtm-idea-popup" class="rising-btn__text idea-modal__button-text">
+Fill in the form!
+</span>
+</span>
+</span></a>
+</div>
+<button class="idea-modal__close js-idea-modal__close" id="CLS-BTN-POPUP">
+X
+</button>
+</div>
+
+<script>
+    if (window.innerWidth >= 1024) {
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+          '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-W4BS3VM');
+
+    } else if (window.innerWidth < 1024) {
+      var firedTG = false;
+      window.addEventListener('scroll', () => {
+        if (firedTG === false) {
+          firedTG = true;
+          setTimeout(() => {
+            (function (w, d, s, l, i) {
+              w[l] = w[l] || [];
+              w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+              });
+              var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+              j.async = true;
+              j.src =
+                '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+              f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-W4BS3VM');
+          }, 0)
+        }
+      });
+    }
+  </script>
+
+
+
+<script type="text/javascript">
+    var firedRec = false;
+    window.addEventListener('scroll', () => {
+      if (firedRec === false) {
+        firedRec = true;
+        (function (d, w) {
+          var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "../../../www.google.com/recaptcha/api6c91.js?render=6LdBWnwaAAAAADC4FEa3p5JPq12UcmBuQPHl-0Iz";
+          if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+          } else { f(); }
+        })(document, window);
+      }
+    });
+  </script>
+
+
+
+<script async type="text/javascript">
+    (function () {
+      var PM_YM_COUNTER = 52342033;
+      var ee = setInterval(function () {
+        if (typeof window.ym != 'undefined') {
+          let clientInputs = document.querySelectorAll('.js-client-id');
+          for (let clientInput of clientInputs) {
+            ym(PM_YM_COUNTER, 'getClientID', function (clientID) {
+              clientInput.value = clientID;
+            })
+          }
+
+          clearInterval(ee);
+        } else {
+          console.log('Метрика не инициализирована');
+        }
+      }, 1000); // 0,5 секунды ждать, изменить на свое значение, 1 сек = 1000
+    })();
+  </script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZM1DZX38E"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-5ZM1DZX38E');
+  </script>
+<script src="../../common.4d9224ab871b2d75ac93.js"></script><script src="../../cryptowallet.4d9224ab871b2d75ac93.js"></script></body>
+
+<!-- Mirrored from www.purrweb.com/portfolio/cryptowallet/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Nov 2023 15:25:24 GMT -->
+</html>
+</div>
+<svg display="none" style="width: 0; height: 0;">
+<symbol id="spet" width="457" height="453" viewBox="0 0 457 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.9" d="M415.527 103.439L416.962 105.961L418.102 108.687L418.952 111.624L419.521 114.778L419.814 118.152L419.843 121.753L419.614 125.583L419.14 129.645L418.429 133.941L417.494 138.47L416.345 143.234L414.995 148.232L413.456 153.459L411.74 158.915L409.861 164.594L407.831 170.492L405.663 176.602L403.37 182.917L400.965 189.429L398.461 196.129L395.87 203.006L387.7 224.595L384.883 232.068L382.038 239.656L379.174 247.345L376.302 255.119L373.431 262.961L370.568 270.856L367.722 278.787L364.9 286.736L362.108 294.685L359.351 302.616L356.634 310.511L353.961 318.352L351.335 326.12L348.758 333.796L346.232 341.363L338.958 363.227L336.631 370.177L334.35 376.93L332.11 383.469L329.909 389.779L327.74 395.845L325.6 401.651L323.481 407.186L321.377 412.434L319.281 417.386L317.186 422.029L315.084 426.354L312.966 430.351L310.824 434.013L308.649 437.331L306.432 440.301L304.164 442.917L301.836 445.175L299.439 447.073L296.964 448.61L294.401 449.783L291.743 450.595L288.98 451.048L286.104 451.143L283.109 450.885L279.986 450.279L276.729 449.331L273.331 448.049L269.787 446.439L266.092 444.511L262.242 442.274L258.233 439.741L254.061 436.92L249.726 433.826L245.226 430.47L240.561 426.866L235.731 423.027L230.738 418.969L225.585 414.706L220.273 410.253L214.809 405.625L209.196 400.838L203.442 395.908L185.401 380.416L179.157 375.07L172.815 369.658L166.386 364.197L159.881 358.7L153.315 353.183L146.698 347.657L140.047 342.138L133.375 336.638L126.697 331.168L120.029 325.741L113.387 320.367L106.786 315.057L100.243 309.818L93.7755 304.66L68.9886 284.976L63.1466 280.319L57.4797 275.774L52.0038 271.345L46.7346 267.033L41.6876 262.838L36.8775 258.76L32.3186 254.798L28.0246 250.949L24.0084 247.211L20.2822 243.581L16.8576 240.054L13.7453 236.625L10.9549 233.288L8.4953 230.038L6.37439 226.868L4.59904 223.77L3.17513 220.737L2.10743 217.762L1.39969 214.835L1.05455 211.948L1.07355 209.094L1.4571 206.261L2.20453 203.443L3.31402 200.63L4.7827 197.813L6.60655 194.983L8.78052 192.133L11.2985 189.254L14.1533 186.337L17.3367 183.377L20.8398 180.364L24.6524 177.294L28.7637 174.159L33.1618 170.955L37.8343 167.676L42.7678 164.318L47.9485 160.879L53.3618 157.354L58.9926 153.743L64.8252 150.044L70.8437 146.257L77.0317 142.383L96.4444 130.252L103.142 126.051L109.923 121.777L116.773 117.438L123.673 113.039L130.606 108.588L137.557 104.094L144.509 99.565L151.447 95.0109L158.355 90.4424L165.218 85.8703L172.022 81.3066L178.753 76.7634L185.4 72.2537L191.948 67.7905L216.947 50.6828L222.852 46.6641L228.602 42.778L234.191 39.0394L239.615 35.463L244.869 32.0635L249.949 28.8553L254.853 25.8526L259.578 23.0693L264.125 20.5189L268.494 18.2144L272.685 16.1683L276.701 14.3926L280.543 12.8985L284.217 11.6966L287.725 10.7969L291.073 10.2082L294.266 9.93881L297.311 9.99597L300.215 10.386L302.984 11.1143L305.628 12.1851L308.152 13.6018L310.568 15.3667L312.882 17.4809L315.105 19.9444L317.245 22.7562L319.311 25.9142L321.314 29.4152L323.262 33.2546L325.164 37.4271L327.03 41.9262L328.868 46.7442L330.687 51.8725L332.496 57.3014L334.301 63.0203L336.11 69.0177L337.931 75.2809L339.769 81.7969L341.631 88.5515L343.521 95.5297L345.444 102.716L353.53 133.212L355.66 141.186L357.833 149.263L360.05 157.427L362.308 165.656L364.605 173.934L366.938 182.24L369.302 190.556L371.693 198.864L374.104 207.145L376.529 215.381L378.961 223.554L381.392 231.646L383.813 239.641L386.216 247.523L393.21 270.331L395.434 277.606L397.586 284.697L399.653 291.59L401.624 298.274L403.485 304.739L405.225 310.977L406.831 316.978L408.29 322.735L409.59 328.242L410.718 333.495L411.663 338.488L412.411 343.219L412.953 347.685L413.276 351.885L413.369 355.819L413.224 359.488L412.829 362.894L412.175 366.039L411.255 368.928L410.061 371.564L408.586 373.954L406.823 376.102L404.768 378.017L402.417 379.706L399.766 381.176L396.813 382.438L393.556 383.499L389.995 384.371L386.132 385.063L381.967 385.586L377.503 385.95L372.745 386.167L367.697 386.248L362.365 386.205L356.756 386.048L350.879 385.789L344.741 385.439L338.354 385.009L331.727 384.51L324.874 383.952L317.805 383.345L310.536 382.7L279.741 379.904L271.693 379.19L263.539 378.485L255.296 377.792L246.983 377.117L238.619 376.464L230.22 375.835L221.807 375.234L213.398 374.662L205.012 374.119L196.667 373.605L188.383 373.12L180.176 372.662L172.067 372.227L164.072 371.813L140.942 370.651L133.572 370.272L126.398 369.885L119.433 369.485L112.691 369.062L106.186 368.608L99.9281 368.114L93.9295 367.571L88.1996 366.969L82.7478 366.298L77.5821 365.547L72.7094 364.708L68.1359 363.768L63.8664 362.717L59.9049 361.546L56.2542 360.244L52.9161 358.8L49.8914 357.204L47.1797 355.447L44.7797 353.52L42.6891 351.413L40.9044 349.119L39.4215 346.629L38.235 343.935L37.3388 341.033L36.7261 337.914L36.3891 334.575L36.3192 331.01L36.5073 327.217L36.9434 323.192L37.6171 318.934L38.5175 314.441L39.6329 309.715L40.9517 304.755L42.4615 299.563L44.1498 294.144L46.0039 288.5L48.0109 282.637L50.1579 276.56L52.4319 270.277L54.8199 263.796L57.3092 257.126L59.887 250.275L68.0295 228.758L70.8409 221.305L73.6824 213.734L76.5438 206.061L79.4151 198.299L82.2873 190.467L85.1519 182.579L88.0009 174.652L90.8273 166.705L93.6247 158.755L96.3876 150.82L99.1111 142.918L101.791 135.067L104.425 127.287L107.01 119.594L109.544 112.008L116.842 90.0714L119.176 83.0915L121.465 76.3062L123.71 69.7319L125.918 63.3845L128.091 57.2791L130.236 51.4303L132.358 45.8519L134.463 40.5567L136.56 35.5569L138.655 30.8638L140.755 26.4876L142.87 22.4377L145.008 18.7223L147.177 15.3487L149.386 12.3231L151.645 9.6505L153.963 7.33505L156.349 5.37951L158.811 3.78568L161.359 2.55416L164.002 1.68452L166.748 1.17513L169.605 1.02324L172.581 1.22515L175.683 1.77596L178.918 2.6698L182.293 3.89983L185.813 5.45817L189.484 7.33608L193.309 9.52392L197.293 12.0112L201.438 14.7867L205.747 17.8383L210.221 21.1535L214.86 24.719L219.663 28.521L224.63 32.5451L229.759 36.7767L235.045 41.2007L240.486 45.8017L246.075 50.5643L251.807 55.4726L269.79 70.9148L276.017 76.2489L282.344 81.6507L288.76 87.105L295.253 92.5971L301.811 98.1125L308.42 103.637L315.067 109.158L321.736 114.663L328.414 120.138L335.085 125.572L341.733 130.956L348.341 136.277L354.894 141.528L361.375 146.699L367.767 151.783L386.241 166.447L392.109 171.122L397.805 175.685L403.312 180.132L408.615 184.463L413.699 188.677L418.548 192.773L423.147 196.754L427.485 200.62L431.546 204.376L435.319 208.023L438.792 211.566L441.955 215.01L444.797 218.361L447.31 221.625L449.486 224.807L451.316 227.916L452.797 230.958L453.921 233.943L454.687 236.877L455.09 239.769L455.129 242.628L454.803 245.464L454.114 248.283L453.062 251.097L451.65 253.913L449.882 256.739L447.764 259.586L445.3 262.46L442.498 265.37L439.367 268.323L435.914 271.327L432.15 274.388L428.085 277.512L423.732 280.705L419.103 283.972L414.21 287.316L409.067 290.743L403.69 294.253L398.093 297.851L392.291 301.536L386.301 305.309L380.139 309.169L360.788 321.26L354.106 325.45L347.336 329.712L340.497 334.042L333.604 338.431L326.675 342.874L319.725 347.362L312.772 351.887L305.831 356.437L298.918 361.004L292.047 365.576L285.232 370.142L278.488 374.69L271.827 379.206L265.263 383.677L240.181 400.841L234.254 404.879L228.478 408.787L222.863 412.55L217.412 416.154L212.131 419.582L207.023 422.822L202.091 425.858L197.337 428.677L192.762 431.266L188.365 433.61L184.145 435.698L180.102 437.518L176.232 439.058L172.532 440.307L168.998 441.255L165.625 441.894L162.407 442.215L159.339 442.21L156.413 441.873L153.623 441.199L150.96 440.183L148.417 438.822L145.985 437.113L143.655 435.054L141.418 432.646L139.266 429.89L137.188 426.787L135.176 423.34L133.22 419.554L131.311 415.434L129.44 410.987L127.598 406.219L125.776 401.139L123.967 395.758L122.162 390.084L120.353 384.13L118.535 377.909L116.7 371.432L114.842 364.714L112.957 357.771L111.039 350.616L109.086 343.268L102.98 320.222L100.857 312.267L98.6908 304.204L96.4809 296.053L94.2291 287.833L91.9379 279.562L89.6106 271.259L87.2512 262.943L84.8646 254.632L82.4563 246.346L80.0329 238.102L77.6014 229.918L75.1696 221.811L72.7461 213.8L70.3399 205.899L61.0902 175.715L58.9262 168.594L56.8448 161.669L54.8581 154.951L52.9784 148.45L51.2183 142.176L49.5903 136.137L48.107 130.34L46.7809 124.792L45.6244 119.499L44.6499 114.464L43.8691 109.692L43.2938 105.184L42.9353 100.941L42.8044 96.9647L42.9115 93.2534L43.2663 89.8057L43.8779 86.619L44.7549 83.6898L45.905 81.0136L47.3351 78.5853L49.0515 76.3987L51.0594 74.4471L53.3632 72.7231L55.9663 71.2184L58.8714 69.9242L62.0797 68.8315L65.5919 67.9303L69.4074 67.2105L73.5246 66.6616L77.9409 66.2727L82.6525 66.0328L87.6548 65.9308L92.9419 65.9552L98.507 66.0948L104.342 66.3384L110.439 66.6746L116.787 67.0925L123.377 67.5813L130.195 68.1305L137.23 68.7299L144.468 69.3699L175.163 72.157L183.192 72.871L191.331 73.5784L199.56 74.2736L207.863 74.9516L216.221 75.6085L224.616 76.241L233.028 76.8466L241.438 77.4237L249.83 77.9713L258.182 78.4895L266.478 78.9792L274.697 79.4419L282.824 79.8801L290.838 80.2969L314.042 81.4634L321.442 81.8423L328.648 82.227L335.647 82.6249L342.425 83.0438L348.969 83.4923L355.267 83.9792L361.308 84.5138L367.081 85.1059L372.578 85.7653L377.789 86.5022L382.709 87.3271L387.331 88.2502L391.649 89.2822L395.66 90.4335L399.36 91.7145L402.748 93.1354L405.823 94.7062L408.584 96.4366L411.034 98.3361L413.173 100.414L415.006 102.678L416.537 105.136L417.77 107.797L418.712 110.666L419.37 113.749L419.75 117.053L419.862 120.581L419.714 124.338L419.317 128.326L418.68 132.547L417.815 137.002L416.733 141.692L415.446 146.615L413.966 151.769L412.305 157.153L410.477 162.761L408.493 168.59L406.368 174.633L404.113 180.883L401.742 187.333L399.268 193.975L396.704 200.797L385.784 229.675L382.947 237.228L380.088 244.886L377.217 252.634L374.345 260.457L371.478 268.337L368.626 276.258L365.796 284.203L362.993 292.154L360.225 300.093L357.495 308.001L354.807 315.861L352.166 323.654L349.574 331.362L347.031 338.966L339.709 360.975L337.367 367.984L335.072 374.802L332.819 381.411L330.606 387.795L328.428 393.94L326.279 399.831L324.154 405.453L322.046 410.794L319.948 415.842L317.854 420.584L315.755 425.012L313.643 429.114L311.51 432.883L309.346 436.312L307.143 439.393L304.893 442.122L302.585 444.495L300.211 446.508L297.761 448.159L295.227 449.449L292.6 450.376L289.872 450.943L287.033 451.151L284.077 451.005L280.995 450.51L277.781 449.67L274.429 448.493L270.932 446.986L267.286 445.159L263.485 443.02L259.527 440.579L255.408 437.849L251.125 434.84L246.678 431.566L242.065 428.04L237.288 424.275L232.346 420.285L227.243 416.085L221.982 411.691L216.566 407.117L211 402.379L205.29 397.493L187.367 382.102L181.157 376.78L174.845 371.388L168.442 365.941L161.961 360.454L155.412 354.942L148.81 349.417L142.169 343.895L135.502 338.387L128.824 332.907L122.151 327.465L115.499 322.073L108.883 316.741L102.32 311.478L95.8266 306.294L89.4194 301.196L70.8835 286.483L64.9893 281.79L59.2648 277.209L53.7263 272.743L48.3896 268.394L43.2702 264.161L38.3831 260.046L33.7427 256.047L29.3628 252.163L25.2567 248.39L21.4369 244.726L17.9151 241.166L14.7022 237.706L11.8082 234.341L9.24235 231.064L7.01276 227.869L5.12666 224.749L3.59023 221.697L2.40861 218.704L1.58587 215.763L1.12501 212.864L1.02793 210L1.29537 207.162L1.92704 204.34L2.92147 201.526L4.27612 198.711L5.98734 195.887L8.05038 193.044L10.4595 190.175L13.2078 187.271L16.2876 184.325L19.6899 181.33L23.405 178.278L27.4224 175.165L31.7305 171.983L36.317 168.729L41.1689 165.396L46.2724 161.983L51.6132 158.486L57.1764 154.903L62.9464 151.232L68.9075 147.473L75.0432 143.626L94.3317 131.575L100.998 127.397L107.755 123.146L114.585 118.827L121.47 114.446L128.395 110.011L135.342 105.53L142.296 101.011L149.24 96.4636L156.159 91.8985L163.037 87.3263L169.862 82.7587L176.618 78.2076L183.293 73.6858L189.874 69.2063L196.349 64.7828L215.036 51.9884L220.987 47.9305L226.787 44.0005L232.428 40.2134L237.906 36.5837L243.214 33.1263L248.35 29.8556L253.31 26.7859L258.092 23.9312L262.696 21.3052L267.122 18.921L271.369 16.7913L275.441 14.9282L279.338 13.3432L283.065 12.0471L286.625 11.0501L290.023 10.3614L293.265 9.9895L296.357 9.94192L299.305 10.2253L302.116 10.8453L304.799 11.8066L307.36 13.1129L309.81 14.7667L312.155 16.7695L314.406 19.1218L316.571 21.8229L318.66 24.8709L320.682 28.263L322.647 31.9952L324.562 36.0623L326.439 40.4581L328.285 45.1754L330.109 50.2059L331.92 55.5401L333.726 61.1678L335.533 67.0778L337.349 73.2578L339.182 79.6948L341.035 86.3749L342.916 93.2836L344.828 100.405L346.776 107.724L352.861 130.696L354.976 138.633L357.136 146.68L359.339 154.818L361.584 163.029L363.869 171.293L366.191 179.592L368.546 187.908L370.929 196.22L373.334 204.511L375.755 212.764L378.186 220.958L380.618 229.078L383.044 237.106L385.453 245.025L394.733 275.308L396.909 282.459L399.005 289.416L401.007 296.168L402.905 302.704L404.685 309.015L406.335 315.092L407.842 320.928L409.194 326.516L410.378 331.85L411.382 336.926L412.195 341.74L412.804 346.291L413.197 350.576L413.365 354.595L413.297 358.348L412.982 361.838L412.412 365.066L411.578 368.036L410.472 370.752L409.086 373.219L407.416 375.444L405.455 377.432L403.198 379.192L400.643 380.731L397.786 382.058L394.626 383.182L391.163 384.113L387.395 384.861L383.326 385.437L378.957 385.85L374.292 386.113L369.336 386.237L364.094 386.231L358.572 386.109L352.78 385.882L346.724 385.56L340.415 385.154L333.863 384.676L327.081 384.135L320.079 383.543L312.872 382.909L305.474 382.242L282.28 380.132L274.269 379.417L266.147 378.708L257.93 378.011L249.638 377.33L241.288 376.669L232.898 376.033L224.487 375.423L216.075 374.841L207.68 374.289L199.32 373.766L191.014 373.272L182.781 372.805L174.638 372.363L166.605 371.943L135.899 370.393L128.661 370.01L121.628 369.614L114.814 369.199L108.232 368.756L101.894 368.276L95.8115 367.75L89.995 367.167L84.4537 366.519L79.196 365.795L74.2293 364.985L69.5599 364.079L65.1931 363.065L61.1331 361.933L57.3832 360.673L53.9454 359.276L50.8209 357.729L48.0096 356.025L45.5105 354.153L43.3216 352.104L41.4399 349.87L39.8614 347.444L38.5811 344.816L37.5932 341.98L36.891 338.931L36.467 335.663L36.313 332.17L36.42 328.45L36.7782 324.5L37.3774 320.316L38.2068 315.898L39.255 311.246L40.5103 306.36L41.9606 301.242L43.5934 295.895L45.3961 290.322L47.3558 284.528L49.4597 278.518L51.6946 272.301L54.0477 265.882L56.5061 259.27L59.057 252.476L69.9416 223.692L72.7747 216.158L75.6308 208.515L78.5 200.78L81.3729 192.968L84.2408 185.096L87.0955 177.18L89.9299 169.238L92.7372 161.287L95.5116 153.345L98.2481 145.43L100.942 137.561L103.591 129.756L106.192 122.034L108.742 114.412L116.089 92.333L118.438 85.2945L120.74 78.4454L122.999 71.8021L125.218 65.3808L127.402 59.1967L129.555 53.2646L131.684 47.5986L133.794 42.2118L135.893 37.1168L137.987 32.3248L140.085 27.8466L142.194 23.6918L144.324 19.869L146.482 16.3858L148.678 13.2487L150.92 10.4632L153.218 8.03361L155.581 5.96318L158.018 4.25404L160.538 2.90712L163.15 1.92232L165.862 1.29841L168.682 1.03303L171.619 1.12271L174.68 1.56297L177.873 2.34824L181.202 3.47199L184.676 4.92665L188.298 6.7038L192.074 8.794L196.007 11.1871L200.1 13.872L204.357 16.837L208.778 20.0697L213.364 23.557L218.115 27.2851L223.031 31.2401L228.108 35.4072L233.344 39.7716L238.736 44.3179L244.279 49.0307L249.966 53.8943L274.022 74.5418L280.318 79.9237L286.707 85.3629L293.177 90.8445L299.716 96.3541L306.31 101.877L312.946 107.401L319.61 112.912L326.287 118.398L332.962 123.846L339.619 129.247L346.241 134.589L352.814 139.863L359.319 145.061L365.741 150.173L384.338 164.934L390.258 169.645L396.01 174.244L401.579 178.728L406.949 183.096L412.104 187.347L417.029 191.481L421.71 195.498L426.132 199.401L430.283 203.191L434.149 206.873L437.719 210.448L440.982 213.924L443.927 217.304L446.546 220.594L448.83 223.802L450.771 226.933L452.364 229.996L453.602 232.998L454.482 235.947L455.001 238.852L455.156 241.721L454.946 244.562L454.373 247.386L453.436 250.201L452.138 253.015L450.484 255.837L448.476 258.677L446.122 261.541L443.427 264.439L440.4 267.377L437.048 270.364L433.382 273.406L429.412 276.51L425.149 279.68L420.606 282.923L415.796 286.242L410.732 289.642L405.427 293.126L399.899 296.695L394.161 300.352L388.229 304.097L382.12 307.93L362.895 319.942L356.245 324.107L349.501 328.347L342.682 332.656L335.804 337.027L328.885 341.454L321.94 345.928L314.986 350.442L308.04 354.985L301.116 359.548L294.23 364.12L287.396 368.689L280.628 373.244L273.939 377.771L267.343 382.258L260.85 386.692L242.101 399.529L236.125 403.606L230.301 407.558L224.634 411.368L219.13 415.024L213.795 418.51L208.631 421.811L203.643 424.914L198.832 427.804L194.2 430.467L189.746 432.891L185.47 435.062L181.371 436.968L177.446 438.598L173.692 439.941L170.106 440.986L166.682 441.725L163.416 442.148L160.3 442.247L157.33 442.017L154.497 441.451L151.795 440.544L149.215 439.293L146.748 437.695L144.387 435.748L142.121 433.451L139.943 430.805L137.843 427.812L135.811 424.475L133.838 420.797L131.915 416.782L130.032 412.438L128.182 407.772L126.355 402.791L124.542 397.504L122.737 391.922L120.93 386.057L119.116 379.919L117.286 373.522L115.437 366.879L113.561 360.006L111.654 352.917L109.712 345.629L103.646 322.731L101.538 314.813L99.3857 306.783L97.1894 298.658L94.9508 290.458L92.6718 282.201L90.3556 273.906L88.0059 265.592L85.6274 257.278L83.2254 248.982L80.8061 240.722L78.3763 232.517L75.9437 224.384L73.5166 216.34L71.1039 208.403L61.795 178.022L59.6071 170.842L57.4981 163.853L55.4799 157.068L53.5647 150.497L51.7652 144.149L50.0938 138.035L48.563 132.16L47.1855 126.532L45.9737 121.157L44.9398 116.04L44.096 111.184L43.4541 106.591L43.0253 102.264L42.8208 98.2025L42.851 94.4068L43.1258 90.8754L43.6547 87.6059L44.4463 84.5951L45.5086 81.8389L46.8488 79.3322L48.4734 77.0694L50.3879 75.0437L52.597 73.248L55.1045 71.6744L57.9131 70.3142L61.0248 69.1583L64.4402 68.1972L68.1592 67.4207L72.1805 66.8185L76.5019 66.3799L81.1199 66.0937L86.0302 65.949L91.2272 65.9344L96.7047 66.0385L102.455 66.2502L108.469 66.5581L114.739 66.9511L121.252 67.4185L127.999 67.9496L134.966 68.5342L142.142 69.1622L149.51 69.8244L172.631 71.9291L180.622 72.644L188.728 73.3542L196.93 74.0538L205.212 74.7378L213.554 75.4018L221.939 76.0424L230.347 76.6568L238.761 77.243L247.16 77.8001L255.527 78.3276L263.843 78.8262L272.088 79.2973L280.246 79.743L288.298 80.1662L319.105 81.7214L326.375 82.1034L333.441 82.4962L340.291 82.9076L346.911 83.3457L353.288 83.8194L359.412 84.3378L365.272 84.9105L370.857 85.5473L376.161 86.2585L381.174 87.0542L385.891 87.9449L390.307 88.941L394.416 90.0532L398.215 91.2917L401.703 92.6669L404.877 94.1889L407.738 95.8675L410.287 97.7122L412.525 99.732L414.456 101.936L416.082 104.332L417.41 106.927L418.444 109.729L419.191 112.743L419.659 115.977L419.855 119.433L419.789 123.116L419.47 127.03L418.909 131.177L418.115 135.558L417.101 140.173L415.878 145.021L414.458 150.102L412.853 155.413L411.077 160.951L409.141 166.71L407.059 172.685L404.844 178.87L402.509 185.258L400.067 191.839L397.53 198.605L394.911 205.545L386.682 227.293L383.853 234.81L381 242.436L378.132 250.157L375.259 257.958L372.39 265.822L369.533 273.732L366.695 281.671L363.883 289.622L361.103 297.566L358.36 305.486L355.659 313.364L353.002 321.18L350.394 328.917L347.835 336.556L338.108 365.772L335.798 372.652L333.532 379.329L331.307 385.787L329.118 392.01L326.961 397.983L324.828 403.692L322.716 409.124L320.616 414.267L318.521 419.107L316.425 423.636L314.318 427.843L312.192 431.719L310.039 435.257L307.85 438.45L305.615 441.292L303.327 443.778L300.975 445.906L298.55 447.673L296.044 449.077L293.448 450.12L290.752 450.801L287.95 451.123L285.031 451.09L281.991 450.705L278.82 449.974L275.512 448.904L272.062 447.502L268.464 445.775L264.713 443.734L260.805 441.389L256.737 438.749L252.507 435.828L248.112 432.637L243.552 429.19L238.827 425.499L233.938 421.579L228.886 417.445L223.675 413.111L218.307 408.592L212.789 403.905L207.124 399.065L183.147 378.484L176.866 373.112L170.491 367.681L164.033 362.206L157.505 356.699L150.918 351.177L144.288 345.653L137.627 340.139L130.951 334.649L124.275 329.193L117.615 323.784L110.985 318.432L104.404 313.146L97.8863 307.936L91.4499 302.81L72.794 288.001L66.8491 283.273L61.0688 278.656L55.4693 274.153L50.0667 269.767L44.8764 265.497L39.9137 261.344L35.1932 257.308L30.7288 253.388L26.5342 249.58L22.6218 245.881L19.0039 242.289L15.6914 238.798L12.6948 235.403L10.0235 232.099L7.686 228.879L5.68976 225.735L4.04134 222.662L2.74622 219.651L1.80878 216.694L1.23241 213.783L1.0193 210.909L1.17062 208.063L1.68637 205.237L2.56547 202.422L3.80573 199.608L5.40383 196.788L7.3554 193.952L9.65496 191.092L12.2961 188.2L15.2711 185.268L18.5717 182.29L22.1883 179.257L26.1106 176.164L30.3274 173.004L34.8266 169.773L39.5954 166.466L44.6203 163.079L49.8871 159.609L55.3811 156.054L61.087 152.411L66.9889 148.68L73.0708 144.861L98.8643 128.736L105.594 124.508L112.402 120.21L119.272 115.848L126.186 111.429L133.128 106.962L140.081 102.454L147.03 97.9145L153.958 93.3539L160.851 88.7828L167.695 84.2124L174.474 79.6547L181.176 75.1222L187.788 70.6277L194.298 66.1849L213.109 53.3054L219.108 49.2099L224.957 45.2376L230.649 41.4033L236.179 37.7218L241.542 34.208L246.733 30.8763L251.749 27.741L256.588 24.8163L261.249 22.116L265.732 19.6534L270.036 17.4412L274.163 15.4919L278.115 13.8172L281.896 12.428L285.509 11.3347L288.958 10.5468L292.249 10.0731L295.388 9.92145L298.381 10.0988L301.235 10.611L303.958 11.4631L306.557 12.6592L309.041 14.202L311.419 16.0936L313.699 18.3346L315.89 20.9247L318.003 23.8625L320.045 27.1454L322.027 30.7698L323.957 34.7308L325.845 39.0227L327.7 43.6384L329.53 48.5701L331.344 53.8086L333.151 59.3441L334.957 65.1654L336.769 71.2608L338.596 77.6174L340.442 84.2216L342.313 91.0591L344.215 98.1147L346.151 105.373L352.197 128.194L354.298 136.092L356.443 144.106L358.633 152.217L360.865 160.407L363.137 168.656L365.448 176.946L367.793 185.258L370.167 193.574L372.566 201.874L374.983 210.14L377.411 218.355L379.844 226.501L382.272 234.56L384.688 242.516L387.081 250.352L394.025 272.992L396.224 280.202L398.347 287.222L400.38 294.04L402.312 300.646L404.131 307.03L405.824 313.182L407.378 319.096L408.781 324.763L410.02 330.179L411.083 335.337L411.958 340.235L412.632 344.87L413.096 349.24L413.337 353.343L413.345 357.181L413.11 360.755L412.622 364.066L411.873 367.117L410.854 369.914L409.558 372.46L407.979 374.761L406.111 376.824L403.95 378.656L401.49 380.264L398.729 381.658L395.666 382.846L392.299 383.837L388.628 384.642L384.655 385.272L380.381 385.736L375.81 386.045L370.946 386.212L365.794 386.246L360.361 386.16L354.654 385.965L348.681 385.672L342.451 385.291L335.976 384.835L329.265 384.314L322.332 383.737L315.189 383.115L307.85 382.458L284.805 380.36L276.834 379.644L268.745 378.933L260.557 378.231L252.286 377.545L243.953 376.877L235.573 376.233L227.168 375.614L218.754 375.023L210.351 374.461L201.978 373.929L193.652 373.426L185.394 372.951L177.221 372.501L169.151 372.075L138.246 370.514L130.945 370.133L123.845 369.742L116.959 369.334L110.302 368.901L103.885 368.434L97.7205 367.923L91.8183 367.36L86.1884 366.734L80.8395 366.035L75.7794 365.253L71.0146 364.379L66.5509 363.4L62.3928 362.307L58.5438 361.089L55.0065 359.736L51.7821 358.238L48.8711 356.585L46.2727 354.768L43.9854 352.777L42.0062 350.603L40.3316 348.238L38.9569 345.675L37.8765 342.906L37.0841 339.926L36.5724 336.728L36.3333 333.307L36.3582 329.66L36.6374 325.783L37.161 321.674L37.9183 317.331L38.898 312.753L40.0887 307.941L41.4782 302.897L43.0542 297.622L44.8042 292.121L46.7154 286.397L48.7747 280.456L50.9693 274.303L53.2861 267.948L55.7123 261.397L58.2352 254.659L60.8421 247.747L69.0457 226.067L71.8693 218.57L74.7192 210.96L77.5852 203.253L80.458 195.464L83.3283 187.609L86.1881 179.705L89.0297 171.77L91.8462 163.819L94.6317 155.873L97.3808 147.947L100.089 140.062L102.753 132.234L105.369 124.484L107.935 116.828L117.695 87.5167L120.012 80.6054L122.284 73.8949L124.516 67.4011L126.71 61.1398L128.872 55.126L131.008 49.3737L133.124 43.8966L135.225 38.7073L137.32 33.8176L139.416 29.2384L141.521 24.9796L143.643 21.0502L145.791 17.458L147.974 14.2101L150.2 11.312L152.479 8.76869L154.821 6.58355L157.233 4.75917L159.726 3.29682L162.307 2.19677L164.986 1.45811L167.771 1.07882L170.671 1.05585L173.691 1.38501L176.841 2.06102L180.126 3.07775L183.553 4.42788L187.128 6.10327L190.854 8.09481L194.736 10.3926L198.779 12.9858L202.983 15.8629L207.352 19.0117L211.885 22.4193L216.584 26.0723L221.447 29.9566L226.473 34.0577L231.659 38.3609L237.002 42.851L242.497 47.5124L248.139 52.3297L272.037 72.842L278.302 78.2025L284.663 83.625L291.108 89.0947L297.626 94.5969L304.204 100.117L310.829 105.642L317.485 111.159L324.16 116.654L330.837 122.116L337.501 127.533L344.136 132.895L350.727 138.191L357.255 143.414L363.706 148.554L388.389 168.156L394.197 172.791L399.826 177.312L405.262 181.717L410.487 186.006L415.487 190.177L420.247 194.231L424.753 198.17L428.991 201.996L432.949 205.712L436.615 209.321L439.977 212.827L443.024 216.237L445.748 219.555L448.139 222.789L450.19 225.944L451.894 229.027L453.246 232.048L454.241 235.013L454.875 237.931L455.146 240.81L455.053 243.66L454.595 246.488L453.774 249.305L452.591 252.118L451.049 254.937L449.154 257.77L446.909 260.625L444.322 263.512L441.4 266.436L438.15 269.407L434.583 272.431L430.709 275.514L426.538 278.663L422.083 281.882L417.356 285.176L412.371 288.55L407.142 292.007L401.683 295.549L396.01 299.178L390.138 302.895L384.084 306.7L358.374 322.772L351.658 326.989L344.861 331.276L338 335.628L331.092 340.038L324.154 344.499L317.201 349.001L310.251 353.536L303.318 358.094L296.418 362.664L289.566 367.235L282.776 371.796L276.06 376.333L269.433 380.834L262.906 385.286L244.034 398.207L238.013 402.321L232.139 406.313L226.422 410.171L220.865 413.877L215.476 417.419L210.257 420.781L205.213 423.948L200.345 426.907L195.656 429.644L191.145 432.146L186.813 434.398L182.658 436.39L178.678 438.11L174.87 439.545L171.23 440.686L167.755 441.523L164.439 442.048L161.277 442.251L158.261 442.127L155.385 441.668L152.642 440.87L150.024 439.729L147.522 438.242L145.128 436.406L142.833 434.22L140.628 431.686L138.504 428.803L136.451 425.575L134.46 422.005L132.522 418.097L130.628 413.858L128.769 409.293L126.935 404.411L125.119 399.221L123.312 393.732L121.506 387.955L119.695 381.903L117.871 375.587L116.028 369.021L114.161 362.22L112.265 355.198L110.334 347.971L102.214 317.348L100.076 309.352L97.8937 301.255L95.6683 293.077L93.4019 284.836L91.0972 276.551L88.7577 268.241L86.3879 259.925L83.9927 251.621L81.5782 243.348L79.1509 235.124L76.7184 226.966L74.2886 218.892L71.8703 210.919L69.4728 203.062L62.5065 180.348L60.2961 173.109L58.1606 166.058L56.1121 159.207L54.1628 152.566L52.3251 146.146L50.6115 139.957L49.0346 134.005L47.6069 128.298L46.3409 122.842L45.2491 117.642L44.3435 112.702L43.636 108.025L43.1381 103.613L42.861 99.4672L42.8153 95.5871L43.0111 91.9717L43.4581 88.6191L44.1651 85.5263L45.1404 82.6895L46.3913 80.1039L47.9247 77.7641L49.7463 75.6636L51.8611 73.7955L54.2732 72.152L56.9857 70.7248L60.0007 69.5049L63.3193 68.4828L66.9417 67.6486L70.8669 66.9921L75.093 66.5025L79.617 66.169L84.4347 65.9805L89.5411 65.9256L94.93 65.9932L100.594 66.1718L106.525 66.4502L112.715 66.8174L119.152 67.2622L125.825 67.7742L132.724 68.3428L139.834 68.958L147.143 69.6104L170.112 71.7014L178.063 72.4165L186.134 73.1288L194.308 73.8324L202.566 74.5219L210.891 75.1927L219.265 75.8411L227.667 76.464L236.081 77.0594L244.487 77.6259L252.866 78.1628L261.2 78.6705L269.471 79.1501L277.658 79.6036L285.746 80.0336L293.716 80.4437L316.749 81.6007L324.08 81.9809L331.213 82.3695L338.134 82.774L344.828 83.2027L351.284 83.6641L357.49 84.1672L363.434 84.7216L369.108 85.3369L374.503 86.0232L379.609 86.7909L384.421 87.6502L388.933 88.6116L393.14 89.6857L397.039 90.8829L400.626 92.2135L403.9 93.6876L406.861 95.3153L409.509 97.106L411.846 99.0691L413.874 101.213L415.597 103.547L417.019 106.078L418.146 108.813L418.984 111.76L419.539 114.923L419.821 118.307L419.838 121.918L419.598 125.759L419.113 129.831L418.392 134.137L417.447 138.677L416.289 143.452L414.931 148.459L413.384 153.697L411.66 159.163L409.774 164.852L407.737 170.759L405.564 176.878L403.265 183.202L400.856 189.722L398.347 196.43L395.753 203.316L387.576 224.925L384.757 232.403L381.911 239.996L379.047 247.688L376.174 255.465L373.303 263.311L370.441 271.208L367.596 279.14L364.775 287.089L361.984 295.037L359.229 302.967L356.514 310.86L353.843 318.698L351.219 326.463L348.645 334.135L338.853 363.54L336.529 370.482L334.249 377.225L332.012 383.755L329.812 390.054L327.645 396.108L325.505 401.903L323.387 407.425L321.284 412.661L319.188 417.599L317.093 422.228L314.99 426.539L312.872 430.521L310.728 434.167L308.552 437.471L306.333 440.425L304.062 443.025L301.731 445.267L299.331 447.149L296.852 448.669L294.285 449.827L291.622 450.623L288.854 451.059L285.974 451.139L282.973 450.866L279.844 450.244L276.581 449.281L273.177 447.984L269.626 446.36L265.925 444.418L262.067 442.168L258.051 439.621L253.872 436.789L249.53 433.682L245.023 430.315L240.35 426.7L235.513 422.852L230.513 418.784L225.352 414.512L220.034 410.051L214.563 405.416L208.944 400.622L203.183 395.686L185.126 380.18L178.877 374.831L172.531 369.417L166.098 363.954L159.591 358.456L153.022 352.937L146.404 347.412L139.751 341.893L133.079 336.394L126.401 330.926L119.734 325.501L113.093 320.13L106.494 314.822L99.9543 309.587L93.4903 304.433L68.7256 284.767L62.8911 280.114L57.2323 275.575L51.7653 271.151L46.5057 266.844L41.4689 262.654L36.6697 258.581L32.1222 254.624L27.8402 250.781L23.8366 247.048L20.1237 243.422L16.7127 239.899L13.6145 236.474L10.8386 233.142L8.39388 229.896L6.28817 226.729L4.5283 223.634L3.12012 220.604L2.06834 217.631L1.37664 214.706L1.04766 211.821L1.08284 208.967L1.48257 206.136L2.24613 203.318L3.37165 200.505L4.85619 197.688L6.6957 194.857L8.88508 192.006L11.4181 189.125L14.2877 186.207L17.4856 183.244L21.0026 180.229L24.8287 177.156L28.953 174.018L33.3636 170.811L38.0479 167.528L42.9928 164.167L48.1841 160.724L53.6074 157.196L59.2474 153.581L65.0887 149.878L71.115 146.087L96.7398 130.067L103.441 125.862L110.226 121.586L117.078 117.244L123.98 112.842L130.915 108.39L137.866 103.894L144.818 99.3632L151.754 94.8083L158.661 90.2393L165.521 85.6674L172.322 81.1043L179.051 76.5624L185.693 72.0544L192.236 67.5936L217.213 50.5017L223.11 46.4886L228.853 42.6088L234.436 38.877L239.852 35.3082L245.098 31.9169L250.17 28.7175L255.066 25.7242L259.784 22.951L264.323 20.4112L268.684 18.1179L272.867 16.0836L276.875 14.3202L280.71 12.8389L284.376 11.6502L287.877 10.7641L291.218 10.1894L294.405 9.93439L297.443 10.0062L300.341 10.4111L303.104 11.1545L305.742 12.2407L308.262 13.6729L310.672 15.4532L312.983 17.5829L315.201 20.0619L317.338 22.8892L319.401 26.0625L321.401 29.5785L323.347 33.4329L325.248 37.6201L327.112 42.1335L328.949 46.9654L330.768 52.1073L332.576 57.5493L334.381 63.2808L336.191 69.2902L338.012 75.5651L339.852 82.0919L341.714 88.8567L343.606 95.8446L345.53 103.04L353.624 133.563L355.755 141.542L357.931 149.624L360.149 157.791L362.409 166.023L364.708 174.302L367.042 182.609L369.408 190.926L371.799 199.233L374.211 207.512L376.637 215.745L379.069 223.915L381.5 232.003L383.921 239.994L386.322 247.87L393.31 270.657L395.531 277.925L397.68 285.007L399.743 291.891L401.709 298.566L403.565 305.021L405.299 311.248L406.899 317.238L408.351 322.985L409.644 328.481L410.764 333.722L411.7 338.704L412.44 343.423L412.972 347.877L413.285 352.065L413.368 355.987L413.211 359.645L412.805 363.039L412.14 366.173L411.208 369.05L410.001 371.676L408.514 374.054L406.738 376.192L404.67 378.097L402.306 379.776L399.641 381.237L396.675 382.489L393.404 383.542L389.83 384.405L385.953 385.09L381.775 385.605L377.298 385.963L372.527 386.174L367.466 386.249L362.122 386.2L356.501 386.038L350.612 385.775L344.463 385.421L338.064 384.988L331.428 384.486L324.564 383.926L317.487 383.317L310.208 382.67L279.386 379.872L271.333 379.159L263.175 378.454L254.929 377.762L246.613 377.088L238.246 376.435L229.847 375.808L221.434 375.208L213.025 374.637L204.64 374.096L196.298 373.583L188.016 373.099L179.814 372.642L171.709 372.208L163.72 371.795L140.611 370.634L133.249 370.255L126.084 369.868L119.129 369.467L112.397 369.042L105.902 368.587L99.6562 368.091L93.6692 367.545L87.9516 366.94L82.5123 366.266L77.3594 365.512L72.4999 364.668L67.9398 363.724L63.6839 362.668L59.7361 361.491L56.0993 360.183L52.7751 358.732L49.7643 357.129L47.0666 355.365L44.6803 353.43L42.6034 351.315L40.8322 349.012L39.3625 346.513L38.189 343.811L37.3057 340.899L36.7054 337.771L36.3804 334.421L36.3222 330.847L36.5214 327.043L36.9683 323.008L37.6524 318.739L38.5625 314.237L39.6873 309.499L41.0148 304.529L42.5328 299.327L44.2287 293.898L46.0899 288.244L48.1034 282.371L50.2563 276.286L52.5356 269.994L54.9284 263.504L57.4218 256.825L60.0033 249.967L68.1535 228.43L70.9665 220.971L73.8092 213.395L76.6712 205.718L79.5427 197.953L82.4148 190.117L85.2788 182.227L88.127 174.3L90.9522 166.352L93.7482 158.402L96.5094 150.468L99.2311 142.568L101.909 134.72L104.541 126.943L107.123 119.255L109.655 111.674L116.947 89.7576L119.279 82.7859L121.565 76.0096L123.809 69.4451L126.015 63.1081L128.187 57.0138L130.33 51.1768L132.452 45.6106L134.557 40.3283L136.653 35.3419L138.748 30.6627L140.849 26.3008L142.964 22.2656L145.103 18.5652L147.274 15.2069L149.486 12.1969L151.747 9.54008L154.068 7.24054L156.456 5.30103L158.922 3.72329L161.475 2.50789L164.122 1.65428L166.872 1.16078L169.734 1.02475L172.716 1.24224L175.823 1.8084L179.065 2.71735L182.446 3.96212L185.973 5.53484L189.65 7.42673L193.483 9.6281L197.474 12.1284L201.626 14.9164L205.942 17.98L210.423 21.3067L215.069 24.8829L219.88 28.6951L224.855 32.7288L229.99 36.9692L235.284 41.4014L240.731 46.0099L246.327 50.7793L252.065 55.6937L270.064 71.15L276.296 76.4875L282.627 81.8919L289.047 87.3482L295.543 92.8416L302.103 98.3578L308.714 103.883L315.362 109.403L322.033 114.907L328.711 120.38L335.381 125.813L342.027 131.193L348.633 136.512L355.184 141.759L361.661 146.926L386.505 166.657L392.366 171.327L398.054 175.884L403.552 180.327L408.846 184.653L413.919 188.861L418.757 192.952L423.346 196.928L427.671 200.79L431.72 204.54L435.48 208.182L438.939 211.721L442.088 215.161L444.916 218.508L447.414 221.768L449.574 224.947L451.39 228.052L452.854 231.092L453.963 234.074L454.712 237.006L455.099 239.897L455.122 242.755L454.78 245.589L454.075 248.408L453.007 251.222L451.579 254.038L449.796 256.865L447.662 259.713L445.183 262.589L442.366 265.5L439.22 268.456L435.753 271.462L431.976 274.525L427.898 277.652L423.532 280.848L418.891 284.119L413.986 287.467L408.833 290.897L403.446 294.411L397.839 298.012L392.029 301.701L386.031 305.478L379.862 309.343L360.493 321.445L353.807 325.638L347.034 329.903L340.192 334.235L333.297 338.628L326.366 343.073L319.416 347.563L312.464 352.088L305.523 356.64L298.612 361.207L291.743 365.78L284.931 370.345L278.19 374.891L271.534 379.405L264.974 383.874L239.915 401.023L233.994 405.056L228.226 408.958L222.617 412.714L217.174 416.31L211.901 419.73L206.801 422.961L201.876 425.988L197.13 428.797L192.563 431.375L188.173 433.709L183.962 435.785L179.926 437.592L176.064 439.119L172.372 440.355L168.845 441.29L165.479 441.915L162.268 442.221L159.206 442.202L156.286 441.851L153.502 441.161L150.845 440.13L148.307 438.753L145.879 437.028L143.554 434.954L141.321 432.531L139.172 429.759L137.098 426.641L135.088 423.179L133.134 419.378L131.227 415.244L129.358 410.782L127.517 406L125.696 400.907L123.887 395.512L122.081 389.826L120.273 383.86L118.454 377.626L116.618 371.139L114.759 364.411L112.872 357.457L110.953 350.294L102.886 319.872L100.762 311.911L98.5936 303.844L96.3817 295.689L94.1282 287.466L91.8353 279.193L89.5064 270.89L87.1457 262.573L84.758 254.264L82.349 245.979L79.925 237.737L77.4934 229.556L75.0618 221.454L72.6388 213.446L70.2336 205.551L60.9926 175.395L58.8319 168.283L56.7545 161.366L54.7722 154.658L52.8976 148.167L51.1431 141.903L49.5213 135.874L48.0446 130.089L46.7259 124.552L45.5772 119.27L44.611 114.247L43.8391 109.486L43.2732 104.99L42.9246 100.759L42.8041 96.7942L42.9219 93.0947L43.2879 89.6587L43.9112 86.4835L44.8001 83.5656L45.9625 80.9006L47.4052 78.4831L49.1345 76.3071L51.1554 74.3658L53.4724 72.6517L56.0889 71.1565L59.0074 69.8715L62.2293 68.7875L65.7549 67.8945L69.5839 67.1825L73.7144 66.641L78.1438 66.259L82.8685 66.0255L87.8835 65.9293L93.1832 65.959L98.7605 66.1035L104.608 66.3514L110.716 66.6915L117.075 67.1128L123.675 67.6045L130.503 68.1561L137.547 68.7576L144.794 69.3991L175.517 72.1887L183.551 72.9026L191.694 73.6096L199.928 74.3041L208.234 74.9813L216.593 75.6372L224.989 76.2685L233.401 76.8729L241.812 77.4486L250.201 77.9949L258.552 78.5119L266.844 79.0003L275.06 79.4618L283.182 79.899L291.191 80.315L314.374 81.4802L321.766 81.8593L328.964 82.2444L335.953 82.643L342.721 83.063L349.254 83.513L355.541 84.0018L361.57 84.5388L367.331 85.1337L372.815 85.7963L378.014 86.5369L382.921 87.3659L387.529 88.2937L391.834 89.3307L395.831 90.4876L399.517 91.7745L402.891 93.2018L405.952 94.7795L408.699 96.5173L411.135 98.4245L413.261 100.51L415.081 102.783L416.598 105.25L417.818 107.919L418.748 110.798L419.392 113.891L419.761 117.205L419.861 120.743L419.702 124.51L419.294 128.508L418.647 132.74L417.772 137.205L416.681 141.905L415.385 146.839L413.896 152.004L412.228 157.397L410.392 163.015L408.402 168.854L406.27 174.906L404.01 181.165L401.635 187.624L399.156 194.274L396.588 201.104L385.659 230.008L382.82 237.566L379.96 245.228L377.09 252.98L374.217 260.805L371.351 268.688L368.5 276.611L365.671 284.556L362.87 292.507L360.103 300.445L357.374 308.351L354.689 316.209L352.05 323.999L349.46 331.702L346.919 339.301L339.604 361.29L337.264 368.291L334.971 375.1L332.72 381.699L330.509 388.073L328.332 394.207L326.184 400.086L324.06 405.696L321.953 411.025L319.855 416.059L317.761 420.788L315.661 425.201L313.549 429.289L311.414 433.043L309.249 436.456L307.045 439.522L304.792 442.235L302.481 444.592L300.104 446.589L297.651 448.224L295.113 449.498L292.481 450.409L289.748 450.959L286.904 451.152L283.942 450.991L280.855 450.48L277.635 449.625L274.277 448.433L270.774 446.912L267.12 445.07L263.313 442.918L259.348 440.464L255.221 437.721L250.931 434.701L246.476 431.415L241.856 427.878L237.072 424.102L232.123 420.103L227.013 415.894L221.745 411.491L216.322 406.91L210.749 402.165L205.033 397.273L187.094 381.868L180.879 376.542L174.563 371.147L168.156 365.698L161.671 360.21L155.12 354.696L148.516 349.172L141.873 343.65L135.205 338.143L128.528 332.664L121.855 327.224L115.204 321.835L108.59 316.505L102.03 311.246L95.5401 306.066L89.1371 300.971L70.6184 286.272L64.7313 281.584L59.0148 277.008L53.4849 272.548L48.1576 268.203L43.0482 263.976L38.1717 259.866L33.5426 255.872L29.1746 251.993L25.0809 248.225L21.2741 244.566L17.7658 241.01L14.5668 237.555L11.6872 234.194L9.13616 230.921L6.92167 227.729L5.05097 224.612L3.53019 221.563L2.36444 218.572L1.55772 215.633L1.11298 212.736L1.03207 209.874L1.31571 207.036L1.96352 204.215L2.97401 201.401L4.34457 198.586L6.07152 195.761L8.15008 192.917L10.5744 190.046L13.3376 187.141L16.4319 184.193L19.8483 181.196L23.5771 178.142L27.6076 175.025L31.9283 171.84L36.5269 168.582L41.3902 165.247L46.5046 161.83L51.8557 158.329L57.4283 154.742L63.2072 151.067L69.1764 147.304L75.3195 143.453L94.6256 131.391L101.297 127.21L108.057 122.955L114.889 118.634L121.777 114.25L128.703 109.813L135.651 105.33L142.604 100.809L149.548 96.2612L156.465 91.6955L163.342 87.1233L170.163 82.5561L176.916 78.0061L183.587 73.4858L190.163 69.0086L215.303 51.8056L221.248 47.7531L227.041 43.8292L232.675 40.0487L238.145 36.4264L243.446 32.977L248.574 29.7149L253.526 26.6544L258.301 23.8097L262.897 21.1941L267.314 18.8209L271.554 16.7028L275.617 14.8518L279.507 13.2794L283.226 11.9965L286.779 11.013L290.171 10.3381L293.406 9.98046L296.491 9.94743L299.433 10.2457L302.238 10.8807L304.915 11.8573L307.472 13.1789L309.916 14.8482L312.257 16.8666L314.504 19.2344L316.666 21.9509L318.751 25.0143L320.771 28.4216L322.733 32.1687L324.647 36.2506L326.522 40.6608L328.366 45.3922L330.19 50.4364L332 55.7839L333.806 61.4244L335.613 67.3466L337.43 73.5383L339.263 79.9864L341.118 86.677L343 93.5954L344.914 100.726L346.863 108.054L352.954 131.046L355.071 138.989L357.233 147.04L359.438 155.182L361.685 163.395L363.972 171.661L366.295 179.961L368.651 188.277L371.035 196.589L373.441 204.879L375.863 213.129L378.294 221.321L380.726 229.437L383.151 237.46L385.56 245.374L394.831 275.63L397.004 282.772L399.096 289.72L401.094 296.463L402.986 302.989L404.761 309.29L406.405 315.356L407.905 321.181L409.25 326.758L410.427 332.081L411.423 337.145L412.226 341.948L412.826 346.487L413.21 350.76L413.367 354.767L413.288 358.509L412.962 361.986L412.38 365.203L411.534 368.161L410.416 370.866L409.018 373.323L407.335 375.537L405.361 377.515L403.091 379.265L400.523 380.794L397.653 382.112L394.479 383.228L391.002 384.15L387.221 384.891L383.138 385.459L378.756 385.865L374.078 386.122L369.109 386.239L363.854 386.228L358.321 386.101L352.516 385.869L346.449 385.543L340.129 385.134L333.567 384.653L326.774 384.11L319.763 383.516L312.548 382.88L281.927 380.1L273.911 379.386L265.784 378.677L257.564 377.98L249.268 377.3L240.916 376.641L232.525 376.005L224.114 375.396L215.702 374.816L207.307 374.265L198.949 373.743L190.647 373.25L182.417 372.785L174.279 372.344L166.251 371.925L135.574 370.376L128.344 369.992L121.32 369.597L114.516 369.18L107.945 368.736L101.618 368.254L95.5475 367.725L89.743 367.14L84.2142 366.489L78.9693 365.761L74.0156 364.947L69.3595 364.036L65.0062 363.017L60.96 361.88L57.2239 360.614L53.8 359.21L50.6894 357.657L47.892 355.945L45.4067 354.066L43.2316 352.009L41.3634 349.767L39.7982 347.331L38.531 344.694L37.556 341.85L36.8663 338.791L36.4545 335.512L36.3123 332.01L36.4306 328.28L36.7997 324.319L37.4094 320.125L38.2488 315.696L39.3064 311.034L40.5707 306.137L42.0293 301.009L43.6699 295.652L45.4799 290.069L47.4463 284.265L49.5562 278.247L51.7967 272.02L54.1547 265.592L56.6175 258.972L59.1723 252.17L70.0668 223.36L72.9011 215.82L75.758 208.173L78.6276 200.435L81.5004 192.62L84.3679 184.745L87.2219 176.828L90.0552 168.885L92.8611 160.934L95.634 152.993L98.3687 145.08L101.061 137.213L103.708 129.412L106.306 121.693L108.854 114.076L116.194 92.0166L118.541 84.9862L120.842 78.1459L123.099 71.5121L125.316 65.101L127.498 58.9278L129.65 53.0073L131.778 47.3534L133.887 41.9793L135.986 36.8974L138.08 32.1192L140.178 27.6552L142.288 23.515L144.419 19.7071L146.578 16.2391L148.776 13.1175L151.021 10.3477L153.321 7.93407L155.688 5.87961L158.128 4.18651L160.652 2.8557L163.268 1.88699L165.984 1.27905L168.81 1.0295L171.752 1.13486L174.819 1.59058L178.018 2.39102L181.354 3.52962L184.833 4.99882L188.462 6.79004L192.245 8.89392L196.185 11.3002L200.286 13.9978L204.55 16.975L208.978 20.2193L213.571 23.7175L218.33 27.4561L223.253 31.4207L228.337 35.5969L233.581 39.9697L238.979 44.5238L244.528 49.2436L250.222 54.1135L274.299 74.7793L280.6 80.1641L286.993 85.6055L293.466 91.0887L300.007 96.5991L306.604 102.123L313.242 107.646L319.906 113.156L326.584 118.641L333.258 124.087L339.914 129.486L346.534 134.825L353.104 140.096L359.606 145.29L366.024 150.398L384.604 165.146L390.517 169.851L396.262 174.445L401.822 178.924L407.183 183.287L412.328 187.533L417.243 191.662L421.912 195.674L426.323 199.572L430.461 203.357L434.314 207.033L437.871 210.605L441.12 214.076L444.051 217.452L446.655 220.738L448.923 223.942L450.849 227.071L452.426 230.131L453.649 233.13L454.513 236.077L455.015 238.98L455.154 241.847L454.929 244.688L454.339 247.511L453.386 250.326L452.072 253.14L450.402 255.963L448.379 258.803L446.009 261.669L443.3 264.568L440.258 267.509L436.892 270.498L433.212 273.543L429.229 276.649L424.954 279.823L420.398 283.069L415.576 286.392L410.501 289.795L405.187 293.283L399.648 296.856L393.901 300.517L387.961 304.266L381.845 308.102L362.602 320.125L355.947 324.294L349.2 328.537L342.378 332.849L335.498 337.223L328.577 341.652L321.631 346.128L314.678 350.643L307.732 355.188L300.809 359.751L293.925 364.323L287.094 368.892L280.329 373.446L273.644 377.972L267.052 382.457L260.564 386.887L241.832 399.713L235.864 403.784L230.046 407.73L224.386 411.534L218.89 415.183L213.562 418.661L208.406 421.953L203.426 425.047L198.623 427.927L193.998 430.58L189.552 432.993L185.284 435.152L181.193 437.047L177.276 438.664L173.53 439.994L169.95 441.026L166.534 441.75L163.274 442.159L160.165 442.244L157.201 441.999L154.375 441.418L151.678 440.496L149.103 439.23L146.641 437.616L144.284 435.653L142.023 433.341L139.848 430.68L137.751 427.671L135.722 424.319L133.751 420.625L131.83 416.596L129.95 412.238L128.1 407.557L126.274 402.562L124.462 397.262L122.656 391.668L120.85 385.79L119.035 379.64L117.205 373.232L115.354 366.579L113.477 359.696L111.568 352.598L109.625 345.3L103.554 322.382L101.444 314.459L99.2891 306.424L97.0909 298.295L94.8504 290.092L92.5697 281.833L90.252 273.537L87.9009 265.223L85.5212 256.909L83.1183 248.614L80.6983 240.356L78.2683 232.154L75.8358 224.025L73.4091 215.986L70.9972 208.053L61.6963 177.7L59.5117 170.527L57.4065 163.547L55.3926 156.772L53.4823 150.21L51.6882 143.873L50.0227 137.768L48.4985 131.905L47.1281 126.288L45.9239 120.925L44.8983 115.819L44.0632 110.974L43.4304 106.393L43.0114 102.078L42.8171 98.0283L42.8579 94.2444L43.1439 90.7247L43.6842 87.4668L44.4876 84.4674L45.5622 81.7223L46.9149 79.2266L48.5522 76.9744L50.4797 74.9592L52.702 73.1735L55.2228 71.6095L58.0449 70.2586L61.17 69.1116L64.5989 68.1588L68.3314 67.3904L72.3661 66.7957L76.7007 66.364L81.3318 66.0844L86.2549 65.9457L91.4646 65.9366L96.9543 66.0457L102.716 66.2619L108.742 66.5738L115.023 66.9704L121.547 67.4409L128.304 67.9745L135.281 68.5612L142.465 69.191L149.842 69.8545L172.983 71.9609L180.98 72.6757L189.09 73.3855L197.296 74.0845L205.581 74.7677L213.926 75.4308L222.312 76.0702L230.721 76.6834L239.134 77.2684L247.532 77.8241L255.897 78.3504L264.21 78.8478L272.453 79.3176L280.606 79.7622L288.653 80.1846L319.432 81.7382L326.693 82.1206L333.75 82.5141L340.59 82.9264L347.199 83.3659L353.566 83.8413L359.678 84.362L365.526 84.9373L371.099 85.5772L376.39 86.2919L381.39 87.0916L386.094 87.9868L390.496 88.9879L394.591 90.1054L398.377 91.3498L401.85 92.7313L405.011 94.2601L407.858 95.9458L410.393 97.7981L412.617 99.826L414.534 102.038L416.147 104.442L417.462 107.047L418.483 109.858L419.217 112.882L419.673 116.125L419.857 119.592L419.78 123.285L419.45 127.21L418.878 131.367L418.075 135.757L417.051 140.383L415.819 145.242L414.39 150.333L412.778 155.655L410.994 161.202L409.052 166.971L406.964 172.955L404.743 179.15L402.403 185.546L399.956 192.136L397.415 198.909L386.557 227.625L383.727 235.146L380.873 242.777L378.005 250.502L375.132 258.306L372.263 266.172L369.406 274.084L366.569 282.024L363.759 289.975L360.98 297.919L358.239 305.837L355.54 313.712L352.885 321.526L350.279 329.259L347.723 336.893L338.004 366.081L335.697 372.953L333.433 379.621L331.209 386.068L329.022 392.28L326.865 398.242L324.734 403.939L322.622 409.359L320.523 414.488L318.428 419.315L316.331 423.83L314.224 428.022L312.097 431.884L309.943 435.406L307.752 438.583L305.515 441.41L303.224 443.88L300.869 445.992L298.441 447.743L295.931 449.131L293.33 450.158L290.63 450.823L287.822 451.129L284.899 451.08L281.853 450.68L278.676 449.934L275.362 448.849L271.905 447.432L268.301 445.691L264.543 443.636L260.628 441.278L256.553 438.626L252.315 435.692L247.913 432.49L243.346 429.031L238.614 425.33L233.717 421.4L228.658 417.257L223.44 412.914L218.066 408.388L212.54 403.693L206.869 398.846L182.87 378.247L176.585 372.872L170.206 367.439L163.745 361.962L157.213 356.455L150.625 350.932L143.993 345.408L137.331 339.895L130.655 334.406L123.979 328.952L117.319 323.545L110.692 318.196L104.113 312.913L97.5987 307.707L91.1662 302.584L72.5267 287.788L66.5888 283.065L60.8162 278.454L55.2251 273.956L49.8316 269.574L44.6511 265.31L39.6988 261.163L34.9894 257.132L30.5367 253.216L26.3543 249.413L22.4549 245.72L18.8502 242.132L15.5516 238.645L12.5692 235.255L9.91259 231.954L7.59005 228.737L5.60914 225.598L3.9763 222.527L2.69697 219.519L1.77551 216.564L1.21521 213.655L1.01827 210.782L1.1858 207.938L1.71772 205.112L2.6129 202.297L3.86914 199.483L5.48303 196.662L7.45017 193.825L9.76505 190.964L12.4211 188.071L15.4109 185.137L18.7257 182.156L22.3561 179.121L26.2917 176.025L30.5213 172.862L35.0327 169.628L39.8132 166.318L44.8492 162.927L50.1264 159.453L55.6301 155.894L61.345 152.247L67.2553 148.512L73.3448 144.689L99.1612 128.55L105.895 124.318L112.706 120.017L119.578 115.653L126.494 111.232L133.436 106.762L140.39 102.253L147.338 97.7123L154.265 93.1511L161.157 88.5797L167.997 84.0096L174.773 79.4528L181.472 74.9217L188.08 70.4292L194.585 65.989L213.379 53.1211L219.371 49.0307L225.213 45.0642L230.898 41.2365L236.421 37.5622L241.776 34.056L246.959 30.7327L251.968 27.6065L256.799 24.6916L261.452 22.0015L265.926 19.5497L270.223 17.349L274.342 15.4117L278.287 13.7494L282.06 12.3731L285.665 11.2931L289.108 10.519L292.392 10.0595L295.524 9.9223L298.511 10.1143L301.359 10.6416L304.076 11.5089L306.67 12.7203L309.149 14.2787L311.522 16.1857L313.798 18.4422L315.986 21.0479L318.095 24.001L320.134 27.2992L322.113 30.9386L324.042 34.9144L325.928 39.2208L327.782 43.8508L329.611 48.7963L331.425 54.0482L333.231 59.5966L335.037 65.4304L336.85 71.5376L338.677 77.9055L340.525 84.5204L342.397 91.3679L344.3 98.4329L346.238 105.699L352.289 128.542L354.392 136.446L356.54 144.465L358.731 152.579L360.965 160.772L363.239 169.023L365.551 177.315L367.897 185.628L370.273 193.943L372.673 202.242L375.09 210.506L377.519 218.719L379.952 226.861L382.38 234.915L384.795 242.866L387.187 250.697L394.124 273.316L396.32 280.518L398.439 287.529L400.468 294.338L402.396 300.934L404.209 307.308L405.896 313.45L407.444 319.353L408.839 325.009L410.071 330.413L411.126 335.56L411.992 340.447L412.658 345.07L413.111 349.428L413.342 353.519L413.34 357.345L413.093 360.907L412.594 364.207L411.833 367.247L410.802 370.032L409.494 372.567L407.903 374.858L406.022 376.91L403.847 378.732L401.374 380.331L398.6 381.715L395.523 382.894L392.142 383.877L388.458 384.674L384.471 385.296L380.184 385.752L375.6 386.056L370.723 386.216L365.559 386.245L360.113 386.154L354.394 385.954L348.409 385.657L342.169 385.273L335.683 384.813L328.962 384.289L322.019 383.71L314.867 383.087L307.52 382.428L284.454 380.328L276.477 379.613L268.383 378.902L260.191 378.201L251.918 377.515L243.581 376.848L235.201 376.205L226.794 375.587L218.38 374.998L209.978 374.437L201.607 373.906L193.284 373.404L185.029 372.93L176.86 372.482L168.795 372.056L137.917 370.497L130.625 370.116L123.534 369.724L116.659 369.316L110.012 368.881L103.606 368.412L97.4528 367.899L91.5624 367.333L85.9449 366.704L80.6086 366.002L75.5615 365.217L70.81 364.337L66.3597 363.354L62.2153 362.256L58.3801 361.032L54.8566 359.673L51.6462 358.168L48.7491 356.508L46.1646 354.683L43.8909 352.684L41.9254 350.502L40.2642 348.128L38.9027 345.556L37.8353 342.779L37.0555 339.789L36.5561 336.581L36.3289 333.15L36.3652 329.493L36.6556 325.606L37.1898 321.486L37.9571 317.132L38.9465 312.544L40.1463 307.722L41.5443 302.668L43.1284 297.383L44.8858 291.871L46.8037 286.138L48.8694 280.187L51.0696 274.025L53.3916 267.661L55.8224 261.101L58.3492 254.356L60.9596 247.436L69.1704 225.737L71.9953 218.234L74.8462 210.62L77.7127 202.909L80.5855 195.116L83.4556 187.259L86.3147 179.354L89.1553 171.417L91.9707 163.466L94.7546 155.52L97.502 147.596L100.208 139.713L102.87 131.889L105.484 124.142L108.048 116.49L117.799 87.2058L120.114 80.3031L122.384 73.6018L124.614 67.118L126.807 60.8674L128.968 54.8649L131.103 49.1246L133.217 43.66L135.318 38.4837L137.413 33.6076L139.509 29.0424L141.614 24.7981L143.738 20.8835L145.887 17.3065L148.071 14.0739L150.3 11.1916L152.582 8.66402L154.926 6.49488L157.342 4.68653L159.838 3.24028L162.424 2.15631L165.108 1.43364L167.898 1.07027L170.802 1.06303L173.829 1.40769L176.984 2.099L180.276 3.13069L183.709 4.49547L187.29 6.18508L191.023 8.19044L194.913 10.5016L198.962 13.1076L203.174 15.9971L207.549 19.1577L212.09 22.5765L216.796 26.24L221.667 30.1342L226.7 34.2446L231.893 38.5565L237.243 43.0544L242.745 47.7231L248.393 52.547L272.313 73.0785L278.582 78.442L284.947 83.867L291.396 89.3385L297.917 94.8418L304.497 100.363L311.124 105.888L317.781 111.403L324.456 116.897L331.133 122.357L337.796 127.772L344.43 133.131L351.018 138.425L357.544 143.644L363.99 148.781L388.651 168.365L394.451 172.994L400.072 177.51L405.498 181.91L410.714 186.194L415.703 190.359L420.452 194.409L424.947 198.343L429.173 202.163L433.118 205.874L436.771 209.478L440.119 212.981L443.152 216.386L445.861 219.701L448.238 222.93L450.273 226.082L451.962 229.163L453.298 232.181L454.277 235.143L454.895 238.059L455.15 240.937L455.04 243.786L454.566 246.614L453.729 249.43L452.53 252.243L450.973 255.062L449.061 257.896L446.801 260.753L444.199 263.641L441.262 266.567L437.998 269.54L434.418 272.567L430.53 275.652L426.346 278.804L421.879 282.026L417.14 285.325L412.144 288.702L406.904 292.163L401.436 295.708L395.753 299.341L389.873 303.062L383.811 306.871L358.078 322.958L351.358 327.178L344.558 331.468L337.694 335.823L330.785 340.235L323.845 344.698L316.892 349.201L309.942 353.738L303.011 358.296L296.113 362.867L289.263 367.438L282.476 371.998L275.764 376.534L269.141 381.033L262.619 385.483L243.764 398.392L237.749 402.501L231.882 406.488L226.171 410.339L220.622 414.038L215.24 417.572L210.029 420.926L204.993 424.084L200.133 427.034L195.452 429.76L190.949 432.251L186.625 434.493L182.477 436.473L178.505 438.18L174.705 439.602L171.073 440.73L167.605 441.553L164.296 442.063L161.14 442.252L158.13 442.113L155.261 441.64L152.523 440.827L149.91 439.671L147.413 438.168L145.024 436.316L142.733 434.115L140.532 431.565L138.411 428.667L136.361 425.424L134.373 421.838L132.437 417.916L130.545 413.662L128.687 409.083L126.854 404.187L125.038 398.983L123.231 393.481L121.426 387.692L119.614 381.628L117.79 375.3L115.946 368.724L114.078 361.912L112.18 354.881L110.248 347.645L102.12 316.996L99.9801 308.994L97.7958 300.893L95.5686 292.712L93.3004 284.469L90.994 276.182L88.6531 267.872L86.282 259.556L83.8858 251.253L81.4706 242.982L79.043 234.76L76.6104 226.605L74.1809 218.536L71.7633 210.567L69.3669 202.716L62.4069 180.023L60.1996 172.792L58.0677 165.749L56.0234 158.907L54.0788 152.276L52.2463 145.867L50.5385 139.687L48.9679 133.746L47.5471 128.05L46.2886 122.605L45.2048 117.417L44.3077 112.489L43.6093 107.824L43.121 103.423L42.8539 99.2893L42.8188 95.4209L43.0256 91.8173L43.4839 88.4763L44.2027 85.395L45.19 82.5694L46.4534 79.9949L47.9994 77.6658L49.8339 75.5758L51.9619 73.7179L54.3873 72.0841L57.1131 70.6663L60.1416 69.4554L63.4737 68.4418L67.1096 67.6158L71.0482 66.9669L75.2876 66.4845L79.8247 66.1576L84.6554 65.9753L89.7744 65.9261L95.1757 65.9988L100.852 66.1821L106.795 66.4647L112.995 66.8356L119.443 67.2836L126.127 67.7983L133.035 68.3692L140.155 68.9863L147.472 69.64L170.462 71.7332L178.419 72.4483L186.495 73.1603L194.673 73.8633L202.935 74.5521L211.262 75.222L219.637 75.8693L228.041 76.4911L236.455 77.0852L244.86 77.6503L253.238 78.1859L261.569 78.6924L269.836 79.1708L278.02 79.6232L286.103 80.0522L294.067 80.4616L317.078 81.6175L324.401 81.9979L331.525 82.3871L338.436 82.7925L345.12 83.2224L351.565 83.6854L357.759 84.1907L363.692 84.7475L369.354 85.3658L374.735 86.0556L379.829 86.827L384.628 87.6906L389.127 88.6568L393.32 89.7362L397.205 90.939L400.778 92.2758L404.038 93.7566L406.985 95.3913L409.619 97.1895L411.942 99.1604L413.957 101.313L415.666 103.655L417.075 106.195L418.189 108.94L419.014 111.895L419.558 115.068L419.828 118.463L419.833 122.084L419.582 125.934L419.086 130.017L418.355 134.333L417.4 138.884L416.233 143.669L414.866 148.687L413.311 153.935L411.58 159.41L409.687 165.109L407.644 171.026L405.464 177.154L403.161 183.487L400.746 190.016L398.234 196.732L395.636 203.626L387.451 225.254L384.631 232.738L381.784 240.335L378.919 248.032L376.047 255.812L373.176 263.661L370.314 271.56L367.47 279.493L364.651 287.442L361.861 295.39L359.108 303.319L356.395 311.21L353.726 319.045L351.104 326.805L348.532 334.473L338.749 363.852L336.427 370.785L334.149 377.52L331.913 384.039L329.715 390.328L327.549 396.371L325.411 402.154L323.293 407.663L321.191 412.886L319.095 417.811L317 422.427L314.897 426.723L312.777 430.69L310.632 434.322L308.454 437.609L306.233 440.548L303.96 443.132L301.626 445.359L299.223 447.224L296.74 448.728L294.169 449.87L291.501 450.65L288.729 451.071L285.843 451.134L282.837 450.845L279.702 450.209L276.433 449.231L273.022 447.919L269.465 446.28L265.757 444.324L261.892 442.061L257.869 439.501L253.683 436.656L249.333 433.538L244.819 430.16L240.139 426.534L235.294 422.676L230.287 418.599L225.119 414.318L219.794 409.849L214.316 405.206L208.691 400.406L202.924 395.464L184.85 379.944L178.597 374.591L172.247 369.175L165.811 363.71L159.301 358.211L152.729 352.692L146.109 347.167L139.455 341.649L132.782 336.151L126.104 330.685L119.438 325.262L112.798 319.893L106.202 314.588L99.6656 309.357L93.2052 304.206L68.463 284.558L62.636 279.91L56.9854 275.376L51.5272 270.957L46.2772 266.656L41.2506 262.471L36.4623 258.403L31.9263 254.451L27.6564 250.612L23.6655 246.884L19.9657 243.263L16.5685 239.745L13.4843 236.325L10.7229 232.996L8.29311 229.753L6.20264 226.59L4.45828 223.498L3.06582 220.471L2.02996 217.5L1.35433 214.577L1.04149 211.694L1.09287 208.841L1.50877 206.011L2.28845 203.193L3.42999 200.38L4.93037 197.562L6.78555 194.731L8.99032 191.879L11.5385 188.996L14.4228 186.076L17.6351 183.111L21.1661 180.094L25.0056 177.018L29.1429 173.877L33.5659 170.666L38.2621 167.381L43.2182 164.016L48.4202 160.569L53.8534 157.037L59.5027 153.418L65.3525 149.711L71.3867 145.917L97.0354 129.882L103.741 125.674L110.529 121.394L117.384 117.049L124.287 112.646L131.223 108.191L138.175 103.693L145.126 99.1613L152.062 94.6056L158.966 90.0362L165.825 85.4645L172.623 80.9021L179.347 76.3614L185.985 71.8552L192.525 67.3968L217.478 50.3209L223.368 46.3134L229.105 42.4398L234.68 38.715L240.089 35.1537L245.327 31.7706L250.392 28.5801L255.28 25.5963L259.989 22.8332L264.521 20.3041L268.873 18.022L273.049 15.9995L277.049 14.2483L280.876 12.7798L284.535 11.6044L288.029 10.7319L291.363 10.1713L294.543 9.93058L297.575 10.0171L300.466 10.4369L303.224 11.1955L305.856 12.2969L308.371 13.7445L310.777 15.5403L313.083 17.6855L315.298 20.18L317.431 23.0227L319.491 26.2114L321.489 29.7425L323.432 33.6118L325.331 37.8136L327.194 42.3413L329.03 47.1873L330.848 52.3426L332.656 57.7978L334.461 63.5418L336.271 69.5633L338.094 75.8496L339.934 82.3874L341.798 89.1624L343.691 96.1598L345.617 103.364L353.717 133.915L355.851 141.899L358.028 149.985L360.249 158.155L362.511 166.39L364.811 174.671L367.147 182.979L369.513 191.295L371.906 199.601L374.318 207.879L376.745 216.11L379.177 224.276L381.607 232.36L384.028 240.346L386.428 248.217L393.41 270.984L395.628 278.244L397.773 285.317L399.832 292.192L401.794 298.857L403.645 305.303L405.373 311.519L406.966 317.499L408.412 323.234L409.697 328.719L410.81 333.949L411.737 338.919L412.468 343.626L412.991 348.068L413.294 352.245L413.366 356.156L413.199 359.801L412.781 363.184L412.104 366.306L411.16 369.172L409.941 371.786L408.441 374.154L406.653 376.282L404.572 378.176L402.194 379.845L399.516 381.297L396.536 382.54L393.252 383.584L389.665 384.44L385.774 385.116L381.582 385.624L377.092 385.975L372.308 386.18L367.235 386.249L361.878 386.195L356.245 386.029L350.344 385.761L344.184 385.404L337.775 384.967L331.128 384.462L324.254 383.9L317.167 383.289L309.881 382.641L279.031 379.84L270.973 379.127L262.81 378.423L254.561 377.731L246.242 377.058L237.874 376.407L229.473 375.781L221.06 375.182L212.652 374.612L204.269 374.072L195.929 373.561L187.65 373.078L179.452 372.622L171.352 372.189L163.368 371.777L140.28 370.618L132.927 370.238L125.77 369.851L118.825 369.448L112.104 369.023L105.62 368.566L99.3847 368.068L93.4095 367.52L87.7041 366.912L82.2774 366.234L77.1374 365.476L72.291 364.628L67.7443 363.679L63.502 362.618L59.568 361.436L55.945 360.121L52.6348 358.664L49.6379 357.055L46.954 355.283L44.5816 353.34L42.5182 351.217L40.7606 348.906L39.3041 346.398L38.1437 343.686L37.2731 340.764L36.6852 337.627L36.3722 334.267L36.3256 330.683L36.5361 326.869L36.9937 322.824L37.6881 318.544L38.608 314.031L39.742 309.284L41.0782 304.303L42.6044 299.091L44.3079 293.651L46.1762 287.988L48.1962 282.105L50.3549 276.01L52.6396 269.71L55.0371 263.211L57.5347 256.524L60.1198 249.658L68.2777 228.101L71.0922 220.637L73.9359 213.057L76.7985 205.375L79.6703 197.606L82.5422 189.768L85.4056 181.876L88.2529 173.947L91.077 165.999L93.8716 158.05L96.6311 150.117L99.3509 142.218L102.027 134.373L104.656 126.6L107.237 118.916L109.767 111.34L117.051 89.4441L119.381 82.4807L121.666 75.7135L123.908 69.1587L126.112 62.8322L128.283 56.749L130.425 50.9237L132.545 45.3699L134.65 40.1005L136.746 35.1276L138.841 30.4622L140.942 26.1147L143.059 22.0941L145.199 18.4088L147.371 15.0658L149.585 12.0714L151.849 9.43036L154.172 7.14676L156.564 5.22329L159.034 3.66163L161.59 2.4623L164.242 1.62473L166.997 1.1472L169.864 1.0269L172.851 1.26003L175.965 1.84156L179.212 2.76554L182.6 4.02508L186.133 5.61216L189.817 7.51798L193.656 9.73285L197.655 12.2462L201.814 15.0467L206.138 18.1223L210.626 21.4603L215.28 25.0473L220.098 28.8696L225.079 32.9128L230.222 37.1621L235.522 41.6024L240.976 46.2184L246.578 50.9946L252.323 55.9151L270.338 71.3854L276.575 76.7262L282.91 82.1332L289.334 87.5915L295.833 93.0862L302.396 98.603L309.009 104.128L315.658 109.648L322.329 115.15L329.007 120.622L335.677 126.053L342.321 131.431L348.926 136.746L355.473 141.99L361.946 147.154L386.769 166.866L392.622 171.532L398.302 176.084L403.792 180.521L409.076 184.842L414.139 189.045L418.966 193.131L423.543 197.102L427.857 200.958L431.893 204.704L435.64 208.342L439.086 211.876L442.221 215.312L445.034 218.655L447.517 221.91L449.662 225.086L451.462 228.189L452.911 231.226L454.004 234.205L454.737 237.135L455.108 240.024L455.115 242.881L454.757 245.714L454.035 248.533L452.951 251.347L451.507 254.163L449.708 256.991L447.559 259.84L445.065 262.717L442.234 265.63L439.073 268.588L435.592 271.596L431.801 274.663L427.71 277.793L423.332 280.992L418.678 284.265L413.763 287.617L408.599 291.051L403.202 294.569L397.586 298.174L391.767 301.867L385.761 305.648L379.584 309.516L360.199 321.629L353.508 325.826L346.732 330.094L339.887 334.429L332.99 338.824L326.058 343.271L319.108 347.763L312.155 352.29L305.216 356.842L298.305 361.41L291.439 365.982L284.63 370.547L277.893 375.092L271.24 379.605L264.685 384.072L239.649 401.204L233.734 405.232L227.973 409.128L222.372 412.877L216.936 416.465L211.67 419.878L206.578 423.1L201.662 426.118L196.924 428.917L192.364 431.484L187.983 433.806L183.779 435.871L179.751 437.666L175.897 439.18L172.211 440.403L168.692 441.325L165.333 441.935L162.129 442.228L159.073 442.194L156.16 441.827L153.381 441.123L150.73 440.076L148.197 438.684L145.774 436.944L143.453 434.854L141.224 432.415L139.079 429.628L137.007 426.494L135 423.017L133.049 419.202L131.144 415.052L129.275 410.576L127.435 405.78L125.615 400.674L123.806 395.265L122.001 389.567L120.192 383.589L118.373 377.343L116.536 370.845L114.676 364.107L112.788 357.144L110.867 349.971L102.793 319.521L100.667 311.555L98.4963 303.483L96.2825 295.326L94.0272 287.1L91.7326 278.825L89.4023 270.52L87.0402 262.204L84.6515 253.895L82.2416 245.612L79.8172 237.372L77.3853 229.194L74.9539 221.096L72.5316 213.093L70.1274 205.203L60.895 175.075L58.7378 167.971L56.6643 161.064L54.6866 154.365L52.817 147.884L51.0682 141.63L49.4525 135.612L47.9827 129.837L46.6712 124.312L45.5304 119.041L44.5725 114.03L43.8095 109.281L43.2531 104.796L42.9143 100.577L42.8042 96.6243L42.9328 92.9365L43.3101 89.5122L43.945 86.3485L44.8459 83.4419L46.0206 80.788L47.4759 78.3814L49.218 76.216L51.252 74.2849L53.5822 72.5807L56.2121 71.095L59.144 69.8192L62.3794 68.7438L65.9185 67.8592L69.7609 67.155L73.9048 66.6207L78.3474 66.2455L83.0851 66.0184L88.1129 65.928L93.425 65.9631L99.0145 66.1124L104.873 66.3646L110.993 66.7086L117.363 67.1332L123.973 67.6278L130.811 68.1819L137.865 68.7853L145.121 69.4284L175.871 72.2205L183.911 72.9342L192.058 73.6407L200.295 74.3345L208.604 75.0109L216.966 75.6658L225.362 76.2959L233.775 76.8991L242.185 77.4735L250.573 78.0185L258.921 78.5342L267.211 79.0214L275.423 79.4818L283.54 79.9179L291.544 80.3331L314.706 81.497L322.09 81.8761L329.279 82.2617L336.259 82.6611L343.016 83.0823L349.539 83.5338L355.814 84.0246L361.831 84.564L367.58 85.1616L373.052 85.8274L378.238 86.5718L383.132 87.4049L387.727 88.3373L392.018 89.3795L396.001 90.5419L399.674 91.8348L403.034 93.2686L406.081 94.8532L408.814 96.5984L411.236 98.5133L413.349 100.607L415.155 102.888L416.659 105.364L417.866 108.043L418.782 110.931L419.415 114.034L419.771 117.357L419.859 120.906L419.689 124.683L419.27 128.691L418.613 132.933L417.728 137.409L416.627 142.119L415.322 147.063L413.826 152.238L412.15 157.642L410.307 163.27L408.31 169.118L406.172 175.18L403.907 181.448L401.527 187.916L399.044 194.573L396.472 201.411L385.533 230.341L382.693 237.904L379.833 245.571L376.962 253.326L374.09 261.154L371.224 269.039L368.374 276.963L365.546 284.909L362.746 292.86L359.981 300.796L357.254 308.701L354.571 316.556L351.934 324.343L349.346 332.042L346.808 339.636L339.499 361.605L337.162 368.598L334.87 375.397L332.621 381.987L330.411 388.351L328.236 394.474L326.089 400.341L323.966 405.939L321.859 411.255L319.762 416.276L317.668 420.991L315.568 425.389L313.454 429.463L311.319 433.202L309.152 436.6L306.946 439.65L304.69 442.348L302.377 444.688L299.997 446.669L297.54 448.289L294.998 449.546L292.362 450.441L289.624 450.976L286.775 451.152L283.808 450.975L280.715 450.449L277.489 449.579L274.124 448.372L270.615 446.837L266.955 444.981L263.14 442.815L259.168 440.348L255.034 437.593L250.737 434.56L246.275 431.263L241.647 427.715L236.855 423.929L231.9 419.92L226.782 415.703L221.507 411.292L216.077 406.703L210.498 401.951L204.776 397.052L186.82 381.633L180.6 376.304L174.28 370.907L167.87 365.455L161.382 359.966L154.828 354.451L148.222 348.927L141.577 343.405L134.909 337.899L128.231 332.421L121.559 326.984L114.909 321.597L108.298 316.27L101.74 311.015L95.2537 305.838L88.855 300.747L70.3535 286.062L64.4737 281.379L58.7652 276.808L53.2439 272.352L47.926 268.013L42.8266 263.791L37.9608 259.686L33.3429 255.698L28.9868 251.823L24.9057 248.06L21.1119 244.405L17.6171 240.855L14.4321 237.404L11.5669 234.047L9.03061 230.777L6.83126 227.589L4.97597 224.476L3.47085 221.429L2.32097 218.441L1.53026 215.503L1.10167 212.608L1.03692 209.747L1.33675 206.91L2.00071 204.09L3.02724 201.276L4.41374 198.461L6.15641 195.635L8.25045 192.79L10.69 189.918L13.4681 187.011L16.5768 184.061L20.0073 181.061L23.7498 178.005L27.7934 174.885L32.1268 171.697L36.7373 168.436L41.6121 165.097L46.7374 161.676L52.0985 158.171L57.6807 154.58L63.4684 150.902L69.4456 147.135L75.5961 143.28L94.9198 131.207L101.595 127.022L108.359 122.765L115.194 118.44L122.084 114.054L129.011 109.615L135.96 105.13L142.913 100.608L149.855 96.0587L156.771 91.4925L163.646 86.9203L170.465 82.3536L177.214 77.8046L183.881 73.286L190.453 68.811L215.57 51.6231L221.509 47.5761L227.295 43.6582L232.922 39.8844L238.384 36.2695L243.677 32.828L248.797 29.5746L253.742 26.5234L258.509 23.6885L263.097 21.0835L267.506 18.7213L271.738 16.6148L275.794 14.776L279.676 13.2162L283.388 11.9464L286.933 10.9764L290.318 10.3155L293.546 9.97207L296.625 9.95363L299.56 10.2667L302.36 10.9168L305.031 11.9086L307.582 13.2457L310.022 14.9304L312.359 16.9643L314.602 19.3476L316.76 22.0796L318.842 25.1583L320.859 28.5808L322.819 32.3429L324.731 36.4395L326.604 40.8642L328.448 45.6097L330.271 50.6675L332.081 56.0282L333.886 61.6815L335.694 67.616L337.511 73.8193L339.345 80.2785L341.201 86.9795L343.084 93.9077L344.999 101.048L346.95 108.383L353.047 131.396L355.166 139.344L357.33 147.4L359.537 155.545L361.786 163.761L364.074 172.029L366.399 180.33L368.756 188.646L371.141 196.958L373.548 205.246L375.971 213.494L378.402 221.683L380.834 229.795L383.258 237.814L385.666 245.723L394.929 275.951L397.099 283.085L399.186 290.024L401.18 296.757L403.068 303.274L404.837 309.564L406.474 315.62L407.968 321.434L409.306 327L410.475 332.311L411.463 337.364L412.257 342.155L412.847 346.682L413.222 350.943L413.369 354.939L413.279 358.669L412.942 362.135L412.349 365.34L411.491 368.287L410.36 370.981L408.95 373.426L407.254 375.63L405.267 377.598L402.984 379.337L400.402 380.857L397.518 382.166L394.331 383.273L390.84 384.187L387.046 384.919L382.95 385.48L378.555 385.88L373.864 386.13L368.882 386.241L363.615 386.225L358.069 386.093L352.252 385.857L346.174 385.527L339.843 385.114L333.27 384.63L326.467 384.085L319.447 383.489L312.223 382.851L281.573 380.068L273.552 379.354L265.421 378.646L257.197 377.95L248.898 377.27L240.544 376.612L232.151 375.977L223.74 375.37L215.328 374.791L206.935 374.241L198.579 373.721L190.279 373.229L182.054 372.765L173.92 372.325L165.897 371.907L135.248 370.359L128.028 369.975L121.013 369.579L114.219 369.161L107.659 368.715L101.343 368.231L95.284 367.7L89.4916 367.113L83.9752 366.458L78.7431 365.727L73.8025 364.909L69.1597 363.993L64.82 362.969L60.7874 361.826L57.0652 360.555L53.6552 359.144L50.5585 357.584L47.775 355.865L45.3036 353.978L43.1421 351.914L41.2875 349.663L39.7357 347.218L38.4816 344.572L37.5194 341.718L36.8422 338.65L36.4426 335.362L36.3121 331.849L36.4418 328.109L36.8218 324.137L37.4419 319.933L38.2912 315.494L39.3583 310.821L40.6314 305.915L42.0984 300.776L43.7468 295.409L45.564 289.816L47.537 284.003L49.653 277.975L51.899 271.739L54.2619 265.302L56.729 258.674L59.2876 251.864L70.192 223.028L73.0276 215.483L75.8853 207.832L78.7551 200.089L81.6279 192.271L84.4949 184.395L87.3482 176.476L90.1804 168.532L92.985 160.581L95.7563 152.641L98.4892 144.729L101.18 136.865L103.824 129.067L106.42 121.353L108.966 113.741L116.299 91.7006L118.644 84.6783L120.943 77.8468L123.198 71.2226L125.414 64.8217L127.595 58.6594L129.745 52.7504L131.872 47.1087L133.981 41.7474L136.079 36.6787L138.173 31.9142L140.272 27.4644L142.383 23.3387L144.514 19.5458L146.675 16.0931L148.875 12.987L151.122 10.233L153.425 7.83518L155.794 5.79676L158.238 4.11974L160.766 2.80499L163.386 1.85233L166.108 1.26039L168.938 1.02666L171.886 1.14768L174.959 1.61884L178.163 2.43444L181.505 3.58792L184.991 5.07158L188.627 6.87692L192.416 8.99444L196.364 11.4139L200.472 14.1242L204.743 17.1135L209.178 20.3693L213.779 23.8785L218.545 27.6274L223.475 31.6018L228.567 35.7871L233.817 40.1682L239.223 44.73L244.778 49.4568L250.478 54.333L274.577 75.0171L280.882 80.4047L287.279 85.8482L293.755 91.3329L300.299 96.8442L306.898 102.368L313.537 107.891L320.203 113.4L326.88 118.883L333.554 124.328L340.208 129.724L346.827 135.061L353.395 140.328L359.893 145.518L366.307 150.623L384.87 165.357L390.776 170.058L396.513 174.647L402.065 179.121L407.416 183.478L412.551 187.719L417.455 191.842L422.114 195.85L426.512 199.742L430.638 203.523L434.478 207.194L438.022 210.761L441.257 214.228L444.173 217.6L446.763 220.882L449.016 224.083L450.927 227.208L452.488 230.265L453.695 233.262L454.543 236.207L455.029 239.108L455.152 241.974L454.91 244.814L454.304 247.637L453.335 250.451L452.006 253.265L450.32 256.089L448.281 258.93L445.896 261.797L443.172 264.698L440.115 267.641L436.735 270.632L433.042 273.679L429.045 276.788L424.757 279.965L420.19 283.215L415.356 286.541L410.27 289.948L404.945 293.439L399.397 297.017L393.641 300.681L387.693 304.434L381.569 308.275L362.309 320.309L355.649 324.481L348.898 328.727L342.073 333.042L335.191 337.418L328.269 341.85L321.322 346.328L314.369 350.845L307.424 355.39L300.503 359.954L293.62 364.526L286.792 369.095L280.03 373.647L273.349 378.172L266.762 382.655L260.279 387.082L241.564 399.896L235.602 403.962L229.791 407.902L224.138 411.7L218.649 415.341L213.329 418.811L208.181 422.095L203.209 425.179L198.413 428.05L193.797 430.692L189.359 433.094L185.099 435.242L181.015 437.124L177.106 438.729L173.367 440.046L169.795 441.064L166.386 441.775L163.133 442.17L160.031 442.24L157.073 441.98L154.252 441.384L151.561 440.447L148.991 439.165L146.534 437.536L144.182 435.558L141.924 433.23L139.753 430.554L137.659 427.53L135.633 424.162L133.665 420.454L131.746 416.41L129.867 412.037L128.019 407.342L126.193 402.333L124.382 397.02L122.576 391.413L120.769 385.522L118.954 379.361L117.123 372.942L115.271 366.278L113.393 359.385L111.483 352.278L109.538 344.972L103.461 322.033L101.349 314.104L99.1924 306.065L96.9923 297.932L94.7499 289.726L92.4676 281.465L90.1482 273.168L87.7958 264.853L85.4149 256.54L83.0111 248.246L80.5906 239.991L78.1603 231.792L75.7278 223.666L73.3016 215.631L70.8906 207.703L61.5978 177.377L59.4165 170.213L57.315 163.242L55.3054 156.476L53.4001 149.924L51.6114 143.597L49.9519 137.503L48.4343 131.65L47.071 126.045L45.8744 120.692L44.857 115.598L44.0307 110.765L43.4072 106.196L42.9979 101.892L42.8138 97.8546L42.8654 94.0825L43.1624 90.5745L43.7142 87.3281L44.5296 84.3401L45.6162 81.6062L46.9815 79.1215L48.6316 76.88L50.5721 74.875L52.8076 73.0994L55.3417 71.5451L58.1772 70.2034L61.3158 69.0652L64.7582 68.1209L68.5041 67.3603L72.5522 66.7731L76.9001 66.3484L81.5442 66.0753L86.4802 65.9426L91.7025 65.939L97.2044 66.0532L102.978 66.2738L109.016 66.5897L115.307 66.9898L121.842 67.4633L128.609 67.9995L135.596 68.5883L142.788 69.2198L150.174 69.8846L173.335 71.9926L181.337 72.7073L189.452 73.4168L197.663 74.1152L205.951 74.7976L214.297 75.4597L222.685 76.0981L231.095 76.71L239.507 77.2937L247.905 77.8481L256.268 78.3731L264.578 78.8692L272.817 79.3379L280.966 79.7814L289.008 80.2029L319.758 81.755L327.011 82.1378L334.059 82.5319L340.889 82.9453L347.487 83.3862L353.843 83.8635L359.943 84.3863L365.779 84.9643L371.34 85.6073L376.618 86.3255L381.605 87.1293L386.296 88.0289L390.684 89.035L394.766 90.1579L398.538 91.4082L401.997 92.796L405.144 94.3316L407.977 96.0245L410.498 97.8844L412.709 99.9202L414.612 102.141L416.212 104.554L417.513 107.167L418.521 109.988L419.244 113.022L419.687 116.274L419.86 119.751L419.771 123.455L419.43 127.389L418.847 131.557L418.034 135.958L417.001 140.594L415.759 145.463L414.323 150.565L412.702 155.896L410.911 161.453L408.962 167.232L406.868 173.226L404.642 179.429L402.297 185.835L399.845 192.433L397.3 199.214L386.432 227.956L383.601 235.483L380.746 243.118L377.877 250.847L375.004 258.654L372.136 266.522L369.28 274.436L366.444 282.377L363.634 290.328L360.857 298.271L358.118 306.188L355.421 314.061L352.769 321.871L350.165 329.6L347.611 337.229L337.901 366.39L335.595 373.253L333.333 379.912L331.111 386.349L328.925 392.551L326.77 398.501L324.64 404.186L322.529 409.593L320.43 414.709L318.335 419.523L316.238 424.023L314.13 428.201L312.002 432.047L309.846 435.555L307.653 438.716L305.415 441.527L303.121 443.982L300.763 446.078L298.331 447.812L295.817 449.185L293.212 450.195L290.508 450.844L287.695 451.135L284.766 451.07L281.714 450.654L278.532 449.893L275.212 448.793L271.749 447.361L268.137 445.607L264.372 443.538L260.451 441.166L256.368 438.501L252.123 435.556L247.714 432.341L243.139 428.872L238.4 425.16L233.496 421.22L228.43 417.068L223.204 412.717L217.823 408.183L212.291 403.481L206.614 398.628L182.593 378.01L176.303 372.632L169.921 367.197L163.456 361.718L156.922 356.21L150.331 350.687L143.697 345.163L137.035 339.65L130.358 334.162L123.683 328.711L117.024 323.306L110.399 317.96L103.822 312.681L97.3112 307.478L90.8827 302.359L72.2597 287.576L66.3288 282.858L60.5639 278.251L54.9813 273.759L49.5969 269.383L44.4262 265.123L39.4845 260.981L34.7861 256.956L30.3452 253.045L26.1751 249.247L22.2884 245.558L18.6972 241.975L15.4124 238.493L12.4443 235.106L9.80231 231.81L7.49478 228.596L5.52921 225.46L3.91195 222.393L2.64842 219.387L1.74294 216.434L1.19874 213.527L1.018 210.655L1.20168 207.812L1.74977 204.987L2.66105 202.172L3.93323 199.358L5.56292 196.537L7.54564 193.699L9.87582 190.836L12.5469 187.941L15.5512 185.006L18.8803 182.023L22.5245 178.985L26.4734 175.886L30.7158 172.72L35.2394 169.483L40.0315 166.169L45.0785 162.775L50.3661 159.297L55.8796 155.734L61.6035 152.083L67.5221 148.344L73.6192 144.518L99.4584 128.363L106.196 124.129L113.01 119.825L119.884 115.458L126.802 111.034L133.745 106.563L140.699 102.052L147.646 97.5101L154.572 92.9482L161.461 88.3767L168.3 83.8069L175.073 79.2509L181.767 74.7213L188.371 70.2309L194.871 65.7932L213.648 52.937L219.633 48.8519L225.469 44.8912L231.147 41.0699L236.662 37.4028L242.01 33.9045L247.185 30.5896L252.186 27.4725L257.01 24.5672L261.655 21.8875L266.121 19.4466L270.409 17.2573L274.521 15.3319L278.458 13.6821L282.224 12.3188L285.822 11.2522L289.257 10.4919L292.534 10.0465L295.66 9.9238L298.64 10.1306L301.482 10.6728L304.194 11.5554L306.782 12.7821L309.257 14.3559L311.625 16.2785L313.897 18.5506L316.081 21.1716L318.187 24.1402L320.223 27.4536L322.2 31.108L324.126 35.0987L326.011 39.4196L327.863 44.0638L329.692 49.023L331.505 54.2884L333.311 59.8497L335.117 65.6959L336.931 71.815L338.759 78.1941L340.607 84.8196L342.481 91.6771L344.386 98.7514L346.325 106.027L352.382 128.89L354.487 136.8L356.636 144.823L358.829 152.942L361.065 161.137L363.341 169.391L365.655 177.684L368.002 185.997L370.379 194.312L372.78 202.61L375.198 210.872L377.627 219.082L380.06 227.22L382.488 235.271L384.902 243.217L387.292 251.042L394.223 273.64L396.416 280.833L398.531 287.836L400.556 294.636L402.479 301.222L404.287 307.586L405.968 313.717L407.509 319.609L408.898 325.254L410.121 330.647L411.168 335.783L412.026 340.658L412.682 345.269L413.126 349.615L413.347 353.695L413.334 357.509L413.077 361.059L412.566 364.347L411.793 367.376L410.75 370.15L409.43 372.674L407.825 374.954L405.931 376.996L403.743 378.808L401.257 380.397L398.469 381.772L395.379 382.942L391.985 383.916L388.288 384.705L384.287 385.319L379.987 385.769L375.39 386.066L370.5 386.22L365.323 386.243L359.865 386.147L354.134 385.943L348.138 385.641L341.886 385.254L335.389 384.791L328.658 384.264L321.706 383.683L314.545 383.058L307.189 382.398L284.102 380.296L276.12 379.581L268.022 378.87L259.825 378.17L251.549 377.485L243.21 376.819L234.828 376.177L226.42 375.56L218.007 374.972L209.606 374.413L201.236 373.883L192.916 373.383L184.665 372.91L176.5 372.462L168.44 372.038L137.59 370.48L130.306 370.099L123.224 369.707L116.359 369.297L109.722 368.861L103.327 368.39L97.1855 367.875L91.3071 367.307L85.7019 366.675L80.3783 365.969L75.3442 365.18L70.6059 364.296L66.1692 363.308L62.0384 362.204L58.217 360.975L54.7074 359.609L51.5109 358.098L48.6277 356.431L46.057 354.598L43.7971 352.591L41.8452 350.4L40.1974 348.019L38.8491 345.437L37.7946 342.65L37.0274 339.651L36.5403 336.433L36.325 332.993L36.3728 329.325L36.6742 325.428L37.219 321.298L37.9965 316.934L38.9954 312.335L40.2043 307.503L41.6108 302.438L43.2028 297.143L44.9676 291.622L46.8925 285.878L48.9643 279.918L51.1703 273.747L53.4973 267.374L55.9327 260.806L58.4635 254.052L61.0772 247.124L69.2951 225.406L72.1215 217.898L74.9732 210.279L77.8403 202.564L80.7131 194.769L83.5828 186.909L86.4413 179.002L89.2809 171.064L92.095 163.113L94.8774 155.168L97.6231 147.245L100.327 139.364L102.987 131.543L105.599 123.8L108.161 116.153L117.902 86.8952L120.215 80.0011L122.484 73.3091L124.712 66.8354L126.903 60.5955L129.063 54.6043L131.197 48.8759L133.311 43.4239L135.411 38.2608L137.506 33.3982L139.602 28.8471L141.708 24.6172L143.832 20.7174L145.983 17.1556L148.169 13.9384L150.4 11.0717L152.685 8.56006L155.032 6.40691L157.451 4.61459L159.951 3.18444L162.541 2.11654L165.229 1.40992L168.024 1.06243L170.934 1.07093L173.966 1.43109L177.127 2.13767L180.425 3.18428L183.865 4.56366L187.452 6.26751L191.192 8.28667L195.089 10.6111L199.145 13.23L203.364 16.1318L207.748 19.3041L212.296 22.7341L217.009 26.4081L221.887 30.3123L226.927 34.432L232.128 38.7524L237.484 43.2582L242.993 47.9342L248.647 52.7646L272.59 73.3152L278.863 78.6818L285.232 84.1091L291.684 89.5823L298.208 95.0867L304.791 100.608L311.419 106.133L318.078 111.648L324.753 117.14L331.43 122.599L338.092 128.011L344.724 133.368L351.309 138.658L357.832 143.874L364.274 149.007L388.912 168.573L394.704 173.197L400.317 177.708L405.734 182.103L410.94 186.381L415.919 190.542L420.657 194.586L425.14 198.515L429.354 202.33L433.287 206.036L436.926 209.636L440.26 213.134L443.279 216.535L445.974 219.846L448.335 223.072L450.356 226.22L452.029 229.298L453.349 232.313L454.312 235.274L454.914 238.188L455.152 241.064L455.027 243.912L454.537 246.739L453.683 249.555L452.468 252.368L450.895 255.188L448.968 258.022L446.693 260.88L444.076 263.77L441.124 266.698L437.846 269.674L434.251 272.702L430.35 275.791L426.154 278.946L421.674 282.171L416.924 285.473L411.917 288.854L406.666 292.318L401.188 295.868L395.496 299.504L389.608 303.229L383.538 307.042L357.781 323.144L351.058 327.367L344.254 331.66L337.389 336.018L330.477 340.432L323.537 344.897L316.584 349.402L309.634 353.94L302.704 358.499L295.807 363.07L288.96 367.641L282.176 372.2L275.468 376.734L268.849 381.232L262.332 385.679L243.494 398.577L237.485 402.68L231.625 406.662L225.921 410.506L220.38 414.199L215.005 417.725L209.802 421.07L204.773 424.22L199.922 427.16L195.248 429.876L190.753 432.356L186.437 434.586L182.297 436.554L178.332 438.249L174.54 439.658L170.915 440.773L167.454 441.583L164.152 442.079L161.003 442.253L158 442.099L155.136 441.611L152.405 440.783L149.797 439.611L147.305 438.093L144.92 436.226L142.634 434.009L140.436 431.444L138.319 428.531L136.272 425.272L134.286 421.671L132.352 417.734L130.462 413.465L128.605 408.872L126.773 403.962L124.958 398.745L123.151 393.23L121.346 387.429L119.533 381.352L117.708 375.014L115.864 368.426L113.994 361.605L112.095 354.564L110.161 347.32L102.026 316.643L99.8841 308.636L97.6978 300.532L95.4687 292.347L93.1988 284.101L90.8908 275.814L88.5484 267.502L86.1761 259.187L83.7789 250.885L81.363 242.615L78.935 234.396L76.5024 226.245L74.0732 218.179L71.6564 210.216L69.2612 202.371L62.3074 179.698L60.1032 172.475L57.975 165.441L55.9348 158.608L53.9949 151.987L52.1677 145.587L50.4657 139.418L48.9015 133.488L47.4877 127.803L46.2367 122.369L45.1609 117.192L44.2724 112.276L43.5831 107.622L43.1044 103.234L42.8474 99.1119L42.8228 95.2553L43.0405 91.6634L43.5103 88.334L44.2408 85.2641L45.2402 82.4498L46.516 79.8863L48.0747 77.568L49.9222 75.4884L52.0633 73.6406L54.502 72.0167L57.2412 70.6082L60.2831 69.4062L63.6288 68.4012L67.2781 67.5833L71.2301 66.942L75.4828 66.4667L80.033 66.1465L84.8766 65.9703L90.0084 65.9268L95.422 66.0047L101.11 66.1926L107.065 66.4794L113.277 66.8539L119.735 67.3051L126.429 67.8225L133.347 68.3957L140.476 69.0146L147.801 69.6698L170.813 71.7649L178.775 72.48L186.856 73.1918L195.038 73.8943L203.303 74.5823L211.633 75.2512L220.01 75.8975L228.415 76.5181L236.828 77.1109L245.233 77.6747L253.609 78.209L261.938 78.7142L270.201 79.1914L278.381 79.6427L286.459 80.0708L294.418 80.4793L317.408 81.6343L324.722 82.015L331.837 82.4046L338.738 82.811L345.411 83.2422L351.845 83.7069L358.028 84.2142L363.95 84.7736L369.599 85.3948L374.968 86.088L380.049 86.8633L384.834 87.7313L389.319 88.7023L393.499 89.7869L397.37 90.9955L400.929 92.3384L404.176 93.8258L407.109 95.4676L409.729 97.2733L412.038 99.2521L414.039 101.413L415.735 103.764L417.131 106.313L418.232 109.066L419.044 112.032L419.575 115.214L419.833 118.619L419.827 122.25L419.565 126.111L419.058 130.204L418.317 134.531L417.353 139.092L416.177 143.887L414.801 148.915L413.237 154.173L411.499 159.659L409.599 165.367L407.55 171.294L405.364 177.431L403.056 183.773L400.637 190.31L398.12 197.035L395.519 203.936L387.327 225.584L384.505 233.073L381.657 240.675L378.792 248.376L375.919 256.16L373.048 264.01L370.188 271.911L367.345 279.845L364.526 287.795L361.738 295.743L358.986 303.67L356.275 311.559L353.608 319.391L350.989 327.148L348.419 334.811L338.645 364.164L336.325 371.089L334.049 377.814L331.815 384.324L329.618 390.602L327.454 396.634L325.316 402.405L323.2 407.902L321.097 413.112L319.002 418.023L316.907 422.624L314.803 426.906L312.682 430.859L310.536 434.475L308.356 437.747L306.133 440.67L303.858 443.239L301.521 445.449L299.114 447.299L296.628 448.787L294.053 449.912L291.381 450.676L288.603 451.081L285.712 451.129L282.7 450.824L279.56 450.173L276.284 449.18L272.868 447.853L269.304 446.2L265.588 444.23L261.717 441.954L257.686 439.381L253.493 436.524L249.136 433.393L244.614 430.004L239.927 426.368L235.076 422.499L230.061 418.413L224.886 414.123L219.554 409.646L214.069 404.996L208.438 400.189L202.665 395.241L184.575 379.708L178.317 374.352L171.963 368.933L165.523 363.467L159.01 357.966L152.436 352.447L145.814 346.921L139.159 341.404L132.485 335.907L125.808 330.443L119.142 325.022L112.505 319.656L105.911 314.354L99.3769 309.126L92.9204 303.98L68.2008 284.349L62.3812 279.707L56.7388 275.177L51.2895 270.764L46.0491 266.467L41.0328 262.288L36.2554 258.225L31.731 254.278L27.4732 250.445L23.4949 246.721L19.8083 243.105L16.4248 239.591L13.3548 236.175L10.6079 232.85L8.19303 229.611L6.11778 226.451L4.38893 223.362L3.01223 220.338L1.99228 217.369L1.33273 214.448L1.03604 211.567L1.1036 208.715L1.5357 205.885L2.33148 203.068L3.48901 200.255L5.00528 197.437L6.87607 194.605L9.09625 191.751L11.6595 188.868L14.5586 185.946L17.7852 182.978L21.3301 179.959L25.1831 176.88L29.3333 173.736L33.7687 170.522L38.4768 167.233L43.4441 163.865L48.6566 160.414L54.0998 156.878L59.7583 153.255L65.6167 149.545L71.6587 145.746L97.3312 129.697L104.041 125.485L110.832 121.203L117.689 116.855L124.595 112.449L131.532 107.992L138.484 103.492L145.435 98.9595L152.369 94.4029L159.272 89.8332L166.128 85.2616L172.923 80.6999L179.644 76.1605L186.278 71.6561L192.812 67.2002L211.711 54.2621L217.743 50.1403L223.627 46.1384L229.356 42.2711L234.923 38.5533L240.325 34.9996L245.556 31.6247L250.612 28.4431L255.492 25.4688L260.194 22.7158L264.718 20.1974L269.063 17.9266L273.23 15.9159L277.223 14.177L281.042 12.7213L284.693 11.5591L288.18 10.7003L291.507 10.1537L294.68 9.92743L297.706 10.0286L300.592 10.4634L303.344 11.2371L305.971 12.3538L308.48 13.8168L310.882 15.6282L313.183 17.7889L315.394 20.2989L317.524 23.157L319.581 26.3609L321.576 29.9072L323.517 33.7914L325.415 38.0078L327.276 42.5498L329.111 47.4097L330.929 52.5786L332.736 58.0468L334.541 63.8035L336.352 69.837L338.175 76.1347L340.016 82.6833L341.881 89.4686L343.775 96.4755L345.703 103.688L353.811 134.267L355.947 142.256L358.126 150.346L360.348 158.52L362.612 166.757L364.914 175.039L367.251 183.348L369.619 191.664L372.013 199.969L374.426 208.245L376.853 216.474L379.285 224.637L381.715 232.717L384.135 240.698L386.534 248.563L393.51 271.31L395.725 278.562L397.866 285.627L399.921 292.492L401.878 299.148L403.724 305.584L405.447 311.79L407.034 317.759L408.473 323.483L409.75 328.957L410.855 334.175L411.774 339.133L412.496 343.829L413.009 348.259L413.302 352.424L413.364 356.323L413.186 359.957L412.757 363.328L412.068 366.439L411.112 369.294L409.881 371.897L408.368 374.254L406.566 376.371L404.472 378.255L402.081 379.914L399.39 381.356L396.396 382.591L393.099 383.626L389.498 384.473L385.594 385.142L381.389 385.643L376.886 385.987L372.089 386.186L367.003 386.249L361.634 386.19L355.989 386.019L350.076 385.747L343.904 385.386L337.484 384.946L330.827 384.439L323.944 383.874L316.848 383.261L309.553 382.611L278.676 379.809L270.613 379.096L262.446 378.392L254.193 377.701L245.872 377.029L237.501 376.379L229.1 375.754L220.686 375.156L212.279 374.588L203.897 374.049L195.56 373.539L187.284 373.058L179.09 372.602L170.995 372.171L163.016 371.759L139.95 370.601L132.605 370.221L125.457 369.833L118.521 369.43L111.811 369.003L105.338 368.544L99.1138 368.045L93.1504 367.494L87.4571 366.883L82.043 366.202L76.9159 365.441L72.0827 364.588L67.5494 363.634L63.3207 362.569L59.4005 361.38L55.7914 360.06L52.4951 358.596L49.5121 356.979L46.842 355.2L44.4834 353.25L42.4337 351.119L40.6895 348.798L39.2464 346.282L38.0989 343.561L37.241 340.63L36.6655 337.482L36.3646 334.113L36.3296 330.518L36.5513 326.694L37.0197 322.638L37.7242 318.349L38.6539 313.825L39.7971 309.067L41.1421 304.076L42.6764 298.854L44.3875 293.405L46.2627 287.731L48.2892 281.839L50.4538 275.735L52.7438 269.425L55.146 262.918L57.6477 256.223L60.2364 249.35L68.4019 227.772L71.2179 220.303L74.0627 212.717L76.9259 205.031L79.7979 197.26L82.6696 189.419L85.5325 181.524L88.3789 173.595L91.2018 165.646L93.9949 157.697L96.7528 149.765L99.4707 141.869L102.145 134.026L104.772 126.256L107.35 118.577L109.878 111.007L117.156 89.1309L119.484 82.1759L121.766 75.4178L124.007 68.8728L126.209 62.5568L128.378 56.4848L130.52 50.6712L132.639 45.1298L134.743 39.8733L136.839 34.9138L138.934 30.2623L141.036 25.9291L143.153 21.9233L145.295 18.253L147.469 14.9254L149.684 11.9465L151.951 9.32136L154.277 7.0537L156.672 5.14623L159.146 3.60067L161.706 2.41746L164.362 1.5959L167.122 1.13431L169.994 1.02982L172.986 1.2785L176.106 1.87538L179.359 2.81442L182.753 4.08865L186.293 5.6901L189.984 7.60987L193.831 9.83823L197.836 12.3646L202.003 15.1775L206.333 18.265L210.829 21.6144L215.49 25.2122L220.316 29.0446L225.304 33.0972L230.454 37.3553L235.761 41.8038L241.222 46.4273L246.831 51.2101L252.582 56.1367L270.613 71.621L276.854 76.965L283.194 82.3747L289.621 87.8349L296.123 93.3308L302.689 98.8483L309.303 104.373L315.954 109.893L322.626 115.394L329.304 120.864L335.972 126.293L342.616 131.668L349.218 136.981L355.762 142.221L362.232 147.381L387.032 167.076L392.878 171.736L398.55 176.284L404.031 180.716L409.306 185.031L414.359 189.229L419.175 193.31L423.741 197.276L428.042 201.127L432.066 204.868L435.799 208.501L439.232 212.031L442.353 215.462L445.151 218.801L447.62 222.053L449.75 225.225L451.534 228.325L452.967 231.359L454.044 234.336L454.761 237.264L455.116 240.152L455.106 243.007L454.732 245.84L453.994 248.658L452.894 251.472L451.435 254.288L449.62 257.117L447.455 259.967L444.946 262.846L442.1 265.761L438.925 268.72L435.43 271.731L431.626 274.8L427.522 277.933L423.131 281.136L418.466 284.413L413.539 287.768L408.364 291.206L402.957 294.728L397.331 298.337L391.504 302.033L385.49 305.818L379.306 309.69L359.903 321.814L353.209 326.014L346.429 330.285L339.581 334.623L332.682 339.021L325.749 343.47L318.799 347.963L311.846 352.491L304.908 357.045L297.999 361.613L291.135 366.185L284.329 370.749L277.596 375.293L270.947 379.804L264.396 384.269L239.383 401.386L233.475 405.408L227.721 409.297L222.127 413.04L216.699 416.621L211.441 420.025L206.356 423.238L201.448 426.247L196.717 429.036L192.166 431.593L187.792 433.904L183.597 435.957L179.576 437.739L175.729 439.241L172.052 440.451L168.539 441.358L165.187 441.955L161.99 442.233L158.941 442.184L156.034 441.803L153.261 441.084L150.615 440.022L148.087 438.614L145.669 436.858L143.352 434.753L141.127 432.299L138.985 429.496L136.917 426.347L134.912 422.855L132.963 419.024L131.06 414.86L129.193 410.37L127.354 405.56L125.535 400.44L123.726 395.018L121.921 389.307L120.112 383.317L118.291 377.06L116.454 370.551L114.593 363.802L112.703 356.829L110.781 349.648L102.699 319.169L100.571 311.198L98.3989 303.123L96.1833 294.962L93.9261 286.733L91.6299 278.457L89.298 270.151L86.9347 261.835L84.5448 253.527L82.1342 245.245L79.7093 237.008L77.2773 228.833L74.8461 220.738L72.4243 212.74L70.0212 204.856L63.0236 182.036L60.7976 174.756L58.6439 167.66L56.5744 160.762L54.6012 154.072L52.7367 147.601L50.9935 141.358L49.384 135.35L47.921 129.587L46.6168 124.072L45.4839 118.813L44.5344 113.813L43.7803 109.076L43.2333 104.603L42.9045 100.396L42.8047 96.4549L42.9442 92.7789L43.3327 89.3662L43.9793 86.214L44.8922 83.3188L46.0792 80.6759L47.5471 78.2802L49.3021 76.1253L51.3492 74.2045L53.6926 72.5101L56.3359 71.034L59.2813 69.7673L62.5301 68.7006L66.0827 67.8242L69.9385 67.1277L74.0958 66.6008L78.5516 66.2324L83.3022 66.0115L88.3428 65.927L93.6674 65.9674L99.269 66.1215L105.14 66.378L111.271 66.7258L117.652 67.1537L124.272 67.6512L131.12 68.2077L138.183 68.8131L145.447 69.4577L176.225 72.2523L184.271 72.9658L192.422 73.6718L200.663 74.365L208.974 75.0404L217.338 75.6943L225.736 76.3233L234.148 76.9252L242.558 77.4983L250.945 78.042L259.291 78.5564L267.577 79.0423L275.786 79.5016L283.898 79.9368L291.897 80.3511L315.038 81.5138L322.413 81.8931L329.593 82.2791L336.563 82.6793L343.311 83.1016L349.823 83.5547L356.087 84.0474L362.092 84.5892L367.829 85.1897L373.289 85.8588L378.462 86.6068L383.342 87.4441L387.924 88.3812L392.201 89.4284L396.171 90.5964L399.83 91.8954L403.176 93.3357L406.209 94.9273L408.928 96.6797L411.336 98.6024L413.435 100.704L415.228 102.994" stroke="#f0f0f0" stroke-width="2" />
+<defs>
+<linearGradient id="spet-gradient" x1="-389.72" y1="-96.9252" x2="518.041" y2="462.711" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C2C2C4" />
+<stop offset="0.654535" stop-color="#F4F4F6" />
+<stop offset="0.848958" stop-color="white" />
+</linearGradient>
+</defs>
+</symbol>
+<symbol id="loop-arrow" width="454" height="637" viewBox="0 0 454 637" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="arrow-path" d="M1.22647 0.0813545C0.950605 0.0690201 0.716972 0.282655 0.704638 0.558522C0.692303 0.834389 0.905938 1.06802 1.18181 1.08036L1.22647 0.0813545ZM192.303 576.128C192.19 576.38 192.304 576.675 192.556 576.788L196.667 578.619C196.919 578.731 197.214 578.617 197.327 578.365C197.439 578.113 197.326 577.817 197.073 577.705L193.419 576.078L195.047 572.424C195.159 572.171 195.046 571.876 194.794 571.763C194.541 571.651 194.246 571.765 194.133 572.017L192.303 576.128ZM1.18181 1.08036C70.4135 4.17582 119.257 25.7352 153.018 55.8863C186.785 86.0419 205.502 124.826 214.417 162.427C223.333 200.032 222.438 236.428 217.006 261.769C214.288 274.449 210.444 284.313 206.162 290.179C204.02 293.113 201.803 294.999 199.609 295.774C197.446 296.538 195.248 296.244 193.048 294.692L192.471 295.51C194.913 297.232 197.448 297.598 199.942 296.717C202.404 295.847 204.769 293.782 206.97 290.768C211.373 284.737 215.254 274.714 217.984 261.979C223.448 236.49 224.34 199.944 215.39 162.196C206.439 124.444 187.636 85.4618 153.684 55.1405C119.728 24.8147 70.6544 3.18559 1.22647 0.0813545L1.18181 1.08036ZM193.048 294.692C188.525 291.503 186.289 287.319 185.939 282.537C185.588 277.733 187.139 272.28 190.29 266.591C196.591 255.214 209.206 243.046 225.211 233.531C257.231 214.497 302.543 206.23 337.566 235.85L338.212 235.087C302.725 205.074 256.903 213.529 224.7 232.672C208.594 242.246 195.827 254.53 189.415 266.107C186.209 271.895 184.572 277.545 184.942 282.61C185.314 287.698 187.709 292.152 192.471 295.51L193.048 294.692ZM337.566 235.85C372.614 265.491 387.168 330.967 367.512 398.873C347.869 466.731 294.073 536.919 192.58 575.864L192.938 576.798C294.718 537.742 348.741 467.315 368.473 399.151C388.191 331.033 373.674 265.078 338.212 235.087L337.566 235.85Z" stroke="#F3F3F5" stroke-width="2" fill="#C2C2C4" stroke-dasharray="2175.6025390625 4375.6025390625" />
+
+</symbol>
+</svg>

@@ -1,0 +1,1453 @@
+
+
+
+
+	<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.purrweb.com/mvp-calculator/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Nov 2023 18:02:14 GMT -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>MVP Calculator | Purrweb</title>
+<meta name="description" content="Calculate the estimated costs of MVP and make your idea become true. If you want to know an accurate calculation, contact our managers.">
+<meta name="google-site-verification" content="YgG-iu_ngX9WM8Ulia3B7gYVqrEBLf9-GQ22HbQ7Jiw">
+<meta name="yandex-verification" content="4057b113a73e6486">
+<meta name="facebook-domain-verification" content="0cpowng2vyna7cecrsh180pvpcll09">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MVP Calculator | Purrweb">
+<meta property="og:description" content="Calculate the estimated costs of MVP and make your idea become true. If you want to know an accurate calculation, contact our managers.">
+<meta property="og:image" content="../images/og-image.png">
+<meta property="og:site_name" content="Purrweb">
+<meta property="og:url" content="index.html">
+<meta name="twitter:title" content="MVP Calculator | Purrweb">
+<meta name="twitter:description" content="Calculate the estimated costs of MVP and make your idea become true. If you want to know an accurate calculation, contact our managers.">
+<meta name="twitter:image:src" content="../images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@purrweb">
+<meta name="twitter:creator" content="@purrweb">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5c3bfe">
+<link rel="canonical" href="index.html">
+<meta name="msapplication-TileColor" content="#5c3bfe">
+<meta name="theme-color" content="#ffffff">
+<link rel="alternate" hreflang="ru" href="ru/index.html">
+<link rel="alternate" hreflang="en" href="index.html">
+
+
+
+
+<meta name="google-site-verification" content="iAswyHNCt6kecOwxsuLaxgVNXaFS1GEwMiCJajfQ4dI">
+
+<link href="../common.4d9224ab871b2d75ac93.css" rel="stylesheet"><link href="../mvp-calculator.4d9224ab871b2d75ac93.css" rel="stylesheet"></head>
+<body class="js-disable-transition">
+<aside class="cookie hide-cookie" id="pjAcceptCookieBar">
+<div class="container pjAcceptCookieBarShell">
+<form action="#" method="post" class="cookie__inner">
+<p class="cookie__text">
+We use cookies to boost your experience on our website and ensure it functions properly. It also
+helps us with analytics — is that OK, isn’t it? :)
+</p>
+<div class="pjAcceptCookieBarActions">
+<button type="button" class="pjAcceptCookieBarBtn cookie__btn">
+Sure! I’m fine with it
+</button>
+</div>
+</form>
+</div>
+</aside>
+<header class="header js-header">
+<div class="container">
+<nav class="header__inner">
+<a class="header__logo" href="/">
+<svg xmlns="http://www.w3.org/2000/svg" width="164" height="30" fill="none" viewbox="0 0 164 30">
+<path fill="#fff" d="M43.688 3.025H34.79v23.728h5.373v-7.458h3.526c4.634 0 8.227-3.626 8.227-8.135 0-4.508-3.593-8.135-8.227-8.135zm0 11.186h-3.526V8.11h3.526c1.646 0 2.854 1.322 2.854 3.05 0 1.73-1.208 3.051-2.854 3.051zM65.612 9.805v9.253c0 2.407-1.277 3.491-3.124 3.491-1.611 0-2.921-.982-2.921-3.084v-9.66H54.53V20.21c0 4.576 2.888 7.016 6.28 7.016 2.216 0 3.895-.813 4.802-2.068v1.594h5.037V9.805h-5.037zM79.716 12.821V9.805h-5.037v16.947h5.037v-7.66c0-3.356 2.955-4.203 5.037-3.864V9.466c-2.115 0-4.365 1.084-5.037 3.355zM92.48 12.821V9.805h-5.036v16.947h5.037v-7.66c0-3.356 2.955-4.203 5.037-3.864V9.466c-2.116 0-4.366 1.084-5.037 3.355zM118.678 9.805l-2.418 9.084-2.619-9.084h-4.701l-2.62 9.084-2.418-9.084h-5.373l5.373 16.947h4.702l2.686-9.05 2.687 9.05h4.701l5.373-16.947h-5.373zM130.23 20.312h11.921a9.894 9.894 0 0 0 .202-2.033c0-5.119-3.627-8.949-8.53-8.949-5.306 0-8.932 3.898-8.932 8.949 0 5.05 3.559 8.948 9.302 8.948 3.19 0 5.675-1.186 7.32-3.491l-4.029-2.339c-.672.746-1.847 1.288-3.224 1.288-1.847 0-3.392-.61-4.03-2.373zm-.101-3.796c.471-1.729 1.747-2.678 3.661-2.678 1.511 0 3.022.712 3.559 2.678h-7.22zM155.587 9.33c-2.25 0-3.896.78-5.004 2.068V3.025h-5.037v23.728h5.037v-1.594c1.108 1.289 2.754 2.068 5.004 2.068 4.399 0 8.026-3.898 8.026-8.948 0-5.05-3.627-8.949-8.026-8.949zm-1.008 13.084c-2.317 0-3.996-1.593-3.996-4.135 0-2.543 1.679-4.136 3.996-4.136s3.996 1.593 3.996 4.136c0 2.542-1.679 4.135-3.996 4.135zM16.049 30L29.497 0h-4.955L11.094 30h4.955zM4.887 30L18.15 0h-4.887L0 30h4.887z" />
+</svg>
+<span class="visually-hidden">Purrweb logo</span>
+</a>
+
+<ul class="header__list js-menu">
+<li class="header__item header__item-portfolio">
+<a class="header__item-link" href="../portfolio/index.html" onclick="ym(52342033, 'reachGoal', 'CLK_PROJECTS'); return true;">
+Projects
+</a>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Technologies
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__dropmenu-inner">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--technologies">
+
+<a href="../services/react-native/index.html" class="header__dropmenu-ref">
+React Native
+</a>
+<a href="../services/react-js/index.html" class="header__dropmenu-ref">
+React.js
+</a>
+<a href="../services/electron/index.html" class="header__dropmenu-ref">
+Electron.js
+</a>
+<a href="../services/webrtc/index.html" class="header__dropmenu-ref">
+WebRTC
+</a>
+<a href="../services/progressive-web-app/index.html" class="header__dropmenu-ref">
+PWA
+</a>
+<a href="../services/react-native-game-development/index.html" class="header__dropmenu-ref">
+Mobile Games
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="header__divider"></div>
+<a href="../technologies/index.html" class="header__dropmenu-main-ref">
+Tech Stack
+</a>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Services
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu header__dropmenu--services" id="dropdown2">
+<div class="header__dropmenu-inner">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Development
+</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--dev">
+<a href="../services/mobile-development/index.html" class="header__dropmenu-ref">
+Mobile App Development
+</a>
+<a href="../services/web-development-services/index.html" class="header__dropmenu-ref">
+Web Development
+</a>
+<a href="../services/ux-audit/index.html" class="header__dropmenu-ref">
+UX Audit
+</a>
+
+
+
+
+
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--dev2">
+
+
+
+<a href="../services/software-development-for-startups/index.html" class="header__dropmenu-ref">
+Software Development for Startups
+</a>
+<a href="../services/crossplatform/index.html" class="header__dropmenu-ref">
+Cross-Platform Development
+</a>
+<a href="../services/mvp/index.html" class="header__dropmenu-ref">
+MVP
+</a>
+
+
+
+</div>
+</div>
+</div>
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Design</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--design">
+<a href="../services/ui-ux/index.html" class="header__dropmenu-ref">
+UI/UX
+</a>
+
+
+
+
+</div>
+</div>
+</div>
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Management
+</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--management">
+
+<a href="../services/project-management-consulting-company/index.html" class="header__dropmenu-ref">
+Project Management
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="header__divider"></div>
+<a href="../services/index.html" class="header__dropmenu-main-ref">
+Software Development Services
+</a>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Industries
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries">
+<a href="../services/travel/index.html" class="header__dropmenu-ref">
+Travel
+</a>
+<a href="../services/health/index.html" class="header__dropmenu-ref">
+Healthcare
+</a>
+<a href="../services/tv-app-development/index.html" class="header__dropmenu-ref">
+Smart TV
+</a>
+<a href="../services/logistics/index.html" class="header__dropmenu-ref">
+Logistics
+</a>
+<a href="../services/wellness/index.html" class="header__dropmenu-ref">
+Wellness
+</a>
+<a href="../services/terminal/index.html" class="header__dropmenu-ref">
+POS
+</a>
+<a href="../services/custom-ecommerce/index.html" class="header__dropmenu-ref">
+Custom Ecom Apps
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries2">
+<a href="../services/events/index.html" class="header__dropmenu-ref">
+Events
+</a>
+<a href="../services/marketplace/index.html" class="header__dropmenu-ref">
+Marketplace
+</a>
+<a href="../services/estate/index.html" class="header__dropmenu-ref">
+Real Estate
+</a>
+<a href="../services/media/index.html" class="header__dropmenu-ref">
+Social Media
+</a>
+<a href="../services/finance/index.html" class="header__dropmenu-ref">
+Fintech
+</a>
+<a href="../services/iot/index.html" class="header__dropmenu-ref">
+IoT
+</a>
+<a href="../services/ecommerce/index.html" class="header__dropmenu-ref">
+eCommerce Development
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Development Team
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries">
+<a href="../services/outsourcing/index.html" class="header__dropmenu-main-ref header__dropmenu-main-ref--margin-bottom">
+Outsourcing
+</a>
+<a href="../services/dev-outsourcing/index.html" class="header__dropmenu-ref">
+Development
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries2">
+<a href="../services/outstaffing/index.html" class="header__dropmenu-main-ref header__dropmenu-main-ref--margin-bottom">
+Outstaffing
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item header__item--blog">
+<button class="header__item-inner click-dropdown" onclick="ym(52342033, 'reachGoal', 'CLK_BLOG'); return true;">
+<div class="header__item-drop">
+Blog
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu header__dropmenu--blog">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--blog">
+<a href="../blog/how-much-does-it-cost-to-develop-an-app/index.html" class="header__dropmenu-ref">
+How much does it cost to develop an app
+</a>
+<a href="../blog/how-to-create-a-social-media-app-a-z-guide/index.html" class="header__dropmenu-ref">
+How to make a social media app
+</a>
+<a href="../blog/website-redesign-cost/index.html" class="header__dropmenu-ref">
+How much does it cost to redesign a website
+</a>
+<a href="../blog/restaurant-app-development-purrwebs-detailed-guide/index.html" class="header__dropmenu-ref">
+Restaurant mobile app development
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--blog2">
+<a href="../blog/how-much-does-it-cost-to-develop-an-app/index.html" class="header__dropmenu-ref">
+How much does it cost to maintain an app
+</a>
+<a href="../blog/dating-app-development/index.html" class="header__dropmenu-ref">
+Dating mobile app development
+</a>
+<a href="../blog/how-to-hire-a-developer-for-a-startup-and-not-to-regret-about-it/index.html" class="header__dropmenu-ref">
+Hiring a developer for a startup
+</a>
+<a href="../blog/index.html" class="header__dropmenu-ref">
+All posts
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+About
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--about">
+<a href="../about/index.html" class="header__dropmenu-ref">
+Company
+</a>
+<a href="../contacts/index.html" class="header__dropmenu-ref">
+Contacts
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item header__item--lang visually-hidden">
+<a class="header__item-link js-en-link" href="ru/index.html">Ru</a>
+</li>
+<li class="header__item header__item--request">
+<a class="rising-btn rising-btn--theme2 js-scroll-to" href="#footer" onclick="ym(52342033, 'reachGoal', 'CLK_RAQ'); return true;">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span class="rising-btn__text">
+Request a quote
+</span>
+</span>
+</span>
+</a>
+<div class="lang-popup js-lang-popup hide-lang" id="LangCookieBar">
+<p class="lang-popup__text">
+Холмс, кажется, вы в России...
+</p>
+<button class="lang-popup__close-btn js-close-popup">
+<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.50002 4.49844L9.00627 0.992188L10.0079 1.99377L6.5016 5.50002L10.0079 9.00627L9.00627 10.0079L5.50002 6.5016L1.99377 10.0079L0.992188 9.00627L4.49844 5.50002L0.992188 1.99377L1.99377 0.992188L5.50002 4.49844Z" fill="#808080" />
+</svg>
+</button>
+<div class="lang-popup__btn-wrap">
+<a href="#" class="lang-popup__btn lang-popup__btn--ru js-ru-btn">
+Переключить язык
+</a>
+<a href="#" class="lang-popup__btn lang-popup__btn--eng js-eng-btn">
+не, и так норм
+</a>
+</div>
+</div>
+</li>
+</ul>
+<button class="header__humb js-humb">
+<span class="visually-hidden">Open/close menu</span>
+</button>
+</nav>
+</div>
+</header>
+<div class="main js-main">
+<main class="mvp-main js-page-slider">
+<section class="device mvp-section js-slide">
+<div class="device__inner layout container">
+<h1 class="device__title main-title">
+How much does your MVP cost?
+</h1>
+<p class="device__text">
+Easily calculate the esimated costs of your MVP with just a few clicks.
+To get an accurate calculation, contact our managers.
+</p>
+<form action="#" class="device__form main-form js-form" id="device">
+<div class="device__item main-form__item">
+<input type="radio" name="device-radio" id="mobile" value="mobile-app" class="device__radio mvp-radio visually-hidden">
+<label for="mobile" class="device__label mvp-label label">
+<svg class="device__item-icon label-icon" width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M67.361 4.16675H32.6388C26.7793 4.16675 23.9583 8.25515 23.9583 14.5834V85.4167C23.9583 91.745 26.7793 95.8334 32.6388 95.8334H67.361C73.2205 95.8334 76.0416 91.745 76.0416 85.4167V14.5834C76.0416 8.25515 73.2205 4.16675 67.361 4.16675ZM29.7454 79.1667V16.6667H70.2546V79.1667H29.7454Z" />
+<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M29.1667 16.6667V79.1667H70.8334V16.6667H29.1667Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M49.9999 91.6666C52.3011 91.6666 54.1666 89.8011 54.1666 87.4999C54.1666 85.1987 52.3011 83.3333 49.9999 83.3333C47.6987 83.3333 45.8333 85.1987 45.8333 87.4999C45.8333 89.8011 47.6987 91.6666 49.9999 91.6666Z" />
+</svg>
+Mobile
+</label>
+</div>
+<div class="device__item main-form__item">
+<input type="radio" name="device-radio" id="web" value="web-app" class="device__radio mvp-radio visually-hidden">
+<label for="web" class="device__label mvp-label label">
+<svg class="device__item-icon label-icon" width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M20.8333 29.1667V62.5001H79.1666V29.1667H20.8333Z" />
+<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M46.8334 62.5C46.2811 62.5 45.8334 62.9477 45.8334 63.5V79.1666H38.5C37.9477 79.1666 37.5 79.6144 37.5 80.1666V82.3333C37.5 82.8856 37.9477 83.3333 38.5 83.3333H46.8265C46.8288 83.3333 46.8311 83.3333 46.8334 83.3333H53.1667C53.169 83.3333 53.1713 83.3333 53.1735 83.3333H61.5C62.0523 83.3333 62.5 82.8856 62.5 82.3333V80.1666C62.5 79.6144 62.0523 79.1666 61.5 79.1666H54.1667V63.5C54.1667 62.9477 53.719 62.5 53.1667 62.5H46.8334Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M78.125 20.8333H21.875C16.6973 20.8333 12.5 24.5642 12.5 29.1666V62.4999C12.5 67.1023 16.6973 70.8333 21.875 70.8333H78.125C83.3027 70.8333 87.5 67.1023 87.5 62.4999V29.1666C87.5 24.5642 83.3027 20.8333 78.125 20.8333ZM20.8334 62.4999V29.1666H79.1667V62.4999H20.8334Z" />
+</svg>
+Web
+</label>
+</div>
+<div class="device__item main-form__item">
+<input type="radio" name="device-radio" id="desktop" value="desktop-app" class="device__radio mvp-radio visually-hidden">
+<label for="desktop" class="device__label mvp-label label">
+<svg class="device__item-icon label-icon" width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M49.9999 66.6667C47.6987 66.6667 45.8333 68.5322 45.8333 70.8334V83.3334H35.4166C34.266 83.3334 33.3333 84.2661 33.3333 85.4167C33.3333 86.5673 34.266 87.5001 35.4166 87.5001H49.986C49.9906 87.5001 49.9953 87.5001 49.9999 87.5001C50.0046 87.5001 50.0092 87.5001 50.0139 87.5001H64.5833C65.7338 87.5001 66.6666 86.5673 66.6666 85.4167C66.6666 84.2661 65.7338 83.3334 64.5833 83.3334L54.1666 83.3334V70.8334C54.1666 68.5322 52.3011 66.6667 49.9999 66.6667Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33325 26.8333C8.33325 23.5195 11.0195 20.8333 14.3333 20.8333H85.6666C88.9803 20.8333 91.6666 23.5195 91.6666 26.8333V64.8333C91.6666 68.147 88.9803 70.8333 85.6666 70.8333H14.3333C11.0196 70.8333 8.33325 68.147 8.33325 64.8333V26.8333ZM16.6666 34.3333C16.6666 33.781 17.1143 33.3333 17.6666 33.3333H57.3333C57.8855 33.3333 58.3333 33.781 58.3333 34.3333V36.4999C58.3333 37.0522 57.8855 37.4999 57.3333 37.4999H17.6666C17.1143 37.4999 16.6666 37.0522 16.6666 36.4999V34.3333ZM17.6666 41.6666C17.1143 41.6666 16.6666 42.1143 16.6666 42.6666V44.8333C16.6666 45.3856 17.1143 45.8333 17.6666 45.8333H32.3333C32.8856 45.8333 33.3333 45.3856 33.3333 44.8333V42.6666C33.3333 42.1143 32.8856 41.6666 32.3333 41.6666H17.6666Z" />
+</svg>
+Desktop
+</label>
+</div>
+</form>
+<div class="controls">
+<button class="btn btn-prev js-btn-prev" disabled="disabled">
+<svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 2L3 14L15 26" stroke="white" stroke-width="4" />
+</svg>
+</button>
+<button class="btn btn-next js-btn-next" disabled="disabled">
+<svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 2L14 14L2 26" stroke="white" stroke-width="4" />
+</svg>
+</button>
+</div>
+</div>
+</section>
+<section class="mvp-section startup js-slide">
+<div class="startup__inner layout container">
+<div class="pagination-numbers">
+<span class="pagination-numbers__current">1</span>/8
+</div>
+<h2 class="startup__title title">
+Is your MVP similar to any existing app?
+</h2>
+<p class="startup__text text">
+Please select an option that describes your application.
+</p>
+<form action="#" class="startup__form main-form main-form--big js-form" id="similar-app">
+<div class="startup__item main-form__item">
+<input type="radio" name="best-describes-app" id="Uber-x" value="uber-x" class="startup__radio mvp-radio visually-hidden">
+<label for="Uber-x" class="startup__label mvp-label">Uber for X</label>
+</div>
+<div class="startup__item main-form__item">
+<input type="radio" name="best-describes-app" id="Airbnb-x" value="airbnb-x" class="startup__radio mvp-radio visually-hidden">
+<label for="Airbnb-x" class="startup__label mvp-label">Airbnb for X</label>
+</div>
+<div class="startup__item main-form__item">
+<input type="radio" name="best-describes-app" id="Tinder-x" value="tinder-x" class="startup__radio mvp-radio visually-hidden">
+<label for="Tinder-x" class="startup__label mvp-label">Tinder for X</label>
+</div>
+<div class="startup__item main-form__item">
+<input type="radio" name="best-describes-app" id="LinkedIn-x" value="linkedin-x" class="startup__radio mvp-radio visually-hidden">
+<label for="LinkedIn-x" class="startup__label mvp-label">LinkedIn for X</label>
+</div>
+<div class="startup__item main-form__item">
+<input type="radio" name="best-describes-app" id="Insta-x" value="insta-x" class="startup__radio mvp-radio visually-hidden">
+<label for="Insta-x" class="startup__label mvp-label">Instagram for X</label>
+</div>
+<div class="startup__item main-form__item">
+<input type="radio" name="best-describes-app" id="crowdfund" value="Crowdfunding" class="startup__radio mvp-radio visually-hidden">
+<label for="crowdfund" class="startup__label mvp-label">Crowdfunding</label>
+</div>
+<div class="startup__item main-form__item">
+<input type="radio" name="best-describes-app" id="market" value="Marketplace" class="startup__radio mvp-radio visually-hidden">
+<label for="market" class="startup__label mvp-label">Marketplace</label>
+</div>
+<div class="startup__item main-form__item">
+<input type="radio" name="best-describes-app" id="something" value="something" class="startup__radio mvp-radio visually-hidden">
+<label for="something" class="startup__label mvp-label">Something else</label>
+</div>
+</form>
+<div class="controls">
+<button class="btn btn-prev js-btn-prev">
+<svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 2L3 14L15 26" stroke="white" stroke-width="4" />
+</svg>
+</button>
+<button class="btn btn-next js-btn-next" disabled="disabled">
+<svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 2L14 14L2 26" stroke="white" stroke-width="4" />
+</svg>
+</button>
+</div>
+</div>
+</section>
+<section class="mvp-section login js-slide">
+<div class="login__inner layout container">
+<div class="pagination-numbers">
+<span class="pagination-numbers__current">2</span>/8
+</div>
+<h2 class="login__title title">
+Does your MVP need<br> Registration & Authorization forms?
+</h2>
+<p class="login__text text">
+Will people need to sign up or log in? If yes, will it be e-mail or anything else?
+Think of using social media accounts (e.g. Facebook, Twitter, or Instagram).
+</p>
+<form action="#" class="login__form main-form main-form js-form" id="login">
+<div class="login__item main-form__item">
+<input type="radio" name="login-type" id="Email" value="email" class="login__radio mvp-radio visually-hidden">
+<label for="Email" class="login__label mvp-label label">
+<svg class="login__item-icon label-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 20C10.8954 20 10 20.8954 10 22V61.3333C10 62.4379 10.8954 63.3333 12 63.3333H68C69.1046 63.3333 70 62.4379 70 61.3333V22C70 20.8954 69.1046 20 68 20H12ZM63.8676 27.1481C63.213 25.9324 61.6968 25.4775 60.4812 26.1321L39.9997 37.1606L19.5183 26.1321C18.3027 25.4775 16.7865 25.9324 16.1319 27.1481C15.4773 28.3637 15.9322 29.8799 17.1478 30.5345L38.8145 42.2012C39.5544 42.5996 40.4451 42.5996 41.185 42.2012L62.8517 30.5345C64.0673 29.8799 64.5222 28.3637 63.8676 27.1481Z" />
+</svg>
+E-mail
+</label>
+</div>
+<div class="login__item main-form__item">
+<input type="radio" name="login-type" id="Social" value="social" class="login__radio mvp-radio visually-hidden">
+<label for="Social" class="login__label mvp-label label">
+<svg class="login__item-icon label-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.3" d="M60 6.66669H73.6667C75.3235 6.66669 76.6667 8.00983 76.6667 9.66669V70.3334C76.6667 71.9902 75.3235 73.3334 73.6667 73.3334H60V6.66669Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.3335 7.66669C13.3335 7.1144 13.7812 6.66669 14.3335 6.66669H63.6668C65.3237 6.66669 66.6668 8.00983 66.6668 9.66669V70.3334C66.6668 71.9902 65.3237 73.3334 63.6668 73.3334H14.3335C13.7812 73.3334 13.3335 72.8856 13.3335 72.3334V7.66669ZM40.0002 36.6667C36.3183 36.6667 33.3335 33.6819 33.3335 30C33.3335 26.3181 36.3183 23.3334 40.0002 23.3334C43.6821 23.3334 46.6668 26.3181 46.6668 30C46.6668 33.6819 43.6821 36.6667 40.0002 36.6667ZM39.9693 40C31.2259 40 24.0525 45.0553 23.3347 54.9984C23.2956 55.54 24.2163 56.6667 24.6807 56.6667H55.2718C56.663 56.6667 56.6846 55.4072 56.663 55C56.1203 44.7775 48.8357 40 39.9693 40Z" />
+</svg>
+Social media
+</label>
+</div>
+<div class="login__item main-form__item">
+<input type="radio" name="login-type" id="no-login" value="no-login" class="login__radio mvp-radio no-login-radio visually-hidden">
+<label for="no-login" class="login__label label">
+<svg class="login__item-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10 44.6667C10 40.2484 13.5817 36.6667 18 36.6667H62C66.4183 36.6667 70 40.2484 70 44.6667V65.3333C70 69.7516 66.4183 73.3334 62 73.3334H18C13.5817 73.3334 10 69.7516 10 65.3334V44.6667Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M23.3335 36.6667V23.3334C23.3249 14.7708 29.806 7.59485 38.3252 6.73432C46.8444 5.87379 54.6296 11.6087 56.3335 20" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+No login required
+</label>
+</div>
+<div class="login__item main-form__item">
+<input type="radio" name="login-type" id="login-no-sure" value="no-sure" class="login__radio mvp-radio visually-hidden">
+<label for="login-no-sure" class="login__label mvp-label label">
+<svg class="login__item-icon label-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M40.0002 76.8C60.3243 76.8 76.8002 60.3241 76.8002 40C76.8002 19.6759 60.3243 3.20001 40.0002 3.20001C19.6761 3.20001 3.2002 19.6759 3.2002 40C3.2002 60.3241 19.6761 76.8 40.0002 76.8ZM33.319 31.0619C34.4193 27.934 37.6152 26.0558 40.8832 26.6163C49.6002 29.2 48.0002 38 38.7153 40.2997C37.0428 40.8611 36.1397 42.6708 36.6978 44.3453C37.2567 46.0219 39.0689 46.928 40.7455 46.3691L39.7345 43.3361C40.7455 46.3691 40.7474 46.3685 40.7474 46.3685L40.7496 46.3678L40.7545 46.3661L40.7672 46.3618L40.8035 46.3495L40.8535 46.3321L40.918 46.3094C41.0123 46.2758 41.1421 46.2285 41.3025 46.1674C41.6227 46.0455 42.0674 45.8674 42.5958 45.6325C43.6434 45.1669 45.0646 44.4586 46.5087 43.4959C49.2015 41.7007 52.9324 38.3665 52.9336 33.3357C52.9421 26.9002 48.3083 21.3965 41.9652 20.3084C35.6213 19.2203 29.4175 22.8663 27.2816 28.9381C26.6951 30.6053 27.5712 32.4322 29.2384 33.0187C30.9056 33.6051 32.7325 32.7291 33.319 31.0619ZM40.0001 60C41.8411 60 43.3335 58.5076 43.3335 56.6667C43.3335 54.8257 41.8411 53.3333 40.0001 53.3333C38.1592 53.3333 36.6668 54.8257 36.6668 56.6667C36.6668 58.5076 38.1592 60 40.0001 60Z" />
+</svg>
+Not sure
+</label>
+</div>
+</form>
+<div class="controls">
+<button class="btn btn-prev js-btn-prev">
+<svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 2L3 14L15 26" stroke="white" stroke-width="4" />
+</svg>
+</button>
+<button class="btn btn-next js-btn-next" disabled="disabled">
+<svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 2L14 14L2 26" stroke="white" stroke-width="4" />
+</svg>
+</button>
+</div>
+</div>
+</section>
+<section class="mvp-section profile js-slide">
+<div class="profile__inner layout container">
+<div class="pagination-numbers">
+<span class="pagination-numbers__current">3</span>/8
+</div>
+<h2 class="profile__title title">
+Does your MVP need<br> User profiles?
+</h2>
+<p class="profile__text text">
+A user profile or personal profile provides focus and insight on who your users are and
+how they like to work in your app.
+</p>
+<form action="#" class="profile__form main-form js-form" id="profile">
+<div class="profile__item main-form__item">
+<input type="radio" name="profile-type" id="with-profile" value="profile" class="profile__radio mvp-radio visually-hidden">
+<label for="with-profile" class="profile__label mvp-label label">
+<svg class="profile__item-icon label-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.3" d="M40.0001 36.6667C32.6363 36.6667 26.6667 30.6971 26.6667 23.3333C26.6667 15.9695 32.6363 10 40.0001 10C47.3639 10 53.3334 15.9695 53.3334 23.3333C53.3334 30.6971 47.3639 36.6667 40.0001 36.6667Z" fill="white" />
+<path d="M10.0022 67.3307C11.2942 51.4217 24.2064 43.3333 39.9445 43.3333C55.9041 43.3333 69.0163 50.9773 69.993 67.3333C70.032 67.9849 69.993 70 67.489 70C55.1371 70 36.7824 70 12.425 70C11.589 70 9.93179 68.1972 10.0022 67.3307Z" fill="white" />
+</svg>
+Yes
+</label>
+</div>
+<div class="profile__item main-form__item">
+<input type="radio" name="profile-type" id="no-profile" value="no-profile" class="profile__radio mvp-radio visually-hidden">
+<label for="no-profile" class="profile__label mvp-label label">
+<svg class="profile__item-icon profile__item-icon--second label-icon" width="83" height="80" viewBox="0 0 83 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.3" d="M29.9998 36.6667C22.636 36.6667 16.6665 30.6971 16.6665 23.3333C16.6665 15.9695 22.636 10 29.9998 10C37.3636 10 43.3332 15.9695 43.3332 23.3333C43.3332 30.6971 37.3636 36.6667 29.9998 36.6667Z" fill="white" />
+<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M52.2554 29.6972C51.8649 30.0878 51.8649 30.7209 52.2554 31.1115L55.5553 34.4113C55.9458 34.8018 56.5789 34.8018 56.9695 34.4113L63.3334 28.0473L69.6975 34.4113C70.088 34.8019 70.7211 34.8019 71.1117 34.4113L74.4115 31.1115C74.802 30.721 74.802 30.0878 74.4115 29.6973L68.0475 23.3333L74.4114 16.9693C74.802 16.5788 74.802 15.9456 74.4114 15.5551L71.1116 12.2553C70.7211 11.8647 70.0879 11.8647 69.6974 12.2553L63.3334 18.6192L56.9695 12.2553C56.579 11.8648 55.9458 11.8648 55.5553 12.2553L52.2555 15.5552C51.865 15.9457 51.865 16.5789 52.2555 16.9694L58.6194 23.3333L52.2554 29.6972Z" fill="white" />
+<path d="M0.00217228 67.3307C1.2942 51.4217 14.2064 43.3333 29.9445 43.3333C45.9041 43.3333 59.0163 50.9773 59.993 67.3333C60.032 67.9849 59.993 70 57.489 70C45.1371 70 26.7824 70 2.42501 70C1.58904 70 -0.0682058 68.1973 0.00217228 67.3307Z" fill="white" />
+</svg>
+No profiles required
+</label>
+</div>
+<div class="profile__item main-form__item">
+<input type="radio" name="profile-type" id="profile-no-sure" value="no-sure" class="profile__radio mvp-radio visually-hidden">
+<label for="profile-no-sure" class="profile__label mvp-label label">
+<svg class="profile__item-icon profile__item-icon--third label-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.3" d="M29.9998 36.6667C22.636 36.6667 16.6665 30.6971 16.6665 23.3333C16.6665 15.9695 22.636 10 29.9998 10C37.3636 10 43.3332 15.9695 43.3332 23.3333C43.3332 30.6971 37.3636 36.6667 29.9998 36.6667Z" fill="white" />
+<g opacity="0.3">
+<path d="M59.0546 17.135C59.7719 15.0958 61.8553 13.8714 63.9858 14.2368C69.6685 15.9212 68.6254 21.658 62.5725 23.1572C61.4822 23.5231 60.8934 24.7029 61.2573 25.7945C61.6216 26.8875 62.803 27.4782 63.896 27.1139L63.2364 25.1348C63.896 27.1139 63.8973 27.1135 63.8973 27.1135L63.8987 27.113L63.9019 27.1119L63.9102 27.1091L63.9338 27.1011C63.9527 27.0946 63.9777 27.0859 64.0084 27.0749C64.0699 27.053 64.1546 27.0222 64.2591 26.9824C64.4678 26.9029 64.7578 26.7868 65.1022 26.6337C65.7852 26.3301 66.7117 25.8684 67.6531 25.2408C69.4086 24.0705 71.8408 21.8969 71.8416 18.6173C71.8471 14.4219 68.8263 10.834 64.6911 10.1247C60.5555 9.4153 56.5112 11.7922 55.1188 15.7504C54.7365 16.8373 55.3076 18.0283 56.3944 18.4106C57.4813 18.7929 58.6723 18.2218 59.0546 17.135Z" fill="white" />
+<ellipse cx="63.4103" cy="33.827" rx="2.17303" ry="2.17303" fill="white" />
+</g>
+<path d="M0.00217228 67.3307C1.2942 51.4217 14.2064 43.3333 29.9445 43.3333C45.9041 43.3333 59.0163 50.9773 59.993 67.3333C60.032 67.9849 59.993 70 57.489 70C45.1371 70 26.7824 70 2.42501 70C1.58904 70 -0.0682058 68.1973 0.00217228 67.3307Z" fill="white" />
+</svg>
+Not sure
+</label>
+</div>
+</form>
+<div class="controls">
+<button class="btn btn-prev js-btn-prev">
+<svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 2L3 14L15 26" stroke="white" stroke-width="4" />
+</svg>
+</button>
+<button class="btn btn-next js-btn-next" disabled="disabled">
+<svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 2L14 14L2 26" stroke="white" stroke-width="4" />
+</svg>
+</button>
+</div>
+</div>
+</section>
+<section class="mvp-section api js-slide">
+<div class="api__inner layout container">
+<div class="pagination-numbers">
+<span class="pagination-numbers__current">4</span>/8
+</div>
+<h2 class="api__title title">
+Does your MVP need
+to be connected to an external service?
+</h2>
+<p class="api__text text">
+Decide if your product needs to be connected to any<br> third-party service (such as Google Maps or Xero).
+</p>
+<form action="#" class="api__form main-form js-form" id="api">
+<div class="api__item main-form__item">
+<input type="radio" name="api-type" id="with-api" value="api" class="api__radio mvp-radio visually-hidden">
+<label for="with-api" class="api__label mvp-label label">
+<svg class="api__item-icon label-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26.6667 12.6666C26.6667 9.35292 29.353 6.66663 32.6667 6.66663H40.6667C43.9804 6.66663 46.6667 9.35292 46.6667 12.6666V20H57.3333C60.647 20 63.3333 22.6863 63.3333 26V36.6666H70.6667C73.9804 36.6666 76.6667 39.3529 76.6667 42.6666V50.6666C76.6667 53.9803 73.9804 56.6666 70.6667 56.6666H63.3333V67.3333C63.3333 70.647 60.647 73.3333 57.3333 73.3333H16C12.6863 73.3333 10 70.647 10 67.3333V56.6666H20.6667C23.9804 56.6666 26.6667 53.9803 26.6667 50.6666V42.6666C26.6667 39.3529 23.9804 36.6666 20.6667 36.6666H10V26C10 22.6862 12.6863 20 16 20H26.6667V12.6666Z" fill="white" />
+</svg>
+Yes
+</label>
+</div>
+<div class="api__item main-form__item">
+<input type="radio" name="api-type" id="no-api" value="no-api" class="api__radio mvp-radio visually-hidden">
+<label for="no-api" class="api__label mvp-label label">
+<svg class="api__item-icon label-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26.6667 12.6666C26.6667 9.35292 29.353 6.66663 32.6667 6.66663H40.6667C43.9804 6.66663 46.6667 9.35292 46.6667 12.6666V20H55V21C55 24.3137 57.6863 27 61 27H63.3333V36.6666H70.6667C73.9804 36.6666 76.6667 39.3529 76.6667 42.6666V50.6666C76.6667 53.9803 73.9804 56.6666 70.6667 56.6666H63.3333V67.3333C63.3333 70.647 60.647 73.3333 57.3333 73.3333H16C12.6863 73.3333 10 70.647 10 67.3333V56.6666H20.6667C23.9805 56.6666 26.6667 53.9803 26.6667 50.6666V42.6666C26.6667 39.3529 23.9805 36.6666 20.6667 36.6666H10V26C10 22.6862 12.6863 20 16 20H26.6667V12.6666Z" fill="white" />
+<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M62.4765 14.92C62.086 15.3105 62.086 15.9437 62.4765 16.3342L63.6698 17.5274C64.0603 17.9179 64.6935 17.9179 65.084 17.5274L68.2882 14.3233L71.4923 17.5273C71.8828 17.9179 72.5159 17.9179 72.9065 17.5273L74.0997 16.3341C74.4902 15.9436 74.4902 15.3104 74.0997 14.9199L70.8956 11.7158L74.0996 8.51179C74.4902 8.12126 74.4902 7.4881 74.0996 7.09757L72.9064 5.90432C72.5159 5.5138 71.8827 5.5138 71.4922 5.90432L68.2882 9.10833L65.0841 5.90423C64.6936 5.51371 64.0604 5.51371 63.6699 5.90423L62.4766 7.09748C62.0861 7.48801 62.0861 8.12117 62.4766 8.5117L65.6807 11.7158L62.4765 14.92Z" fill="white" />
+</svg>
+No APIs required
+</label>
+</div>
+<div class="api__item main-form__item">
+<input type="radio" name="api-type" id="api-no-sure" value="no-sure" class="api__radio mvp-radio visually-hidden">
+<label for="api-no-sure" class="api__label mvp-label label">
+<svg class="api__item-icon label-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26.6667 12.6666C26.6667 9.35292 29.353 6.66663 32.6667 6.66663H40.6667C43.9804 6.66663 46.6667 9.35292 46.6667 12.6666V20H55V21C55 24.3137 57.6863 27 61 27H63.3333V36.6666H70.6667C73.9804 36.6666 76.6667 39.3529 76.6667 42.6666V50.6666C76.6667 53.9803 73.9804 56.6666 70.6667 56.6666H63.3333V67.3333C63.3333 70.647 60.647 73.3333 57.3333 73.3333H16C12.6863 73.3333 10 70.647 10 67.3333V56.6666H20.6667C23.9804 56.6666 26.6667 53.9803 26.6667 50.6666V42.6666C26.6667 39.3529 23.9804 36.6666 20.6667 36.6666H10V26C10 22.6862 12.6863 20 16 20H26.6667V12.6666Z" fill="white" />
+<g opacity="0.3">
+<path d="M67.3705 7.84348C67.9668 6.14841 69.6987 5.13056 71.4697 5.43434C76.1936 6.83448 75.3265 11.6034 70.2948 12.8496C69.3885 13.1538 68.8991 14.1345 69.2015 15.042C69.5044 15.9505 70.4865 16.4416 71.3951 16.1387L70.8471 14.4949C71.3951 16.1387 71.3961 16.1384 71.3961 16.1384L71.3973 16.138L71.3999 16.1371L71.4068 16.1348L71.4265 16.1281C71.4421 16.1227 71.4629 16.1154 71.4885 16.1063C71.5396 16.0882 71.61 16.0625 71.6969 16.0294C71.8704 15.9633 72.1114 15.8668 72.3977 15.7395C72.9655 15.4872 73.7357 15.1034 74.5182 14.5817C75.9775 13.6088 77.9994 11.802 78 9.0757C78.0046 5.58819 75.4935 2.6056 72.056 2.01599C68.6182 1.42631 65.2562 3.40214 64.0987 6.69255C63.7809 7.59602 64.2557 8.58607 65.1591 8.90388C66.0626 9.2217 67.0527 8.74694 67.3705 7.84348Z" fill="white" />
+<ellipse cx="70.991" cy="21.7192" rx="1.80639" ry="1.80639" fill="white" />
+</g>
+</svg>
+Not sure
+</label>
+</div>
+</form>
+<div class="controls">
+<button class="btn btn-prev js-btn-prev">
+<svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 2L3 14L15 26" stroke="white" stroke-width="4" />
+</svg>
+</button>
+<button class="btn btn-next js-btn-next" disabled="disabled">
+<svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 2L14 14L2 26" stroke="white" stroke-width="4" />
+</svg>
+</button>
+</div>
+</div>
+</section>
+<section class="mvp-section upload js-slide">
+<div class="upload__inner layout container">
+<div class="pagination-numbers">
+<span class="pagination-numbers__current">5</span>/8
+</div>
+<h2 class="upload__title title">
+Do people need to upload files?
+</h2>
+<p class="upload__text text">
+Will people need to upload images, videos, or other data into your app?
+</p>
+<form action="#" class="upload__form main-form js-form" id="upload">
+<div class="upload__item main-form__item">
+<input type="radio" name="upload-type" id="with-upload" value="upload" class="upload__radio mvp-radio visually-hidden">
+<label for="with-upload" class="upload__label mvp-label label">
+<svg class="upload__item-icon label-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M6.66675 63.9999C6.66675 67.3136 9.35304 69.9999 12.6667 69.9999H67.3334C70.6471 69.9999 73.3334 67.3136 73.3334 63.9999V29.3333C73.3334 26.0195 70.6471 23.3333 67.3334 23.3333H34.1618C33.6314 23.3333 33.1227 23.1225 32.7476 22.7475L25.0908 15.0906C23.9656 13.9654 22.4394 13.3333 20.8481 13.3333H12.6668C9.35304 13.3333 6.66675 16.0195 6.66675 19.3333V63.9999Z" fill="white" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M27.7479 44.9641C26.582 46.2493 27.4939 48.3078 29.2292 48.3078H35.5537V54.6667C35.5537 55.7713 36.4491 56.6667 37.5537 56.6667H40.7798C41.8843 56.6667 42.7798 55.7713 42.7798 54.6667V48.3078H49.1043C50.8396 48.3078 51.7515 46.2493 50.5856 44.9641L40.648 34.0093C39.8543 33.1343 38.4791 33.1343 37.6854 34.0093L27.7479 44.9641Z" fill="white" />
+</svg>
+Yes
+</label>
+</div>
+<div class="upload__item main-form__item">
+<input type="radio" name="upload-type" id="no-upload" value="no-upload" class="upload__radio mvp-radio visually-hidden">
+<label for="no-upload" class="upload__label mvp-label label">
+<svg class="upload__item-icon label-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M73.3337 33.9279C71.2009 35.242 68.6891 36 66.0002 36C58.7179 36 52.7343 30.4399 52.0629 23.3333H34.1621C33.6317 23.3333 33.1229 23.1225 32.7479 22.7475L25.091 15.0906C23.9658 13.9654 22.4397 13.3333 20.8484 13.3333H12.667C9.35329 13.3333 6.66699 16.0195 6.66699 19.3333V63.9999C6.66699 67.3136 9.35328 69.9999 12.667 69.9999H67.3337C70.6474 69.9999 73.3337 67.3136 73.3337 63.9999V33.9279Z" fill="white" />
+<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M60.1885 25.634C59.7979 26.0245 59.7979 26.6576 60.1885 27.0482L61.3817 28.2414C61.7722 28.6319 62.4054 28.6319 62.7959 28.2414L66.0001 25.0372L69.2042 28.2413C69.5947 28.6318 70.2279 28.6318 70.6184 28.2413L71.8116 27.0481C72.2022 26.6576 72.2022 26.0244 71.8116 25.6339L68.6076 22.4298L71.8116 19.2258C72.2021 18.8353 72.2021 18.2021 71.8116 17.8116L70.6183 16.6183C70.2278 16.2278 69.5946 16.2278 69.2041 16.6183L66.0001 19.8223L62.796 16.6182C62.4055 16.2277 61.7723 16.2277 61.3818 16.6182L60.1885 17.8115C59.798 18.202 59.798 18.8352 60.1885 19.2257L63.3926 22.4298L60.1885 25.634Z" fill="white" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M27.7476 44.9641C26.5817 46.2493 27.4937 48.3078 29.2289 48.3078H35.5535V54.6667C35.5535 55.7713 36.4489 56.6667 37.5535 56.6667H40.7795C41.8841 56.6667 42.7795 55.7713 42.7795 54.6667V48.3078H49.104C50.8393 48.3078 51.7513 46.2493 50.5854 44.9641L40.6478 34.0093C39.8541 33.1343 38.4789 33.1343 37.6852 34.0093L27.7476 44.9641Z" fill="white" />
+</svg>
+No
+</label>
+</div>
+<div class="upload__item main-form__item">
+<input type="radio" name="upload-type" id="upload-no-sure" value="no-sure" class="upload__radio mvp-radio visually-hidden">
+<label for="upload-no-sure" class="upload__label mvp-label label">
+<svg class="upload__item-icon label-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M73.3337 33.9279C71.2009 35.242 68.6891 36 66.0002 36C58.7179 36 52.7343 30.4399 52.0629 23.3333H34.1621C33.6317 23.3333 33.1229 23.1225 32.7479 22.7475L25.091 15.0906C23.9658 13.9654 22.4397 13.3333 20.8484 13.3333H12.667C9.35329 13.3333 6.66699 16.0195 6.66699 19.3333V63.9999C6.66699 67.3136 9.35328 69.9999 12.667 69.9999H67.3337C70.6474 69.9999 73.3337 67.3136 73.3337 63.9999V33.9279Z" fill="white" />
+<g opacity="0.3">
+<path d="M62.889 17.6275C63.4001 16.1746 64.8846 15.3022 66.4026 15.5625C70.4516 16.7627 69.7084 20.8503 65.3956 21.9185C64.6187 22.1792 64.1992 23.0199 64.4585 23.7976C64.7181 24.5764 65.5598 24.9973 66.3386 24.7377L65.869 23.329C66.3386 24.7377 66.3395 24.7374 66.3395 24.7374L66.3405 24.7371L66.3428 24.7363L66.3487 24.7343L66.3655 24.7286C66.379 24.724 66.3968 24.7178 66.4187 24.71C66.4625 24.6944 66.5229 24.6724 66.5973 24.6441C66.746 24.5874 66.9526 24.5047 67.1981 24.3956C67.6847 24.1793 68.3449 23.8503 69.0156 23.4031C70.2664 22.5692 71.9994 21.0205 72 18.6837C72.0039 15.6944 69.8515 13.1379 66.9052 12.6325C63.9584 12.1271 61.0768 13.8207 60.0846 16.641C59.8122 17.4154 60.2192 18.264 60.9936 18.5364C61.768 18.8089 62.6166 18.4019 62.889 17.6275Z" fill="white" />
+<ellipse cx="65.9927" cy="29.521" rx="1.54833" ry="1.54833" fill="white" />
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M27.7476 44.9641C26.5817 46.2493 27.4937 48.3078 29.2289 48.3078H35.5535V54.6667C35.5535 55.7713 36.4489 56.6667 37.5535 56.6667H40.7795C41.8841 56.6667 42.7795 55.7713 42.7795 54.6667V48.3078H49.104C50.8393 48.3078 51.7513 46.2493 50.5854 44.9641L40.6478 34.0093C39.8541 33.1343 38.4789 33.1343 37.6852 34.0093L27.7476 44.9641Z" fill="white" />
+</svg>
+Not sure
+</label>
+</div>
+</form>
+<div class="controls">
+<button class="btn btn-prev js-btn-prev">
+<svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 2L3 14L15 26" stroke="white" stroke-width="4" />
+</svg>
+</button>
+<button class="btn btn-next js-btn-next" disabled="disabled">
+<svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 2L14 14L2 26" stroke="white" stroke-width="4" />
+</svg>
+</button>
+</div>
+</div>
+</section>
+<section class="mvp-section revenue js-slide">
+<div class="revenue__inner layout container">
+<div class="pagination-numbers">
+<span class="pagination-numbers__current">6</span>/8
+</div>
+<h2 class="revenue__title title">
+Which monetization strategy fits your MVP?
+</h2>
+<form action="#" class="revenue__form main-form main-form js-form" id="revenue">
+<div class="revenue__item main-form__item">
+<input type="radio" name="revenue-type" id="upfront" value="upfront-cost" class="revenue__radio mvp-radio visually-hidden">
+<label for="upfront" class="revenue__label mvp-label label">
+<svg class="revenue__item-icon label-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.3" x="6.66675" y="16.6667" width="66.6667" height="46.6667" rx="2" fill="white" />
+<rect x="6.66675" y="26.6667" width="66.6667" height="10" fill="white" />
+<rect opacity="0.3" x="53.3333" y="46.6667" width="13.3333" height="6.66667" rx="1" fill="white" />
+</svg>
+Upfront cost
+</label>
+</div>
+<div class="revenue__item main-form__item">
+<input type="radio" name="revenue-type" id="in-app" value="in-app" class="revenue__radio mvp-radio visually-hidden">
+<label for="in-app" class="revenue__label mvp-label label">
+<svg class="revenue__item-icon label-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M56.6434 21.3681L58.6874 12.6082C59.1027 10.8281 60.6897 9.56885 62.5176 9.56885H69.4004C71.5726 9.56885 73.3335 11.3297 73.3335 13.5019C73.3335 15.6741 71.5726 17.435 69.4004 17.435H65.6385L60.4834 39.4747L57.7684 55.7646C57.6766 56.3151 57.1521 56.6839 56.6031 56.5841L14.9497 49.0108C14.5751 48.9427 14.2716 48.6677 14.167 48.3016L6.83596 22.6428C6.65344 22.004 7.1331 21.3681 7.79748 21.3681H56.6434Z" fill="white" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26.6665 65C26.6665 67.7614 24.4279 70 21.6665 70C18.9051 70 16.6665 67.7614 16.6665 65C16.6665 62.2386 18.9051 60 21.6665 60C24.4279 60 26.6665 62.2386 26.6665 65ZM56.6665 65C56.6665 67.7614 54.4279 70 51.6665 70C48.9051 70 46.6665 67.7614 46.6665 65C46.6665 62.2386 48.9051 60 51.6665 60C54.4279 60 56.6665 62.2386 56.6665 65Z" fill="white" />
+</svg>
+In-app purchases
+</label>
+</div>
+<div class="revenue__item main-form__item">
+<input type="radio" name="revenue-type" id="free" value="free" class="revenue__radio mvp-radio visually-hidden">
+<label for="free" class="revenue__label mvp-label label">
+<svg class="revenue__item-icon label-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M40.0001 66.7392L28.2449 72.4284L22.8969 60.5141L10.235 57.3163L13.7966 44.7518L6.15252 34.1632L16.9571 26.8275L17.9077 13.8027L30.8997 15.1283L40.0001 5.76172L49.1005 15.1283L62.0925 13.8027L63.0431 26.8275L73.8476 34.1632L66.2036 44.7518L69.7651 57.3163L57.1032 60.5141L51.7552 72.4284L40.0001 66.7392Z" fill="white" />
+<path d="M29.2683 36.64V34H22V46H24.7363V41.5943H29.1828V38.9543H24.7363V36.64H29.2683Z" fill="white" />
+<path d="M37.1784 46H40.1199L37.5717 41.5943C38.8886 40.9257 39.7779 39.5886 39.7779 38.1143C39.7779 35.8343 37.948 34 35.6734 34H30.8849V46H33.6212V42.0571H34.921L37.1784 46ZM33.6212 36.5714H35.6734C36.4259 36.5714 37.0416 37.24 37.0416 38.1143C37.0416 38.9886 36.4259 39.6571 35.6734 39.6571H33.6212V36.5714Z" fill="white" />
+<path d="M44.1429 43.36V41.2343H48.4183V38.6286H44.1429V36.64H48.8458V34H41.4066V46H48.9314V43.36H44.1429Z" fill="white" />
+<path d="M53.2115 43.36V41.2343H57.4869V38.6286H53.2115V36.64H57.9145V34H50.4752V46H58V43.36H53.2115Z" fill="white" />
+</svg>
+Free
+</label>
+</div>
+<div class="revenue__item main-form__item">
+<input type="radio" name="revenue-type" id="revenue-no-sure" value="no-sure" class="revenue__radio mvp-radio visually-hidden">
+<label for="revenue-no-sure" class="revenue__label mvp-label label">
+<svg class="revenue__item-icon label-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.3" d="M47.6428 55.6904C46.3411 54.3886 46.3411 52.2781 47.6428 50.9763C48.9446 49.6746 51.0551 49.6746 52.3569 50.9763L65.6902 64.3096C66.9919 65.6114 66.9919 67.7219 65.6902 69.0237C64.3884 70.3254 62.2779 70.3254 60.9761 69.0237L47.6428 55.6904Z" fill="white" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.3335 36.6666C13.3335 49.5532 23.7802 59.9999 36.6668 59.9999C49.5535 59.9999 60.0002 49.5532 60.0002 36.6666C60.0002 23.7799 49.5535 13.3333 36.6668 13.3333C23.7802 13.3333 13.3335 23.7799 13.3335 36.6666ZM53.3335 36.6666C53.3335 45.8713 45.8716 53.3333 36.6668 53.3333C27.4621 53.3333 20.0002 45.8713 20.0002 36.6666C20.0002 27.4618 27.4621 19.9999 36.6668 19.9999C45.8716 19.9999 53.3335 27.4618 53.3335 36.6666Z" fill="white" />
+</svg>
+Not sure
+</label>
+</div>
+</form>
+<div class="controls">
+<button class="btn btn-prev js-btn-prev">
+<svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 2L3 14L15 26" stroke="white" stroke-width="4" />
+</svg>
+</button>
+<button class="btn btn-next js-btn-next" disabled="disabled">
+<svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 2L14 14L2 26" stroke="white" stroke-width="4" />
+</svg>
+</button>
+</div>
+</div>
+</section>
+<section class="mvp-section stars js-slide">
+<div class="stars__inner layout container">
+<div class="pagination-numbers">
+<span class="pagination-numbers__current">7</span>/8
+</div>
+<h2 class="stars__title title">
+Will there be rating system?
+</h2>
+<p class="stars__text text">
+Are people going to leave reviews?
+</p>
+<form action="#" class="stars__form main-form js-form" id="rating">
+<div class="stars__item main-form__item">
+<input type="radio" name="stars-type" id="stars" value="rating" class="stars__radio mvp-radio visually-hidden">
+<label for="stars" class="stars__label mvp-label label">
+<svg class="stars__item-icon label-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M40.0002 60L26.3856 67.1576C24.7561 68.0143 22.7407 67.3878 21.884 65.7583C21.5429 65.1094 21.4252 64.3662 21.5491 63.6437L24.1492 48.4836L13.1348 37.7472C11.8165 36.4622 11.7896 34.3518 13.0746 33.0335C13.5862 32.5086 14.2567 32.167 14.9822 32.0615L30.2038 29.8497L37.0111 16.0566C37.8258 14.4058 39.8246 13.728 41.4754 14.5427C42.1328 14.8671 42.6649 15.3992 42.9893 16.0566L49.7966 29.8497L65.0182 32.0615C66.84 32.3263 68.1023 34.0177 67.8376 35.8396C67.7322 36.565 67.3905 37.2355 66.8656 37.7472L55.8511 48.4836L58.4513 63.6437C58.7625 65.4581 57.5439 67.1813 55.7294 67.4925C55.0069 67.6165 54.2637 67.4987 53.6148 67.1576L40.0002 60Z" fill="white" />
+</svg>
+Yes
+</label>
+</div>
+<div class="stars__item main-form__item">
+<input type="radio" name="stars-type" id="no-stars" value="no-rating" class="stars__radio mvp-radio visually-hidden">
+<label for="no-stars" class="stars__label mvp-label label">
+<svg class="stars__item-icon label-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M39.9999 60L26.3853 67.1576C24.7559 68.0143 22.7404 67.3878 21.8838 65.7583C21.5426 65.1094 21.4249 64.3662 21.5488 63.6437L24.149 48.4836L13.1346 37.7472C11.8163 36.4622 11.7893 34.3518 13.0743 33.0335C13.586 32.5086 14.2565 32.167 14.9819 32.0615L30.2035 29.8497L37.0108 16.0566C37.8256 14.4058 39.8243 13.728 41.4752 14.5427C42.1325 14.8671 42.6646 15.3992 42.9891 16.0566L49.7964 29.8497L65.018 32.0615C66.8398 32.3263 68.1021 34.0177 67.8373 35.8396C67.7319 36.565 67.3903 37.2355 66.8653 37.7472L55.8509 48.4836L58.451 63.6437C58.7623 65.4581 57.5436 67.1813 55.7292 67.4925C55.0066 67.6165 54.2634 67.4987 53.6146 67.1576L39.9999 60Z" fill="white" />
+<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M57.1885 20.634C56.7979 21.0245 56.7979 21.6576 57.1885 22.0482L58.3817 23.2414C58.7722 23.6319 59.4054 23.6319 59.7959 23.2414L63.0001 20.0372L66.2042 23.2413C66.5947 23.6318 67.2279 23.6318 67.6184 23.2413L68.8116 22.0481C69.2022 21.6576 69.2022 21.0244 68.8116 20.6339L65.6076 17.4298L68.8116 14.2258C69.2021 13.8353 69.2021 13.2021 68.8116 12.8116L67.6183 11.6183C67.2278 11.2278 66.5946 11.2278 66.2041 11.6183L63.0001 14.8223L59.796 11.6182C59.4055 11.2277 58.7723 11.2277 58.3818 11.6182L57.1885 12.8115C56.798 13.202 56.798 13.8352 57.1885 14.2257L60.3926 17.4298L57.1885 20.634Z" fill="white" />
+</svg>
+No
+</label>
+</div>
+<div class="stars__item main-form__item">
+<input type="radio" name="stars-type" id="stars-no-sure" value="rating-no-sure" class="stars__radio mvp-radio visually-hidden">
+<label for="stars-no-sure" class="stars__label mvp-label label">
+<svg class="stars__item-icon label-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M40 60L40.0001 60L53.6147 67.1576C54.2635 67.4987 55.0068 67.6165 55.7293 67.4925C57.5438 67.1813 58.7624 65.4581 58.4512 63.6437L55.851 48.4836L66.8655 37.7472C67.3904 37.2355 67.732 36.565 67.8375 35.8396C68.1022 34.0177 66.8399 32.3263 65.0181 32.0615L49.7965 29.8497L42.9892 16.0566C42.6648 15.3992 42.1327 14.8671 41.4753 14.5427C41.0002 14.3082 40.4962 14.1974 40 14.1978V60Z" fill="white" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M39.9999 14.1978C38.7719 14.1987 37.5911 14.8809 37.0108 16.0566L30.2035 29.8497L14.9819 32.0615C14.2565 32.167 13.586 32.5086 13.0743 33.0335C11.7893 34.3518 11.8163 36.4622 13.1346 37.7472L24.149 48.4836L21.5488 63.6437C21.4249 64.3662 21.5426 65.1094 21.8838 65.7583C22.7404 67.3878 24.7559 68.0143 26.3853 67.1576L39.9999 60V14.1978Z" fill="white" />
+<g opacity="0.3">
+<path d="M58.889 14.6278C59.4001 13.1749 60.8846 12.3024 62.4026 12.5628C66.4516 13.7629 65.7084 17.8505 61.3956 18.9187C60.6187 19.1795 60.1992 20.0201 60.4585 20.7979C60.7181 21.5767 61.5598 21.9976 62.3386 21.738L61.869 20.3292C62.3386 21.738 62.3395 21.7377 62.3395 21.7377L62.3405 21.7373L62.3428 21.7366L62.3487 21.7346L62.3655 21.7288C62.379 21.7242 62.3968 21.718 62.4187 21.7102C62.4625 21.6946 62.5229 21.6727 62.5973 21.6443C62.746 21.5876 62.9526 21.5049 63.1981 21.3958C63.6847 21.1796 64.3449 20.8505 65.0156 20.4034C66.2664 19.5695 67.9994 18.0208 68 15.684C68.0039 12.6947 65.8515 10.1382 62.9052 9.63278C59.9584 9.12733 57.0768 10.8209 56.0846 13.6413C55.8122 14.4157 56.2192 15.2643 56.9936 15.5367C57.768 15.8091 58.6166 15.4022 58.889 14.6278Z" fill="white" />
+<ellipse cx="61.9927" cy="26.5215" rx="1.54833" ry="1.54833" fill="white" />
+</g>
+</svg>
+Not sure
+</label>
+</div>
+</form>
+<div class="controls">
+<button class="btn btn-prev js-btn-prev">
+<svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 2L3 14L15 26" stroke="white" stroke-width="4" />
+</svg>
+</button>
+<button class="btn btn-next js-btn-next" disabled="disabled">
+<svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 2L14 14L2 26" stroke="white" stroke-width="4" />
+</svg>
+</button>
+</div>
+</div>
+</section>
+<section class="mvp-section brand js-slide">
+<div class="brand__inner layout container">
+<div class="pagination-numbers">
+<span class="pagination-numbers__current">8</span>/8
+</div>
+<h2 class="brand__title title">
+Do you need a brand identity design?
+</h2>
+<p class="brand__text text">
+Brand identity or simply branding is a useful tool for businesses requiring a complete setup.
+</p>
+<form action="#" class="brand__form main-form js-form" id="brand">
+<div class="brand__item main-form__item">
+<input type="radio" name="brand-type" id="logo" value="logo" class="brand__radio mvp-radio visually-hidden">
+<label for="logo" class="brand__label mvp-label label">
+<svg class="brand__item-icon label-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10 19.6665C10 18.0096 11.3431 16.6665 13 16.6665H67C68.6569 16.6665 70 18.0096 70 19.6665V63.6665C70 65.3234 68.6569 66.6665 67 66.6665H13C11.3431 66.6665 10 65.3234 10 63.6665V19.6665ZM16.6667 56.6665L31.6667 36.6665L46.6667 56.6665H16.6667ZM63.3333 36.6665C63.3333 42.1894 58.8562 46.6665 53.3333 46.6665C47.8105 46.6665 43.3333 42.1894 43.3333 36.6665C43.3333 31.1437 47.8105 26.6665 53.3333 26.6665C58.8562 26.6665 63.3333 31.1437 63.3333 36.6665Z" fill="#5C3BFE" />
+</svg>
+Logo
+</label>
+</div>
+<div class="brand__item main-form__item">
+<input type="radio" name="brand-type" id="full-brand" value="full-brand" class="brand__radio mvp-radio visually-hidden">
+<label for="full-brand" class="brand__label mvp-label label">
+<svg class="brand__item-icon label-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16 7.06641C16 5.40955 17.3431 4.06641 19 4.06641H61C62.6569 4.06641 64 5.40955 64 7.06641V41.0664C64 42.7233 62.6569 44.0664 61 44.0664H19C17.3431 44.0664 16 42.7233 16 41.0664V7.06641ZM21.3335 36.0666L33.3335 20.0666L45.3335 36.0666H21.3335ZM58.6666 20.0662C58.6666 24.4845 55.0849 28.0662 50.6666 28.0662C46.2483 28.0662 42.6666 24.4845 42.6666 20.0662C42.6666 15.6479 46.2483 12.0662 50.6666 12.0662C55.0849 12.0662 58.6666 15.6479 58.6666 20.0662Z" fill="white" />
+<rect opacity="0.3" x="16" y="49" width="43" height="6" rx="1.5" fill="white" />
+<rect opacity="0.3" x="16" y="70" width="43" height="5" rx="1.5" fill="white" />
+<path d="M16 61.3003C16 60.4719 16.6716 59.8003 17.5 59.8003H41.1667C41.9951 59.8003 42.6667 60.4719 42.6667 61.3003V63.6336C42.6667 64.4621 41.9951 65.1336 41.1667 65.1336H17.5C16.6716 65.1336 16 64.4621 16 63.6336V61.3003Z" fill="white" />
+</svg>
+Full branding
+<span class="brand__label-subtext">
+(brand book, colors, fonts, logo)
+</span>
+</label>
+</div>
+<div class="brand__item main-form__item">
+<input type="radio" name="brand-type" id="no-brand" value="no-brand" class="brand__radio mvp-radio visually-hidden">
+<label for="no-brand" class="brand__label mvp-label label">
+<svg class="brand__item-icon label-icon" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M60.0055 16.6665C60.0018 16.7772 60 16.8884 60 17C60 22.5228 64.4772 27 70 27V63.6665C70 65.3234 68.6569 66.6665 67 66.6665H13C11.3431 66.6665 10 65.3234 10 63.6665V19.6665C10 18.0096 11.3431 16.6665 13 16.6665H60.0055ZM31.6667 36.6665L16.6667 56.6665H46.6667L31.6667 36.6665ZM53.3333 46.6665C58.8561 46.6665 63.3333 42.1893 63.3333 36.6665C63.3333 31.1437 58.8561 26.6665 53.3333 26.6665C47.8104 26.6665 43.3333 31.1437 43.3333 36.6665C43.3333 42.1893 47.8104 46.6665 53.3333 46.6665Z" fill="white" />
+<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M65.6184 19.634C65.2279 20.0245 65.2279 20.6576 65.6184 21.0482L66.8116 22.2414C67.2022 22.6319 67.8353 22.6319 68.2259 22.2414L71.43 19.0372L74.6341 22.2413C75.0246 22.6318 75.6578 22.6318 76.0483 22.2413L77.2416 21.0481C77.6321 20.6576 77.6321 20.0244 77.2416 19.6339L74.0375 16.4298L77.2415 13.2258C77.632 12.8353 77.632 12.2021 77.2415 11.8116L76.0482 10.6183C75.6577 10.2278 75.0246 10.2278 74.634 10.6183L71.43 13.8223L68.2259 10.6182C67.8354 10.2277 67.2022 10.2277 66.8117 10.6182L65.6185 11.8115C65.2279 12.202 65.2279 12.8352 65.6185 13.2257L68.8226 16.4298L65.6184 19.634Z" fill="white" />
+</svg>
+None
+</label>
+</div>
+</form>
+<div class="controls">
+<button class="btn btn-prev js-btn-prev">
+<svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 2L3 14L15 26" stroke="white" stroke-width="4" />
+</svg>
+</button>
+<button class="btn btn-next js-btn-next" disabled="disabled">
+<svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 2L14 14L2 26" stroke="white" stroke-width="4" />
+</svg>
+</button>
+</div>
+</div>
+</section>
+</main>
+<footer id="footer" class="footer footer--portfolio js-flexible-height js-flexible-height--theme2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer__container">
+<div class="footer__inner">
+<div class="footer__top-wrapper">
+<div class="footer__left-wrap">
+<svg class="footer__logo" width="164" height="30" viewBox="0 0 164 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M43.7921 3.02539H34.8721V26.7525H40.2578V19.2954H43.7921C48.4373 19.2954 52.039 15.6686 52.039 11.1604C52.039 6.65225 48.4373 3.02539 43.7921 3.02539ZM43.7921 14.211H40.2578V8.10978H43.7921C45.4415 8.10978 46.6533 9.43172 46.6533 11.1604C46.6533 12.8891 45.4415 14.211 43.7921 14.211Z" fill="white" />
+<path d="M65.7673 9.80457V19.0582C65.7673 21.4648 64.4882 22.5494 62.6369 22.5494C61.0212 22.5494 59.7084 21.5665 59.7084 19.4649V9.80457H54.6593V20.2106C54.6593 24.7866 57.5541 27.2271 60.9538 27.2271C63.1754 27.2271 64.8585 26.4136 65.7673 25.1594V26.7525H70.8164V9.80457H65.7673Z" fill="white" />
+<path d="M79.9051 12.8213V9.80457H74.856V26.7525H79.9051V19.0921C79.9051 15.7364 82.8672 14.889 84.9542 15.2279V9.46561C82.8335 9.46561 80.5783 10.5503 79.9051 12.8213Z" fill="white" />
+<path d="M92.7001 12.8213V9.80457H87.651V26.7525H92.7001V19.0921C92.7001 15.7364 95.6622 14.889 97.7492 15.2279V9.46561C95.6285 9.46561 93.3733 10.5503 92.7001 12.8213Z" fill="white" />
+<path d="M118.959 9.80457L116.536 18.8887L113.91 9.80457H109.198L106.572 18.8887L104.149 9.80457H98.7629L104.149 26.7525H108.861L111.554 17.7023L114.247 26.7525H118.959L124.345 9.80457H118.959Z" fill="white" />
+<path d="M130.539 20.3123H142.488C142.623 19.6683 142.69 18.9904 142.69 18.2786C142.69 13.1603 139.055 9.33003 134.14 9.33003C128.822 9.33003 125.187 13.2281 125.187 18.2786C125.187 23.329 128.755 27.2271 134.511 27.2271C137.708 27.2271 140.199 26.0407 141.849 23.7358L137.809 21.397C137.136 22.1427 135.958 22.685 134.578 22.685C132.727 22.685 131.178 22.0749 130.539 20.3123ZM130.438 16.516C130.909 14.7873 132.188 13.8382 134.107 13.8382C135.621 13.8382 137.136 14.55 137.675 16.516H130.438Z" fill="white" />
+<path d="M155.955 9.33003C153.7 9.33003 152.05 10.1096 150.94 11.3977V3.02539H145.891V26.7525H150.94V25.1594C152.05 26.4475 153.7 27.2271 155.955 27.2271C160.365 27.2271 164 23.329 164 18.2786C164 13.2281 160.365 9.33003 155.955 9.33003ZM154.945 22.4139C152.623 22.4139 150.94 20.8207 150.94 18.2786C150.94 15.7364 152.623 14.1432 154.945 14.1432C157.268 14.1432 158.951 15.7364 158.951 18.2786C158.951 20.8207 157.268 22.4139 154.945 22.4139Z" fill="white" />
+<path d="M16.0866 30L29.567 0H24.6005L11.1201 30H16.0866Z" fill="white" />
+<path d="M4.89843 30L18.1941 0H13.2957L0 30H4.89843Z" fill="white" />
+</svg>
+<div class="footer__sublogo">
+Software development company.
+</div>
+<div class="footer__divider"></div>
+<ul class="footer__contacts">
+<li class="footer__phone">
+<a id="gtm-footer-tel" class="contacts__item-link contacts__item-link--tel" href="tel:+14844608069" rel="noreferrer noopener" target="_blank" onclick="ym(52342033,'reachGoal','CLK_PHONE_CALL'); return true;">
++1 484 460-80-69
+</a>
+</li>
+<li class="footer__mail">
+<a class="contacts__item-link" href="../cdn-cgi/l/email-protection.html#4b23220b3b3e39393c2e2965282426" rel="noreferrer noopener" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_EMAIL'); return true;">
+<span class="__cf_email__" data-cfemail="9bf3f2dbebeee9e9ecfef9b5f8f4f6">[email&#160;protected]</span>
+</a>
+</li>
+<li class="footer__messengers">
+<a class="contacts__telegram contacts__link-item" href="https://t.me/purrweb_agency" rel="noreferrer noopener" data-no-router="true" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_TELEGRAM'); return true;">
+<div class="contacts__item-img">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" fill="none" viewbox="0 0 24 21">
+<path fill="#fff" d="M.424 10.02l5.53 2.064 2.14 6.883a.651.651 0 0 0 1.034.312l3.083-2.513a.92.92 0 0 1 1.121-.032l5.56 4.037a.652.652 0 0 0 1.021-.394L23.986.786a.652.652 0 0 0-.873-.741L.417 8.8a.652.652 0 0 0 .007 1.22zm7.326.965l10.807-6.657c.195-.119.394.144.228.298l-8.92 8.292a1.849 1.849 0 0 0-.573 1.106l-.304 2.252c-.04.3-.462.33-.545.04l-1.169-4.107a1.088 1.088 0 0 1 .476-1.224z" />
+</svg>
+</div>
+Telegram
+</a>
+<a class="contacts__whatsap contacts__link-item js-whatsapp-link footer__whatsap" rel="noreferrer noopener" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_WHATSAPP'); return true;">
+<div class="contacts__item-img">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewbox="0 0 24 24">
+<path fill="#fff" d="M12.003 0h-.006C5.38 0 0 5.382 0 12c0 2.625.846 5.058 2.284 7.034L.79 23.49l4.613-1.474A11.896 11.896 0 0 0 12.003 24C18.619 24 24 18.616 24 12c0-6.617-5.38-12-11.997-12zm6.982 16.945c-.289.818-1.438 1.496-2.354 1.694-.628.134-1.447.24-4.204-.903-3.526-1.461-5.797-5.045-5.974-5.277-.17-.232-1.425-1.897-1.425-3.62 0-1.722.875-2.56 1.227-2.92.29-.295.768-.43 1.227-.43.148 0 .282.007.402.013.352.015.53.036.762.593.29.697.994 2.419 1.079 2.596.085.177.17.417.05.65-.112.24-.211.346-.388.55-.177.204-.345.36-.522.579-.162.19-.345.394-.141.747.204.345.909 1.495 1.947 2.42 1.34 1.192 2.426 1.573 2.814 1.735.29.12.635.091.846-.133.269-.29.6-.77.938-1.243.24-.338.543-.38.86-.26.324.112 2.039.96 2.391 1.135.353.177.585.261.671.41.084.148.084.845-.206 1.664z" />
+</svg>
+</div>
+WhatsApp
+</a>
+</li>
+</ul>
+</div>
+<div class="footer__right-wrap">
+<div class="footer__title">
+Fill in and get a quote
+</div>
+<iframe id="hidden_iframe" name="hidden_iframe" style="display:none;"></iframe>
+<form class="footer__form js-footer-form" name="contact-form" target="hidden_iframe" onsubmit="ym(52342033, 'reachGoal', 'FORM_OUT'); return true">
+<div class="footer__form-wrapper">
+<input class="footer__form-field footer__form-name js-field-name" type="text" name="entry.1228031061" aria-label="Name input field" placeholder="Name" required autocomplete="on">
+<input class="footer__form-field js-phone-input" type="tel" name="entry.1413156463" aria-label="Phone input field" placeholder="Phone number" required autocomplete="on" minlength="4" maxlength="20">
+</div>
+<input class="footer__form-field footer__form-email" type="email" name="entry.1893682035" aria-label="Email input field" placeholder="test@purrweb.com" required autocomplete="on">
+<textarea class="footer__form-field footer__form-field--area" name="entry.772928921" aria-label="Descriptions input field" placeholder="Project details"></textarea>
+<input class="footer__form-hidden" type="hidden" name="entry.481086178" value="Purrweb123!">
+<input type="hidden" class="js-client-id" name="entry.1458439335">
+<input type="hidden" id="counter-id" name="entry.273292564" value="52342033">
+<input type="hidden" class="js-entry-page" name="entry.1965512787" value>
+<input type="hidden" id="footer__form-token" name="token">
+<input class="footer__form-type footer__page-link" type="hidden" name="entry.281637821" value="footer-form-main-en ">
+<div class="footer__form-wrapper">
+<p class="footer__form-captcha-wrapper">
+This site is protected by reCAPTCHA and the Google
+<a class="footer__form-captcha-link" rel="nofollow noreferrer noopener" href="../privacy-policy/index.html" target="_blank">Privacy Policy</a> and
+<a class="footer__form-captcha-link" rel="nofollow noreferrer noopener" href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
+</p>
+<button id="order-form-btn" class="footer__form-btn rising-btn rising-btn--theme2" onclick="ym(52342033, 'reachGoal', 'CLK_SUCCESS'); return true;">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span id="gtm-footer-submit" class="rising-btn__text footer__btn-width--eng">
+Send
+</span>
+</span>
+</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<div class="footer__bottom-wrapper">
+<div class="footer__services js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+SERVICES
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../services/mvp/index.html" class="footer__link">MVP development services</a>
+</li>
+<li class="footer__item">
+<a href="../services/ui-ux/index.html" class="footer__link">UI/UX Design</a>
+</li>
+<li class="footer__item">
+<a href="../services/mobile-development/index.html" class="footer__link">Mobile Development</a>
+</li>
+<li class="footer__item">
+<a href="../services/web-development-services/index.html" class="footer__link">Web Development</a>
+</li>
+<li class="footer__item">
+<a href="../services/project-management-consulting-company/index.html" class="footer__link">Project Management</a>
+</li>
+<li class="footer__item">
+<a href="../services/software-development-for-startups/index.html" class="footer__link">Software Development for
+Startups</a>
+</li>
+<li class="footer__item">
+<a href="../services/progressive-web-app/index.html" class="footer__link">PWA</a>
+</li>
+</ul>
+</div>
+<div class="footer__otrasli js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+INDUSTRIES
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../services/terminal/index.html" class="footer__link">POS Development</a>
+</li>
+<li class="footer__item">
+<a href="../services/marketplace/index.html" class="footer__link">Marketplace</a>
+</li>
+<li class="footer__item">
+<a href="../services/finance/index.html" class="footer__link">Financial</a>
+</li>
+<li class="footer__item">
+<a href="../services/travel/index.html" class="footer__link">Travel</a>
+</li>
+<li class="footer__item">
+<a href="../services/tv-app-development/index.html" class="footer__link">SMART TV</a>
+</li>
+<li class="footer__item">
+<a href="../services/health/index.html" class="footer__link">Healthcare</a>
+</li>
+<li class="footer__item">
+<a href="../services/media/index.html" class="footer__link">Media</a>
+</li>
+<li class="footer__item">
+<a href="../services/wellness/index.html" class="footer__link">Wellness</a>
+</li>
+</ul>
+</div>
+<div class="footer__outsourcing footer__outsourcing--eng js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+INSIGHTS
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a class="footer__link" href="../blog/stock-trading-app-development/index.html">How To Build Stock Trading App</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../blog/how-much-does-ecommerce-app-development-cost/index.html">eCommerce App
+Development Cost</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../blog/healthcare-mobile-app-development/index.html">Healthcare Mobile App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../blog/telehealth-app-development-features-benefits-costs/index.html">Telemedicine
+App Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../blog/how-to-develop-an-iot-app-features-benefits-costs/index.html">IOT App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../blog/grocery-delivery-app-development/index.html">Grocery Delivery App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../blog/doctor-appointment-app-development-features-benefits-costs/index.html">Doctor
+Appointment Booking App Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../blog/mobile-app-development-for-banking/index.html">Banking App Development</a>
+</li>
+</ul>
+</div>
+<div class="footer__stack js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+TECH STACK
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../technologies/index.html" class="footer__link">Tech stack</a>
+</li>
+<li class="footer__item">
+<a href="../services/react-native/index.html" class="footer__link">React Native Development</a>
+</li>
+<li class="footer__item">
+<a href="../services/react-native-game-development/index.html" class="footer__link">React Native Game
+Development</a>
+</li>
+<li class="footer__item">
+<a href="../services/electron/index.html" class="footer__link">Electron JS</a>
+</li>
+<li class="footer__item">
+<a href="../services/react-js/index.html" class="footer__link">React.js</a>
+</li>
+<li class="footer__item">
+<a href="../services/webrtc/index.html" class="footer__link">WebRTC Development</a>
+</li>
+</ul>
+<div class="footer__ofice footer__ofice--pc">
+<h3 class="footer__ofice-caption">
+OFFICES
+</h3>
+<div class="footer__item footer__item--ofice">
+US 340 S LEMON AVE #9923 WALNUT,<br> CA 91789
+</div>
+</div>
+</div>
+<div class="footer__company js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+COMPANY
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../about/index.html" class="footer__link">About us</a>
+</li>
+<li class="footer__item">
+<a href="../contacts/index.html" class="footer__link">Contacts</a>
+</li>
+<li class="footer__item">
+<a href="../reviews/index.html" class="footer__link">Reviews</a>
+</li>
+<li class="footer__item">
+<a href="../portfolio/index.html" class="footer__link">Portfolio</a>
+</li>
+<li class="footer__item">
+<a href="../blog/index.html" class="footer__link">Blog</a>
+</li>
+</ul>
+<div class="footer__address footer__address--eng footer__address--pc">
+<address>
+Compass Building, <br> Al Shohada Road, <br> AL Hamra Industrial Zone-FZ, Ras Al Khaimah, UAE
+</address>
+</div>
+</div>
+<div class="footer__ofice footer__ofice--mobile">
+<h3 class="footer__ofice-caption">
+OFFICES
+</h3>
+<address class="footer__item footer__item--ofice">
+US 340 S LEMON AVE 9923 WALNUT, CA 91789
+</address>
+<address class="footer__address footer__address--mobile">
+Compass Building, Al Shohada Road, <br> AL Hamra Industrial Zone-FZ, Ras Al Khaimah, UAE
+</address>
+</div>
+</div>
+<div class="footer__divider"></div>
+<div class="footer__bottom">
+<div class="footer__terms">
+<a href="../privacy-policy/index.html" class="footer__terms--policy">Privacy Policy</a>
+<a href="https://policies.google.com/terms" target="_blank" class="footer__terms--term">Terms Of Services</a>
+</div>
+<div class="footer__rights">
+© 2023 Purrweb. All rights reserved
+</div>
+</div>
+</div>
+</div>
+</footer>
+<button class="btn-up js-btn-up" title="Go to the top of the page">
+<svg width="22" height="42" viewbox="0 0 22 42" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 29L11 41M11 41L1 29M11 41V0" />
+</svg>
+</button>
+<div class="popup-form js-form-popup">
+<div class="popup-form__inner">
+<p class="popup-form__text">Thanks for your inquiry. It usually take up to 24 hours to get back with reply.</p>
+<p class="popup-form__text">Wanna schedule an online meeting?</p>
+<button class="popup-form__close js-form-popup-btn">X</button>
+<button class="popup-form__btn js-form-popup-btn">
+<link href="../../assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../../assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<a href onclick="Calendly.initPopupWidget({url: 'https://calendly.com/purrweb_agency/initial_discussion?primary_color=5c3bfe'});return false;">Book
+the time slot!</a>
+</button>
+</div>
+</div>
+
+</div>
+
+<div class="idea-modal js-idea-modal" style="display: none;">
+<div class="idea-modal__content">
+<span class="idea-modal__title">
+Curious about the project cost?
+</span>
+<a href="#footer" class="idea-modal__button rising-btn rising-btn--theme3 js-scroll-to">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span id="gtm-idea-popup" class="rising-btn__text idea-modal__button-text">
+Fill in the form!
+</span>
+</span>
+</span></a>
+</div>
+<button class="idea-modal__close js-idea-modal__close" id="CLS-BTN-POPUP">
+X
+</button>
+</div>
+
+<script>
+    if (window.innerWidth >= 1024) {
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+          '../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-W4BS3VM');
+
+    } else if (window.innerWidth < 1024) {
+      var firedTG = false;
+      window.addEventListener('scroll', () => {
+        if (firedTG === false) {
+          firedTG = true;
+          setTimeout(() => {
+            (function (w, d, s, l, i) {
+              w[l] = w[l] || [];
+              w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+              });
+              var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+              j.async = true;
+              j.src =
+                '../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+              f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-W4BS3VM');
+          }, 0)
+        }
+      });
+    }
+  </script>
+
+
+
+<script type="text/javascript">
+    var firedRec = false;
+    window.addEventListener('scroll', () => {
+      if (firedRec === false) {
+        firedRec = true;
+        (function (d, w) {
+          var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "../../www.google.com/recaptcha/api6c91.js?render=6LdBWnwaAAAAADC4FEa3p5JPq12UcmBuQPHl-0Iz";
+          if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+          } else { f(); }
+        })(document, window);
+      }
+    });
+  </script>
+
+
+
+<script async type="text/javascript">
+    (function () {
+      var PM_YM_COUNTER = 52342033;
+      var ee = setInterval(function () {
+        if (typeof window.ym != 'undefined') {
+          let clientInputs = document.querySelectorAll('.js-client-id');
+          for (let clientInput of clientInputs) {
+            ym(PM_YM_COUNTER, 'getClientID', function (clientID) {
+              clientInput.value = clientID;
+            })
+          }
+
+          clearInterval(ee);
+        } else {
+          console.log('Метрика не инициализирована');
+        }
+      }, 1000); // 0,5 секунды ждать, изменить на свое значение, 1 сек = 1000
+    })();
+  </script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZM1DZX38E"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-5ZM1DZX38E');
+  </script>
+<script src="../common.4d9224ab871b2d75ac93.js"></script><script src="../mvp-calculator.4d9224ab871b2d75ac93.js"></script></body>
+
+<!-- Mirrored from www.purrweb.com/mvp-calculator/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Nov 2023 18:02:14 GMT -->
+</html>

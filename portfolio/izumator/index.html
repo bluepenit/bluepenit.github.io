@@ -1,0 +1,1433 @@
+
+
+
+
+	<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.purrweb.com/portfolio/izumator/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Nov 2023 15:32:30 GMT -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Online Learning Platform Design and Development | Purrweb</title>
+<meta name="description" content="Online learning platform design: how we designed and developed an educational web platform, which challenges we met and how we managed to complete the task.">
+<meta name="google-site-verification" content="YgG-iu_ngX9WM8Ulia3B7gYVqrEBLf9-GQ22HbQ7Jiw">
+<meta name="yandex-verification" content="4057b113a73e6486">
+<meta name="facebook-domain-verification" content="0cpowng2vyna7cecrsh180pvpcll09">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Online Learning Platform Design and Development | Purrweb">
+<meta property="og:description" content="Online learning platform design: how we designed and developed an educational web platform, which challenges we met and how we managed to complete the task.">
+<meta property="og:image" content="../../images/og-image.png">
+<meta property="og:site_name" content="Purrweb">
+<meta property="og:url" content="index.html">
+<meta name="twitter:title" content="Online Learning Platform Design and Development | Purrweb">
+<meta name="twitter:description" content="Online learning platform design: how we designed and developed an educational web platform, which challenges we met and how we managed to complete the task.">
+<meta name="twitter:image:src" content="../../images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@purrweb">
+<meta name="twitter:creator" content="@purrweb">
+<link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5c3bfe">
+<link rel="canonical" href="index.html">
+<meta name="msapplication-TileColor" content="#5c3bfe">
+<meta name="theme-color" content="#ffffff">
+<link rel="alternate" hreflang="ru" href="../../ru/portfolio/izumator/index.html">
+<link rel="alternate" hreflang="en" href="index.html">
+
+
+
+
+<meta name="google-site-verification" content="iAswyHNCt6kecOwxsuLaxgVNXaFS1GEwMiCJajfQ4dI">
+
+<link href="../../common.4d9224ab871b2d75ac93.css" rel="stylesheet"><link href="../../izumator.4d9224ab871b2d75ac93.css" rel="stylesheet"></head>
+<body class="js-disable-transition">
+<aside class="cookie hide-cookie" id="pjAcceptCookieBar">
+<div class="container pjAcceptCookieBarShell">
+<form action="#" method="post" class="cookie__inner">
+<p class="cookie__text">
+We use cookies to boost your experience on our website and ensure it functions properly. It also
+helps us with analytics — is that OK, isn’t it? :)
+</p>
+<div class="pjAcceptCookieBarActions">
+<button type="button" class="pjAcceptCookieBarBtn cookie__btn">
+Sure! I’m fine with it
+</button>
+</div>
+</form>
+</div>
+</aside>
+<header class="header js-header">
+<div class="container">
+<nav class="header__inner">
+<a class="header__logo" href="../../index.html">
+<svg xmlns="http://www.w3.org/2000/svg" width="164" height="30" fill="none" viewbox="0 0 164 30">
+<path fill="#fff" d="M43.688 3.025H34.79v23.728h5.373v-7.458h3.526c4.634 0 8.227-3.626 8.227-8.135 0-4.508-3.593-8.135-8.227-8.135zm0 11.186h-3.526V8.11h3.526c1.646 0 2.854 1.322 2.854 3.05 0 1.73-1.208 3.051-2.854 3.051zM65.612 9.805v9.253c0 2.407-1.277 3.491-3.124 3.491-1.611 0-2.921-.982-2.921-3.084v-9.66H54.53V20.21c0 4.576 2.888 7.016 6.28 7.016 2.216 0 3.895-.813 4.802-2.068v1.594h5.037V9.805h-5.037zM79.716 12.821V9.805h-5.037v16.947h5.037v-7.66c0-3.356 2.955-4.203 5.037-3.864V9.466c-2.115 0-4.365 1.084-5.037 3.355zM92.48 12.821V9.805h-5.036v16.947h5.037v-7.66c0-3.356 2.955-4.203 5.037-3.864V9.466c-2.116 0-4.366 1.084-5.037 3.355zM118.678 9.805l-2.418 9.084-2.619-9.084h-4.701l-2.62 9.084-2.418-9.084h-5.373l5.373 16.947h4.702l2.686-9.05 2.687 9.05h4.701l5.373-16.947h-5.373zM130.23 20.312h11.921a9.894 9.894 0 0 0 .202-2.033c0-5.119-3.627-8.949-8.53-8.949-5.306 0-8.932 3.898-8.932 8.949 0 5.05 3.559 8.948 9.302 8.948 3.19 0 5.675-1.186 7.32-3.491l-4.029-2.339c-.672.746-1.847 1.288-3.224 1.288-1.847 0-3.392-.61-4.03-2.373zm-.101-3.796c.471-1.729 1.747-2.678 3.661-2.678 1.511 0 3.022.712 3.559 2.678h-7.22zM155.587 9.33c-2.25 0-3.896.78-5.004 2.068V3.025h-5.037v23.728h5.037v-1.594c1.108 1.289 2.754 2.068 5.004 2.068 4.399 0 8.026-3.898 8.026-8.948 0-5.05-3.627-8.949-8.026-8.949zm-1.008 13.084c-2.317 0-3.996-1.593-3.996-4.135 0-2.543 1.679-4.136 3.996-4.136s3.996 1.593 3.996 4.136c0 2.542-1.679 4.135-3.996 4.135zM16.049 30L29.497 0h-4.955L11.094 30h4.955zM4.887 30L18.15 0h-4.887L0 30h4.887z" />
+</svg>
+<span class="visually-hidden">Purrweb logo</span>
+</a>
+
+<ul class="header__list js-menu">
+<li class="header__item header__item-portfolio">
+<a class="header__item-link" href="/" onclick="ym(52342033, 'reachGoal', 'CLK_PROJECTS'); return true;">
+Projects
+</a>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Technologies
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__dropmenu-inner">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--technologies">
+
+<a href="../../services/react-native/index.html" class="header__dropmenu-ref">
+React Native
+</a>
+<a href="../../services/react-js/index.html" class="header__dropmenu-ref">
+React.js
+</a>
+<a href="../../services/electron/index.html" class="header__dropmenu-ref">
+Electron.js
+</a>
+<a href="../../services/webrtc/index.html" class="header__dropmenu-ref">
+WebRTC
+</a>
+<a href="../../services/progressive-web-app/index.html" class="header__dropmenu-ref">
+PWA
+</a>
+<a href="../../services/react-native-game-development/index.html" class="header__dropmenu-ref">
+Mobile Games
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="header__divider"></div>
+<a href="../../technologies/index.html" class="header__dropmenu-main-ref">
+Tech Stack
+</a>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Services
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu header__dropmenu--services" id="dropdown2">
+<div class="header__dropmenu-inner">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Development
+</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--dev">
+<a href="../../services/mobile-development/index.html" class="header__dropmenu-ref">
+Mobile App Development
+</a>
+<a href="../../services/web-development-services/index.html" class="header__dropmenu-ref">
+Web Development
+</a>
+<a href="../../services/ux-audit/index.html" class="header__dropmenu-ref">
+UX Audit
+</a>
+
+
+
+
+
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--dev2">
+
+
+
+<a href="../../services/software-development-for-startups/index.html" class="header__dropmenu-ref">
+Software Development for Startups
+</a>
+<a href="../../services/crossplatform/index.html" class="header__dropmenu-ref">
+Cross-Platform Development
+</a>
+<a href="../../services/mvp/index.html" class="header__dropmenu-ref">
+MVP
+</a>
+
+
+
+</div>
+</div>
+</div>
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Design</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--design">
+<a href="../../services/ui-ux/index.html" class="header__dropmenu-ref">
+UI/UX
+</a>
+
+
+
+
+</div>
+</div>
+</div>
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Management
+</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--management">
+
+<a href="../../services/project-management-consulting-company/index.html" class="header__dropmenu-ref">
+Project Management
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="header__divider"></div>
+<a href="../../services/index.html" class="header__dropmenu-main-ref">
+Software Development Services
+</a>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Industries
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries">
+<a href="../../services/travel/index.html" class="header__dropmenu-ref">
+Travel
+</a>
+<a href="../../services/health/index.html" class="header__dropmenu-ref">
+Healthcare
+</a>
+<a href="../../services/tv-app-development/index.html" class="header__dropmenu-ref">
+Smart TV
+</a>
+<a href="../../services/logistics/index.html" class="header__dropmenu-ref">
+Logistics
+</a>
+<a href="../../services/wellness/index.html" class="header__dropmenu-ref">
+Wellness
+</a>
+<a href="../../services/terminal/index.html" class="header__dropmenu-ref">
+POS
+</a>
+<a href="../../services/custom-ecommerce/index.html" class="header__dropmenu-ref">
+Custom Ecom Apps
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries2">
+<a href="../../services/events/index.html" class="header__dropmenu-ref">
+Events
+</a>
+<a href="../../services/marketplace/index.html" class="header__dropmenu-ref">
+Marketplace
+</a>
+<a href="../../services/estate/index.html" class="header__dropmenu-ref">
+Real Estate
+</a>
+<a href="../../services/media/index.html" class="header__dropmenu-ref">
+Social Media
+</a>
+<a href="../../services/finance/index.html" class="header__dropmenu-ref">
+Fintech
+</a>
+<a href="../../services/iot/index.html" class="header__dropmenu-ref">
+IoT
+</a>
+<a href="../../services/ecommerce/index.html" class="header__dropmenu-ref">
+eCommerce Development
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Development Team
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries">
+<a href="../../services/outsourcing/index.html" class="header__dropmenu-main-ref header__dropmenu-main-ref--margin-bottom">
+Outsourcing
+</a>
+<a href="../../services/dev-outsourcing/index.html" class="header__dropmenu-ref">
+Development
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries2">
+<a href="../../services/outstaffing/index.html" class="header__dropmenu-main-ref header__dropmenu-main-ref--margin-bottom">
+Outstaffing
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item header__item--blog">
+<button class="header__item-inner click-dropdown" onclick="ym(52342033, 'reachGoal', 'CLK_BLOG'); return true;">
+<div class="header__item-drop">
+Blog
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu header__dropmenu--blog">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--blog">
+<a href="../../blog/how-much-does-it-cost-to-develop-an-app/index.html" class="header__dropmenu-ref">
+How much does it cost to develop an app
+</a>
+<a href="../../blog/how-to-create-a-social-media-app-a-z-guide/index.html" class="header__dropmenu-ref">
+How to make a social media app
+</a>
+<a href="../../blog/website-redesign-cost/index.html" class="header__dropmenu-ref">
+How much does it cost to redesign a website
+</a>
+<a href="../../blog/restaurant-app-development-purrwebs-detailed-guide/index.html" class="header__dropmenu-ref">
+Restaurant mobile app development
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--blog2">
+<a href="../../blog/how-much-does-it-cost-to-develop-an-app/index.html" class="header__dropmenu-ref">
+How much does it cost to maintain an app
+</a>
+<a href="../../blog/dating-app-development/index.html" class="header__dropmenu-ref">
+Dating mobile app development
+</a>
+<a href="../../blog/how-to-hire-a-developer-for-a-startup-and-not-to-regret-about-it/index.html" class="header__dropmenu-ref">
+Hiring a developer for a startup
+</a>
+<a href="../../blog/index.html" class="header__dropmenu-ref">
+All posts
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+About
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--about">
+<a href="../../about/index.html" class="header__dropmenu-ref">
+Company
+</a>
+<a href="../../contacts/index.html" class="header__dropmenu-ref">
+Contacts
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item header__item--lang visually-hidden">
+<a class="header__item-link js-en-link" href="../../ru/portfolio/izumator/index.html">Ru</a>
+</li>
+<li class="header__item header__item--request">
+<a class="rising-btn rising-btn--theme2 js-scroll-to" href="#footer" onclick="ym(52342033, 'reachGoal', 'CLK_RAQ'); return true;">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span class="rising-btn__text">
+Request a quote
+</span>
+</span>
+</span>
+</a>
+<div class="lang-popup js-lang-popup hide-lang" id="LangCookieBar">
+<p class="lang-popup__text">
+Холмс, кажется, вы в России...
+</p>
+<button class="lang-popup__close-btn js-close-popup">
+<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.50002 4.49844L9.00627 0.992188L10.0079 1.99377L6.5016 5.50002L10.0079 9.00627L9.00627 10.0079L5.50002 6.5016L1.99377 10.0079L0.992188 9.00627L4.49844 5.50002L0.992188 1.99377L1.99377 0.992188L5.50002 4.49844Z" fill="#808080" />
+</svg>
+</button>
+<div class="lang-popup__btn-wrap">
+<a href="#" class="lang-popup__btn lang-popup__btn--ru js-ru-btn">
+Переключить язык
+</a>
+<a href="#" class="lang-popup__btn lang-popup__btn--eng js-eng-btn">
+не, и так норм
+</a>
+</div>
+</div>
+</li>
+</ul>
+<button class="header__humb js-humb">
+<span class="visually-hidden">Open/close menu</span>
+</button>
+</nav>
+</div>
+</header>
+<div class="main js-main">
+<div style="height: 0; width: 0; position: absolute; visibility: hidden;">
+<svg>
+<linearGradient id="paint-pencil-linear" x1="45.9609" y1="20.5107" x2="45.9609" y2="68.2064" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFF72B" />
+<stop offset="1" stop-color="#FFC632" />
+</linearGradient>
+<linearGradient id="paint-star-linear" x1="30.8679" y1="13.0767" x2="30.8679" y2="46.9655" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFF62B" />
+<stop offset="1" stop-color="#FFC832" />
+</linearGradient>
+<linearGradient id="paint-medal1-linear" x1="19.5154" y1="14.6343" x2="19.5154" y2="32.4719" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFC832" />
+<stop offset="1" stop-color="#FFF32C" />
+</linearGradient>
+<linearGradient id="paint-medal2-linear" x1="19.8777" y1="26.1279" x2="19.8777" y2="6.89323" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFF72B" />
+<stop offset="1" stop-color="#FFC632" />
+</linearGradient>
+<symbol id="hero-pencil" viewBox="0 0 90 90">
+<rect x="0.786621" y="0.790527" width="88.7402" height="88.7402" rx="15.4331" fill="#F28256" />
+<mask id="mask-pencil" maskUnits="userSpaceOnUse" x="0" y="0" width="90" height="90">
+<rect x="0.786621" y="0.790527" width="88.7402" height="88.7402" rx="15.4331" fill="#89FF52" />
+</mask>
+<g mask="url(#mask-pencil)">
+<path opacity="0.1" d="M117.875 20.5109C32.0933 8.67886 -6.19647 85.8335 -14.6186 125.89C12.4965 122.192 73.6286 113.072 101.237 106.17C135.747 97.5423 225.103 35.3009 117.875 20.5109Z" fill="white" />
+<path opacity="0.1" d="M117.742 46.0607C47.2294 -4.20398 -22.4748 46.3952 -48.5128 77.9779C-22.7751 87.2768 35.6154 107.547 63.276 114.235C97.8518 122.596 205.883 108.891 117.742 46.0607Z" fill="white" />
+</g>
+<circle cx="45.9609" cy="44.3585" r="23.8478" fill="url(#paint-pencil-linear)" />
+<circle opacity="0.34" cx="45.7455" cy="44.1426" r="19.335" fill="#FBFFCF" />
+<rect x="46.7749" y="37.3438" width="8.81769" height="14.2423" transform="rotate(45 46.7749 37.3438)" fill="white" />
+<rect width="8.81769" height="3.28667" transform="matrix(0.707107 0.707107 0.707107 -0.707107 47.5485 36.5693)" fill="white" />
+<path d="M42.1651 54.423L35.1115 55.2415L35.93 48.188L42.1651 54.423Z" fill="white" />
+<rect x="54.9926" y="31.6191" width="5.29062" height="4.38223" transform="rotate(45 54.9926 31.6191)" fill="white" />
+</symbol>
+<symbol id="hero-star" viewBox="0 0 62 62">
+<rect x="0.368164" y="0.368164" width="61" height="61" rx="10.6087" fill="#1E96ED" />
+<mask id="mask-star" maskUnits="userSpaceOnUse" x="0" y="0" width="62" height="62">
+<rect x="0.368164" y="0.368164" width="61" height="61" rx="10.6087" fill="#89FF52" />
+</mask>
+<g mask="url(#mask-star)">
+<rect opacity="0.1" x="-7.18352" y="39.6499" width="44.0555" height="44.0556" rx="13.7913" transform="rotate(-90 -7.18352 39.6499)" fill="white" />
+<rect opacity="0.1" x="9.79074" y="80.9941" width="56.2261" height="56.2261" rx="13.7913" transform="rotate(-90 9.79074 80.9941)" fill="white" />
+</g>
+<path d="M34.5197 15.2299L37.1209 20.5758C37.5211 21.4668 38.4215 22.0607 39.322 22.1597L45.2248 23.0507C48.5263 23.5457 49.827 27.5056 47.4258 29.7826L43.2238 33.8415C42.5235 34.5345 42.2233 35.4255 42.4234 36.4155L43.4239 42.2564C44.0242 45.5233 40.5225 47.9983 37.6212 46.4143L32.2186 43.7414C31.3182 43.3454 30.3177 43.3454 29.5173 43.7414L24.2148 46.5133C21.3134 47.9983 17.8117 45.6223 18.412 42.3554L19.4125 36.5145C19.6126 35.5245 19.2124 34.6335 18.6121 33.9405L14.3101 29.7826C11.9089 27.5056 13.2096 23.5457 16.5111 23.0507L22.4139 22.1597C23.4144 22.0607 24.2148 21.4668 24.615 20.5758L27.2162 15.2299C28.817 12.3589 33.019 12.3589 34.5197 15.2299Z" fill="url(#paint-star-linear)" />
+<path d="M33.4761 20.5141L35.3341 24.2562C35.62 24.8799 36.2631 25.2957 36.9063 25.365L41.1226 25.9887C43.4809 26.3352 44.4099 29.1071 42.6948 30.701L39.6933 33.5422C39.1931 34.0273 38.9787 34.651 39.1216 35.344L39.8363 39.4326C40.265 41.7195 37.7639 43.452 35.6914 42.3432L31.8325 40.4721C31.1893 40.1949 30.4747 40.1949 29.903 40.4721L26.1155 42.4125C24.0431 43.452 21.5419 41.7888 21.9706 39.5019L22.6853 35.4133C22.8282 34.7203 22.5423 34.0966 22.1136 33.6115L19.0407 30.701C17.3256 29.1071 18.2546 26.3352 20.6129 25.9887L24.8291 25.365C25.5438 25.2957 26.1155 24.8799 26.4013 24.2562L28.2593 20.5141C29.4027 18.5044 32.4042 18.5044 33.4761 20.5141Z" fill="#FEE765" />
+</symbol>
+<symbol id="hero-medal" viewBox="0 0 40 40">
+<rect x="0.499207" y="0.499023" width="38.7043" height="38.7043" rx="6.73119" fill="#0CBA7B" />
+<mask id="mask-medal" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+<rect x="0.499207" y="0.499023" width="38.7043" height="38.7043" rx="6.73119" fill="#89FF52" />
+</mask>
+<g mask="url(#mask-medal)">
+<circle cx="10.7643" cy="34.6593" r="19.3522" fill="white" fill-opacity="0.1" />
+<circle cx="34.0088" cy="4.38988" r="7.25706" fill="white" fill-opacity="0.1" />
+</g>
+<path d="M14.6353 15.3074V31.3995C14.6353 31.8958 15.1541 32.2215 15.601 32.0057L19.2227 30.2573C19.4076 30.168 19.6231 30.168 19.808 30.2573L23.4297 32.0057C23.8767 32.2215 24.3955 31.8958 24.3955 31.3995V15.3074C24.3955 14.9356 24.0941 14.6343 23.7224 14.6343H15.3084C14.9366 14.6343 14.6353 14.9356 14.6353 15.3074Z" fill="url(#paint-medal1-linear)" />
+<path d="M20.3544 25.6498C20.0914 25.9136 19.664 25.9136 19.401 25.6498L18.6015 24.8478C18.4087 24.6545 18.1183 24.5967 17.8663 24.7016L16.8207 25.1365C16.4767 25.2796 16.0819 25.1161 15.9399 24.7717L15.5081 23.7248C15.404 23.4724 15.1578 23.3079 14.8848 23.3083L13.7524 23.31C13.3798 23.3106 13.0777 23.0085 13.0782 22.6359L13.08 21.5035C13.0804 21.2305 12.9159 20.9843 12.6635 20.8802L11.6166 20.4484C11.2722 20.3064 11.1087 19.9116 11.2518 19.5676L11.6867 18.522C11.7916 18.27 11.7338 17.9795 11.5405 17.7868L10.7385 16.9873C10.4747 16.7242 10.4747 16.2969 10.7385 16.0339L11.5405 15.2344C11.7338 15.0416 11.7916 14.7512 11.6867 14.4991L11.2518 13.4536C11.1087 13.1096 11.2722 12.7148 11.6166 12.5728L12.6635 12.141C12.9159 12.0369 13.0804 11.7907 13.08 11.5177L13.0782 10.3853C13.0777 10.0127 13.3798 9.71055 13.7524 9.71111L14.8848 9.71284C15.1578 9.71325 15.404 9.54874 15.5081 9.29636L15.9399 8.24948C16.0819 7.90506 16.4767 7.74154 16.8207 7.88463L17.8663 8.31959C18.1183 8.42444 18.4087 8.36667 18.6015 8.17334L19.401 7.37137C19.6641 7.10754 20.0914 7.10754 20.3544 7.37137L21.1539 8.17334C21.3467 8.36667 21.6371 8.42444 21.8892 8.31959L22.9347 7.88463C23.2787 7.74154 23.6735 7.90506 23.8155 8.24948L24.2473 9.29636C24.3514 9.54874 24.5976 9.71325 24.8706 9.71284L26.003 9.71111C26.3756 9.71055 26.6777 10.0127 26.6772 10.3853L26.6754 11.5177C26.675 11.7907 26.8395 12.0369 27.0919 12.141L28.1388 12.5728C28.4832 12.7148 28.6467 13.1096 28.5037 13.4536L28.0687 14.4991C27.9638 14.7512 28.0216 15.0416 28.2149 15.2344L29.0169 16.0339C29.2807 16.2969 29.2807 16.7242 29.0169 16.9873L28.2149 17.7868C28.0216 17.9795 27.9638 18.27 28.0687 18.522L28.5037 19.5676C28.6467 19.9116 28.4832 20.3064 28.1388 20.4484L27.0919 20.8802C26.8395 20.9843 26.675 21.2305 26.6754 21.5035L26.6772 22.6359C26.6777 23.0085 26.3756 23.3106 26.003 23.31L24.8706 23.3083C24.5976 23.3079 24.3514 23.4724 24.2473 23.7248L23.8155 24.7717C23.6735 25.1161 23.2787 25.2796 22.9347 25.1365L21.8892 24.7016C21.6371 24.5967 21.3467 24.6545 21.1539 24.8478L20.3544 25.6498Z" fill="url(#paint-medal2-linear)" />
+<path opacity="0.34" d="M20.3534 24.0463C20.0904 24.3101 19.6631 24.3101 19.4 24.0463L18.8663 23.5109C18.6736 23.3176 18.3831 23.2598 18.1311 23.3647L17.4331 23.655C17.0891 23.7981 16.6943 23.6346 16.5523 23.2902L16.2641 22.5913C16.16 22.339 15.9138 22.1744 15.6408 22.1749L14.8848 22.176C14.5123 22.1766 14.2101 21.8744 14.2107 21.5019L14.2118 20.7459C14.2122 20.4729 14.0477 20.2267 13.7953 20.1226L13.0965 19.8344C12.7521 19.6923 12.5886 19.2975 12.7316 18.9536L13.022 18.2556C13.1269 18.0035 13.0691 17.7131 12.8758 17.5204L12.3404 16.9866C12.0766 16.7236 12.0766 16.2963 12.3404 16.0333L12.8758 15.4995C13.0691 15.3068 13.1269 15.0164 13.022 14.7643L12.7316 14.0663C12.5886 13.7224 12.7521 13.3276 13.0965 13.1855L13.7953 12.8973C14.0477 12.7932 14.2122 12.547 14.2118 12.274L14.2107 11.518C14.2101 11.1455 14.5123 10.8433 14.8848 10.8439L15.6408 10.8451C15.9138 10.8455 16.16 10.681 16.2641 10.4286L16.5523 9.72973C16.6943 9.38532 17.0891 9.22179 17.4331 9.36489L18.1311 9.65524C18.3831 9.7601 18.6736 9.70233 18.8663 9.509L19.4 8.97364C19.6631 8.70981 20.0904 8.70981 20.3534 8.97364L20.8871 9.509C21.0799 9.70233 21.3703 9.7601 21.6224 9.65524L22.3203 9.36489C22.6643 9.22179 23.0591 9.38532 23.2011 9.72973L23.4894 10.4286C23.5935 10.681 23.8397 10.8455 24.1127 10.8451L24.8686 10.8439C25.2412 10.8433 25.5433 11.1455 25.5428 11.518L25.5416 12.274C25.5412 12.547 25.7057 12.7932 25.9581 12.8973L26.6569 13.1855C27.0014 13.3276 27.1649 13.7224 27.0218 14.0663L26.7314 14.7643C26.6266 15.0164 26.6843 15.3068 26.8777 15.4995L27.413 16.0333C27.6769 16.2963 27.6769 16.7236 27.413 16.9866L26.8777 17.5204C26.6843 17.7131 26.6266 18.0035 26.7314 18.2556L27.0218 18.9536C27.1649 19.2975 27.0014 19.6923 26.6569 19.8344L25.9581 20.1226C25.7057 20.2267 25.5412 20.4729 25.5416 20.7459L25.5428 21.5019C25.5433 21.8744 25.2412 22.1766 24.8686 22.176L24.1127 22.1749C23.8397 22.1744 23.5935 22.339 23.4894 22.5913L23.2011 23.2902C23.0591 23.6346 22.6643 23.7981 22.3203 23.655L21.6224 23.3647C21.3703 23.2598 21.0799 23.3176 20.8871 23.5109L20.3534 24.0463Z" fill="#FBFFCF" />
+</symbol>
+<symbol id="crown" viewBox="0 0 28 27">
+<path d="M22.669 19.983H5.05105C3.47802 19.983 2.21959 18.8757 2.06229 17.452L0.0173432 5.58757C-0.13996 4.63842 0.80386 4.16384 1.59038 4.63842L8.03982 10.0169L12.7589 1.47458C13.0735 0.841808 14.0173 0.841808 14.4893 1.47458L19.3657 10.0169L26.4443 4.63842C27.0735 4.16384 28.1746 4.63842 28.0173 5.58757L25.6578 17.452C25.5005 18.8757 24.2421 19.983 22.669 19.983Z" fill="#F28256" />
+<path d="M4.5791 25H23.4555" stroke="#F28256" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+</symbol>
+<symbol id="star" viewBox="0 0 29 28">
+<path d="M15.9062 1.16189L19.1313 7.72746L26.3146 8.76025C28.0004 8.98156 28.7334 11.1209 27.4873 12.3012L22.2831 17.3914L23.5292 24.5471C23.8224 26.2439 22.0632 27.5717 20.524 26.7602L14.147 23.3668L7.77005 26.7602C6.23078 27.5717 4.47162 26.2439 4.76481 24.5471L6.01089 17.3914L0.806696 12.3012C-0.439377 11.1209 0.220309 8.98156 1.97947 8.76025L9.16272 7.72746L12.3878 1.16189C12.9009 -0.387295 15.0999 -0.387295 15.9062 1.16189Z" fill="#F28256" />
+</symbol>
+<symbol id="user" viewBox="0 0 21 35">
+<rect x="0.791534" y="25.7894" width="19.3421" height="9.21053" rx="3" fill="#F28256" />
+<path d="M20.6833 13.9052C20.6833 15.2483 19.5522 16.3544 18.1787 16.3544H18.0979C17.5323 20.0677 14.2198 22.912 10.3416 22.912C6.38273 22.912 3.15097 20.0677 2.58541 16.3544H2.50462C1.13112 16.3544 0 15.2483 0 13.9052C0 12.5621 1.13112 11.456 2.50462 11.456V7.74266C2.42382 3.4763 5.97876 0 10.3416 0C12.5231 0 14.4621 0.869075 15.9164 2.2912C17.3707 3.71332 18.2595 5.60948 18.2595 7.74266V11.456C19.5522 11.456 20.6833 12.5621 20.6833 13.9052Z" fill="#F28256" />
+</symbol>
+<symbol id="book" viewBox="0 0 28 23">
+<path d="M15 3.59326V21.5826C15 22.2138 15.6231 22.845 16.2462 22.5294C17.1809 21.8982 18.7387 21.5826 20.2965 21.267C23.1005 20.9514 25.5929 20.9514 26.8391 21.267C27.4623 20.9514 27.7738 20.6358 27.7738 20.0046V2.01525C27.7738 1.69965 27.7738 1.38405 27.4623 1.06844C25.6212 0.0581148 23.412 -0.193968 19.9849 0.437238C17.4925 0.75284 15.9347 2.33085 15.3116 2.96206C15.3116 2.96206 15 3.27766 15 3.59326Z" fill="#F28256" />
+<path d="M12.7738 3.59322V21.5826C12.7738 22.2138 12.1507 22.845 11.5276 22.5294C10.5929 21.5826 9.03514 20.9514 7.47736 20.9514C4.67335 20.6358 2.1809 20.6358 0.934669 20.9514C0.311556 20.9514 0 20.6358 0 20.0046V2.01521C0 1.6996 0.311556 1.384 0.623113 1.0684C1.86934 0.752796 4.2485 -0.366765 7.78891 0.121591C10.2814 0.752796 11.0461 1.33262 12.3206 2.60717C12.7455 3.03202 12.7738 3.27762 12.7738 3.59322Z" fill="#F28256" />
+</symbol>
+<symbol id="study" viewBox="0 0 30 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M29.1841 7.5782C29.6865 7.83793 30 8.34277 30 8.8921V14.7326L29.0028 13.7718L28.001 14.737V9.44885C28.001 9.26096 27.793 9.14103 27.6212 9.22987L14.869 15.8228C14.412 16.0591 13.8625 16.0591 13.4055 15.8228L0.81586 9.31391C-0.271954 8.7515 -0.271953 7.2485 0.815861 6.68609L13.4055 0.177203C13.8625 -0.0590679 14.412 -0.0590675 14.869 0.177203L29.1841 7.5782ZM22.67 14.2748C23.1855 14.0083 23.8097 14.3681 23.8097 14.9318V18.5094C23.8097 19.0588 23.4962 19.5636 22.9938 19.8233L15.6007 23.6456C14.6867 24.1181 13.5878 24.1181 12.6738 23.6456L5.34516 19.8567C4.84278 19.5969 4.5293 19.0921 4.5293 18.5428V14.9651C4.5293 14.4014 5.15347 14.0416 5.66896 14.3082L13.4055 18.308C13.8625 18.5443 14.412 18.5443 14.869 18.308L22.67 14.2748Z" fill="#F28256" />
+</symbol>
+<symbol id="role-border" viewBox="0 0 531 460">
+<path d="M1 32L1 31.0003C1 14.4318 14.4314 1.00036 31 1.00035L500 1.00004C516.568 1.00003 530 14.4315 530 31L530 459" stroke="#F28256" stroke-linecap="round" stroke-dasharray="8 8" />
+</symbol>
+<symbol id="role-border2" viewBox="0 0 476 335">
+<path d="M1 32L1 31.0004C1 14.4318 14.4314 1.00039 31 1.00038L444.5 1.00004C461.069 1.00003 474.5 14.4315 474.5 31L474.5 334" stroke="#F28256" stroke-linecap="round" stroke-dasharray="8 8" />
+</symbol>
+<symbol id="role-border3" viewBox="0 0 407 220">
+<path d="M1 32L1 31.0003C1 14.4317 14.4314 1.00029 31 1.00028L375.5 1.00004C392.069 1.00003 405.5 14.4315 405.5 31L405.5 219" stroke="#F28256" stroke-linecap="round" stroke-dasharray="8 8" />
+</symbol>
+<symbol id="role-border4" viewBox="0 0 238 117">
+<path d="M1 32L1 31C1 14.4315 14.4315 1 31 1L207 1.00001C223.569 1.00001 237 14.4315 237 31L237 116" stroke="#F28256" stroke-linecap="round" stroke-dasharray="8 8" />
+</symbol>
+</svg>
+</div>
+<section class="hero js-anim">
+<div class="container hero__container">
+<div class="hero__copyright">
+<svg class="hero__copyright-logo" width="127" height="33" viewBox="0 0 127 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M31.0368 24V7.08H38.3808C40.2368 7.08 41.6688 7.544 42.6768 8.472C43.6848 9.4 44.1888 10.696 44.1888 12.36C44.1888 14.024 43.6848 15.328 42.6768 16.272C41.6688 17.2 40.2368 17.664 38.3808 17.664H34.1088V24H31.0368ZM34.1088 15.24H37.9008C40.1088 15.24 41.2128 14.28 41.2128 12.36C41.2128 10.456 40.1088 9.504 37.9008 9.504H34.1088V15.24ZM50.4656 24.24C47.5856 24.24 46.1456 22.624 46.1456 19.392V12.264H49.1456V19.44C49.1456 20.272 49.3136 20.888 49.6496 21.288C49.9856 21.688 50.5216 21.888 51.2576 21.888C52.0576 21.888 52.7136 21.616 53.2256 21.072C53.7376 20.512 53.9936 19.776 53.9936 18.864V12.264H56.9936V24H54.0656V22.248C53.2816 23.576 52.0816 24.24 50.4656 24.24ZM60.116 24V12.264H63.044V14.328C63.62 12.936 64.852 12.168 66.74 12.024L67.652 11.952L67.844 14.496L66.116 14.664C64.148 14.856 63.164 15.864 63.164 17.688V24H60.116ZM69.5145 24V12.264H72.4425V14.328C73.0185 12.936 74.2505 12.168 76.1385 12.024L77.0505 11.952L77.2425 14.496L75.5145 14.664C73.5465 14.856 72.5625 15.864 72.5625 17.688V24H69.5145ZM82.8795 24L78.2475 12.264H81.3195L84.3195 20.52L87.3435 12.264H89.4555L92.4795 20.568L95.4795 12.264H98.3835L93.7755 24H91.1595L88.3035 16.44L85.4955 24H82.8795ZM105.65 24.24C104.322 24.24 103.178 23.992 102.218 23.496C101.258 23 100.514 22.296 99.986 21.384C99.474 20.472 99.218 19.392 99.218 18.144C99.218 16.928 99.466 15.864 99.962 14.952C100.474 14.04 101.17 13.328 102.05 12.816C102.946 12.288 103.962 12.024 105.098 12.024C106.762 12.024 108.074 12.552 109.034 13.608C110.01 14.664 110.498 16.104 110.498 17.928V18.816H102.098C102.322 20.912 103.522 21.96 105.698 21.96C106.354 21.96 107.01 21.864 107.666 21.672C108.322 21.464 108.922 21.144 109.466 20.712L110.306 22.728C109.746 23.192 109.042 23.56 108.194 23.832C107.346 24.104 106.498 24.24 105.65 24.24ZM105.218 14.064C104.338 14.064 103.626 14.336 103.082 14.88C102.538 15.424 102.21 16.16 102.098 17.088H108.002C107.938 16.112 107.666 15.368 107.186 14.856C106.722 14.328 106.066 14.064 105.218 14.064ZM119.642 24.24C118.778 24.24 118.002 24.048 117.314 23.664C116.642 23.28 116.138 22.76 115.802 22.104V24H112.874V7.08H115.874V13.992C116.226 13.4 116.73 12.928 117.386 12.576C118.058 12.208 118.81 12.024 119.642 12.024C120.682 12.024 121.586 12.272 122.354 12.768C123.122 13.264 123.722 13.968 124.154 14.88C124.586 15.776 124.802 16.856 124.802 18.12C124.802 19.368 124.586 20.456 124.154 21.384C123.722 22.296 123.114 23 122.33 23.496C121.562 23.992 120.666 24.24 119.642 24.24ZM118.802 21.96C119.698 21.96 120.418 21.64 120.962 21C121.506 20.344 121.778 19.384 121.778 18.12C121.778 16.84 121.506 15.888 120.962 15.264C120.418 14.624 119.698 14.304 118.802 14.304C117.906 14.304 117.186 14.624 116.642 15.264C116.098 15.888 115.826 16.84 115.826 18.12C115.826 19.384 116.098 20.344 116.642 21C117.186 21.64 117.906 21.96 118.802 21.96Z" fill="#333333" />
+<path d="M10.269 24.0686L18.8168 4.84473H15.6676L7.11975 24.0686H10.269Z" fill="#333333" />
+<path d="M3.12182 24.069L11.5953 4.84521H8.47351L0 24.069H3.12182Z" fill="#333333" />
+</svg>
+<p class="hero__copyright-year">2021</p>
+</div>
+<div class="rectangle hero__rectangle-big"></div>
+<div class="rectangle hero__rectangle-middle"></div>
+<div class="rectangle hero__rectangle-mini"></div>
+<svg class="hero__icon hero__icon-medal" width="39" height="39">
+<use xlink:href="#hero-medal"></use>
+</svg>
+<svg class="hero__icon hero__icon-pencil" width="89" height="89">
+<use xlink:href="#hero-pencil"></use>
+</svg>
+<svg class="hero__icon hero__icon-star" width="61" height="61">
+<use xlink:href="#hero-star"></use>
+</svg>
+<div class="hero__content">
+<h1 class="hero__title">iZumator</h1>
+<div class="hero__img-wrap">
+<picture class="hero__img"><source type="image/webp" srcset="/images/izumator-hero-en.png, /images/izumator-hero-en@2x.png 2x"><img data-src="/images/izumator-hero-en.png" src="../../images/izumator-hero-en.png" alt="iZumator" srcset="/images/izumator-hero-en.png, /images/izumator-hero-en@2x.png 2x"></picture>
+</div>
+</div>
+</div>
+</section>
+<section class="about">
+<h2 class="visually-hidden">О проекте</h2>
+<div class="container about__container">
+<div class="about__client-descr-wrap">
+<ul class="about__client-descr">
+<li class="about__client-descr-item">
+<p class="about__client-descr-title">The client:</p>
+<p class="about__client-descr-text">iZum — a chain of mobile
+phone stores from Omsk</p>
+</li>
+<li class="about__client-descr-item">
+<p class="about__client-descr-title">Start of the project:</p>
+<p class="about__client-descr-text">6 August 2020</p>
+</li>
+</ul>
+</div>
+<ul class="about__project-descr">
+<li class="about__project-descr-item">
+<p class="about__project-descr-title">About</p>
+<p class="about__project-descr-text">iZumator is a platform for online education where users can create
+and pass courses.</p>
+</li>
+<li class="about__project-descr-item">
+<p class="about__project-descr-title">Killer feature</p>
+<p class="about__project-descr-text">Any student can become a mentor and teach others. iZum focuses
+on the result that students get, not on the process of studying — skills
+that students learn from courses can be put into practice right away.</p>
+</li>
+</ul>
+</div>
+<div class="bussiness-task bussiness-task--en">
+<div class="container bussiness-task__container">
+<div class="rectangle rectangle--black bussiness-task__rectangle bussiness-task__rectangle-big"></div>
+<div class="rectangle rectangle--black bussiness-task__rectangle bussiness-task__rectangle-middle"></div>
+<div class="rectangle rectangle--black bussiness-task__rectangle bussiness-task__rectangle-mini"></div>
+<div class="rectangle rectangle--orange bussiness-task__rectangle bussiness-task__color-big"></div>
+<div class="rectangle rectangle--blue bussiness-task__rectangle bussiness-task__color-middle"></div>
+<div class="rectangle rectangle--green bussiness-task__rectangle bussiness-task__color-mini"></div>
+<h3 class="bussiness-task__title">Business goals</h3>
+<p class="bussiness-task__subtitle">The client developed a thorough product strategy.<br>
+The platform is planned to go through 3 stages of development:</p>
+<ul class="bussiness-task__list">
+<li class="bussiness-task__item">
+<div class="bussiness-task__step"></div>
+<p class="bussiness-task__text">Creating the internal<br>
+platform for education<br>
+of the company’s employees.
+</p>
+</li>
+<li class="bussiness-task__item">
+<div class="bussiness-task__step"></div>
+<p class="bussiness-task__text">Entering the market of educational <br>
+services and offering the platform<br>
+to other companies.
+</p>
+</li>
+<li class="bussiness-task__item">
+<div class="bussiness-task__step"></div>
+<p class="bussiness-task__text">Developing a P2P platform,<br>
+open for all users and courses.
+</p>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="first-iteration first-iteration--en">
+<h2 class="visually-hidden">First iteration</h2>
+<div class="container first-iteration__container">
+<div class="rectangle rectangle--blue first-iteration__rectangle first-iteration__rectangle-left-big"></div>
+<div class="rectangle rectangle--orange first-iteration__rectangle first-iteration__rectangle-left-middle"></div>
+<div class="rectangle rectangle--green first-iteration__rectangle first-iteration__rectangle-left-mini"></div>
+<div class="rectangle rectangle--orange first-iteration__rectangle first-iteration__rectangle-right-big"></div>
+<div class="rectangle rectangle--blue first-iteration__rectangle first-iteration__rectangle-right-middle"></div>
+<div class="rectangle rectangle--green first-iteration__rectangle first-iteration__rectangle-right-mini"></div>
+<p class="first-iteration__text">
+After the first development iteration, the platform can be used
+only by iZum’s employees, it works as a tool for onboarding newcomers.
+The client’s next step is to break into the market of online education
+and compete with other platforms — Coursera, Skillbox, and Udemy.
+</p>
+</div>
+</section>
+<section class="hierarchy hierarchy--en">
+<div class="container hierarchy__container">
+<svg class="hierarchy__triangle" width="114" height="70" viewBox="0 0 114 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M61.2736 67.0472C59.2944 69.7625 55.2538 69.7917 53.2356 67.1054L1.603 -1.61788C-0.863062 -4.90023 1.45892 -9.59142 5.56433 -9.62111L107.83 -10.3607C111.935 -10.3904 114.325 -5.7333 111.907 -2.41563L61.2736 67.0472Z" fill="#1F1F1F" />
+</svg>
+<div class="hierarchy__head js-anim">
+<div class="hierarchy__head-description">
+<h2 class="hierarchy__head-title">Hierarchy of roles <br>
+and cycled functionality</h2>
+<p class="hierarchy__head-text">Users on the platform have 5 roles — student, mentor, assistant,
+admin, and supervisor. Our major challenge was the hierarchy
+of roles: admin has all rights, mentor has rights of students,
+and so on — every bigger role includes the rights of the smaller
+ones. Users can switch between the roles in account settings.</p>
+</div>
+<div class="hierarchy__head-img-wrap">
+<picture class="hierarchy__head-img"><source type="image/webp" data-srcset="/images/izumator-hierarchy-en.png 1x, /images/izumator-hierarchy-en@2x.png 2x"><img data-src="/images/izumator-hierarchy-en.png" src="../../images/izumator-hierarchy-en.png" alt="Hierarchy of roles and cycled functionality" data-srcset="/images/izumator-hierarchy-en.png 1x, /images/izumator-hierarchy-en@2x.png 2x" class="lazyload"></picture>
+</div>
+</div>
+</div>
+<div class="hierarchy__steps hierarchy-steps hierarchy-steps--en">
+<div class="container hierarchy-steps__container">
+<ul class="hierarchy-steps__list">
+<li class="hierarchy-steps__item">
+<div class="hierarchy-steps__item-wrapper">
+<div class="hierarchy-steps__item-head">
+<svg class="hierarchy-steps__item-head-border">
+<use xlink:href="#role-border"></use>
+</svg>
+<div class="hierarchy-steps__item-role-wrap">
+<svg class="hierarchy-steps__item-role-icon" width="28" height="27">
+<use xlink:href="#crown"></use>
+</svg>
+<p class="hierarchy-steps__item-role">Admin</p>
+</div>
+</div>
+<p class="hierarchy-steps__item-text">Sees all content<br>
+on the pages<br>
+but can’t edit</p>
+</div>
+</li>
+<li class="hierarchy-steps__item">
+<div class="hierarchy-steps__item-wrapper">
+<div class="hierarchy-steps__item-head">
+<svg class="hierarchy-steps__item-head-border">
+<use xlink:href="#role-border2"></use>
+</svg>
+<div class="hierarchy-steps__item-role-wrap">
+<svg class="hierarchy-steps__item-role-icon" width="28" height="27">
+<use xlink:href="#star"></use>
+</svg>
+<p class="hierarchy-steps__item-role">Supervisor</p>
+</div>
+</div>
+<p class="hierarchy-steps__item-text">Adds users, creates groups, <br>
+edits information on the pages</p>
+</div>
+</li>
+<li class="hierarchy-steps__item">
+<div class="hierarchy-steps__item-wrapper">
+<div class="hierarchy-steps__item-head">
+<svg class="hierarchy-steps__item-head-border">
+<use xlink:href="#role-border3"></use>
+</svg>
+<div class="hierarchy-steps__item-role-wrap">
+<svg class="hierarchy-steps__item-role-icon" width="21" height="35">
+<use xlink:href="#user"></use>
+</svg>
+<p class="hierarchy-steps__item-role">Assistant</p>
+</div>
+</div>
+<p class="hierarchy-steps__item-text">Checks homework</p>
+</div>
+</li>
+<li class="hierarchy-steps__item">
+<div class="hierarchy-steps__item-wrapper">
+<div class="hierarchy-steps__item-head">
+<svg class="hierarchy-steps__item-head-border">
+<use xlink:href="#role-border4"></use>
+</svg>
+<div class="hierarchy-steps__item-role-wrap">
+<svg class="hierarchy-steps__item-role-icon" width="28" height="23">
+<use xlink:href="#book"></use>
+</svg>
+<p class="hierarchy-steps__item-role">Mentor</p>
+</div>
+</div>
+<p class="hierarchy-steps__item-text">Creates courses, adds<br>
+events to students’ <br>
+calendars</p>
+</div>
+</li>
+<li class="hierarchy-steps__item">
+<div class="hierarchy-steps__item-wrapper">
+<div class="hierarchy-steps__item-head">
+<div class="hierarchy-steps__item-role-wrap">
+<svg class="hierarchy-steps__item-role-icon" width="30" height="24">
+<use xlink:href="#study"></use>
+</svg>
+<p class="hierarchy-steps__item-role">Student</p>
+</div>
+</div>
+<p class="hierarchy-steps__item-text">Studies courses, <br>
+does homework</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="container hierarchy__notebook-container">
+<div class="rectangle hierarchy__notebook-rectangle-big"></div>
+<div class="rectangle hierarchy__notebook-rectangle-big2"></div>
+<div class="rectangle rectangle--blue hierarchy__notebook-rectangle-middle"></div>
+<div class="rectangle rectangle--orange hierarchy__notebook-rectangle-mini1"></div>
+<div class="rectangle rectangle--green hierarchy__notebook-rectangle-mini2"></div>
+<div class="hierarchy__notebook-wrap">
+<picture class="hierarchy__notebook"><source type="image/webp" data-srcset="/images/izumator-notebook1.png 1x, /images/izumator-notebook1@2x.png 2x"><img data-src="/images/izumator-notebook1.png" src="../../images/izumator-notebook1.png" alt="hierarchy example" data-srcset="/images/izumator-notebook1.png 1x, /images/izumator-notebook1@2x.png 2x" class="lazyload"></picture>
+<video class="hierarchy__notebook-video js-anim" playsinline preload="metadata" loop muted src="../../videos/izumator-notebook.mp4"></video>
+</div>
+</div>
+</section>
+<section class="design design--en">
+<div class="container design__container">
+<svg class="design__triangle" width="114" height="70" viewBox="0 0 114 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M61.2736 67.0472C59.2944 69.7625 55.2538 69.7917 53.2356 67.1054L1.603 -1.61788C-0.863062 -4.90023 1.45892 -9.59142 5.56433 -9.62111L107.83 -10.3607C111.935 -10.3904 114.325 -5.7333 111.907 -2.41563L61.2736 67.0472Z" fill="#F6F6F6" />
+</svg>
+<div class="rectangle rectangle--gray design__rectangle-big"></div>
+<div class="rectangle rectangle--gray design__rectangle-middle"></div>
+<img class="design__icon design__icon--check lazyload" data-src="/images/izumator-design-check.svg" src="../../images/izumator-design-check.svg" alt="UI/UX design">
+<img class="design__icon design__icon--search lazyload" data-src="/images/izumator-design-search.svg" src="../../images/izumator-design-search.svg" alt="UI/UX design">
+<img class="design__icon design__icon--study lazyload" data-src="/images/izumator-design-study.svg" src="../../images/izumator-design-study.svg" alt="UI/UX design">
+<div class="design__head">
+<h2 class="design__title">UI/UX design</h2>
+<p class="design__text">We dedicated a lot of time to wireframing: because of the role hierarchy,
+the platform’s functionality was supposed to encircle. To come up
+with the future product’s style, we created a mood board: gathered
+colors, fonts, references. After that, started working on the concept.</p>
+</div>
+<div class="design__comment comment">
+<div class="comment__wrap">
+<div class="comment__ava-wrap">
+<picture class="comment__ava"><source type="image/webp" data-srcset="/images/izumator-vakulenko.png 1x, /images/izumator-vakulenko@2x.png 2x"><img data-src="/images/izumator-vakulenko.png" src="../../images/izumator-vakulenko.png" alt="Julia Vakulenko" data-srcset="/images/izumator-vakulenko.png 1x, /images/izumator-vakulenko@2x.png 2x" class="lazyload"></picture>
+</div>
+<div class="comment__content">
+<p class="comment__text">The client wanted us to get inspiration from Airbnb design.
+We chose a warm color scheme — in order to resonate
+with the reference but not duplicate it. The accent color
+is orange, elements are illuminated when active.</p>
+<p class="comment__author">Julia Vakulenko, <br> leading UI/UX designer</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="stack stack--en">
+<div class="container stack__container">
+<svg class="stack__triangle" width="114" height="70" viewBox="0 0 114 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M61.2736 67.0472C59.2944 69.7625 55.2538 69.7917 53.2356 67.1054L1.603 -1.61788C-0.863062 -4.90023 1.45892 -9.59142 5.56433 -9.62111L107.83 -10.3607C111.935 -10.3904 114.325 -5.7333 111.907 -2.41563L61.2736 67.0472Z" fill="#fff" />
+</svg>
+<div class="stack__head">
+<div class="rectangle stack__head-rectangle-big"></div>
+<div class="rectangle rectangle--green stack__head-rectangle-middle"></div>
+<div class="rectangle rectangle--blue stack__head-rectangle-mini1"></div>
+<div class="rectangle rectangle--orange stack__head-rectangle-mini2"></div>
+<div class="stack__img-wrap js-anim">
+<picture class="stack__img stack__img1"><source type="image/webp" data-srcset="/images/izumator-stack1-en.png 1x, /images/izumator-stack1-en@2x.png 2x"><img data-src="/images/izumator-stack1-en.png" src="../../images/izumator-stack1-en.png" alt="Tech stack" data-srcset="/images/izumator-stack1-en.png 1x, /images/izumator-stack1-en@2x.png 2x" class="lazyload"></picture>
+<picture class="stack__img stack__img2"><source type="image/webp" data-srcset="/images/izumator-stack2-en.png 1x, /images/izumator-stack2-en@2x.png 2x"><img data-src="/images/izumator-stack2-en.png" src="../../images/izumator-stack2-en.png" alt="Tech stack" data-srcset="/images/izumator-stack2-en.png 1x, /images/izumator-stack2-en@2x.png 2x" class="lazyload"></picture>
+</div>
+<div class="stack__description">
+<h2 class="stack__description-title">Tech stack</h2>
+<p class="stack__description-text">We used Nest.js for the backend, Redux and Next.js
+for the frontend. Next is good for services that need
+search engine indexing. Although at the first stage
+the platform was closed from the general public
+and didn’t need indexing, we knew that the project
+would soon become public — and chose instruments
+considering the client’s plans.</p>
+</div>
+</div>
+<div class="stack__comment comment">
+<div class="rectangle stack__comment-rectangle stack__comment-rectangle-big1"></div>
+<div class="rectangle stack__comment-rectangle stack__comment-rectangle-big2"></div>
+<div class="rectangle stack__comment-rectangle rectangle--blue stack__comment-rectangle-middle"></div>
+<div class="rectangle stack__comment-rectangle rectangle--green stack__comment-rectangle-mini1"></div>
+<div class="rectangle stack__comment-rectangle rectangle--orange stack__comment-rectangle-mini2"></div>
+<div class="comment__wrap">
+<div class="comment__ava-wrap">
+<picture class="comment__ava"><source type="image/webp" data-srcset="/images/izumator-zemlyakov.png 1x, /images/izumator-zemlyakov@2x.png 2x"><img data-src="/images/izumator-zemlyakov.png" src="../../images/izumator-zemlyakov.png" alt="Konstantin Zemlyakov" data-srcset="/images/izumator-zemlyakov.png 1x, /images/izumator-zemlyakov@2x.png 2x" class="lazyload"></picture>
+</div>
+<div class="comment__content">
+<p class="comment__text">Initially, we chose the REST architectural style, because the relationships
+between entities were simple. But because of the role hierarchy,
+the relationships become more complex — there were too many requests,
+we needed to create a separate endpoint for almost every page. With such
+a role system it would be better to use GraphQL since it allows you to get
+all data the app needs with a single request.</p>
+<p class="comment__author">Konstantin Zemlyakov, <br> full-stack developer</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="features features--en">
+<h2 class="visually-hidden">Features</h2>
+<div class="container features__container">
+<svg class="features__triangle" width="114" height="70" viewBox="0 0 114 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M61.2736 67.0472C59.2944 69.7625 55.2538 69.7917 53.2356 67.1054L1.603 -1.61788C-0.863062 -4.90023 1.45892 -9.59142 5.56433 -9.62111L107.83 -10.3607C111.935 -10.3904 114.325 -5.7333 111.907 -2.41563L61.2736 67.0472Z" fill="#fff" />
+</svg>
+<ul class="features__list">
+<li class="features__item features__item--end features__item--pr11">
+<div class="rectangle rectangle--black features__item1-rectangle-big"></div>
+<div class="rectangle rectangle--blue features__item1-rectangle-middle"></div>
+<div class="rectangle rectangle--orange features__item1-rectangle-mini1"></div>
+<div class="rectangle rectangle--green features__item1-rectangle-mini2"></div>
+<div class="features__item-description">
+<h3 class="features__item-title">User communication</h3>
+<p class="features__item-text">The platform has a built-in forum and a support chat for close<br>
+communication between users. When a student uploads <br>
+homework, the app automatically creates a forum thread: <br>
+users can ask questions, discuss problems, and rate tasks.</p>
+</div>
+</li>
+<li class="features__item features__item--with-img">
+<div class="rectangle rectangle--black features__item2-rectangle-big"></div>
+<div class="rectangle rectangle--green features__item2-rectangle-middle"></div>
+<div class="rectangle rectangle--orange features__item2-rectangle-mini1"></div>
+<div class="rectangle rectangle--blue features__item2-rectangle-mini2"></div>
+<div class="features__item-description">
+<h3 class="features__item-title">Calendar of courses
+and events</h3>
+<p class="features__item-text">Every user has a calendar — mentors can add events<br>
+for course participants. For example, set a deadline<br>
+for completing homework. Students can monitor<br>
+their events in the iZumator calendar or import<br>
+the data to Google Calendar.</p>
+</div>
+<div class="features__item-img-wrap">
+<div class="features__item-img-video-wrap">
+<video src="../../videos/izumator-notebook-calendar1.mp4" playsinline preload="metadata" loop muted class="features__item-img-video features__item-img-video1 js-anim"></video>
+<picture class="features__item-img"><source type="image/webp" data-srcset="/images/izumator-notebook2.png 1x, /images/izumator-notebook2@2x.png 2x"><img data-src="/images/izumator-notebook2.png" src="../../images/izumator-notebook2.png" alt="Calendar of courses and events" data-srcset="/images/izumator-notebook2.png 1x, /images/izumator-notebook2@2x.png 2x" class="lazyload"></picture>
+</div>
+<div class="features__item-img-video-wrap features__item-img-video-wrap2">
+<video src="../../videos/izumator-notebook-calendar2.mp4" playsinline preload="metadata" loop muted class="features__item-img-video features__item-img-video2 js-anim"></video>
+<picture class="features__item-calendar"><source type="image/webp" data-srcset="/images/izumator-calendar.png 1x, /images/izumator-calendar@2x.png 2x"><img data-src="/images/izumator-calendar.png" src="../../images/izumator-calendar.png" alt="Calendar of courses and events" data-srcset="/images/izumator-calendar.png 1x, /images/izumator-calendar@2x.png 2x" class="lazyload"></picture>
+</div>
+</div>
+</li>
+</ul>
+<div class="features__comment comment">
+<div class="comment__wrap">
+<div class="comment__ava-wrap">
+<picture class="comment__ava"><source type="image/webp" data-srcset="/images/izumator-farberova.png 1x, /images/izumator-farberova@2x.png 2x"><img data-src="/images/izumator-farberova.png" src="../../images/izumator-farberova.png" alt="Elena Farberova" data-srcset="/images/izumator-farberova.png 1x, /images/izumator-farberova@2x.png 2x" class="lazyload"></picture>
+</div>
+<div class="comment__content">
+<p class="comment__text comment__text--white">The client wanted us to add the ability for admin to look through other
+users’ calendars and see their events. It would be difficult to implement
+such a feature and it wasn’t in the initial project scope, so we
+didn’t include it in the MVP.</p>
+<p class="comment__author comment__author--white">Elena Farberova, <br> project manager</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="difficulties difficulties--en">
+<div class="container difficulties__container">
+<div class="rectangle difficulties__rectangle-big"></div>
+<div class="rectangle rectangle--blue difficulties__rectangle-middle"></div>
+<div class="rectangle rectangle--orange difficulties__rectangle-mini"></div>
+<div class="rectangle rectangle--green difficulties__rectangle-mini2"></div>
+<div class="difficulties__video-wrap">
+<video src="../../videos/izumator-profile-mobile.mp4" playsinline preload="metadata" loop muted class="difficulties__video js-anim"></video>
+</div>
+<div class="difficulties__img-wrap">
+<video src="../../videos/izumator-cool-mobile.mp4" playsinline preload="metadata" loop muted class="difficulties__video difficulties__video2 js-anim"></video>
+<video src="../../videos/izumator-courses-mobile.mp4" playsinline preload="metadata" loop muted class="difficulties__video difficulties__video3 js-anim"></video>
+</div>
+<div class="difficulties__description">
+<h2 class="difficulties__title">Challenges</h2>
+<ul class="difficulties__list">
+<li class="difficulties__item">Vast project — many roles <br>
+and relationships between users</li>
+<li class="difficulties__item">Tight deadline — the client wanted us to finish<br>
+the project by the end of year 2020</li>
+<li class="difficulties__item">COVID-19 — in the middle of the project <br>
+development team with the manager caught covid</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="result result--en">
+<div class="container result__container">
+<div class="rectangle rectangle--black result__rectangle-big"></div>
+<div class="rectangle rectangle--black result__rectangle-big2"></div>
+<div class="rectangle rectangle--green result__rectangle-middle"></div>
+<div class="rectangle rectangle--orange result__rectangle-mini1"></div>
+<div class="rectangle rectangle--blue result__rectangle-mini2"></div>
+<div class="rectangle rectangle--green result__rectangle2-middle"></div>
+<div class="rectangle rectangle--blue result__rectangle2-mini1"></div>
+<div class="result__description">
+<h2 class="result__title">Results</h2>
+<ul class="result__list">
+<li class="result__item">
+<div class="result__item-icon">
+<svg width="20" height="31" viewBox="0 0 20 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.6988 9.87206C19.7375 13.2411 18.133 16.2184 15.6585 18.0596C15.0013 18.5493 14.634 19.2936 14.634 20.1163V22.3884C14.634 23.5441 13.8027 24.5039 12.7201 24.6997C12.5848 24.7193 12.4495 24.7389 12.3142 24.7389H7.40397C7.26865 24.7389 7.114 24.7193 6.97868 24.6997C5.89612 24.5039 5.08419 23.5441 5.08419 22.3884V20.1163C5.08419 19.3132 4.71689 18.5493 4.05962 18.0792C1.60452 16.238 0 13.2999 0 9.98959C0 4.46593 4.40759 0 9.85908 0C15.2912 0 19.6408 4.368 19.6988 9.87206Z" fill="#F28256" />
+<path d="M12.8276 26.7963V30.1333C12.8276 30.61 12.2445 31 11.5319 31H7.7095C6.99686 31 6.41379 30.61 6.41379 30.1333V26.7963C6.41379 26.7675 6.41379 26.7386 6.41379 26.7241C6.56495 26.7386 6.71612 26.753 6.88888 26.753H12.3741C12.5252 26.753 12.698 26.7386 12.8276 26.7241C12.8276 26.753 12.8276 26.7675 12.8276 26.7963Z" fill="#F28256" />
+<ellipse cx="6.51469" cy="7.02025" rx="3.74138" ry="4.81034" transform="rotate(25.4539 6.51469 7.02025)" fill="#1F1F1F" />
+</svg>
+</div>
+<p class="result__item-text">Developed the first version of the platform — the client<br>
+is now testing it within the company</p>
+</li>
+<li class="result__item">
+<div class="result__item-icon">
+<svg width="21" height="27" viewBox="0 0 21 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.87475 26.354C8.19431 27.1026 6.95981 26.4831 7.15322 25.4902L8.62609 17.9286L1.36321 15.132C0.707098 14.8794 0.509655 14.0465 0.982562 13.5262L12.6905 0.646009C13.3709 -0.102563 14.6054 0.516878 14.412 1.50983L12.9391 9.07143L20.202 11.868C20.8581 12.1206 21.0556 12.9535 20.5827 13.4738L8.87475 26.354Z" fill="#F28256" />
+</svg>
+</div>
+<p class="result__item-text">Created a product that can be easily scaled without refactoring</p>
+</li>
+<li class="result__item">
+<div class="result__item-icon">
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M26.5979 18.4208C28.4536 18.4208 30 16.8665 30 15.0014C30 13.1363 28.4536 11.582 26.5979 11.582C26.4433 11.582 26.2887 11.582 26.134 11.582C25.9021 10.8049 25.5928 10.1055 25.2835 9.48378C25.4381 9.40606 25.5155 9.25064 25.6701 9.17292C26.9845 7.8518 26.9845 5.67584 25.6701 4.35472C24.3557 3.0336 22.1907 3.0336 20.8763 4.35472C20.7216 4.51015 20.6443 4.58786 20.567 4.74328C19.8711 4.35472 19.1753 4.12158 18.4794 3.88844C18.4794 3.73302 18.4794 3.57759 18.4794 3.42216C18.4794 1.55705 16.933 0.00279356 15.0773 0.00279356C13.1443 -0.0749194 11.5979 1.47934 11.5979 3.34445C11.5979 3.49988 11.5979 3.6553 11.5979 3.81073C10.8247 4.04387 10.1289 4.35472 9.51031 4.66557C9.43299 4.51015 9.27835 4.43243 9.20103 4.27701C7.8866 3.0336 5.72165 3.0336 4.40722 4.35472C3.09278 5.67584 3.09278 7.8518 4.40722 9.17292C4.48454 9.25064 4.63917 9.40606 4.79381 9.48378C4.40722 10.1832 4.09794 10.8826 3.86598 11.582C3.71134 11.582 3.5567 11.582 3.40206 11.582C1.54639 11.582 0 13.1363 0 15.0014C0 16.8665 1.54639 18.4208 3.40206 18.4208C3.5567 18.4208 3.71134 18.4208 3.86598 18.4208C4.09794 19.1979 4.40722 19.8973 4.71649 20.519C4.56186 20.5967 4.48454 20.7522 4.3299 20.8299C3.01546 22.151 3.01546 24.327 4.3299 25.6481C5.64433 26.9692 7.80928 26.9692 9.12371 25.6481C9.27835 25.4926 9.35567 25.4149 9.43299 25.2595C10.1289 25.6481 10.8247 25.8812 11.5206 26.1144C11.5206 26.2698 11.5206 26.4252 11.5206 26.5806C11.5206 28.4457 13.067 30 14.9227 30C16.7783 30 18.3247 28.4457 18.3247 26.5806C18.3247 26.4252 18.3247 26.2698 18.3247 26.1144C19.0979 25.8812 19.7938 25.5704 20.4124 25.2595C20.4897 25.4149 20.6443 25.4926 20.7216 25.6481C22.0361 26.9692 24.201 26.9692 25.5155 25.6481C26.8299 24.327 26.8299 22.151 25.5155 20.8299C25.3608 20.6744 25.2835 20.5967 25.1289 20.519C25.5155 19.8196 25.7474 19.1202 25.9794 18.4208C26.2887 18.4208 26.4433 18.4208 26.5979 18.4208ZM15 22.7727C10.7474 22.7727 7.26804 19.2756 7.26804 15.0014C7.26804 10.6495 10.7474 7.15239 15 7.15239C19.2526 7.15239 22.8093 10.6495 22.8093 15.0014C22.732 19.2756 19.2526 22.7727 15 22.7727Z" fill="#F28256" />
+</svg>
+</div>
+<p class="result__item-text">Now we are fixing small post-release bugs, collecting<br>
+feedback, and discussing the next iteration</p>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<footer id="footer" class="footer js-flexible-height js-flexible-height--theme2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer__container">
+<div class="footer__inner">
+<div class="footer__top-wrapper">
+<div class="footer__left-wrap">
+<svg class="footer__logo" width="164" height="30" viewBox="0 0 164 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M43.7921 3.02539H34.8721V26.7525H40.2578V19.2954H43.7921C48.4373 19.2954 52.039 15.6686 52.039 11.1604C52.039 6.65225 48.4373 3.02539 43.7921 3.02539ZM43.7921 14.211H40.2578V8.10978H43.7921C45.4415 8.10978 46.6533 9.43172 46.6533 11.1604C46.6533 12.8891 45.4415 14.211 43.7921 14.211Z" fill="white" />
+<path d="M65.7673 9.80457V19.0582C65.7673 21.4648 64.4882 22.5494 62.6369 22.5494C61.0212 22.5494 59.7084 21.5665 59.7084 19.4649V9.80457H54.6593V20.2106C54.6593 24.7866 57.5541 27.2271 60.9538 27.2271C63.1754 27.2271 64.8585 26.4136 65.7673 25.1594V26.7525H70.8164V9.80457H65.7673Z" fill="white" />
+<path d="M79.9051 12.8213V9.80457H74.856V26.7525H79.9051V19.0921C79.9051 15.7364 82.8672 14.889 84.9542 15.2279V9.46561C82.8335 9.46561 80.5783 10.5503 79.9051 12.8213Z" fill="white" />
+<path d="M92.7001 12.8213V9.80457H87.651V26.7525H92.7001V19.0921C92.7001 15.7364 95.6622 14.889 97.7492 15.2279V9.46561C95.6285 9.46561 93.3733 10.5503 92.7001 12.8213Z" fill="white" />
+<path d="M118.959 9.80457L116.536 18.8887L113.91 9.80457H109.198L106.572 18.8887L104.149 9.80457H98.7629L104.149 26.7525H108.861L111.554 17.7023L114.247 26.7525H118.959L124.345 9.80457H118.959Z" fill="white" />
+<path d="M130.539 20.3123H142.488C142.623 19.6683 142.69 18.9904 142.69 18.2786C142.69 13.1603 139.055 9.33003 134.14 9.33003C128.822 9.33003 125.187 13.2281 125.187 18.2786C125.187 23.329 128.755 27.2271 134.511 27.2271C137.708 27.2271 140.199 26.0407 141.849 23.7358L137.809 21.397C137.136 22.1427 135.958 22.685 134.578 22.685C132.727 22.685 131.178 22.0749 130.539 20.3123ZM130.438 16.516C130.909 14.7873 132.188 13.8382 134.107 13.8382C135.621 13.8382 137.136 14.55 137.675 16.516H130.438Z" fill="white" />
+<path d="M155.955 9.33003C153.7 9.33003 152.05 10.1096 150.94 11.3977V3.02539H145.891V26.7525H150.94V25.1594C152.05 26.4475 153.7 27.2271 155.955 27.2271C160.365 27.2271 164 23.329 164 18.2786C164 13.2281 160.365 9.33003 155.955 9.33003ZM154.945 22.4139C152.623 22.4139 150.94 20.8207 150.94 18.2786C150.94 15.7364 152.623 14.1432 154.945 14.1432C157.268 14.1432 158.951 15.7364 158.951 18.2786C158.951 20.8207 157.268 22.4139 154.945 22.4139Z" fill="white" />
+<path d="M16.0866 30L29.567 0H24.6005L11.1201 30H16.0866Z" fill="white" />
+<path d="M4.89843 30L18.1941 0H13.2957L0 30H4.89843Z" fill="white" />
+</svg>
+<div class="footer__sublogo">
+Software development company.
+</div>
+<div class="footer__divider"></div>
+<ul class="footer__contacts">
+<li class="footer__phone">
+<a id="gtm-footer-tel" class="contacts__item-link contacts__item-link--tel" href="tel:+14844608069" rel="noreferrer noopener" target="_blank" onclick="ym(52342033,'reachGoal','CLK_PHONE_CALL'); return true;">
++1 484 460-80-69
+</a>
+</li>
+<li class="footer__mail">
+<a class="contacts__item-link" href="../../cdn-cgi/l/email-protection.html#b3dbdaf3c3c6c1c1c4d6d19dd0dcde" rel="noreferrer noopener" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_EMAIL'); return true;">
+<span class="__cf_email__" data-cfemail="cea6a78ebebbbcbcb9abace0ada1a3">[email&#160;protected]</span>
+</a>
+</li>
+<li class="footer__messengers">
+<a class="contacts__telegram contacts__link-item" href="https://t.me/purrweb_agency" rel="noreferrer noopener" data-no-router="true" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_TELEGRAM'); return true;">
+<div class="contacts__item-img">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" fill="none" viewbox="0 0 24 21">
+<path fill="#fff" d="M.424 10.02l5.53 2.064 2.14 6.883a.651.651 0 0 0 1.034.312l3.083-2.513a.92.92 0 0 1 1.121-.032l5.56 4.037a.652.652 0 0 0 1.021-.394L23.986.786a.652.652 0 0 0-.873-.741L.417 8.8a.652.652 0 0 0 .007 1.22zm7.326.965l10.807-6.657c.195-.119.394.144.228.298l-8.92 8.292a1.849 1.849 0 0 0-.573 1.106l-.304 2.252c-.04.3-.462.33-.545.04l-1.169-4.107a1.088 1.088 0 0 1 .476-1.224z" />
+</svg>
+</div>
+Telegram
+</a>
+<a class="contacts__whatsap contacts__link-item js-whatsapp-link footer__whatsap" rel="noreferrer noopener" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_WHATSAPP'); return true;">
+<div class="contacts__item-img">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewbox="0 0 24 24">
+<path fill="#fff" d="M12.003 0h-.006C5.38 0 0 5.382 0 12c0 2.625.846 5.058 2.284 7.034L.79 23.49l4.613-1.474A11.896 11.896 0 0 0 12.003 24C18.619 24 24 18.616 24 12c0-6.617-5.38-12-11.997-12zm6.982 16.945c-.289.818-1.438 1.496-2.354 1.694-.628.134-1.447.24-4.204-.903-3.526-1.461-5.797-5.045-5.974-5.277-.17-.232-1.425-1.897-1.425-3.62 0-1.722.875-2.56 1.227-2.92.29-.295.768-.43 1.227-.43.148 0 .282.007.402.013.352.015.53.036.762.593.29.697.994 2.419 1.079 2.596.085.177.17.417.05.65-.112.24-.211.346-.388.55-.177.204-.345.36-.522.579-.162.19-.345.394-.141.747.204.345.909 1.495 1.947 2.42 1.34 1.192 2.426 1.573 2.814 1.735.29.12.635.091.846-.133.269-.29.6-.77.938-1.243.24-.338.543-.38.86-.26.324.112 2.039.96 2.391 1.135.353.177.585.261.671.41.084.148.084.845-.206 1.664z" />
+</svg>
+</div>
+WhatsApp
+</a>
+</li>
+</ul>
+</div>
+<div class="footer__right-wrap">
+<div class="footer__title">
+Fill in and get a quote
+</div>
+<iframe id="hidden_iframe" name="hidden_iframe" style="display:none;"></iframe>
+<form class="footer__form js-footer-form" name="contact-form" target="hidden_iframe" onsubmit="ym(52342033, 'reachGoal', 'FORM_OUT'); return true">
+<div class="footer__form-wrapper">
+<input class="footer__form-field footer__form-name js-field-name" type="text" name="entry.1228031061" aria-label="Name input field" placeholder="Name" required autocomplete="on">
+<input class="footer__form-field js-phone-input" type="tel" name="entry.1413156463" aria-label="Phone input field" placeholder="Phone number" required autocomplete="on" minlength="4" maxlength="20">
+</div>
+<input class="footer__form-field footer__form-email" type="email" name="entry.1893682035" aria-label="Email input field" placeholder="test@purrweb.com" required autocomplete="on">
+<textarea class="footer__form-field footer__form-field--area" name="entry.772928921" aria-label="Descriptions input field" placeholder="Project details"></textarea>
+<input class="footer__form-hidden" type="hidden" name="entry.481086178" value="Purrweb123!">
+<input type="hidden" class="js-client-id" name="entry.1458439335">
+<input type="hidden" id="counter-id" name="entry.273292564" value="52342033">
+<input type="hidden" class="js-entry-page" name="entry.1965512787" value>
+<input type="hidden" id="footer__form-token" name="token">
+<input class="footer__form-type footer__page-link" type="hidden" name="entry.281637821" value="footer-form-main-en ">
+<div class="footer__form-wrapper">
+<p class="footer__form-captcha-wrapper">
+This site is protected by reCAPTCHA and the Google
+<a class="footer__form-captcha-link" rel="nofollow noreferrer noopener" href="../../privacy-policy/index.html" target="_blank">Privacy Policy</a> and
+<a class="footer__form-captcha-link" rel="nofollow noreferrer noopener" href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
+</p>
+<button id="order-form-btn" class="footer__form-btn rising-btn rising-btn--theme2" onclick="ym(52342033, 'reachGoal', 'CLK_SUCCESS'); return true;">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span id="gtm-footer-submit" class="rising-btn__text footer__btn-width--eng">
+Send
+</span>
+</span>
+</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<div class="footer__bottom-wrapper">
+<div class="footer__services js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+SERVICES
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../services/mvp/index.html" class="footer__link">MVP development services</a>
+</li>
+<li class="footer__item">
+<a href="../../services/ui-ux/index.html" class="footer__link">UI/UX Design</a>
+</li>
+<li class="footer__item">
+<a href="../../services/mobile-development/index.html" class="footer__link">Mobile Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/web-development-services/index.html" class="footer__link">Web Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/project-management-consulting-company/index.html" class="footer__link">Project Management</a>
+</li>
+<li class="footer__item">
+<a href="../../services/software-development-for-startups/index.html" class="footer__link">Software Development for
+Startups</a>
+</li>
+<li class="footer__item">
+<a href="../../services/progressive-web-app/index.html" class="footer__link">PWA</a>
+</li>
+</ul>
+</div>
+<div class="footer__otrasli js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+INDUSTRIES
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../services/terminal/index.html" class="footer__link">POS Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/marketplace/index.html" class="footer__link">Marketplace</a>
+</li>
+<li class="footer__item">
+<a href="../../services/finance/index.html" class="footer__link">Financial</a>
+</li>
+<li class="footer__item">
+<a href="../../services/travel/index.html" class="footer__link">Travel</a>
+</li>
+<li class="footer__item">
+<a href="../../services/tv-app-development/index.html" class="footer__link">SMART TV</a>
+</li>
+<li class="footer__item">
+<a href="../../services/health/index.html" class="footer__link">Healthcare</a>
+</li>
+<li class="footer__item">
+<a href="../../services/media/index.html" class="footer__link">Media</a>
+</li>
+<li class="footer__item">
+<a href="../../services/wellness/index.html" class="footer__link">Wellness</a>
+</li>
+</ul>
+</div>
+<div class="footer__outsourcing footer__outsourcing--eng js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+INSIGHTS
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a class="footer__link" href="../../blog/stock-trading-app-development/index.html">How To Build Stock Trading App</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/how-much-does-ecommerce-app-development-cost/index.html">eCommerce App
+Development Cost</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/healthcare-mobile-app-development/index.html">Healthcare Mobile App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/telehealth-app-development-features-benefits-costs/index.html">Telemedicine
+App Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/how-to-develop-an-iot-app-features-benefits-costs/index.html">IOT App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/grocery-delivery-app-development/index.html">Grocery Delivery App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/doctor-appointment-app-development-features-benefits-costs/index.html">Doctor
+Appointment Booking App Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/mobile-app-development-for-banking/index.html">Banking App Development</a>
+</li>
+</ul>
+</div>
+<div class="footer__stack js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+TECH STACK
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../technologies/index.html" class="footer__link">Tech stack</a>
+</li>
+<li class="footer__item">
+<a href="../../services/react-native/index.html" class="footer__link">React Native Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/react-native-game-development/index.html" class="footer__link">React Native Game
+Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/electron/index.html" class="footer__link">Electron JS</a>
+</li>
+<li class="footer__item">
+<a href="../../services/react-js/index.html" class="footer__link">React.js</a>
+</li>
+<li class="footer__item">
+<a href="../../services/webrtc/index.html" class="footer__link">WebRTC Development</a>
+</li>
+</ul>
+<div class="footer__ofice footer__ofice--pc">
+<h3 class="footer__ofice-caption">
+OFFICES
+</h3>
+<div class="footer__item footer__item--ofice">
+US 340 S LEMON AVE #9923 WALNUT,<br> CA 91789
+</div>
+</div>
+</div>
+<div class="footer__company js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+COMPANY
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../about/index.html" class="footer__link">About us</a>
+</li>
+<li class="footer__item">
+<a href="../../contacts/index.html" class="footer__link">Contacts</a>
+</li>
+<li class="footer__item">
+<a href="../../reviews/index.html" class="footer__link">Reviews</a>
+</li>
+<li class="footer__item">
+<a href="/" class="footer__link">Portfolio</a>
+</li>
+<li class="footer__item">
+<a href="../../blog/index.html" class="footer__link">Blog</a>
+</li>
+</ul>
+<div class="footer__address footer__address--eng footer__address--pc">
+<address>
+Compass Building, <br> Al Shohada Road, <br> AL Hamra Industrial Zone-FZ, Ras Al Khaimah, UAE
+</address>
+</div>
+</div>
+<div class="footer__ofice footer__ofice--mobile">
+<h3 class="footer__ofice-caption">
+OFFICES
+</h3>
+<address class="footer__item footer__item--ofice">
+US 340 S LEMON AVE 9923 WALNUT, CA 91789
+</address>
+<address class="footer__address footer__address--mobile">
+Compass Building, Al Shohada Road, <br> AL Hamra Industrial Zone-FZ, Ras Al Khaimah, UAE
+</address>
+</div>
+</div>
+<div class="footer__divider"></div>
+<div class="footer__bottom">
+<div class="footer__terms">
+<a href="../../privacy-policy/index.html" class="footer__terms--policy">Privacy Policy</a>
+<a href="https://policies.google.com/terms" target="_blank" class="footer__terms--term">Terms Of Services</a>
+</div>
+<div class="footer__rights">
+© 2023 Purrweb. All rights reserved
+</div>
+</div>
+</div>
+</div>
+</footer>
+<button class="btn-up js-btn-up" title="Go to the top of the page">
+<svg width="22" height="42" viewbox="0 0 22 42" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 29L11 41M11 41L1 29M11 41V0" />
+</svg>
+</button>
+<div class="popup-form js-form-popup">
+<div class="popup-form__inner">
+<p class="popup-form__text">Thanks for your inquiry. It usually take up to 24 hours to get back with reply.</p>
+<p class="popup-form__text">Wanna schedule an online meeting?</p>
+<button class="popup-form__close js-form-popup-btn">X</button>
+<button class="popup-form__btn js-form-popup-btn">
+<link href="../../../assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../../../assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<a href onclick="Calendly.initPopupWidget({url: 'https://calendly.com/purrweb_agency/initial_discussion?primary_color=5c3bfe'});return false;">Book
+the time slot!</a>
+</button>
+</div>
+</div>
+
+</div>
+
+<div class="idea-modal js-idea-modal" style="display: none;">
+<div class="idea-modal__content">
+<span class="idea-modal__title">
+Curious about the project cost?
+</span>
+<a href="#footer" class="idea-modal__button rising-btn rising-btn--theme3 js-scroll-to">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span id="gtm-idea-popup" class="rising-btn__text idea-modal__button-text">
+Fill in the form!
+</span>
+</span>
+</span></a>
+</div>
+<button class="idea-modal__close js-idea-modal__close" id="CLS-BTN-POPUP">
+X
+</button>
+</div>
+
+<script>
+    if (window.innerWidth >= 1024) {
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+          '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-W4BS3VM');
+
+    } else if (window.innerWidth < 1024) {
+      var firedTG = false;
+      window.addEventListener('scroll', () => {
+        if (firedTG === false) {
+          firedTG = true;
+          setTimeout(() => {
+            (function (w, d, s, l, i) {
+              w[l] = w[l] || [];
+              w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+              });
+              var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+              j.async = true;
+              j.src =
+                '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+              f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-W4BS3VM');
+          }, 0)
+        }
+      });
+    }
+  </script>
+
+
+
+<script type="text/javascript">
+    var firedRec = false;
+    window.addEventListener('scroll', () => {
+      if (firedRec === false) {
+        firedRec = true;
+        (function (d, w) {
+          var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "../../../www.google.com/recaptcha/api6c91.js?render=6LdBWnwaAAAAADC4FEa3p5JPq12UcmBuQPHl-0Iz";
+          if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+          } else { f(); }
+        })(document, window);
+      }
+    });
+  </script>
+
+
+
+<script async type="text/javascript">
+    (function () {
+      var PM_YM_COUNTER = 52342033;
+      var ee = setInterval(function () {
+        if (typeof window.ym != 'undefined') {
+          let clientInputs = document.querySelectorAll('.js-client-id');
+          for (let clientInput of clientInputs) {
+            ym(PM_YM_COUNTER, 'getClientID', function (clientID) {
+              clientInput.value = clientID;
+            })
+          }
+
+          clearInterval(ee);
+        } else {
+          console.log('Метрика не инициализирована');
+        }
+      }, 1000); // 0,5 секунды ждать, изменить на свое значение, 1 сек = 1000
+    })();
+  </script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZM1DZX38E"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-5ZM1DZX38E');
+  </script>
+<script src="../../common.4d9224ab871b2d75ac93.js"></script><script src="../../izumator.4d9224ab871b2d75ac93.js"></script></body>
+
+<!-- Mirrored from www.purrweb.com/portfolio/izumator/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Nov 2023 15:32:44 GMT -->
+</html>

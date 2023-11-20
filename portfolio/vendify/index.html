@@ -1,0 +1,1500 @@
+
+
+
+
+	<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.purrweb.com/portfolio/vendify/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Nov 2023 15:31:49 GMT -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title> IoT Application For Smart Fridges: Design and Development | Purrweb</title>
+<meta name="description" content="In this case we share how we designed and developed an IoT application that can communicate with smart fridges — it allows users to buy fresh food quickly and easily">
+<meta name="google-site-verification" content="YgG-iu_ngX9WM8Ulia3B7gYVqrEBLf9-GQ22HbQ7Jiw">
+<meta name="yandex-verification" content="4057b113a73e6486">
+<meta name="facebook-domain-verification" content="0cpowng2vyna7cecrsh180pvpcll09">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content=" IoT Application For Smart Fridges: Design and Development | Purrweb">
+<meta property="og:description" content="In this case we share how we designed and developed an IoT application that can communicate with smart fridges — it allows users to buy fresh food quickly and easily">
+<meta property="og:image" content="../../images/og-image.png">
+<meta property="og:site_name" content="Purrweb">
+<meta property="og:url" content="index.html">
+<meta name="twitter:title" content=" IoT Application For Smart Fridges: Design and Development | Purrweb">
+<meta name="twitter:description" content="In this case we share how we designed and developed an IoT application that can communicate with smart fridges — it allows users to buy fresh food quickly and easily">
+<meta name="twitter:image:src" content="../../images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@purrweb">
+<meta name="twitter:creator" content="@purrweb">
+<link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5c3bfe">
+<link rel="canonical" href="index.html">
+<meta name="msapplication-TileColor" content="#5c3bfe">
+<meta name="theme-color" content="#ffffff">
+<link rel="alternate" hreflang="ru" href="../../ru/portfolio/vendify">
+<link rel="alternate" hreflang="en" href="index.html">
+
+
+
+
+<meta name="google-site-verification" content="iAswyHNCt6kecOwxsuLaxgVNXaFS1GEwMiCJajfQ4dI">
+
+<link href="../../common.4d9224ab871b2d75ac93.css" rel="stylesheet"><link href="../../vendify.4d9224ab871b2d75ac93.css" rel="stylesheet"></head>
+<body class="js-disable-transition">
+<aside class="cookie hide-cookie" id="pjAcceptCookieBar">
+<div class="container pjAcceptCookieBarShell">
+<form action="#" method="post" class="cookie__inner">
+<p class="cookie__text">
+We use cookies to boost your experience on our website and ensure it functions properly. It also
+helps us with analytics — is that OK, isn’t it? :)
+</p>
+<div class="pjAcceptCookieBarActions">
+<button type="button" class="pjAcceptCookieBarBtn cookie__btn">
+Sure! I’m fine with it
+</button>
+</div>
+</form>
+</div>
+</aside>
+<header class="header js-header">
+<div class="container">
+<nav class="header__inner">
+<a class="header__logo" href="../..">
+<svg xmlns="http://www.w3.org/2000/svg" width="164" height="30" fill="none" viewbox="0 0 164 30">
+<path fill="#fff" d="M43.688 3.025H34.79v23.728h5.373v-7.458h3.526c4.634 0 8.227-3.626 8.227-8.135 0-4.508-3.593-8.135-8.227-8.135zm0 11.186h-3.526V8.11h3.526c1.646 0 2.854 1.322 2.854 3.05 0 1.73-1.208 3.051-2.854 3.051zM65.612 9.805v9.253c0 2.407-1.277 3.491-3.124 3.491-1.611 0-2.921-.982-2.921-3.084v-9.66H54.53V20.21c0 4.576 2.888 7.016 6.28 7.016 2.216 0 3.895-.813 4.802-2.068v1.594h5.037V9.805h-5.037zM79.716 12.821V9.805h-5.037v16.947h5.037v-7.66c0-3.356 2.955-4.203 5.037-3.864V9.466c-2.115 0-4.365 1.084-5.037 3.355zM92.48 12.821V9.805h-5.036v16.947h5.037v-7.66c0-3.356 2.955-4.203 5.037-3.864V9.466c-2.116 0-4.366 1.084-5.037 3.355zM118.678 9.805l-2.418 9.084-2.619-9.084h-4.701l-2.62 9.084-2.418-9.084h-5.373l5.373 16.947h4.702l2.686-9.05 2.687 9.05h4.701l5.373-16.947h-5.373zM130.23 20.312h11.921a9.894 9.894 0 0 0 .202-2.033c0-5.119-3.627-8.949-8.53-8.949-5.306 0-8.932 3.898-8.932 8.949 0 5.05 3.559 8.948 9.302 8.948 3.19 0 5.675-1.186 7.32-3.491l-4.029-2.339c-.672.746-1.847 1.288-3.224 1.288-1.847 0-3.392-.61-4.03-2.373zm-.101-3.796c.471-1.729 1.747-2.678 3.661-2.678 1.511 0 3.022.712 3.559 2.678h-7.22zM155.587 9.33c-2.25 0-3.896.78-5.004 2.068V3.025h-5.037v23.728h5.037v-1.594c1.108 1.289 2.754 2.068 5.004 2.068 4.399 0 8.026-3.898 8.026-8.948 0-5.05-3.627-8.949-8.026-8.949zm-1.008 13.084c-2.317 0-3.996-1.593-3.996-4.135 0-2.543 1.679-4.136 3.996-4.136s3.996 1.593 3.996 4.136c0 2.542-1.679 4.135-3.996 4.135zM16.049 30L29.497 0h-4.955L11.094 30h4.955zM4.887 30L18.15 0h-4.887L0 30h4.887z" />
+</svg>
+<span class="visually-hidden">Purrweb logo</span>
+</a>
+
+<ul class="header__list js-menu">
+<li class="header__item header__item-portfolio">
+<a class="header__item-link" href=".." onclick="ym(52342033, 'reachGoal', 'CLK_PROJECTS'); return true;">
+Projects
+</a>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Technologies
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__dropmenu-inner">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--technologies">
+
+<a href="../../services/react-native" class="header__dropmenu-ref">
+React Native
+</a>
+<a href="../../services/react-js" class="header__dropmenu-ref">
+React.js
+</a>
+<a href="../../services/electron" class="header__dropmenu-ref">
+Electron.js
+</a>
+<a href="../../services/webrtc" class="header__dropmenu-ref">
+WebRTC
+</a>
+<a href="../../services/progressive-web-app" class="header__dropmenu-ref">
+PWA
+</a>
+<a href="../../services/react-native-game-development" class="header__dropmenu-ref">
+Mobile Games
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="header__divider"></div>
+<a href="../../technologies" class="header__dropmenu-main-ref">
+Tech Stack
+</a>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Services
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu header__dropmenu--services" id="dropdown2">
+<div class="header__dropmenu-inner">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Development
+</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--dev">
+<a href="../../services/mobile-development" class="header__dropmenu-ref">
+Mobile App Development
+</a>
+<a href="../../services/web-development-services" class="header__dropmenu-ref">
+Web Development
+</a>
+<a href="../../services/ux-audit" class="header__dropmenu-ref">
+UX Audit
+</a>
+
+
+
+
+
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--dev2">
+
+
+
+<a href="../../services/software-development-for-startups" class="header__dropmenu-ref">
+Software Development for Startups
+</a>
+<a href="../../services/crossplatform" class="header__dropmenu-ref">
+Cross-Platform Development
+</a>
+<a href="../../services/mvp" class="header__dropmenu-ref">
+MVP
+</a>
+
+
+
+</div>
+</div>
+</div>
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Design</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--design">
+<a href="../../services/ui-ux" class="header__dropmenu-ref">
+UI/UX
+</a>
+
+
+
+
+</div>
+</div>
+</div>
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Management
+</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--management">
+
+<a href="../../services/project-management-consulting-company" class="header__dropmenu-ref">
+Project Management
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="header__divider"></div>
+<a href="../../services" class="header__dropmenu-main-ref">
+Software Development Services
+</a>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Industries
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries">
+<a href="../../services/travel" class="header__dropmenu-ref">
+Travel
+</a>
+<a href="../../services/health" class="header__dropmenu-ref">
+Healthcare
+</a>
+<a href="../../services/tv-app-development" class="header__dropmenu-ref">
+Smart TV
+</a>
+<a href="../../services/logistics" class="header__dropmenu-ref">
+Logistics
+</a>
+<a href="../../services/wellness" class="header__dropmenu-ref">
+Wellness
+</a>
+<a href="../../services/terminal" class="header__dropmenu-ref">
+POS
+</a>
+<a href="../../services/custom-ecommerce" class="header__dropmenu-ref">
+Custom Ecom Apps
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries2">
+<a href="../../services/events" class="header__dropmenu-ref">
+Events
+</a>
+<a href="../../services/marketplace" class="header__dropmenu-ref">
+Marketplace
+</a>
+<a href="../../services/estate" class="header__dropmenu-ref">
+Real Estate
+</a>
+<a href="../../services/media" class="header__dropmenu-ref">
+Social Media
+</a>
+<a href="../../services/finance" class="header__dropmenu-ref">
+Fintech
+</a>
+<a href="../../services/iot" class="header__dropmenu-ref">
+IoT
+</a>
+<a href="../../services/ecommerce" class="header__dropmenu-ref">
+eCommerce Development
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Development Team
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries">
+<a href="../../services/outsourcing" class="header__dropmenu-main-ref header__dropmenu-main-ref--margin-bottom">
+Outsourcing
+</a>
+<a href="../../services/dev-outsourcing" class="header__dropmenu-ref">
+Development
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries2">
+<a href="../../services/outstaffing" class="header__dropmenu-main-ref header__dropmenu-main-ref--margin-bottom">
+Outstaffing
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item header__item--blog">
+<button class="header__item-inner click-dropdown" onclick="ym(52342033, 'reachGoal', 'CLK_BLOG'); return true;">
+<div class="header__item-drop">
+Blog
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu header__dropmenu--blog">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--blog">
+<a href="../../blog/how-much-does-it-cost-to-develop-an-app" class="header__dropmenu-ref">
+How much does it cost to develop an app
+</a>
+<a href="../../blog/how-to-create-a-social-media-app-a-z-guide" class="header__dropmenu-ref">
+How to make a social media app
+</a>
+<a href="../../blog/website-redesign-cost" class="header__dropmenu-ref">
+How much does it cost to redesign a website
+</a>
+<a href="../../blog/restaurant-app-development-purrwebs-detailed-guide" class="header__dropmenu-ref">
+Restaurant mobile app development
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--blog2">
+<a href="../../blog/how-much-does-it-cost-to-develop-an-app" class="header__dropmenu-ref">
+How much does it cost to maintain an app
+</a>
+<a href="../../blog/dating-app-development" class="header__dropmenu-ref">
+Dating mobile app development
+</a>
+<a href="../../blog/how-to-hire-a-developer-for-a-startup-and-not-to-regret-about-it" class="header__dropmenu-ref">
+Hiring a developer for a startup
+</a>
+<a href="../../blog" class="header__dropmenu-ref">
+All posts
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+About
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--about">
+<a href="../../about" class="header__dropmenu-ref">
+Company
+</a>
+<a href="../../contacts" class="header__dropmenu-ref">
+Contacts
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item header__item--lang visually-hidden">
+<a class="header__item-link js-en-link" href="../../ru/portfolio/vendify">Ru</a>
+</li>
+<li class="header__item header__item--request">
+<a class="rising-btn rising-btn--theme2 js-scroll-to" href="#footer" onclick="ym(52342033, 'reachGoal', 'CLK_RAQ'); return true;">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span class="rising-btn__text">
+Request a quote
+</span>
+</span>
+</span>
+</a>
+<div class="lang-popup js-lang-popup hide-lang" id="LangCookieBar">
+<p class="lang-popup__text">
+Холмс, кажется, вы в России...
+</p>
+<button class="lang-popup__close-btn js-close-popup">
+<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.50002 4.49844L9.00627 0.992188L10.0079 1.99377L6.5016 5.50002L10.0079 9.00627L9.00627 10.0079L5.50002 6.5016L1.99377 10.0079L0.992188 9.00627L4.49844 5.50002L0.992188 1.99377L1.99377 0.992188L5.50002 4.49844Z" fill="#808080" />
+</svg>
+</button>
+<div class="lang-popup__btn-wrap">
+<a href="#" class="lang-popup__btn lang-popup__btn--ru js-ru-btn">
+Переключить язык
+</a>
+<a href="#" class="lang-popup__btn lang-popup__btn--eng js-eng-btn">
+не, и так норм
+</a>
+</div>
+</div>
+</li>
+</ul>
+<button class="header__humb js-humb">
+<span class="visually-hidden">Open/close menu</span>
+</button>
+</nav>
+</div>
+</header>
+<div class="main js-main">
+<style>
+  .case-preloader {
+    transition: opacity 0.5s;
+    opacity: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    pointer-events: none;
+    background-color: #101010;
+  }
+  .case-preloader.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .prealoder-figure {
+    width: 300px;
+    height: 300px;
+  }
+</style>
+<section class="case-preloader active">
+<div class="js-lottie-preloader prealoder-figure"></div>
+</section>
+<section class="hero">
+<div class="container hero__container" style="opacity: 0;">
+<div class="circle circle--border hero__circle hero__circle--big"></div>
+<div class="circle circle--shadow hero__circle hero__circle--middle"></div>
+<div class="circle circle--fill hero__circle hero__circle--mini"></div>
+<div class="hero__head">
+<svg class="hero__head-logo hero__head-logo--mobile" xmlns="http://www.w3.org/2000/svg" width="96" height="18" fill="none" viewbox="0 0 164 30">
+<path fill="#fff" d="M43.688 3.025H34.79v23.728h5.373v-7.458h3.526c4.634 0 8.227-3.626 8.227-8.135 0-4.508-3.593-8.135-8.227-8.135zm0 11.186h-3.526V8.11h3.526c1.646 0 2.854 1.322 2.854 3.05 0 1.73-1.208 3.051-2.854 3.051zM65.612 9.805v9.253c0 2.407-1.277 3.491-3.124 3.491-1.611 0-2.921-.982-2.921-3.084v-9.66H54.53V20.21c0 4.576 2.888 7.016 6.28 7.016 2.216 0 3.895-.813 4.802-2.068v1.594h5.037V9.805h-5.037zM79.716 12.821V9.805h-5.037v16.947h5.037v-7.66c0-3.356 2.955-4.203 5.037-3.864V9.466c-2.115 0-4.365 1.084-5.037 3.355zM92.48 12.821V9.805h-5.036v16.947h5.037v-7.66c0-3.356 2.955-4.203 5.037-3.864V9.466c-2.116 0-4.366 1.084-5.037 3.355zM118.678 9.805l-2.418 9.084-2.619-9.084h-4.701l-2.62 9.084-2.418-9.084h-5.373l5.373 16.947h4.702l2.686-9.05 2.687 9.05h4.701l5.373-16.947h-5.373zM130.23 20.312h11.921a9.894 9.894 0 0 0 .202-2.033c0-5.119-3.627-8.949-8.53-8.949-5.306 0-8.932 3.898-8.932 8.949 0 5.05 3.559 8.948 9.302 8.948 3.19 0 5.675-1.186 7.32-3.491l-4.029-2.339c-.672.746-1.847 1.288-3.224 1.288-1.847 0-3.392-.61-4.03-2.373zm-.101-3.796c.471-1.729 1.747-2.678 3.661-2.678 1.511 0 3.022.712 3.559 2.678h-7.22zM155.587 9.33c-2.25 0-3.896.78-5.004 2.068V3.025h-5.037v23.728h5.037v-1.594c1.108 1.289 2.754 2.068 5.004 2.068 4.399 0 8.026-3.898 8.026-8.948 0-5.05-3.627-8.949-8.026-8.949zm-1.008 13.084c-2.317 0-3.996-1.593-3.996-4.135 0-2.543 1.679-4.136 3.996-4.136s3.996 1.593 3.996 4.136c0 2.542-1.679 4.135-3.996 4.135zM16.049 30L29.497 0h-4.955L11.094 30h4.955zM4.887 30L18.15 0h-4.887L0 30h4.887z" />
+</svg>
+<svg class="hero__head-logo hero__head-logo--desktop" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M32.6418 60L60.0005 0H49.921L22.5623 60H32.6418Z" fill="white" />
+<path d="M9.94147 60L36.9254 0H26.984L0 60H9.94147Z" fill="white" />
+</svg>
+<p class="hero__year">2021</p>
+</div>
+<div class="hero__description">
+<h1 class="hero__title">Vendify</h1>
+<p class="hero__description-text section-text">Vendify is an IoT application that communicates with smart vending machines that sell fresh food.</p>
+</div>
+<div class="hero__collage-wrap">
+<picture class="hero__collage"><source type="image/webp" srcset="/images/vendify-hero-collage.png, /images/vendify-hero-collage@2x.png 2x"><img data-src="/images/vendify-hero-collage.png" src="../../images/vendify-hero-collage.png" alt="Vendify" srcset="/images/vendify-hero-collage.png, /images/vendify-hero-collage@2x.png 2x"></picture>
+</div>
+</div>
+</section>
+<section class="steps">
+<div class="container steps__container">
+<ul class="steps__list">
+<li class="steps__item steps__item--card">
+<div class="steps__item-wrap">
+<div class="steps__item-icon-wrap">
+<img class="steps__item-icon steps__item-icon--card" data-src="/images/vendify-steps-card.svg" src="../../images/vendify-steps-card.svg" alt="Card">
+</div>
+<p class="steps__item-text section-text section-text--gray">User adds bank card</p>
+</div>
+</li>
+<li class="steps__item steps__item--qr">
+<div class="steps__item-wrap">
+<div class="steps__item-icon-wrap">
+<img class="steps__item-icon steps__item-icon--qr" data-src="/images/vendify-steps-qr.svg" src="../../images/vendify-steps-qr.svg" alt="Vendify">
+</div>
+<p class="steps__item-text section-text section-text--gray">User scans QR-code on Vendify fridge</p>
+</div>
+</li>
+<li class="steps__item steps__item--locker">
+<div class="steps__item-wrap">
+<div class="steps__item-icon-wrap">
+<img class="steps__item-icon steps__item-icon--locker" data-src="/images/vendify-steps-locker.svg" src="../../images/vendify-steps-locker.svg" alt="Vendify">
+</div>
+<p class="steps__item-text section-text section-text--gray">The fridge door opens</p>
+</div>
+</li>
+<li class="steps__item steps__item--products">
+<div class="steps__item-wrap">
+<div class="steps__item-icon-wrap">
+<img class="steps__item-icon steps__item-icon--products" data-src="/images/vendify-steps-products.svg" src="../../images/vendify-steps-products.svg" alt="Vendify">
+</div>
+<p class="steps__item-text section-text section-text--gray">User takes goods from the fridge</p>
+</div>
+</li>
+<li class="steps__item steps__item--repeat">
+<div class="steps__item-wrap">
+<div class="steps__item-icon-wrap">
+<img class="steps__item-icon steps__item-icon--repeat" data-src="/images/vendify-steps-repeat.svg" src="../../images/vendify-steps-repeat.svg" alt="Vendify">
+</div>
+<p class="steps__item-text section-text section-text--gray">Fridge sees what goods the user took and sends this information to the app</p>
+</div>
+</li>
+<li class="steps__item steps__item--check">
+<div class="steps__item-wrap">
+<div class="steps__item-icon-wrap">
+<img class="steps__item-icon steps__item-icon--check" data-src="/images/vendify-steps-check.svg" src="../../images/vendify-steps-check.svg" alt="Vendify">
+</div>
+<p class="steps__item-text section-text section-text--gray">Before payment, the user can check everything and return some goods</p>
+</div>
+</li>
+<li class="steps__item steps__item--billfold">
+<div class="steps__item-wrap">
+<div class="steps__item-icon-wrap">
+<img class="steps__item-icon steps__item-icon--billfold" data-src="/images/vendify-steps-billfold.svg" src="../../images/vendify-steps-billfold.svg" alt="Vendify">
+</div>
+<p class="steps__item-text section-text section-text--gray">Payment proceeds automatically after the user closes the fridge door</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<div class="customer-scope">
+<div class="customer-scope__wrapper">
+<div class="customer-scope__products">
+<div class="customer-scope__product customer-scope__product1">
+<div class="customer-scope__product-wrap">
+<picture class="customer-scope__product-img"><source type="image/webp" srcset="/images/vendify-customer-product1.png, /images/vendify-customer-product1@2x.png 2x"><img data-src="/images/vendify-customer-product1.png" src="../../images/vendify-customer-product1.png" alt="Vendify" srcset="/images/vendify-customer-product1.png, /images/vendify-customer-product1@2x.png 2x"></picture>
+<div class="circle circle--border customer-scope__product-circle">
+<p class="customer-scope__product-text">Concept</p>
+</div>
+</div>
+</div>
+<div class="customer-scope__product customer-scope__product2">
+<div class="customer-scope__product-wrap">
+<picture class="customer-scope__product-img"><source type="image/webp" srcset="/images/vendify-customer-product2.png, /images/vendify-customer-product2@2x.png 2x"><img data-src="/images/vendify-customer-product2.png" src="../../images/vendify-customer-product2.png" alt="Vendify" srcset="/images/vendify-customer-product2.png, /images/vendify-customer-product2@2x.png 2x"></picture>
+<div class="circle circle--border customer-scope__product-circle">
+<p class="customer-scope__product-text">Illustrations</p>
+</div>
+</div>
+</div>
+<div class="customer-scope__product customer-scope__product3">
+<div class="customer-scope__product-wrap">
+<picture class="customer-scope__product-img"><source type="image/webp" srcset="/images/vendify-customer-product3.png, /images/vendify-customer-product3@2x.png 2x"><img data-src="/images/vendify-customer-product3.png" src="../../images/vendify-customer-product3.png" alt="Vendify" srcset="/images/vendify-customer-product3.png, /images/vendify-customer-product3@2x.png 2x"></picture>
+<div class="circle circle--border customer-scope__product-circle">
+<p class="customer-scope__product-text">Animations</p>
+</div>
+</div>
+</div>
+<div class="customer-scope__product customer-scope__product4">
+<div class="customer-scope__product-wrap">
+<picture class="customer-scope__product-img"><source type="image/webp" srcset="/images/vendify-customer-product4.png, /images/vendify-customer-product4@2x.png 2x"><img data-src="/images/vendify-customer-product4.png" src="../../images/vendify-customer-product4.png" alt="Vendify" srcset="/images/vendify-customer-product4.png, /images/vendify-customer-product4@2x.png 2x"></picture>
+<div class="circle circle--border customer-scope__product-circle">
+<p class="customer-scope__product-text">Frontend</p>
+</div>
+</div>
+</div>
+</div>
+<section class="customer-scope__customer customer">
+<div class="container customer__container">
+<div class="customer__description">
+<h2 class="section-title customer__title">Client</h2>
+<p class="section-text section-text--gray customer__text">The clients are from Latvia. Maxim — experienced backend
+developer, Aivis — investor that finances the idea.</p>
+<p class="section-text section-text--gray customer__text">Idea: Vendify fridges will be installed in business centers,
+hotels, and other similar venues — it will allow guests
+to get fresh and healthy food quickly.</p>
+</div>
+<div class="customer__phones">
+<picture class="customer__phone customer__phone1"><source type="image/webp" srcset="/images/vendify-customer-phone1.png, /images/vendify-customer-phone1@2x.png 2x"><img data-src="/images/vendify-customer-phone1.png" src="../../images/vendify-customer-phone1.png" alt="Vendify" srcset="/images/vendify-customer-phone1.png, /images/vendify-customer-phone1@2x.png 2x"></picture>
+<picture class="customer__phone customer__phone2"><source type="image/webp" srcset="/images/vendify-customer-phone2.png, /images/vendify-customer-phone2@2x.png 2x"><img data-src="/images/vendify-customer-phone2.png" src="../../images/vendify-customer-phone2.png" alt="Vendify" srcset="/images/vendify-customer-phone2.png, /images/vendify-customer-phone2@2x.png 2x"></picture>
+</div>
+</div>
+</section>
+<section class="customer-scope__scope scope">
+<div class="container scope__container">
+<div class="circle circle--border scope__circle-big"></div>
+<h2 class="section-title scope__title">Scope of work</h2>
+<ul class="scope__list">
+<li class="scope__item">
+<h3 class="scope__item-title section-text section-text--middle">Mobile app design</h3>
+<ul class="scope__works">
+<li class="scope__work">
+<div class="circle scope__work-circle"></div>
+<svg class="scope__work-img scope__work-img--concept" width="133" height="137" viewBox="0 0 133 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M60.4801 31.7732C59.4369 27.808 54.1775 24.54 52.4388 28.5923C48.7006 37.2635 56.5681 38.2221 53.5255 33.124C50.7001 28.3745 48.3964 27.1108 45.4406 27.2416C39.2683 27.503 41.5721 35.1284 42.398 35.8691C43.2238 36.6099 45.7884 36.7406 42.7457 32.0782C41.4852 30.161 39.8334 29.3767 38.3555 29.1588C36.5299 28.8538 34.8347 30.3353 34.8347 32.2089V40.4444C34.8347 42.1002 36.1822 43.4074 37.7905 43.4074H44.6582C45.8753 43.4074 46.8316 44.4096 46.8316 45.586V62.3619C46.8316 63.7127 45.7449 64.7584 44.4409 64.7584H41.746C40.442 64.7584 39.3987 63.7562 39.3553 62.449L39.051 56.1309C39.051 56.1309 38.4859 51.6428 33.6611 50.4227C27.0107 48.8105 19.5779 41.403 19.5779 28.2437C19.5779 11.5115 31.8355 1.31526 46.3969 1.01024C61.0452 0.705225 76.5629 7.15412 76.0847 28.418C75.6935 45.4989 63.8706 49.6384 59.2631 50.3791C54.6556 51.1199 54.786 57.5688 54.786 57.5688V69.2901C54.786 70.2923 54.0036 71.0766 53.0039 71.0766H44.6582C43.6585 71.0766 42.8761 71.8609 42.8761 72.8631V74.5189C42.8761 75.5211 43.6585 76.3054 44.6582 76.3054H50.7871C51.7868 76.3054 52.5692 77.0898 52.5692 78.092V81.1857C52.5692 82.1879 51.7433 83.0158 50.7436 83.0158H46.6142C45.5276 83.0158 44.5713 83.6694 44.1801 84.7152C42.3545 89.4647 43.615 104.933 60.6975 110.511C87.0384 119.138 85.2128 136.045 85.2128 136.045C85.2128 136.045 88.0381 130.729 83.5176 112.472C78.1711 90.9026 81.3008 61.7519 92.4283 45.9782C106.164 26.5008 127.854 17.9168 130.505 19.8776C133.635 22.1434 131.679 45.9782 126.245 68.5493C119.465 96.6543 99.8611 118.615 94.3843 124.454C88.864 130.293 94.3843 71.7738 114.292 50.9892" stroke="#53B476" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M61.0452 121.666C61.0452 121.666 48.9179 115.827 36.6168 104.977C25.2285 94.9115 9.2762 91.6435 2.66925 92.4714C-3.93771 93.2993 10.5367 104.628 20.4472 109.16C28.4451 112.82 37.9208 114.825 40.1811 114.694C42.4414 114.52 28.2277 103.495 18.4912 100.271" stroke="#53B476" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+<div class="circle circle--border scope__work-text-circle scope__work-text-circle--concept">
+<p class="scope__work-text">Concept</p>
+</div>
+</li>
+<li class="scope__work">
+<div class="circle scope__work-circle"></div>
+<svg class="scope__work-img scope__work-img--illustration" width="176" height="110" viewBox="0 0 176 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M81.9684 68.7004L86.8703 70.1302C87.9426 70.4365 89.0148 69.8238 89.3212 68.7515C89.5765 67.7813 89.0148 66.7601 88.0447 66.4538L59.8079 56.8543C58.7867 56.4969 57.6634 57.0585 57.306 58.0798L55.672 62.9816C55.3656 63.9518 55.8252 65.0241 56.8464 65.4325L129.762 93.3629C132.008 94.231 134.51 93.0565 135.327 90.8099L151.769 44.2422C152.535 41.9955 151.36 39.5446 149.165 38.7787L70.6839 11.7164C69.6627 11.3589 68.5904 11.8695 68.233 12.8908L53.5785 53.0758C53.17 54.1481 51.9956 54.6587 50.9744 54.1991L49.851 53.6885C48.932 53.28 48.4724 52.2588 48.7788 51.2886L63.8928 4.00614C64.6077 1.75946 67.0075 0.533995 69.2542 1.24885L172.142 34.6938C174.44 35.4597 175.665 38.0128 174.797 40.2595L149.471 106.128C148.603 108.324 146.152 109.447 143.905 108.579L46.1747 69.9259C45.2045 69.5685 44.745 68.4962 45.0513 67.526L46.7874 61.8583" stroke="#53B476" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="-0.63194" y="0.317256" width="5.82342" height="44.4764" rx="2.91171" transform="matrix(-0.949197 -0.314684 -0.314684 0.949197 164.293 45.4777)" stroke="#53B476" />
+<path d="M14.9676 58.962L15.9228 58.0813C16.3801 57.6424 17.155 57.6693 17.5939 58.1267L50.1419 91.7619C50.4508 92.1064 50.7221 92.4941 50.8749 92.9309L55.0815 105.328C55.237 105.805 54.6554 106.212 54.2626 105.833L44.1487 96.2103L45.5989 94.8474C46.0967 94.4056 46.0832 93.6336 45.6009 93.1386L8.99329 57.3069C8.38106 56.699 8.43427 55.7189 9.08549 55.1444L9.43276 54.8759C10.0868 54.3418 10.1372 53.3212 9.48446 52.7161L4.24567 47.6328C3.59296 47.0278 2.57523 47.0179 1.92401 47.5925L1.58243 47.942C0.893574 48.5599 0.848897 49.6614 1.5073 50.3474L4.84833 53.8961C5.0678 54.1248 5.0529 54.4919 4.86755 54.749L4.14675 55.4913C3.57933 56.1006 3.60426 57.0346 4.17316 57.6048L40.4186 94.0721" stroke="#53B476" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+<div class="circle circle--border scope__work-text-circle scope__work-text-circle--illustration">
+<p class="scope__work-text">Illustrations</p>
+</div>
+</li>
+<li class="scope__work">
+<div class="circle scope__work-circle"></div>
+<svg class="scope__work-img scope__work-img--animation" width="146" height="127" viewBox="0 0 146 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M92.5765 121.434V122.703C92.5765 124.402 91.2115 125.794 89.5 125.794H42.1564C40.0171 125.794 38.3056 124.054 38.3056 121.925V117.339C38.3056 115.19 40.0374 113.47 42.1564 113.47H141.747C143.784 113.47 145.414 111.812 145.414 109.785V106.653C145.414 104.606 143.764 102.968 141.747 102.968H5.33976C2.95595 102.968 1 101.024 1 98.608V94.2476C1 91.8524 2.93557 89.8872 5.33976 89.8872H79.3805C81.2142 89.8872 82.7015 88.4337 82.7627 86.5913L82.783 85.6086C82.8442 83.7048 81.3161 82.108 79.4009 82.108H63.8552C61.8585 82.108 60.1674 80.6136 59.9025 78.6279L58.3948 67.1843C58.2318 65.8946 57.1316 64.9529 55.848 64.9529L53.6679 64.9734C52.4251 64.9734 51.3453 65.8946 51.1619 67.1434L49.3078 78.7507C49.0022 80.6955 47.3315 82.1285 45.3755 82.1285H29.9113C27.1812 82.1285 25.2048 79.4877 25.9791 76.8673L46.4146 5.99504C47.2704 3.02668 49.9598 1 53.0363 1H60.799C64.0182 1 66.8095 3.23139 67.5226 6.384L79.951 60.92C80.2566 62.2302 81.4179 63.1309 82.7423 63.1105L93.1944 62.9262C94.7225 62.9058 95.9653 61.6365 95.9653 60.1012V47.9002C95.9653 43.9492 97.1878 40.0596 99.5512 36.8865C102.118 33.4473 106.519 30.1309 113.936 29.5987C115.586 29.4758 117.114 29.4963 118.52 29.6396C127.79 30.5199 134.819 38.4628 134.84 47.8183L134.86 54.0007C134.86 57.3375 132.273 60.0807 128.972 60.2649L112.856 60.8791C112.856 60.8791 108.496 60.8381 107.395 64.912C106.947 66.5702 107.029 67.2457 107.049 69.5181C107.049 73.3462 110.146 76.4579 113.956 76.4579H127.566C130.541 76.4579 132.945 74.0422 132.945 71.0534" stroke="#53B476" stroke-miterlimit="10" />
+<path d="M50.6727 46.4057L54.0956 34.6142C54.4216 33.4678 56.0312 33.4678 56.3572 34.6142L59.7801 46.4057C60.0042 47.1632 59.4337 47.9206 58.6391 47.9206H51.8136C51.019 47.9206 50.4486 47.1632 50.6727 46.4057Z" stroke="#53B476" stroke-miterlimit="10" />
+<path d="M108.903 49.9679H122.452C123.817 49.9679 124.775 48.5759 124.265 47.2862C123.145 44.5225 120.7 40.5715 115.749 40.5715C110.37 40.5715 108.047 44.5839 107.069 47.3681C106.621 48.6373 107.558 49.9679 108.903 49.9679Z" stroke="#53B476" stroke-miterlimit="10" />
+</svg>
+<div class="circle circle--border scope__work-text-circle scope__work-text-circle--animation">
+<p class="scope__work-text">Animations</p>
+</div>
+</li>
+</ul>
+</li>
+<li class="scope__item">
+<h3 class="scope__item-title section-text section-text--middle">Mobile frontend development
+with React Native</h3>
+<ul class="scope__works scope__works--frontend">
+<li class="scope__work">
+<div class="circle scope__work-circle"></div>
+<div class="circle circle--fill scope__work-circle-decor scope__work-circle-decor1"></div>
+<div class="circle circle--fill scope__work-circle-decor scope__work-circle-decor2"></div>
+<svg class="scope__work-img scope__work-img--frontend" width="158" height="109" viewBox="0 0 158 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M80.1669 50.3347C80.1669 50.3347 82.6279 50.9686 82.8889 48.8805C83.2245 46.1213 80.4279 45.8603 79.272 46.1586C77.445 46.606 76.401 48.2466 76.1399 49.1042C75.4688 51.155 75.8789 52.4973 76.5501 53.8397C77.3704 55.4057 79.6449 56.5616 80.8754 56.8972C83.7465 57.6429 86.5057 57.4938 88.37 56.9345C93.8512 55.2938 100.376 52.8702 104.739 45.1891C109.102 37.4707 113.203 24.9423 113.203 15.1732C113.203 5.40404 110.593 2.71939 106.454 2.64481C102.502 2.53295 86.8413 6.63451 71.0317 27.888C55.222 49.1415 46.6833 76.8083 45.863 87.808C45.0427 98.8076 46.0868 103.431 48.1375 105.482C50.2256 107.57 57.0864 106.302 64.581 100.896C72.0757 95.4891 95.6037 69.6866 100.153 57.3819C102.875 50.111 100.041 43.0265 96.685 37.3962C94.4105 33.5929 90.7191 29.4168 87.0277 25.6881C80.3161 18.8646 64.7675 9.39373 47.9138 3.46512C30.1653 -2.72449 23.6028 1.67535 24.9078 10.8852C26.4739 22.034 37.9209 42.4299 60.8151 65.9579C80.8754 86.5775 100.004 97.1297 102.502 98.5839C105 100.038 114.508 106.563 125.881 108.278C134.121 109.509 136.172 104.289 136.134 100.523C136.06 94.6315 133.002 86.9877 126.962 76.1745C119.877 63.4969 107.386 50.5584 107.386 50.5584" stroke="#53B476" stroke-miterlimit="10" stroke-linecap="round" />
+<path d="M110.78 30.4236C110.78 30.4236 140.274 30.088 151.944 35.3827C170.289 43.6604 128.081 59.1717 117.529 61.3344C101.309 64.6529 74.3877 72.1476 32.1417 63.6834C-18.904 53.4668 7.15952 37.8809 7.15952 37.8809C7.15952 37.8809 15.2881 32.2506 27.5554 28.7084" stroke="#53B476" stroke-miterlimit="10" />
+</svg>
+<div class="circle circle--border scope__work-text-circle scope__work-text-circle--frontend">
+<p class="scope__work-text">Frontend</p>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</div>
+</div>
+<section class="design">
+<div class="container design__container">
+<div class="design__description">
+<h2 class="section-title design__title">Design</h2>
+<h3 class="section-title section-title--mini design__subtitle">Initialization</h3>
+<p class="section-text section-text--gray design__text">The clients already had a corporate identity and a ready-made
+brand book — it really simplified the process of creating the concept
+since we didn’t need to choose colors and fonts.</p>
+<p class="section-text section-text--gray design__text">There aren’t many screens in the app: logic of the app was based
+on working principles of the fridges. And, of course, the clients already
+had business logic, so basically, we just needed to design what they
+came up with. We received main user flows and got started.</p>
+</div>
+<div class="design__phones">
+<div class="circle circle--border design__circle-big"></div>
+<div class="circle circle--fill design__circle-mini"></div>
+<picture class="design__phone design__phone1"><source type="image/webp" srcset="/images/vendify-design-phone1.png, /images/vendify-design-phone1@2x.png 2x"><img data-src="/images/vendify-design-phone1.png" src="../../images/vendify-design-phone1.png" alt="Vendify" srcset="/images/vendify-design-phone1.png, /images/vendify-design-phone1@2x.png 2x"></picture>
+<picture class="design__phone design__phone2"><source type="image/webp" srcset="/images/vendify-design-phone2.png, /images/vendify-design-phone2@2x.png 2x"><img data-src="/images/vendify-design-phone2.png" src="../../images/vendify-design-phone2.png" alt="Vendify" srcset="/images/vendify-design-phone2.png, /images/vendify-design-phone2@2x.png 2x"></picture>
+</div>
+</div>
+</section>
+<section class="concept">
+<div class="container concept__container">
+<div class="concept__description">
+<h2 class="section-title section-title--mini concept__title">Concept</h2>
+<p class="section-text section-text--gray concept__text">We prepared concept of the interface in a dark theme
+— to match the fridge. The client didn’t expect us to make
+such a move but the concept impressed him a lot.</p>
+</div>
+<div class="concept__fridge-wrap">
+<div class="circle circle--border concept__circle concept__circle--big"></div>
+<div class="circle circle--shadow concept__circle concept__circle--middle"></div>
+<div class="circle circle--fill concept__circle concept__circle--mini"></div>
+<svg class="concept__fridge" width="228" height="594" viewBox="0 0 228 594" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1" y=".857" width="220" height="574.772" rx="9.5" fill="#101010" stroke="#53B476" />
+<path d="M1 10.357a9.5 9.5 0 0 1 9.5-9.5h201a9.5 9.5 0 0 1 9.5 9.5v365.107H1V10.357Z" fill="#101010" stroke="#53B476" />
+<rect x="5.5" y="557.173" width="211" height="32" rx="2.5" fill="#101010" stroke="#53B476" />
+<path d="M11 16.673h210M11 118.673h202M11 126.673h202M11 243.673h202M11 251.673h202M11 359.673l210.072.342" stroke="#53B476" />
+<path d="M146.761 219.731H106v24.041h40.761v-24.041Z" stroke="#53B476" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M146.761 211.673H106v8.058h40.761v-8.058Z" fill="#53B476" stroke="#53B476" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M106 224.432h26.794" stroke="#53B476" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M193 111.173c0 4.115-3.611 7.5-8 7.5a8.295 8.295 0 0 1-3.681-.863c-2.549-1.261-4.319-3.783-4.319-6.637 0-2.854 1.77-5.376 4.319-6.637 1.132-.531 2.336-.863 3.681-.863 4.46 0 8 3.385 8 7.5Z" fill="#65BF7C" stroke="#53B476" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M199.57 310.182v49.626h-26.726V308.772c0-4.566 3.089-7.387 6.513-8.461 1.545-.47 1.344-3.291 1.411-4.567v-16.586h10.878v16.586c.202 1.813-.268 4.231 1.411 4.567 3.492.671 6.513 3.626 6.513 8.461v1.41ZM193.056 276.673h-13.699v2.417h13.699v-2.417Z" stroke="#53B476" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M181.103 311.525h-8.192v27.532h8.192v-27.532Z" fill="#53B476" />
+<path d="M161.233 331.673H129v28.405h32.233v-28.405ZM140.349 352.154h20.481" stroke="#53B476" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1 386.831h220v179.298a9.5 9.5 0 0 1-9.5 9.5h-201c-5.247 0-9.5-4.254-9.5-9.5V386.831Z" fill="#101010" stroke="#53B476" />
+<path d="M10.74 386.331v189M11 .673v375M212.968 360.015V16.305" stroke="#53B476" />
+<rect x="5.267" y="584.603" width="211.467" height="8.57" rx="2.5" fill="#101010" stroke="#53B476" />
+<g id="door">
+<path d="M11.5 10.673a9.5 9.5 0 0 1 9.5-9.5h191a9.5 9.5 0 0 1 9.5 9.5v355a9.5 9.5 0 0 1-9.5 9.5H21a9.5 9.5 0 0 1-9.5-9.5v-355Z" fill="#101010" stroke="#53B476" />
+<rect x="196.5" y="193.173" width="4" height="61" rx=".5" fill="#101010" stroke="#53B476" />
+<rect x="70.5" y="114.173" width="92" height="51" rx="4.5" fill="#101010" stroke="#53B476" />
+<path d="m165.976 230.849.799-28.384 8.395 1.599 1.6-.8 7.195-1.599 9.195-.799h15.991l7.349 1.307 3.5 1.091 1.5 2.409v2l-.5 1 2 .5 2 1 1 1.5v2l-.5 2-1.5 2 2 1 1.5 1.5-.001 1.5-.5 2-.999 2.5-2 .5 2 1.5.5 2.5-.5 2-1 2.174-1 .826-1.85.773-2.65-.773-3.952-.826-7.548-1.119 2.5.445 3 1.5 1.648.773.852 1.227.5 2-.5 2-2 2-3 1-7-.5-7.5-1-5.738-.731-5.997-1.199-4.397-.8-3.598-1.998-2.799-2.399-3.198-4.398-4.797-.799Z" fill="#101010" />
+<path d="M204.323 200.811c-19.936-1.109-28.649 3.063-28.649 3.063s-5.017.105-9.083-1.189" fill="#101010" />
+<path d="M204.323 200.811c-19.936-1.109-28.649 3.063-28.649 3.063s-5.017.105-9.083-1.189" stroke="#53B476" stroke-miterlimit="10" stroke-linejoin="round" />
+<path d="M191.332 242.503c-1.743-.422-4.172-.897-5.572-.95-6.152-.264-14.337-5.281-15.235-12.595" fill="#101010" />
+<path d="M191.332 242.503c-1.743-.422-4.172-.897-5.572-.95-6.152-.264-14.337-5.281-15.235-12.595" stroke="#53B476" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="m171.238 231.625-5.149-.713" stroke="#53B476" stroke-miterlimit="10" stroke-linejoin="round" />
+<path d="M157.217 236.457c.238.053.502.079.766.079l4.911-.291a3.177 3.177 0 0 0 3.169-3.168l.026-2.165.502-30.339c0-.792-.581-2.482-2.376-3.221-2.139-.898-5.545-.74-5.545-.74-.317 0-.634.053-.925.132l-.052 4.806-.053 4.647-.317 24.556-.106 5.704Z" fill="#101010" stroke="#53B476" stroke-miterlimit="10" stroke-linejoin="round" />
+<path d="M127.994 188.178c-2.343.306-3.994 2.362-3.994 4.725v45.615c0 2.553 1.919 4.706 4.468 4.843 6.03.325 15.775.256 25.58-2.336 1.69-.449 3.169-1.822 3.169-4.014v-.554l.079-5.704.317-24.556.053-4.647.053-4.806.026-1.003c0-1.003-.554-3.248-2.376-4.093-10.206-4.713-21.208-4.273-27.375-3.47Z" fill="#101010" stroke="#53B476" stroke-miterlimit="10" stroke-linejoin="round" />
+<path d="M157.501 201.673s-9.658-3.397-18.107-2.552l18.107 2.552Z" fill="#101010" />
+<path d="M157.501 201.673s-9.658-3.397-18.107-2.552" stroke="#53B476" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M157.501 206.173s-8.232-1.719-11.928-1.085l11.928 1.085Z" fill="#101010" />
+<path d="M157.501 206.173s-8.232-1.719-11.928-1.085" stroke="#53B476" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M157.297 230.753s-8.714 3.222-22.286 1.188l22.286-1.188Z" fill="#101010" />
+<path d="M157.297 230.753s-8.714 3.222-22.286 1.188" stroke="#53B476" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M204.321 200.811c3.011.184 6.311.501 9.902.95 9.777 1.412 7.777 5.912 6.277 6.912" stroke="#53B476" stroke-miterlimit="10" stroke-linejoin="round" />
+<path d="M211.135 208.098s5.865-.925 12.865 1.575c3.499 1.25 1.999 7.167-.501 8-1.5.5-4.5 0-4.5 0" fill="#101010" />
+<path d="M211.135 208.098s5.865-.925 12.865 1.575c3.499 1.25 1.999 7.167-.501 8-1.5.5-4.5 0-4.5 0" stroke="#53B476" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M211.662 216.601s6.338-.928 13.005 1.471c3.333 1.199 2.833 3.101 2.333 5.601-.5 2-1.5 3-3 3-4.859-.237-3-.416-6.5-1" fill="#101010" />
+<path d="M211.662 216.601s6.338-.928 13.005 1.471c3.333 1.199 2.833 3.101 2.333 5.601-.5 2-1.5 3-3 3-4.859-.237-3-.416-6.5-1" stroke="#53B476" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M210.21 224.865s7.29 0 14.29 2.308c3.999 1.5 1.5 10.051-3 9-2.826-.66-12.135-2.99-26.077-3.519" fill="#101010" />
+<path d="M210.21 224.865s7.29 0 14.29 2.308c3.999 1.5 1.5 10.051-3 9-2.826-.66-12.135-2.99-26.077-3.519" stroke="#53B476" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M200.942 232.998s8.356.289 13.52 3.175c1.537.859 2.037 2 2.037 4-.5 5-7.5 4.5-7.5 4.5s-11.5-1-17.642-2.196" stroke="#53B476" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+</g>
+</svg>
+</div>
+</div>
+</section>
+<section class="customer-review">
+<div class="container customer-review__container">
+<div class="customer-review__review review">
+<div class="review__wrap">
+<div class="review__photo-wrap">
+<img class="review__photo" data-src="/images/vendify-review-empty.svg" src="../../images/vendify-review-empty.svg" alt="Vendify">
+</div>
+<div class="review__content">
+<p class="review__text">I liked the work on the design of the application, Especially the solutions the team offered us.</p>
+<p class="review__text review__text--author">Aivis Ruza, the client</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="vendiphone">
+<div class="container vendiphone__container">
+<h2 class="vendiphone__title">Vendify</h2>
+<svg class="vendiphone__dashed-circle" width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M191.309 96.0226C191.309 97.0309 191.293 98.0496 191.262 99.0493L190.536 99.0266C190.581 97.591 190.593 96.1259 190.573 94.6836L191.3 94.6736C191.306 95.1226 191.309 95.5723 191.309 96.0226ZM191.141 90.3004L190.415 90.343C190.33 88.9052 190.211 87.449 190.061 86.0148L190.784 85.9388C190.935 87.3841 191.055 88.8513 191.141 90.3004ZM191.027 103.419C190.916 104.869 190.771 106.334 190.594 107.773L189.873 107.685C190.048 106.256 190.193 104.802 190.303 103.363L191.027 103.419ZM190.228 81.5986L189.51 81.7076C189.293 80.2791 189.041 78.8396 188.761 77.4302L189.474 77.2886C189.756 78.7089 190.01 80.1591 190.228 81.5986ZM189.962 112.103C189.72 113.535 189.441 114.981 189.133 116.4L188.422 116.246C188.728 114.838 189.005 113.403 189.245 111.982L189.962 112.103ZM188.522 73.0168L187.817 73.1914C187.47 71.7892 187.087 70.3791 186.678 69.0003L187.375 68.7937C187.787 70.1832 188.173 71.6039 188.522 73.0168ZM188.106 120.654C187.732 122.059 187.321 123.473 186.883 124.856L186.191 124.637C186.625 123.264 187.032 121.861 187.403 120.467L188.106 120.654ZM186.034 64.6281L185.347 64.8666C184.874 63.5059 184.363 62.1374 183.827 60.7983L184.502 60.5285C185.042 61.8775 185.557 63.2567 186.034 64.6281L186.034 64.6281ZM185.464 129.008C184.963 130.373 184.422 131.746 183.856 133.089L183.186 132.807C183.747 131.474 184.284 130.112 184.782 128.757L185.464 129.008ZM182.787 56.513L182.125 56.814C181.531 55.5072 180.897 54.1937 180.241 52.91L180.889 52.5792C181.55 53.8728 182.188 55.1963 182.787 56.513L182.787 56.513ZM178.811 48.7362L178.18 49.0961C177.465 47.8429 176.713 46.5918 175.946 45.3783L176.56 44.9901C177.333 46.2127 178.091 47.473 178.811 48.7362L178.811 48.7362ZM174.138 41.3501L173.543 41.766C172.718 40.586 171.855 39.4084 170.977 38.2659L171.553 37.823C172.438 38.9739 173.308 40.1608 174.138 41.3501ZM173.115 152.133C172.263 153.306 171.37 154.478 170.461 155.617L169.893 155.163C170.795 154.033 171.681 152.87 172.526 151.706L173.115 152.133ZM168.81 34.4169L168.254 34.8853C167.326 33.7855 166.359 32.6909 165.379 31.6315L165.913 31.1382C166.9 32.2054 167.875 33.3084 168.81 34.4168L168.81 34.4169ZM167.652 158.975C166.695 160.067 165.7 161.153 164.694 162.201L164.169 161.698C165.168 160.657 166.156 159.58 167.106 158.496L167.652 158.975ZM162.869 27.994L162.359 28.5115C161.331 27.4975 160.268 26.4945 159.198 25.5309L159.685 24.9907C160.763 25.9618 161.834 26.9722 162.869 27.994ZM161.593 165.288C160.539 166.291 159.449 167.281 158.354 168.231L157.878 167.682C158.965 166.739 160.046 165.757 161.092 164.762L161.593 165.288ZM156.367 22.1355L155.905 22.6969C154.79 21.7809 153.64 20.8791 152.486 20.0156L152.921 19.4335C154.084 20.3034 155.244 21.2123 156.367 22.1354L156.367 22.1355ZM154.987 171.023C153.849 171.923 152.675 172.809 151.496 173.657L151.072 173.067C152.241 172.226 153.407 171.346 154.536 170.453L154.987 171.023ZM149.355 16.8916L148.946 17.4928C147.753 16.6822 146.524 15.8883 145.295 15.1334L145.675 14.5137C146.914 15.275 148.152 16.0749 149.355 16.8916L149.355 16.8916ZM147.89 176.129C146.676 176.921 145.427 177.696 144.176 178.433L143.807 177.807C145.048 177.076 146.288 176.306 147.493 175.52L147.89 176.129ZM141.89 12.3068L141.538 12.9428C140.276 12.2451 138.979 11.5672 137.684 10.9273L138.006 10.2756C139.311 10.9202 140.617 11.6037 141.89 12.3068ZM134.032 8.42515L133.74 9.09094C132.417 8.51173 131.063 7.95558 129.714 7.43775L129.975 6.75916C131.334 7.28091 132.699 7.84167 134.032 8.42515ZM132.464 184.29C131.126 184.847 129.758 185.381 128.397 185.876L128.148 185.193C129.499 184.702 130.857 184.172 132.184 183.619L132.464 184.29ZM125.843 5.28204L125.615 5.97198C124.248 5.51843 122.851 5.09039 121.462 4.69998L121.659 4.00009C123.058 4.39369 124.466 4.82527 125.843 5.28204ZM124.25 187.276C122.865 187.709 121.45 188.115 120.044 188.484L119.859 187.781C121.255 187.415 122.659 187.012 124.034 186.582L124.25 187.276ZM117.42 2.91299L117.255 3.62104C115.854 3.29559 114.424 2.99818 113.004 2.7366L113.135 2.0218C114.566 2.28515 116.008 2.58505 117.42 2.91299L117.42 2.91299ZM115.787 189.496C114.367 189.799 112.921 190.074 111.487 190.311L111.368 189.595C112.791 189.358 114.226 189.086 115.635 188.785L115.787 189.496ZM108.815 1.32902L108.716 2.04949C107.292 1.85394 105.841 1.6889 104.401 1.55865L104.467 0.834621C105.917 0.965953 107.38 1.1324 108.815 1.32902L108.815 1.32902ZM107.155 190.929C105.716 191.1 104.251 191.241 102.8 191.347L102.746 190.622C104.187 190.517 105.641 190.377 107.069 190.207L107.155 190.929ZM100.101 0.538631L100.068 1.26475C98.6283 1.20016 97.1674 1.16717 95.7268 1.16717L95.7268 0.440319C97.1784 0.440334 98.6503 0.473323 100.101 0.538631ZM98.4288 191.567C97.5376 191.592 96.6283 191.605 95.7268 191.605C95.1675 191.605 94.6092 191.6 94.052 191.591L94.0648 190.864C94.6177 190.873 95.1718 190.878 95.7268 190.878C96.6216 190.878 97.5241 190.865 98.4089 190.841L98.4288 191.567ZM89.7254 190.691L89.68 191.417C88.2277 191.326 86.7609 191.201 85.3201 191.045L85.3983 190.322C86.8283 190.477 88.284 190.601 89.7254 190.691L89.7254 190.691ZM85.291 1.6365C83.858 1.78166 83.1594 1.98135 81.7326 2.19217L81.6265 1.47311C83.0641 1.26086 84.1615 1.07879 85.6053 0.932217L85.291 1.6365ZM81.0929 189.756L80.9818 190.475C79.5439 190.252 78.0946 189.993 76.6737 189.705L76.8178 188.993C78.2279 189.279 79.6662 189.535 81.0929 189.756ZM77.4529 2.92578C76.035 3.20295 74.6077 3.51562 73.2108 3.85565L73.039 3.14937C74.4466 2.80688 75.8849 2.49171 77.3134 2.2124L77.4529 2.92578ZM72.5824 188.035L72.4057 188.74C70.9979 188.387 69.5785 187.996 68.1865 187.578L68.3955 186.882C69.7768 187.296 71.1855 187.684 72.5824 188.035ZM69.0159 4.98001C67.6319 5.38531 66.2398 5.82826 64.8776 6.29638L64.6413 5.60927C66.0139 5.13723 67.417 4.69075 68.8115 4.28225L69.0159 4.98001ZM64.2549 185.532L64.014 186.218C62.6399 185.735 61.2593 185.214 59.9104 184.668L60.183 183.994C61.5214 184.535 62.8915 185.053 64.2549 185.532ZM60.8043 7.80262C59.4666 8.33288 58.1242 8.90074 56.814 9.4906L56.5155 8.82762C57.8358 8.23314 59.1885 7.66101 60.5363 7.12687L60.8043 7.80262ZM56.1878 182.27L55.8843 182.931C54.5622 182.323 53.2365 181.677 51.9439 181.01L52.2771 180.364C53.56 181.026 54.8756 181.668 56.1878 182.27ZM52.9039 11.3599C51.6207 12.0105 50.3349 12.6997 49.0826 13.4085L48.7245 12.776C49.9865 12.0616 51.2822 11.3674 52.5753 10.7119L52.9039 11.3599ZM48.4594 178.281L48.0966 178.911C46.8376 178.186 45.5773 177.421 44.3511 176.638L44.7422 176.025C45.9592 176.802 47.2099 177.561 48.4594 178.281ZM45.3574 15.6302C44.1347 16.3983 42.9167 17.2025 41.7369 18.0206L41.3228 17.4236C42.5115 16.5991 43.7388 15.7885 44.9709 15.0148L45.3574 15.6302ZM41.1331 173.602L40.7143 174.196C39.5258 173.358 38.3413 172.482 37.1935 171.592L37.6389 171.018C38.7782 171.901 39.9537 172.771 41.1331 173.602ZM38.2284 20.5745C37.0812 21.4505 35.9407 22.3626 34.8387 23.2864L34.3718 22.7292C35.4823 21.7986 36.6313 20.8794 37.7873 19.9967L38.2284 20.5745ZM34.2675 168.277L33.7961 168.83C32.6916 167.89 31.5923 166.91 30.5286 165.917L31.0244 165.386C32.0801 166.371 33.1713 167.343 34.2675 168.277ZM31.5751 26.1499C30.5123 27.1262 29.4589 28.1391 28.4446 29.1599L27.9289 28.6474C28.9512 27.6188 30.0124 26.5985 31.0832 25.6147L31.5751 26.1499ZM27.9175 162.351L27.3979 162.859C26.3811 161.82 25.3758 160.744 24.4101 159.663L24.9524 159.179C25.9107 160.252 26.9083 161.32 27.9175 162.351ZM25.4535 32.309C24.483 33.3791 23.5258 34.4839 22.6085 35.5927L22.0485 35.1292C22.9727 34.0123 23.9372 32.8989 24.9151 31.8207L25.4535 32.309ZM22.1347 155.875L21.5711 156.334C20.6557 155.21 19.7527 154.048 18.8875 152.881L19.4713 152.448C20.3302 153.607 21.2262 154.76 22.1347 155.875ZM16.9677 148.904L16.3647 149.31C15.5552 148.106 14.7625 146.868 14.0081 145.628L14.6292 145.25C15.3777 146.481 16.1646 147.71 16.9677 148.904ZM12.4607 141.494L11.8229 141.843C11.1264 140.57 10.4506 139.265 9.81411 137.964L10.4672 137.645C11.0987 138.936 11.7693 140.231 12.4607 141.494ZM10.7766 53.7731C10.1323 55.0664 9.50977 56.3913 8.92647 57.7109L8.26172 57.417C8.84946 56.0871 9.47677 54.752 10.1261 53.4487L10.7766 53.7731ZM8.65266 133.709L7.98577 133.998C7.40921 132.668 6.85626 131.307 6.34216 129.954L7.02182 129.696C7.53184 131.039 8.08054 132.389 8.65266 133.709ZM7.25908 61.731C6.7372 63.0768 6.23924 64.4542 5.77927 65.8253L5.09003 65.5938C5.55372 64.2125 6.05539 62.8244 6.58155 61.4683L7.25908 61.731ZM5.57397 125.601L4.88331 125.828C4.43044 124.447 4.00401 123.037 3.61627 121.639L4.31651 121.445C4.70141 122.832 5.12447 124.231 5.57397 125.601ZM4.49325 69.9735C4.09806 71.3597 3.73002 72.7737 3.39941 74.176L2.69207 74.0092C3.02516 72.5959 3.39604 71.1713 3.79408 69.774L4.49325 69.9735ZM3.25195 117.235L2.54337 117.396C2.21986 115.98 1.92511 114.538 1.66744 113.109L2.38259 112.98C2.63848 114.398 2.93093 115.829 3.25195 117.235ZM2.50077 78.4246C2.23512 79.84 1.99875 81.2817 1.79822 82.7099L1.07846 82.6091C1.28058 81.1699 1.51873 79.7169 1.78633 78.2905L2.50077 78.4246ZM1.70986 108.69L0.989385 108.786C0.797377 107.347 0.63589 105.884 0.509899 104.437L1.23392 104.373C1.3592 105.809 1.51926 107.261 1.70986 108.69ZM1.29283 87.0231C1.15797 88.4548 1.05398 89.9121 0.984238 91.3548L0.258103 91.3193C0.328554 89.866 0.433255 88.3977 0.5692 86.955L1.29283 87.0231ZM0.955135 100.039L0.228999 100.07C0.173278 98.7338 0.144883 97.3724 0.144527 96.0227L0.145062 95.6937L0.871923 95.6958L0.871389 96.0227C0.871723 97.3621 0.89994 98.7136 0.955127 100.039L0.955135 100.039Z" fill="white" fill-opacity="0.4" />
+</svg>
+<svg class="vendiphone__phone" width="205" height="448" viewBox="0 0 205 448" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M204.146 19.2901V429.496C204.141 434.383 202.195 439.068 198.736 442.522C195.277 445.976 190.586 447.917 185.696 447.918H19.0195C16.5964 447.923 14.1963 447.449 11.9566 446.525C9.71703 445.601 7.68193 444.244 5.96795 442.533C4.25397 440.822 2.8948 438.789 1.96833 436.552C1.04186 434.315 0.56628 431.917 0.568858 429.496V19.2901C0.568649 16.8691 1.04576 14.4719 1.97291 12.2352C2.90007 9.99852 4.25911 7.96622 5.97245 6.25437C7.68579 4.54252 9.71986 3.18465 11.9585 2.2583C14.1971 1.33195 16.5964 0.855261 19.0195 0.85547H43.9623V4.05131C43.9618 8.07683 45.5617 11.9377 48.41 14.7848C51.2584 17.6319 55.1219 19.2319 59.151 19.2331H143.924C147.167 19.24 150.325 18.2014 152.93 16.2714C153.457 15.8887 153.957 15.47 154.425 15.0184C155.909 13.6028 157.09 11.9007 157.895 10.0155C158.701 8.13029 159.115 6.1012 159.112 4.05131V0.85547H185.696C188.119 0.854728 190.518 1.33105 192.757 2.25721C194.996 3.18337 197.03 4.54123 198.744 6.25318C200.457 7.96514 201.816 9.99766 202.743 12.2346C203.67 14.4715 204.147 16.869 204.146 19.2901Z" fill="#7F8080" />
+<path d="M163.163 60.7666H41.5527V62.0323H163.163V60.7666Z" fill="white" />
+<path d="M163.457 406.296H41.8462V407.562H163.457V406.296Z" fill="white" />
+<path d="M102.357 320.231C112.502 320.231 120.725 312.014 120.725 301.879C120.725 291.743 112.502 283.526 102.357 283.526C92.2125 283.526 83.9888 291.743 83.9888 301.879C83.9888 312.014 92.2125 320.231 102.357 320.231Z" fill="#53B476" />
+<path d="M113.922 300.065H104.171V290.323H100.543V300.065H90.792V303.69H100.543V313.433H104.171V303.69H113.922V300.065Z" fill="white" />
+<path d="M160.29 302.511L150.79 298.081V300.612H128.621V304.409H150.79V306.941L160.29 302.511Z" fill="white" />
+<path d="M44.4253 302.511L53.9261 298.081V300.612H76.0947V304.409H53.9261V306.941L44.4253 302.511Z" fill="white" />
+</svg>
+<svg class="vendiphone__branch" width="163" height="237" viewBox="0 0 163 237" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M92.3993 74.8984C106.186 75.1938 117.152 85.1757 117.152 85.1757C117.152 85.1757 105.767 94.6786 91.981 94.3831C78.1948 94.0876 67.228 84.1058 67.228 84.1058C67.228 84.1058 78.6131 74.6029 92.3993 74.8984Z" fill="#7BDC9E" />
+<path d="M23.0892 27.8798C35.5444 33.7919 49.8266 29.7828 49.8266 29.7828C49.8266 29.7828 43.9148 16.1883 31.4596 10.2762C19.0044 4.36409 4.72217 8.37315 4.72217 8.37315C4.72217 8.37315 10.6339 21.9676 23.0892 27.8798Z" fill="#7BDC9E" />
+<path d="M24.3555 22.0051C38.0877 20.7512 50.1074 29.4389 50.1074 29.4389C50.1074 29.4389 39.863 40.1596 26.1308 41.4134C12.3986 42.6673 0.378906 33.9796 0.378906 33.9796C0.378906 33.9796 10.6234 23.259 24.3555 22.0051Z" fill="#343535" />
+<path d="M74.6931 24.3802C73.3768 38.0947 82.0184 50.1427 82.0184 50.1427C82.0184 50.1427 92.7939 39.955 94.1101 26.2405C95.4264 12.526 86.7848 0.478027 86.7848 0.478027C86.7848 0.478027 76.0093 10.6657 74.6931 24.3802Z" fill="#343535" />
+<path d="M140.389 98.0002C133.187 109.749 135.665 124.363 135.665 124.363C135.665 124.363 149.82 119.929 157.023 108.18C164.226 96.4314 161.748 81.8174 161.748 81.8174C161.748 81.8174 147.592 86.2516 140.389 98.0002Z" fill="#343535" />
+<path d="M118.47 236.228L119.52 235.519C115.82 230.155 113.8 223.813 113.716 217.298C113.745 207.769 118.43 198.956 122.961 190.432C123.801 188.85 124.64 187.273 125.446 185.697C128.83 179.27 131.527 172.505 133.492 165.514C140.52 139.422 133.601 108.638 114.985 83.1676C100.218 62.9619 78.2033 45.2931 47.6853 29.1514L47.0928 30.27C77.437 46.3196 99.3102 63.867 113.962 83.9142C132.354 109.078 139.198 139.46 132.269 165.185C130.327 172.091 127.662 178.773 124.318 185.121C123.514 186.691 122.679 188.262 121.842 189.838C117.239 198.498 112.48 207.452 112.449 217.295C112.533 224.063 114.629 230.653 118.47 236.228Z" fill="#343535" />
+</svg>
+<svg class="vendiphone__blocks" width="341" height="121" viewBox="0 0 341 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M247.778 1.73145H92.9365V119.44H247.778V1.73145Z" fill="#53B476" />
+<path d="M196.616 45.9121C194.369 43.9723 191.598 42.738 188.652 42.3638C185.706 41.9896 182.715 42.4921 180.053 43.8084C177.741 44.9256 175.254 45.6365 172.701 45.9099C172.637 40.3844 173.653 34.8996 175.69 29.7623L176.024 28.9008H171.584L171.456 29.3665C170.962 31.1831 170.572 33.0267 170.289 34.888C170.049 34.0812 169.738 33.2971 169.36 32.5449C166.246 26.3756 159.05 23.8523 158.745 23.7482L158.131 23.5381L157.936 24.1558C157.839 24.4629 155.592 31.744 158.706 37.9135C160.935 42.3307 165.257 44.8781 167.644 46.0074C164.623 45.813 161.67 45.0237 158.955 43.6851C157.262 42.8136 155.358 42.4362 153.46 42.5962C151.563 42.7563 149.749 43.4472 148.226 44.5899C139.936 50.884 135.182 60.1102 135.182 69.9031C135.182 82.7675 143.52 94.5486 156.425 99.9166C157.589 100.399 158.837 100.647 160.097 100.645C161.847 100.646 163.565 100.175 165.07 99.2825C167.07 98.1201 169.342 97.5055 171.656 97.5008C173.97 97.4962 176.245 98.1016 178.25 99.256C179.546 100.02 181.003 100.473 182.504 100.578C184.006 100.684 185.511 100.44 186.902 99.8647C199.732 94.4757 208.021 82.715 208.021 69.9031C208.021 60.7328 203.97 52.2127 196.616 45.9121ZM172.553 30.1665H174.183C172.35 35.0732 171.415 40.2697 171.424 45.5073H171.133C170.741 40.3503 171.221 35.1641 172.553 30.1665ZM159.837 37.3437C157.473 32.6602 158.51 27.0777 158.968 25.194C160.756 25.9437 165.86 28.4225 168.229 33.1147C170.593 37.7976 169.556 43.3792 169.098 45.2638C167.309 44.5117 162.201 42.0264 159.837 37.3437ZM186.411 98.6979C185.202 99.1974 183.894 99.4092 182.589 99.3166C181.284 99.2241 180.018 98.8297 178.892 98.1645C176.692 96.8954 174.194 96.2298 171.654 96.2352C169.113 96.2405 166.618 96.9165 164.423 98.1948C163.3 98.8626 162.036 99.2603 160.733 99.3564C159.429 99.4525 158.121 99.2444 156.911 98.7486C144.48 93.5777 136.448 82.2552 136.448 69.9031C136.448 60.5094 141.021 51.6503 148.993 45.5978C150.522 44.4436 152.388 43.8213 154.304 43.826C155.72 43.825 157.115 44.1624 158.374 44.8099C161.844 46.4642 165.636 47.3337 169.48 47.3565C173.325 47.3793 177.127 46.5548 180.616 44.9418C183.055 43.7362 185.796 43.2764 188.495 43.6199C191.195 43.9634 193.732 45.0951 195.791 46.8731C202.861 52.9292 206.755 61.1079 206.755 69.9031C206.755 82.2045 198.769 93.5066 186.411 98.6979Z" fill="white" />
+<path d="M75.9357 120.967L0.39209 114.678V3.97626L75.9357 0.202637V120.967Z" fill="#7BDC9E" />
+<path d="M40.9978 35.8546V34.3689H41.5888V29.7404C41.591 29.3972 41.4988 29.0601 41.3223 28.7657C41.1457 28.4714 40.8916 28.2312 40.5877 28.0714C37.9734 26.7087 35.164 26.7103 32.2373 28.0779C31.9143 28.2312 31.6414 28.473 31.4506 28.7752C31.2597 29.0774 31.1587 29.4275 31.1592 29.7848V34.3689H31.7502V35.714C29.5748 36.3231 27.6595 37.6285 26.298 39.4298C24.9365 41.2311 24.2041 43.4289 24.213 45.6862V55.7016L25.3387 56.0767L24.213 56.8263V59.836L25.3387 60.2112L24.213 60.9611V63.9708L25.3387 64.3456L24.213 65.0956V88.0187C24.215 89.8067 24.9268 91.5209 26.1922 92.7853C27.4576 94.0497 29.1732 94.7609 30.9628 94.763H40.9136C42.6992 94.761 44.411 94.0515 45.6736 92.79C46.9362 91.5285 47.6463 89.8182 47.6483 88.0342V65.0956L46.5226 64.3457L47.6483 63.9708V60.9612L46.5226 60.2112L47.6483 59.8361V56.8264L46.5226 56.0767L47.6483 55.7016V45.1689C47.6408 43.1196 46.9971 41.1231 45.8059 39.4549C44.6147 37.7866 42.9347 36.5286 40.9978 35.8546ZM32.7736 29.2244C35.3607 28.0171 37.7254 28.0069 40.0013 29.1938C40.0992 29.2474 40.1807 29.3266 40.2372 29.4228C40.2937 29.5191 40.323 29.6288 40.322 29.7404V32.2174H32.426V29.7849C32.4249 29.6682 32.457 29.5536 32.5186 29.4543C32.5801 29.3551 32.6685 29.2754 32.7736 29.2244ZM46.3816 54.7895L43.6649 55.6942L46.3816 57.5037V58.9239L43.6649 59.8287L46.3816 61.6385V63.0587L43.6649 63.9631L46.3816 65.773V88.0342C46.3799 89.4826 45.8033 90.8712 44.7782 91.8954C43.7531 92.9196 42.3633 93.4957 40.9136 93.4974H30.9628C29.5091 93.4957 28.1154 92.9179 27.0875 91.8908C26.0595 90.8637 25.4814 89.4712 25.4797 88.0187V65.773L28.1964 63.9631L25.4797 63.0587V61.6385L28.1964 59.8287L25.4797 58.9239V57.5037L28.1964 55.6942L25.4797 54.7894V45.6862C25.4717 43.6285 26.1652 41.6295 27.4461 40.0181C28.7269 38.4068 30.5187 37.2793 32.5265 36.8212L33.017 36.7078V34.3689H39.731V36.7928L40.1878 36.9253C41.9709 37.45 43.5368 38.5357 44.6528 40.021C45.7687 41.5063 46.375 43.3117 46.3816 45.1689V54.7895Z" fill="white" />
+<path d="M264.779 120.967L340.323 114.678V3.97626L264.779 0.202637V120.967Z" fill="#7BDC9E" />
+<path d="M335.69 51.2841L332.501 50.6472L333.252 49.1467L331.789 48.8541L332.042 47.3344L330.445 47.068V45.6265L329.149 45.2567L330.379 43.7206H328.245L328.691 42.6082L327.112 42.3456L327.648 40.4699H325.94V38.7197H325.307C323.311 38.7197 322.198 41.0879 321.833 42.0363C310.817 43.9558 278.831 66.0915 275.18 68.6371C273.664 68.1455 271.414 69.2978 270.945 69.5536L270.201 69.9587L271.274 71.03L270.954 71.9879L272.922 72.7252L272.491 73.8018L273.731 74.8344L272.617 75.6694L274.293 76.6743L273.998 78.1426L275.87 78.4102V79.8799L276.957 80.0974L276.415 81.9947H277.622V83.4952H278.8L279.333 85.0933L279.881 84.9833C281.156 84.7287 282.247 82.9674 282.673 82.1862C293.283 80.2945 326.038 57.2695 329.226 55.0147C332.948 55.4603 334.316 54.4665 334.462 54.3497L335.068 53.8655L333.622 52.6619L335.69 51.2841ZM329.145 53.7286L328.898 53.6955L328.694 53.8398C328.333 54.0966 292.411 79.5239 282.17 80.9855L281.842 81.0324L281.693 81.3291C281.3 82.1287 280.77 82.8531 280.126 83.4692L279.713 82.2295H278.889V80.729H278.094L278.553 79.1259L277.137 78.8428V77.3126L275.504 77.0796L275.711 76.0475L274.884 75.5519L275.772 74.8863L274.009 73.4185L274.579 71.9947L272.542 71.2314L272.724 70.6888L272.33 70.2951C273.282 69.9002 274.432 69.6064 274.926 69.9018L275.279 70.1134L275.616 69.8774C275.975 69.6255 311.653 44.6927 322.389 43.2302L322.79 43.1755L322.909 42.7892C323.093 42.191 323.749 40.6797 324.673 40.1624V41.7355H325.969L325.504 43.3609L326.929 43.5982L326.373 44.9863H327.743L326.97 45.9513L329.178 46.5813V48.1403L330.585 48.3745L330.338 49.8553L331.378 50.0626L330.627 51.5631L332.443 51.9262L331.507 52.5489L332.852 53.6687C331.631 53.9166 330.374 53.9369 329.145 53.7286Z" fill="white" />
+</svg>
+<div class="vendiphone__circle">
+<div class="vendiphone__circle-inner"></div>
+</div>
+</div>
+</section>
+<div class="onboarding-qr-review">
+<div class="container onboarding-qr-review__container">
+<div class="onboarding-qr-review__review review">
+<div class="review__wrap">
+<div class="review__photo-wrap">
+<picture class="review__photo"><source type="image/webp" srcset="/images/vendify-review-vakulenko.png, /images/vendify-review-vakulenko@2x.png 2x"><img data-src="/images/vendify-review-vakulenko.png" src="../../images/vendify-review-vakulenko.png" alt="Julia Vakulenko, lead UI/UX designer" srcset="/images/vendify-review-vakulenko.png, /images/vendify-review-vakulenko@2x.png 2x"></picture>
+</div>
+<div class="review__content">
+<p class="review__text review__text--white">Further, we had difficulties working on the interface: changed indents, moved pixels, redesigned buttons. Edits were going on and on and on. Working in mode <b>‘change it’ -> ‘we changed’ -> ‘we don’t like it, undo the changes’</b> is inconvenient. That’s what we did: called the client and agreed on all changes in real-time, further the work went without any helter-skelter.</p>
+<p class="review__text review__text--white review__text--author">Julia Vakulenko, lead UI/UX designer</p>
+</div>
+</div>
+</div>
+</div>
+<section class="onboarding onboarding-qr-review__onboarding">
+<div class="container onboarding__container">
+<div class="onboarding__ellipse onboarding__ellipse--big"></div>
+<div class="onboarding__ellipse onboarding__ellipse--middle"></div>
+<div class="onboarding__ellipse onboarding__ellipse--mini"></div>
+<div class="onboarding__ellipse onboarding__ellipse--mini2"></div>
+<div class="circle circle--border onboarding__circle onboarding__circle--big"></div>
+<div class="circle circle--fill onboarding__circle onboarding__circle--mini"></div>
+<div class="onboarding__description">
+<h2 class="section-title section-title--mini onboarding__title">Onboarding</h2>
+<p class="section-text onboarding__text">Guys wanted to make illustrations for onboarding but then changed their minds in favor of a simple list on one screen. Why? Because it’s MVP.</p>
+</div>
+<div class="onboarding__phones">
+<picture class="onboarding__phone onboarding__phone1"><source type="image/webp" srcset="/images/vendify-onboarding-phone1.png, /images/vendify-onboarding-phone1@2x.png 2x"><img data-src="/images/vendify-onboarding-phone1.png" src="../../images/vendify-onboarding-phone1.png" alt="Vendify" srcset="/images/vendify-onboarding-phone1.png, /images/vendify-onboarding-phone1@2x.png 2x"></picture>
+<picture class="onboarding__phone onboarding__phone2"><source type="image/webp" srcset="/images/vendify-onboarding-phone2.png, /images/vendify-onboarding-phone2@2x.png 2x"><img data-src="/images/vendify-onboarding-phone2.png" src="../../images/vendify-onboarding-phone2.png" alt="Vendify" srcset="/images/vendify-onboarding-phone2.png, /images/vendify-onboarding-phone2@2x.png 2x"></picture>
+<picture class="onboarding__phone onboarding__phone3"><source type="image/webp" srcset="/images/vendify-onboarding-phone3.png, /images/vendify-onboarding-phone3@2x.png 2x"><img data-src="/images/vendify-onboarding-phone3.png" src="../../images/vendify-onboarding-phone3.png" alt="Vendify" srcset="/images/vendify-onboarding-phone3.png, /images/vendify-onboarding-phone3@2x.png 2x"></picture>
+<picture class="onboarding__phone onboarding__phone4"><source type="image/webp" srcset="/images/vendify-onboarding-phone4.png, /images/vendify-onboarding-phone4@2x.png 2x"><img data-src="/images/vendify-onboarding-phone4.png" src="../../images/vendify-onboarding-phone4.png" alt="Vendify" srcset="/images/vendify-onboarding-phone4.png, /images/vendify-onboarding-phone4@2x.png 2x"></picture>
+</div>
+</div>
+</section>
+<div class="onboarding-qr-review__qr-development qr-development">
+<div class="qr-development__phones-container">
+<picture class="qr-development__phone qr-development__phone1"><source type="image/webp" srcset="/images/vendify-development-phone2.png, /images/vendify-development-phone2@2x.png 2x"><img data-src="/images/vendify-development-phone2.png" src="../../images/vendify-development-phone2.png" alt="Vendify" srcset="/images/vendify-development-phone2.png, /images/vendify-development-phone2@2x.png 2x"></picture>
+<picture class="qr-development__phone qr-development__phone2"><source type="image/webp" srcset="/images/vendify-development-phone3.png, /images/vendify-development-phone3@2x.png 2x"><img data-src="/images/vendify-development-phone3.png" src="../../images/vendify-development-phone3.png" alt="Vendify" srcset="/images/vendify-development-phone3.png, /images/vendify-development-phone3@2x.png 2x"></picture>
+<picture class="qr-development__phone qr-development__phone3"><source type="image/webp" srcset="/images/vendify-development-phone4.png, /images/vendify-development-phone4@2x.png 2x"><img data-src="/images/vendify-development-phone4.png" src="../../images/vendify-development-phone4.png" alt="Vendify" srcset="/images/vendify-development-phone4.png, /images/vendify-development-phone4@2x.png 2x"></picture>
+<picture class="qr-development__phone qr-development__phone4"><source type="image/webp" srcset="/images/vendify-development-phone5.png, /images/vendify-development-phone5@2x.png 2x"><img data-src="/images/vendify-development-phone5.png" src="../../images/vendify-development-phone5.png" alt="Vendify" srcset="/images/vendify-development-phone5.png, /images/vendify-development-phone5@2x.png 2x"></picture>
+<picture class="qr-development__phone qr-development__phone5"><source type="image/webp" srcset="/images/vendify-development-phone6.png, /images/vendify-development-phone6@2x.png 2x"><img data-src="/images/vendify-development-phone6.png" src="../../images/vendify-development-phone6.png" alt="Vendify" srcset="/images/vendify-development-phone6.png, /images/vendify-development-phone6@2x.png 2x"></picture>
+<picture class="qr-development__phone qr-development__phone6"><source type="image/webp" srcset="/images/vendify-development-phone7.png, /images/vendify-development-phone7@2x.png 2x"><img data-src="/images/vendify-development-phone7.png" src="../../images/vendify-development-phone7.png" alt="Vendify" srcset="/images/vendify-development-phone7.png, /images/vendify-development-phone7@2x.png 2x"></picture>
+<picture class="qr-development__phone qr-development__phone7"><source type="image/webp" srcset="/images/vendify-development-phone8.png, /images/vendify-development-phone8@2x.png 2x"><img data-src="/images/vendify-development-phone8.png" src="../../images/vendify-development-phone8.png" alt="Vendify" srcset="/images/vendify-development-phone8.png, /images/vendify-development-phone8@2x.png 2x"></picture>
+
+</div>
+
+<section class="qr-development__qr-code qr-code">
+<div class="container qr-code__container">
+<picture class="qr-code__phone qr-code__rotate-elem"><source type="image/webp" srcset="/images/vendify-qr-phone.png, /images/vendify-qr-phone@2x.png 2x"><img data-src="/images/vendify-qr-phone.png" src="../../images/vendify-qr-phone.png" alt="Vendify" srcset="/images/vendify-qr-phone.png, /images/vendify-qr-phone@2x.png 2x"></picture>
+<div class="qr-code__rectangle qr-code__rotate-elem qr-code__rectangle--black"></div>
+<div class="qr-code__rectangle qr-code__rotate-elem qr-code__rectangle--green"></div>
+<div class="qr-code__description">
+<h2 class="section-title section-title--mini qr-code__title">QR-code</h2>
+<p class="section-text qr-code__text">Initially, we designed the QR-code screen with blurred
+background. However, the client asked us to make it
+just like Bolt’s — with darkened background. We said
+‘sure thing’ but didn’t take into account that we couldn’t
+access this exact screen of the app from Russia. Eventually,
+we found an article with a screenshot of this screen
+and met the client’s request.</p>
+</div>
+</div>
+</section>
+<section class="qr-development__development development">
+<div class="development__description">
+<h2 class="section-title development__title">Development</h2>
+<p class="section-text section-text--gray development__text">The clients chose tech stack for Vendify app themselves. They used Ruby on Rails for the backend, we used React Native for the frontend.</p>
+<p class="section-text section-text--gray development__text">We needed to develop the frontend part of the app with React Native, integrate Stripe for payments, create deep links (links that lead users to the mobile app).</p>
+</div>
+</section>
+<section class="qr-development__scenaries scenaries">
+<div class="container scenaries__container">
+<div class="scenaries__decor scenaries__text-wrap scenaries__text-wrap--gradient scenaries__text-wrap--gradient-left"></div>
+<div class="scenaries__text-wrap scenaries__text-wrap--grow scenaries__text-wrap--gradient">
+<p class="scenaries__text">When a user scans QR-code, there can be two scenarios:</p>
+</div>
+<ul class="scenaries__list">
+<li class="scenaries__item">
+<div class="scenaries__check-elem">
+<div class="scenaries__check-wrap">
+<svg width="60" height="48" viewBox="0 0 60 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="2.99805" width="44" height="44" rx="9.5" stroke="#53B476" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M57.8447 2.5596C59.3335 4.02529 59.391 6.46104 57.973 8.00002L30.0523 38.3038C29.3275 39.0904 28.3148 39.5238 27.2642 39.4969C26.2137 39.47 25.223 38.9853 24.5368 38.1625L12.9032 24.2132C11.5607 22.6035 11.7348 20.1736 13.2921 18.786C14.8493 17.3983 17.2 17.5783 18.5425 19.188L27.4938 29.9211L52.5814 2.69229C53.9994 1.15332 56.3558 1.09391 57.8447 2.5596Z" fill="#101010" stroke="#53B476" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<p class="scenaries__check-text">The app is installed</p>
+</div>
+<div class="scenaries__item-description scenaries__text-wrap">
+<p class="scenaries__text">Smartphone opens the app right away</p>
+</div>
+</li>
+<li class="scenaries__item">
+<div class="scenaries__check-elem">
+<div class="scenaries__check-wrap">
+<svg width="54" height="46" viewBox="0 0 54 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.998047" width="44" height="44" rx="9.5" stroke="#53B476" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.4786 30.806C13.7963 32.1242 13.5065 34.5497 14.8314 36.2235C16.1563 37.8973 18.5941 38.1856 20.2765 36.8675L32.4971 27.2925L43.5845 37.475C45.158 38.9201 47.6111 38.8225 49.0636 37.2569C50.516 35.6914 50.4179 33.2508 48.8444 31.8057L38.6666 22.4585L51.5214 12.3866C53.2037 11.0685 53.4935 8.64298 52.1686 6.96916C50.8437 5.29534 48.4059 5.00702 46.7235 6.32518L32.8962 17.1591L23.6413 8.6595C22.0677 7.21439 19.6147 7.31202 18.1622 8.87755C16.7097 10.4431 16.8078 12.8837 18.3813 14.3288L26.7267 21.993L15.4786 30.806Z" fill="#101010" stroke="#53B476" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<p class="scenaries__check-text">The app is not installed</p>
+</div>
+<div class="scenaries__item-description scenaries__text-wrap">
+<p class="scenaries__text">Smartphone opens the Vendify page in an app store</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<div class="qr-development__description">
+<p class="section-text section-text--gray qr-development__description-text">System of stock accounting is implemented in the backend — it knows which goods are in every fridge.</p>
+<p class="section-text section-text--gray qr-development__description-text">We thought to add an opportunity to log in via phone number but eventually decided to make authorization as short as possible and not overload users with extra actions.</p>
+<p class="section-text section-text--gray qr-development__description-text">To start using the app, users only need to add their bank card, the rest data (phone number, email, name, etc.) can be added later if desired.</p>
+<p class="section-text section-text--bold section-text--gray qr-development__description-text">I.e. the app works on the principle ‘Add your bank card and go’!</p>
+</div>
+</div>
+</div>
+<section class="stripe">
+<div class="container stripe__container">
+<div class="circle circle--shadow stripe__circle"></div>
+<div class="stripe__description">
+<h2 class="section-title section-title--mini stripe__title">Tipsi-stripe</h2>
+<p class="section-text section-text--gray stripe__text">We used the tipsi-stripe library but with custom form since <span>STPPaymentCardTextField</span> doesn’t work in tipsi-stripe. With tipsi-stripe it’s possible to meet SCA requirements — it’s authentication of bank cards wide-spread in Europe.</p>
+</div>
+<div class="stripe__cards">
+<svg class="stripe__card stripe__card-mini" id="mini-card" width="162" height="186" viewBox="0 0 162 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.82274 36.0032L4.3156 34.2581C4.14655 33.6764 3.39681 33.4843 2.95782 33.9273L2.08829 34.8423C1.89788 35.0554 1.82853 35.3594 1.91305 35.6502L31.1237 122.161C31.735 123.939 32.7225 128.856 39.8567 130.505L149.787 153.879C150.891 154.094 152.026 153.985 153.023 153.506L156.451 151.848C158.415 150.898 159.487 148.726 159.024 146.59L157.566 139.728C157.426 139.138 156.846 138.77 156.264 138.939L154.374 139.488C153.85 139.64 153.532 140.174 153.655 140.706L154.725 145.473C154.976 146.662 154.374 147.846 153.244 148.301L151.716 148.903C150.898 149.235 150.004 149.306 149.129 149.118L40.298 125.078C39.6609 124.948 39.1513 124.496 38.9156 123.903L37.5317 120.551C37.2247 119.821 37.8578 119.069 38.6282 119.223L47.9429 120.995L46.8498 117.559L75.6519 123.982L72.7781 114.093L43.7997 108.258L41.1934 98.6389L139.156 121.422L137.644 117.194C137.42 116.533 136.865 116.033 136.19 115.882L31.8547 91.5753C29.8889 91.1058 28.3056 89.6735 27.652 87.7502L10.2807 35.8994C9.63554 34.0052 11.3746 32.1751 13.2907 32.6906L124.578 62.5778C126.798 63.1627 128.574 64.8229 129.362 66.991L133.314 77.9856C133.841 79.4726 132.545 80.9845 130.976 80.6838L113.016 77.1664C112.246 77.0118 111.633 77.726 111.845 78.4531L112.876 82.0014C113.096 82.7576 113.714 83.3663 114.513 83.5125L134.057 87.705C136.177 88.1613 137.852 89.6931 138.481 91.7496L150.838 131.338C151.041 132.036 150.449 132.712 149.708 132.549L148.187 132.202C147.854 132.142 147.595 131.901 147.502 131.582L146.469 128.57" stroke="#53B476" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+<svg class="stripe__card stripe__card-big" id="big-card" width="236" height="308" viewBox="0 0 236 308" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.18457 116.487L5.24512 246.462L12.9382 287.79L42.4323 305.643L232.98 203.234L235.641 19.8507L185.433 36.7522V1.45752L9.18457 116.487Z" fill="#101010" />
+<path d="M229.781 33.6767V30.4582C229.781 29.3854 230.961 28.6881 231.926 29.2245L233.858 30.3509C234.287 30.6192 234.555 31.1019 234.555 31.6384L227.635 193.208C227.474 196.533 228.225 205.384 216.907 211.714L41.498 305.802C39.7278 306.714 37.743 307.089 35.8119 306.767L29.1603 305.641C25.3518 304.997 22.4551 301.832 22.1869 297.97L21.275 285.579C21.2214 284.506 22.026 283.594 23.0988 283.594H26.5855C27.5511 283.594 28.3557 284.345 28.4094 285.311L28.9458 293.947C29.1067 296.093 30.716 297.809 32.8616 298.024L35.7583 298.292C37.3139 298.453 38.8695 298.131 40.2642 297.38L213.474 202.702C214.493 202.166 215.137 201.147 215.244 200.02L215.941 193.637C216.102 192.242 214.654 191.276 213.42 191.92L198.454 199.537L198.615 193.154L152.805 218.312V200.074L199.205 175.828L198.883 158.179L43.5364 245.347L44.0191 237.408C44.0728 236.175 44.7701 235.048 45.843 234.458L211.274 141.55C214.386 139.78 216.37 136.562 216.531 132.968L220.447 36.1979C220.608 32.6575 216.746 30.4046 213.742 32.2284L39.245 138.064C35.7583 140.156 33.559 143.857 33.2908 147.934V152.771C33.1298 155.561 36.0801 157.492 38.6013 156.204L67.407 141.345C68.6407 140.702 70.0354 141.614 70.0354 142.955V149.499C70.0354 150.894 69.2844 152.235 67.997 152.878L36.8311 169.668C33.4517 171.492 31.3597 174.925 31.306 178.734L28.5703 267.984C28.5703 269.272 29.9113 270.13 31.0914 269.486L33.5053 268.145C34.0418 267.877 34.3636 267.341 34.3636 266.751L34.6318 261.118" stroke="#53B476" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M131.884 170.624L197.863 135.596" stroke="#53B476" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M19.2898 227.967V239.983C19.2898 241.431 18.4852 242.772 17.1978 243.47L4.32375 250.121C2.9827 250.818 1.37345 249.853 1.42709 248.297L2.82178 122.668C2.87542 119.074 3.84097 115.534 5.66479 112.423L5.71843 112.315C7.43497 109.365 9.84886 106.951 12.6919 105.127L167.931 7.71367C169.862 6.47991 172.437 7.87459 172.437 10.1812L172.598 45.6384C172.598 46.7113 173.832 47.355 174.744 46.7649L180.644 42.6345C181.02 42.3663 181.235 41.9908 181.235 41.508V1.11572" stroke="#53B476" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</div>
+<div class="container">
+<div class="stripe__review review">
+<div class="review__wrap">
+<div class="review__photo-wrap">
+<picture class="review__photo"><source type="image/webp" srcset="/images/vendify-review-sharapov.png, /images/vendify-review-sharapov@2x.png 2x"><img data-src="/images/vendify-review-sharapov.png" src="../../images/vendify-review-sharapov.png" alt="Grigory Sharapov, full-stack developer at Purrweb" srcset="/images/vendify-review-sharapov.png, /images/vendify-review-sharapov@2x.png 2x"></picture>
+</div>
+<div class="review__content">
+<p class="review__text">Stripe is good for integration in web applications and native iOS and Android
+apps. It didn’t support React Native so we needed to be inventive: took
+a ready-made decision tipsi-stripe v.10 — although, we didn’t get how exactly
+it works (and how it’s supported) — we improved the code and delivered
+a convenient flow.</p>
+<p class="review__text review__text--author">Grigory Sharapov,<br> full-stack developer<br> at Purrweb</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="pushes">
+<div class="container pushes__container">
+<div class="circle circle--border pushes__circle pushes__circle--big"></div>
+<div class="circle circle--shadow pushes__circle pushes__circle--middle"></div>
+<div class="circle circle--fill pushes__circle pushes__circle--mini"></div>
+<div class="pushes__phones">
+<picture class="pushes__phone pushes__phone1"><source type="image/webp" srcset="/images/vendify-pushes-phone1.png, /images/vendify-pushes-phone1@2x.png 2x"><img data-src="/images/vendify-pushes-phone1.png" src="../../images/vendify-pushes-phone1.png" alt="Vendify" srcset="/images/vendify-pushes-phone1.png, /images/vendify-pushes-phone1@2x.png 2x"></picture>
+<picture class="pushes__phone pushes__phone2"><source type="image/webp" srcset="/images/vendify-pushes-phone2.png, /images/vendify-pushes-phone2@2x.png 2x"><img data-src="/images/vendify-pushes-phone2.png" src="../../images/vendify-pushes-phone2.png" alt="Vendify" srcset="/images/vendify-pushes-phone2.png, /images/vendify-pushes-phone2@2x.png 2x"></picture>
+<picture class="pushes__phone pushes__phone3"><source type="image/webp" srcset="/images/vendify-pushes-phone3.png, /images/vendify-pushes-phone3@2x.png 2x"><img data-src="/images/vendify-pushes-phone3.png" src="../../images/vendify-pushes-phone3.png" alt="Vendify" srcset="/images/vendify-pushes-phone3.png, /images/vendify-pushes-phone3@2x.png 2x"></picture>
+</div>
+<div class="pushes__description">
+<h2 class="section-title section-title--mini pushes__title">Push notifications</h2>
+<p class="section-text section-text--gray pushes__text">We needed to decide whether we use Amazon SQS or native push notifications. If we make them not native then when a user closes the app, they don’t get the notifications. There won’t be such problems with native notifications, so we went this way.</p>
+<p class="section-text section-text--gray pushes__text">But since we work with hardware, the notifications can be lost because of lags. We decided to send additional requests to the backend to check current state of fridges — this way we don’t lose anything.</p>
+</div>
+</div>
+</section>
+<section class="typography">
+<div class="container typography__container">
+<h2 class="section-title section-title--mini typography__title">Typography</h2>
+<ul class="typography__list">
+<li class="typography__item typography__item--semibold">
+<div class="typography__item-info">
+<h3 class="typography__item-font-name">Montserrat</h3>
+<p class="typography__item-font-weight">Semibold</p>
+</div>
+<div class="typography__glyphs">
+<p class="typography__glyphs-text">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz<br>
+1234567890!@#$%^&*(){}?./,</p>
+</div>
+</li>
+<li class="typography__item">
+<div class="typography__item-info">
+<h3 class="typography__item-font-name">Montserrat</h3>
+<p class="typography__item-font-weight">Regular</p>
+</div>
+<div class="typography__glyphs">
+<p class="typography__glyphs-text">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz<br>
+1234567890!@#$%^&*(){}?./,</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section class="palette">
+<div class="container palette__container">
+<div class="circle circle--border palette__circle palette__circle--big"></div>
+<div class="circle circle--fill palette__circle palette__circle--mini"></div>
+<h2 class="section-title section-title--mini palette__title">Colors</h2>
+<ul class="palette__list">
+<li class="palette__item palette__item--white">
+<div class="palette__item-circle"></div>
+<div class="palette__item-wrap">
+<p class="palette__item-text">#FFFFFF</p>
+</div>
+</li>
+<li class="palette__item palette__item--green">
+<div class="palette__item-circle"></div>
+<div class="palette__item-wrap">
+<p class="palette__item-text">#53B476</p>
+</div>
+</li>
+<li class="palette__item palette__item--gray">
+<div class="palette__item-circle"></div>
+<div class="palette__item-wrap">
+<p class="palette__item-text">#343535</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section class="result">
+<div class="container result__container">
+<div class="circle circle--border result__circle"></div>
+<h2 class="section-title section-title--mini result__title">Results</h2>
+<div class="result__review review">
+<div class="review__wrap">
+<div class="review__photo-wrap">
+<img class="review__photo" data-src="/images/vendify-review-empty.svg" src="../../images/vendify-review-empty.svg" alt="Vendify">
+</div>
+<div class="review__content">
+<p class="review__text review__text--white">Our project is technically complicated, that's why it was important to develop a mobile app. We hired Purrweb for the full-cycle development of our app and did enjoy this cooperation. The result is great, we liked how the team worked on the design as well as the solutions they offered.</p>
+<p class="review__text review__text--white review__text--author">Aivis Ruza, the client</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer id="footer" class="footer js-flexible-height js-flexible-height--theme2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer__container">
+<div class="footer__inner">
+<div class="footer__top-wrapper">
+<div class="footer__left-wrap">
+<svg class="footer__logo" width="164" height="30" viewBox="0 0 164 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M43.7921 3.02539H34.8721V26.7525H40.2578V19.2954H43.7921C48.4373 19.2954 52.039 15.6686 52.039 11.1604C52.039 6.65225 48.4373 3.02539 43.7921 3.02539ZM43.7921 14.211H40.2578V8.10978H43.7921C45.4415 8.10978 46.6533 9.43172 46.6533 11.1604C46.6533 12.8891 45.4415 14.211 43.7921 14.211Z" fill="white" />
+<path d="M65.7673 9.80457V19.0582C65.7673 21.4648 64.4882 22.5494 62.6369 22.5494C61.0212 22.5494 59.7084 21.5665 59.7084 19.4649V9.80457H54.6593V20.2106C54.6593 24.7866 57.5541 27.2271 60.9538 27.2271C63.1754 27.2271 64.8585 26.4136 65.7673 25.1594V26.7525H70.8164V9.80457H65.7673Z" fill="white" />
+<path d="M79.9051 12.8213V9.80457H74.856V26.7525H79.9051V19.0921C79.9051 15.7364 82.8672 14.889 84.9542 15.2279V9.46561C82.8335 9.46561 80.5783 10.5503 79.9051 12.8213Z" fill="white" />
+<path d="M92.7001 12.8213V9.80457H87.651V26.7525H92.7001V19.0921C92.7001 15.7364 95.6622 14.889 97.7492 15.2279V9.46561C95.6285 9.46561 93.3733 10.5503 92.7001 12.8213Z" fill="white" />
+<path d="M118.959 9.80457L116.536 18.8887L113.91 9.80457H109.198L106.572 18.8887L104.149 9.80457H98.7629L104.149 26.7525H108.861L111.554 17.7023L114.247 26.7525H118.959L124.345 9.80457H118.959Z" fill="white" />
+<path d="M130.539 20.3123H142.488C142.623 19.6683 142.69 18.9904 142.69 18.2786C142.69 13.1603 139.055 9.33003 134.14 9.33003C128.822 9.33003 125.187 13.2281 125.187 18.2786C125.187 23.329 128.755 27.2271 134.511 27.2271C137.708 27.2271 140.199 26.0407 141.849 23.7358L137.809 21.397C137.136 22.1427 135.958 22.685 134.578 22.685C132.727 22.685 131.178 22.0749 130.539 20.3123ZM130.438 16.516C130.909 14.7873 132.188 13.8382 134.107 13.8382C135.621 13.8382 137.136 14.55 137.675 16.516H130.438Z" fill="white" />
+<path d="M155.955 9.33003C153.7 9.33003 152.05 10.1096 150.94 11.3977V3.02539H145.891V26.7525H150.94V25.1594C152.05 26.4475 153.7 27.2271 155.955 27.2271C160.365 27.2271 164 23.329 164 18.2786C164 13.2281 160.365 9.33003 155.955 9.33003ZM154.945 22.4139C152.623 22.4139 150.94 20.8207 150.94 18.2786C150.94 15.7364 152.623 14.1432 154.945 14.1432C157.268 14.1432 158.951 15.7364 158.951 18.2786C158.951 20.8207 157.268 22.4139 154.945 22.4139Z" fill="white" />
+<path d="M16.0866 30L29.567 0H24.6005L11.1201 30H16.0866Z" fill="white" />
+<path d="M4.89843 30L18.1941 0H13.2957L0 30H4.89843Z" fill="white" />
+</svg>
+<div class="footer__sublogo">
+Software development company.
+</div>
+<div class="footer__divider"></div>
+<ul class="footer__contacts">
+<li class="footer__phone">
+<a id="gtm-footer-tel" class="contacts__item-link contacts__item-link--tel" href="tel:+14844608069" rel="noreferrer noopener" target="_blank" onclick="ym(52342033,'reachGoal','CLK_PHONE_CALL'); return true;">
++1 484 460-80-69
+</a>
+</li>
+<li class="footer__mail">
+<a class="contacts__item-link" href="../../cdn-cgi/l/email-protection.html#b2dadbf2c2c7c0c0c5d7d09cd1dddf" rel="noreferrer noopener" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_EMAIL'); return true;">
+<span class="__cf_email__" data-cfemail="a2cacbe2d2d7d0d0d5c7c08cc1cdcf">[email&#160;protected]</span>
+</a>
+</li>
+<li class="footer__messengers">
+<a class="contacts__telegram contacts__link-item" href="https://t.me/purrweb_agency" rel="noreferrer noopener" data-no-router="true" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_TELEGRAM'); return true;">
+<div class="contacts__item-img">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" fill="none" viewbox="0 0 24 21">
+<path fill="#fff" d="M.424 10.02l5.53 2.064 2.14 6.883a.651.651 0 0 0 1.034.312l3.083-2.513a.92.92 0 0 1 1.121-.032l5.56 4.037a.652.652 0 0 0 1.021-.394L23.986.786a.652.652 0 0 0-.873-.741L.417 8.8a.652.652 0 0 0 .007 1.22zm7.326.965l10.807-6.657c.195-.119.394.144.228.298l-8.92 8.292a1.849 1.849 0 0 0-.573 1.106l-.304 2.252c-.04.3-.462.33-.545.04l-1.169-4.107a1.088 1.088 0 0 1 .476-1.224z" />
+</svg>
+</div>
+Telegram
+</a>
+<a class="contacts__whatsap contacts__link-item js-whatsapp-link footer__whatsap" rel="noreferrer noopener" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_WHATSAPP'); return true;">
+<div class="contacts__item-img">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewbox="0 0 24 24">
+<path fill="#fff" d="M12.003 0h-.006C5.38 0 0 5.382 0 12c0 2.625.846 5.058 2.284 7.034L.79 23.49l4.613-1.474A11.896 11.896 0 0 0 12.003 24C18.619 24 24 18.616 24 12c0-6.617-5.38-12-11.997-12zm6.982 16.945c-.289.818-1.438 1.496-2.354 1.694-.628.134-1.447.24-4.204-.903-3.526-1.461-5.797-5.045-5.974-5.277-.17-.232-1.425-1.897-1.425-3.62 0-1.722.875-2.56 1.227-2.92.29-.295.768-.43 1.227-.43.148 0 .282.007.402.013.352.015.53.036.762.593.29.697.994 2.419 1.079 2.596.085.177.17.417.05.65-.112.24-.211.346-.388.55-.177.204-.345.36-.522.579-.162.19-.345.394-.141.747.204.345.909 1.495 1.947 2.42 1.34 1.192 2.426 1.573 2.814 1.735.29.12.635.091.846-.133.269-.29.6-.77.938-1.243.24-.338.543-.38.86-.26.324.112 2.039.96 2.391 1.135.353.177.585.261.671.41.084.148.084.845-.206 1.664z" />
+</svg>
+</div>
+WhatsApp
+</a>
+</li>
+</ul>
+</div>
+<div class="footer__right-wrap">
+<div class="footer__title">
+Fill in and get a quote
+</div>
+<iframe id="hidden_iframe" name="hidden_iframe" style="display:none;"></iframe>
+<form class="footer__form js-footer-form" name="contact-form" target="hidden_iframe" onsubmit="ym(52342033, 'reachGoal', 'FORM_OUT'); return true">
+<div class="footer__form-wrapper">
+<input class="footer__form-field footer__form-name js-field-name" type="text" name="entry.1228031061" aria-label="Name input field" placeholder="Name" required autocomplete="on">
+<input class="footer__form-field js-phone-input" type="tel" name="entry.1413156463" aria-label="Phone input field" placeholder="Phone number" required autocomplete="on" minlength="4" maxlength="20">
+</div>
+<input class="footer__form-field footer__form-email" type="email" name="entry.1893682035" aria-label="Email input field" placeholder="test@purrweb.com" required autocomplete="on">
+<textarea class="footer__form-field footer__form-field--area" name="entry.772928921" aria-label="Descriptions input field" placeholder="Project details"></textarea>
+<input class="footer__form-hidden" type="hidden" name="entry.481086178" value="Purrweb123!">
+<input type="hidden" class="js-client-id" name="entry.1458439335">
+<input type="hidden" id="counter-id" name="entry.273292564" value="52342033">
+<input type="hidden" class="js-entry-page" name="entry.1965512787" value>
+<input type="hidden" id="footer__form-token" name="token">
+<input class="footer__form-type footer__page-link" type="hidden" name="entry.281637821" value="footer-form-main-en ">
+<div class="footer__form-wrapper">
+<p class="footer__form-captcha-wrapper">
+This site is protected by reCAPTCHA and the Google
+<a class="footer__form-captcha-link" rel="nofollow noreferrer noopener" href="../../privacy-policy" target="_blank">Privacy Policy</a> and
+<a class="footer__form-captcha-link" rel="nofollow noreferrer noopener" href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
+</p>
+<button id="order-form-btn" class="footer__form-btn rising-btn rising-btn--theme2" onclick="ym(52342033, 'reachGoal', 'CLK_SUCCESS'); return true;">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span id="gtm-footer-submit" class="rising-btn__text footer__btn-width--eng">
+Send
+</span>
+</span>
+</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<div class="footer__bottom-wrapper">
+<div class="footer__services js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+SERVICES
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../services/mvp" class="footer__link">MVP development services</a>
+</li>
+<li class="footer__item">
+<a href="../../services/ui-ux" class="footer__link">UI/UX Design</a>
+</li>
+<li class="footer__item">
+<a href="../../services/mobile-development" class="footer__link">Mobile Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/web-development-services" class="footer__link">Web Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/project-management-consulting-company" class="footer__link">Project Management</a>
+</li>
+<li class="footer__item">
+<a href="../../services/software-development-for-startups" class="footer__link">Software Development for
+Startups</a>
+</li>
+<li class="footer__item">
+<a href="../../services/progressive-web-app" class="footer__link">PWA</a>
+</li>
+</ul>
+</div>
+<div class="footer__otrasli js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+INDUSTRIES
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../services/terminal" class="footer__link">POS Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/marketplace" class="footer__link">Marketplace</a>
+</li>
+<li class="footer__item">
+<a href="../../services/finance" class="footer__link">Financial</a>
+</li>
+<li class="footer__item">
+<a href="../../services/travel" class="footer__link">Travel</a>
+</li>
+<li class="footer__item">
+<a href="../../services/tv-app-development" class="footer__link">SMART TV</a>
+</li>
+<li class="footer__item">
+<a href="../../services/health" class="footer__link">Healthcare</a>
+</li>
+<li class="footer__item">
+<a href="../../services/media" class="footer__link">Media</a>
+</li>
+<li class="footer__item">
+<a href="../../services/wellness" class="footer__link">Wellness</a>
+</li>
+</ul>
+</div>
+<div class="footer__outsourcing footer__outsourcing--eng js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+INSIGHTS
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a class="footer__link" href="../../blog/stock-trading-app-development">How To Build Stock Trading App</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/how-much-does-ecommerce-app-development-cost">eCommerce App
+Development Cost</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/healthcare-mobile-app-development">Healthcare Mobile App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/telehealth-app-development-features-benefits-costs">Telemedicine
+App Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/how-to-develop-an-iot-app-features-benefits-costs">IOT App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/grocery-delivery-app-development">Grocery Delivery App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/doctor-appointment-app-development-features-benefits-costs">Doctor
+Appointment Booking App Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/mobile-app-development-for-banking">Banking App Development</a>
+</li>
+</ul>
+</div>
+<div class="footer__stack js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+TECH STACK
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../technologies" class="footer__link">Tech stack</a>
+</li>
+<li class="footer__item">
+<a href="../../services/react-native" class="footer__link">React Native Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/react-native-game-development" class="footer__link">React Native Game
+Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/electron" class="footer__link">Electron JS</a>
+</li>
+<li class="footer__item">
+<a href="../../services/react-js" class="footer__link">React.js</a>
+</li>
+<li class="footer__item">
+<a href="../../services/webrtc" class="footer__link">WebRTC Development</a>
+</li>
+</ul>
+<div class="footer__ofice footer__ofice--pc">
+<h3 class="footer__ofice-caption">
+OFFICES
+</h3>
+<div class="footer__item footer__item--ofice">
+US 340 S LEMON AVE #9923 WALNUT,<br> CA 91789
+</div>
+</div>
+</div>
+<div class="footer__company js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+COMPANY
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../about" class="footer__link">About us</a>
+</li>
+<li class="footer__item">
+<a href="../../contacts" class="footer__link">Contacts</a>
+</li>
+<li class="footer__item">
+<a href="../../reviews" class="footer__link">Reviews</a>
+</li>
+<li class="footer__item">
+<a href=".." class="footer__link">Portfolio</a>
+</li>
+<li class="footer__item">
+<a href="../../blog" class="footer__link">Blog</a>
+</li>
+</ul>
+<div class="footer__address footer__address--eng footer__address--pc">
+<address>
+Compass Building, <br> Al Shohada Road, <br> AL Hamra Industrial Zone-FZ, Ras Al Khaimah, UAE
+</address>
+</div>
+</div>
+<div class="footer__ofice footer__ofice--mobile">
+<h3 class="footer__ofice-caption">
+OFFICES
+</h3>
+<address class="footer__item footer__item--ofice">
+US 340 S LEMON AVE 9923 WALNUT, CA 91789
+</address>
+<address class="footer__address footer__address--mobile">
+Compass Building, Al Shohada Road, <br> AL Hamra Industrial Zone-FZ, Ras Al Khaimah, UAE
+</address>
+</div>
+</div>
+<div class="footer__divider"></div>
+<div class="footer__bottom">
+<div class="footer__terms">
+<a href="../../privacy-policy" class="footer__terms--policy">Privacy Policy</a>
+<a href="https://policies.google.com/terms" target="_blank" class="footer__terms--term">Terms Of Services</a>
+</div>
+<div class="footer__rights">
+© 2023 Purrweb. All rights reserved
+</div>
+</div>
+</div>
+</div>
+</footer>
+<button class="btn-up js-btn-up" title="Go to the top of the page">
+<svg width="22" height="42" viewbox="0 0 22 42" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 29L11 41M11 41L1 29M11 41V0" />
+</svg>
+</button>
+<div class="popup-form js-form-popup">
+<div class="popup-form__inner">
+<p class="popup-form__text">Thanks for your inquiry. It usually take up to 24 hours to get back with reply.</p>
+<p class="popup-form__text">Wanna schedule an online meeting?</p>
+<button class="popup-form__close js-form-popup-btn">X</button>
+<button class="popup-form__btn js-form-popup-btn">
+<link href="../../../assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../../../assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<a href onclick="Calendly.initPopupWidget({url: 'https://calendly.com/purrweb_agency/initial_discussion?primary_color=5c3bfe'});return false;">Book
+the time slot!</a>
+</button>
+</div>
+</div>
+
+</div>
+
+<div class="idea-modal js-idea-modal" style="display: none;">
+<div class="idea-modal__content">
+<span class="idea-modal__title">
+Curious about the project cost?
+</span>
+<a href="#footer" class="idea-modal__button rising-btn rising-btn--theme3 js-scroll-to">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span id="gtm-idea-popup" class="rising-btn__text idea-modal__button-text">
+Fill in the form!
+</span>
+</span>
+</span></a>
+</div>
+<button class="idea-modal__close js-idea-modal__close" id="CLS-BTN-POPUP">
+X
+</button>
+</div>
+
+<script>
+    if (window.innerWidth >= 1024) {
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+          '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-W4BS3VM');
+
+    } else if (window.innerWidth < 1024) {
+      var firedTG = false;
+      window.addEventListener('scroll', () => {
+        if (firedTG === false) {
+          firedTG = true;
+          setTimeout(() => {
+            (function (w, d, s, l, i) {
+              w[l] = w[l] || [];
+              w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+              });
+              var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+              j.async = true;
+              j.src =
+                '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+              f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-W4BS3VM');
+          }, 0)
+        }
+      });
+    }
+  </script>
+
+
+
+<script type="text/javascript">
+    var firedRec = false;
+    window.addEventListener('scroll', () => {
+      if (firedRec === false) {
+        firedRec = true;
+        (function (d, w) {
+          var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "../../../www.google.com/recaptcha/api6c91.js?render=6LdBWnwaAAAAADC4FEa3p5JPq12UcmBuQPHl-0Iz";
+          if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+          } else { f(); }
+        })(document, window);
+      }
+    });
+  </script>
+
+
+
+<script async type="text/javascript">
+    (function () {
+      var PM_YM_COUNTER = 52342033;
+      var ee = setInterval(function () {
+        if (typeof window.ym != 'undefined') {
+          let clientInputs = document.querySelectorAll('.js-client-id');
+          for (let clientInput of clientInputs) {
+            ym(PM_YM_COUNTER, 'getClientID', function (clientID) {
+              clientInput.value = clientID;
+            })
+          }
+
+          clearInterval(ee);
+        } else {
+          console.log('Метрика не инициализирована');
+        }
+      }, 1000); // 0,5 секунды ждать, изменить на свое значение, 1 сек = 1000
+    })();
+  </script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZM1DZX38E"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-5ZM1DZX38E');
+  </script>
+<script src="../../common.4d9224ab871b2d75ac93.js"></script><script src="../../vendify.4d9224ab871b2d75ac93.js"></script></body>
+
+<!-- Mirrored from www.purrweb.com/portfolio/vendify/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Nov 2023 15:32:09 GMT -->
+</html>

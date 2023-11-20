@@ -1,0 +1,1283 @@
+
+
+
+
+	<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.purrweb.com/portfolio/fitness-app/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Nov 2023 15:06:56 GMT -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>How We Made the Design For Two Fitness Apps | Purrweb</title>
+<meta name="description" content="Fitness app: how we made the design for one app — web-version for trainers and mobile-version for clients. Check out the new design case on our site!">
+<meta name="google-site-verification" content="YgG-iu_ngX9WM8Ulia3B7gYVqrEBLf9-GQ22HbQ7Jiw">
+<meta name="yandex-verification" content="4057b113a73e6486">
+<meta name="facebook-domain-verification" content="0cpowng2vyna7cecrsh180pvpcll09">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How We Made the Design For Two Fitness Apps | Purrweb">
+<meta property="og:description" content="Fitness app: how we made the design for one app — web-version for trainers and mobile-version for clients. Check out the new design case on our site!">
+<meta property="og:image" content="../../images/og-image.png">
+<meta property="og:site_name" content="Purrweb">
+<meta property="og:url" content="index.html">
+<meta name="twitter:title" content="How We Made the Design For Two Fitness Apps | Purrweb">
+<meta name="twitter:description" content="Fitness app: how we made the design for one app — web-version for trainers and mobile-version for clients. Check out the new design case on our site!">
+<meta name="twitter:image:src" content="../../images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@purrweb">
+<meta name="twitter:creator" content="@purrweb">
+<link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5c3bfe">
+<link rel="canonical" href="index.html">
+<meta name="msapplication-TileColor" content="#5c3bfe">
+<meta name="theme-color" content="#ffffff">
+<link rel="alternate" hreflang="ru" href="../../ru/portfolio/fitness-app/index.html">
+<link rel="alternate" hreflang="en" href="index.html">
+
+
+
+
+<meta name="google-site-verification" content="iAswyHNCt6kecOwxsuLaxgVNXaFS1GEwMiCJajfQ4dI">
+
+<link href="../../common.4d9224ab871b2d75ac93.css" rel="stylesheet"><link href="../../fitness-app.4d9224ab871b2d75ac93.css" rel="stylesheet"></head>
+<body class="js-disable-transition">
+<aside class="cookie hide-cookie" id="pjAcceptCookieBar">
+<div class="container pjAcceptCookieBarShell">
+<form action="#" method="post" class="cookie__inner">
+<p class="cookie__text">
+We use cookies to boost your experience on our website and ensure it functions properly. It also
+helps us with analytics — is that OK, isn’t it? :)
+</p>
+<div class="pjAcceptCookieBarActions">
+<button type="button" class="pjAcceptCookieBarBtn cookie__btn">
+Sure! I’m fine with it
+</button>
+</div>
+</form>
+</div>
+</aside>
+<header class="header js-header">
+<div class="container">
+<nav class="header__inner">
+<a class="header__logo" href="../../index.html">
+<svg xmlns="http://www.w3.org/2000/svg" width="164" height="30" fill="none" viewbox="0 0 164 30">
+<path fill="#fff" d="M43.688 3.025H34.79v23.728h5.373v-7.458h3.526c4.634 0 8.227-3.626 8.227-8.135 0-4.508-3.593-8.135-8.227-8.135zm0 11.186h-3.526V8.11h3.526c1.646 0 2.854 1.322 2.854 3.05 0 1.73-1.208 3.051-2.854 3.051zM65.612 9.805v9.253c0 2.407-1.277 3.491-3.124 3.491-1.611 0-2.921-.982-2.921-3.084v-9.66H54.53V20.21c0 4.576 2.888 7.016 6.28 7.016 2.216 0 3.895-.813 4.802-2.068v1.594h5.037V9.805h-5.037zM79.716 12.821V9.805h-5.037v16.947h5.037v-7.66c0-3.356 2.955-4.203 5.037-3.864V9.466c-2.115 0-4.365 1.084-5.037 3.355zM92.48 12.821V9.805h-5.036v16.947h5.037v-7.66c0-3.356 2.955-4.203 5.037-3.864V9.466c-2.116 0-4.366 1.084-5.037 3.355zM118.678 9.805l-2.418 9.084-2.619-9.084h-4.701l-2.62 9.084-2.418-9.084h-5.373l5.373 16.947h4.702l2.686-9.05 2.687 9.05h4.701l5.373-16.947h-5.373zM130.23 20.312h11.921a9.894 9.894 0 0 0 .202-2.033c0-5.119-3.627-8.949-8.53-8.949-5.306 0-8.932 3.898-8.932 8.949 0 5.05 3.559 8.948 9.302 8.948 3.19 0 5.675-1.186 7.32-3.491l-4.029-2.339c-.672.746-1.847 1.288-3.224 1.288-1.847 0-3.392-.61-4.03-2.373zm-.101-3.796c.471-1.729 1.747-2.678 3.661-2.678 1.511 0 3.022.712 3.559 2.678h-7.22zM155.587 9.33c-2.25 0-3.896.78-5.004 2.068V3.025h-5.037v23.728h5.037v-1.594c1.108 1.289 2.754 2.068 5.004 2.068 4.399 0 8.026-3.898 8.026-8.948 0-5.05-3.627-8.949-8.026-8.949zm-1.008 13.084c-2.317 0-3.996-1.593-3.996-4.135 0-2.543 1.679-4.136 3.996-4.136s3.996 1.593 3.996 4.136c0 2.542-1.679 4.135-3.996 4.135zM16.049 30L29.497 0h-4.955L11.094 30h4.955zM4.887 30L18.15 0h-4.887L0 30h4.887z" />
+</svg>
+<span class="visually-hidden">Purrweb logo</span>
+</a>
+
+<ul class="header__list js-menu">
+<li class="header__item header__item-portfolio">
+<a class="header__item-link" href="/" onclick="ym(52342033, 'reachGoal', 'CLK_PROJECTS'); return true;">
+Projects
+</a>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Technologies
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__dropmenu-inner">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--technologies">
+
+<a href="../../services/react-native/index.html" class="header__dropmenu-ref">
+React Native
+</a>
+<a href="../../services/react-js/index.html" class="header__dropmenu-ref">
+React.js
+</a>
+<a href="../../services/electron/index.html" class="header__dropmenu-ref">
+Electron.js
+</a>
+<a href="../../services/webrtc/index.html" class="header__dropmenu-ref">
+WebRTC
+</a>
+<a href="../../services/progressive-web-app/index.html" class="header__dropmenu-ref">
+PWA
+</a>
+<a href="../../services/react-native-game-development/index.html" class="header__dropmenu-ref">
+Mobile Games
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="header__divider"></div>
+<a href="../../technologies/index.html" class="header__dropmenu-main-ref">
+Tech Stack
+</a>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Services
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu header__dropmenu--services" id="dropdown2">
+<div class="header__dropmenu-inner">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Development
+</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--dev">
+<a href="../../services/mobile-development/index.html" class="header__dropmenu-ref">
+Mobile App Development
+</a>
+<a href="../../services/web-development-services/index.html" class="header__dropmenu-ref">
+Web Development
+</a>
+<a href="../../services/ux-audit/index.html" class="header__dropmenu-ref">
+UX Audit
+</a>
+
+
+
+
+
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--dev2">
+
+
+
+<a href="../../services/software-development-for-startups/index.html" class="header__dropmenu-ref">
+Software Development for Startups
+</a>
+<a href="../../services/crossplatform/index.html" class="header__dropmenu-ref">
+Cross-Platform Development
+</a>
+<a href="../../services/mvp/index.html" class="header__dropmenu-ref">
+MVP
+</a>
+
+
+
+</div>
+</div>
+</div>
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Design</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--design">
+<a href="../../services/ui-ux/index.html" class="header__dropmenu-ref">
+UI/UX
+</a>
+
+
+
+
+</div>
+</div>
+</div>
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-title js-header-accordion">
+<sapn class="header__dropmenu-title--text">Management
+</sapn>
+<svg class="header__dropmenu-title--svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--management">
+
+<a href="../../services/project-management-consulting-company/index.html" class="header__dropmenu-ref">
+Project Management
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="header__divider"></div>
+<a href="../../services/index.html" class="header__dropmenu-main-ref">
+Software Development Services
+</a>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Industries
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries">
+<a href="../../services/travel/index.html" class="header__dropmenu-ref">
+Travel
+</a>
+<a href="../../services/health/index.html" class="header__dropmenu-ref">
+Healthcare
+</a>
+<a href="../../services/tv-app-development/index.html" class="header__dropmenu-ref">
+Smart TV
+</a>
+<a href="../../services/logistics/index.html" class="header__dropmenu-ref">
+Logistics
+</a>
+<a href="../../services/wellness/index.html" class="header__dropmenu-ref">
+Wellness
+</a>
+<a href="../../services/terminal/index.html" class="header__dropmenu-ref">
+POS
+</a>
+<a href="../../services/custom-ecommerce/index.html" class="header__dropmenu-ref">
+Custom Ecom Apps
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries2">
+<a href="../../services/events/index.html" class="header__dropmenu-ref">
+Events
+</a>
+<a href="../../services/marketplace/index.html" class="header__dropmenu-ref">
+Marketplace
+</a>
+<a href="../../services/estate/index.html" class="header__dropmenu-ref">
+Real Estate
+</a>
+<a href="../../services/media/index.html" class="header__dropmenu-ref">
+Social Media
+</a>
+<a href="../../services/finance/index.html" class="header__dropmenu-ref">
+Fintech
+</a>
+<a href="../../services/iot/index.html" class="header__dropmenu-ref">
+IoT
+</a>
+<a href="../../services/ecommerce/index.html" class="header__dropmenu-ref">
+eCommerce Development
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+Development Team
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries">
+<a href="../../services/outsourcing/index.html" class="header__dropmenu-main-ref header__dropmenu-main-ref--margin-bottom">
+Outsourcing
+</a>
+<a href="../../services/dev-outsourcing/index.html" class="header__dropmenu-ref">
+Development
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--industries2">
+<a href="../../services/outstaffing/index.html" class="header__dropmenu-main-ref header__dropmenu-main-ref--margin-bottom">
+Outstaffing
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item header__item--blog">
+<button class="header__item-inner click-dropdown" onclick="ym(52342033, 'reachGoal', 'CLK_BLOG'); return true;">
+<div class="header__item-drop">
+Blog
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu header__dropmenu--blog">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--blog">
+<a href="../../blog/how-much-does-it-cost-to-develop-an-app/index.html" class="header__dropmenu-ref">
+How much does it cost to develop an app
+</a>
+<a href="../../blog/how-to-create-a-social-media-app-a-z-guide/index.html" class="header__dropmenu-ref">
+How to make a social media app
+</a>
+<a href="../../blog/website-redesign-cost/index.html" class="header__dropmenu-ref">
+How much does it cost to redesign a website
+</a>
+<a href="../../blog/restaurant-app-development-purrwebs-detailed-guide/index.html" class="header__dropmenu-ref">
+Restaurant mobile app development
+</a>
+</div>
+<div class="header__dropmenu-wrap header__dropmenu-wrap--blog2">
+<a href="../../blog/how-much-does-it-cost-to-develop-an-app/index.html" class="header__dropmenu-ref">
+How much does it cost to maintain an app
+</a>
+<a href="../../blog/dating-app-development/index.html" class="header__dropmenu-ref">
+Dating mobile app development
+</a>
+<a href="../../blog/how-to-hire-a-developer-for-a-startup-and-not-to-regret-about-it/index.html" class="header__dropmenu-ref">
+Hiring a developer for a startup
+</a>
+<a href="../../blog/index.html" class="header__dropmenu-ref">
+All posts
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item">
+<button class="header__item-inner click-dropdown">
+<div class="header__item-drop">
+About
+</div>
+<div class="header__item-svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15L6 9" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+</button>
+<div class="header__dropmenu">
+<div class="header__main-wrapper">
+<div class="header__dropmenu-wrapper">
+<div class="header__dropmenu-list">
+<div class="header__dropmenu-wrap header__dropmenu-wrap--about">
+<a href="../../about/index.html" class="header__dropmenu-ref">
+Company
+</a>
+<a href="../../contacts/index.html" class="header__dropmenu-ref">
+Contacts
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__item header__item--lang visually-hidden">
+<a class="header__item-link js-en-link" href="../../ru/portfolio/fitness-app/index.html">Ru</a>
+</li>
+<li class="header__item header__item--request">
+<a class="rising-btn rising-btn--theme2 js-scroll-to" href="#footer" onclick="ym(52342033, 'reachGoal', 'CLK_RAQ'); return true;">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span class="rising-btn__text">
+Request a quote
+</span>
+</span>
+</span>
+</a>
+<div class="lang-popup js-lang-popup hide-lang" id="LangCookieBar">
+<p class="lang-popup__text">
+Холмс, кажется, вы в России...
+</p>
+<button class="lang-popup__close-btn js-close-popup">
+<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.50002 4.49844L9.00627 0.992188L10.0079 1.99377L6.5016 5.50002L10.0079 9.00627L9.00627 10.0079L5.50002 6.5016L1.99377 10.0079L0.992188 9.00627L4.49844 5.50002L0.992188 1.99377L1.99377 0.992188L5.50002 4.49844Z" fill="#808080" />
+</svg>
+</button>
+<div class="lang-popup__btn-wrap">
+<a href="#" class="lang-popup__btn lang-popup__btn--ru js-ru-btn">
+Переключить язык
+</a>
+<a href="#" class="lang-popup__btn lang-popup__btn--eng js-eng-btn">
+не, и так норм
+</a>
+</div>
+</div>
+</li>
+</ul>
+<button class="header__humb js-humb">
+<span class="visually-hidden">Open/close menu</span>
+</button>
+</nav>
+</div>
+</header>
+<div class="main js-main">
+<section class="hero js-anim">
+<div class="container hero__container">
+<svg class="hero__bottom" width="3126" height="175" viewBox="0 0 3126 175" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3126 0H2446V73L3126 0Z" fill="#DCC7FF" />
+<path d="M680 0H2446V73L1648.03 132.164C1645.04 132.386 1642.12 133.189 1639.44 134.53L1590.99 158.756C1570.56 168.972 1546.49 168.886 1526.13 158.524L1479.11 134.594C1476.4 133.212 1473.44 132.383 1470.4 132.156L680 73V0Z" fill="#DCC7FF" />
+<path d="M0 0H680V73L0 0Z" fill="#DCC7FF" />
+</svg>
+<div class="rectangle hero__rectangle hero__rectangle--big"></div>
+<div class="rectangle hero__rectangle hero__rectangle--middle"></div>
+<div class="rectangle hero__rectangle hero__rectangle--mini"></div>
+<div class="rectangle rectangle--purple hero__rectangle hero__rectangle--small"></div>
+<div class="rectangle rectangle--purple hero__rectangle hero__rectangle--small2"></div>
+<div class="hero__boots-wrap">
+<svg class="hero__icon hero__boots" width="264" height="131" viewBox="0 0 264 131" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M153.876 9.42745L153.876 9.42836C160.107 26.6161 176.431 38.0601 194.713 38.0601C213.31 38.0601 229.844 26.2215 235.834 8.61753C237.101 4.90018 240.59 2.40137 244.516 2.40137L248.174 2.40137C256.061 2.40137 262.453 8.79309 262.453 16.6799V114.316C262.453 122.652 255.695 129.41 247.359 129.41L35.106 129.41C16.5512 129.41 1.50977 114.368 1.50977 95.8168C1.50977 84.0092 7.70699 73.0708 17.8334 67.0018L17.8335 67.0017L122.217 4.43224L122.218 4.43177C124.434 3.10188 126.97 2.40137 129.557 2.40137L143.856 2.40137C148.345 2.40137 152.349 5.20907 153.876 9.42745Z" stroke="#DCC7FF" stroke-width="3" />
+<path d="M171.491 97.3129H146.697L102.493 36.2424L119.992 25.7525L171.491 97.3129Z" stroke="#DCC7FF" stroke-width="3" />
+<path d="M64.8134 59.0784L82.2969 48.5982L118.922 97.3135H94.1777L64.8134 59.0784Z" stroke="#DCC7FF" stroke-width="3" />
+<path d="M35.1066 129.409C17.3653 129.409 2.84784 115.657 1.60815 98.2354L262.454 98.2354V114.315C262.454 122.651 255.696 129.409 247.36 129.409H35.1066Z" stroke="#DCC7FF" stroke-width="3" />
+<path d="M122.217 4.43084C124.309 3.17501 126.687 2.47826 129.121 2.40408V12.113C129.121 16.8037 126.66 21.149 122.635 23.5598L122.635 23.56L60.4198 60.8528C60.4198 60.8528 60.4197 60.8529 60.4197 60.8529C54.8997 64.1611 47.7806 62.8092 43.8573 57.7071C42.0911 55.4091 42.7229 52.0799 45.2102 50.5883C45.2103 50.5882 45.2103 50.5882 45.2104 50.5881L122.216 4.43132L122.217 4.43084Z" stroke="#DCC7FF" stroke-width="3" />
+</svg>
+</div>
+<div class="hero__dumbbell-wrap">
+<svg class="hero__icon hero__dumbbell" width="258" height="109" viewBox="0 0 258 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="74.6553" y="39.9375" width="108.591" height="29.7385" stroke="#DCC7FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<rect width="47.4308" height="101.607" rx="15" transform="matrix(-1 1.56008e-08 1.56008e-08 1 230.979 5.80469)" stroke="#DCC7FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="27.1084" y="2.41211" width="47.4308" height="101.607" rx="15" stroke="#DCC7FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M26.7949 24.4883L16.8314 24.4883C8.54709 24.4883 1.83136 31.204 1.83136 39.4883L1.83136 71.4435C1.83136 79.7278 8.54709 86.4435 16.8314 86.4435L26.7949 86.4435L26.7949 24.4883Z" stroke="#DCC7FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M230.867 29.627L240.831 29.627C249.115 29.627 255.831 36.3427 255.831 44.627L255.831 76.5822C255.831 84.8664 249.115 91.5822 240.831 91.5822L230.867 91.5822L230.867 29.627Z" stroke="#DCC7FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<div class="hero__ball-wrap">
+<svg class="hero__icon hero__ball" width="267" height="258" viewBox="0 0 267 258" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M117.613 144.75C117.046 145.19 116.869 145.971 117.19 146.612C119.573 151.371 130.727 171.921 147.427 185.699C147.744 185.96 148.154 186.08 148.562 186.029C148.97 185.978 149.339 185.762 149.584 185.431C153.838 179.68 175.049 149.71 180.463 114.602C184.609 87.9375 179.346 73.6386 175.525 67.2151C175.432 67.0575 175.31 66.9185 175.166 66.8051C164.54 58.4294 152.152 52.5966 138.943 49.7516C138.35 49.6238 137.737 49.8673 137.392 50.3683C137.047 50.8693 137.037 51.5287 137.367 52.0385C139.889 55.9364 141.199 61.4851 141.117 68.797C141.035 76.0965 139.567 85.0278 136.665 95.5682L138.109 95.9643L136.665 95.5691C131.463 114.511 127.317 126.363 124.128 133.739C120.909 141.184 118.743 143.872 117.613 144.75Z" stroke="#DCC7FF" stroke-width="3" stroke-linecap="square" stroke-linejoin="round" />
+<path d="M139.419 67.4537C139.894 67.6626 140.444 67.6095 140.872 67.3134C141.301 67.0172 141.546 66.5203 141.52 66.0003C141.139 58.3245 139.402 53.3273 136.95 50.2762C136.794 50.0796 136.575 49.8258 136.395 49.6163C136.292 49.496 136.201 49.3902 136.141 49.3184C135.913 49.0427 135.594 48.8581 135.241 48.7982C110.62 44.6179 85.3378 51.0201 65.6047 66.429C65.0208 66.885 64.8551 67.6988 65.2146 68.3455C65.574 68.9921 66.3511 69.2783 67.0445 69.0193C82.3812 63.2921 98.7245 60.7959 115.046 61.6852L115.051 61.6855C123.461 62.1157 131.718 64.0701 139.419 67.4537Z" stroke="#DCC7FF" stroke-width="3" stroke-linecap="square" stroke-linejoin="round" />
+<path d="M67.9453 148.95C67.6177 148.287 66.8569 147.964 66.1525 148.188C58.2639 150.693 50.8346 154.477 44.1625 159.389C43.641 159.773 43.4232 160.448 43.6221 161.064C49.3928 178.925 58.4817 195.525 70.4098 209.992C70.5027 210.105 70.6117 210.203 70.7331 210.284C91.0384 223.838 116.044 228.415 139.878 222.941C140.549 222.787 141.03 222.196 141.045 221.507C141.06 220.818 140.605 220.208 139.941 220.028C123.329 215.523 106.944 204.042 91.8682 185.939C82.5043 174.57 74.4775 162.16 67.9453 148.95Z" stroke="#DCC7FF" stroke-width="3" stroke-linecap="square" stroke-linejoin="round" />
+<path d="M180.358 197.79C169.887 198.247 159.182 194.38 148.839 186.207C148.773 186.104 148.695 186.009 148.605 185.925L148.425 185.754C148.397 185.728 148.368 185.703 148.338 185.678C143.536 181.795 139.121 177.454 135.155 172.714L135.155 172.714C128.238 164.451 122.25 155.449 117.299 145.87C117.079 145.444 116.668 145.15 116.194 145.078C105.906 143.531 95.4571 143.349 85.1172 144.539C79.6245 145.167 74.1954 146.267 68.8885 147.829C68.4628 147.954 68.1139 148.262 67.9356 148.669C67.7573 149.076 67.768 149.541 67.9647 149.939C74.4376 163.023 82.3828 175.318 91.6437 186.587L91.6437 186.587L91.6511 186.596C103.445 200.722 121.409 217.175 143.948 221.687C144.186 221.735 144.433 221.724 144.666 221.655C146.636 221.071 148.628 220.458 150.633 219.719C162.134 215.486 172.633 208.896 181.458 200.369C181.907 199.936 182.042 199.27 181.798 198.697C181.553 198.124 180.98 197.762 180.358 197.79Z" stroke="#DCC7FF" stroke-width="3" stroke-linecap="square" stroke-linejoin="round" />
+<path d="M37.4185 165.897C37.0097 166.312 36.877 166.926 37.0779 167.472C42.4527 182.084 51.5405 195.021 63.4132 204.96C63.9919 205.444 64.841 205.421 65.3945 204.905C65.9481 204.389 66.0333 203.542 65.5934 202.929C56.6409 190.439 49.6103 176.649 44.743 162.037L43.3214 162.515L42.3695 161.358C40.6438 162.785 38.9912 164.299 37.4185 165.897Z" stroke="#DCC7FF" stroke-width="3" stroke-linecap="square" stroke-linejoin="round" />
+<path d="M67.3372 148.994C67.3633 148.986 67.3891 148.978 67.4147 148.968L67.7528 148.844C73.4191 147.107 79.229 145.887 85.1111 145.197C95.5399 143.994 106.074 144.174 116.444 145.734C116.776 145.784 117.116 145.721 117.408 145.555C118.32 145.035 120.236 143.251 123.361 136.616C126.526 129.899 131.03 117.982 136.967 96.8094C137.083 96.3956 137.017 95.9521 136.785 95.5913C136.553 95.2305 136.178 94.9869 135.754 94.9221C124.352 93.1792 112.758 93.026 101.301 94.4675C76.3395 97.3831 52.6772 107.275 33.0316 123.008C32.7345 123.246 32.5384 123.588 32.483 123.965C30.4515 137.786 31.7288 151.878 36.2057 165.083C36.3709 165.571 36.7743 165.939 37.2742 166.058C37.7742 166.177 38.3008 166.031 38.6694 165.671C40.4049 163.976 42.2338 162.38 44.1489 160.891C44.1864 160.862 44.2225 160.831 44.2571 160.798L44.4428 160.623C51.3565 155.465 59.1001 151.531 67.3372 148.994Z" stroke="#DCC7FF" stroke-width="3" stroke-linecap="square" stroke-linejoin="round" />
+<path d="M148.978 186.962C158.336 194.197 169.462 199.277 181.804 198.265C181.805 198.265 181.806 198.265 181.806 198.265L183.116 198.161C183.483 198.132 183.827 197.968 184.082 197.701C207.513 173.187 214.999 137.48 203.373 105.673C198.455 92.1814 190.331 80.1008 179.704 70.4699C179.186 70.0012 178.414 69.9532 177.841 70.3543C177.268 70.7553 177.046 71.4991 177.307 72.1476C180.36 79.7546 183.001 92.9568 179.648 114.239L179.648 114.239C174.167 149.144 152.928 179.19 148.695 184.876C148.205 185.534 148.331 186.462 148.978 186.962Z" stroke="#DCC7FF" stroke-width="3" stroke-linecap="square" stroke-linejoin="round" />
+<path d="M101.398 94.9955L101.415 94.9934C112.84 93.5488 124.406 93.7351 135.761 95.5454C136.505 95.6641 137.222 95.2119 137.436 94.489C139.883 86.2172 141.306 77.6837 141.671 69.0791C141.697 68.4719 141.354 67.9093 140.803 67.6543C132.74 63.9251 124.018 61.7933 115.122 61.3753C102.75 60.5142 84.2824 61.8214 61.1145 70.9975C60.9462 71.0642 60.7913 71.1608 60.6574 71.2826C46.4716 84.187 36.8342 101.285 33.1833 120.028C33.0643 120.639 33.335 121.26 33.8637 121.589C34.3923 121.917 35.069 121.885 35.5642 121.507C54.7146 106.906 77.4733 97.7414 101.398 94.9955Z" stroke="#DCC7FF" stroke-width="3" stroke-linecap="square" stroke-linejoin="round" />
+</svg>
+</div>
+<button class="hero__down-btn"></button>
+<div class="hero__head">
+<p class="hero__year">
+<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.3846 23L22.9999 0H19.089L8.47363 23H12.3846Z" fill="white" />
+<path d="M3.91094 23L14.5263 0H10.6154L0 23H3.91094Z" fill="white" />
+</svg>
+<span>2021</span>
+</p>
+<p class="hero__type">Mobile App&nbsp;•&nbsp;UI/UX</p>
+</div>
+<div class="hero__content">
+<div class="hero__images">
+<picture class="hero__img hero__img1"><source type="image/webp" srcset="/images/fitnessapp-hero-img1.png, /images/fitnessapp-hero-img1@2x.png 2x"><img data-src="/images/fitnessapp-hero-img1.png" src="../../images/fitnessapp-hero-img1.png" alt="Fitness.app" srcset="/images/fitnessapp-hero-img1.png, /images/fitnessapp-hero-img1@2x.png 2x"></picture>
+<picture class="hero__img hero__img2"><source type="image/webp" srcset="/images/fitnessapp-hero-img2.png, /images/fitnessapp-hero-img2@2x.png 2x"><img data-src="/images/fitnessapp-hero-img2.png" src="../../images/fitnessapp-hero-img2.png" alt="Fitness.app" srcset="/images/fitnessapp-hero-img2.png, /images/fitnessapp-hero-img2@2x.png 2x"></picture>
+</div>
+<div class="hero__description">
+<h1 class="hero__title">Fitness app</h1>
+<p class="hero__text section-text">An app for online workouts that allows users to stay in touch with their personal trainers 24/7, make up training programs and share progress with friends.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="idea">
+<div class="container idea__container">
+<ul class="idea__list">
+<li class="idea__item js-anim">
+<div class="rectangle rectangle--purple idea__rectangle idea__rectangle--big"></div>
+<div class="rectangle rectangle--purple idea__rectangle idea__rectangle--middle"></div>
+<div class="idea__description">
+<h3 class="idea__title section-title">IDEA</h3>
+<div class="idea__description-text-wrap">
+<p class="idea__text section-text">The customers came to us when they already had the pool of trainers to cooperate with. </p>
+<p class="idea__text section-text">The idea of the app was simple — to help people train and get consultations at home as in a fitness center.</p>
+</div>
+</div>
+<div class="idea__images">
+<picture class="idea__image idea__image-idea-phone"><source type="image/webp" srcset="/images/fitnessapp-idea-phone.png, /images/fitnessapp-idea-phone@2x.png 2x"><img data-src="/images/fitnessapp-idea-phone.png" src="../../images/fitnessapp-idea-phone.png" alt="Идея" srcset="/images/fitnessapp-idea-phone.png, /images/fitnessapp-idea-phone@2x.png 2x"></picture>
+</div>
+</li>
+<li class="idea__item js-anim">
+<div class="rectangle rectangle--purple idea__rectangle idea__rectangle--small"></div>
+<div class="idea__description">
+<h3 class="idea__title section-title">How does it work?</h3>
+<div class="idea__description-text-wrap">
+<p class="idea__text idea__text--bold section-text section-text--big">There are two ways to use this app:</p>
+<p class="idea__text section-text">1. If a user practiced at a gym but decided to continue practicing at home. In this case, the app allows them to communicate with the trainer and watch video instructions for exercises.</p>
+<p class="idea__text section-text">2. If a user hasn’t practiced with a trainer before, they can download the app to find a trainer. After that, the trainer will create an individual training program for them.</p>
+<p class="idea__text section-text">We made a mobile app for clients so that they always have their exercises ‘at hand’, and a web version for trainers.</p>
+</div>
+</div>
+<div class="idea__images idea__images-notebook">
+<picture class="idea__image idea__image-how-work-notebook"><source type="image/webp" srcset="/images/fitnessapp-how-work-notebook.png, /images/fitnessapp-how-work-notebook@2x.png 2x"><img data-src="/images/fitnessapp-how-work-notebook.png" src="../../images/fitnessapp-how-work-notebook.png" alt="Как это работает?" srcset="/images/fitnessapp-how-work-notebook.png, /images/fitnessapp-how-work-notebook@2x.png 2x"></picture>
+<picture class="idea__image idea__image-how-work-phone"><source type="image/webp" srcset="/images/fitnessapp-how-work-phone.png, /images/fitnessapp-how-work-phone@2x.png 2x"><img data-src="/images/fitnessapp-how-work-phone.png" src="../../images/fitnessapp-how-work-phone.png" alt="Как это работает?" srcset="/images/fitnessapp-how-work-phone.png, /images/fitnessapp-how-work-phone@2x.png 2x"></picture>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section class="chat js-anim">
+<div class="container chat__container">
+<div class="rectangle chat__rectangle"></div>
+<div class="rectangle rectangle--purple chat__rectangle-mini"></div>
+<div class="chat__img-wrap">
+<picture class="chat__img"><source type="image/webp" data-srcset="/images/fitnessapp-chat-phone.png 1x, /images/fitnessapp-chat-phone@2x.png 2x"><img data-src="/images/fitnessapp-chat-phone.png" src="../../images/fitnessapp-chat-phone.png" alt="Чат" data-srcset="/images/fitnessapp-chat-phone.png 1x, /images/fitnessapp-chat-phone@2x.png 2x" class="lazyload"></picture>
+</div>
+<div class="chat__description">
+<p class="section-text chat__text">The killer feature is that a client can practice at home with the same trainer as at the gym. The client pays only for those exercises they need, not for full programs. For example, a client can get a workout plan for weight loss or back muscles enhancement.</p>
+</div>
+</div>
+</section>
+<section class="client-side">
+<div class="container client-side__container">
+<div class="rectangle client-side__rectangle"></div>
+<picture class="client-side__women"><source type="image/webp" data-srcset="/images/fitnessapp-women.png 1x, /images/fitnessapp-women@2x.png 2x"><img data-src="/images/fitnessapp-women.png" src="../../images/fitnessapp-women.png" alt="Клиент" data-srcset="/images/fitnessapp-women.png 1x, /images/fitnessapp-women@2x.png 2x" class="lazyload"></picture>
+<div class="client-side__decription">
+<h2 class="section-title section-title--white client-side__title">How does it work from the client side?</h2>
+<p class="section-text section-text--white client-side__text">A client creates an account and fills out the profile: goals and body measurements. They can find a trainer and discuss all the terms in chat — price, number of workouts and exercises. The training plan will be displayed in the calendar.</p>
+</div>
+<div class="client-side__phones">
+<picture class="client-side__phone"><source type="image/webp" data-srcset="/images/fintessapp-signup.png 1x, /images/fintessapp-signup@2x.png 2x"><img data-src="/images/fintessapp-signup.png" src="../../images/fintessapp-signup.png" alt="Fitness app" data-srcset="/images/fintessapp-signup.png 1x, /images/fintessapp-signup@2x.png 2x" class="lazyload"></picture>
+<picture class="client-side__phone"><source type="image/webp" data-srcset="/images/fintessapp-create.png 1x, /images/fintessapp-create@2x.png 2x"><img data-src="/images/fintessapp-create.png" src="../../images/fintessapp-create.png" alt="Fitness app" data-srcset="/images/fintessapp-create.png 1x, /images/fintessapp-create@2x.png 2x" class="lazyload"></picture>
+<picture class="client-side__phone"><source type="image/webp" data-srcset="/images/fintessapp-details.png 1x, /images/fintessapp-details@2x.png 2x"><img data-src="/images/fintessapp-details.png" src="../../images/fintessapp-details.png" alt="Fitness app" data-srcset="/images/fintessapp-details.png 1x, /images/fintessapp-details@2x.png 2x" class="lazyload"></picture>
+<picture class="client-side__phone"><source type="image/webp" data-srcset="/images/fintessapp-calendar.png 1x, /images/fintessapp-calendar@2x.png 2x"><img data-src="/images/fintessapp-calendar.png" src="../../images/fintessapp-calendar.png" alt="Fitness app" data-srcset="/images/fintessapp-calendar.png 1x, /images/fintessapp-calendar@2x.png 2x" class="lazyload"></picture>
+</div>
+<ul class="client-side__steps side-steps">
+<li class="side-steps__item">
+<div class="side-steps__icon-wrap">
+<svg class="side-steps__icon" width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M32.8085 22.6768H2" stroke="white" stroke-width="3.42693" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M25.3193 15.252L32.811 22.6762L25.3193 30.1005" stroke="white" stroke-width="3.42693" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M13.1592 12.75V6.56924C13.1592 4.04572 15.2049 2 17.7284 2H40.4307C42.9543 2 45 4.04572 45 6.56924V40.4308C45 42.9543 42.9543 45 40.4307 45H17.7284C15.2049 45 13.1592 42.9543 13.1592 40.4308V34.25" stroke="white" stroke-width="3.42693" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<p class="side-steps__text">Signing in </p>
+</li>
+<li class="side-steps__item">
+<div class="side-steps__icon-wrap">
+<svg class="side-steps__icon" width="48" height="46" viewBox="0 0 48 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 43.6943L2 37.4116C2 29.841 8.13716 23.7039 15.7077 23.7039L31.7001 23.7039C39.2707 23.7039 45.4078 29.841 45.4078 37.4116L45.4078 43.6943" stroke="white" stroke-width="3.42693" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M23.9115 23.0614C29.7275 23.0614 34.4422 18.3466 34.4422 12.5307C34.4422 6.71475 29.7275 2 23.9115 2C18.0956 2 13.3809 6.71475 13.3809 12.5307C13.3809 18.3466 18.0956 23.0614 23.9115 23.0614Z" stroke="white" stroke-width="3.42693" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<p class="side-steps__text">Setting up the goals and body measurement</p>
+</li>
+<li class="side-steps__item">
+<div class="side-steps__icon-wrap">
+<svg class="side-steps__icon" width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M45.0183 3.97773C42.4661 1.71852 38.5671 1.95498 36.3079 4.50719C36.3079 4.50719 25.0787 17.1911 21.1848 21.5939C17.2858 25.9941 20.1439 32.0726 20.1439 32.0726C20.1439 32.0726 26.5797 34.1107 30.4196 29.7722C34.262 25.4338 45.5477 12.6881 45.5477 12.6881C47.807 10.1359 47.5679 6.23693 45.0183 3.97773Z" stroke="white" stroke-width="3.42693" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M33.4023 7.8252L42.6422 16.0061" stroke="white" stroke-width="3.42693" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M24.1036 6.99568L6.56909 6.99567C4.04557 6.99567 1.99985 9.0414 1.99985 11.5649L1.99985 42.4073C1.99985 44.9308 4.04557 46.9766 6.56909 46.9766L38.5538 46.9766C41.0773 46.9766 43.123 44.9308 43.123 42.4073L43.123 25.4079" stroke="white" stroke-width="3.42693" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<p class="side-steps__text">Setting up the goals and body measurement</p>
+</li>
+<li class="side-steps__item">
+<div class="side-steps__icon-wrap">
+<svg class="side-steps__icon" width="49" height="52" viewBox="0 0 49 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="2.42814" y="5.14005" width="44.5501" height="44.5501" rx="6.28271" stroke="white" stroke-width="3.42693" stroke-linejoin="round" />
+<line x1="3" y1="22.2758" x2="47.5501" y2="22.2758" stroke="white" stroke-width="3.42693" />
+<line x1="12.7096" y1="1.71347" x2="12.7096" y2="7.42502" stroke="white" stroke-width="3.42693" stroke-linecap="round" />
+<line x1="36.6978" y1="1.71347" x2="36.6978" y2="7.42502" stroke="white" stroke-width="3.42693" stroke-linecap="round" />
+<line x1="24.1324" y1="31.4135" x2="26.417" y2="31.4135" stroke="white" stroke-width="3.42693" stroke-linecap="round" />
+<line x1="24.1324" y1="39.4115" x2="26.417" y2="39.4115" stroke="white" stroke-width="3.42693" stroke-linecap="round" />
+<line x1="12.7096" y1="31.4135" x2="14.9942" y2="31.4135" stroke="white" stroke-width="3.42693" stroke-linecap="round" />
+<line x1="12.7096" y1="39.4115" x2="14.9942" y2="39.4115" stroke="white" stroke-width="3.42693" stroke-linecap="round" />
+<line x1="35.5572" y1="31.4135" x2="37.8418" y2="31.4135" stroke="white" stroke-width="3.42693" stroke-linecap="round" />
+<line x1="35.5572" y1="39.4115" x2="37.8418" y2="39.4115" stroke="white" stroke-width="3.42693" stroke-linecap="round" />
+</svg>
+</div>
+<p class="side-steps__text">Workout with the trainer</p>
+</li>
+</ul>
+</div>
+</section>
+<section class="trainer-side">
+<div class="container trainer-side__container">
+<div class="rectangle trainer-side__rectangle"></div>
+<div class="rectangle trainer-side__rectangle-big"></div>
+<div class="trainer-side__description">
+<h2 class="section-title section-title--white trainer-side__title">How does it work from the trainer side?</h2>
+<p class="section-text section-text--white trainer-side__text">A trainer registers in the web app and fills profile with content — exercises they specialize in. The trainer can search for the clients, send them requests, and offer services.</p>
+</div>
+<picture class="trainer-side__notebook"><source type="image/webp" data-srcset="/images/fitnessapp-trainer-side-notebook.png 1x, /images/fitnessapp-trainer-side-notebook@2x.png 2x"><img data-src="/images/fitnessapp-trainer-side-notebook.png" src="../../images/fitnessapp-trainer-side-notebook.png" alt="Fitness app" data-srcset="/images/fitnessapp-trainer-side-notebook.png 1x, /images/fitnessapp-trainer-side-notebook@2x.png 2x" class="lazyload"></picture>
+<ul class="trainer-side__steps side-steps">
+<li class="side-steps__item side-steps__item--purple">
+<div class="side-steps__icon-wrap">
+<svg class="side-steps__icon" width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M32.8085 22.6768H2" stroke="#50398F" stroke-width="3.42693" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M25.3193 15.252L32.811 22.6762L25.3193 30.1005" stroke="#50398F" stroke-width="3.42693" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M13.1592 12.75V6.56924C13.1592 4.04572 15.2049 2 17.7284 2H40.4307C42.9543 2 45 4.04572 45 6.56924V40.4308C45 42.9543 42.9543 45 40.4307 45H17.7284C15.2049 45 13.1592 42.9543 13.1592 40.4308V34.25" stroke="#50398F" stroke-width="3.42693" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<p class="side-steps__text">Signing in</p>
+</li>
+<li class="side-steps__item side-steps__item--purple">
+<div class="side-steps__icon-wrap">
+<svg class="side-steps__icon" width="48" height="46" viewBox="0 0 48 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 43.6943L2 37.4116C2 29.841 8.13716 23.7039 15.7077 23.7039L31.7001 23.7039C39.2707 23.7039 45.4078 29.841 45.4078 37.4116L45.4078 43.6943" stroke="#50398F" stroke-width="3.42693" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M23.9115 23.0614C29.7275 23.0614 34.4422 18.3466 34.4422 12.5307C34.4422 6.71475 29.7275 2 23.9115 2C18.0956 2 13.3809 6.71475 13.3809 12.5307C13.3809 18.3466 18.0956 23.0614 23.9115 23.0614Z" stroke="#50398F" stroke-width="3.42693" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<p class="side-steps__text">Filling a profile</p>
+</li>
+<li class="side-steps__item side-steps__item--purple">
+<div class="side-steps__icon-wrap">
+<svg class="side-steps__icon" width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M45.0183 3.97773C42.4661 1.71852 38.5671 1.95498 36.3079 4.50719C36.3079 4.50719 25.0787 17.1911 21.1848 21.5939C17.2858 25.9941 20.1439 32.0726 20.1439 32.0726C20.1439 32.0726 26.5797 34.1107 30.4196 29.7722C34.262 25.4338 45.5477 12.6881 45.5477 12.6881C47.807 10.1359 47.5679 6.23693 45.0183 3.97773Z" stroke="#50398F" stroke-width="3.42693" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M33.4023 7.8252L42.6422 16.0061" stroke="#50398F" stroke-width="3.42693" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M24.1036 6.99568L6.56909 6.99567C4.04557 6.99567 1.99985 9.0414 1.99985 11.5649L1.99985 42.4073C1.99985 44.9308 4.04557 46.9766 6.56909 46.9766L38.5538 46.9766C41.0773 46.9766 43.123 44.9308 43.123 42.4073L43.123 25.4079" stroke="#50398F" stroke-width="3.42693" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</div>
+<p class="side-steps__text">Inviting the clients</p>
+</li>
+<li class="side-steps__item side-steps__item--purple">
+<div class="side-steps__icon-wrap">
+<svg class="side-steps__icon" width="49" height="52" viewBox="0 0 49 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="2.42814" y="5.14005" width="44.5501" height="44.5501" rx="6.28271" stroke="#50398F" stroke-width="3.42693" stroke-linejoin="round" />
+<line x1="3" y1="22.2758" x2="47.5501" y2="22.2758" stroke="#50398F" stroke-width="3.42693" />
+<line x1="12.7096" y1="1.71347" x2="12.7096" y2="7.42502" stroke="#50398F" stroke-width="3.42693" stroke-linecap="round" />
+<line x1="36.6978" y1="1.71347" x2="36.6978" y2="7.42502" stroke="#50398F" stroke-width="3.42693" stroke-linecap="round" />
+<line x1="24.1324" y1="31.4135" x2="26.417" y2="31.4135" stroke="#50398F" stroke-width="3.42693" stroke-linecap="round" />
+<line x1="24.1324" y1="39.4115" x2="26.417" y2="39.4115" stroke="#50398F" stroke-width="3.42693" stroke-linecap="round" />
+<line x1="12.7096" y1="31.4135" x2="14.9942" y2="31.4135" stroke="#50398F" stroke-width="3.42693" stroke-linecap="round" />
+<line x1="12.7096" y1="39.4115" x2="14.9942" y2="39.4115" stroke="#50398F" stroke-width="3.42693" stroke-linecap="round" />
+<line x1="35.5572" y1="31.4135" x2="37.8418" y2="31.4135" stroke="#50398F" stroke-width="3.42693" stroke-linecap="round" />
+<line x1="35.5572" y1="39.4115" x2="37.8418" y2="39.4115" stroke="#50398F" stroke-width="3.42693" stroke-linecap="round" />
+</svg>
+</div>
+<p class="side-steps__text">Creating a training program</p>
+</li>
+</ul>
+</div>
+</section>
+<section class="what-happened">
+<div class="container what-happened__container">
+<div class="rectangle what-happened__rectangle-big"></div>
+<ul class="what-happened__list">
+<li class="what-happened__item js-anim">
+<div class="rectangle what-happened__item-rectangle-mini"></div>
+<div class="what-happened__item-decription">
+<h2 class="section-title what-happened__title">How did it turn out?</h2>
+<p class="section-text what-happened__item-text">UI — we made a an attractive and modern interface with 2 primary colors: purple and pink</p>
+<p class="section-text what-happened__item-text">Clickable area — the size of buttons in Fitness app is 52px according to Apple guideline</p>
+</div>
+<div class="what-happened__item-img-wrap">
+<picture class="what-happened__item-img"><source type="image/webp" data-srcset="/images/fintessapp-happened-phone1.png 1x, /images/fintessapp-happened-phone1@2x.png 2x"><img data-src="/images/fintessapp-happened-phone1.png" src="../../images/fintessapp-happened-phone1.png" alt="Fitness app" data-srcset="/images/fintessapp-happened-phone1.png 1x, /images/fintessapp-happened-phone1@2x.png 2x" class="lazyload"></picture>
+</div>
+</li>
+<li class="what-happened__item js-anim">
+<div class="rectangle what-happened__item-rectangle-big"></div>
+<div class="what-happened__item-decription">
+<p class="section-text what-happened__item-text">Onboarding — the users point out their indicators and body measurements on one screen</p>
+<p class="section-text what-happened__item-text">Text in cards — we put the text on a contrasting background for better readability</p>
+</div>
+<div class="what-happened__item-img-wrap">
+<picture class="what-happened__item-img"><source type="image/webp" data-srcset="/images/fintessapp-happened-phone2.png 1x, /images/fintessapp-happened-phone2@2x.png 2x"><img data-src="/images/fintessapp-happened-phone2.png" src="../../images/fintessapp-happened-phone2.png" alt="Fitness app" data-srcset="/images/fintessapp-happened-phone2.png 1x, /images/fintessapp-happened-phone2@2x.png 2x" class="lazyload"></picture>
+</div>
+</li>
+<li class="what-happened__item js-anim">
+<div class="rectangle what-happened__item-rectangle-middle"></div>
+<div class="what-happened__item-decription">
+<p class="section-text what-happened__item-text">Initially, at the design stage, we made graphs that show statistics of body changes but after project estimation, we decided to implement it after the release.</p>
+</div>
+<div class="what-happened__item-img-wrap">
+<picture class="what-happened__item-img"><source type="image/webp" data-srcset="/images/fintessapp-happened-phone3.png 1x, /images/fintessapp-happened-phone3@2x.png 2x"><img data-src="/images/fintessapp-happened-phone3.png" src="../../images/fintessapp-happened-phone3.png" alt="Fitness app" data-srcset="/images/fintessapp-happened-phone3.png 1x, /images/fintessapp-happened-phone3@2x.png 2x" class="lazyload"></picture>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section class="design">
+<div class="design__waves">
+<div class="design__wave"></div>
+<div class="design__wave"></div>
+</div>
+<div class="container design__container">
+<div class="rectangle design__circle design__circle--mini"></div>
+<div class="rectangle design__circle design__circle--big"></div>
+<div class="design__head">
+<h2 class="design__title section-title">UI/UX-DESIGN</h2>
+<p class="section-text design__text">The reference for the Fitness app was one of our previous projects — Fitforce. The customers requested us to do something similar, but in the end we made a completely different design.</p>
+</div>
+<div class="design__collage">
+<picture class="design__collage-img design__collage-img1"><source type="image/webp" data-srcset="/images/fitnessapp-design-img5.png 1x, /images/fitnessapp-design-img5@2x.png 2x"><img data-src="/images/fitnessapp-design-img5.png" src="../../images/fitnessapp-design-img5.png" alt="Fitness app" data-srcset="/images/fitnessapp-design-img5.png 1x, /images/fitnessapp-design-img5@2x.png 2x" class="lazyload"></picture>
+<picture class="design__collage-img design__collage-img2"><source type="image/webp" data-srcset="/images/fitnessapp-design-img1.png 1x, /images/fitnessapp-design-img1@2x.png 2x"><img data-src="/images/fitnessapp-design-img1.png" src="../../images/fitnessapp-design-img1.png" alt="Fitness app" data-srcset="/images/fitnessapp-design-img1.png 1x, /images/fitnessapp-design-img1@2x.png 2x" class="lazyload"></picture>
+<picture class="design__collage-img design__collage-img3"><source type="image/webp" data-srcset="/images/fitnessapp-design-img2.png 1x, /images/fitnessapp-design-img2@2x.png 2x"><img data-src="/images/fitnessapp-design-img2.png" src="../../images/fitnessapp-design-img2.png" alt="Fitness app" data-srcset="/images/fitnessapp-design-img2.png 1x, /images/fitnessapp-design-img2@2x.png 2x" class="lazyload"></picture>
+<picture class="design__collage-img design__collage-img4"><source type="image/webp" data-srcset="/images/fitnessapp-design-img3.png 1x, /images/fitnessapp-design-img3@2x.png 2x"><img data-src="/images/fitnessapp-design-img3.png" src="../../images/fitnessapp-design-img3.png" alt="Fitness app" data-srcset="/images/fitnessapp-design-img3.png 1x, /images/fitnessapp-design-img3@2x.png 2x" class="lazyload"></picture>
+<picture class="design__collage-img design__collage-img5"><source type="image/webp" data-srcset="/images/fitnessapp-design-img1.png 1x, /images/fitnessapp-design-img1@2x.png 2x"><img data-src="/images/fitnessapp-design-img1.png" src="../../images/fitnessapp-design-img1.png" alt="Fitness app" data-srcset="/images/fitnessapp-design-img1.png 1x, /images/fitnessapp-design-img1@2x.png 2x" class="lazyload"></picture>
+<picture class="design__collage-img design__collage-img6"><source type="image/webp" data-srcset="/images/fitnessapp-design-img4.png 1x, /images/fitnessapp-design-img4@2x.png 2x"><img data-src="/images/fitnessapp-design-img4.png" src="../../images/fitnessapp-design-img4.png" alt="Fitness app" data-srcset="/images/fitnessapp-design-img4.png 1x, /images/fitnessapp-design-img4@2x.png 2x" class="lazyload"></picture>
+<picture class="design__collage-img design__collage-img7"><source type="image/webp" data-srcset="/images/fitnessapp-design-img3.png 1x, /images/fitnessapp-design-img3@2x.png 2x"><img data-src="/images/fitnessapp-design-img3.png" src="../../images/fitnessapp-design-img3.png" alt="Fitness app" data-srcset="/images/fitnessapp-design-img3.png 1x, /images/fitnessapp-design-img3@2x.png 2x" class="lazyload"></picture>
+<picture class="design__collage-img design__collage-img8"><source type="image/webp" data-srcset="/images/fitnessapp-design-img5.png 1x, /images/fitnessapp-design-img5@2x.png 2x"><img data-src="/images/fitnessapp-design-img5.png" src="../../images/fitnessapp-design-img5.png" alt="Fitness app" data-srcset="/images/fitnessapp-design-img5.png 1x, /images/fitnessapp-design-img5@2x.png 2x" class="lazyload"></picture>
+<picture class="design__collage-img design__collage-img9"><source type="image/webp" data-srcset="/images/fitnessapp-design-img4.png 1x, /images/fitnessapp-design-img4@2x.png 2x"><img data-src="/images/fitnessapp-design-img4.png" src="../../images/fitnessapp-design-img4.png" alt="Fitness app" data-srcset="/images/fitnessapp-design-img4.png 1x, /images/fitnessapp-design-img4@2x.png 2x" class="lazyload"></picture>
+<picture class="design__collage-img design__collage-img10"><source type="image/webp" data-srcset="/images/fitnessapp-design-img2.png 1x, /images/fitnessapp-design-img2@2x.png 2x"><img data-src="/images/fitnessapp-design-img2.png" src="../../images/fitnessapp-design-img2.png" alt="Fitness app" data-srcset="/images/fitnessapp-design-img2.png 1x, /images/fitnessapp-design-img2@2x.png 2x" class="lazyload"></picture>
+</div>
+</div>
+</section>
+<section class="development">
+<div class="container development__container">
+<div class="rectangle development__rectangle"></div>
+<div class="development__description">
+<h2 class="development__title section-title">Development</h2>
+<ul class="development__stack-list">
+<li class="development__stack-item">Language — typescript</li>
+<li class="development__stack-item">Mobile App — React Native</li>
+<li class="development__stack-item">Web App — React</li>
+<li class="development__stack-item">Backend — Node.js</li>
+</ul>
+<div class="development__description-text-wrap">
+<p class="section-text development__description-text">At each demonstration, we showed a finished part of the functionality to the client so that they could ‘touch and feel’ the project and give feedback.</p>
+<p class="section-text development__description-text">We used <strong>Vimeo</strong> for video, <strong>Auth0</strong> for authorization, <strong>Pusher</strong> for chats between clients and trainers, and <strong>Stripe</strong> for payments.</p>
+</div>
+</div>
+<div class="development__collage">
+<picture class="development__logo development__logo--pusher"><source type="image/webp" data-srcset="/images/fitnessapp-pusher.png 1x, /images/fitnessapp-pusher@2x.png 2x"><img data-src="/images/fitnessapp-pusher.png" src="../../images/fitnessapp-pusher.png" alt="Fitness app" data-srcset="/images/fitnessapp-pusher.png 1x, /images/fitnessapp-pusher@2x.png 2x" class="lazyload"></picture>
+<picture class="development__logo development__logo--node"><source type="image/webp" data-srcset="/images/fitnessapp-node.png 1x, /images/fitnessapp-node@2x.png 2x"><img data-src="/images/fitnessapp-node.png" src="../../images/fitnessapp-node.png" alt="Fitness app" data-srcset="/images/fitnessapp-node.png 1x, /images/fitnessapp-node@2x.png 2x" class="lazyload"></picture>
+<img class="development__logo development__logo--vimeo lazyload" data-src="/images/fitnessapp-vimeo.svg" src="../../images/fitnessapp-vimeo.svg" alt="Fitness app">
+<img class="development__logo development__logo--stripe lazyload" data-src="/images/fitnessapp-stripe.svg" src="../../images/fitnessapp-stripe.svg" alt="Fitness app">
+<img class="development__logo development__logo--react lazyload" data-src="/images/fitnessapp-react.svg" src="../../images/fitnessapp-react.svg" alt="Fitness app">
+<picture class="development__logo development__logo--ts"><source type="image/webp" data-srcset="/images/fitnessapp-ts.png 1x, /images/fitnessapp-ts@2x.png 2x"><img data-src="/images/fitnessapp-ts.png" src="../../images/fitnessapp-ts.png" alt="Fitness app" data-srcset="/images/fitnessapp-ts.png 1x, /images/fitnessapp-ts@2x.png 2x" class="lazyload"></picture>
+</div>
+</div>
+</section>
+<section class="typography">
+<div class="container typography__container">
+<p class="typography__letter">A</p>
+<h2 class="typography__title section-title">Typography and colors</h2>
+<div class="typography__fonts">
+<h3 class="typography__font-name">Inter</h3>
+<div class="typography__font-styles">
+<div class="typography__font-style">
+<p class="typography__font-style-name">Regular</p>
+<p class="typography__font-style-letters section-text typography__font-style-letters--uppercase">abcdefghiJKLMNOPQrstuvwxyz</p>
+<p class="typography__font-style-letters section-text">abcdefghijklmnopqrstuvwxyz</p>
+</div>
+<div class="typography__font-style typography__font-style--bold">
+<p class="typography__font-style-name">Bold</p>
+<p class="typography__font-style-letters section-text typography__font-style-letters--uppercase">abcdefghiJKLMNOPQrstuvwxyz</p>
+<p class="typography__font-style-letters section-text">abcdefghijklmnopqrstuvwxyz</p>
+</div>
+</div>
+</div>
+<ul class="typography__colors">
+<li class="typography__color">
+<div class="rectangle typography__color-rectangle typography__color-rectangle--black"></div>
+<p class="typography__color-code">#27284A</p>
+</li>
+<li class="typography__color">
+<div class="rectangle typography__color-rectangle typography__color-rectangle--purple"></div>
+<p class="typography__color-code">#8763C4</p>
+</li>
+<li class="typography__color">
+<div class="rectangle typography__color-rectangle typography__color-rectangle--pink"></div>
+<p class="typography__color-code">#D455B1</p>
+</li>
+</ul>
+</div>
+</section>
+<section class="result">
+<div class="result__waves">
+<div class="result__wave"></div>
+<div class="result__wave"></div>
+</div>
+<div class="container result__container">
+<div class="rectangle result__rectangle result__rectangle--middle"></div>
+<div class="rectangle result__rectangle result__rectangle--mini"></div>
+<div class="result__imgs-wrap">
+<picture class="result__img result__img1"><source type="image/webp" data-srcset="/images/fitnessapp-result-phone1.png 1x, /images/fitnessapp-result-phone1@2x.png 2x"><img data-src="/images/fitnessapp-result-phone1.png" src="../../images/fitnessapp-result-phone1.png" alt="Fitness app" data-srcset="/images/fitnessapp-result-phone1.png 1x, /images/fitnessapp-result-phone1@2x.png 2x" class="lazyload"></picture>
+<picture class="result__img result__img2"><source type="image/webp" data-srcset="/images/fitnessapp-result-phone2.png 1x, /images/fitnessapp-result-phone2@2x.png 2x"><img data-src="/images/fitnessapp-result-phone2.png" src="../../images/fitnessapp-result-phone2.png" alt="Fitness app" data-srcset="/images/fitnessapp-result-phone2.png 1x, /images/fitnessapp-result-phone2@2x.png 2x" class="lazyload"></picture>
+</div>
+<div class="result__description">
+<h2 class="result__title">Results</h2>
+<p class="result__text">We are getting closer to the release and:</p>
+<ul class="result__list">
+<li class="result__item section-text">Completing the system of subscriptions for trainers — the higher the subscription level, the more clients a trainer can take</li>
+<li class="result__item section-text">Completing the functionality of workout plans</li>
+<li class="result__item section-text">Adding the ability for trainers to send invitations to clients</li>
+</ul>
+</div>
+<div class="result__purr-logo">
+<svg xmlns="http://www.w3.org/2000/svg" width="142" height="26" fill="none" viewbox="0 0 164 30">
+<path fill="#fff" d="M43.688 3.025H34.79v23.728h5.373v-7.458h3.526c4.634 0 8.227-3.626 8.227-8.135 0-4.508-3.593-8.135-8.227-8.135zm0 11.186h-3.526V8.11h3.526c1.646 0 2.854 1.322 2.854 3.05 0 1.73-1.208 3.051-2.854 3.051zM65.612 9.805v9.253c0 2.407-1.277 3.491-3.124 3.491-1.611 0-2.921-.982-2.921-3.084v-9.66H54.53V20.21c0 4.576 2.888 7.016 6.28 7.016 2.216 0 3.895-.813 4.802-2.068v1.594h5.037V9.805h-5.037zM79.716 12.821V9.805h-5.037v16.947h5.037v-7.66c0-3.356 2.955-4.203 5.037-3.864V9.466c-2.115 0-4.365 1.084-5.037 3.355zM92.48 12.821V9.805h-5.036v16.947h5.037v-7.66c0-3.356 2.955-4.203 5.037-3.864V9.466c-2.116 0-4.366 1.084-5.037 3.355zM118.678 9.805l-2.418 9.084-2.619-9.084h-4.701l-2.62 9.084-2.418-9.084h-5.373l5.373 16.947h4.702l2.686-9.05 2.687 9.05h4.701l5.373-16.947h-5.373zM130.23 20.312h11.921a9.894 9.894 0 0 0 .202-2.033c0-5.119-3.627-8.949-8.53-8.949-5.306 0-8.932 3.898-8.932 8.949 0 5.05 3.559 8.948 9.302 8.948 3.19 0 5.675-1.186 7.32-3.491l-4.029-2.339c-.672.746-1.847 1.288-3.224 1.288-1.847 0-3.392-.61-4.03-2.373zm-.101-3.796c.471-1.729 1.747-2.678 3.661-2.678 1.511 0 3.022.712 3.559 2.678h-7.22zM155.587 9.33c-2.25 0-3.896.78-5.004 2.068V3.025h-5.037v23.728h5.037v-1.594c1.108 1.289 2.754 2.068 5.004 2.068 4.399 0 8.026-3.898 8.026-8.948 0-5.05-3.627-8.949-8.026-8.949zm-1.008 13.084c-2.317 0-3.996-1.593-3.996-4.135 0-2.543 1.679-4.136 3.996-4.136s3.996 1.593 3.996 4.136c0 2.542-1.679 4.135-3.996 4.135zM16.049 30L29.497 0h-4.955L11.094 30h4.955zM4.887 30L18.15 0h-4.887L0 30h4.887z" />
+</svg>
+</div>
+</div>
+</section>
+<footer id="footer" class="footer js-flexible-height js-flexible-height--theme2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer__container">
+<div class="footer__inner">
+<div class="footer__top-wrapper">
+<div class="footer__left-wrap">
+<svg class="footer__logo" width="164" height="30" viewBox="0 0 164 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M43.7921 3.02539H34.8721V26.7525H40.2578V19.2954H43.7921C48.4373 19.2954 52.039 15.6686 52.039 11.1604C52.039 6.65225 48.4373 3.02539 43.7921 3.02539ZM43.7921 14.211H40.2578V8.10978H43.7921C45.4415 8.10978 46.6533 9.43172 46.6533 11.1604C46.6533 12.8891 45.4415 14.211 43.7921 14.211Z" fill="white" />
+<path d="M65.7673 9.80457V19.0582C65.7673 21.4648 64.4882 22.5494 62.6369 22.5494C61.0212 22.5494 59.7084 21.5665 59.7084 19.4649V9.80457H54.6593V20.2106C54.6593 24.7866 57.5541 27.2271 60.9538 27.2271C63.1754 27.2271 64.8585 26.4136 65.7673 25.1594V26.7525H70.8164V9.80457H65.7673Z" fill="white" />
+<path d="M79.9051 12.8213V9.80457H74.856V26.7525H79.9051V19.0921C79.9051 15.7364 82.8672 14.889 84.9542 15.2279V9.46561C82.8335 9.46561 80.5783 10.5503 79.9051 12.8213Z" fill="white" />
+<path d="M92.7001 12.8213V9.80457H87.651V26.7525H92.7001V19.0921C92.7001 15.7364 95.6622 14.889 97.7492 15.2279V9.46561C95.6285 9.46561 93.3733 10.5503 92.7001 12.8213Z" fill="white" />
+<path d="M118.959 9.80457L116.536 18.8887L113.91 9.80457H109.198L106.572 18.8887L104.149 9.80457H98.7629L104.149 26.7525H108.861L111.554 17.7023L114.247 26.7525H118.959L124.345 9.80457H118.959Z" fill="white" />
+<path d="M130.539 20.3123H142.488C142.623 19.6683 142.69 18.9904 142.69 18.2786C142.69 13.1603 139.055 9.33003 134.14 9.33003C128.822 9.33003 125.187 13.2281 125.187 18.2786C125.187 23.329 128.755 27.2271 134.511 27.2271C137.708 27.2271 140.199 26.0407 141.849 23.7358L137.809 21.397C137.136 22.1427 135.958 22.685 134.578 22.685C132.727 22.685 131.178 22.0749 130.539 20.3123ZM130.438 16.516C130.909 14.7873 132.188 13.8382 134.107 13.8382C135.621 13.8382 137.136 14.55 137.675 16.516H130.438Z" fill="white" />
+<path d="M155.955 9.33003C153.7 9.33003 152.05 10.1096 150.94 11.3977V3.02539H145.891V26.7525H150.94V25.1594C152.05 26.4475 153.7 27.2271 155.955 27.2271C160.365 27.2271 164 23.329 164 18.2786C164 13.2281 160.365 9.33003 155.955 9.33003ZM154.945 22.4139C152.623 22.4139 150.94 20.8207 150.94 18.2786C150.94 15.7364 152.623 14.1432 154.945 14.1432C157.268 14.1432 158.951 15.7364 158.951 18.2786C158.951 20.8207 157.268 22.4139 154.945 22.4139Z" fill="white" />
+<path d="M16.0866 30L29.567 0H24.6005L11.1201 30H16.0866Z" fill="white" />
+<path d="M4.89843 30L18.1941 0H13.2957L0 30H4.89843Z" fill="white" />
+</svg>
+<div class="footer__sublogo">
+Software development company.
+</div>
+<div class="footer__divider"></div>
+<ul class="footer__contacts">
+<li class="footer__phone">
+<a id="gtm-footer-tel" class="contacts__item-link contacts__item-link--tel" href="tel:+14844608069" rel="noreferrer noopener" target="_blank" onclick="ym(52342033,'reachGoal','CLK_PHONE_CALL'); return true;">
++1 484 460-80-69
+</a>
+</li>
+<li class="footer__mail">
+<a class="contacts__item-link" href="../../cdn-cgi/l/email-protection.html#f89091b8888d8a8a8f9d9ad69b9795" rel="noreferrer noopener" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_EMAIL'); return true;">
+<span class="__cf_email__" data-cfemail="660e0f26161314141103044805090b">[email&#160;protected]</span>
+</a>
+</li>
+<li class="footer__messengers">
+<a class="contacts__telegram contacts__link-item" href="https://t.me/purrweb_agency" rel="noreferrer noopener" data-no-router="true" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_TELEGRAM'); return true;">
+<div class="contacts__item-img">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" fill="none" viewbox="0 0 24 21">
+<path fill="#fff" d="M.424 10.02l5.53 2.064 2.14 6.883a.651.651 0 0 0 1.034.312l3.083-2.513a.92.92 0 0 1 1.121-.032l5.56 4.037a.652.652 0 0 0 1.021-.394L23.986.786a.652.652 0 0 0-.873-.741L.417 8.8a.652.652 0 0 0 .007 1.22zm7.326.965l10.807-6.657c.195-.119.394.144.228.298l-8.92 8.292a1.849 1.849 0 0 0-.573 1.106l-.304 2.252c-.04.3-.462.33-.545.04l-1.169-4.107a1.088 1.088 0 0 1 .476-1.224z" />
+</svg>
+</div>
+Telegram
+</a>
+<a class="contacts__whatsap contacts__link-item js-whatsapp-link footer__whatsap" rel="noreferrer noopener" target="_blank" onclick="ym(52342033, 'reachGoal', 'CLK_WHATSAPP'); return true;">
+<div class="contacts__item-img">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewbox="0 0 24 24">
+<path fill="#fff" d="M12.003 0h-.006C5.38 0 0 5.382 0 12c0 2.625.846 5.058 2.284 7.034L.79 23.49l4.613-1.474A11.896 11.896 0 0 0 12.003 24C18.619 24 24 18.616 24 12c0-6.617-5.38-12-11.997-12zm6.982 16.945c-.289.818-1.438 1.496-2.354 1.694-.628.134-1.447.24-4.204-.903-3.526-1.461-5.797-5.045-5.974-5.277-.17-.232-1.425-1.897-1.425-3.62 0-1.722.875-2.56 1.227-2.92.29-.295.768-.43 1.227-.43.148 0 .282.007.402.013.352.015.53.036.762.593.29.697.994 2.419 1.079 2.596.085.177.17.417.05.65-.112.24-.211.346-.388.55-.177.204-.345.36-.522.579-.162.19-.345.394-.141.747.204.345.909 1.495 1.947 2.42 1.34 1.192 2.426 1.573 2.814 1.735.29.12.635.091.846-.133.269-.29.6-.77.938-1.243.24-.338.543-.38.86-.26.324.112 2.039.96 2.391 1.135.353.177.585.261.671.41.084.148.084.845-.206 1.664z" />
+</svg>
+</div>
+WhatsApp
+</a>
+</li>
+</ul>
+</div>
+<div class="footer__right-wrap">
+<div class="footer__title">
+Fill in and get a quote
+</div>
+<iframe id="hidden_iframe" name="hidden_iframe" style="display:none;"></iframe>
+<form class="footer__form js-footer-form" name="contact-form" target="hidden_iframe" onsubmit="ym(52342033, 'reachGoal', 'FORM_OUT'); return true">
+<div class="footer__form-wrapper">
+<input class="footer__form-field footer__form-name js-field-name" type="text" name="entry.1228031061" aria-label="Name input field" placeholder="Name" required autocomplete="on">
+<input class="footer__form-field js-phone-input" type="tel" name="entry.1413156463" aria-label="Phone input field" placeholder="Phone number" required autocomplete="on" minlength="4" maxlength="20">
+</div>
+<input class="footer__form-field footer__form-email" type="email" name="entry.1893682035" aria-label="Email input field" placeholder="test@purrweb.com" required autocomplete="on">
+<textarea class="footer__form-field footer__form-field--area" name="entry.772928921" aria-label="Descriptions input field" placeholder="Project details"></textarea>
+<input class="footer__form-hidden" type="hidden" name="entry.481086178" value="Purrweb123!">
+<input type="hidden" class="js-client-id" name="entry.1458439335">
+<input type="hidden" id="counter-id" name="entry.273292564" value="52342033">
+<input type="hidden" class="js-entry-page" name="entry.1965512787" value>
+<input type="hidden" id="footer__form-token" name="token">
+<input class="footer__form-type footer__page-link" type="hidden" name="entry.281637821" value="footer-form-main-en ">
+<div class="footer__form-wrapper">
+<p class="footer__form-captcha-wrapper">
+This site is protected by reCAPTCHA and the Google
+<a class="footer__form-captcha-link" rel="nofollow noreferrer noopener" href="../../privacy-policy/index.html" target="_blank">Privacy Policy</a> and
+<a class="footer__form-captcha-link" rel="nofollow noreferrer noopener" href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
+</p>
+<button id="order-form-btn" class="footer__form-btn rising-btn rising-btn--theme2" onclick="ym(52342033, 'reachGoal', 'CLK_SUCCESS'); return true;">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span id="gtm-footer-submit" class="rising-btn__text footer__btn-width--eng">
+Send
+</span>
+</span>
+</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<div class="footer__bottom-wrapper">
+<div class="footer__services js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+SERVICES
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../services/mvp/index.html" class="footer__link">MVP development services</a>
+</li>
+<li class="footer__item">
+<a href="../../services/ui-ux/index.html" class="footer__link">UI/UX Design</a>
+</li>
+<li class="footer__item">
+<a href="../../services/mobile-development/index.html" class="footer__link">Mobile Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/web-development-services/index.html" class="footer__link">Web Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/project-management-consulting-company/index.html" class="footer__link">Project Management</a>
+</li>
+<li class="footer__item">
+<a href="../../services/software-development-for-startups/index.html" class="footer__link">Software Development for
+Startups</a>
+</li>
+<li class="footer__item">
+<a href="../../services/progressive-web-app/index.html" class="footer__link">PWA</a>
+</li>
+</ul>
+</div>
+<div class="footer__otrasli js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+INDUSTRIES
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../services/terminal/index.html" class="footer__link">POS Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/marketplace/index.html" class="footer__link">Marketplace</a>
+</li>
+<li class="footer__item">
+<a href="../../services/finance/index.html" class="footer__link">Financial</a>
+</li>
+<li class="footer__item">
+<a href="../../services/travel/index.html" class="footer__link">Travel</a>
+</li>
+<li class="footer__item">
+<a href="../../services/tv-app-development/index.html" class="footer__link">SMART TV</a>
+</li>
+<li class="footer__item">
+<a href="../../services/health/index.html" class="footer__link">Healthcare</a>
+</li>
+<li class="footer__item">
+<a href="../../services/media/index.html" class="footer__link">Media</a>
+</li>
+<li class="footer__item">
+<a href="../../services/wellness/index.html" class="footer__link">Wellness</a>
+</li>
+</ul>
+</div>
+<div class="footer__outsourcing footer__outsourcing--eng js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+INSIGHTS
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a class="footer__link" href="../../blog/stock-trading-app-development/index.html">How To Build Stock Trading App</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/how-much-does-ecommerce-app-development-cost/index.html">eCommerce App
+Development Cost</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/healthcare-mobile-app-development/index.html">Healthcare Mobile App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/telehealth-app-development-features-benefits-costs/index.html">Telemedicine
+App Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/how-to-develop-an-iot-app-features-benefits-costs/index.html">IOT App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/grocery-delivery-app-development/index.html">Grocery Delivery App
+Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/doctor-appointment-app-development-features-benefits-costs/index.html">Doctor
+Appointment Booking App Development</a>
+</li>
+<li class="footer__item">
+<a class="footer__link" href="../../blog/mobile-app-development-for-banking/index.html">Banking App Development</a>
+</li>
+</ul>
+</div>
+<div class="footer__stack js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+TECH STACK
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../technologies/index.html" class="footer__link">Tech stack</a>
+</li>
+<li class="footer__item">
+<a href="../../services/react-native/index.html" class="footer__link">React Native Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/react-native-game-development/index.html" class="footer__link">React Native Game
+Development</a>
+</li>
+<li class="footer__item">
+<a href="../../services/electron/index.html" class="footer__link">Electron JS</a>
+</li>
+<li class="footer__item">
+<a href="../../services/react-js/index.html" class="footer__link">React.js</a>
+</li>
+<li class="footer__item">
+<a href="../../services/webrtc/index.html" class="footer__link">WebRTC Development</a>
+</li>
+</ul>
+<div class="footer__ofice footer__ofice--pc">
+<h3 class="footer__ofice-caption">
+OFFICES
+</h3>
+<div class="footer__item footer__item--ofice">
+US 340 S LEMON AVE #9923 WALNUT,<br> CA 91789
+</div>
+</div>
+</div>
+<div class="footer__company js-footer-accordion">
+<div class="footer__caption-wrapper">
+<h3 class="footer__caption">
+COMPANY
+</h3>
+<svg class="footer__caption-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.67225 9.76685L11.3671 15.5094C11.7165 15.8618 12.2831 15.8618 12.6326 15.5094L18.3274 9.76685C18.6768 9.41446 18.6768 8.84312 18.3274 8.49073C17.9779 8.13834 17.4113 8.13834 17.0619 8.49073L11.9998 13.5952L6.93777 8.49073C6.5883 8.13834 6.02171 8.13834 5.67225 8.49073C5.32279 8.84312 5.32279 9.41446 5.67225 9.76685Z" fill="white" />
+</svg>
+</div>
+<ul class="footer__content-wrapper">
+<li class="footer__item">
+<a href="../../about/index.html" class="footer__link">About us</a>
+</li>
+<li class="footer__item">
+<a href="../../contacts/index.html" class="footer__link">Contacts</a>
+</li>
+<li class="footer__item">
+<a href="../../reviews/index.html" class="footer__link">Reviews</a>
+</li>
+<li class="footer__item">
+<a href="/" class="footer__link">Portfolio</a>
+</li>
+<li class="footer__item">
+<a href="../../blog/index.html" class="footer__link">Blog</a>
+</li>
+</ul>
+<div class="footer__address footer__address--eng footer__address--pc">
+<address>
+Compass Building, <br> Al Shohada Road, <br> AL Hamra Industrial Zone-FZ, Ras Al Khaimah, UAE
+</address>
+</div>
+</div>
+<div class="footer__ofice footer__ofice--mobile">
+<h3 class="footer__ofice-caption">
+OFFICES
+</h3>
+<address class="footer__item footer__item--ofice">
+US 340 S LEMON AVE 9923 WALNUT, CA 91789
+</address>
+<address class="footer__address footer__address--mobile">
+Compass Building, Al Shohada Road, <br> AL Hamra Industrial Zone-FZ, Ras Al Khaimah, UAE
+</address>
+</div>
+</div>
+<div class="footer__divider"></div>
+<div class="footer__bottom">
+<div class="footer__terms">
+<a href="../../privacy-policy/index.html" class="footer__terms--policy">Privacy Policy</a>
+<a href="https://policies.google.com/terms" target="_blank" class="footer__terms--term">Terms Of Services</a>
+</div>
+<div class="footer__rights">
+© 2023 Purrweb. All rights reserved
+</div>
+</div>
+</div>
+</div>
+</footer>
+<button class="btn-up js-btn-up" title="Go to the top of the page">
+<svg width="22" height="42" viewbox="0 0 22 42" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 29L11 41M11 41L1 29M11 41V0" />
+</svg>
+</button>
+<div class="popup-form js-form-popup">
+<div class="popup-form__inner">
+<p class="popup-form__text">Thanks for your inquiry. It usually take up to 24 hours to get back with reply.</p>
+<p class="popup-form__text">Wanna schedule an online meeting?</p>
+<button class="popup-form__close js-form-popup-btn">X</button>
+<button class="popup-form__btn js-form-popup-btn">
+<link href="../../../assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../../../assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<a href onclick="Calendly.initPopupWidget({url: 'https://calendly.com/purrweb_agency/initial_discussion?primary_color=5c3bfe'});return false;">Book
+the time slot!</a>
+</button>
+</div>
+</div>
+
+</div>
+
+<div class="idea-modal js-idea-modal" style="display: none;">
+<div class="idea-modal__content">
+<span class="idea-modal__title">
+Curious about the project cost?
+</span>
+<a href="#footer" class="idea-modal__button rising-btn rising-btn--theme3 js-scroll-to">
+<span class="rising-btn__inner">
+<span class="rising-btn__wrapper">
+<span id="gtm-idea-popup" class="rising-btn__text idea-modal__button-text">
+Fill in the form!
+</span>
+</span>
+</span></a>
+</div>
+<button class="idea-modal__close js-idea-modal__close" id="CLS-BTN-POPUP">
+X
+</button>
+</div>
+
+<script>
+    if (window.innerWidth >= 1024) {
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+          '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-W4BS3VM');
+
+    } else if (window.innerWidth < 1024) {
+      var firedTG = false;
+      window.addEventListener('scroll', () => {
+        if (firedTG === false) {
+          firedTG = true;
+          setTimeout(() => {
+            (function (w, d, s, l, i) {
+              w[l] = w[l] || [];
+              w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+              });
+              var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+              j.async = true;
+              j.src =
+                '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+              f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-W4BS3VM');
+          }, 0)
+        }
+      });
+    }
+  </script>
+
+
+
+<script type="text/javascript">
+    var firedRec = false;
+    window.addEventListener('scroll', () => {
+      if (firedRec === false) {
+        firedRec = true;
+        (function (d, w) {
+          var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "../../../www.google.com/recaptcha/api6c91.js?render=6LdBWnwaAAAAADC4FEa3p5JPq12UcmBuQPHl-0Iz";
+          if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+          } else { f(); }
+        })(document, window);
+      }
+    });
+  </script>
+
+
+
+<script async type="text/javascript">
+    (function () {
+      var PM_YM_COUNTER = 52342033;
+      var ee = setInterval(function () {
+        if (typeof window.ym != 'undefined') {
+          let clientInputs = document.querySelectorAll('.js-client-id');
+          for (let clientInput of clientInputs) {
+            ym(PM_YM_COUNTER, 'getClientID', function (clientID) {
+              clientInput.value = clientID;
+            })
+          }
+
+          clearInterval(ee);
+        } else {
+          console.log('Метрика не инициализирована');
+        }
+      }, 1000); // 0,5 секунды ждать, изменить на свое значение, 1 сек = 1000
+    })();
+  </script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZM1DZX38E"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-5ZM1DZX38E');
+  </script>
+<script src="../../common.4d9224ab871b2d75ac93.js"></script><script src="../../fitness-app.4d9224ab871b2d75ac93.js"></script></body>
+
+<!-- Mirrored from www.purrweb.com/portfolio/fitness-app/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Nov 2023 15:07:15 GMT -->
+</html>
