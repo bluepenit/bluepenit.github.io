@@ -1,0 +1,25 @@
+<svg width="372" height="192" viewBox="0 0 372 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect y="11" width="372" height="181" fill="#EFEBFF"/>
+<rect x="58.5" y="98" width="62" height="81" fill="white"/>
+<path d="M112.5 1H225.5V179H169H112.5V1Z" fill="white"/>
+<path d="M41 171H120.5V11C120.5 5.47715 124.977 1 130.5 1H223.5C229.023 1 233.5 5.47715 233.5 11V171H286" stroke="#5C3BFE"/>
+<path d="M66.5 98C66.5 92.4772 70.9772 88 76.5 88H120.5V171H66.5V98Z" stroke="#5C3BFE"/>
+<path d="M163.5 171H340.5" stroke="#5C3BFE"/>
+<path d="M264.076 156.956C258 156.956 255.5 153.179 255.5 150.505C255.5 150.505 250.5 154 244 155C237.5 156 221.751 154.005 218.001 140.505C214.001 126.105 222.729 119.235 226.843 117.351C220 111.002 222.414 92.3637 238.5 83.1365C256 73.098 285.105 81.2475 288.152 111.329C290.296 132.497 283.349 140.059 276.296 141.46C278.514 148.635 274.369 156.956 264.076 156.956Z" fill="white" stroke="#5C3BFE"/>
+<path d="M249.5 171V110" stroke="#5C3BFE"/>
+<path d="M140 148H223" stroke="#5C3BFE"/>
+<path d="M140 138H218" stroke="#5C3BFE"/>
+<rect x="140.5" y="29" width="18" height="13" rx="2" fill="#EEEBFF" stroke="#5C3BFE"/>
+<rect x="84.5" y="110" width="18" height="13" rx="2" fill="#EEEBFF" stroke="#5C3BFE"/>
+<rect x="84.5" y="133" width="18" height="13" rx="2" fill="#EEEBFF" stroke="#5C3BFE"/>
+<rect x="178.5" y="29" width="18" height="13" rx="2" fill="#EEEBFF" stroke="#5C3BFE"/>
+<rect x="140.5" y="83" width="18" height="13" rx="2" fill="#EEEBFF" stroke="#5C3BFE"/>
+<rect x="178.5" y="83" width="18" height="13" rx="2" fill="#EEEBFF" stroke="#5C3BFE"/>
+<rect x="140.5" y="56" width="18" height="13" rx="2" fill="#EEEBFF" stroke="#5C3BFE"/>
+<rect x="178.5" y="56" width="18" height="13" rx="2" fill="#EEEBFF" stroke="#5C3BFE"/>
+<rect x="140.5" y="110" width="18" height="13" rx="2" fill="#EEEBFF" stroke="#5C3BFE"/>
+<rect x="178.5" y="110" width="18" height="13" rx="2" fill="#EEEBFF" stroke="#5C3BFE"/>
+<path d="M303.181 31L307.134 38.2423L314.363 42.2033L307.134 46.1642L303.181 53.4065L299.228 46.1642L292 42.2033L299.228 38.2423L303.181 31Z" fill="#FF864B"/>
+<path d="M334 74L336.121 77.8787L340 80L336.121 82.1213L334 86L331.879 82.1213L328 80L331.879 77.8787L334 74Z" fill="white"/>
+<path d="M29 112L31.1213 115.879L35 118L31.1213 120.121L29 124L26.8787 120.121L23 118L26.8787 115.879L29 112Z" fill="#FF864B"/>
+</svg>
